@@ -1,0 +1,20 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+This Wiki is intended to be an internal resource for collaborators on the BAO project. It is designed specifically for the following purposes:
+For the publication of intermediate results in advance of official milestones.
+For the discussion of new concepts and semantics.
+For general information on the project as well as relevant links, educational resources and literature.
+For the specification and development of software tools pertaining to the BAO.
+It is our intention that the BAO Ontology Development Wiki be used in conjunction with other resources such as the Alfresco Share Site to promote a collaborative environment for the development of the BAO.
+As the BAO project evolves, this site will shift to being a general wiki about the project.
+Any material used should be referenced appropriately.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
