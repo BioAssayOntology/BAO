@@ -1,0 +1,690 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://bioassayontology.org/bao/external/BAO2.0_CLO_import.owl#"
+     xml:base="http://bioassayontology.org/bao/external/BAO2.0_CLO_import.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:bao="http://www.bioassayontology.org/bao#">
+    <owl:Ontology rdf:about="http://bioassayontology.org/bao/external/BAO2.0_CLO_import.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
+        <rdfs:label xml:lang="en">editor note</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obfoundry.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <rdfs:label xml:lang="en">definition source</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label xml:lang="en">term editor</rdfs:label>
+        <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See http://code.google.com/p/information-artifact-ontology/issues/detail?id=115.</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">alternative term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000001">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell line cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
+        <rdfs:comment>A &#39;cell line cell&#39; is a is part of a cell line established through the passaging/selection of a primary cultured cells or the experimental modification of an existing cell line. New types of cell line cells are established after sufficient passaging of a primary culture to establish a stable and homogenous population that qualifies as a line (typically 1-20 passages), or following some spontaneous or experimental modification that confers novel characteristics to an existing line. A cell line cell typically has mutations of five or more genes compared to the original cell that derives the cell line cell. Some gene mutations may turn on some oncogenes.  Cell line cells can be in active culture, stored in a quiescent state for future use (e.g. frozen in liquid nitrogen), or applied in experimental procedures.  </rdfs:comment>
+        <obo:IAO_0000117>Yongqun He, Matthew Brush, Sirarat Sarntivijai, Alexander Diehl, Jie Zheng, Yu Lin, Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000019">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immortal cell line cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000001"/>
+        <obo:IAO_0000118>permanent cell line cell</obo:IAO_0000118>
+        <obo:IAO_0000115>A cell line cell that is expected to be capable of an unlimited number of divisions, and is thus able to support indefinite propagation in vitro as part of an immortal cell line.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He, Matthew Brush, Allen Xiang, Asiyah Yu Lin,  Sirarat Sarntivijai, James Malone, Jie Zheng, Tomasz Adamusiak</obo:IAO_0000117>
+        <obo:IAO_0000118>continuous cell line cell</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000031">
+        <rdfs:label xml:lang="en">cell line</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
+        <obo:IAO_0000117>MB, SS, JZ, MAH, BP, CS, YH</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0001230 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001230">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">293 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000118>293</obo:IAO_0000118>
+        <rdfs:seeAlso>ATCC: CRL-1573</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0001235 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001235">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">293T/17 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>ATCC: CRL-11268</rdfs:seeAlso>
+        <obo:IAO_0000118>293T/17</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0001601 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001601">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A549 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>ATCC: CCL-185</rdfs:seeAlso>
+        <rdfs:seeAlso>HyperCLDB: cl207</rdfs:seeAlso>
+        <obo:IAO_0000118>A549</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0001654 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001654">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACHN cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000118>ACHN</obo:IAO_0000118>
+        <rdfs:seeAlso>ATCC: CRL-1611</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0001716 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001716">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AML12 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>ATCC: CRL-2254</rdfs:seeAlso>
+        <obo:IAO_0000118>AML12</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0001842 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001842">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BA/F3 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>HyperCLDB: cl5028</rdfs:seeAlso>
+        <obo:IAO_0000118>BA/F3</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0002044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002044">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BT-549 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>ATCC: HTB-122</rdfs:seeAlso>
+        <rdfs:comment>disease: ductal carcinoma</rdfs:comment>
+        <obo:IAO_0000118>BT-549</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0002115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C-33 A cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>ATCC: HTB-31</rdfs:seeAlso>
+        <obo:IAO_0000118>C-33 A</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0002175 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002175">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAKI-1 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>HyperCLDB: cl623</rdfs:seeAlso>
+        <obo:IAO_0000118>CAKI-1</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0002176 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002176">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caki-1 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:comment>disease: clear cell carcinoma (kidney primary)</rdfs:comment>
+        <obo:IAO_0000118>Caki-1</obo:IAO_0000118>
+        <rdfs:seeAlso>ATCC: HTB-46</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0002334 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002334">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCRF-CEM cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:comment>disease: acute lymphoblastic leukemia</rdfs:comment>
+        <obo:IAO_0000118>CCRF-CEM</obo:IAO_0000118>
+        <rdfs:seeAlso>ATCC: CCL-119</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0002421 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002421">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHO cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000118>CHO</obo:IAO_0000118>
+        <rdfs:seeAlso>HyperCLDB: cl721</rdfs:seeAlso>
+        <rdfs:seeAlso>MeSH: D016466</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0002462 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002462">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHO-K1 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>ATCC: CCL-61</rdfs:seeAlso>
+        <obo:IAO_0000118>CHO-K1</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0002544 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002544">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COLO 205 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>ATCC: CCL-222</rdfs:seeAlso>
+        <obo:IAO_0000118>COLO 205</obo:IAO_0000118>
+        <rdfs:comment>disease: colorectal adenocarcinoma (colon primary)</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0002597 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002597">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COS-7 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>MeSH: D019556</rdfs:seeAlso>
+        <rdfs:seeAlso>ATCC: CRL-1651</rdfs:seeAlso>
+        <obo:IAO_0000118>COS-7</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0002785 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002785">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DLD-1 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>ATCC: CCL-221</rdfs:seeAlso>
+        <rdfs:comment>disease: colorectal adenocarcinoma</rdfs:comment>
+        <obo:IAO_0000118>DLD-1</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0002840 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002840">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DU 145 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:comment>disease: carcinoma (prostate primary)</rdfs:comment>
+        <rdfs:seeAlso>ATCC: HTB-81</rdfs:seeAlso>
+        <obo:IAO_0000118>DU 145</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0003603 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003603">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H-4-II-E cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:comment>disease: hepatoma</rdfs:comment>
+        <rdfs:seeAlso>ATCC: CRL-1548</rdfs:seeAlso>
+        <obo:IAO_0000118>H-4-II-E</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0003610 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003610">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H69AR cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>ATCC: CRL-11351</rdfs:seeAlso>
+        <obo:IAO_0000118>H69AR</obo:IAO_0000118>
+        <rdfs:comment>disease: carcinoma; small cell lung cancer; multidrug resistant</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0003665 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003665">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HCT 116 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>MeSH: D045325</rdfs:seeAlso>
+        <obo:IAO_0000118>HCT 116</obo:IAO_0000118>
+        <rdfs:seeAlso>HyperCLDB: cl1575</rdfs:seeAlso>
+        <rdfs:seeAlso>ATCC: CCL-247</rdfs:seeAlso>
+        <rdfs:comment>disease: colorectal carcinoma</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0003679 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003679">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HEL cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000118>HEL</obo:IAO_0000118>
+        <rdfs:comment>disease: erythroleukemia</rdfs:comment>
+        <rdfs:seeAlso>HyperCLDB: cl1585</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0003684 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003684">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HeLa cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>ATCC: CCL-2</rdfs:seeAlso>
+        <rdfs:seeAlso>HyperCLDB: cl1601</rdfs:seeAlso>
+        <obo:IAO_0000118>HeLa</obo:IAO_0000118>
+        <rdfs:seeAlso>MeSH: D006367</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0003704 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003704">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hep G2 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:comment>disease: hepatocellular carcinoma</rdfs:comment>
+        <obo:IAO_0000118>Hep G2</obo:IAO_0000118>
+        <rdfs:seeAlso>ATCC: HB-8065</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0003775 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003775">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HL-60 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>HyperCLDB: cl1684</rdfs:seeAlso>
+        <rdfs:seeAlso>MeSH: D018922</rdfs:seeAlso>
+        <rdfs:seeAlso>HyperCLDB: cl1689</rdfs:seeAlso>
+        <rdfs:comment>disease: promyeloblast; acute promyelocytic leukemia</rdfs:comment>
+        <obo:IAO_0000118>HL-60</obo:IAO_0000118>
+        <rdfs:seeAlso>ATCC: CCL-240</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0004009 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0004009">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hs 578T cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000118>Hs 578T</obo:IAO_0000118>
+        <rdfs:seeAlso>ATCC: HTB-126</rdfs:seeAlso>
+        <rdfs:comment>disease: ductal carcinoma</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0004276 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0004276">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HT-1080 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000118>HT-1080</obo:IAO_0000118>
+        <rdfs:comment>disease: fibrosarcoma</rdfs:comment>
+        <rdfs:seeAlso>ATCC: CCL-121</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0004283 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0004283">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HT-29 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>ATCC: HTB-38</rdfs:seeAlso>
+        <obo:IAO_0000118>HT-29</obo:IAO_0000118>
+        <rdfs:seeAlso>MeSH: D019073</rdfs:seeAlso>
+        <rdfs:seeAlso>HyperCLDB: cl1752</rdfs:seeAlso>
+        <rdfs:comment>disease: colorectal adenocarcinoma</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0004307 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0004307">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HUV-EC-C cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>ATCC: CRL-1730</rdfs:seeAlso>
+        <obo:IAO_0000118>HUV-EC-C</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0004342 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0004342">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEC-6 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>HyperCLDB: cl1802</rdfs:seeAlso>
+        <obo:IAO_0000118>IEC-6</obo:IAO_0000118>
+        <rdfs:seeAlso>ATCC: CRL-1592</rdfs:seeAlso>
+        <rdfs:comment>disease: epithelium</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0007043 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007043">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JURKAT cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000118>JURKAT</obo:IAO_0000118>
+        <rdfs:seeAlso>HyperCLDB: cl5296</rdfs:seeAlso>
+        <rdfs:comment>disease: leukemia, T cell</rdfs:comment>
+        <rdfs:seeAlso>MeSH: D019169</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0007606 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007606">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCF7 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:comment>disease: adenocarcinoma   (mammary gland primary)</rdfs:comment>
+        <rdfs:seeAlso>ATCC: HTB-22</rdfs:seeAlso>
+        <obo:IAO_0000118>MCF7</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0007634 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007634">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MDA-MB-231 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>ATCC: HTB-26</rdfs:seeAlso>
+        <obo:IAO_0000118>MDA-MB-231</obo:IAO_0000118>
+        <rdfs:comment>disease: adenocarcinoma   (mammary gland primary)</rdfs:comment>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0007646 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007646">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MDCK cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>HyperCLDB: cl5078</rdfs:seeAlso>
+        <obo:IAO_0000118>MDCK</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0007865 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007865">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRC-5 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>HyperCLDB: cl3564</rdfs:seeAlso>
+        <rdfs:seeAlso>ATCC: CCL-171</rdfs:seeAlso>
+        <obo:IAO_0000118>MRC-5</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0008172 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0008172">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIH-3T3 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>HyperCLDB: cl3710</rdfs:seeAlso>
+        <rdfs:seeAlso>HyperCLDB: cl3711</rdfs:seeAlso>
+        <obo:IAO_0000118>NIH-3T3</obo:IAO_0000118>
+        <rdfs:seeAlso>ATCC: CRL-1658</rdfs:seeAlso>
+        <rdfs:seeAlso>MeSH: D041681</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0009015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009015">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SH-SY5Y cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000118>SH-SY5Y</obo:IAO_0000118>
+        <rdfs:comment>disease: neuroblastoma   (brain primary)</rdfs:comment>
+        <rdfs:seeAlso>ATCC: CRL-2266</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0009059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009059">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SK-N-SH cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>ATCC: HTB-11</rdfs:seeAlso>
+        <rdfs:comment>disease: neuroblastoma   (brain primary)</rdfs:comment>
+        <obo:IAO_0000118>SK-N-SH</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0009348 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009348">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THP-1 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:comment>disease: acute monocytic leukemia</rdfs:comment>
+        <rdfs:seeAlso>HyperCLDB: cl4514</rdfs:seeAlso>
+        <obo:IAO_0000118>THP-1</obo:IAO_0000118>
+        <rdfs:seeAlso>ATCC: TIB-202</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0009454 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009454">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U-2 OS cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000118>U-2 OS</obo:IAO_0000118>
+        <rdfs:seeAlso>ATCC: HTB-96</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0009524 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009524">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vero cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>HyperCLDB: cl4644</rdfs:seeAlso>
+        <obo:IAO_0000118>Vero</obo:IAO_0000118>
+        <rdfs:seeAlso>ATCC: CCL-81</rdfs:seeAlso>
+        <rdfs:seeAlso>MeSH: D014709</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0009526 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009526">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VERO 76 cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000118>VERO 76</obo:IAO_0000118>
+        <rdfs:seeAlso>ATCC: CRL-1587</rdfs:seeAlso>
+        <rdfs:seeAlso>HyperCLDB: cl4655</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003114 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003114"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+
