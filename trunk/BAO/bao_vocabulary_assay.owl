@@ -1,0 +1,2036 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl#"
+     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl">
+        <rdfs:label>bioassay ontology</rdfs:label>
+        <dc:relation>Uma Vempati, Hande Küçük, Ubbo Visser, Saminda Abeyruwan, Kunie Sakurai, Vance Lemmon, Stephan Schurer*</dc:relation>
+        <owl:versionInfo>2.1</owl:versionInfo>
+        <dc:date>05/09/2013</dc:date>
+        <rdfs:comment xml:lang="en">There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
+
+contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_metadata.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000008 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000008">
+        <rdfs:label>bioassay type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003112"/>
+        <obo:IAO_0000115>Categorization of bioassays based on the property or process that the assay is interrogating, e.g. ADMET, functional, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000009 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000009">
+        <rdfs:label>ADMET</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000008"/>
+        <obo:IAO_0000115>ADMET stands for absorption, distribution, metabolism, excretion and toxicity. Admet assays are performed for verifying the bio-availability,  toxicity, metabolic stability, and drug-drug interaction potential of drugs: They quantify absorption of drugs in the intestine which is dependent on their solubility; distribution which ascertains their binding to plasma proteins, central nervous system penetration; metabolism where the in vivo clearance is monitored; and finally, toxicity in terms of inhibition of liver cytochrome p450 enzymes or hERG which could cause drug-drug interactions and cardiac arrhythmias, respectively.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000010 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000010">
+        <rdfs:label>functional</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000008"/>
+        <obo:IAO_0000115>An assay where the measured signal corresponds to a complex response such as cell survival, proliferation, localization of a protein, nuclear translocation etc. The molecular target is not assumed.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000015 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000015">
+        <rdfs:label>bioassay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003112"/>
+        <obo:IAO_0000115>A set of instructions, methodology, operations, required reagents, instruments to carrie out experiments for the purpose of testing the effect of a perturbing agent in a biological model system, measuring one or multiple effect(s) of the agent facilitated by an assay design method translate the perturbation into a detectable signal to arrive at one or multiple endpoint(s) that quantify or qualify the extent of the perturbation.  Bioassay is described by multiple bioassay components: assay format, biology (biological participants in various role and processes), design method, physical detection method / technology, screened entity, and endpoint. Bioassay includes one or multiple measure groups to describe panel, profiling, multiparametric (or multiplexed) assays (assays that measure more than one effect of the perturbagen on the system that is screened).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000026 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000026">
+        <rdfs:label>bioassay specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003112"/>
+        <obo:IAO_0000115>Description of an experiment carried out for the purpose of screening a perturbing agent in a biological system, measuring the effect of the agents using specified technology, and arriving at endpoints that satisfy particular criteria.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000029 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000029">
+        <rdfs:label>assay screening campaign stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002933"/>
+        <obo:IAO_0000115>The assay stage describes the purpose of the assay in an assay campaign.  Assay stage also relates to the order of assays in a screening campaign.  For example the primary assay, which is performed first, identifies hits. The primary hits are then confirmed in a confirmatory assay.  Subsequent secondary assays are run to eliminate compounds that are not of interest or to confirm hits using an alternate design / technology, or to further characterize compounds.
+Whether an assay is run in single concentration or concentration response is defined in the class &apos;assay measurement throughput quality&apos;.  For example primary assays are typically run in single concentration with single measurements. However, the NCGC runs qHTS primary assays as concentration-response assays.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000030 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000030">
+        <rdfs:label>confirmatory assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000029"/>
+        <obo:IAO_0000115>Assay performed to confirm activity of compounds identified in the primary screen.  It can be performed as replicate measurements at a single screening concentration or as concentration-response assay.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000031 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000031">
+        <rdfs:label>primary assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000029"/>
+        <obo:IAO_0000115>The first assay performed in a in a screening campaign. The purpose of the primary assay is to identify hits, which are potentially biologically active chemical entities. Generally in this assay, the perturbagens are tested at a single concentration with only one measurement. It is followed by a confirmatory screen, which can be run at a single concentration with multiple replicates or as concentration-response assay.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000032 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000032">
+        <rdfs:label>secondary assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000029"/>
+        <obo:IAO_0000115>Additional assays following the confirmatory stage to confirm the biological activity of chemical entities via a different type of assay or to eliminate certain active compounds based on their mechanism of action, toxicity or activity profile.  Secondary assays can also include selectivity and specificity assays.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000040 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000040">
+        <rdfs:label>measure group</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003112"/>
+        <obo:IAO_0000115>Measure group is used to group and link multiple (different) sets of experimental results to one bioassay. Measure groups thus facilitate the description of multiparametric (or multiplexed) assays, that measure more than one effect of the perturbagen on the system that is screened. It also facilitate the definition of panel and profiling assays, e.g. assays that test compounds against multiple (protein) targets.
+Compare definition of bioassay.
+Measure group links to those classes that can vary among different measurements of a panel assay, profiling assay, multiparametric assay, e.g. target, assay design method, physical detection method, endpoint. Measure group is also used to define derived endpoints, for example concentration-response endpoints obtained by curve fitting a set of results from the same compound tested in the same assay at different concentrations.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000041 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000041">
+        <rdfs:label>binding type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000008"/>
+        <obo:IAO_0000115>Binding assays are performed to understand the interaction between two molecules, e.g. perturbagen-protein, protein-protein, protein-DNA, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000042 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000042">
+        <rdfs:label>Cue Signal Response assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000110 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000110">
+        <rdfs:label>protein-small molecule interaction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+        <obo:IAO_0000115>It is an interaction between a protein (e.g., receptor, transcription factor) and small molecule (e.g., hormone, organic compound with a low molecular weight (&lt;800 Da)).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000133 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000133">
+        <rdfs:label>oligonucleotide array</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000504"/>
+        <obo:IAO_0000115>Oligonucleotides are immobilized by spotting on a solid support, such as a glass slide. They are hybridized with labeled nucleic acids from a sample and the signals measured, which reflects the composition of the sample nucleic acids. This is performed to either quantify gene expression or genomic profiling to understand genetic variation in humans.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000136 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000136">
+        <rdfs:label>single repetition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002178"/>
+        <obo:IAO_0000115>High-throughput screening (HTS) is a method of scientific experiment which is used in drug discovery. It involves large scale screening of perturbagens against a biological target and requires robotics, liquid handling devices, sensitive detectors and data processing. The results of these experiments provide starting points for drug design or understanding the role of a specific biological process. In HTS, greater than 100,000 compounds are screened per assay.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000162 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000162">
+        <rdfs:label>metal ion redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002999"/>
+        <obo:IAO_0000115>Metal ions such as copper, iron, magnesium and zinc are transported between different cellular compartments to bring about specific functions. This is regulated by their influx and efflux across membranes, which could occur either by passive diffusion or active transport.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000178 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000178">
+        <rdfs:label>screening campaign</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002933"/>
+        <obo:IAO_0000115>Screening campaign incudes a sequence of (assay) experiments performed to identify a compound (or a series of compounds) with a specific function and it is desirable to have a known mechanism of action. It includes primary (screening at single concentration), secondary, and confirmatory (dose response) screens, structure activity relationship (SAR) studies, lead optimization, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000184 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000184">
+        <rdfs:label>image-based readout</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002169"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0000534"/>
+                    <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0000564"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>High content screening (HCS) is an automated screening method using live cells to understand various aspects of their biology. HCS employs imaging (bright-field or fluorescence) and analyses in a high throughput format. HCS can be applied to monitor complex cellular aspects, namely, signaling, morphology, phenotype, proliferation, motility, intracellular trafficking, toxicology, RNAi knockdown, and receptor activation.</obo:IAO_0000115>
+        <obo:IAO_0000118>High content screening</obo:IAO_0000118>
+        <obo:IAO_0000118>HCS</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000378 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000378">
+        <rdfs:label>protein redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002999"/>
+        <rdfs:comment>Add a relation between this class and immunoassay using a new object property &apos;is detected by&apos;.</rdfs:comment>
+        <obo:IAO_0000115>Cellular signaling can bring about the movement of proteins in cells. Upon receiving a cue, proteins undergo posttranslational modifications, e.g. phosphorylation, dephosphorylation, etc, which results in their activation and migration to different compartments, often to the nucleus, where they regulate gene expression.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000379 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000379">
+        <rdfs:label>second messenger redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002999"/>
+        <obo:IAO_0000115>Second messengers relay signals from the receptors to the cell interior as part of a signaling event. In the process, they amplify the signal. Examples include cAMP, cGMP, calcium, nitric oxide, diacylglycerol, etc, which play important roles in different physiological processes.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000384 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000384">
+        <rdfs:label>summary comment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000520"/>
+        <obo:IAO_0000115>The comment deposited by the assay provider, which summarizes the screening campaign with respect to the identification of lead compounds and chemical probes.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000394 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000394">
+        <rdfs:label>protein-nucleotide interaction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+        <obo:IAO_0000115>Protein-nucleotide interaction</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000407 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000407">
+        <rdfs:label>multi parameter readout</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002185"/>
+        <obo:IAO_0000115>This is typically performed in HCS, where multiple parameters are measured simultaneously from a single cell / well, by the detection of several fluorescent labels. E.g., neurite length, nuclear size, protein translocation, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000409 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000409">
+        <rdfs:label>assay measurement type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000026"/>
+        <obo:IAO_0000115>This describes whether a change in an assay is measured once at one fixed end-point or over a  period of time at several time points.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000410 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000410">
+        <rdfs:label>endpoint assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000409"/>
+        <obo:IAO_0000115>Reported results do not have a time dimension, but represent a static response. This does not mean that the result is indepent from the time of measurement, such as cell viablity at 12, 24 or 72h where the time point is associated metadata.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000411 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000411">
+        <rdfs:label>kinetic assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000409"/>
+        <obo:IAO_0000115>The measurements and reported outcome / result of the kinetic assay quantify a change / response over a time course; the reported result has a time component, for example a reaction constant or rate.  This is in contrast to an endpoint that does not have a time dimension, but is associated with a time point as metadata, such as cell viablity at 12, 24 or 72 hs, but not the speed with which the cells propargate or die.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000467 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000467">
+        <rdfs:label>alternate assay format</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000806"/>
+        <obo:IAO_0000115>This assay is performed using a different assay format with respect to the primary or confirmatory assay.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000473 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000473">
+        <rdfs:label>small molecule array</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000514"/>
+        <obo:IAO_0000115>Small molecules which are either natural or synthetic are immobilized by robotic printing on a solid support, such as a functionalized glass slide. Protein targets either purified or from a lysate are hybridized to the immobilized small molecules in an attempt to identify the natural ligands for proteins, and also molecules that could regulate their function.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000474 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000474">
+        <rdfs:label>lysate array</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000505"/>
+        <obo:IAO_0000115>This contains complex samples, such as cell or tissue lysates, spotted on an array surface and interrogated with antibodies.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000478 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000478">
+        <rdfs:label>selectivity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000032"/>
+        <obo:IAO_0000115>Assay employed to elucidate the specificity of biologically active chemical entities towards one or more targets that are (closely) related to the (intended) primary target.</obo:IAO_0000115>
+        <obo:IAO_0000118>specificity</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000492 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000492">
+        <rdfs:label>analytical array</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000505"/>
+        <obo:IAO_0000115>In this method, antibodies or peptides are spotted on a support to be hybridized to analytes in complex mixtures of proteins.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000501 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000501">
+        <rdfs:label>purified protein array</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000505"/>
+        <obo:IAO_0000115>In this method, many different purified proteins are spotted on a support, and used to assay biochemical functions such as protein-protein, protein-DNA, protein-small molecule interactions and enzyme activity.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000504 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000504">
+        <rdfs:label>nucleic acid array</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000514"/>
+        <obo:IAO_0000115>Nucleic acids, either DNA or RNA are immobilized by spotting on a solid support such as a glass slide. They are hybridized with labeled nucleic acids from a sample and the signals measured, which reflects the composition of the sample nucleic acids. This is performed to quantify gene expression under various situations, e.g. diseases, development, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000505 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000505">
+        <rdfs:label>protein array</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000514"/>
+        <obo:IAO_0000115>This includes spotting purified proteins, cell or tissue lysates, antibodies, or peptides in order to quantify the proteome, or study protein-protein, protein-DNA, protein-small molecule interactions and enzyme activity. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000506 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000506">
+        <rdfs:label>gene array</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000504"/>
+        <obo:IAO_0000115>Gene arrays include a collection of gene-specific nucleic acids that have been placed at defined locations on a solid support, either by spotting or direct synthesis. Labeled nucleic acids from a sample are hybridized with target genes on the array and the signals measured, which reflects the composition of the sample nucleic acids.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000508 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000508">
+        <rdfs:label>microplate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
+        <obo:IAO_0000115>The assay is performed in a microplate, which can either be 96 well, 384 well, or 1536 well plates.</obo:IAO_0000115>
+        <obo:IAO_0000118>microwell plate</obo:IAO_0000118>
+        <obo:IAO_0000118>microtiter plate</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000512 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000512">
+        <rdfs:label>assay footprint</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000026"/>
+        <obo:IAO_0000115>This describes the physical format such as plate density in which an assay is performed, which is generally a microplate format, but can also be an array format.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000513 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000513">
+        <rdfs:label>96 well plate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000508"/>
+        <obo:IAO_0000115>This microplate contains 96 wells. It is suitable for a low throughput assay.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000514 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000514">
+        <rdfs:label>array</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
+        <obo:IAO_0000115>The immobilization of  thousands of small molecules, genes or proteins on a glass slide for performing binding studies.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000515 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000515">
+        <rdfs:label>384 well plate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000508"/>
+        <obo:IAO_0000115>This microplate contains 384 wells. It is suitable for a HTS assay.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000516 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000516">
+        <rdfs:label>1536 well plate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000508"/>
+        <obo:IAO_0000115>This microplate contains 1536 wells. It is highly miniaturized to accommodate more wells on one plate which reduces the plate handling time and allows working with very small volumes (few microliters) that reduces the cost of an assay.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000517 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000517">
+        <rdfs:label>summary assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000029"/>
+        <obo:IAO_0000115>It is a PubChem-specific assay stage. A summary assay references and summarizes the assays in PubChem that correspond to a screening campaign or a probe development project.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000520 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000520">
+        <rdfs:label>assay description</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002933"/>
+        <obo:IAO_0000115>This includes the different pieces of information about a PubChem bioassay that is available at the PubChem website, namely, the assay title, assay protocol, assay description, assay provider, endpoint name, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000521 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000521">
+        <rdfs:label>assay title</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000520"/>
+        <obo:IAO_0000115>The name of a bioassay which is associated with each assay ID (AID). It contains information about the target tested, the stage of the assay (primary or confirmatory), the assay format (biochemical or cell based), etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000522 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000522">
+        <rdfs:label>assay narrative</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000520"/>
+        <obo:IAO_0000115>This contains the background information and rationale for performing a bioassay and is found on the PubChem website associated with each assay ID (AID). It also includes the assay design and some information on the related bioassays.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000523 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000523">
+        <rdfs:label>assay protocol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000520"/>
+        <rdfs:comment>use cito:
+
+citesForInformation or citeAsSourceData some DOI or PMID</rdfs:comment>
+        <obo:IAO_0000115>This includes the methodology used to perform a particular bioassay and is found on the PubChem website associated with each assay ID (AID). It includes the assay components and the order in which they were added, the incubation times, detection method and the kit used, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000525 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000525">
+        <rdfs:label>assay comment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000520"/>
+        <obo:IAO_0000115>This is the PubChem assay remark that can be assigned by depositors to a bioassay. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000532 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000532">
+        <rdfs:label>assay measurement throughput</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000026"/>
+        <obo:IAO_0000115>Assay measurements throughput quality describes the quality of the measurements performed on each sample, such as single concentration, single repetition, concentration-response, multiple repetitions, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000533 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000533">
+        <rdfs:label>multiple repetition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002178"/>
+        <obo:IAO_0000115>Regular high-throughput screening (primary screening) to identify hits.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000534 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000534">
+        <rdfs:label>single readout</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002169"/>
+        <obo:IAO_0000118>HTS</obo:IAO_0000118>
+        <obo:IAO_0000115>This is a typical HTS assay, which uses a plate reader and generates one or two readouts, in contrast to high content screening, which can generate tens to hundreds of parameters.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000535 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000535">
+        <rdfs:label>multiple concentration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002177"/>
+        <obo:IAO_0000115>Concentration-response (dose-response) screen in which each concentration is only measured once.  This is equivalent to quantitative high-throughput screening (qHTS).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000536 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000536">
+        <rdfs:label>single concentration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002177"/>
+        <obo:IAO_0000115>Multiple measurements (typically three) are preformed at a single concentration. This is often used as a mode of confirmatory screening following a primary screen.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000538 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000538">
+        <rdfs:label>lead optimization assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000029"/>
+        <obo:IAO_0000115>Assays performed in the lead optimization stage. They are typically concentration-response high quality assays. They can involve a number of different assays depending on the required profile of the desired lead compound.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000543 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000543">
+        <rdfs:label>orthogonal assay design</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000806"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000562 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000562">
+        <rdfs:label>assay readout content parametricity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000026"/>
+        <obo:IAO_0000115>This describes the throughput and information content generated. Categorizing multiplexed (i.e. mutiple targets measured simultaneously) and multiparametric assays and high content (image-based) and regular (plate reader) assays.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000563 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000563">
+        <rdfs:label>single parameter readout</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002185"/>
+        <obo:IAO_0000115>Typically uses a plate reader and generates one or two readouts, in contrast to high content screening or multiplexed assays, which can generate tens to hundreds of parameters. The readout is typically from a single target / meta-target in each well.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000564 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000564">
+        <rdfs:label>multiplexed readout</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002169"/>
+        <obo:IAO_0000115>It is a HTS assay, where the readout is measured from multiple targets from one well. E.g., several protein targets are detected simultaneously by using probes labeled with different fluorescent properties.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000576 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000576">
+        <rdfs:label>24 well plate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000508"/>
+        <obo:IAO_0000115>This microplate contains 24 wells. It is suitable for a low throughput assay.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000577 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000577">
+        <rdfs:label>vial</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
+        <obo:IAO_0000115>Vials are small containers that are used in biological measurements, including scintillation counting.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000578 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000578">
+        <rdfs:label>cuvette</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
+        <obo:IAO_0000115>Cuvettes are used to measure absorbance or fluorescence in a spectrophotometer or fluorimeter, respectively using either plastic, glass or quartz cuvettes.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000590 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000590">
+        <rdfs:label>DNA-RNA interaction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+        <obo:IAO_0000118>deoxyribonucleic acid-ribonucleic acid</obo:IAO_0000118>
+        <obo:IAO_0000115>DNA-RNA interaction</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000591 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000591">
+        <rdfs:label>protein-DNA interaction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+        <obo:IAO_0000115>Protein-DNA interaction</obo:IAO_0000115>
+        <obo:IAO_0000118>protein-deoxyribonucleic acid</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000593 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000593">
+        <rdfs:label>protein-RNA interaction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+        <obo:IAO_0000118>protein-ribonucleic acid</obo:IAO_0000118>
+        <obo:IAO_0000115>Protein-RNA interaction</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000612 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000612">
+        <rdfs:label>assay repository</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002933"/>
+        <obo:IAO_0000115>It is the repository (database) in which the assay was deposited, e.g., PubChem, ChEMBL, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000613 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000613">
+        <rdfs:label>PubChem</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000612"/>
+        <obo:IAO_0000115>PubChem (http://pubchem.ncbi.nlm.nih.gov) is a public database that contains high throughput screening (HTS) data, where the assays are performed to identify small molecules effective at modulating a given biological process or disease state. The bioactivity results in PubChem are contributed by several organizations, with the majority of data coming from the screening center network under the NIH Molecular Libraries Program (MLP).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000614 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000614">
+        <rdfs:label>ChEMBL</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000612"/>
+        <obo:IAO_0000115>It is a public database that contains structure–activity relationship (SAR) data curated from the medicinal chemistry literature.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000615 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000615">
+        <rdfs:label>PDSP</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000612"/>
+        <obo:IAO_0000115>It is a public database that contains screening data of novel psychoactive compounds for pharmacological and functional activity.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000616 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000616">
+        <rdfs:label>IUPHAR</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000612"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000623 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000623">
+        <rdfs:label>compound toxicity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000803"/>
+        <obo:IAO_0000115>This assay is performed to identify compounds that have an ability to kill the cells (cytotoxic).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000647 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000647">
+        <rdfs:label>parental cell line assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000803"/>
+        <obo:IAO_0000115>This assay is performed with the unmodified or parental cell line instead of the one modified with a DNA construct that was used in primary or confirmatory assays.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000649 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000649">
+        <rdfs:label>calcium redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000379"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000819"/>
+        <obo:IAO_0000115>Calcium functions as second messenger in cell signaling.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000650 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000650">
+        <rdfs:label>cAMP redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000379"/>
+        <obo:IAO_0000118>cAMP</obo:IAO_0000118>
+        <obo:IAO_0000115>Cyclic AMP (cAMP) functions as second messenger in cell signaling.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000651 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000651">
+        <rdfs:label>cGMP redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000379"/>
+        <obo:IAO_0000115>Cyclic GMP (cGMP) functions as second messenger in cell signaling.</obo:IAO_0000115>
+        <obo:IAO_0000118>cGMP</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000653 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000653">
+        <rdfs:label>dye redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002999"/>
+        <obo:IAO_0000115>Dye redistribution is used to study flux of molecules across membranes, e.g. calcein AM, ethidium homodimer-1, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000684 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000684">
+        <rdfs:label>physicochemical profiling assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000803"/>
+        <obo:IAO_0000115>Compound profiling assays are performed with the primary purpose of providing information that is of general interest to interpreting HTS results or relevant physicochemical properties; for example in the context of identifying possible assay artifacts.  Examples include fluorescence, or inhibition of the enzyme luciferase that are part of common assay designs; another example is solubility. Compound profiling is categorized as stage, because it refers to the purpose of the assay. Profiling assays are typically independent from a screening campaign. Profiling assays performed as part of a campaign (on a limited set of compounds) would be considered secondary (typically counter screen) assays.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000803 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000803">
+        <rdfs:label>counter screening assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000032"/>
+        <obo:IAO_0000115>An assay run to eliminate those hits from the primary and confirmatory assay stages that are not of interest, i.e. do not act via the MMOA of interest; for example compounds that are assay artifacts (e.g. fluorescent), promiscuously active, toxic. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000806 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000806">
+        <rdfs:label>alternate confirmatory assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000032"/>
+        <obo:IAO_0000115>An assay using orthogonal assay design / technology run to confirm the identified hits from the primary and confirmatory assay stages.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000807 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000807">
+        <rdfs:label>variant construct assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000803"/>
+        <obo:IAO_0000115>This assay is performed with a different DNA construct than that was used in primary or confirmatory assays to modify a cell line.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000819 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000819">
+        <rdfs:label>ion redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002999"/>
+        <obo:IAO_0000115>Radiolabeled flux assays to study ion channel activity by chemically initiating the opening of channels in the presence of a fixed amount of radiolabeled cation or anion, and a potential ion channel modulator compound.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001064 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001064">
+        <rdfs:label>alternate target assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000478"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000803"/>
+        <obo:IAO_0000115>This assay is performed with a different but a related target (usually from the same protein family) than that was tested in primary or confirmatory assays, e.g., SIP1 instead of SIP3.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001065 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001065">
+        <rdfs:label>alternate cell line assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000478"/>
+        <obo:IAO_0000115>This assay is performed with a different cell line than that was tested in primary or confirmatory assays.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001066 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001066">
+        <rdfs:label>alternate organism assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000478"/>
+        <obo:IAO_0000115>This assay is performed with a different organism than that was tested in primary or confirmatory assays.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001096 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001096">
+        <rdfs:label>orthogonal assay technology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000806"/>
+        <obo:IAO_0000115>This assay is performed using a different assay design or detection technology, e.g., a beta-lactamase assay performed using FRET technology instead of absorbance for measurement.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001097 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001097">
+        <rdfs:label>alternate assay type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000806"/>
+        <obo:IAO_0000115>This assay is a different bioassay type when compared to the primary or confirmatory assays, for e.g., a functional confirmatory assay (Ca-flux FLIPR), where the primary assay could be a binding assay.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001098 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001098">
+        <rdfs:label>alternate assay conditions</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000806"/>
+        <obo:IAO_0000115>This assay is different from the primary or confirmatory assays with respect to the use of reagents / buffer, in order to narrow the mechanism of action of a perturbagen.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001099 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001099">
+        <rdfs:label>compound fluorescence assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000684"/>
+        <obo:IAO_0000115>This assay is performed to identify compounds that have a property of auto-fluorescence.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001100 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001100">
+        <rdfs:label>compound aggregation assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000684"/>
+        <obo:IAO_0000115>This assay is performed to identify compounds that have a propensity to aggregate.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001101 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001101">
+        <rdfs:label>compound redox activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000684"/>
+        <obo:IAO_0000115>This assay is performed to identify compounds with redox (reducing or oxidizing) activity.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002005 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002005">
+        <rdfs:label>kinase activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002795"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002041 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002041">
+        <rdfs:label>cell cycle assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <rdfs:comment>endpoints: 
+percent proliferation
+percent interphase
+percent mitosis
+percent G2-M arrested
+percent non-arrested</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002043 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002043">
+        <rdfs:label>apoptosis assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002993"/>
+        <obo:IAO_0000118>programmed cell death</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002067 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002067">
+        <rdfs:label>assay readout type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002185"/>
+        <obo:IAO_0000115>A physical parameter associated with an assay measurement.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002068 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002068">
+        <rdfs:label>calculated value</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002067"/>
+        <obo:IAO_0000118>calculated measurement</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002069 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002069">
+        <rdfs:label>measured profile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002067"/>
+        <rdfs:comment>This can be moved to directly under &apos;assay measurement&apos;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002070 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002070">
+        <rdfs:label>measured value</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002067"/>
+        <obo:IAO_0000118>raw measurement</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002071 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002071">
+        <rdfs:label>time course profile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002069"/>
+        <rdfs:comment>We might not need this, as &apos;kinetic assay&apos; under &apos;measuremnt type&apos; describes the same.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002100 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002100">
+        <rdfs:label>cell growth assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002167 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002167">
+        <rdfs:label>genotoxicity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002168 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002168">
+        <rdfs:label>oxidative stress assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002169 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002169">
+        <rdfs:label>assay readout content</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000026"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002177 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002177">
+        <rdfs:label>concentration throughput</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000532"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002178 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002178">
+        <rdfs:label>repetition throughput</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000532"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002181 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002181">
+        <rdfs:label>oxidative phosphorylation assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002182 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002182">
+        <rdfs:label>pharmacokinetic assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000118>ADME assay</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002183 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002183">
+        <rdfs:label>pharmacodynamic assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002184 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002184">
+        <rdfs:label>QT interval assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002185 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002185">
+        <rdfs:label>measure group specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003112"/>
+        <obo:IAO_0000115>An abstract concept to group one or more assay readout and allow description of an assay that measures one or more effect of a perturbagen on the biological entity.  This does not define the physical readout method itself, which is captured in assay design, but rather classifies the data being generated by those readouts.</obo:IAO_0000115>
+        <rdfs:comment>Called &apos;assay measurement&apos; in BARD.
+For HCS measurement, we need to define &apos;assay measurement&apos; as the outcome of image analysis and is most often a calculated value. This is similar to &apos;parameters&apos;, such as &apos;intensity&apos;, &apos;count&apos;, &apos;morphology&apos;, etc which are all dependent on phenotype, e.g., intensity and count (number of bright spots) are a result of the amount of gene expression, and morphology is dependent on morphological phenotype, which is detected by the expression of a marker.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002188 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002188">
+        <rdfs:label>drug interaction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002189 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002189">
+        <rdfs:label>toxicity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002190 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002190">
+        <rdfs:label>mitochondrial membrane potential assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002996"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002192 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002192">
+        <rdfs:label>tissue culture flask</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002194 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002194">
+        <rdfs:label>plasma membrane potential assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002996"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002195 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002195">
+        <rdfs:label>nuclear membrane potential assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002996"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002196 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002196">
+        <rdfs:label>localization assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002199 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002199">
+        <rdfs:label>T-25</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002192"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002200 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002200">
+        <rdfs:label>fluorescence anisotropy readout</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002068"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002201 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002201">
+        <rdfs:label>fluorescence polarization readout</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002068"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002506 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002506">
+        <rdfs:label>T-75</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002192"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002514 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002514">
+        <rdfs:label>T-225</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002192"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002517 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002517">
+        <rdfs:label>T-175</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002192"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002520 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002520">
+        <rdfs:label>HYPER flask</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002192"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002521 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002521">
+        <rdfs:label>triple flask</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002192"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002530 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002530">
+        <rdfs:label>bioavailability assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002531 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002531">
+        <rdfs:label>non-specific protein binding assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002532 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002532">
+        <rdfs:label>tissue distribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002533 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002533">
+        <rdfs:label>safety pharmacology assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002534 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002534">
+        <rdfs:label>drug abuse assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002535 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002535">
+        <rdfs:label>metastasis assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002584 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002584">
+        <rdfs:label>mitotic cell cycle state assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002786"/>
+        <rdfs:comment>&apos;involves biological process&apos; some &apos;mitotic cell cycle arrest&apos; 
+
+
+&apos;involves biological process&apos; some &apos;mitotic cell cycle arrest&apos; and &apos;apoptotic process&apos;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002585 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002585">
+        <rdfs:label>meiotic cell cycle state assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002786"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002661 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002661">
+        <rdfs:label>luciferase reporter gene assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002735 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002735">
+        <rdfs:label>luciferase enzyme activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002792"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002736 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002736">
+        <rdfs:label>cytochrome P450 enzyme activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002792"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002761 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002761">
+        <rdfs:label xml:lang="en">chaperone activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002762 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002762">
+        <rdfs:label xml:lang="en">phosphatase activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002790"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002763 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002763">
+        <rdfs:label xml:lang="en">platelet activation assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002764 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002764">
+        <rdfs:label xml:lang="en">protease activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002790"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002765 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002765">
+        <rdfs:label xml:lang="en">organism behavior assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002769 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002769">
+        <rdfs:label xml:lang="en">concentration profile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002069"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002770 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002770">
+        <rdfs:label xml:lang="en">temperature profile</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002069"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002776 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002776">
+        <rdfs:label xml:lang="en">radioligand binding assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002777 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002777">
+        <rdfs:label xml:lang="en">beta galactosidase enzyme activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002806"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002778 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002778">
+        <rdfs:label xml:lang="en">cell permeability assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002779 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002779">
+        <rdfs:label xml:lang="en">protein unfolding assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002780 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002780">
+        <rdfs:label xml:lang="en">IP1 redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000379"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002785 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002785">
+        <rdfs:label xml:lang="en">gene expression assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>This assay quantifies the expression level of the entire gene pool in a cell or a subpopulation (e.g. tissue-specific gene expression, kinases) using either microarray, bead method, RNASeq, or reporter gene method.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002786 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002786">
+        <rdfs:label xml:lang="en">cell cycle state assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002041"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002790 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002790">
+        <rdfs:label xml:lang="en">hydrolase activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002994"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002792 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002792">
+        <rdfs:label xml:lang="en">oxidoreductase activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002994"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002793 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002793">
+        <rdfs:label xml:lang="en">lyase activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002994"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002794 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002794">
+        <rdfs:label xml:lang="en">isomerase activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002994"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002795 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002795">
+        <rdfs:label xml:lang="en">transferase activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002994"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002803 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002803">
+        <rdfs:label xml:lang="en">neurite outgrowth assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002991"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002804 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002804">
+        <rdfs:label xml:lang="en">protein stability assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002805 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002805">
+        <rdfs:label xml:lang="en">cell proliferation assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002806 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002806">
+        <rdfs:label xml:lang="en">generic hydrolase enzyme activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002790"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002810 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002810">
+        <rdfs:label xml:lang="en">physicochemical</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000008"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002908 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002908">
+        <rdfs:label xml:lang="en">KiNativ assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002933 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002933">
+        <rdfs:label xml:lang="en">experimental specification</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003112"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002969 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002969">
+        <rdfs:label xml:lang="en">assay readout parameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002185"/>
+        <obo:IAO_0000118>measured parameter</obo:IAO_0000118>
+        <obo:IAO_0000115>assay readout parameter is the outcome of image analysis and is most often a calculated value.
+This includes &apos;parameters&apos;, such as &apos;intensity&apos;, &apos;count&apos;, &apos;morphology&apos;, etc which are all dependent on phenotype, e.g., intensity and count (number of bright spots) are a result of the amount of gene expression, and morphology is dependent on morphological phenotype, which is detected by the expression of a marker.</obo:IAO_0000115>
+        <rdfs:comment> Since &apos;measurement&apos; and &apos;parameter&apos; are so similar in HCS, we need to decide on one term that says it all.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002970 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002970">
+        <rdfs:label xml:lang="en">counting parameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002969"/>
+        <obo:IAO_0000115>counting parameter is an output of the device measuring the number of the subject.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002971 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002971">
+        <rdfs:label xml:lang="en">densitometric parameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002969"/>
+        <obo:IAO_0000115>densitometric parameter is an output of the device that is the density value of the subject by measuring the amount of light or fluorescence detected on the image.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002972 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002972">
+        <rdfs:label xml:lang="en">intensity parameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002969"/>
+        <obo:IAO_0000115>intensity parameter is an output of the device measuring the intensity value for the light signal of the subject.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002973 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002973">
+        <rdfs:label xml:lang="en">morphometric parameter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002969"/>
+        <obo:IAO_0000115>morphometric parameter is an output of image analysis measuring a structure, a concept that encompasses size and shape of the subject (cells, organisms).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002989 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002989">
+        <rdfs:label>binding assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>It is performed to quantify the interactions between two molecules, e.g. small molecule-protein, protein-protein, protein-DNA, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002990 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002990">
+        <rdfs:label>protein-protein interaction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+        <obo:IAO_0000115>It is performed to quantify the interactions between two protein molecules, using methods such as protein fragment complementation assay, immunoassay, radioligand binding, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002991 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002991">
+        <rdfs:label>cell morphology assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>It reports the size and shape of cells and organelles (phenotype). These are detected by microscopy.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002992 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002992">
+        <rdfs:label>cell motility assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>It is performed to measure the movement of cells and organelles (phenotype).  These are detected by microscopy.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002993 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002993">
+        <rdfs:label>cytotoxicity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002994 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002994">
+        <rdfs:label>enzyme activity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>It is used to measure the effect of a perturbagen on the enzyme activity, which can be measured either directly or coupled to a secondary signal. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002995 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002995">
+        <rdfs:label>transcriptional response profiling assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002785"/>
+        <obo:IAO_0000115>This assay quantifies the expression level of the entire gene pool in a cell or a subpopulation (e.g. tissue-specific gene expression, kinases) using a bead-based method.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002996 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002996">
+        <rdfs:label>membrane potential assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>This reports the membrane potential of a cell by using electrophysiological techniques or by staining with dyes whose binding is dependent on the membrane potential.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002997 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002997">
+        <rdfs:label>ion channel assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002996"/>
+        <obo:IAO_0000115>Ion channel assays are performed in electrically active cells: neurons, muscle, and endocrine cells.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002998 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002998">
+        <rdfs:label>protein folding assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>This assay quantifies the protein folding/conformation using technologies, such as nuclear magnetic resonance, circular dichroism are used to determine the protein folding/conformation.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002999 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002999">
+        <rdfs:label>redistribution assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>It is performed to measure the redistribution of organelles and molecules within the cell (proteins, second messengers, metal ions, dyes, etc. ). This is visualized by microscopy. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003000 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003000">
+        <rdfs:label>rna splicing assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>This assay quantifies the amount of a mature transcript that is produced after splicing. Splicing is a modification of an mRNA intermediate after transcription, in which introns are removed and exons are joined. It can be detected by several methods, namely, the use of a reporter gene, RNA-Seq, specialiez microarrays, etc. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003001 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003001">
+        <rdfs:label>sensitizer assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>This assay allows the identification of new drugs that sensitize or desensitize the sensitivity of a cell to its signaling molecule (e.g calcium, light). The perturbagen has the role &apos;sensitizer&apos; in this assay. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003002 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003002">
+        <rdfs:label>signal transduction assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>This assay measures one of the series of events that are downstream to the receipt of a chemical signal at the cell’s surface, namely, formation of cyclic AMP, activation of kinase/ transcription factor, cytokine secretion, etc., which will result in a specific cellular activity, such as cell division, cell elongation, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003003 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003003">
+        <rdfs:label>cytokine secretion assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000042"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
+        <obo:IAO_0000115>It measures the types and amounts of cytokines that are released as the consequence of a signaling event. Cytokines can be quantitated using ELISA-based kits, PCR array, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003004 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003004">
+        <rdfs:label>posttranslation modification assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
+        <obo:IAO_0000115>This assay quantifies the modification that a protein can undergo after it is synthesized by translation. E.g. phosphorylation, acetylation, etc. The modification status is detected by one of several methods such as using modification specific antibodies followed by western blotting, imaging; mass spectrometry, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003005 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003005">
+        <rdfs:label>phosphorylation assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000042"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003004"/>
+        <obo:IAO_0000115>This assay quantifies the phosphorylation levels of a protein. The phosphorylation status is detected by one of several methods: using phosphorylation specific antibodies followed by western blotting or imaging, mass spectrometry, etc.</obo:IAO_0000115>
+        <rdfs:comment>detect some (protein phosphorilation and (&apos;catalyzed by&apos; some kinase))</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003006 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003006">
+        <rdfs:label>reporter gene assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002785"/>
+        <obo:IAO_0000115>Reporter gene assay measures the gene expression from a reporter gene. The reporter gene is inserted under the control of a foreign promoter or an artificial regulatory element of interest. Reporters include luciferase, beta galactosidase, beta lactamase, chloramphenicol acetyl transferase, or a fluorescent protein.</obo:IAO_0000115>
+        <rdfs:comment>reports some 
+(&apos;gene expression&apos; and (&apos;has part&apos; some &apos;reporter gene&apos;))
+needs clean up to say has part gene with role of reporter.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003007 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003007">
+        <rdfs:label>second messenger assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
+        <obo:IAO_0000115>This assay quantifies the second messengers (calcium, cAMP, cGMP) produced in the cell as a result of a signaling event.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003008 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003008">
+        <rdfs:label>transporter assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>This assay quantifies the activity of a transporter that carries proteins, cofactors, ions, drugs, etc. across the cell membranes. Fluorescence-conjugated dyes or radiolabeled ligands are used to quantitate the various molecular entities that are being transported.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003009 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003009">
+        <rdfs:label>cell viability assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>This assay type measures the cellular state of living or dying by measuring an indicator of life or death. Cell life indicators include ATP content, cell number, dehydrogenase activity, DNA content, esterase activity, mitochondrial membrane potential, membrane integrity, and protease activity. Cell death indicators include caspase activity, chromatin condensation, and phospholipid redistribution.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003010 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003010">
+        <rdfs:label>protein-turnover assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+        <obo:IAO_0000115>This assay quantifies the protein turnover, which is a natural phenomenon in healthy cells, but becomes aberrant in diseased cells. The protein that is needed to be degraded first undergoes ubiquitinated. Ubiquitinated proteins are degraded in the proteasome complex. The protein degradation is quantitated by using reporters, such as green fluorescent protein as proteasome substrates.  </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003011 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003011">
+        <rdfs:label>KINOMEScan assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003012 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003012">
+        <rdfs:label xml:lang="en">fluorescent protein reporter gene assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003013 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003013">
+        <rdfs:label xml:lang="en">beta galactosidase reporter gene assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003014 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003014">
+        <rdfs:label xml:lang="en">beta lactamase reporter gene assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003015 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003015">
+        <rdfs:label xml:lang="en">chloramphenicol acetyltransferase reporter gene assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003006"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003112 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003112">
+        <rdfs:label xml:lang="en">assay bioassay component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0010001 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010001">
+        <rdfs:label xml:lang="en">cell viability ATP quantitation assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0000649"/>
+            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0000650"/>
+            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0000651"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.5.1928) http://owlapi.sourceforge.net -->
+
