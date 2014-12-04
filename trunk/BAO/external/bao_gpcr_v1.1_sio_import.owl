@@ -1,0 +1,219 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY dc "http://purl.org/dc/terms/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY resource "http://semanticscience.org/resource/" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+]>
+
+
+<rdf:RDF xmlns="http://semanticscience.org/ontology/sio.owl#"
+     xml:base="http://semanticscience.org/ontology/sio.owl"
+     xmlns:dc="http://purl.org/dc/terms/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:resource="http://semanticscience.org/resource/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://bioassayontology.org/bao/external/bao_gpcr_v1.1_sio_import.owl">
+        <owl:versionInfo>0.9.14</owl:versionInfo>
+        <dc:contributor xml:lang="en">Contributors are those that engage in discussions in the context of SIO (in alphabetical order):
+christopher baker
+joachim baran
+jerven bolleman
+alison callahan
+leonid chepelev
+kevin cohen
+melanie courtot
+geraint duck
+luke mccarthy
+jim mccusker
+jose miguel cruz-toledo
+robert hoehndorf
+simon jupp
+jin-dong kim
+dana klassen
+james malone
+chris mungall
+david osumi-sutherland
+nuria queralt
+alexandre riazanov
+matthias samwald
+robert stevens
+mark wilkinson
+natalia villanueva-rosales</dc:contributor>
+        <dc:creator xml:lang="en">Michel Dumontier</dc:creator>
+        <dc:title xml:lang="en">Semanticscience Integrated Ontology (SIO)</dc:title>
+        <dc:description xml:lang="en">The semanticscience integrated ontology (SIO) provides a simple, integrated ontology (types, relations) for objects, processes and their attributes.
+
+This project provides foundational support for the Bio2RDF (http://bio2rdf.org) and SADI (http://sadiframework.org) projects. 
+
+website: http://semanticscience.org
+email: sio-ontology@googlegroups.com
+mailing list: http://groups.google.com/group/sio-ontology
+</dc:description>
+        <rdfs:comment xml:lang="en">general class inclusion axioms:
+&apos;is part of&apos; some &apos;physical entity&apos; subClassOf &apos;is located in&apos; some &apos;physical entity&apos;
+
+role chains:
+&apos;has capability&apos; o &apos;is realized in&apos; -&gt; &apos;is participant in&apos;</rdfs:comment>
+        <dc:rights>use,share,modify,commercial;
+by attribution [http://creativecommons.org/licenses/by/3.0/].</dc:rights>
+        <owl:versionIRI rdf:resource="http://bioassayontology.org/bao/external/bao_gpcr_v1.1_sio_import.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;creator"/>
+    <owl:AnnotationProperty rdf:about="&dc;description"/>
+    <owl:AnnotationProperty rdf:about="&resource;similarTo"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    <owl:AnnotationProperty rdf:about="&dc;alternativeName"/>
+    <owl:AnnotationProperty rdf:about="&resource;narrowerThan"/>
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    <owl:AnnotationProperty rdf:about="&owl;versionInfo"/>
+    <owl:AnnotationProperty rdf:about="&resource;synonym"/>
+    <owl:AnnotationProperty rdf:about="&resource;example"/>
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDbXref"/>
+    <owl:AnnotationProperty rdf:about="&resource;subset"/>
+    <owl:AnnotationProperty rdf:about="&resource;equivalentTo"/>
+    <owl:AnnotationProperty rdf:about="&dc;rights"/>
+    <owl:AnnotationProperty rdf:about="&resource;broaderThan"/>
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    <owl:AnnotationProperty rdf:about="&dc;title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000001 -->
+
+    <owl:ObjectProperty rdf:about="&resource;SIO_000001">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">is related to</rdfs:label>
+        <rdfs:comment>&apos;is related to&apos; is the top level relation in SIO</rdfs:comment>
+        <dc:description xml:lang="en">A is related to B iff there is some relation between A and B.</dc:description>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000008 -->
+
+    <owl:ObjectProperty rdf:about="&resource;SIO_000008">
+        <rdfs:label xml:lang="en">has attribute</rdfs:label>
+        <dc:description xml:lang="en">has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some measurement (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.</dc:description>
+        <rdfs:subPropertyOf rdf:resource="&resource;SIO_000001"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000011 -->
+
+    <owl:ObjectProperty rdf:about="&resource;SIO_000011">
+        <rdfs:label xml:lang="en">is attribute of</rdfs:label>
+        <dc:description xml:lang="en">is attribute of is a relation that associates an attribute with an entity where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some measurement (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.</dc:description>
+        <rdfs:subPropertyOf rdf:resource="&resource;SIO_000001"/>
+        <owl:inverseOf rdf:resource="&resource;SIO_000008"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000061 -->
+
+    <owl:ObjectProperty rdf:about="&resource;SIO_000061">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">is located in</rdfs:label>
+        <resource:equivalentTo>OBO_REL:located_in</resource:equivalentTo>
+        <resource:example>A parasite in the interior of a person&apos;s intestine is located in their intestinal lumen.</resource:example>
+        <dc:description xml:lang="en">A is located in B iff the spatial region occupied by A is part of the spatial region occupied by B. [T][R]</dc:description>
+        <rdfs:subPropertyOf rdf:resource="&resource;SIO_000322"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000062 -->
+
+    <owl:ObjectProperty rdf:about="&resource;SIO_000062">
+        <rdfs:label xml:lang="en">is participant in</rdfs:label>
+        <resource:example xml:lang="en">a car is a participant in a car race; glucose is a participant in glycolysis</resource:example>
+        <dc:description xml:lang="en">is participant in is a relation that describes the participation of the subject in the (processual) object.</dc:description>
+        <rdfs:subPropertyOf rdf:resource="&resource;SIO_000322"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000068 -->
+
+    <owl:ObjectProperty rdf:about="&resource;SIO_000068">
+        <rdf:type rdf:resource="&owl;ReflexiveProperty"/>
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">is part of</rdfs:label>
+        <resource:equivalentTo>OBO_REL:part_of</resource:equivalentTo>
+        <dc:description xml:lang="en">is part of is a transitive, reflexive and anti-symmetric mereological relation between a whole and itself or a part and its whole.</dc:description>
+        <rdfs:subPropertyOf rdf:resource="&resource;SIO_000061"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000095 -->
+
+    <owl:ObjectProperty rdf:about="&resource;SIO_000095">
+        <rdfs:label xml:lang="en">is member of</rdfs:label>
+        <dc:description xml:lang="en">is member of is a mereological relation between a item and a collection.</dc:description>
+        <rdfs:subPropertyOf rdf:resource="&resource;SIO_000011"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000322 -->
+
+    <owl:ObjectProperty rdf:about="&resource;SIO_000322">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">is spatiotemporally related to</rdfs:label>
+        <dc:description xml:lang="en">A is spatiotemporally related to B iff A is in the spatial or temporal vicinity of B</dc:description>
+        <rdfs:subPropertyOf rdf:resource="&resource;SIO_000001"/>
+    </owl:ObjectProperty>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.5.1928) http://owlapi.sourceforge.net -->
+
