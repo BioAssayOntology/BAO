@@ -1,0 +1,489 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_phenotype.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.bioassayontology.org/bao/bao_vocabulary_phenotype.owl">
+    <Prefix name="" IRI="http://www.bioassayontology.org/bao/bao_vocabulary_phenotype.owl#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.bioassayontology.org/bao/bao_metadata.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:license"/>
+        <IRI>http://creativecommons.org/licenses/by/3.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">05/20/2013</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
+
+contact: Stephan Schurer:  stephan dot schurer at gmail dot com</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2.1</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:relation"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Uma Vempati, Hande Küçük, Ubbo Visser, Saminda Abeyruwan, Kunie Sakurai, Vance Lemmon, Stephan Schurer*</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">bioassay ontology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002542"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170005"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170006"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170007"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170008"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170009"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170010"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170011"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170012"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170013"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170014"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170015"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170016"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170017"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170018"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170019"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170020"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170021"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170022"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170023"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170024"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170025"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170026"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170027"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170028"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170029"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170030"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170031"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170032"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170001"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002542"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170002"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002542"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170003"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170004"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170005"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002542"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170006"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170007"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170008"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170009"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170010"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170011"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170009"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170012"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170013"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170014"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170013"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170015"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170013"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170016"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170005"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170017"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170018"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170016"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170019"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170020"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170019"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170021"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170001"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170022"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170023"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170022"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170024"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170022"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170025"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170022"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170026"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170022"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170027"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170022"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170028"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170022"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170029"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170030"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170002"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170031"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170032"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0170023"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0002542</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">cell phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170001</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The molecular characteristics of a cell of tissue including expressed coding and non-coding RNAs, proteins and their post-translational modifications, lipids, carbohydrates and small molecules that characterize the state in a cell or tissue and that result from the interaction of its genotype and the environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170001</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">molecular phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170002</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The form and structure of an organism and its parts, including cells, that result from the interaction of its genotype and the environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170002</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">morphological phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170003</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The proteins and their post-translational modifications, lipids, carbohydrates and small molecules that characterize the state in a cell or tissue and that result from the interaction of its genotype and the environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170003</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">biochemical phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170004</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">The coding and non-coding RNAs expressed in a cell or tissue that result from the interaction of its genotype and the environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170004</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">transcriptional phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170005</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">cellular state phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170006</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">autophagic cell phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170007</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">inflamed cell phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170008</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">inflamed blood vessel cell phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170009</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">neuronal cell phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170010</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">developing neuron</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170011</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">regenerating neuron</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170012</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">dead cell phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170013</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">dying cell phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170014</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">necrotic cell phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170015</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">apoptotic cell phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170016</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">cell cycle phase phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170017</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">mitotic cell phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170017</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">M phase mitotic cell phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170018</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">DNA replicated mitotic cell phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170018</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">S phase mitotic cell phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170019</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">molecular localization phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170020</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">NF-KappaB p65 translocation phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170021</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">molecular expression phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170022</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">neuronal morphology phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170023</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">blebbed neurite phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170024</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">branched neurite phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170025</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">defasciculated axon bundles phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170026</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">elongated neurite phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170027</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">fasciculated axons phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170028</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">shortened neurite phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170029</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">rounded cell phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170030</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">shrunken cell phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170031</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">blebbed axon  phenotype</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0170032</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">blebbed dendrite  phenotype</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.5.1928) http://owlapi.sourceforge.net -->
+
