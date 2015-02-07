@@ -267,7 +267,7 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
     <!-- http://www.bioassayontology.org/bao#BAO_0000878 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000878">
-        <rdfs:label>CDD Luminometer</rdfs:label>
+        <rdfs:label>CCD Luminometer</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
     </owl:Class>
     
