@@ -1263,7 +1263,69 @@ It has also been shown to function as a 5-HT1A receptor partial agonist and 5-HT
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
     </owl:Class>
     
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0200013">
+        <rdfs:label>Fluormone PL Far Red</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_51121"/>
+    </owl:Class>
 
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0200015">
+        <rdfs:label>Fluormone ES2 Green</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_51121"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0200016">
+        <rdfs:label>Fluorescein</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_51121"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0200017">
+        <rdfs:label>Amplex red reagent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_33893"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0200018">
+        <rdfs:label>Atto 495</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_33893"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0200020">
+        <rdfs:label>QuantaBlu</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_33893"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0200021">
+        <rdfs:label>Sytox Orange</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_51121"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0200022">
+        <rdfs:label>Ellman and apos's reagent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_33893"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0200023">
+        <rdfs:label>3H</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_35206"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0200024">
+        <rdfs:label>35S</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_35206"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0200034">
+        <rdfs:label>ACP-tag</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+        <rdfs:subClassOf rdf:resource="&obo;CHEBI_35209"/>
+    </owl:Class>
 
     <!-- http://www.bioassayontology.org/bao#BAO_0001010 -->
 

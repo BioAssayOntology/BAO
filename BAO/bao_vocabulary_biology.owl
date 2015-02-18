@@ -837,6 +837,33 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</Literal>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0030011"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200004"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200005"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200006"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200007"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200009"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200010"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200011"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200012"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="owl:Thing"/>
     </Declaration>
     <Declaration>
@@ -1889,6 +1916,52 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</Literal>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0030011"/>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0000239"/>
     </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200003"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002554"/>
+    </SubClassOf>
+
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200003"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0003043"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200004"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002554"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200004"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0003043"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200005"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200006"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200007"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200009"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200010"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200011"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200004"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200012"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200004"/>
+    </SubClassOf>
+
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.bioassayontology.org/bao#BAO_0000011</IRI>
@@ -4002,6 +4075,51 @@ Nuclear factor of kappa light polypeptide gene enhancer in B-cells 3</Literal>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.bioassayontology.org/bao#BAO_0030011</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">primary neuron</Literal>
+    </AnnotationAssertion>
+ <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200003</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">primary antibody</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200004</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">secondary antibody</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200005</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alexa488</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200006</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alexa594</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200007</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Alexa647</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200009</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">FAM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200010</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TAMRA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200011</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TAM</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200012</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">DABCYL</Literal>
     </AnnotationAssertion>
 </Ontology>
 

@@ -11,10 +11,10 @@
 
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl">
     <Prefix name="" IRI="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
@@ -25,8 +25,16 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Import>http://www.bioassayontology.org/bao/bao_metadata.owl</Import>
     <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">2.1</Literal>
+    </Annotation>
+    <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:license"/>
         <IRI>http://creativecommons.org/licenses/by/3.0/</IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:relation"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Uma Vempati, Hande Küçük, Ubbo Visser, Saminda Abeyruwan, Kunie Sakurai, Vance Lemmon, Stephan Schurer*</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -35,20 +43,12 @@
 contact: Stephan Schurer:  stephan dot schurer at gmail dot com</Literal>
     </Annotation>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">2.1</Literal>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal datatypeIRI="&rdf;PlainLiteral">bioassay ontology</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:date"/>
         <Literal datatypeIRI="&rdf;PlainLiteral">05/09/2013</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="dc:relation"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">Uma Vempati, Hande Küçük, Ubbo Visser, Saminda Abeyruwan, Kunie Sakurai, Vance Lemmon, Stephan Schurer*</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <Literal datatypeIRI="&rdf;PlainLiteral">bioassay ontology</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0000006"/>
@@ -310,6 +310,12 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</Literal>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0001108"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0001490"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0001491"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0002006"/>
@@ -580,6 +586,9 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</Literal>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0003115"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0003910"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0080001"/>
@@ -626,6 +635,101 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</Literal>
     <Declaration>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0080015"/>
     </Declaration>
+
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200035"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200036"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200037"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200038"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200039"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200040"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200041"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200042"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200043"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200044"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200045"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200046"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200047"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200048"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200049"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200050"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200051"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200052"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200053"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200054"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200055"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200056"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200057"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200058"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200059"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200060"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200061"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200062"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200063"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200064"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200065"/>
+    </Declaration>
+
     <Declaration>
         <Class abbreviatedIRI="owl:Thing"/>
     </Declaration>
@@ -635,6 +739,7 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</Literal>
     <Declaration>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </Declaration>
+
     <SubClassOf>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0000006"/>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0000201"/>
@@ -986,6 +1091,14 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</Literal>
     <SubClassOf>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0001108"/>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0000096"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0001490"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0000489"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0001491"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0000489"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0002006"/>
@@ -1348,6 +1461,10 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</Literal>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0002118"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0003910"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002902"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0080001"/>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0002162"/>
     </SubClassOf>
@@ -1395,6 +1512,7 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</Literal>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0080012"/>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0080004"/>
     </SubClassOf>
+
     <SubClassOf>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0080013"/>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0001103"/>
@@ -1411,6 +1529,135 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</Literal>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0000180"/>
         <Class IRI="http://www.bioassayontology.org/bao#BAO_0000181"/>
     </DisjointClasses>
+
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200035"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002162"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200036"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002162"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200037"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002162"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200038"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002162"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200039"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002162"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200040"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002162"/>
+    </SubClassOf>
+
+   <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200041"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002116"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200042"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002116"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200043"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002116"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200044"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002116"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200045"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002116"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200046"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002116"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200047"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002116"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200048"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002116"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200049"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002116"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200050"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0000656"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200051"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0000082"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200052"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0000082"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200053"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0000082"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200054"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0000082"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200055"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0000082"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200056"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0000082"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200057"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002128"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200058"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0000587"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200059"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002114"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200060"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002114"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200061"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002170"/>
+    </SubClassOf>
+
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200062"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002116"/>
+    </SubClassOf>
+
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200063"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002162"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200064"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002162"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0200065"/>
+        <Class IRI="http://www.bioassayontology.org/bao#BAO_0002162"/>
+    </SubClassOf>
+
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>http://www.bioassayontology.org/bao#BAO_0000006</IRI>
@@ -2356,6 +2603,16 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
         <Literal datatypeIRI="&rdf;PlainLiteral">100 percent growth inhibition</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0001490</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">negative allosteric modulation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0001491</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">positive allosteric modulation’</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>http://www.bioassayontology.org/bao#BAO_0002006</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The percentage of cells in an assay that show the hallmarks of &apos;programmed cell death&apos; or apoptosis, namely, membrane asymmetry, caspase activation, nuclear fragmentation, etc.</Literal>
@@ -3100,7 +3357,7 @@ m= y2-y1 / x2-x1</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.bioassayontology.org/bao#BAO_0002910</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">allosteric agonsim</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">allosteric agonism</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3110,7 +3367,7 @@ m= y2-y1 / x2-x1</Literal>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://www.bioassayontology.org/bao#BAO_0002912</IRI>
-        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">full agonsim</Literal>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">full agonism</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -3238,6 +3495,11 @@ m= y2-y1 / x2-x1</Literal>
         <Literal datatypeIRI="&rdf;PlainLiteral">assay result component</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0003910</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">allosteric antagonism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <IRI>http://www.bioassayontology.org/bao#BAO_0080001</IRI>
         <Literal datatypeIRI="&rdf;PlainLiteral">The effective concentration of an inhibitor, which produces 20% of the maximum possible response for that inhibitor.</Literal>
@@ -3342,9 +3604,167 @@ m= y2-y1 / x2-x1</Literal>
         <IRI>http://www.bioassayontology.org/bao#BAO_0080015</IRI>
         <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">percent neurite branch point</Literal>
     </AnnotationAssertion>
+
+ <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200035</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">EC20</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200036</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">EC150</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200037</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">EC90</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200038</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">IC95</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200039</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">MIC80</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200040</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">MIC90</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200041</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ED</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200042</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ED25</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200043</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ED30</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200044</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ED90</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200045</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">LD10</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200046</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ID50</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200047</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">MinED</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200048</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">MTD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200049</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">TD50</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200050</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">maximal effect</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200051</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Increase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200052</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">percent change</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200053</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">percent growth</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200054</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">percent protection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200055</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">percent remaining</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200056</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">uptake</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200057</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">efflux ratio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200058</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">Kinactivation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200059</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">residence time</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200060</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">T</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200061</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">-log</Literal>
+    </AnnotationAssertion>
+
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200062</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">ED80</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200063</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">EC10</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200064</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">EC25</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.bioassayontology.org/bao#BAO_0200065</IRI>
+        <Literal xml:lang="en" datatypeIRI="&rdf;PlainLiteral">IC75</Literal>
+    </AnnotationAssertion>
+
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 3.2.5.1928) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
 

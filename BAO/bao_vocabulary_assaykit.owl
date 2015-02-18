@@ -946,6 +946,21 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
     </owl:Class>
     
 
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0200000">
+        <rdfs:label xml:lang="en">Transcreener assay kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0200001">
+        <rdfs:label xml:lang="en">Lactate kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0200002">
+        <rdfs:label xml:lang="en">TruPoint assay kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+
 
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
