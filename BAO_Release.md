@@ -1,0 +1,15 @@
+# Announcement BAO version 2.0 #
+
+The BAO team is pleased to announce the release of BAO version 2.0 build 2899.  Our primary vision in BAO 2.0 is to formally describe biological screening assays and their results.This release introduces significant changes both structural and functional.
+
+To learn more about the release click here.
+
+Contact us to be part of the BAO community.
+
+# How to cite BAO? #
+
+S. Abeyruwan, U. Vempati, H. Küçük, U. Visser, A. Koleti, A. Mir, K. Sakurai, C. Chung, J. Bittker, P. Clemons, S. Brudz, A. Siripala, A. Morales, M. Romacker, D. Twomey, S. Bureeva, V. Lemmon, and Schürer SC, “Evolving BioAssay Ontology (BAO): Modularization, Integration and Applications,” Journal of Biomedical Semantics, vol. 5, no. 1:S5, 2014.
+
+Vempati UD, Przydzial MJ, Chung C, Abeyruwan S, Mir A, Sakurai K, Visser U, Lemmon VP, Schürer SC.  Formalization, annotation and analysis of diverse drug and probe screening assay datasets using the BioAssay Ontology (BAO).  PLoS One. 2012;7(11):e49198.  doi:  10:1371/journal.pone.0049198.  Epub 2012 Nov 14.
+
+BAO 2.0 is release under the Creative Commons Attribution License Version 3
