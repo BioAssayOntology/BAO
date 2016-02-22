@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://bioassayontology.org/bao/external/BAO2.0_CHEBI_import.owl" uri="external/BAO2.0_CHEBI_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://bioassayontology.org/bao/external/BAO2.0_CLO_import.owl" uri="external/BAO2.0_CLO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://bioassayontology.org/bao/external/BAO2.0_EFO_import.owl" uri="external/BAO2.0_EFO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://bioassayontology.org/bao/external/BAO2.0_GO_import.owl" uri="external/BAO2.0_GO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://bioassayontology.org/bao/external/BAO2.0_NCBITaxon_import.owl" uri="external/BAO2.0_NCBITaxon_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://bioassayontology.org/bao/external/BAO2.0_PATO_import.owl" uri="external/BAO2.0_PATO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://bioassayontology.org/bao/external/BAO2.0_UBERON_import.owl" uri="external/BAO2.0_UBERON_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://bioassayontology.org/bao/external/IAO_import.owl" uri="external/IAO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://bioassayontology.org/bao/external/OBI_import.owl" uri="external/OBI_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://bioassayontology.org/bao/external/UO_import.owl" uri="external/UO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://bioassayontology.org/bao_gpcr/external/BAO_GPCR1.0_GO_import.owl" uri="external/bao_gpcr_v1.1_go_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="external/annotations.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="external/bfo-classes-minimal.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="external/bfo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="external/core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="duplicate:http://purl.obolibrary.org/obo/bfo.owl" uri="external/temporal-intervals.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://purl.obolibrary.org/obo/ro.owl" uri="external/ro.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://semanticscience.org/ontology/sio.owl" uri="external/bao_gpcr_v1.1_sio_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao" uri="bao_gpcr_v1.1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao-bfo.owl" uri="bao_complete.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_complete_bfo.owl" uri="bao_complete_bfo_dev.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_complete_examples.owl" uri="bao_complete_examples.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_core_axiom.owl" uri="bao_core.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_external.owl" uri="bao_external.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_metadata.owl" uri="bao_metadata.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_module_biology.owl" uri="bao_module_biology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_module_properties.owl" uri="bao_module_properties.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_module_vocabularies.owl" uri="bao_module_vocabularies.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_ro_combinator.owl" uri="bao_ro_combinator.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl" uri="bao_vocabulary_assay.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl" uri="bao_vocabulary_assaykit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl" uri="bao_vocabulary_biology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_vocabulary_instrument.owl" uri="bao_vocabulary_instrument.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_vocabulary_materialentity.owl" uri="bao_vocabulary_materialentity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_vocabulary_method.owl" uri="bao_vocabulary_method.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_vocabulary_organization.owl" uri="bao_vocabulary_organization.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_vocabulary_people.owl" uri="bao_vocabulary_people.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_vocabulary_phenotype.owl" uri="bao_vocabulary_phenotype.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_vocabulary_properties.owl" uri="bao_vocabulary_properties.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_vocabulary_quality.owl" uri="bao_vocabulary_quality.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl" uri="bao_vocabulary_result.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_vocabulary_ro.owl" uri="bao_vocabulary_ro.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_vocabulary_role.owl" uri="bao_vocabulary_role.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_vocabulary_screenedentity.owl" uri="bao_vocabulary_screenedentity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_vocabulary_software.owl" uri="bao_vocabulary_software.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.bioassayontology.org/bao/bao_vocabulary_uo.owl" uri="bao_vocabulary_unit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="duplicate:http://www.bioassayontology.org/bao/external/LIFE_DOID_import.owl" uri="external/BAO2.0_DOID_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="duplicate:http://www.bioassayontology.org/bao/external/LIFE_DOID_import.owl" uri="external/BAO_DOID_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="http://www.w3.org/2002/07/owl" uri="previousReleases/BAO_v09b461.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="shadowed:http://www.bioassayontology.org/bao" uri="previousReleases/BAOv1.2b868.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="shadowed:http://www.bioassayontology.org/bao" uri="previousReleases/BAOv1.5b1281.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="shadowed:http://www.bioassayontology.org/bao" uri="previousReleases/BAOv1.6.2_b1841.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="shadowed:http://www.bioassayontology.org/bao" uri="previousReleases/BAOv1.6_b1395.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="shadowed:http://www.bioassayontology.org/bao" uri="previousReleases/BAO_v09b553.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="shadowed:http://www.bioassayontology.org/bao" uri="previousReleases/BAO_v09b558.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="shadowed:http://www.bioassayontology.org/bao" uri="previousReleases/BAO_v09b768.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="shadowed:http://www.bioassayontology.org/bao" uri="previousReleases/BAO_v1.3b1019.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="shadowed:http://www.bioassayontology.org/bao" uri="previousReleases/BAO_v1.4b1080.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1454454475295" name="shadowed:http://www.bioassayontology.org/bao" uri="previousReleases/BAO_v1.4b1090.owl"/>
+    </group>
+</catalog>
