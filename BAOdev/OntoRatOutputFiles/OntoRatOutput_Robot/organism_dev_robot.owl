@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- ex:NCBITaxon_10029 -->
+
+    <Class rdf:about="ex:NCBITaxon_10029">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/26/16</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">662</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cricetulus griseus</rdfs:label>
+    </Class>
+    
+
+
+    <!-- ex:NCBITaxon_10298 -->
+
+    <Class rdf:about="ex:NCBITaxon_10298">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/22/16</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">624379</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human Herpes virus 1</rdfs:label>
+    </Class>
+    
+
+
+    <!-- ex:NCBITaxon_1392� -->
+
+    <Class rdf:about="ex:NCBITaxon_1392�">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/20/16</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">588501</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacillus anthracis</rdfs:label>
+    </Class>
+    
+
+
+    <!-- ex:NCBITaxon_1491 -->
+
+    <Class rdf:about="ex:NCBITaxon_1491">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/20/16</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">588459</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clostridium botulinum</rdfs:label>
+    </Class>
+    
+
+
+    <!-- ex:NCBITaxon_1710587 -->
+
+    <Class rdf:about="ex:NCBITaxon_1710587">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">guinea pig</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/1/16</obo:IAO_0000116>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/21/16</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">588847</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">602172</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cavia porcellus</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photuris pennsylvanica</rdfs:label>
+    </Class>
+    
+
+
+    <!-- ex:NCBITaxon_210 -->
+
+    <Class rdf:about="ex:NCBITaxon_210">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/19/16</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">435030</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Helicobacter pylori</rdfs:label>
+    </Class>
+    
+
+
+    <!-- ex:NCBITaxon_469 -->
+
+    <Class rdf:about="ex:NCBITaxon_469">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/6/16</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">624096</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/NCBITAXON/469</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acinetobacter</rdfs:label>
+    </Class>
+    
+
+
+    <!-- ex:NCBITaxon_5207� -->
+
+    <Class rdf:about="ex:NCBITaxon_5207�">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/9/16</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">651654</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cryptococcus neoformans</rdfs:label>
+    </Class>
+    
+
+
+    <!-- ex:NCBITaxon_573 -->
+
+    <Class rdf:about="ex:NCBITaxon_573">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/6/16</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">624082</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Klebsiella pneumoniae</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000551 -->
+
+    <Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000551"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 0.0.1+907ef2e) https://github.com/owlcs/owlapi -->
+
