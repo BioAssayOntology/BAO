@@ -366,7 +366,7 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0140009 -->
 
     <Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140009">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CytoTox-Glo Cytotoxicity Assay (Promega) uses a luminogenic peptide substrate of luciferase, the AAF-Glo Substrate, to measure dead-cell protease activity, which is released from cells that have lost membrane integrity. </obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/22/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">435031</obo:IAO_0000119>
@@ -460,7 +460,7 @@ http://www.bdbiosciences.com/ds/ab/others/SF47641.pdf</obo:IAO_0000119>
     <!-- http://www.bioassayontology.org/bao#BAO_0140016 -->
 
     <Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140016">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ultra-Glo (Promega) is a thermostable recombinant luciferase that can be coupled with different luciferin-based substrates to generate a luminescent signal proportional to the substrate abundance.</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/26/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">488901</obo:IAO_0000119>

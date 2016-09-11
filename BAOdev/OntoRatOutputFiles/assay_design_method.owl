@@ -51,12 +51,6 @@
     
 
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0000008 -->
-
-    <Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000008"/>
-    
-
-
     <!-- http://www.bioassayontology.org/bao#BAO_0000127 -->
 
     <Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000127"/>
@@ -95,7 +89,7 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0040012 -->
 
     <Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040012">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_9000045"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040011"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Second messengers relay and amplify signals from receptors to the cell interior as part of a signaling event. Examples include cAMP, cGMP, calcium, nitric oxide, diacylglycerol, etc. Levels of these second messengers are measured to reflect strength of the signaling. </obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/7/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">651719</obo:IAO_0000119>
@@ -107,7 +101,7 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0040013 -->
 
     <Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040013">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000008"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040011"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measuring lipid abundance could include mass spec-based methods and lipid droplet formation, a fluorescent intensity+image analysis assay to measure lipid stored in droplets within a cell,</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/21/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1656</obo:IAO_0000119>
@@ -119,7 +113,7 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0040014 -->
 
     <Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040014">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000008"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040011"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/28/16</obo:IAO_0000116>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein abundance method</rdfs:label>
     </Class>
@@ -193,12 +187,6 @@
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">463200</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sub-cellular morphology assessment method</rdfs:label>
     </Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_9000045 -->
-
-    <Class rdf:about="http://www.bioassayontology.org/bao#BAO_9000045"/>
 </rdf:RDF>
 
 

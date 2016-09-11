@@ -63,10 +63,10 @@
     
 
 
-    <!-- http://www.bioassayontology.org/bao#BAO_00100012� -->
+    <!-- http://www.bioassayontology.org/bao#BAO_00100012_ -->
 
-    <Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100012�">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
+    <Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100012_">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000508"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/21/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">485336</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12 well plate</rdfs:label>
@@ -77,7 +77,7 @@
     <!-- http://www.bioassayontology.org/bao#BAO_00100013 -->
 
     <Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100013">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000508"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/26/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2545</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 well plate</rdfs:label>
