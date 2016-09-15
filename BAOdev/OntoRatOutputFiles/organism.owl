@@ -1,13 +1,23 @@
 <?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
 <rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.w3.org/2002/07/owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
-    <Ontology/>
+    <Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_organism_dev.owl"/>
     
 
 
@@ -24,19 +34,19 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    <AnnotationProperty rdf:about="&obo;IAO_0000115"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    <AnnotationProperty rdf:about="&obo;IAO_0000116"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
-    <AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    <AnnotationProperty rdf:about="&obo;IAO_0000119"/>
     
 
 
@@ -54,11 +64,11 @@
     <!-- ex:NCBITaxon_10029 -->
 
     <Class rdf:about="ex:NCBITaxon_10029">
+        <rdfs:label rdf:datatype="&xsd;string">Cricetulus griseus</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hamster</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/26/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">662</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cricetulus griseus</rdfs:label>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">5/26/16</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">662</obo:IAO_0000119>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">hamster</obo:IAO_0000115>
     </Class>
     
 
@@ -66,10 +76,10 @@
     <!-- ex:NCBITaxon_10298 -->
 
     <Class rdf:about="ex:NCBITaxon_10298">
+        <rdfs:label rdf:datatype="&xsd;string">Human Herpes virus 1</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/22/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">624379</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human Herpes virus 1</rdfs:label>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">6/22/16</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">624379</obo:IAO_0000119>
     </Class>
     
 
@@ -77,10 +87,10 @@
     <!-- ex:NCBITaxon_1392� -->
 
     <Class rdf:about="ex:NCBITaxon_1392�">
+        <rdfs:label rdf:datatype="&xsd;string">Bacillus anthracis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/20/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">588501</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacillus anthracis</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">588501</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">7/20/16</obo:IAO_0000116>
     </Class>
     
 
@@ -88,10 +98,10 @@
     <!-- ex:NCBITaxon_1491 -->
 
     <Class rdf:about="ex:NCBITaxon_1491">
+        <rdfs:label rdf:datatype="&xsd;string">Clostridium botulinum</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/20/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">588459</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clostridium botulinum</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">588459</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">7/20/16</obo:IAO_0000116>
     </Class>
     
 
@@ -99,14 +109,14 @@
     <!-- ex:NCBITaxon_1710587 -->
 
     <Class rdf:about="ex:NCBITaxon_1710587">
+        <rdfs:label rdf:datatype="&xsd;string">Cavia porcellus</rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string">Photuris pennsylvanica</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">guinea pig</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/1/16</obo:IAO_0000116>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/21/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">588847</obo:IAO_0000119>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">602172</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cavia porcellus</rdfs:label>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photuris pennsylvanica</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">588847</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">602172</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">7/1/16</obo:IAO_0000116>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">7/21/16</obo:IAO_0000116>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">guinea pig</obo:IAO_0000115>
     </Class>
     
 
@@ -114,10 +124,10 @@
     <!-- ex:NCBITaxon_210 -->
 
     <Class rdf:about="ex:NCBITaxon_210">
+        <rdfs:label rdf:datatype="&xsd;string">Helicobacter pylori</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/19/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">435030</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Helicobacter pylori</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">435030</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">7/19/16</obo:IAO_0000116>
     </Class>
     
 
@@ -125,11 +135,11 @@
     <!-- ex:NCBITaxon_469 -->
 
     <Class rdf:about="ex:NCBITaxon_469">
+        <rdfs:label rdf:datatype="&xsd;string">Acinetobacter</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/6/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">624096</obo:IAO_0000119>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/NCBITAXON/469</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acinetobacter</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">624096</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">7/6/16</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://purl.bioontology.org/ontology/NCBITAXON/469</obo:IAO_0000119>
     </Class>
     
 
@@ -137,10 +147,10 @@
     <!-- ex:NCBITaxon_5207� -->
 
     <Class rdf:about="ex:NCBITaxon_5207�">
+        <rdfs:label rdf:datatype="&xsd;string">Cryptococcus neoformans</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/9/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">651654</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cryptococcus neoformans</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">651654</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">7/9/16</obo:IAO_0000116>
     </Class>
     
 
@@ -148,10 +158,10 @@
     <!-- ex:NCBITaxon_573 -->
 
     <Class rdf:about="ex:NCBITaxon_573">
+        <rdfs:label rdf:datatype="&xsd;string">Klebsiella pneumoniae</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/6/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">624082</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Klebsiella pneumoniae</rdfs:label>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">624082</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">7/6/16</obo:IAO_0000116>
     </Class>
     
 
@@ -163,5 +173,5 @@
 
 
 
-<!-- Generated by the OWL API (version 0.0.1+907ef2e) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
 

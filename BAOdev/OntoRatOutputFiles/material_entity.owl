@@ -17,7 +17,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
-    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_evol_assay_material_entity_vocabulary.owl"/>
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_material_entity_dev.owl"/>
     
 
 
