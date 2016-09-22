@@ -1,4 +1,8 @@
 <?xml version="1.0"?>
+<<<<<<< HEAD
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl#"
+     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl"
+=======
 
 
 <!DOCTYPE rdf:RDF [
@@ -12,12 +16,17 @@
 
 <rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.w3.org/2002/07/owl"
+>>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
+<<<<<<< HEAD
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl"/>
+=======
     <Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_result_dev.owl"/>
+>>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
@@ -34,19 +43,31 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
+<<<<<<< HEAD
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+=======
     <AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+>>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
+<<<<<<< HEAD
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+=======
     <AnnotationProperty rdf:about="&obo;IAO_0000116"/>
+>>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
+<<<<<<< HEAD
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+=======
     <AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+>>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
@@ -63,12 +84,21 @@
 
     <!-- http://www.bioassayontology.org/bao#BAO_0002162 -->
 
-    <Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002162"/>
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002162"/>
     
 
 
     <!-- http://www.bioassayontology.org/bao#BAO_0080001 -->
 
+<<<<<<< HEAD
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080001">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The concentration of compound required to kill 50% of a cell population (i.e., 50% inhibitory concentration in a cytotoxicity assay).</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/22/16</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2649</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TC50</rdfs:label>
+    </owl:Class>
+=======
     <Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080001">
         <rdfs:label rdf:datatype="&xsd;string">TC50</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
@@ -76,11 +106,21 @@
         <obo:IAO_0000116 rdf:datatype="&xsd;string">6/22/16</obo:IAO_0000116>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">The concentration of compound required to kill 50%_of a cell population (i.e., 50% inhibitory concentration in a cytotoxicity assay).</obo:IAO_0000115>
     </Class>
+>>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
     <!-- http://www.bioassayontology.org/bao#BAO_0080002 -->
 
+<<<<<<< HEAD
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080002">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50% Tissue Culture Infective Dose (TCID50) is the measure of infectious virus titer. This endpoint dilution assay quantifies the amount of virus required to kill 50% of infected hosts or to produce a cytopathic effect in 50% of inoculated tissue culture cells.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/21/16</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TCID50</rdfs:label>
+    </owl:Class>
+=======
     <Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080002">
         <rdfs:label rdf:datatype="&xsd;string">TCID50</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
@@ -88,6 +128,7 @@
         <obo:IAO_0000115 rdf:datatype="&xsd;string">50% Tissue Culture Infective Dose (TCID50) is the measure of infectious virus titer. This endpoint dilution assay quantifies the amount of virus required to kill 50% of infected hosts or to produce a cytopathic effect in 50% of inoculated tissue culture cells.</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="&xsd;string">7/21/16</obo:IAO_0000116>
     </Class>
+>>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
 </rdf:RDF>
 
 

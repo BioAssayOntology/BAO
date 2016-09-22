@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1473631554774" name="duplicate:http://purl.obolibrary.org/obo/ontorat_0000001.owl" uri="bioassay.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1473631554774" name="duplicate:http://purl.obolibrary.org/obo/ontorat_0000001.owl" uri="biology.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1473631554774" name="duplicate:http://purl.obolibrary.org/obo/ontorat_0000001.owl" uri="material_entity.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1473631554774" name="duplicate:http://www.w3.org/2002/07/owl" uri="assay_cell_line.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1473631554774" name="duplicate:http://www.w3.org/2002/07/owl" uri="assay_design_method.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1473631554774" name="duplicate:http://www.w3.org/2002/07/owl" uri="assay_endpoint_component.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1473631554774" name="duplicate:http://www.w3.org/2002/07/owl" uri="assay_footprint.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1473631554774" name="duplicate:http://www.w3.org/2002/07/owl" uri="assay_format_component.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1473631554774" name="duplicate:http://www.w3.org/2002/07/owl" uri="assay_kit.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1473631554774" name="duplicate:http://www.w3.org/2002/07/owl" uri="detection_instrument.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1473631554774" name="duplicate:http://www.w3.org/2002/07/owl" uri="organism.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1473631554774" name="duplicate:http://www.w3.org/2002/07/owl" uri="result.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1474514535655" name="duplicate:http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl" uri="assay_footprint.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1474514535655" name="duplicate:http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl" uri="bioassay.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1474514535655" name="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl" uri="assay_kit.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1474514535655" name="duplicate:http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl" uri="assay_cell_line.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1474514535655" name="duplicate:http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl" uri="assay_format_component.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1474514535655" name="duplicate:http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl" uri="biology.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1474514535655" name="duplicate:http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl" uri="organism.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1474514535655" name="http://www.bioassayontology.org/bao/bao_vocabulary_instrument.owl" uri="detection_instrument.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1474514535655" name="http://www.bioassayontology.org/bao/bao_vocabulary_materialentity.owl" uri="material_entity.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1474514535655" name="http://www.bioassayontology.org/bao/bao_vocabulary_method.owl" uri="assay_design_method.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1474514535655" name="duplicate:http://www.bioassayontology.org/bao/bao_vocabulary_result.owl" uri="assay_endpoint_component.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1474514535655" name="duplicate:http://www.bioassayontology.org/bao/bao_vocabulary_result.owl" uri="result.owl"/>
     </group>
 </catalog>
