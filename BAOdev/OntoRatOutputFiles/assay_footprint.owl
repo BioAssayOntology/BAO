@@ -1,32 +1,13 @@
 <?xml version="1.0"?>
-<<<<<<< HEAD
-<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl#"
-     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl"
-=======
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
-
-<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.w3.org/2002/07/owl"
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_assay_footprint_dev.owl#"
+     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_assay_footprint_dev.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
-<<<<<<< HEAD
-    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl"/>
-=======
-    <Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assay_footprint_dev.owl"/>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assay_footprint_dev.owl"/>
     
 
 
@@ -43,31 +24,19 @@
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-<<<<<<< HEAD
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-=======
-    <AnnotationProperty rdf:about="&obo;IAO_0000115"/>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
-<<<<<<< HEAD
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
-=======
-    <AnnotationProperty rdf:about="&obo;IAO_0000116"/>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
-<<<<<<< HEAD
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
-=======
-    <AnnotationProperty rdf:about="&obo;IAO_0000119"/>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
@@ -96,127 +65,72 @@
 
     <!-- http://www.bioassayontology.org/bao#BAO_00100012_ -->
 
-<<<<<<< HEAD
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100012_">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000508"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/21/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">485336</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12 well plate</rdfs:label>
     </owl:Class>
-=======
-    <Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100012_">
-        <rdfs:label rdf:datatype="&xsd;string">12 well plate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000508"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">485336</obo:IAO_0000119>
-        <obo:IAO_0000116 rdf:datatype="&xsd;string">6/21/16</obo:IAO_0000116>
-    </Class>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
     <!-- http://www.bioassayontology.org/bao#BAO_00100013 -->
 
-<<<<<<< HEAD
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100013">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000508"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/26/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2545</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 well plate</rdfs:label>
     </owl:Class>
-=======
-    <Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100013">
-        <rdfs:label rdf:datatype="&xsd;string">6 well plate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000508"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">2545</obo:IAO_0000119>
-        <obo:IAO_0000116 rdf:datatype="&xsd;string">6/26/16</obo:IAO_0000116>
-    </Class>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
     <!-- http://www.bioassayontology.org/bao#BAO_00100014 -->
 
-<<<<<<< HEAD
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100014">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/31/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">588412</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tube</rdfs:label>
     </owl:Class>
-=======
-    <Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100014">
-        <rdfs:label rdf:datatype="&xsd;string">tube</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
-        <obo:IAO_0000116 rdf:datatype="&xsd;string">5/31/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">588412</obo:IAO_0000119>
-    </Class>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
     <!-- http://www.bioassayontology.org/bao#BAO_00100015 -->
 
-<<<<<<< HEAD
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100015">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/1/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">588370</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microscope slide</rdfs:label>
     </owl:Class>
-=======
-    <Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100015">
-        <rdfs:label rdf:datatype="&xsd;string">microscope slide</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">588370</obo:IAO_0000119>
-        <obo:IAO_0000116 rdf:datatype="&xsd;string">6/1/16</obo:IAO_0000116>
-    </Class>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
     <!-- http://www.bioassayontology.org/bao#BAO_00100016 -->
 
-<<<<<<< HEAD
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100016">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/13/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">623915</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dish</rdfs:label>
     </owl:Class>
-=======
-    <Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100016">
-        <rdfs:label rdf:datatype="&xsd;string">dish</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
-        <obo:IAO_0000116 rdf:datatype="&xsd;string">5/13/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">623915</obo:IAO_0000119>
-    </Class>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
     <!-- http://www.bioassayontology.org/bao#BAO_00100017 -->
 
-<<<<<<< HEAD
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100017">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_00100016"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/13/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">623915</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 cm dish</rdfs:label>
     </owl:Class>
-=======
-    <Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100017">
-        <rdfs:label rdf:datatype="&xsd;string">15 cm dish</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_00100016"/>
-        <obo:IAO_0000116 rdf:datatype="&xsd;string">5/13/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">623915</obo:IAO_0000119>
-    </Class>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
     <!-- http://www.bioassayontology.org/bao#BAO_00100018 -->
 
-<<<<<<< HEAD
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100018">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gel electrophoresis is a method for separation and analysis of macromolecules (DNA, RNA and proteins) and their fragments, based on their size and charge. This general method encompasses different types of matrices (gels) with different properties. The most common types are polyacrylamide and agarose, both low-throughput methods.</obo:IAO_0000115>
@@ -224,21 +138,11 @@
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">449751</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gel</rdfs:label>
     </owl:Class>
-=======
-    <Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100018">
-        <rdfs:label rdf:datatype="&xsd;string">gel</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">449751</obo:IAO_0000119>
-        <obo:IAO_0000116 rdf:datatype="&xsd;string">6/2/16</obo:IAO_0000116>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Gel electrophoresis is a method for separation and analysis of macromolecules (DNA, RNA and proteins) and their fragments, based on their size and charge. This general method encompasses different types of matrices (gels) with different properties. The most common types are polyacrylamide and agarose, both low-throughput methods.</obo:IAO_0000115>
-    </Class>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
     <!-- http://www.bioassayontology.org/bao#BAO_00100019 -->
 
-<<<<<<< HEAD
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100019">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_00100018"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polyacrylamide gel electrophoresis (PAGE), describes a technique to separate biological macromolecules, usually proteins or nucleic acids, according to their electrophoretic mobility. Mobility is a function of the length, conformation and charge of the molecule.  Gels can be native or denaturing (urea for nucleic acids, SDS for proteins).  A low-throughput method.</obo:IAO_0000115>
@@ -246,39 +150,21 @@
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">449751</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAGE</rdfs:label>
     </owl:Class>
-=======
-    <Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100019">
-        <rdfs:label rdf:datatype="&xsd;string">PAGE</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_00100018"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">449751</obo:IAO_0000119>
-        <obo:IAO_0000116 rdf:datatype="&xsd;string">6/2/16</obo:IAO_0000116>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Polyacrylamide gel electrophoresis (PAGE), describes a technique to separate biological macromolecules, usually proteins or nucleic acids, according to their electrophoretic mobility. Mobility is a function of the length, conformation and charge of the molecule.  Gels can be native or denaturing (urea for nucleic acids, SDS for proteins).  A low-throughput method.</obo:IAO_0000115>
-    </Class>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
     <!-- http://www.bioassayontology.org/bao#BAO_00100020 -->
 
-<<<<<<< HEAD
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100020">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_00100018"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agarose gel electrophoresis is a method to separate a mixed population of DNA or proteins in a matrix of agarose. The proteins may be separated by charge and/or size, and the DNA and RNA fragments by length, by applying an electric field to move the charged molecules through an agarose matrix.  A low-throughput method.</obo:IAO_0000115>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agarose gel</rdfs:label>
     </owl:Class>
-=======
-    <Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100020">
-        <rdfs:label rdf:datatype="&xsd;string">agarose gel</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_00100018"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Agarose gel electrophoresis is a method to separate a mixed population of DNA or proteins in a matrix of agarose. The proteins may be separated by charge and/or size, and the DNA and RNA fragments by length, by applying an electric field to move the charged molecules through an agarose matrix.  A low-throughput method.</obo:IAO_0000115>
-    </Class>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
     <!-- http://www.bioassayontology.org/bao#BAO_00100021 -->
 
-<<<<<<< HEAD
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100021">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coverslips are typically thin square pieces of glass</obo:IAO_0000115>
@@ -286,38 +172,20 @@
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1219</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coverslip</rdfs:label>
     </owl:Class>
-=======
-    <Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100021">
-        <rdfs:label rdf:datatype="&xsd;string">coverslip</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">1219</obo:IAO_0000119>
-        <obo:IAO_0000116 rdf:datatype="&xsd;string">7/2/16</obo:IAO_0000116>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Coverslips are typically thin square pieces of glass</obo:IAO_0000115>
-    </Class>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
     <!-- http://www.bioassayontology.org/bao#BAO_00100022 -->
 
-<<<<<<< HEAD
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100022">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000508"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/22/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">602291</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16-well </rdfs:label>
     </owl:Class>
-=======
-    <Class rdf:about="http://www.bioassayontology.org/bao#BAO_00100022">
-        <rdfs:label rdf:datatype="&xsd;string">16-well </rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000508"/>
-        <obo:IAO_0000119 rdf:datatype="&xsd;string">602291</obo:IAO_0000119>
-        <obo:IAO_0000116 rdf:datatype="&xsd;string">7/22/16</obo:IAO_0000116>
-    </Class>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 0.0.1+907ef2e) https://github.com/owlcs/owlapi -->
 

@@ -1,33 +1,13 @@
 <?xml version="1.0"?>
-<<<<<<< HEAD
-<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl#"
-     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl"
-=======
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
-
-<rdf:RDF xmlns="&obo;ontorat_0000001.owl#"
-     xml:base="&obo;ontorat_0000001.owl"
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_bioassay_dev.owl#"
+     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_bioassay_dev.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
-<<<<<<< HEAD
-    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl"/>
-=======
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_bioassay_dev.owl"/>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     
 
 
@@ -42,128 +22,24 @@
     
 
 
-<<<<<<< HEAD
-=======
-    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000112"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114"/>
-    
-
-
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
 
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
     
 
 
-<<<<<<< HEAD
-=======
-    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
-    
-
-
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     
 
 
-<<<<<<< HEAD
-=======
-    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
-
-    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
-
-    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
-
-    <owl:AnnotationProperty rdf:about="&rdfs;seeAlso"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral -->
-
-    <rdfs:Datatype rdf:about="&rdf;PlainLiteral"/>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#Literal -->
-
-    <rdfs:Datatype rdf:about="&rdfs;Literal"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#float -->
-
-    <rdfs:Datatype rdf:about="&xsd;float"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#integer -->
-
-    <rdfs:Datatype rdf:about="&xsd;integer"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#nonNegativeInteger -->
-
-    <rdfs:Datatype rdf:about="&xsd;nonNegativeInteger"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#string -->
-
-    <rdfs:Datatype rdf:about="&xsd;string"/>
-    
-
-
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -191,17 +67,10 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010007">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
-<<<<<<< HEAD
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A common in vitro ADME assay that tests the stability of compounds when incubated with liver microsomes (subcellular fractions which contain membrane-bound drug-metabolizing enzymes).  Assay is used to measure in vitro intrinsic clearance or to identify metabolites formed. Typically liver microsomes from one or more mammalian species (mouse, rat, dog, monkey, human) are analyzed to understand differences in metabolism. Can be reported as % recovery after a set time (single timepoint), or as half-life (multiple timepoints).</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/6/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">504610</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microsomal stability assay</rdfs:label>
-=======
-        <obo:IAO_0000116>Date from CDD:42527</obo:IAO_0000116>
-        <obo:IAO_0000116>Description:under &apos;pharmacokinetic assay&apos;, include &apos;liver microsome stability assay&apos;--as it is different from bioavailability or &apos;tissue/ protein binding&apos;</obo:IAO_0000116>
-        <obo:IAO_0000119>PubChem AID:504610</obo:IAO_0000119>
-        <obo:IAO_0000115>A common in vitro ADME assay that tests the stability of compounds when incubated with liver microsomes (subcellular fractions which contain membrane-bound drug-metabolizing enzymes).  Assay is used to measure in vitro intrinsic clearance or to identify metabolites formed. Typically liver microsomes from one or more mammalian species (mouse, rat, dog, monkey, human) are analyzed to understand differences in metabolism. Can be reported as % recovery after a set time (single timepoint), or as half-life (multiple timepoints).</obo:IAO_0000115>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     </owl:Class>
     
 
@@ -210,17 +79,10 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010008">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
-<<<<<<< HEAD
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A common in vitro ADME assay that tests the stability of compounds when incubated with plasma.  Assay is used to measure stability of new chemical entities in plasma, as compounds that rapidly degrade in plasma generally show poor in vivo efficacy. Typically lplasma from one or more mammalian species (mouse, rat, dog, monkey, human) are analyzed. Can be reported as % recovery after a set time (single timepoint), or as half-life (multiple timepoints).</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/6/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">504605</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasma stability assay</rdfs:label>
-=======
-        <obo:IAO_0000115>A common in vitro ADME assay that tests the stability of compounds when incubated with plasma.  Assay is used to measure stability of new chemical entities in plasma, as compounds that rapidly degrade in plasma generally show poor in vivo efficacy. Typically lplasma from one or more mammalian species (mouse, rat, dog, monkey, human) are analyzed. Can be reported as % recovery after a set time (single timepoint), or as half-life (multiple timepoints).</obo:IAO_0000115>
-        <obo:IAO_0000116>Date from CDD:42527</obo:IAO_0000116>
-        <obo:IAO_0000116>Description:under &apos;pharmacokinetic assay&apos;, include &apos;plasma stability assay&apos;--as it is different from bioavailability or &apos;tissue/ protein binding</obo:IAO_0000116>
-        <obo:IAO_0000119>PubChem AID:504605</obo:IAO_0000119>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     </owl:Class>
     
 
@@ -229,14 +91,9 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010009">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
-<<<<<<< HEAD
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A common in vitro ADME assay that uses the Caco-2 cell line (derived from human colon carcinoma) to assess transport in both directions (apical to basolateral (A-B) and basolateral to apical (B-A)) across the cell monolayer), to predict the in vivo absorption of drugs across the gut wall and to investigate drug efflux.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">504629</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caco-2 permeability assay</rdfs:label>
-=======
-        <obo:IAO_0000119>PubChem AID:504629</obo:IAO_0000119>
-        <obo:IAO_0000115>A common in vitro ADME assay that uses the Caco-2 cell line (derived from human colon carcinoma) to assess transport in both directions (apical to basolateral (A-B) and basolateral to apical (B-A)) across the cell monolayer), to predict the in vivo absorption of drugs across the gut wall and to investigate drug efflux.</obo:IAO_0000115>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     </owl:Class>
     
 
@@ -245,14 +102,9 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010010">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
-<<<<<<< HEAD
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physicochemical assays measure inherent properties of molecules, and include turbidimetric and thermodynamic solubility (in water or PBS), chemical stability, pKa, and lipophilicity (logP and logD)</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">504606</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physicochemical assay</rdfs:label>
-=======
-        <obo:IAO_0000119>PubChem AID:504606</obo:IAO_0000119>
-        <obo:IAO_0000115>Physicochemical assays measure inherent properties of molecules, and include turbidimetric and thermodynamic solubility (in water or PBS), chemical stability, pKa, and lipophilicity (logP and logD)</obo:IAO_0000115>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     </owl:Class>
     
 
@@ -261,22 +113,13 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010011">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010010"/>
-<<<<<<< HEAD
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A physicochemical assay that measures the maximum solubility of a molecule in a particular solvent (typically water or PBS).</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">504606</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solubility assay</rdfs:label>
-=======
-        <obo:IAO_0000115>A physicochemical assay that measures the maximum solubility of a molecule in a particular solvent (typically water or PBS).</obo:IAO_0000115>
-        <obo:IAO_0000119>PubChem AID:504606</obo:IAO_0000119>
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
     </owl:Class>
 </rdf:RDF>
 
 
 
-<<<<<<< HEAD
 <!-- Generated by the OWL API (version 0.0.1+907ef2e) https://github.com/owlcs/owlapi -->
-=======
-<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
->>>>>>> 6b012da8f2d1abefe860a157b24df22da23f11d6
 
