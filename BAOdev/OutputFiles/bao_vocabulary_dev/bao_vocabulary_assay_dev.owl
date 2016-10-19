@@ -57,6 +57,12 @@
     
 
 
+    <!-- http://www.bioassayontology.org/bao#BAO_0000029 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000029"/>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0000508 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000508"/>
@@ -291,6 +297,18 @@
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9/30/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">651876</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensor chip CM5</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0010025 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010025">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000029"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Assays performed in the pre-clinical development stage. These are assays on a lead candidate to develop it to an Investigative New Drug (IND). This stage typically includes both in vitro and in vivo assays, including thorough PK/PD profiling, toxicity, and in vivo dosing/ formulation optimization for efficacy.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 687012</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">preclinical development stage</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
