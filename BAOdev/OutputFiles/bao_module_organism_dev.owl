@@ -54,7 +54,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_10029 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10029">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000362"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hamster</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 5/26/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 662</obo:IAO_0000119>
@@ -66,7 +66,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_10245 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10245">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000564"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000232"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vaccinia virus VV</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 720580</obo:IAO_0000119>
@@ -79,7 +79,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_10298 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10298">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000232"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/22/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 624379</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human Herpes virus 1</rdfs:label>
@@ -90,7 +90,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11250 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11250">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000556"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000232"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human RSV</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 651932</obo:IAO_0000119>
@@ -103,7 +103,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11269 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11269">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000563"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000232"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 720532</obo:IAO_0000119>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/NCBITAXON/11269</obo:IAO_0000119>
@@ -115,7 +115,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_11620 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_11620">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000565"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000232"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 540256</obo:IAO_0000119>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/NCBITAXON/11620</obo:IAO_0000119>
@@ -127,7 +127,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1392 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1392">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000364"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/20/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 588501</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacillus anthracis</rdfs:label>
@@ -138,7 +138,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1491 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1491">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000364"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/20/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 588459</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Clostridium botulinum</rdfs:label>
@@ -149,7 +149,8 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1710587 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1710587">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000362"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000511"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">guinea pig</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/1/2016</obo:IAO_0000116>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/21/2016</obo:IAO_0000116>
@@ -164,7 +165,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_210 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_210">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000364"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/19/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 435030</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Helicobacter pylori</rdfs:label>
@@ -175,7 +176,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_37124 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_37124">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000553"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000232"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 623935</obo:IAO_0000119>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/NCBITAXON/37124</obo:IAO_0000119>
@@ -187,7 +188,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_452646 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_452646">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000566"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000362"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">American mink</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 720536</obo:IAO_0000119>
@@ -200,7 +201,8 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_469 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_469">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000364"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">any species of Acinetobacter</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/6/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 624096</obo:IAO_0000119>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/NCBITAXON/469</obo:IAO_0000119>
@@ -209,10 +211,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_4896 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_4896">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000233"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fission yeast</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schizosaccharomyces pombe</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_5207 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_5207">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000418"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cryptococcus neoformans grows vegetatively as budding (unicellular) yeast but during the sexual cycle, switches from yeast growth to hyphal (multicellular) growth. This morphoogical development may be relevant to cryptococcal pathogenicity.</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/9/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 651654</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cryptococcus neoformans</rdfs:label>
@@ -223,7 +237,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_573 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_573">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000364"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/6/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 624082</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Klebsiella pneumoniae</rdfs:label>
@@ -234,7 +248,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_6100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6100">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000552"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000511"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crystal jelly, a bioluminescent hydrozoan jellyfish, or hydromedusa; source of &apos;Green Fluorescent Protein&apos;(GFP).</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 602182</obo:IAO_0000119>
@@ -247,7 +261,8 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_6192 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6192">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000554"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000511"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liver fluke</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1906</obo:IAO_0000119>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/NCBITAXON/6192</obo:IAO_0000119>
@@ -259,7 +274,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_6289 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_6289">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000562"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000511"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">barber&apos;s pole worm (a common parasite of ruminants).</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 743032</obo:IAO_0000119>
@@ -272,7 +287,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_90988 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_90988">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000555"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000518"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fathead minnow</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1188</obo:IAO_0000119>
@@ -285,7 +300,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9395 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9395">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000560"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000362"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tree shrew</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1190</obo:IAO_0000119>
@@ -298,7 +313,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9462 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9462">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000559"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000362"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bush baby; any of several species of small nocturnal arboreal primates (family Galagidae)</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1190</obo:IAO_0000119>
@@ -311,7 +326,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9483 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9483">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000561"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000362"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">common marmoset</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1190</obo:IAO_0000119>
@@ -324,7 +339,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9541 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9541">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000558"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000362"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cynomolgus monkey; long-tailed macaque</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1190</obo:IAO_0000119>
@@ -337,7 +352,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9544 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_9544">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000557"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000362"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rhesus monkey; rhesus macaques</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1190</obo:IAO_0000119>
@@ -347,99 +362,45 @@
     
 
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0000551 -->
+    <!-- http://www.bioassayontology.org/bao#BAO_0000232 -->
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000551"/>
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000232"/>
     
 
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0000552 -->
+    <!-- http://www.bioassayontology.org/bao#BAO_0000233 -->
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000552"/>
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000233"/>
     
 
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0000553 -->
+    <!-- http://www.bioassayontology.org/bao#BAO_0000362 -->
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000553"/>
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000362"/>
     
 
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0000554 -->
+    <!-- http://www.bioassayontology.org/bao#BAO_0000364 -->
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000554"/>
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000364"/>
     
 
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0000555 -->
+    <!-- http://www.bioassayontology.org/bao#BAO_0000418 -->
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000555"/>
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000418"/>
     
 
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0000556 -->
+    <!-- http://www.bioassayontology.org/bao#BAO_0000511 -->
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000556"/>
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000511"/>
     
 
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0000557 -->
+    <!-- http://www.bioassayontology.org/bao#BAO_0000518 -->
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000557"/>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000558 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000558"/>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000559 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000559"/>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000560 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000560"/>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000561 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000561"/>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000562 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000562"/>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000563 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000563"/>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000564 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000564"/>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000565 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000565"/>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000566 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000566"/>
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000518"/>
 </rdf:RDF>
 
 
