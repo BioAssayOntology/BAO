@@ -86,8 +86,8 @@
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010006">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A common in vitro ADME assay that tests the stability of compounds when incubated with liver microsomes (subcellular fractions which contain membrane-bound drug-metabolizing enzymes).  Assay is used to measure in vitro intrinsic clearance or to identify metabolites formed. Typically liver microsomes from one or more mammalian species (mouse, rat, dog, monkey, human) are analyzed to understand differences in metabolism. Can be reported as % recovery after a set time (single timepoint), or as half-life (multiple timepoints).</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/6/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">504610</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/6/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 504610</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microsomal stability assay</rdfs:label>
     </owl:Class>
     
@@ -98,8 +98,8 @@
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010007">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A common in vitro ADME assay that tests the stability of compounds when incubated with plasma.  Assay is used to measure stability of new chemical entities in plasma, as compounds that rapidly degrade in plasma generally show poor in vivo efficacy. Typically lplasma from one or more mammalian species (mouse, rat, dog, monkey, human) are analyzed. Can be reported as % recovery after a set time (single timepoint), or as half-life (multiple timepoints).</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/6/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">504605</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/6/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 504605</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasma stability assay</rdfs:label>
     </owl:Class>
     
@@ -110,8 +110,8 @@
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010008">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A common in vitro ADME assay that uses the Caco-2 cell line (derived from human colon carcinoma) to assess transport in both directions (apical to basolateral (A-B) and basolateral to apical (B-A)) across the cell monolayer), to predict the in vivo absorption of drugs across the gut wall and to investigate drug efflux.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/6/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">504629</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/6/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 504629</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caco-2 permeability assay</rdfs:label>
     </owl:Class>
     
@@ -122,8 +122,8 @@
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010009">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Physicochemical assays measure inherent properties of molecules, and include turbidimetric and thermodynamic solubility (in water or PBS), chemical stability, pKa, and lipophilicity (logP and logD)</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/6/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">504606</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/6/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 504606</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">physicochemical assay</rdfs:label>
     </owl:Class>
     
@@ -134,8 +134,8 @@
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010010">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010009"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A physicochemical assay that measures the maximum solubility of a molecule in a particular solvent (typically water or PBS).</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/6/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">504606</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/6/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 504606</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solubility assay</rdfs:label>
     </owl:Class>
     
@@ -146,8 +146,8 @@
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010011">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An in vivo efficacy assay is a study perfromed in a whole, living organism (usually an animal such as a mouse or rat) to test the effects of a treatment on a specific disease modeled in this animal.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9/30/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">687012</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 687012</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in vivo efficacy assay</rdfs:label>
     </owl:Class>
     
@@ -157,8 +157,8 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010012">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000508"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/21/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">485336</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/21/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 485336</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12 well plate</rdfs:label>
     </owl:Class>
     
@@ -168,8 +168,8 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010013">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000508"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/26/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2545</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/26/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 2545</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6 well plate</rdfs:label>
     </owl:Class>
     
@@ -179,8 +179,8 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010014">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/31/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">588412</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 5/31/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 588412</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tube</rdfs:label>
     </owl:Class>
     
@@ -190,8 +190,8 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010015">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/1/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">588370</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 588370</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">microscope slide</rdfs:label>
     </owl:Class>
     
@@ -201,8 +201,8 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010016">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/13/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">623915</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 5/13/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 623915</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dish</rdfs:label>
     </owl:Class>
     
@@ -212,8 +212,8 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010017">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010016"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5/13/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">623915</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 5/13/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 623915</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">15 cm dish</rdfs:label>
     </owl:Class>
     
@@ -224,8 +224,8 @@
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010018">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gel electrophoresis is a method for separation and analysis of macromolecules (DNA, RNA and proteins) and their fragments, based on their size and charge. This general method encompasses different types of matrices (gels) with different properties. The most common types are polyacrylamide and agarose, both low-throughput methods.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/2/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">449751</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/2/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 449751</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gel</rdfs:label>
     </owl:Class>
     
@@ -236,8 +236,8 @@
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010019">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010018"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polyacrylamide gel electrophoresis (PAGE), describes a technique to separate biological macromolecules, usually proteins or nucleic acids, according to their electrophoretic mobility. Mobility is a function of the length, conformation and charge of the molecule.  Gels can be native or denaturing (urea for nucleic acids, SDS for proteins).  A low-throughput method.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/2/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">449751</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/2/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 449751</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PAGE</rdfs:label>
     </owl:Class>
     
@@ -248,7 +248,8 @@
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010020">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010018"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Agarose gel electrophoresis is a method to separate a mixed population of DNA or proteins in a matrix of agarose. The proteins may be separated by charge and/or size, and the DNA and RNA fragments by length, by applying an electric field to move the charged molecules through an agarose matrix.  A low-throughput method.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9/24/16</obo:IAO_0000116>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/24/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">agarose gel</rdfs:label>
     </owl:Class>
     
@@ -259,8 +260,8 @@
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010021">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coverslips are typically thin square pieces of glass</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/2/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1219</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/2/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1219</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coverslip</rdfs:label>
     </owl:Class>
     
@@ -270,9 +271,10 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010022">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000508"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/22/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">602291</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16-well </rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16 well electronic plate (&apos;E Plate 16&apos; (Roche Diagnostics)), used for electrophysiology</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/22/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 602291</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">16-well electronic plate</rdfs:label>
     </owl:Class>
     
 
@@ -282,8 +284,8 @@
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010023">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The word &apos;chip&apos; is used to describe any flat surface (glass, plastic, other) that may be coated or treated to impart certain properties to help in either the immobilization and/or measurement of certain properties of varied macromolecules (protien, nucleic acid, small molecule). If an array of molecules is immobilized on a chip, the preferred term is &apos;array&apos;.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9/30/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">651876</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 651876</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chip</rdfs:label>
     </owl:Class>
     
@@ -294,8 +296,8 @@
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010024">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010023"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensor chip CM5 is a chip used in Biacore (GE Healthcare) systems based on surface plasmon resonance (SPR) to measure molecular interactions with at least one molecule immobilized on a sensor surface. CM5 sensor chips have a matrix of carboxymethylated dextran covalently attached to a gold surface.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9/30/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">651876</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 651876</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensor chip CM5</rdfs:label>
     </owl:Class>
     

@@ -92,8 +92,8 @@
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080016">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The concentration of compound required to kill 50% of a cell population (i.e., 50% inhibitory concentration in a cytotoxicity assay).</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6/22/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2649</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/22/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 2649</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TC50</rdfs:label>
     </owl:Class>
     
@@ -104,8 +104,8 @@
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080017">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">50% Tissue Culture Infective Dose (TCID50) is the measure of infectious virus titer. This endpoint dilution assay quantifies the amount of virus required to kill 50% of infected hosts or to produce a cytopathic effect in 50% of inoculated tissue culture cells.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/21/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/21/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 2024</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TCID50</rdfs:label>
     </owl:Class>
     
@@ -115,8 +115,8 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080018">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000091"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/19/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">588831</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/19/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 588831</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">reversible inhibition</rdfs:label>
     </owl:Class>
     
@@ -126,7 +126,8 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080019">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000077"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/19/16</obo:IAO_0000116>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/19/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rate</rdfs:label>
     </owl:Class>
     
@@ -136,8 +137,8 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080020">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080019"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/6/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">602462</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/6/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 602462</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cm/sec</rdfs:label>
     </owl:Class>
     
@@ -147,8 +148,8 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080021">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080019"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/19/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">652113</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/19/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 652113</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nmol/sec</rdfs:label>
     </owl:Class>
     
@@ -158,8 +159,8 @@
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000190"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7/21/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2024</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/21/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 2024</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">log change</rdfs:label>
     </owl:Class>
     

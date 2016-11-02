@@ -1,1 +1,14 @@
-Term ID,proposed term's name,PubChem AID,existing BAO class for proposed (super) class,BAO parent ID,proposed super class for proposed term (optional),definition,hyperlinks,Class Type,Date from CDD,,ID,A rdfs:label,A IAO:0000119,,CI,,A IAO:0000115,A IAO:0000119,CLASS_TYPE,A IAO:0000116,,http://www.bioassayontology.org/bao#BAO_0700003,bivalent small molecule-peptide,PubChem AID: 451462,screened entity,http://www.bioassayontology.org/bao#BAO_0000076,,A synthetic ligand consisting of a small molecule tethered (covalently or non-covalently) to a peptide.,,subclass,Date from BAE: 5/5/2016,,http://www.bioassayontology.org/bao#BAO_0700004,FDA-approved compound library,PubChem AID: 1117303,compound library,http://www.bioassayontology.org/bao#BAO_0000648,,Any compound library consisting solely of small molecules that have been approved by the FDA. Often used for 'drug re-purposing' assays. The specific compounds included in any given FDA-approved compound library may differ based on availability or timing.,,subclass,Date from BAE: 9/30/2016,,
+Term ID,proposed term's name,PubChem AID,existing BAO class for proposed (super) class,BAO parent ID,proposed super class for proposed term (optional),definition,hyperlinks,Class Type,Date from CDD
+ID,A rdfs:label,A IAO:0000119 ,,CI ,,A IAO:0000115 ,A IAO:0000119 ,CLASS_TYPE,A IAO:0000116 
+http://www.bioassayontology.org/bao#BAO_0700003,bivalent small molecule-peptide,PubChem AID: 451462,screened entity,http://www.bioassayontology.org/bao#BAO_0000076,,A synthetic ligand consisting of a small molecule tethered (covalently or non-covalently) to a peptide.,,subclass,Date from BAE: 5/5/2016
+http://www.bioassayontology.org/bao#BAO_0700004,FDA-approved compound library,PubChem AID: 1117303,compound library,http://www.bioassayontology.org/bao#BAO_0000648,,Any compound library consisting solely of small molecules that have been approved by the FDA. Often used for 'drug re-purposing' assays. The specific compounds included in any given FDA-approved compound library may differ based on availability or timing.,,subclass,Date from BAE: 9/30/2016
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,

@@ -62,8 +62,8 @@
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050002">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000035"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any method entailing primarily routine examination, requiring no special instrumentation.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9/30/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">687012</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 687012</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">visual observation method</rdfs:label>
     </owl:Class>
     
@@ -74,8 +74,8 @@
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050003">
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000035"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any method entailing basic measurements that require no special instrumentation. Examples are measuring a tumor size using calipers, or a subject&apos;s weight using a scale.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9/30/16</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">687012</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 687012</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">simple measurement method</rdfs:label>
     </owl:Class>
 </rdf:RDF>
