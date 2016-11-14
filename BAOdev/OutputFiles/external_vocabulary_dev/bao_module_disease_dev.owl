@@ -57,16 +57,16 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/DOID_4 -->
+    <!-- http://purl.obolibrary.org/obo/DOID_225 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_4"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_225"/>
     
 
 
     <!-- http://www.bioassayontology.org/bao#BAO_0030012 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030012">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_225"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/27/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:0050729</obo:IAO_0000119>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 504319</obo:IAO_0000119>
@@ -78,7 +78,7 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0030013 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030013">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_225"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hypotonia-Cystinuria syndrome (HCS) is a rare syndrome including neonatal and infantile hypotonia and failure to thrive, cystinuria type 1 and nephrolithiasis, growth retardation due to growth hormone deficiency, and minor facial dysmorphism. HCS has been described in 14 families to date. The syndrome is caused by homozygous deletion of two contiguous genes on chromosome 2: SLC3A1 and PREP (2p21).</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 2751</obo:IAO_0000119>
@@ -98,30 +98,6 @@ http://www.orpha.net/consor/cgi-bin/OC_Exp.php?lng=EN&amp;Expert=163690
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1850</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salmonellosis</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0030015 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030015">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:1273</obo:IAO_0000119>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 449732</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">respiratory syncytial virus infectious disease</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0030016 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_4"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:4327</obo:IAO_0000119>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 720532</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marburg hemorrhagic fever</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
