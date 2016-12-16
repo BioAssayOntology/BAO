@@ -1,0 +1,359 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/hande/ontologies/2016/10/untitled-ontology-743#"
+     xml:base="http://www.semanticweb.org/hande/ontologies/2016/10/untitled-ontology-743"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_screenedentity.owl">
+        <rdfs:label>bioassay ontology</rdfs:label>
+        <dc:relation>Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser,  Stephan Schurer*</dc:relation>
+        <owl:versionInfo>2.1</owl:versionInfo>
+        <dc:date>05/09/2013</dc:date>
+        <rdfs:comment xml:lang="en">There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
+
+contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="&dc;license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000076 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000076">
+        <rdfs:label>screened entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000176 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000176">
+        <rdfs:label>small molecule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
+        <obo:IAO_0000115>Small molecule is an organic compound with a low molecular weight (&lt;800 Da) which is used to screen against a biological target, e.g. protein, nucleic acid, cell or organism  to test its ability to bind it and bring about a change in activity. It is either isolated from a natural source or is synthesized.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000215 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000215">
+        <rdfs:label>small molecule probe</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000176"/>
+        <obo:IAO_0000115>A small molecule useful to interrogate a biological system of interest.  It has to be active in the system studies, i.e. cell permeable or active in vivo and be sufficiently efficacious and selective.
+The term probe also refers to the MLI screening effort, which has the goal to generate chemical probes.  In addition, the MLI requires a novel chemical probe to be superior to the state of the art in terms of efficacy and selectivity and in-vivo properties.  A list of probes generated is available here: http://mli.nih.gov/mli/mlp-probes/
+</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000313 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000313">
+        <rdfs:label>morpholino oligonucleotide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
+        <obo:IAO_0000115>Morpholinos are antisense oligos that bind to specific mRNAs to reduce gene expression. They are small (~25 base) and possess altered back structures compared to DNA or RNA making them resistant to cleavage by nucleases. They are used extensively as tools to investigate zebrafish, Xenopus and sea urchin embryonic development.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000322 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000322">
+        <rdfs:label>miRNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
+        <obo:IAO_0000118>micro RNA</obo:IAO_0000118>
+        <obo:IAO_0000118>micro ribonucleic acid</obo:IAO_0000118>
+        <obo:IAO_0000115>miRNAs or microRNAs are short RNAs (~22 nucleotides long) that bind to complementary sequences in the three prime untranslated regions (3&apos; UTRs) of target messenger RNA transcripts (mRNAs), usually resulting in gene silencing.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000323 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000323">
+        <rdfs:label>shRNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
+        <obo:IAO_0000118>short hairpin RNA</obo:IAO_0000118>
+        <obo:IAO_0000118>short hairpin ribonucleic acid</obo:IAO_0000118>
+        <obo:IAO_0000115>Short hairpin RNA (shRNA) can be used to achieve stable knockdown of gene expression. shRNA molecules are cloned into lentiviral or other vectors and expressed by a pol III type promoter.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000324 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000324">
+        <rdfs:label>siRNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
+        <obo:IAO_0000118>small interfering ribonucleic acid</obo:IAO_0000118>
+        <obo:IAO_0000115>In the RNAi pathway,  the double stranded RNAs first get processed into 20-25 nucleotide small interfering RNAs (siRNAs) by an RNase III-like enzyme called Dicer. The siRNAs enter into endoribonuclease-containing complexes known as RNA-induced silencing complexes (RISCs), and bring about the cleavage of the target mRNAs to achieve gene silencing.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000544 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000544">
+        <rdfs:label>esiRNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
+        <obo:IAO_0000118>Endoribonuclease-prepared siRNA</obo:IAO_0000118>
+        <obo:IAO_0000115>esiRNAs are endoribonuclease-prepared siRNA pools comprised of a heterogeneous mixture of siRNAs that all target the same mRNA sequence.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000648 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000648">
+        <rdfs:label>compound library</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000661"/>
+        <obo:IAO_0000115>The name of a small molecule collection from one source, which can be either commercial or academic, e.g., MLSMR, LOPAC, etc. This collection is generally diverse and contains compounds that modulate diverse biological targets.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000661 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000661">
+        <rdfs:label>perturbagen library</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003120"/>
+        <obo:IAO_0000115>It is a collection of perturbagens, e.g., compound, siRNA, miRNA, etc, which are sold by different vendors, or generated in academic institutions.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000663 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000663">
+        <rdfs:label>siRNA library</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000661"/>
+        <obo:IAO_0000115>siRNA libraries consist of large number of siRNAs, which represent a single organism, a diseased state, etc. They bring about the cleavage of the target mRNAs to achieve gene silencing.</obo:IAO_0000115>
+        <obo:IAO_0000118>small interfering ribonucleic acid library</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000664 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000664">
+        <rdfs:label>miRNA library</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000661"/>
+        <obo:IAO_0000118>micro RNA library</obo:IAO_0000118>
+        <obo:IAO_0000118>micro ribonucleic acid library</obo:IAO_0000118>
+        <obo:IAO_0000115>It is a collection of miRNAs or microRNAs, which represents a single organism, a diseased state, etc. miRNAs bind the complementary sequences in the 3&apos; UTRs of target mRNA transcripts, usually resulting in gene silencing.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000733 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000733">
+        <rdfs:label>MLSMR library</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000648"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000734 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000734">
+        <rdfs:label>LOPAC 1280</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000648"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000735 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000735">
+        <rdfs:label>DIVERSet</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000648"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000752 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000752">
+        <rdfs:label>NINDS library</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000648"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002039 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002039">
+        <rdfs:label>shRNA library</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000661"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002655 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002655">
+        <rdfs:label>The NatProd Collection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000648"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003120 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003120">
+        <rdfs:label xml:lang="en">assay screened entity component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0700003 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0700003">
+        <rdfs:label rdf:datatype="&xsd;string">bivalent small molecule-peptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A synthetic ligand consisting of a small molecule tethered (covalently or non-covalently) to a peptide.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">Date from BAE: 5/5/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PubChem AID: 451462</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0700004 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0700004">
+        <rdfs:label rdf:datatype="&xsd;string">FDA-approved compound library</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000648"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any compound library consisting solely of small molecules that have been approved by the FDA. Often used for &apos;drug re-purposing&apos; assays. The specific compounds included in any given FDA-approved compound library may differ based on availability or timing.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PubChem AID: 1117303</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

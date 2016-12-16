@@ -1,0 +1,1734 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_computational.owl#"
+     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_computational.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_computational.owl">
+        <rdfs:label>bioassay ontology</rdfs:label>
+        <owl:versionInfo>2.1</owl:versionInfo>
+        <dc:date>05/09/2013</dc:date>
+        <rdfs:comment xml:lang="en">There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
+
+contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
+        <dc:relation>Uma Vempati, Hande Küçük, Ubbo Visser, Saminda Abeyruwan, Kunie Sakurai, Vance Lemmon, Stephan Schurer*</dc:relation>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_metadata.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002094 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002094">
+        <rdfs:label>computational method</rdfs:label>
+        <obo:IAO_0000115>Method based on the application of information technology to chemistry and biology.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002095 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002095">
+        <rdfs:label>bioinformatics method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002094"/>
+        <obo:IAO_0000115>Method based on application of information technology to the field of molecular biology.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002166 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002166">
+        <rdfs:label>computational expression analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002095"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002203 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002203">
+        <rdfs:label>computational analysis of gene expression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002166"/>
+        <obo:IAO_0000115>Computational methods used for analysis of microarrays, expressed cDNA sequence tag (EST) sequencing, serial analysis of gene expression (SAGE) tag sequencing, massively parallel signature sequencing (MPSS), or various applications of multiplexed in-situ hybridization.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002204 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002204">
+        <rdfs:label>computational analysis of protein expression</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002166"/>
+        <obo:IAO_0000115>Computational methods involved in analysis of protein microarrays and high throughput (HT) mass spectrometry (MS).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002206 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002206">
+        <rdfs:label>computational phylogenetic analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002095"/>
+        <obo:IAO_0000115>Computational methods involved in construction and interpretation of phylogenetic trees, which are used to classify the evolutionary relationships between homologous genes represented in the genomes of divergent species.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002207 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002207">
+        <rdfs:label>Mesquite phylogenetic analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002206"/>
+        <obo:IAO_0000115>Software for evolutionary biology, designed to help biologists analyze comparative data about organisms. Its emphasis is on phylogenetic analysis, but some of its modules concern population genetics, while others do non-phylogenetic multivariate analysis.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002208 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002208">
+        <rdfs:label>SplitsTree phylogenetic analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002206"/>
+        <obo:IAO_0000115>Program for inferring phylogenetic trees or, more generally, phylogenetic networks from various types of data such as a sequence alignment, a distance matrix or a set of trees.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002209 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002209">
+        <rdfs:label>Treefinder phylogenetic analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002206"/>
+        <obo:IAO_0000115>is a free computer program for the likelihood-based reconstruction of phylogenetic trees from molecular sequences.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002210 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002210">
+        <rdfs:label>phylogenetic analysis using parsimony</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002206"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002211 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002211">
+        <rdfs:label>phylogeny inference package</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002206"/>
+        <obo:IAO_0000115>A free Computational phylogenetics package of programs for inferring evolutionary trees (phylogenies).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002231 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002231">
+        <rdfs:label>sequence alignment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002095"/>
+        <obo:IAO_0000115>Computational methods used to arrange the sequences of DNA, RNA, or protein to identify regions of similarity that may be a consequence of functional, structural, or evolutionary relationships between the sequences.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002232 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002232">
+        <rdfs:label>sequence alignment by method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002231"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002233 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002233">
+        <rdfs:label>global sequence alignment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002232"/>
+        <obo:IAO_0000115>Global alignments, which attempt to align every residue in every sequence, are most useful when the sequences in the query set are similar and of roughly equal size.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002234 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002234">
+        <rdfs:label>AVID sequence alignment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002233"/>
+        <obo:IAO_0000115>Pairwise global alignment with whole genomes.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002235 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002235">
+        <rdfs:label>DIALIGN sequence alignment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002233"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002245"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002236 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002236">
+        <rdfs:label>local sequence alignment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002232"/>
+        <obo:IAO_0000115>Local alignments are more useful for dissimilar sequences that are suspected to contain regions of similarity or similar sequence motifs within their larger sequence context.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002237 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002237">
+        <rdfs:label>FASTA local sequence alignment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002236"/>
+        <obo:IAO_0000115>Local search with fast k-tuple heuristic, slower but more sensitive than BLAST.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002238 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002238">
+        <rdfs:label>basic local alignment search tool</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002236"/>
+        <obo:IAO_0000115>Local search with fast k-tuple heuristic.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002239 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002239">
+        <rdfs:label>progressive system alignment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002232"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002240 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002240">
+        <rdfs:label>Clustal sequence alignment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002239"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002245"/>
+        <obo:IAO_0000115>Multiple sequence alignment computer program.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002241 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002241">
+        <rdfs:label>ClustalW sequence alignment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002240"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002242 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002242">
+        <rdfs:label>ClustalX sequence alignment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002240"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002243 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002243">
+        <rdfs:label>MAVID sequence alignment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002239"/>
+        <obo:IAO_0000115>is a multiple sequence alignment program suitable for the alignment of large numbers of DNA sequences.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002244 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002244">
+        <rdfs:label>sequence alignment by type</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002231"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002245 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002245">
+        <rdfs:label>multiple sequence alignment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002244"/>
+        <obo:IAO_0000115>Multiple sequence alignment is an extension of pairwise alignment to incorporate more than two sequences at a time.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002246 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002246">
+        <rdfs:label>pairwise sequence alignment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002244"/>
+        <obo:IAO_0000115>Pairwise sequence alignment methods are used to find the best-matching piecewise (local) or global alignments of two query sequences.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002247 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002247">
+        <rdfs:label>JAligner sequence alignment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002246"/>
+        <obo:IAO_0000115>is an open source Java implementation of the Smith-Waterman algorithm with Gotoh&apos;s improvement for biological local pairwise sequence alignment using the affine gap penalty model.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002248 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002248">
+        <rdfs:label>cheminformatics method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002094"/>
+        <obo:IAO_0000115>Methods using of computer and informational techniques for problems in the field of chemistry</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002249 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002249">
+        <rdfs:label>conformational search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002248"/>
+        <obo:IAO_0000115>Consists of the exploration of energetically favorable spatial arrangements (shapes) of a molecule (conformations).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002250 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002250">
+        <rdfs:label>distance geometry conformational search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002249"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002251 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002251">
+        <rdfs:label>random conformational search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002249"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002252 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002252">
+        <rdfs:label>cartesian conformational search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002251"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002253 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002253">
+        <rdfs:label>dihedral conformational search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002251"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002254 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002254">
+        <rdfs:label>systematic conformational search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002249"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002255 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002255">
+        <rdfs:label>database filtering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002256 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002256">
+        <rdfs:label>Lipinski rule of 5 filtering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002255"/>
+        <obo:IAO_0000115>Set of criteria for predicting the oral bioavailability of a compound on the basis of simple molecular features (molecular weight, CLogP, numbers of hydrogen- bond donors and acceptors).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002257 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002257">
+        <rdfs:label>library design</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002248"/>
+        <obo:IAO_0000115>Library design enables access to the large number of drug- like molecules that could theoretically be made and can serve several purposes: for example, to generate a maximally diverse virtual library for lead generation, a biased library aimed at a specific target or target family, or a lead optimization library.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002258 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002258">
+        <rdfs:label>structure database search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002259 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002259">
+        <rdfs:label>exact match structure search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002258"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002260 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002260">
+        <rdfs:label>structure similarity search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002258"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002261 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002261">
+        <rdfs:label>2D structure similarity search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002260"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002371"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002262 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002262">
+        <rdfs:label>MACCS key</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002261"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002263 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002263">
+        <rdfs:label>circular fingerprint search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002261"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002264 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002264">
+        <rdfs:label>3D structure similarity search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002260"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002371"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002265 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002265">
+        <rdfs:label>shape fingerprint search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002264"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002266 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002266">
+        <rdfs:label>rapid overlay of chemical structures</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002265"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002267 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002267">
+        <rdfs:label>topomer search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002264"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002268 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002268">
+        <rdfs:label>substructure search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002258"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002269 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002269">
+        <rdfs:label>structure generation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002270 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002270">
+        <rdfs:label>data based structure generation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002269"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002271 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002271">
+        <rdfs:label>CORINA structure generation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002270"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002272 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002272">
+        <rdfs:label>de novo structure design</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002269"/>
+        <obo:IAO_0000115>The design of bioactive compounds by incremental construction of a ligand model within a model of the receptor or enzyme active site, the structure of which is known from X-ray or NMR data.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002273 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002273">
+        <rdfs:label>GROW structure design</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002272"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002274 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002274">
+        <rdfs:label>Groupbuild structure design</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002272"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002275 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002275">
+        <rdfs:label>LEGEND structure design</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002272"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002276 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002276">
+        <rdfs:label>LUDI structure design</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002272"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002277 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002277">
+        <rdfs:label>SPROUT structure design</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002272"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002278 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002278">
+        <rdfs:label>fragment based structure generation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002269"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002279 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002279">
+        <rdfs:label>Chem-X structure generation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002278"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002280 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002280">
+        <rdfs:label>rule based structure generation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002269"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002281 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002281">
+        <rdfs:label>CONCORD structure generation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002280"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002282 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002282">
+        <rdfs:label>computer simulation method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002094"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002283 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002283">
+        <rdfs:label>computer simulation method by force field</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002282"/>
+        <obo:IAO_0000115>A set of functions and parametrization used in molecular mechanics calculations.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002284 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002284">
+        <rdfs:label>classical force field simulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002283"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002285 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002285">
+        <rdfs:label>AMBER force field simulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002284"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002398"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002286 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002286">
+        <rdfs:label>CHARMM force field simulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002284"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002398"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002287 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002287">
+        <rdfs:label>GROMOS force field simulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002284"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002288 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002288">
+        <rdfs:label>polarizable force field simulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002283"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002289 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002289">
+        <rdfs:label>second generation force field simulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002283"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002290 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002290">
+        <rdfs:label>CFF force field simulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002289"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002291 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002291">
+        <rdfs:label>MM4 force field simulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002289"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002292 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002292">
+        <rdfs:label>MMFF force field simulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002289"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002293 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002293">
+        <rdfs:label>global minimum search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002282"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002294 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002294">
+        <rdfs:label>genetic algorithm search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002293"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002295 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002295">
+        <rdfs:label>simulated annealing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002293"/>
+        <obo:IAO_0000115>a simulations procedure, in which the system is allowed to equilibrate at high temperatures, and then cooled down slowly to remove kinetic energy and to permit trajectories to settle into local minimum energy conformations.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002296 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002296">
+        <rdfs:label>local minimum search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002282"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002297 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002297">
+        <rdfs:label>energy minimization method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002296"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002298 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002298">
+        <rdfs:label>Newton-Raphson method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002297"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002299 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002299">
+        <rdfs:label>conjugate gradient method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002297"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002300 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002300">
+        <rdfs:label>steepest descent method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002297"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002301 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002301">
+        <rdfs:label>molecular dynamics simulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002282"/>
+        <obo:IAO_0000115>A simulation procedure consisting of the computation of the motion of atoms in a molecule or of individual atoms or molecules in solids, liquids and gases, according to Newton&apos;s laws of motion. The forces acting on the atoms, required to simulate their motions, are generally calculated using molecular mechanics force fields.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002302 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002302">
+        <rdfs:label>constraint molecular dynamics simulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002301"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002303 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002303">
+        <rdfs:label>stochastic simulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002282"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002304 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002304">
+        <rdfs:label>Monte Carlo simulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002303"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002317 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002317">
+        <rdfs:label>quantum chemistry computational method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002094"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002318 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002318">
+        <rdfs:label>ab initio quantum chemistry computational method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002317"/>
+        <obo:IAO_0000115>Methods of quantum mechanical calculations independent of any experiment other than the determination of fundamental constants. The methods are based on the use of the full Schr?ger equation to treat all the electrons of a chemical system.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002319 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002319">
+        <rdfs:label>Hartree-Fock method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002318"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002320 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002320">
+        <rdfs:label>restricted open-shell Hartree-Fock</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002319"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002321 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002321">
+        <rdfs:label>unrestricted Hartree-Fock</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002319"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002322 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002322">
+        <rdfs:label>post Hartree-Fock method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002318"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002323 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002323">
+        <rdfs:label>configuration interaction method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002322"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002324 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002324">
+        <rdfs:label>coupled cluster method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002322"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002325 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002325">
+        <rdfs:label>quadratic configuration interaction method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002322"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002326 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002326">
+        <rdfs:label>semi-empirical quantum chemistry computational method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002317"/>
+        <obo:IAO_0000115>Use parameters derived from experimental data to simplify computations.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002327 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002327">
+        <rdfs:label>pi-electron computational method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002326"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002328 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002328">
+        <rdfs:label>Pariser Parr Pople method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002327"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002329 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002329">
+        <rdfs:label>valence electron computational method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002326"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002330 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002330">
+        <rdfs:label>Zerner&apos;s intermediate neglect of differential overlap</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002329"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002331 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002331">
+        <rdfs:label>austin model 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002329"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002332 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002332">
+        <rdfs:label>intermediate neglect of differential overlap</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002329"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002333 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002333">
+        <rdfs:label>modified neglect of differential overlap</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002329"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002334 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002334">
+        <rdfs:label>parameterized model number 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002329"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002335 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002335">
+        <rdfs:label>statistical method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002094"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002336 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002336">
+        <rdfs:label>experimental design method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002335"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002337 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002337">
+        <rdfs:label>completely randomized design</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002336"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002338 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002338">
+        <rdfs:label>fractional factorial design</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002336"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002339 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002339">
+        <rdfs:label>full factorial design</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002336"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002340 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002340">
+        <rdfs:label>randomized block design</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002336"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002341 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002341">
+        <rdfs:label>statistical classification method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002335"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002342 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002342">
+        <rdfs:label>decision tree</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002341"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002343 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002343">
+        <rdfs:label>hierarchial clustering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002341"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002344 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002344">
+        <rdfs:label>k means clustering</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002341"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002345 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002345">
+        <rdfs:label>neural network model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002341"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002346 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002346">
+        <rdfs:label>principal component analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002341"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002347 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002347">
+        <rdfs:label>systems biology method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002094"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002348 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002348">
+        <rdfs:label>pathway analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002347"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002349 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002349">
+        <rdfs:label>pathway analysis by knowledge base</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002348"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002350 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002350">
+        <rdfs:label>automatic pathway analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002349"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002351 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002351">
+        <rdfs:label>natural language processing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002350"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002352 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002352">
+        <rdfs:label>Ariadne Pathway Studio</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002351"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002353 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002353">
+        <rdfs:label>pathway analysis by method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002348"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002354 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002354">
+        <rdfs:label>gene list enrichment analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002353"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002355 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002355">
+        <rdfs:label>GOstat enrichment analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002354"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002356 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002356">
+        <rdfs:label>GSEA-P enrichment analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002354"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002357 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002357">
+        <rdfs:label>GeneTrail enrichment analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002354"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002358 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002358">
+        <rdfs:label>Onto-Express enrichment analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002354"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002359 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002359">
+        <rdfs:label>integrated pathway analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002353"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002360 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002360">
+        <rdfs:label>MetaDiscovery pathway analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002359"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002361 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002361">
+        <rdfs:label>network analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002353"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002362 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002362">
+        <rdfs:label>Cytoscape network analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002361"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002363 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002363">
+        <rdfs:label>target family knowledge analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002347"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002364 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002364">
+        <rdfs:label>virtual screening</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002094"/>
+        <obo:IAO_0000115>Selection of compounds by evaluating their desirability in a computational model.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002365 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002365">
+        <rdfs:label>ligand based virtual screening</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002364"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002366 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002366">
+        <rdfs:label>ligand based pharmacophore model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002365"/>
+        <obo:IAO_0000115>The ligand-based ensemble of steric and electronic features that is necessary to ensure the optimal supramolecular interactions with a specific biological target structure and to trigger (or to block) its biological response.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002367 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002367">
+        <rdfs:label>Catalyst modeling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002366"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002368 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002368">
+        <rdfs:label>DISCOtech modeling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002366"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002369 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002369">
+        <rdfs:label>distance comparison modeling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002366"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002370 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002370">
+        <rdfs:label>genetic algorithm similary program</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002366"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002371 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002371">
+        <rdfs:label>scaffold hopping</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002365"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002372 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002372">
+        <rdfs:label>structure based virtual screening</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002364"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002373 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002373">
+        <rdfs:label>molecular docking</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002372"/>
+        <obo:IAO_0000115>Method which predicts the preferred orientation of one molecule to a second when bound to each other to form a stable complex.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002374 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002374">
+        <rdfs:label>molecular docking by method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002373"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002375 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002375">
+        <rdfs:label>Monte Carlo minimization method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002374"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002376 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002376">
+        <rdfs:label>internal coordinate mechanics method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002375"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002377 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002377">
+        <rdfs:label>Monte Carlo simulated annealing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002374"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002378 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002378">
+        <rdfs:label>AutoDock docking method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002377"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002379 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002379">
+        <rdfs:label>descriptor matching method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002374"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002380 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002380">
+        <rdfs:label>ADAM docking method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002379"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002381 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002381">
+        <rdfs:label>DOCK docking method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002379"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002382 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002382">
+        <rdfs:label>SLIDE docking method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002379"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002383 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002383">
+        <rdfs:label>genetic algorithm method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002374"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002384 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002384">
+        <rdfs:label>AutoDock3 docking method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002383"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002385 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002385">
+        <rdfs:label>DARWIN docking method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002383"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002386 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002386">
+        <rdfs:label>GOLD docking method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002383"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002387 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002387">
+        <rdfs:label>incremental construction method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002374"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002388 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002388">
+        <rdfs:label>DOCK4 docking method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002387"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002389 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002389">
+        <rdfs:label>FlexX docking method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002387"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002390 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002390">
+        <rdfs:label>Hummerhead docking method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002387"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002391 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002391">
+        <rdfs:label>tabu docking method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002374"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002392 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002392">
+        <rdfs:label>SFdock docking method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002391"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002393 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002393">
+        <rdfs:label>molecular docking by scoring function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002373"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002394 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002394">
+        <rdfs:label>empirical scoring function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002393"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002395 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002395">
+        <rdfs:label>AutoDock3 scoring function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002394"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002396 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002396">
+        <rdfs:label>FLOG scoring function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002394"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002397 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002397">
+        <rdfs:label>GOLD scoring function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002394"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002398 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002398">
+        <rdfs:label>force field based scoring function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002393"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002399 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002399">
+        <rdfs:label>AMBER polarizable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002288"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002400 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002400">
+        <rdfs:label>CHARMM polarizable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002288"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002402 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002402">
+        <rdfs:label>knowledge based scoring function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002393"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002403 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002403">
+        <rdfs:label>DrugScore scoring function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002402"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002404 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002404">
+        <rdfs:label>potentials of mean force scoring function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002402"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002405 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002405">
+        <rdfs:label>receptor based pharmacophore search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002372"/>
+        <obo:IAO_0000115>The receptor-based ensemble of steric and electronic features that is necessary to ensure the optimal supramolecular interactions with a specific biological target structure and to trigger (or to block) its biological response.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002406 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002406">
+        <rdfs:label>CoMFA pharmacophore search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002405"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002407 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002407">
+        <rdfs:label>GRID pharmacophore search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002405"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002408 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002408">
+        <rdfs:label>SPROUT pharmacophore search</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002405"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.5.1928) http://owlapi.sourceforge.net -->
+

@@ -1,0 +1,868 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/hande/ontologies/2016/10/untitled-ontology-739#"
+     xml:base="http://www.semanticweb.org/hande/ontologies/2016/10/untitled-ontology-739"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_detection.owl">
+        <rdfs:label>bioassay ontology</rdfs:label>
+        <dc:relation>Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser,  Stephan Schurer*</dc:relation>
+        <dc:date>05/09/2013</dc:date>
+        <owl:versionInfo>2.1</owl:versionInfo>
+        <rdfs:comment xml:lang="en">There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
+
+contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="&dc;license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000001 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000001">
+        <rdfs:label>fluorescence resonance energy transfer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000046"/>
+        <obo:IAO_0000115>Fluorescence resonance energy transfer (FRET) is based on the transfer of energy between two fluorophores, a donor and an acceptor, when in close proximity. The energy transfer is directed from higher-energy donor fluorophore to lower-energy acceptor fluorophore of labeled protein pairs. Target protein pairs are likely to exhibit FRET if they are no more than 10 nm apart.</obo:IAO_0000115>
+        <obo:IAO_0000118>FRET</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000002 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000002">
+        <rdfs:label>homogeneous time resolved fluorescence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000001"/>
+        <obo:IAO_0000115>Homogenous time resolved fluorescence (HTRF) is a technology which combines standard FRET technology with the time-resolved measurement of fluorescence. Through this, HTRF eliminates the short-lived background fluorescence. Introducing a time delay (50-150 micro seconds) between the system excitation and fluorescence measurement, which allows the signal to be cleared of all non-specific short lived emissions.</obo:IAO_0000115>
+        <obo:IAO_0000118>HTRF</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000003 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000003">
+        <rdfs:label>fluorescence polarization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000046"/>
+        <obo:IAO_0000115>Fluorescence polarization (FP) measurements are based on the assessment of the rotational motions of species. It is used to measure binding interactions. When linear polarized light is used to excite fluorophores, only those aligned with the plane of polarization will be excited. For fluorophores attached to small, rapidly rotating molecules, the initially photoselected orientational distribution becomes randomized prior to emission, resulting in low fluorescence polarization. But binding of the low molecular weight tracer to a large, slowly rotating molecule results in high fluorescence polarization.</obo:IAO_0000115>
+        <obo:IAO_0000118>FP</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000004 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000004">
+        <rdfs:label>time resolved fluorescence resonance energy transfer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000001"/>
+        <obo:IAO_0000118>TR-FRET</obo:IAO_0000118>
+        <obo:IAO_0000115>Time resolved-fluorescence resonance energy transfer (TR-FRET) unites TRF (Time-Resolved Fluorescence) and FRET (Fluorescence Resonance Energy Transfer) principles. This combination brings together the low background benefits of TRF with the homogeneous assay format of FRET. Introducing a time delay (50-150 micro seconds) between the system excitation and fluorescence measurement allows the signal to be cleared of all non-specific short lived emissions. TR-FRET uses lanthanide donors which are fluorophores with long emission half-lives.
+    
+</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000005 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000005">
+        <rdfs:label>flow cytometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000046"/>
+        <obo:IAO_0000118>FACS</obo:IAO_0000118>
+        <obo:IAO_0000118>Fluorescence-activated cell sorting</obo:IAO_0000118>
+        <obo:IAO_0000115>Flow cytometry uses the principles of light scattering and fluorescence from fluorochrome molecules to generate specific multi-parameter data from particles and cells in the size range of 0.5um to 40um diameter.
+</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000017 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000017">
+        <rdfs:label>scintillation proximity assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000405"/>
+        <obo:IAO_0000115>Scintillation proximity assay (SPA) eliminates the separation step of unbound radioisotopes and is performed using low energy radioisotopes (3H and 125I) as labels, which have short range electron emission. SPA involves the use of microscopic beads which are first coated with a receptor protein of interest and contain a scintillant. When stimulated by the binding of radio-labeled ligand molecules, they emit light, which is detected by the photomultiplier tube. SPA is suitable for high throughput since the protocol has no wash or separation steps.</obo:IAO_0000115>
+        <obo:IAO_0000118>SPA</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000035 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000035">
+        <rdfs:label>physical detection method</rdfs:label>
+        <obo:IAO_0000115>The physical method (technology) used to measure / readout the effect caused by a perturbagen in the assay environment.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000045 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000045">
+        <rdfs:label>luminescence method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000035"/>
+        <obo:IAO_0000115>The emission of light from a substance that occurs from an electronically excited state which is reached either by a physical, mechanical, or chemical mechanism.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000046 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000046">
+        <rdfs:label>fluorescence method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000035"/>
+        <obo:IAO_0000115>Detection techniques that use the principles of fluorescence, whereby incident light excites a fluorophore which then emits light at lower energy (higher wavelength). The emitted light is typically from the visible portion of the UV-Visible spectrum.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000049 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000049">
+        <rdfs:label>spectrophotometry method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000035"/>
+        <obo:IAO_0000115>Spectrophotometry involves the use of a spectrophotometer to measure the amount of light that a sample absorbs. The instrument operates by passing a beam of light through a sample and measuring the intensity of light reaching a detector.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000050 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000050">
+        <rdfs:label>bioluminescence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000045"/>
+        <obo:IAO_0000115>Bioluminescence refers to the production and emission of light by a living organism. Bioluminescence is a naturally occurring form of chemiluminescence whereby energy is released by a chemical reaction in the form of light emission. The chemical reaction can occur either inside or outside the cell, and can be detected using a plate reader or a charge-coupled device (CCD) camera.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000051 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000051">
+        <rdfs:label>chemiluminescence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000045"/>
+        <obo:IAO_0000115>Chemiluminescence is the generation of light as a result of a chemical reaction using synthetic compounds and usually involving a highly oxidized species such as peroxide.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000054 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000054">
+        <rdfs:label>surface plasmon resonance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000057"/>
+        <obo:IAO_0000118>SPR</obo:IAO_0000118>
+        <obo:IAO_0000115>For surface plasmon resonance measurements, target protein is immobilized onto a solid surface via covalent or noncovalent interaction. Binding of small molecule compounds changes the refractive index of the immobilized target, which can be detected by optical sensing. Shift in wavelength of light is proportional to mass changes near the sensor surface, with sensitivity to detect mass change being ~300 Da.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000055 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000055">
+        <rdfs:label>mass spectrometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000427"/>
+        <obo:IAO_0000115>This method is used to detect compounds that are bound to the protein targets. The unbound compounds are separated by affinity based, size exclusion, or ultrafiltration methods. The bound compounds are eluted from the protein and detected by mass spectrometry. Based on the separation method, the throughput varies: between 200-2700 compounds can be loaded in each run for separation.
+Mass spectrometry is used to determine the chemical structure of molecules. The samples are vaporized, followed by ionization and then the mass to charge ratio of the particles is analyzed.</obo:IAO_0000115>
+        <obo:IAO_0000118>MS</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000057 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000057">
+        <rdfs:label>optical based</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000427"/>
+        <obo:IAO_0000115>These biosensors employ evanescent waves (surface plasmon resonance, resonant waveguide grating) or interference of light waves to characterize the cellular processes that are taking place at or near the sensor surface: e.g.  to study the affinity of a sample to the biological receptors immobilized on the sensor surface.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000058 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000058">
+        <rdfs:label>thermal shift</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000046"/>
+        <obo:IAO_0000115>Upon heating, a protein unfolds and loses the native conformation. Binding of a small molecule can often stabilize the protein conformation, resulting in a higher unfolding temperature. The temperature shift in unfolding can be detected using a fluorescent dye, which is sensitive to the protein environment.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000060 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000060">
+        <rdfs:label>current clamp</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000382"/>
+        <obo:IAO_0000115>The current clamp technique is used to measure biological voltages such as the action potential of an excitable cell with a microelectrode while keeping electrical current through the recording electrode constant. It can be used for both extracellular and intracellular recordings.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000061 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000061">
+        <rdfs:label>impedance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000163"/>
+        <obo:IAO_0000115>Impedance biosensors measure the electrical opposition of an interface in AC steady state with constant DC bias conditions. This is accomplished by imposing a small sinusoidal voltage at a particular frequency and measuring the resulting current; the process can be repeated at different frequencies. The current-voltage ratio gives the impedance.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000062 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000062">
+        <rdfs:label>patch clamp</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000382"/>
+        <obo:IAO_0000115>The patch clamping technique is refined from the voltage clamp technique, wherein a blunt electrode is placed on the surface of the cell membrane. It is a common intracellular recording technique in electrophysiology that allows either the measurement of current passing through individual ion channels in cells or through whole cells. Suction is applied via the blunt electrode (glass pipette in classical patch clamp technique) to create a high resistance (gigaohm) between the electrode and cell surface. This seal isolates the ion channels within the patch from the rest of the membrane and allows the neurophysiologist to record only from these ion channels.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000063 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000063">
+        <rdfs:label>voltage clamp</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000382"/>
+        <obo:IAO_0000115>The voltage clamp technique is used to measure the ion currents across an excitable cell membrane, such as neuronal membrane, while holding the membrane voltage at a constant level. The neuronal membrane contains different kinds of ion channels including voltage gated ion channels. Manipulation of the membrane voltage using voltage clamping allows the current-voltage relationships of these ion channels to be studied.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000064 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000064">
+        <rdfs:label>total internal reflection fluorescence microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000450"/>
+        <obo:IAO_0000115>This technique probes the surface of fluorescently-labeled living cells with an evanescent wave generated by a light beam traveling between two media of differing refractive indices. An incident laser beam is reflected at a critical angle (total internal reflection) when it encounters the interface between a microscope glass slide and the aqueous medium containing the cells.  Only fluorophores which are within a few nanometers of the surface are excited, while those farther away are not, making possible the study the interactions at the cell surface.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000066 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000066">
+        <rdfs:label>bio layer interferometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000057"/>
+        <obo:IAO_0000118>BLI</obo:IAO_0000118>
+        <obo:IAO_0000115>Bio-Layer Interferometry is a used for measuring biomolecular interactions. In this technique, the interference pattern of white light reflected from two surfaces: a layer of immobilized protein on the biosensor tip, and an internal reference layer are analyzed. Changes in the number of molecules bound to the biosensor tip cause a shift in the interference pattern, which can be measured in real-time.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000067 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000067">
+        <rdfs:label>fiber optic waveguide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000057"/>
+        <obo:IAO_0000115>It is based on the ability of a transparent substance, such as glass to conduct some of the visible or near-visible light to its interior by means of internal reflection.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000068 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000068">
+        <rdfs:label>optical waveguide grating</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000057"/>
+        <obo:IAO_0000115>The optical grating coupler sensor responds to the change of optical refractive index of the liquid or gas cover medium and to the adsorption or binding of molecules on the surface. The optical grating coupler sensor chip is based on a fine optical grating prepared on a thin waveguide layer carried by a glass substrate. The optical grating couples the light of a He-Ne laser at a given resonance angle into the waveguide layer. This incoupling angle is very sensitive to the presence of adsorbed molecules and to any change of refractive index of the medium covering the surface of the chip. By precise measurement of the incoupling angle, the amount of the adsorbed material can be determined with ultra high sensitivity.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000069 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000069">
+        <rdfs:label>resonant waveguide grating</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000057"/>
+        <obo:IAO_0000118>RWG</obo:IAO_0000118>
+        <obo:IAO_0000115>Cells are directly cultured onto the surface of a resonant waveguide grating (RWG) biosensor. The mass redistribution within the bottom portion of cells, mediated by stimulus is directly measured with the biosensor. RWG biosensor utilizes an optical beam with an appropriate angular content to illuminate a waveguide film in which a grating structure is embedded. When this beam is reflected by the sensor surface, the resonant angle dominates in the output beam. The mass redistribution within the sensing volume alters the incident angle. Because of its ability for multiparameter measurements, the biosensor has potential to provide high information content for cell sensing. These parameters include the angular shift (one of the most common outputs), the intensity, the peak width at half-maximum (PWHM), and area of the resonant peaks.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000070 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000070">
+        <rdfs:label>absorbance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000049"/>
+        <obo:IAO_0000115>The absorbance of a beam of collimated monochromatic radiation in a homogeneous isotropic medium is proportional to the absorption path length and to the concentration of the absorbing species. Absorbance is a logarithmic measure of the amount of light (at a specific wavelength) that is absorbed when passing through a sample.  A= -log10(I/I0), where A is absorbance, I is the intensity of incident light and I0 is the intensity of light transmitted after passing through the sample.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000071 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000071">
+        <rdfs:label>transmittance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000049"/>
+        <obo:IAO_0000115>The transmittance of a sample is the ratio of the intensity of the light that has passed through the sample to the intensity of the light when it entered the sample (T = Iout / Iin ). 
+To convert between the absorbance and transmittance scales, the following equation is used: A = -log T = - log (I / Io).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000130 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000130">
+        <rdfs:label>alphascreen</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000045"/>
+        <obo:IAO_0000115>This technology measures the interaction of two molecules bioconjugated to donor and acceptor beads. Laser excitation leads to light emission which is directly proportional to the amount of binding, provided molecules are in proximity to cause a chemical reaction (interact). Users have modified this and coupled it to chemiluminescence emission. This technology has been adapted to study protein-protein, protein-DNA and receptor-ligand, immunoassay, phosphorylation and protease reactions.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000160 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000160">
+        <rdfs:label>nuclear magnetic resonance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000427"/>
+        <obo:IAO_0000118>NMR</obo:IAO_0000118>
+        <obo:IAO_0000115>Nuclear magnetic resonance (NMR) is used to analyze protein-small molecule interactions. This binding interaction is commonly monitored by the chemical shift of the compound.  With this technique, both the binding interaction and bound compounds can be detected, which allows pools of 5-100 compounds to be tested for binding.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000161 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000161">
+        <rdfs:label>circular dichroism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000427"/>
+        <obo:IAO_0000115>Circular dichroism (CD) is a technology for assessing interactions of chiral molecules with circularly polarized electromagnetic rays. Secondary and tertiary structure of proteins will impart a distinct CD to that molecule allowing the use of CD to examine the protein folding under different conditions. Information about conformational properties of nucleic acids can be obtained by CD spectroscopy.</obo:IAO_0000115>
+        <obo:IAO_0000118>CD</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000163 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000163">
+        <rdfs:label>electrical sensor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000427"/>
+        <obo:IAO_0000115>Electrical sensors are used to measure the electrical impedance, or the current-voltage relationships of these ion channels.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000363 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000363">
+        <rdfs:label>fluorescence intensity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000046"/>
+        <obo:IAO_0000115>Fluorescence intensity is the measure of fluorescence from a sample.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000382 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000382">
+        <rdfs:label>microelectrode measurement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000163"/>
+        <obo:IAO_0000115>Electrically active cells, such as neurons, muscle and endocrine cells undergo changes in membrane potential due to depolarization and hyperpolarization as a result of opening and closing of ion channels. The electrical recordings from these cells are obtained by the insertion or attaching microelectrodes to these cells. Patch clamp, voltage clamp and current clamp are three ways of studying the current-voltage relationships of these ion channels.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000401 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000401">
+        <rdfs:label>filter assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000405"/>
+        <obo:IAO_0000115>This assay is performed to study interaction between a radio-labeled ligand and the receptor. The reaction mixture containing the receptor and radioligand is transferred to a filter plate, washed to remove the unbound radioligand. The bound complex remains on the filter, which can be eluted into the scintillation fluid and the radioactivity measured. Filter assays differ from SPA because a separation of free radioligand and radioligand bound to the receptor is required for measurement.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000404 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000404">
+        <rdfs:label>x ray crystallography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000427"/>
+        <obo:IAO_0000115>X-ray crystallography is used to analyze protein-small molecule interactions. This binding interaction is monitored by measuring the difference of diffraction between protein-compound binding complex and protein alone.  With this technique, both the binding interaction and bound compounds can be detected, which allows pools of 5-100 compounds to be tested for binding.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000405 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000405">
+        <rdfs:label>scintillation counting</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000657"/>
+        <obo:IAO_0000115>It involves the incorporation of radiolabeled precursors into uniform distribution with a liquid medium capable of converting the kinetic energy of nuclear emissions into light energy. A scintillation counter is used to measure ionizing radiation. The scintillation counter consists of a sensor, called a scintillator, made of transparent crystal or an organic liquid that fluoresces when struck by ionizing radiation. A photomultiplier is then used to measure the light emitted by the sensor and is attached to an electronic apparatus that amplifies and quantifies the radiation signal.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000408 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000408">
+        <rdfs:label>lysate based</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000405"/>
+        <obo:IAO_0000115>This assay is performed to study interaction between a radio-labeled ligand and the receptor in presence of cold ligand. The cells exposed to the radioligand and cold ligand are washed to remove the unbound ligands. They are then lysed and the bound radioactivity is counted in a liquid scintillation counter.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000427 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000427">
+        <rdfs:label>label free method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000035"/>
+        <obo:IAO_0000115>It allows the detection of binding interactions and cell-based reactions without the need to use conventional labels, e.g., fluorescent probes. The advantages include the ability to measure a) functional activity without modifying the binding partners with labels, b) binding interactions independent of functional activity, and c) cell-Based GPCR assays without the need for engineering cell-lines to over-express given receptors.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000428 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000428">
+        <rdfs:label>isothermal titration calorimetry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000427"/>
+        <obo:IAO_0000118>ITC</obo:IAO_0000118>
+        <obo:IAO_0000115>ITC is a thermodynamic technique that can directly measure the heat released or absorbed during a biomolecular binding event. It can measure the binding affinity (Ka), reaction stoichiometry (n), enthalpy (∆H) and entropy (ΔS) of the interaction between two or more molecules in solution.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000449 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000449">
+        <rdfs:label>electron microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002526"/>
+        <obo:IAO_0000118>EM</obo:IAO_0000118>
+        <obo:IAO_0000115>Electron microscopy involve the diffraction, reflection, or refraction of electron beams interacting with the subject of study, and the subsequent collection of this scattered radiation in order to build up an image.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000450 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000450">
+        <rdfs:label>fluorescence microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000451"/>
+        <obo:IAO_0000115>Fluorescence microscopy is used to image the distribution of molecules based on the properties of fluorescence emission.  Excitation of fluorescent molecules with a specific wavelength results in the production of an image by the secondary fluorescence emission at longer wavelengths.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000451 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000451">
+        <rdfs:label>optical microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002526"/>
+        <obo:IAO_0000115>Optical or light microscopy involves passing visible light transmitted through or reflected from the sample through a single or multiple lenses to allow a magnified view of the sample</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000452 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000452">
+        <rdfs:label>imaging method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000035"/>
+        <obo:IAO_0000115>The field of using microscopes to see objects that cannot be seen with the unaided eye.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000453 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000453">
+        <rdfs:label>confocal microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000451"/>
+        <obo:IAO_0000115>Confocal microscopy has advantages over widefield optical microscopy, including the ability to eliminate or reduce background information away from the focal plane and collect serial optical sections from thick specimens. It uses point illumination and a spatial pinhole to eliminate out-of-focus light in specimens that are thicker than the focal plane.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000454 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000454">
+        <rdfs:label>scanning electron microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000449"/>
+        <obo:IAO_0000115>Scanning electron microscopy (SEM) visualizes details on the surfaces of cells and particles and gives a very nice 3D view. It gives results much like those of the stereo light microscope, and, akin to that, its most useful magnification is in the lower range than that of the transmission electron microscope.</obo:IAO_0000115>
+        <obo:IAO_0000118>SEM</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000455 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000455">
+        <rdfs:label>transmission electron microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000449"/>
+        <obo:IAO_0000118>TEM</obo:IAO_0000118>
+        <obo:IAO_0000115>Transmission electron microscopy (TEM) is quite similar to the compound light microscope, by sending an electron beam through a very thin slice of the specimen. The resolution limit in 2005 was approximately 0.05 nanometer and has not increased appreciably since that time.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000456 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000456">
+        <rdfs:label>quartz crystal microbalance</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000427"/>
+        <obo:IAO_0000118>QCM</obo:IAO_0000118>
+        <obo:IAO_0000115>Quartz crystal microbalance (QCM) technology is based on measuring the resonant frequency of piezoelectric quartz crystals. It allows measurement of important cellular parameters such as adhesion, proliferation and cytotoxicity. It is also used for the identification of protein ligands by immobilized receptors.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000457 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000457">
+        <rdfs:label>brightfield microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000451"/>
+        <obo:IAO_0000115>In brightfield microscopy, sample is illuminated with transmitted white light from below and observed from above.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000458 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000458">
+        <rdfs:label>phase contrast microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000451"/>
+        <obo:IAO_0000115>Phase contrast microscopy shows differences in refractive index as difference in contrast. Regions with higher contrast, e.g. nuclei, appear darker than the surrounding cytoplasm.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000459 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000459">
+        <rdfs:label>scanning probe microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002526"/>
+        <obo:IAO_0000115>It forms images of surfaces using a physical probe that scans the specimen and measuring on a fine scale, down to the level of molecules and groups of atoms. The resolution is not limited by the diffraction, but by the size of probe-sample interaction volume. Atomic force microscopy (AFM), scanning tunneling microscopy (STM), and near-field scanning optical microscopy (NSOM) are the three common scanning probe techniques.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000461 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000461">
+        <rdfs:label>bioluminescence resonance energy transfer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000050"/>
+        <obo:IAO_0000118>BRET</obo:IAO_0000118>
+        <obo:IAO_0000115>BRET is similar to FRET but has a bioluminescent protein such as aequorin as the donor and a fluorescent acceptor, e.g. GFP. The donor emits blue light in the absence of GFP, but when GFP and aequorin are associated as they are in vivo, GFP accepts the energy from aequorin and emits green light. Hence BRET eliminates the disadvantages associated with donor fluorophore activation.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000462 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000462">
+        <rdfs:label>chemiluminescence resonance energy transfer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000051"/>
+        <obo:IAO_0000118>CRET</obo:IAO_0000118>
+        <obo:IAO_0000115>Chemiluminescence resonance energy transfer (CRET) is a resonance energy transfer between chemiluminescent donors and fluorescent acceptors. CRET occurs by the oxidation of a luminescent substrate, such as luminol/hydrogen peroxide reaction catalyzed by horseradish peroxidase. CRET eliminates the disadvantages associated with donor fluorophore activation.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000471 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000471">
+        <rdfs:label>carbon nanotube based sensor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000163"/>
+        <obo:IAO_0000115>Carbon nanotubes (CNT) are rolled up seamless cylinders of graphene sheets, exhibiting many unique physical, mechanical and chemical properties.
+CNT based biosensors are used to detect protein interactions, e.g. protein-DNA, antibody-aptamer interaction, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000657 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000657">
+        <rdfs:label>radiometry method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000035"/>
+        <obo:IAO_0000115>Detection technology using radioactive tracers, e.g. filter assay, SPA, etc</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002510 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002510">
+        <rdfs:label>dark field microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000451"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002511 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002511">
+        <rdfs:label>differential interference contrast microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000451"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002512 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002512">
+        <rdfs:label>scanning near-field optical microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000451"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002513 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002513">
+        <rdfs:label>vibrational spectroscopic imaging</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000451"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002515 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002515">
+        <rdfs:label>Raman imaging</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002513"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002516 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002516">
+        <rdfs:label>infrared imaging</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002513"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002518 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002518">
+        <rdfs:label>near-infrared imaging</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002516"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002519 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002519">
+        <rdfs:label>mid-infrared imaging</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002516"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002523 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002523">
+        <rdfs:label>atomic force microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000459"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002524 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002524">
+        <rdfs:label>scanning tunneling microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000459"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002525 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002525">
+        <rdfs:label>tomography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000452"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002526 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002526">
+        <rdfs:label>microscopy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000452"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002527 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002527">
+        <rdfs:label>autoradiography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000657"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002528 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002528">
+        <rdfs:label>phosphorimaging</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000657"/>
+        <obo:IAO_0000115>The use of photostimulated luminescence to make a form of X-ray image.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002529 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002529">
+        <rdfs:label>atomic absorption spectrophotometry</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000049"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0050002 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050002">
+        <rdfs:label rdf:datatype="&xsd;string">visual observation method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000035"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any method entailing primarily routine examination, requiring no special instrumentation.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PubChem AID: 687012</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0050003 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050003">
+        <rdfs:label rdf:datatype="&xsd;string">simple measurement method</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000035"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any method entailing basic measurements that require no special instrumentation. Examples are measuring a tumor size using calipers, or a subject&apos;s weight using a scale.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">PubChem AID: 687012</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
