@@ -1,0 +1,273 @@
+[URI of the OWL(RDF/XML) output file]
+http://bioassayontology.org/bao/external/BAO2.0_NCBITaxon_import.owl
+
+[Source ontology]
+NCBITaxon
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/NCBITaxon_1351 #Enterococcus faecalis (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_1773 #Mycobacterium tuberculosis (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_90371 #Salmonella typhimurium  (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_90370 #Salmonella typhi (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_1280 #Staphylococcus aureus (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_633 #Yersinia pseudotuberculosis (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_5476 #Candida albicans (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_7227 #Drosophila melanogaster (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_6183 #Schistosoma mansoni (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_9913 #Bos taurus (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_9796 #Equus caballus (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_7955 #Danio rerio (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_8355 #Xenopus laevis (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_5664 #Leishmania major (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_5833 #Plasmodium falciparum (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_5693 #Trypanosoma cruzi (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_11103 #Hepatitis C virus (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_11676 #Human immunodeficiency virus 1 (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_11082 #West Nile virus (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_11036 #Venezuelan equine encephalitis virus (NCBITaxon)
+http://purl.obolibrary.org/obo/NCBITaxon_3702 #Arabidopsis thaliana
+http://purl.obolibrary.org/obo/NCBITaxon_1422 #Bacillus stearothermophilus
+http://purl.obolibrary.org/obo/NCBITaxon_10906 #Bluetongue virus 10
+http://purl.obolibrary.org/obo/NCBITaxon_6239 #Caenorhabditis elegans
+http://purl.obolibrary.org/obo/NCBITaxon_9615 #Canis familiaris
+http://purl.obolibrary.org/obo/NCBITaxon_562 #Escherchia coli
+http://purl.obolibrary.org/obo/NCBITaxon_102793 #H5N1 subtype
+http://purl.obolibrary.org/obo/NCBITaxon_9606 #Homo sapiens
+http://purl.obolibrary.org/obo/NCBITaxon_5665 #Leishmania mexicana
+http://purl.obolibrary.org/obo/NCBITaxon_1245 #Leuconostoc mesanteroides
+http://purl.obolibrary.org/obo/NCBITaxon_10090 #Mus musculus
+http://purl.obolibrary.org/obo/NCBITaxon_39947 #Oryza sativa (javanica cultivar-group)
+http://purl.obolibrary.org/obo/NCBITaxon_7054 #Photinus pyralis
+http://purl.obolibrary.org/obo/NCBITaxon_1710587 #Photuris pennsylvanica
+http://purl.obolibrary.org/obo/NCBITaxon_208964 #Pseudomonas aeruginosa PA01
+http://purl.obolibrary.org/obo/NCBITaxon_10116 #Rattus norvegicus
+http://purl.obolibrary.org/obo/NCBITaxon_4932 #Saccharomyces cerevisiae
+http://purl.obolibrary.org/obo/NCBITaxon_227859 #SARS coronavirus
+http://purl.obolibrary.org/obo/NCBITaxon_10633 #Simian virus 40
+http://purl.obolibrary.org/obo/NCBITaxon_373153 #Streptococcus pneumoniae D39
+http://purl.obolibrary.org/obo/NCBITaxon_9823 #Sus scrofa
+http://purl.obolibrary.org/obo/NCBITaxon_5691 #Trypanosoma brucei
+http://purl.obolibrary.org/obo/NCBITaxon_669 #Vibrio harveyi
+http://purl.obolibrary.org/obo/NCBITaxon_630 #Yersinia enterocolitica
+http://purl.obolibrary.org/obo/NCBITaxon_5693 #Trypanosoma cruzi
+http://purl.obolibrary.org/obo/NCBITaxon_5833 #Plasmodium falciparum
+http://purl.obolibrary.org/obo/NCBITaxon_5664 #Leishmania major
+http://purl.obolibrary.org/obo/NCBITaxon_8355 #Xenopus laevis
+http://purl.obolibrary.org/obo/NCBITaxon_7955 #Danio rerio
+http://purl.obolibrary.org/obo/NCBITaxon_7227 #Drosophila melanogaster
+http://purl.obolibrary.org/obo/NCBITaxon_5476 #Candida albicans
+http://purl.obolibrary.org/obo/NCBITaxon_11036 #Venezuelan equine encephalitis virus
+http://purl.obolibrary.org/obo/NCBITaxon_633 #Yersinia pseudotuberculosis
+http://purl.obolibrary.org/obo/NCBITaxon_1280 #Staphylococcus aureus
+http://purl.obolibrary.org/obo/NCBITaxon_602 #Salmonella typhimurium
+http://purl.obolibrary.org/obo/NCBITaxon_601 #Salmonella typhi
+http://purl.obolibrary.org/obo/NCBITaxon_1773 #Mycobacterium tuberculosis
+http://purl.obolibrary.org/obo/NCBITaxon_9913 #Bos taurus
+http://purl.obolibrary.org/obo/NCBITaxon_1351 #Enterococcus faecalis
+http://purl.obolibrary.org/obo/NCBITaxon_10376 #Epstein-Barr virus
+http://purl.obolibrary.org/obo/NCBITaxon_9796 #Equus caballus
+http://purl.obolibrary.org/obo/NCBITaxon_11103 #Hepatitis C virus
+http://purl.obolibrary.org/obo/NCBITaxon_11676 #Human immunodeficiency virus 1
+http://purl.obolibrary.org/obo/NCBITaxon_6183 #Schistosoma mansoni
+http://purl.obolibrary.org/obo/NCBITaxon_11082 #West Nile virus
+http://purl.obolibrary.org/obo/NCBITaxon_10141 #Cavia porcellus
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/NCBITaxon_1351 #Enterococcus faecalis (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_1773 #Mycobacterium tuberculosis (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_90371 #Salmonella typhimurium  (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_90370 #Salmonella typhi (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_1280 #Staphylococcus aureus (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_633 #Yersinia pseudotuberculosis (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_5476 #Candida albicans (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000553
+http://purl.obolibrary.org/obo/NCBITaxon_7227 #Drosophila melanogaster (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000511
+http://purl.obolibrary.org/obo/NCBITaxon_6183 #Schistosoma mansoni (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000511
+http://purl.obolibrary.org/obo/NCBITaxon_9913 #Bos taurus (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000362
+http://purl.obolibrary.org/obo/NCBITaxon_9796 #Equus caballus (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000362
+http://purl.obolibrary.org/obo/NCBITaxon_7955 #Danio rerio (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000518
+http://purl.obolibrary.org/obo/NCBITaxon_8355 #Xenopus laevis (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000518
+http://purl.obolibrary.org/obo/NCBITaxon_5664 #Leishmania major (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000518
+http://purl.obolibrary.org/obo/NCBITaxon_5833 #Plasmodium falciparum (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000662
+http://purl.obolibrary.org/obo/NCBITaxon_5693 #Trypanosoma cruzi (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000662
+http://purl.obolibrary.org/obo/NCBITaxon_11103 #Hepatitis C virus (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_11676 #Human immunodeficiency virus 1 (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_11082 #West Nile virus (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_11036 #Venezuelan equine encephalitis virus (NCBITaxon)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_3702 #Arabidopsis thaliana
+subClassOf http://www.bioassayontology.org/bao#BAO_0000605
+http://purl.obolibrary.org/obo/NCBITaxon_1422 #Bacillus stearothermophilus 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_10906 #Bluetongue virus 10 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_6239 #Caenorhabditis elegans 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000511
+http://purl.obolibrary.org/obo/NCBITaxon_9615 #Canis familiaris 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000362
+http://purl.obolibrary.org/obo/NCBITaxon_562 #Escherchia coli 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_102793 #H5N1 subtype 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_9606 #Homo sapiens 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000362
+http://purl.obolibrary.org/obo/NCBITaxon_5665 #Leishmania mexicana 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000662 
+http://purl.obolibrary.org/obo/NCBITaxon_1245 #Leuconostoc mesanteroides 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_10090 #Mus musculus 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000362
+http://purl.obolibrary.org/obo/NCBITaxon_39947 #Oryza sativa (javanica cultivar-group)
+subClassOf http://www.bioassayontology.org/bao#BAO_0000605
+http://purl.obolibrary.org/obo/NCBITaxon_7054 #Photinus pyralis 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000511
+http://purl.obolibrary.org/obo/NCBITaxon_1710587 #Photuris pennsylvanica 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000511
+http://purl.obolibrary.org/obo/NCBITaxon_208964 #Pseudomonas aeruginosa PA01
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_10116 #Rattus norvegicus 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000362
+http://purl.obolibrary.org/obo/NCBITaxon_4932 #Saccharomyces cerevisiae 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000233
+http://purl.obolibrary.org/obo/NCBITaxon_227859 #SARS coronavirus 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_10633 #Simian virus 40 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_373153 #Streptococcus pneumoniae D39 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_9823 #Sus scrofa 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000362
+http://purl.obolibrary.org/obo/NCBITaxon_5691 #Trypanosoma brucei 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000662
+http://purl.obolibrary.org/obo/NCBITaxon_669 #Vibrio harveyi 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_630 #Yersinia enterocolitica 
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_5693 #Trypanosoma cruzi
+subClassOf http://www.bioassayontology.org/bao#BAO_0000662
+http://purl.obolibrary.org/obo/NCBITaxon_5833 #Plasmodium falciparum
+subClassOf http://www.bioassayontology.org/bao#BAO_0000662
+http://purl.obolibrary.org/obo/NCBITaxon_5664 #Leishmania major
+subClassOf http://www.bioassayontology.org/bao#BAO_0000662
+http://purl.obolibrary.org/obo/NCBITaxon_8355 #Xenopus laevis
+subClassOf http://www.bioassayontology.org/bao#BAO_0000518
+http://purl.obolibrary.org/obo/NCBITaxon_7955 #Danio rerio
+subClassOf http://www.bioassayontology.org/bao#BAO_0000518
+http://purl.obolibrary.org/obo/NCBITaxon_7227 #Drosophila melanogaster
+subClassOf http://www.bioassayontology.org/bao#BAO_0000511
+http://purl.obolibrary.org/obo/NCBITaxon_5476 #Candida albicans
+subClassOf http://www.bioassayontology.org/bao#BAO_0000553
+http://purl.obolibrary.org/obo/NCBITaxon_11036 #Venezuelan equine encephalitis virus
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_633 #Yersinia pseudotuberculosis
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_1280 #Staphylococcus aureus
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_602 #Salmonella typhimurium
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_601 #Salmonella typhi
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_1773 #Mycobacterium tuberculosis
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_9913 #Bos taurus
+subClassOf http://www.bioassayontology.org/bao#BAO_0000362
+http://purl.obolibrary.org/obo/NCBITaxon_1351 #Enterococcus faecalis
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_10376 #Epstein-Barr virus
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_9796 #Equus caballus
+subClassOf http://www.bioassayontology.org/bao#BAO_0000362
+http://purl.obolibrary.org/obo/NCBITaxon_11103 #Hepatitis C virus
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_11676 #Human immunodeficiency virus 1
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_6183 #Schistosoma mansoni
+subClassOf http://www.bioassayontology.org/bao#BAO_0000511
+http://purl.obolibrary.org/obo/NCBITaxon_11082 #West Nile virus
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_469
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_1392
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_1491
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_210
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_573
+subClassOf http://www.bioassayontology.org/bao#BAO_0000364
+http://purl.obolibrary.org/obo/NCBITaxon_5207
+subClassOf http://www.bioassayontology.org/bao#BAO_0000418
+http://purl.obolibrary.org/obo/NCBITaxon_6100
+subClassOf http://www.bioassayontology.org/bao#BAO_0000511
+http://purl.obolibrary.org/obo/NCBITaxon_6192
+subClassOf http://www.bioassayontology.org/bao#BAO_0000511
+http://purl.obolibrary.org/obo/NCBITaxon_6289
+subClassOf http://www.bioassayontology.org/bao#BAO_0000511
+http://purl.obolibrary.org/obo/NCBITaxon_1710587
+subClassOf http://www.bioassayontology.org/bao#BAO_0000511
+http://purl.obolibrary.org/obo/NCBITaxon_9483
+subClassOf http://www.bioassayontology.org/bao#BAO_0000362
+http://purl.obolibrary.org/obo/NCBITaxon_10029
+subClassOf http://www.bioassayontology.org/bao#BAO_0000362
+http://purl.obolibrary.org/obo/NCBITaxon_9462
+subClassOf http://www.bioassayontology.org/bao#BAO_0000362
+http://purl.obolibrary.org/obo/NCBITaxon_9541
+subClassOf http://www.bioassayontology.org/bao#BAO_0000362
+http://purl.obolibrary.org/obo/NCBITaxon_9544
+subClassOf http://www.bioassayontology.org/bao#BAO_0000362
+http://purl.obolibrary.org/obo/NCBITaxon_452646
+subClassOf http://www.bioassayontology.org/bao#BAO_0000362
+http://purl.obolibrary.org/obo/NCBITaxon_9395
+subClassOf http://www.bioassayontology.org/bao#BAO_0000362
+http://purl.obolibrary.org/obo/NCBITaxon_90988
+subClassOf http://www.bioassayontology.org/bao#BAO_0000518
+http://purl.obolibrary.org/obo/NCBITaxon_4896
+subClassOf http://www.bioassayontology.org/bao#BAO_0000233
+http://purl.obolibrary.org/obo/NCBITaxon_37124
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_10298
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_11250
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_11620
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_11269
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_10245
+subClassOf http://www.bioassayontology.org/bao#BAO_0000232
+http://purl.obolibrary.org/obo/NCBITaxon_10141
+subClassOf http://www.bioassayontology.org/bao#BAO_0000362
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://www.geneontology.org/formats/oboInOwl#hasExactSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym
+mapTo http://purl.obolibrary.org/obo/IAO_0000118 #iao:alternative term
+http://www.geneontology.org/formats/oboInOwl#hasDefinition
+mapTo http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
+http://www.w3.org/2000/01/rdf-schema#label
+copyTo http://purl.obolibrary.org/obo/IAO_0000111 #iao:preferredTerm
