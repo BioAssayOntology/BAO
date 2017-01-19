@@ -1,5 +1,5 @@
 [URI of the OWL(RDF/XML) output file]
-http://bioassayontology.org/bao/external/BAO2.0_NCBITaxon_import.owl
+http://bioassayontology.org/bao/external/BAO2.3_NCBITaxon_import.owl
 
 [Source ontology]
 NCBITaxon

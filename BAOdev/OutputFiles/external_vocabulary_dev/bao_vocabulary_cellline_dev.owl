@@ -1,0 +1,416 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_cellline_dev.owl#"
+     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_cellline_dev.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_cellline_dev.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0000019 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000019"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030031 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030031">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An engineered 3T3 mouse fibroblast cell line, which expresses the firefly luciferase reporter gene under the control of Wnt-responsive promoters (TCF/LEF).</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/24/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 651570</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.enzolifesciences.com/ENZ-61001/leading-light-wnt-reporter-assay-starter-kit/</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LEADING LIGHT Wnt Reporter Cell Line cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030035 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030035">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPX2 (aka DPX-2) is a HepG2-derived cell line stably integrated with a PXR (pregnane X receptor) expression vector plus a luciferase reporter, used to detect PXR activation/ CYP3A induction</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 434939</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ncbi.nlm.nih.gov/pubmed/15548381
+http://www.ncbi.nlm.nih.gov/pubmed/22912432</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DPX2 cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030036 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030036">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FA2N-4 is a human hepatocyte cell line; http://web.expasy.org/cellosaurus/CVCL_0267</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/6/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 623928</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://purl.bioontology.org/ontology/MCCL/MCC_0000158
+http://cellfinder.org/ontology?id=CF_194407
+http://web.expasy.org/cellosaurus/CVCL_0267</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FA2N-4 cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030037 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030037">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HMC-1-8 is a human breast cancer cell line</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/3/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 449755</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://web.expasy.org/cellosaurus/CVCL_2949
+http://portals.broadinstitute.org/ccle/cell%20lines/HMC18_BREAST</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HMC-1-8 cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030038 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030038">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HMLE_sh_ECAD is a stable cell line mimicking a cancer stem cell (CSC), derived by knocking down E-Cadherin (via shRNA) in human breast epithelial cells to induce epithelial to mesenchymal transition (EMT)</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/18/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 2717</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ncbi.nlm.nih.gov/pubmed/22941295
+http://www.ncbi.nlm.nih.gov/pubmed/19682730</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HMLE_sh_ECAD cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030039 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030039">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HMLE_sh_eGFP is a human breast epithelial cell line containing shRNA to GFP (green fluorescent reporter); used as an isogenic control line for HMLE_sh_ECAD </obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/18/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 463074</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ncbi.nlm.nih.gov/pubmed/22941295
+http://www.ncbi.nlm.nih.gov/pubmed/19682730</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HMLE_sh_eGFP cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030040 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030040">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HMLE_sh_TWIST is a stable cell line mimicking a cancer stem cell (CSC), derived by knocking down TWIST (via shRNA) in human breast epithelial cells to induce epithelial to mesenchymal transition (EMT); isogenic with another CSC line, HMLE_sh_ECAD </obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/18/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 588703</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ncbi.nlm.nih.gov/pubmed/22941295
+http://www.ncbi.nlm.nih.gov/pubmed/19682730</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HMLE_sh_TWIST cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030042 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030042">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2B4/BCL-2 cells are derived from the murine hybridoma cell line 2B4, stably transfected to overexpress the human protein BCL-2.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 493062</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source: Anthony Letai (Dana Farber)
+Best reference: http://www.ncbi.nlm.nih.gov/pubmed/16697956 
+see also Patent ( https://www.google.com/patents/WO2007123791A2?cl=en)
+Probe Report: https://www.ncbi.nlm.nih.gov/books/NBK143557
+Parent cell line: 2B4: http://purl.obolibrary.org/obo/BTO_0005682</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2B4/BCL-2 cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030043 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030043">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The GripTite 293 MSR cell line is a proprietary genetically enginered HEK293 cell line that expresses the human macrophage scavenger receptor and strongly adheres to standard tissue culture plates.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 602478</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.thermofisher.com/order/catalog/product/R79507</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">293 GripTite MSR cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030044 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2B4/MCL-1 cells are derived from the murine hybridoma cell line 2B4, stably transfected to overexpress the human protein MCL-1.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 493059</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Source: Anthony Letai (Dana Farber)
+Best reference: http://www.ncbi.nlm.nih.gov/pubmed/16697956 
+see also Patent ( https://www.google.com/patents/WO2007123791A2?cl=en)
+Probe Report: https://www.ncbi.nlm.nih.gov/books/NBK143557
+Parent cell line: 2B4: http://purl.obolibrary.org/obo/BTO_0005682</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2B4/MCL-1 cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030045 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030045">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AVA5 cells are derived from the Huh-7 human hepatoma cell line, stably-expressing the HCV replicon (sub-genomic [CON1], genotype 1b); http://www.apath.com/index.html
+see also see PMID: 27013634, 1110665, 10390360</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 463235</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.apath.com/index.html
+see also see PMID: 27013634, 1110665, 10390360</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AVA5 cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030046 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030046">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An immortalised mouse neural progenitor cell line capable of differentiation in vitro. The cell line was established by retorviral-mediated transduction of the avian myc oncogene into mitotic progenitor cells of neonatal mouse cerrebellum. Mouse strain CD1 x C57BL/6.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1353</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://web.expasy.org/cellosaurus/CVCL_4511
+http://www.sigmaaldrich.com/catalog/product/sigma/07062902</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C17.2 cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030048 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MG213 is a subline of the BRG1/BRM-deficient cell line SW13 (http://purl.obolibrary.org/obo/CLO_0009185) that contains a stably integrated glucocorticoid-responsive MMTV-luciferase reporter.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 652260</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3615482/</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MG213 cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030049 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CEM21 (aka CEM#21 or CEM-R5Luc1#21) is derived from CEM.NKR-CCR5 by stable transfecttion of a Tet-activator responsive Luciferase reporter</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fully described in https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3206054/</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 651610</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CEM21 cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030052 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCL-2 1863 is a murine leukemia cell line driven by the overexpression of Myc and BCL-2.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 624396</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2919900/</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BCL-2 1863 cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030053 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCL-1 1780 is a murine leukemia cell line driven by the overexpression of Myc and MCL-1.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 624396</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2919900/</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCL-1 1780 cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030054 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HBL-1 (aka HBL1) is an EBV-negative B-cell lymphoma cell line established from the pleural effusion of a patient with malignant lymphoma, diffuse, large cell.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 651646</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://web.expasy.org/cellosaurus/CVCL_4213
+http://purl.obolibrary.org/obo/BTO_0002522
+</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HBL-1 cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030056 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A PathHunter Beta-Arrestin GPCR cell line (DiscoverX), engineered to co-express the ProLink (PK) tagged GPCR (DRD2L, long form of human DRD2) and the Enzyme Acceptor (EA) tagged Beta-Arrestin. Activation of DRD2L-PK induces Beta-Arrestin-EA recruitment, forcing complementation of the two Beta-galactosidase enzyme fragments (EA and PK). The resulting functional enzyme hydrolyzes substrate to generate a chemiluminescent signal.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 624495</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.discoverx.com/products/cell-line/cho-k1-drd2l-beta-arrestin-cell-line-93-0579c2</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PathHunter CHO-K1 DRD2L Beta-Arrestin cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030057 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A PathHunter Beta-Arrestin GPCR cell line (DiscoverX), engineered to co-express the ProLink (PK) tagged GPCR (human DRD3) and the Enzyme Acceptor (EA) tagged Beta-Arrestin. Activation of DRD3-PK induces Beta-Arrestin-EA recruitment, forcing complementation of the two Beta-galactosidase enzyme fragments (EA and PK). The resulting functional enzyme hydrolyzes substrate to generate a chemiluminescent signal.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 624500</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.discoverx.com/products/cell-line/cho-k1-drd3-beta-arrestin-cell-line-93-0591c2</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PathHunter CHO-K1 DRD3 Beta-Arrestin cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030059 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U87-EGFRvIII (aka U87/vIII) is a stable cell line derived from U87MG (a human glioblastoma) to overexpress the most common mutation of epidermal growth factor receptor (EGFR) found in human glioblastomas--an in-frame deletion of an 801-bp sequence in the extracellular domain of EGFR termed EGFRvIII. (descr. in PMID 15548697)</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 504935</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">parental line: http://purl.obolibrary.org/obo/CLO_0009463
+ref. for this new line: http://www.ncbi.nlm.nih.gov/pubmed/15548697/</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U87-EGFRvIII cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030060 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RAW-Blue cells are derived from the murine RAW 264.7 macrophages with chromosomal integration of a secreted embryonic alkaline phosphatase (SEAP) reporter construct inducible by NF-_B and AP-1</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 652166</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.invivogen.com/raw-blue
+http://web.expasy.org/cellosaurus/CVCL_X594</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RAW-Blue cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030061 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030061">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rat immortilized Schwann cell line</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 624032</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://web.expasy.org/cellosaurus/CVCL_B072
+http://purl.obolibrary.org/obo/BTO_0002937</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S16 cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030062 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030062">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SW1, a mouse melanoma cell line (which harbors N-Ras mutation), isolated from a small amelanotic lung metastasis in a mouse
+with a s.c. K-1735 tumor.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1355</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3158838/
+http://www.ncbi.nlm.nih.gov/pubmed/2832058/
+</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SW1 cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030063 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030063">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tango cell&apos; refers to one of many stable cell lines, all based on the parental line HEK293T, designed to work in a &apos;Tango beta-arrestin&apos; recruitiment assay to measure receptor activation for more than 300 GPCRs. See PMID25895059 and https://pdspdb.unc.edu/prestotango/</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 485366</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://pdspdb.unc.edu/prestotango/
+http://www.ncbi.nlm.nih.gov/pubmed/25895059
+Details on constructs: https://www.ncbi.nlm.nih.gov/pubmed/18165312</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tango cell</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030064 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030064">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human diffuse large B cell lymphoma cell line derived from a 62-year-old male patient</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 651712</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EFO_0006496
+http://web.expasy.org/cellosaurus/CVCL_A442</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TMD8 cell</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 0.0.1+907ef2e) https://github.com/owlcs/owlapi -->
+

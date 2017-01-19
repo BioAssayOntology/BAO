@@ -1,0 +1,251 @@
+[URI of the OWL(RDF/XML) output file]
+http://bioassayontology.org/bao/external/BAO2.3_CLO_import.owl
+
+[Source ontology]
+CLO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0000031
+http://purl.obolibrary.org/obo/CLO_0001601 #A549 (CLO)
+http://purl.obolibrary.org/obo/CLO_0001654 #ACHN (CLO)
+http://purl.obolibrary.org/obo/CLO_0001842 #BA/F3 (CLO)
+http://purl.obolibrary.org/obo/CLO_0002044 #BT-549 (CLO)
+http://purl.obolibrary.org/obo/CLO_0002115 #C-33 A (CLO)
+http://purl.obolibrary.org/obo/CLO_0002175 #CAKI-1 (CLO)
+http://purl.obolibrary.org/obo/CLO_0002334 #CCRF-CEM (CLO)
+http://purl.obolibrary.org/obo/CLO_0002421 #CHO (CLO)
+http://purl.obolibrary.org/obo/CLO_0002462 #CHO-K1 (CLO)
+http://purl.obolibrary.org/obo/CLO_0002544 #COLO 205 (CLO)
+http://purl.obolibrary.org/obo/CLO_0002176 #Caki-1 (CLO)
+http://purl.obolibrary.org/obo/CLO_0002785 #DLD-1 (CLO)
+http://purl.obolibrary.org/obo/CLO_0002840 #DU 145 (CLO)
+http://purl.obolibrary.org/obo/CLO_0003603 #H-4-II-E (CLO)
+http://purl.obolibrary.org/obo/CLO_0003610 #H69AR (CLO)
+http://purl.obolibrary.org/obo/CLO_0003665 #HCT 116 (CLO)
+http://purl.obolibrary.org/obo/CLO_0003679 #HEL (CLO)
+http://purl.obolibrary.org/obo/CLO_0003775 #HL-60 (CLO)
+http://purl.obolibrary.org/obo/CLO_0004276 #HT-1080 (CLO)
+http://purl.obolibrary.org/obo/CLO_0004283 #HT-29 (CLO)
+http://purl.obolibrary.org/obo/CLO_0004307 #HUV-EC-C (CLO)
+http://purl.obolibrary.org/obo/CLO_0003684 #HeLa (CLO)
+http://purl.obolibrary.org/obo/CLO_0003704 #Hep G2 (CLO)
+http://purl.obolibrary.org/obo/CLO_0004009 #Hs 578T (CLO)
+http://purl.obolibrary.org/obo/CLO_0004342 #IEC-6 (CLO)
+http://purl.obolibrary.org/obo/CLO_0007043 #JURKAT (CLO)
+http://purl.obolibrary.org/obo/CLO_0007606 #MCF7 (CLO)
+http://purl.obolibrary.org/obo/CLO_0007646 #MDCK (CLO)
+http://purl.obolibrary.org/obo/CLO_0009015 #SH-SY5Y (CLO)
+http://purl.obolibrary.org/obo/CLO_0009059 #SK-N-SH (CLO)
+http://purl.obolibrary.org/obo/CLO_0009526 #VERO 76 (CLO)
+http://purl.obolibrary.org/obo/CLO_0009524 #Vero (CLO)
+http://purl.obolibrary.org/obo/CLO_0007634 #MDA-MB-231 (CLO)
+http://purl.obolibrary.org/obo/CLO_0001230 #293 (CLO)
+http://purl.obolibrary.org/obo/CLO_0001716 #AML12 (CLO)
+http://purl.obolibrary.org/obo/CLO_0001235 #293T/17 (CLO)
+http://purl.obolibrary.org/obo/CLO_0002597 #COS-7 (CLO)
+http://purl.obolibrary.org/obo/CLO_0007865 #MRC-5 (CLO)
+http://purl.obolibrary.org/obo/CLO_0008172 #NIH-3T3 (CLO)
+http://purl.obolibrary.org/obo/CLO_0009348 #THP-1 (CLO)
+http://purl.obolibrary.org/obo/CLO_0009454 #U-2 OS (CLO)
+http://purl.obolibrary.org/obo/CLO_0001008
+http://purl.obolibrary.org/obo/CLO_0002191
+http://purl.obolibrary.org/obo/CLO_0002420
+http://purl.obolibrary.org/obo/CLO_0007203
+http://purl.obolibrary.org/obo/CLO_0007657
+http://purl.obolibrary.org/obo/CLO_0007904
+http://purl.obolibrary.org/obo/CLO_0009047
+http://purl.obolibrary.org/obo/CLO_0009215
+http://purl.obolibrary.org/obo/CLO_0009463
+http://purl.obolibrary.org/obo/CLO_0009527
+http://purl.obolibrary.org/obo/CLO_0009905
+http://purl.obolibrary.org/obo/CLO_0037059
+http://purl.obolibrary.org/obo/CLO_0037063
+http://purl.obolibrary.org/obo/CLO_0037212
+http://purl.obolibrary.org/obo/CLO_0037213
+http://purl.obolibrary.org/obo/CLO_0037214
+http://purl.obolibrary.org/obo/CLO_0037216
+http://purl.obolibrary.org/obo/CLO_0037217
+http://purl.obolibrary.org/obo/CLO_0037218
+http://purl.obolibrary.org/obo/CLO_0037219
+http://purl.obolibrary.org/obo/CLO_0037220
+http://purl.obolibrary.org/obo/CLO_0037221
+http://purl.obolibrary.org/obo/CLO_0037222
+http://purl.obolibrary.org/obo/CLO_0037223
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CLO_0001601 #A549 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0001654 #ACHN (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0001842 #BA/F3 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0002044 #BT-549 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0002115 #C-33 A (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0002175 #CAKI-1 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0002334 #CCRF-CEM (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0002421 #CHO (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0002462 #CHO-K1 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0002544 #COLO 205 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0002176 #Caki-1 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0002785 #DLD-1 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0002840 #DU 145 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0003603 #H-4-II-E (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0003610 #H69AR (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0003665 #HCT 116 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0003679 #HEL (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0003775 #HL-60 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0004276 #HT-1080 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0004283 #HT-29 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0004307 #HUV-EC-C (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0003684 #HeLa (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0003704 #Hep G2 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0004009 #Hs 578T (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0004342 #IEC-6 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0007043 #JURKAT (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0007606 #MCF7 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0007646 #MDCK (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0009015 #SH-SY5Y (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0009059 #SK-N-SH (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0009526 #VERO 76 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0009524 #Vero (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0007634 #MDA-MB-231 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0001230 #293 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0001716 #AML12 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0001235 #293T/17 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0002597 #COS-7 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0007865 #MRC-5 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0008172 #NIH-3T3 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0009348 #THP-1 (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0009454 #U-2 OS (CLO)
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0000019
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037212
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037213
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037214
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037216
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037217
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037218
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037219
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037220
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037221
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0009047
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0009905
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037222
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0009215
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037223
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0001008
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0002191
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0002420
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0007203
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0007657
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0007904
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0009047
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0009215
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0009463
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0009527
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0009905
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037059
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037063
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037212
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037213
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037214
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037216
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037217
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037218
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037219
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037220
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037221
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037222
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0037223
+subClassOf http://purl.obolibrary.org/obo/CLO_0000019
+http://purl.obolibrary.org/obo/CLO_0000019
+subClassOf http://purl.obolibrary.org/obo/CLO_0000001
+http://purl.obolibrary.org/obo/CLO_0000001
+subClassOf http://www.bioassayontology.org/bao#BAO_0003114
+http://purl.obolibrary.org/obo/CLO_0000031
+subClassOf http://www.bioassayontology.org/bao#BAO_0003114
+
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
