@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_module_organism_dev.owl#"
-     xml:base="http://www.bioassayontology.org/bao/bao_module_organism_dev.owl"
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_organism_dev.owl#"
+     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_organism_dev.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/">
-    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_module_organism_dev.owl"/>
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_organism_dev.owl"/>
     
 
 
@@ -59,6 +59,18 @@
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 5/26/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 662</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cricetulus griseus</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_10141">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000362"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">guinea pig</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 602172</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cavia porcellus</rdfs:label>
     </owl:Class>
     
 
@@ -149,14 +161,9 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_1710587 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_1710587">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000362"/>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000511"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">guinea pig</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/1/2016</obo:IAO_0000116>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/21/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 588847</obo:IAO_0000119>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 602172</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cavia porcellus</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Photuris pennsylvanica</rdfs:label>
     </owl:Class>
     
