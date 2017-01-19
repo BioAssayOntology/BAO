@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_method_dev.owl#"
+     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_method_dev.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_method_dev.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000123 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000123"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000127 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000127"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000139 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000139"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000448 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000448"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002202 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002202"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0040011 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040011">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002202"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any  method that simply measures the overall abundance (concentration, relative amount, etc) of a particular molecule (lipids, second messenger, nucleic acid, protein, etc.)</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/28/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular abundance method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0040012 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040012">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Second messengers relay and amplify signals from receptors to the cell interior as part of a signaling event. Examples include cAMP, cGMP, calcium, nitric oxide, diacylglycerol, etc. Levels of these second messengers are measured to reflect strength of the signaling. </obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/7/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 651719</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">second messenger abundance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0040013 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040013">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Measuring lipid abundance could include mass spec-based methods and lipid droplet formation, a fluorescent intensity+image analysis assay to measure lipid stored in droplets within a cell,</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 5/21/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1656</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lipid abundance method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0040014 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040014">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040011"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/28/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">protein abundance method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0040015 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040015">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000127"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cell density, typically measured by absorbance (often indicated as A600 or OD600), is often used for bacterial or fungal cultures as an indication of cell number, viability or proliferation.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/15/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 775</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell density determination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0040016 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040016">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000139"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beta-galactosidase activity measurement method</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 5/23/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 652176</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Beta-galactosidase activity measurement method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0040017 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040017">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any  method that simply measures the overall abundance (concentration, relative amount, etc) of a nucleic acid (DNA or RNA), typically via hybridization methods</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 5/11/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 463235</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DNA or RNA abundance method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0040018 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040018">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any  method that simply measures the overall abundance (concentration, relative amount, etc) of a small molecule, such as LC-MS/MS or LC-UV. Typically used in both in vitro and in vivo ADME assays to monitor compound.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/6/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 504605</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">small molecule abundance method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0040019 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040019">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000448"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any method that measures the size and shape of whole cells. Typically detected by microscopy or flow cytometry</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/6/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 463200</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular morphology assessment method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0040020 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040020">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000448"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any method that measures the size and shape of structures or organelles within cells, such as nuclei, mitochindria, Golgi, ER or vesicles. Typically detected by microscopy or flow cytometry</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/6/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 463200</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sub-cellular morphology assessment method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0040021 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040021">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002202"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any study performed in a whole, living organism (usually an animal such as a mouse or rat).</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 687012</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in vivo assay method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0040022 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040022">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any study performed in a whole, living organism (usually an animal such as a mouse or rat), to test the effects of a treatment on a specific disease modeled in this animal. Study design and measured endpoints vary tremendously and depend on the particular aspects of the targeted disease. Ideally, the endpoints measured will correlate with how efficacy would be measured in humans.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 687012</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in vivo efficacy method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0040023 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040023">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040021"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any study performed in a whole, living organism (usually an animal such as a mouse or rat) to investigate the pharmacokinetics (PK), pharmacodynamics (PD) or toxicity of a perturbagen or treatment.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 687012</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in vivo PK/PD/Tox method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0040024 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040024">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000123"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Changes in protein thermal stability can be induced by ligand binding, and this thermodynamic stabilization can be measured by a variety of methods, often reported as a delta Tm (or change in the melting temperature of the protein).</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 651658</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thermal shift assessment method</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 0.0.1+907ef2e) https://github.com/owlcs/owlapi -->
+
