@@ -405,18 +405,6 @@
     
 
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0140021 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140021">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A homogeneous functional FRET-based assay used to assess both Ser/Thr and Tyr kinase activity</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/6/2016</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1726</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HTRF KinEASE assay kit (Cisbio)</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://www.bioassayontology.org/bao#BAO_0140022 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140022">
