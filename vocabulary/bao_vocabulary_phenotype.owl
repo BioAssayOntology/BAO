@@ -1,0 +1,415 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_phenotype.owl#"
+     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_phenotype.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_phenotype.owl">
+        <rdfs:label>BioAssay Ontology</rdfs:label>
+        <owl:versionInfo>2.2.2</owl:versionInfo>
+        <dc:date>Jan 23rd 2017</dc:date>
+        <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
+
+contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
+        <rdfs:comment>Created by:
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_metadata.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="&dc;date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/relation -->
+
+    <owl:AnnotationProperty rdf:about="&dc;relation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002542 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002542">
+        <rdfs:label>cell phenotype</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170001 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170001">
+        <rdfs:label xml:lang="en">molecular phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002542"/>
+        <obo:IAO_0000115>The molecular characteristics of a cell of tissue including expressed coding and non-coding RNAs, proteins and their post-translational modifications, lipids, carbohydrates and small molecules that characterize the state in a cell or tissue and that result from the interaction of its genotype and the environment.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170002 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170002">
+        <rdfs:label xml:lang="en">morphological phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002542"/>
+        <obo:IAO_0000115>The form and structure of an organism and its parts, including cells, that result from the interaction of its genotype and the environment.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170003 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170003">
+        <rdfs:label xml:lang="en">biochemical phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170001"/>
+        <obo:IAO_0000115>The proteins and their post-translational modifications, lipids, carbohydrates and small molecules that characterize the state in a cell or tissue and that result from the interaction of its genotype and the environment.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170004 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170004">
+        <rdfs:label xml:lang="en">transcriptional phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170001"/>
+        <obo:IAO_0000115>The coding and non-coding RNAs expressed in a cell or tissue that result from the interaction of its genotype and the environment.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170005 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170005">
+        <rdfs:label xml:lang="en">cellular state phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002542"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170006 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170006">
+        <rdfs:label xml:lang="en">autophagic cell phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170007 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170007">
+        <rdfs:label xml:lang="en">inflamed cell phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170008 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170008">
+        <rdfs:label xml:lang="en">inflamed blood vessel cell phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170009 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170009">
+        <rdfs:label xml:lang="en">neuronal cell phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170010 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170010">
+        <rdfs:label xml:lang="en">developing neuron</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170009"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170011 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170011">
+        <rdfs:label xml:lang="en">regenerating neuron</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170009"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170012 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170012">
+        <rdfs:label xml:lang="en">dead cell phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170013 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170013">
+        <rdfs:label xml:lang="en">dying cell phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170014 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170014">
+        <rdfs:label xml:lang="en">necrotic cell phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170013"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170015 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170015">
+        <rdfs:label xml:lang="en">apoptotic cell phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170013"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170016 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170016">
+        <rdfs:label xml:lang="en">cell cycle phase phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170005"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170017 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170017">
+        <rdfs:label xml:lang="en">M phase mitotic cell phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170016"/>
+        <rdfs:comment>mitotic cell phenotype</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170018 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170018">
+        <rdfs:label xml:lang="en">S phase mitotic cell phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170016"/>
+        <rdfs:comment>DNA replicated mitotic cell phenotype</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170019 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170019">
+        <rdfs:label xml:lang="en">molecular localization phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170020 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170020">
+        <rdfs:label xml:lang="en">NF-KappaB p65 translocation phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170019"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170021 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170021">
+        <rdfs:label xml:lang="en">molecular expression phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170022 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170022">
+        <rdfs:label xml:lang="en">neuronal morphology phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170023 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170023">
+        <rdfs:label xml:lang="en">blebbed neurite phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170024 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170024">
+        <rdfs:label xml:lang="en">branched neurite phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170025 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170025">
+        <rdfs:label xml:lang="en">defasciculated axon bundles phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170026 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170026">
+        <rdfs:label xml:lang="en">elongated neurite phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170027 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170027">
+        <rdfs:label xml:lang="en">fasciculated axons phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170028 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170028">
+        <rdfs:label xml:lang="en">shortened neurite phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170022"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170029 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170029">
+        <rdfs:label xml:lang="en">rounded cell phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170030 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170030">
+        <rdfs:label xml:lang="en">shrunken cell phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170002"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170031 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170031">
+        <rdfs:label xml:lang="en">blebbed axon  phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0170032 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170032">
+        <rdfs:label xml:lang="en">blebbed dendrite  phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170023"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

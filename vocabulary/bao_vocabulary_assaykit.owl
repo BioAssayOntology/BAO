@@ -1,0 +1,968 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl/"
+     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl">
+        <rdfs:label>BAO</rdfs:label>
+        <rdfs:label>BioAssay Ontology</rdfs:label>
+        <rdfs:comment>Contact:
+Stephan Schurer
+stephan dot schurer at gmail dot com</rdfs:comment>
+        <dc:date>Jan 23rd 2017</dc:date>
+        <owl:versionInfo>2.2.2</owl:versionInfo>
+        <rdfs:comment>Created by:
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_metadata.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000216 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000216">
+        <rdfs:label>steadylite HTS Reagent</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000248 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000248">
+        <rdfs:label>assay kit</rdfs:label>
+        <obo:IAO_0000115>The title of the kit/biologicals used in the assay.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000298 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000298">
+        <rdfs:label>Steady-Glo Luciferase Assay System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000299 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000299">
+        <rdfs:label>Proteasome-Glo Chymotrypsin-Like Assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000307 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000307">
+        <rdfs:label>PKLight</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000310 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000310">
+        <rdfs:label>P450-Glo CYP3A4 Screening System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000311 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000311">
+        <rdfs:label>P450-Glo CYP2D6 Screening System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000333 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000333">
+        <rdfs:label>P450-Glo CYP2C9 Screening System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000670 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000670">
+        <rdfs:label>P450-Glo CYP2C19 Screening System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000674 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000674">
+        <rdfs:label>P450-Glo CYP1A2 Screening System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000675 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000675">
+        <rdfs:label>ONE-Glo Luciferase Assay System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000678 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000678">
+        <rdfs:label>Kinase-Glo Plus Luminescent Kinase Assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000679 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000679">
+        <rdfs:label>Kinase-Glo Luminescent Kinase Assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000680 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000680">
+        <rdfs:label>Dual-Luciferase Reporter Assay System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000681 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000681">
+        <rdfs:label>Chroma-Glo Luciferase Assay System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000682 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000682">
+        <rdfs:label>CellTiter-Glo Luminescent Cell Viability Assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000683 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000683">
+        <rdfs:label>Caspase Glo 3/7 Assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000685 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000685">
+        <rdfs:label>Bright-Glo Luciferase Assay System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000686 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000686">
+        <rdfs:label>britelite plus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000687 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000687">
+        <rdfs:label>Beta-Glo Assay System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000688 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000688">
+        <rdfs:label>BacTiter-Glo Microbial Cell Viability Assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000689 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000689">
+        <rdfs:label>ATPLite Luminescence Assay System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000690 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000690">
+        <rdfs:label>ADP Glo Kinase Assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000814 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000814">
+        <rdfs:label>Adapta Universal Kinase Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000815 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000815">
+        <rdfs:label>ADP Hunter Plus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000816 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000816">
+        <rdfs:label>Amplex Red Glucose/Glucose Oxidase Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000873 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000873">
+        <rdfs:label>Calcium 5 Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000898 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000898">
+        <rdfs:label>cAMP-screen direct system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000908 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000908">
+        <rdfs:label>Fluo-8 No Wash Calcium Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000917 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000917">
+        <rdfs:label>FluxOR Thallium Detection Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000923 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000923">
+        <rdfs:label>GeneBLAzer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000936 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000936">
+        <rdfs:label>High Performance PBX Calcium Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000937 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000937">
+        <rdfs:label>HTRF cAMP Detection Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000938 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000938">
+        <rdfs:label>HTRF cAMP HiRange Detection Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000939 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000939">
+        <rdfs:label>HTRF KinEASE-TK</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000940 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000940">
+        <rdfs:label>HTScan IKK-beta Kinase Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000941 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000941">
+        <rdfs:label>HTScan PKC-beta Kinase Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000942 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000942">
+        <rdfs:label>HTScan PKC-theta Kinase Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000948 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000948">
+        <rdfs:label>IP-One HTRF Assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000953 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000953">
+        <rdfs:label>LANCE cAMP Detection Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000958 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000958">
+        <rdfs:label>LiveBLAzer FRET - B/G Loading Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000983 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000983">
+        <rdfs:label>OptEIA Human IL-8 ELISA Set</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000988 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000988">
+        <rdfs:label>PathHunter Beta-Arrestin Assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001025 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001025">
+        <rdfs:label>Tango GPCR Assay System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001200 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001200">
+        <rdfs:label xml:lang="en">Transcreener assay kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001201 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001201">
+        <rdfs:label xml:lang="en">Lactate kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001202 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001202">
+        <rdfs:label xml:lang="en">TruPoint assay kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002018 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002018">
+        <rdfs:label>xMap kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002540 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002540">
+        <rdfs:label>ECL western blotting detection kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002561 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002561">
+        <rdfs:label>FLIPR Calcium 3 Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002562 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002562">
+        <rdfs:label>LanthaScreen kinase activity assay kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002563 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002563">
+        <rdfs:label>lance TR-FRET kinase assay kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002564 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002564">
+        <rdfs:label>AlphaScreen IgG detection kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002565 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002565">
+        <rdfs:label>AlphaScreen GST detection kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002566 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002566">
+        <rdfs:label>AlphaScreen cAMP assay kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002567 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002567">
+        <rdfs:label>ECL peptide assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002727 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002727">
+        <rdfs:label>ELISA cAMP Competition Assay using cAMP-Screen Direct System</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002728 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002728">
+        <rdfs:label>Vybrant MTT Cell Proliferation Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002732 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002732">
+        <rdfs:label>Phospho(Thr180/Tyr182)/Total p38 Assay Whole Cell Lysate Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002974 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002974">
+        <rdfs:label xml:lang="en">Cellomics Beta-Catenin Activation Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002975 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002975">
+        <rdfs:label xml:lang="en">Cellomics BrdU and Ki67 Cell Proliferation Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002976 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002976">
+        <rdfs:label xml:lang="en">Cellomics Caspase3 Activation Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002977 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002977">
+        <rdfs:label xml:lang="en">Cellomics Caspase9 Activation Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002978 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002978">
+        <rdfs:label xml:lang="en">Cellomics Cell Motility Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002979 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002979">
+        <rdfs:label xml:lang="en">Cellomics Cell Viability Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002980 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002980">
+        <rdfs:label xml:lang="en">Cellomics c-Jun Activation Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002981 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002981">
+        <rdfs:label xml:lang="en">Cellomics Cytoskeletal Rearrangement Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002982 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002982">
+        <rdfs:label xml:lang="en">Cellomics Mitotic Index Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002983 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002983">
+        <rdfs:label xml:lang="en">Cellomics Multiparameter Cytotoxicity 1 Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002984 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002984">
+        <rdfs:label xml:lang="en">Cellomics Multiplexed NFκB and c-Jun Activation Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002985 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002985">
+        <rdfs:label xml:lang="en">Cellomics Multiplexed p53 and p21 Detection Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002986 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002986">
+        <rdfs:label xml:lang="en">Cellomics p38 MAPK Activation Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003076 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003076">
+        <rdfs:label xml:lang="en">PolarScreen Competitor Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003077 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003077">
+        <rdfs:label xml:lang="en">HitHunter Calcium No WashPLUS Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003078 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003078">
+        <rdfs:label xml:lang="en">HitHunter cAMP Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003079 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003079">
+        <rdfs:label xml:lang="en">AlphaScreen Phosphotyrosine Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003080 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003080">
+        <rdfs:label xml:lang="en">AlphaScreen cGMP Detection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003081 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003081">
+        <rdfs:label xml:lang="en">Alphascreen second messenger IP1 detection kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003082 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003082">
+        <rdfs:label xml:lang="en">HTRF biomarkers</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003083 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003083">
+        <rdfs:label xml:lang="en">ViaLight Plus kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003084 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003084">
+        <rdfs:label xml:lang="en">QuantiChrom Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003085 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003085">
+        <rdfs:label xml:lang="en">LanthaScreen Co-Factor Interaction Assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003086 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003086">
+        <rdfs:label xml:lang="en">LanthaScreen Competetive Binding Assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003087 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003087">
+        <rdfs:label xml:lang="en">FLIPR Calcium 5 Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003088 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003088">
+        <rdfs:label xml:lang="en">FLIPR Membrane Potential Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003089 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003089">
+        <rdfs:label xml:lang="en">CyQUANT Cell Proliferation Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003090 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003090">
+        <rdfs:label xml:lang="en">HTRF KinEASE</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003091 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003091">
+        <rdfs:label xml:lang="en">Fluo-4 Calcium Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003092 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003092">
+        <rdfs:label xml:lang="en">Calcium Assay Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003109 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003109">
+        <rdfs:label xml:lang="en">KINOMEscan kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:comment>Kit uses for Kinome scan assays</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140001 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140001">
+        <rdfs:label xml:lang="en">PathScan Apoptosis and Proliferation Multiplex IF Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140002 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140002">
+        <rdfs:label xml:lang="en">PathScan EGF Receptor Activation Multiplex IF Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140003 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140003">
+        <rdfs:label xml:lang="en">PathScan EMT Duplex IF Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140004 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140004">
+        <rdfs:label xml:lang="en">PathScan Multi-Target HCA DNA Damage Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140005 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140005">
+        <rdfs:label xml:lang="en">PathScan Multi-Target HCA Stress and Apoptosis Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140006 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140006">
+        <rdfs:label xml:lang="en">PathScan Signaling Nodes Multiplex IF Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140007 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140007">
+        <rdfs:label xml:lang="en">StemLight Pluripotency Antibody Kit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+

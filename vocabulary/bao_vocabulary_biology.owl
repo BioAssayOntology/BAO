@@ -1,0 +1,2709 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl#"
+     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl">
+        <rdfs:label>BioAssay Ontology</rdfs:label>
+        <owl:versionInfo>2.2.2</owl:versionInfo>
+        <rdfs:comment>Created by:
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+        <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
+
+contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
+        <dc:date>Jan 23rd 2017</dc:date>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114">
+        <rdfs:label xml:lang="en">has curation status</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <rdfs:label xml:lang="en">definition</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118">
+        <rdfs:label xml:lang="en">alternative term</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/license -->
+
+    <owl:AnnotationProperty rdf:about="&dc;license"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000011 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000011">
+        <rdfs:label>nucleic acid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003111"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000119 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000119">
+        <rdfs:label>induced pluripotent stem cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002931"/>
+        <obo:IAO_0000118>iPSC</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000141 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000141">
+        <rdfs:label>Luciferin 4-monooxygenase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000291"/>
+        <obo:IAO_0000118>luciferase</obo:IAO_0000118>
+        <obo:IAO_0000115>An oxidative enzyme that catalyzes the conversion of luciferin to oxyluciferin with the concomitant emission of light (luminescence).</obo:IAO_0000115>
+        <obo:IAO_0000118>Firefly luciferase</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000171 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000171">
+        <rdfs:label>lipid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003111"/>
+        <obo:IAO_0000115>Lipids are a group of naturally occurring organic compounds that are soluble in nonpolar organic solvents, but insoluble in water. Examples include fatty acids, triglycerides, phospholipids, etc. Lipids function to store energy, form a component of cell membrane and as signaling molecules.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000175 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000175">
+        <rdfs:label>protein</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003111"/>
+        <obo:IAO_0000115>A protein or polypeptide is a long polymer of amino acids joined together by peptide bonds. The sequence of the amino acids is defined by the genetic code.
+Here, a protein is a perturbagen whereby its ability to modulate a physiological process or a disease pathology is assessed.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000204 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000204">
+        <rdfs:label>Interleukin-6</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000369"/>
+        <obo:IAO_0000118>IL-6</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000222 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000222">
+        <rdfs:label>generic hydrolase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000287"/>
+        <obo:IAO_0000115>Includes all hydrolases except phosphatases and proteases.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000226 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000226">
+        <rdfs:label>PNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000270"/>
+        <obo:IAO_0000115>PNA or protein nucleic acid is an artificially synthesized polymer whose backbone is composed of repeating N-(2-aminoethyl)-glycine units linked by peptide bonds. Since PNA does not contain charged phosphate groups in its backbone, the interaction between PNA-DNA is stronger than that between DNA-DNA due to the lack of electrostatic repulsion.</obo:IAO_0000115>
+        <obo:IAO_0000118>protein nucleic acid</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000232 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000232">
+        <rdfs:label>virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <obo:IAO_0000115>Viruses are small infectious agents that depend on the host cells to reproduce. Outside the host, they contain a protein coat called capsid that encloses their genetic material (either DNA or RNA). Viruses can infect bacteria, plants and animals and cause a number of diseases, e.g. smallpox, chickenpox, influenza, polio, rabies, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000233 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000233">
+        <rdfs:label>unicellular fungi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000418"/>
+        <obo:IAO_0000115>It includes the baker&apos;s yeast (Saccharomyces cerevisiae) and fission yeast (Schizosaccharomyces pombe), which are unicellular.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000236 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000236">
+        <rdfs:label>Tumor necrosis factor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000369"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000237 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000237">
+        <rdfs:label>adhesion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000175"/>
+        <obo:IAO_0000115>The proteins located on the cell surface which are involved with the binding with other cells or the extracellular matrix. They belong to 5 families: Immunoglobulin superfamily, integrins, cadherins, selectins and the lymphocyte homing receptors.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000239 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000239">
+        <rdfs:label>primary cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002931"/>
+        <obo:IAO_0000115>Cells that are cultured from a subject (tissue or tumor) and which are not immortalized. They can undergo only a limited number of cell divisions prior to reaching senescence.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000264 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000264">
+        <rdfs:label xml:lang="en">biological process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
+        <obo:IAO_0000115>Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end (from GO).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000269 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000269">
+        <rdfs:label>DNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000011"/>
+        <obo:IAO_0000115>DNA or deoxyribonucleic acid is the genetic material in all the living things, and some viruses. It is a polymer of nucleotides, with a backbone made of deoxyribose sugar and phosphate groups joined together by ester bonds.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000270 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000270">
+        <rdfs:label>RNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000011"/>
+        <obo:IAO_0000115>RNA or ribonucleic acid is a polymer of nucleotides with a backbone made of ribose sugar and phosphate groups linked together by ester bonds. RNA has the base uracil instead of thymine, which is present in DNA.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000271 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000271">
+        <rdfs:label>Interferon gamma</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000369"/>
+        <obo:IAO_0000118>IFN-gamma</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000274 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000274">
+        <rdfs:label>mRNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000270"/>
+        <obo:IAO_0000115>mRNA or messenger RNA is a genetic intermediate between DNA and protein. It is transcribed from DNA by RNA polymerases which is further processed by other enzymes. mRNA serves as the template to synthesize proteins on the ribosomes.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000275 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000275">
+        <rdfs:label>rRNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000270"/>
+        <obo:IAO_0000115>rRNA or ribosomal RNAs are present in ribosomes in a cell. Ribosomes are protein translation machinery which can read messenger RNAs and translate that information into proteins.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000276 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000276">
+        <rdfs:label>tRNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000270"/>
+        <obo:IAO_0000115>tRNA or transfer RNA is a small RNA molecule that transfers a specific active amino acid to a growing polypeptide chain at the ribosomal site of protein synthesis.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000277 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000277">
+        <rdfs:label>chaperone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000365"/>
+        <obo:IAO_0000115>They have an essential role in the regulation of protein conformation states. Molecular chaperones help nascent polypeptides fold correctly and multimeric protein complexes assemble properly, and reduce the possibility of protein aggregation.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000278 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000278">
+        <rdfs:label>enzyme regulator</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000175"/>
+        <obo:IAO_0000115>It modulates the activity of an enzyme.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000279 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000279">
+        <rdfs:label>enzyme</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000175"/>
+        <obo:IAO_0000115>Enzymes are biological catalysts involved in important pathways that allow chemical reactions to occur at higher rates (velocities) than would be possible without the enzyme. Enzymes are generally globular proteins that have one or more substrate binding sites.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000280 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000280">
+        <rdfs:label>ion channel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000285"/>
+        <obo:IAO_0000115>Ion channels are present in the cell membrane. They are pore-forming protein complexes that facilitate diffusion of ions across membranes and thus establish the small voltage gradient across the plasma membrane of living cells.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000281 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000281">
+        <rdfs:label>receptor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000175"/>
+        <obo:IAO_0000115>A membrane or intracellular protein that specifically binds a known stimulus of cellular activity, such as a hormone, growth factor, antigen, neurotransmitter, drug, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000282 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000282">
+        <rdfs:label>transcription factor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000175"/>
+        <obo:IAO_0000115>It is a protein that binds to a specific sequence of DNA (upstream of the genes that it regulates) and regulates gene expression.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000283 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000283">
+        <rdfs:label>transporter</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000175"/>
+        <obo:IAO_0000115>A transporter protein is a transmembrane protein that helps transport small molecules and proteins across the membrane. This is done using facilitated diffusion or active transport.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000284 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000284">
+        <rdfs:label>G protein coupled receptor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000285"/>
+        <obo:IAO_0000115>G protein-coupled receptors (GPCRs), comprise the largest integral membrane protein family with nearly 1000 members. They integrate extracellular signals from hormones, growth factors, neurotransmitters, etc to downstream cellular responses. They are important pharmacological targets, being associated with a number of diseases. Upon ligand binding extracellularly, the GPCR signals through a downstream heterotrimeric G protein complex, consisting of the α, β and γ subunits.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000285 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000285">
+        <rdfs:label>transmembrane receptor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000281"/>
+        <obo:IAO_0000115>Transmembrane receptors are integral membrane proteins in either the cell- or organelle-membrane. They bind specific hormones, neurotransmitters, cytokines, growth factors, etc and initiate cell signaling, which results in changes in the cell function.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000286 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000286">
+        <rdfs:label>nuclear receptor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000281"/>
+        <obo:IAO_0000115>Nuclear receptors are localized in the cytosol and mediate the activity of hormones and certain vitamins. They are all transcription factors, which upon activation by ligand binding, translocate to the nucleus, bind specific DNA sequence and activate gene expression.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000287 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000287">
+        <rdfs:label>hydrolase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+        <obo:IAO_0000115>Formation of two products from a substrate by hydrolysis.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000288 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000288">
+        <rdfs:label>isomerase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+        <obo:IAO_0000115>Intramolecule rearrangement, i.e. isomerization changes within a single molecule.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000289 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000289">
+        <rdfs:label>ligase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+        <obo:IAO_0000115>Join together two molecules by synthesis of new C-O, C-S, C-N or C-C bonds with simultaneous breakdown of ATP.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000290 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000290">
+        <rdfs:label>lyase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+        <obo:IAO_0000115>Non-hydrolytic addition or removal of groups from substrates. C-C, C-N, C-O or C-S bonds may be cleaved.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000291 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000291">
+        <rdfs:label>oxidoreductase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+        <obo:IAO_0000115>To catalyze oxidation/reduction reactions; transfer of H and O atoms or electrons from one substance to another.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000292 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000292">
+        <rdfs:label>transferase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+        <obo:IAO_0000115>Transfer of a functional group from one substance to another. The group may be methyl-, acyl-, amino- or phosphate group.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000293 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000293">
+        <rdfs:label>generic transferase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000292"/>
+        <obo:IAO_0000115>Includes all  transferases except kinases.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000294 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000294">
+        <rdfs:label>kinase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000292"/>
+        <obo:IAO_0000115>A protein kinase is an enzyme that modifies other proteins by chemically adding phosphate groups to them. The substrate protein&apos;s activity, localization and overall function is modulated by the kinase reaction.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000295 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000295">
+        <rdfs:label>phosphatase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000287"/>
+        <obo:IAO_0000115>A phosphatase is an enzyme that removes a phosphate group from its substrate by hydrolysis of phosphoric acid esters.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000315 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000315">
+        <rdfs:label>cDNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000269"/>
+        <obo:IAO_0000115>cDNA or complementary DNA is complementary in sequence to a particular messenger RNA (mRNA). It is synthesized from mRNA in a reverse transcription reaction by reverse transcriptase enzyme. cDNA can be cloned in a vector and introduced into cells to bring about the expression of that particular gene in those cells.</obo:IAO_0000115>
+        <obo:IAO_0000118>complimentary deoxyribonucleic acid</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000316 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000316">
+        <rdfs:label>genomic DNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000269"/>
+        <obo:IAO_0000118>linear deoxyribonucleic acid</obo:IAO_0000118>
+        <obo:IAO_0000115>DNA that is linear and not circular. Examples of linear DNA include synthetic oligonucleotide, restriction endonuclease digestion product, polymerase chain reaction product, mechanically sheared genomic DNA, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000317 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000317">
+        <rdfs:label>plasmid DNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000269"/>
+        <obo:IAO_0000115>Plasmid is a double stranded circular DNA molecule that can replicate independently of the chromosomal DNA. It exists naturally in bacteria and some yeast. In genetic engineering, plasmids are exploited to clone and multiply a gene of interest. Several plasmid vectors are available commercially to introduce cloned DNA into different cell types.</obo:IAO_0000115>
+        <obo:IAO_0000118>plasmid deoxyribonucleic acid</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000325 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000325">
+        <rdfs:label>peptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003111"/>
+        <obo:IAO_0000115>Peptide is a short polymer of amino acids, which is generally &lt;50 amino acids long.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000362 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000362">
+        <rdfs:label>mammalian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000510"/>
+        <obo:IAO_0000115>This includes animal models typically used in drug discovery for toxicity or pharmacology studies, such as mouse, rat (mammals).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000364 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000364">
+        <rdfs:label>bacterium</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000658"/>
+        <obo:IAO_0000115>Bacteria lack membrane bound organelles and are surrounded by a rigid cell wall. Though they are unicellular, they function by aggregating into multicellular colonies.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000365 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000365">
+        <rdfs:label>cytosolic protein</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000175"/>
+        <obo:IAO_0000115>Proteins localized in the cytosol, but do not belong to the transcription factor, transporter, structural, enzyme, enzyme regulator and nuclear receptor classes of proteins in the cytosol.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000367 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000367">
+        <rdfs:label>membrane protein</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000175"/>
+        <obo:IAO_0000115>Membrane proteins are associated with the cell membrane. They can be classified into two broad categories—integral (intrinsic) and peripheral (extrinsic). Intrinsic proteins have one or more segments embedded in the phospholipid bilayer, while extrinsic proteins do not traverse the membrane.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000368 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000368">
+        <rdfs:label>G protein</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000367"/>
+        <obo:IAO_0000115>There are two distinct G protein families, namely the heterotrimeric G proteins (consisting of the α, β and γ subunits) downstream of the G protein coupled receptors (GPCRs) and the monomeric G proteins that belong to the Ras superfamily of GTPases. Upon ligand binding, the GPCR undergoes a conformational change, which allows it to act as a guanine nucleotide exchange factor (GEF) of an associated G protein. The GTP-bound G α subunit then signals by regulating the activity of adenylate cyclase, phospholipase, or Rho GEFs.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000369 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000369">
+        <rdfs:label>secreted</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000175"/>
+        <obo:IAO_0000115>These proteins are translocated from the inside of the cell to the cell&apos;s exterior. Proteins targeted for secretion undergo glycosylation and other postranslational modifications in the endoplasmic reticulum and the golgi complex, and are enclosed in secretory vesicles. The fusion of vesicles to the cell membrane releases the secretory proteins to the exterior. Examples include growth factors, tumor necrosis factors, cytokines, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000370 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000370">
+        <rdfs:label>structural</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000175"/>
+        <obo:IAO_0000115>These proteins constitute the largest class with respect to the total protein mass. They are fibrous proteins, e.g. keratin, actin, myosin, etc whose primary function is to provide scaffolding that maintains cell shape.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000392 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000392">
+        <rdfs:label>generic membrane protein</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000367"/>
+        <obo:IAO_0000115>This class includes membrane proteins other than g-proteins, such as regulators of g-protein, GTPases, etc. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000412 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000412">
+        <rdfs:label>LNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000270"/>
+        <obo:IAO_0000115>Locked nucleic acid (LNA) is a nucleic acid analogue containing one or more LNA nucleotide monomers with a bicyclic furanose unit locked in an RNA mimicking sugar conformation. LNA oligonucleotides have high affinity toward complementary single-stranded RNA and complementary single- or double-stranded DNA. This makes LNA suitable for sequence specific targeting of RNA in vitro or in vivo.</obo:IAO_0000115>
+        <obo:IAO_0000118>locked nucleic acid</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000418 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000418">
+        <rdfs:label>fungi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000509"/>
+        <obo:IAO_0000115>Fungi are either unicellular or multicellular and include yeasts, molds, mushrooms, etc. Several parasitic fungi exist, which infect animals and plants, e.g., Aspergillus flavus, Claviceps purpurea, Pneumocystis jirovecii, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000496 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000496">
+        <rdfs:label>RNA aptamer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000270"/>
+        <obo:IAO_0000118>ribonucleic acid aptamer</obo:IAO_0000118>
+        <obo:IAO_0000115>Aptamers are synthetic affinity probes. RNA aptamers are oligonucleotides that bind to a specific target molecule such as small molecules, proteins, nucleic acids and cells. They are created by selecting them from a large random sequence pool, but natural aptamers also exist in riboswitches.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000498 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000498">
+        <rdfs:label>riboswitch</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000270"/>
+        <obo:IAO_0000115>They are part of mRNA that regulate gene expression through ligand induced changes in mRNA secondary or tertiary structure. The ligand is generally a small metabolite which binds to the aptamer part of the riboswitch.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000502 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000502">
+        <rdfs:label>antibody</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002554"/>
+        <obo:IAO_0000115>Antibody is a protein (immunoglobulin) produced by the immune system of an organism in response to exposure to a foreign molecule (antigen) and characterized by its specific binding to a site of that molecule (antigenic determinant or epitope). Antibodies are used extensively as tools to characterize proteins. Antibodies are either monoclonal or polyclonal.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000503 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000503">
+        <rdfs:label>monoclonal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000502"/>
+        <obo:IAO_0000115>Highly specific antibodies produced by the clones of a single hybrid cell, which is generated by the fusion of a B cell with a tumor cell. They recognize a unique epitope of an antigen.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000507 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000507">
+        <rdfs:label>polyclonal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000502"/>
+        <obo:IAO_0000115>Antibodies produced by immunizing a mammal such as a mouse, rabbit or goat with an antigen. They are a mixture of antibodies produced from different B cells raised against any of the different epitopes of that antigen.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000509 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000509">
+        <rdfs:label>eukaryote</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000658"/>
+        <obo:IAO_0000115>This includes fungi, vertebrates and invertebrates. Eukaryotic cells have a well-defined nucleus and membrane enveloped organelles namely, mitochondria, endoplasmic reticulum, golgi apparatus, and lysosomes.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000510 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000510">
+        <rdfs:label>vertebrate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000659"/>
+        <obo:IAO_0000115>This includes animals having a vertebral column, and model organisms from this group include the zebrafish, mouse, rat, etc</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000511 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000511">
+        <rdfs:label>invertebrate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000659"/>
+        <obo:IAO_0000115>These animals lack a vertebral column and many of which are used as model organisms in HTS screening including Drosophila, C.elegans, sea urchin, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000518 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000518">
+        <rdfs:label>non-mammalian</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000510"/>
+        <obo:IAO_0000115>This includes vertebrate model organisms such as the Danio rerio (zebrafish), Xenopus laevis, etc which are tested generally to understand development.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000550 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000550">
+        <rdfs:label>DNA construct</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003111"/>
+        <obo:IAO_0000118>deoxyribonucleic acid construct</obo:IAO_0000118>
+        <obo:IAO_0000115>A brief description of the recombinant DNA created by the insertion of a gene or siRNA encoding DNA of interest into a vector. It includes information on the type of vector, the type of promoter, the selectable markers, etc., which are all considered when sub-cloning a gene of interest. The construct is transfected into cells by various methods.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000551 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000551">
+        <rdfs:label>organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
+        <obo:IAO_0000115>The organism related to the target / meta-target of the bioassay. It includes both bacterium and eukaryote.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000553 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000553">
+        <rdfs:label>multicellular fungi</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000418"/>
+        <obo:IAO_0000115>Most of the fungi are multicellular, e.g. molds, mushrooms, etc. They are made up of multicellular filaments known as hyphae. Several parasitic fungi exist, which infect animals and plants, e.g., Aspergillus flavus, Claviceps purpurea, Pneumocystis jirovecii, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000582 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000582">
+        <rdfs:label>gene</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003111"/>
+        <obo:IAO_0000115>A genomic sequence, which is the unit of heredity of a living organism. It consists of regulatory regions and transcribed regions.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000605 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000605">
+        <rdfs:label>plant</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000509"/>
+        <obo:IAO_0000115>They are living organisms which derive their energy from photosynthesis, with the exception of parasitic plants. Plants include herbs, shrubs, trees, grasses, vines, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000607 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000607">
+        <rdfs:label>sea urchin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000511"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000631 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000631">
+        <rdfs:label>group a streptococcus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000364"/>
+        <obo:IAO_0000115>Causes mild infections such as &quot;strep throat&quot; to severe diseases such as necrotizing fasciitis and streptococcal toxic shock syndrome.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000636 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000636">
+        <rdfs:label>influenza virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000232"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000652 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000652">
+        <rdfs:label>protease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000287"/>
+        <obo:IAO_0000115>A protease is an enzyme that hydrolyzes the peptide bonds in a protein or a peptide.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000658 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000658">
+        <rdfs:label>cellular organisms</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000551"/>
+        <obo:IAO_0000115>This includes all organisms which are made up of cells, e.g. bacteria, plants and animals.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000659 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000659">
+        <rdfs:label>metazoa</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000509"/>
+        <obo:IAO_0000115>Metazoa comprises of animals, which are multicellular eukaryotic organisms. This includes those having a vertebral column (e.g. fish, frog, snake, bird, human) and those that do not (e.g. worm, fly, star fish, etc).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000662 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000662">
+        <rdfs:label>protozoan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000509"/>
+        <obo:IAO_0000115>Protozoans are single celled organisms, some of which are parasitic, e.g., Plasmodium falciparum, Leishmania mexicana, Trypanosoma brucei, etc which cause malaria, leishmaniasis, and sleeping sickness, respectively.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000712 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000712">
+        <rdfs:label>Epstein-Barr virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000232"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000718 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000718">
+        <rdfs:label>CD40</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000285"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000719 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000719">
+        <rdfs:label>CD4-TLR4</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000285"/>
+        <rdfs:comment>Fusion protein of CD4 and TLR4.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000732 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000732">
+        <rdfs:label>Cos-7</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000743 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000743">
+        <rdfs:label>Schneider&apos;s Drosophila Line 2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000745 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000745">
+        <rdfs:label>FITC-RGS12-GoLoco peptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000750 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000750">
+        <rdfs:label>Beta-galactosidase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000222"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000751 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000751">
+        <rdfs:label>Beta-lactamase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000222"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000758 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000758">
+        <rdfs:label>U937 (CD59+)</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000762 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000762">
+        <rdfs:label>Interleukin-3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000369"/>
+        <obo:IAO_0000118>IL-3</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000764 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000764">
+        <rdfs:label>MurNAc-L-Ala-gamma-D-Glu-mDAP</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <obo:IAO_0000118>M-TriDAP</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000766 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000766">
+        <rdfs:label>NOD1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000365"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000767 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000767">
+        <rdfs:label>NOD2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000365"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000770 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000770">
+        <rdfs:label>Thrombin Receptor Activator Peptide 6</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <obo:IAO_0000118>SFLLRN</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000771 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000771">
+        <rdfs:label>Thrombopoietin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000369"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000774 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000774">
+        <rdfs:label>Z-Leu-Leu-Leu-al</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <obo:IAO_0000118>MG132</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000775 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000775">
+        <rdfs:label>Adenosine diphosphate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000776 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000776">
+        <rdfs:label>Adenosine triphosphate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002010"/>
+        <obo:IAO_0000118>ATP</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000779 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000779">
+        <rdfs:label>Creatine kinase</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000294"/>
+        <obo:IAO_0000118>creatine phosphokinase</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000782 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000782">
+        <rdfs:label>D-galactose</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000783 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000783">
+        <rdfs:label>DYRKtide peptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000785 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000785">
+        <rdfs:label>Kemptide peptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000792 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000792">
+        <rdfs:label>S6 peptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000793 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000793">
+        <rdfs:label>Suc-LLVY-aminoluciferin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000794 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000794">
+        <rdfs:label>Z-RLRGG-aminoluciferin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000821 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000821">
+        <rdfs:label>14LckpCAP394 peptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000828 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000828">
+        <rdfs:label>[125I]Y10-neuropeptide S</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000833 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000833">
+        <rdfs:label>Ac-DEVD-AFC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000834 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000834">
+        <rdfs:label>Ac-DEVD-CHO</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <obo:IAO_0000115>Ac-DEVD-CHO is an inhibitor of caspase-3/7 (DEVDase) activity.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000835 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000835">
+        <rdfs:label>Ac-LEHD-AMC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000836 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000836">
+        <rdfs:label>Ac-WEHD-AFC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000837 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000837">
+        <rdfs:label>Ac-WEHD-CHO</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <obo:IAO_0000115>Ac-Trp-Glu-His-Asp-CHO
+
+Very potent reversible inhibitor of caspase-1 (ICE) that contains the optimal tetrapeptide recognition motif for this enzyme. With a Ki of 56 pM, it displays the most potent reversible, peptide-based inhibitors described for any protease. For caspase-8 a Ki of 21.1 nM has been reported.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000843 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000843">
+        <rdfs:label>AK295 peptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <obo:IAO_0000115>selective calpain inhibitor AK295 </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000845 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000845">
+        <rdfs:label>Alpha-D-glucose</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000849 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000849">
+        <rdfs:label>Apelin-13</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000852 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000852">
+        <rdfs:label>Pancreatic trypsin inhibitor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000369"/>
+        <obo:IAO_0000115>The drug aprotinin (Trasylol, Bayer), is the bovine version of the small protein basic pancreatic trypsin inhibitor, or BPTI, which inhibits trypsin and related proteolytic enzymes. </obo:IAO_0000115>
+        <obo:IAO_0000118>aprotinin</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000864 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000864">
+        <rdfs:label>Boc-Gln-Gly-Arg-AMC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <rdfs:comment>Substrate for Factor XIIa </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000865 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000865">
+        <rdfs:label>Boc-Leu-Gly-Arg-AMC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <rdfs:comment>Boc-Leu-Gly-Arg-AMC is a selective fluorogenic substrate for Horseshoe Crab Clotting Enzyme </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000866 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000866">
+        <rdfs:label>Boc-Val-Pro-Arg-AMC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <rdfs:comment>Substrate for α-Thrombin</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000875 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000875">
+        <rdfs:label>Cyclic adenosine monophosphate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002010"/>
+        <obo:IAO_0000118>cAMP</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000877 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000877">
+        <rdfs:label>CBF-his/runx1-biotin protein complex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002554"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000888 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000888">
+        <rdfs:label>DABCYL-Thr-Pro-Leu-Lys~Ser-Pro-Pro-Pro-Ser-Pro-Arg-EDANS</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <rdfs:comment>A fluorogenic FRET peptide with a substrate sequence that is optimized for calpain-1 and -2.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000896 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000896">
+        <rdfs:label>Dy647-pS136-Bad peptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000909 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000909">
+        <rdfs:label>fMLFK-FITC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <rdfs:comment>fluorescein-labeled formylmethionine-leucine-phenylalanine-lysine (fmlfk-fitc) substrate for the formylpeptide receptor (FPR) family of G-protein-coupled receptors </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000910 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000910">
+        <rdfs:label>Fluorescein Di-beta-D-Glucopyranoside</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000912 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000912">
+        <rdfs:label>Fluorogenic triple-helical peptide 3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000918 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000918">
+        <rdfs:label>fMLFF peptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <obo:IAO_0000115>fMLFF peptide is used as a FPR-blocking peptide.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000919 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000919">
+        <rdfs:label>G alpha O-Alexa Fluor 488</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000368"/>
+        <obo:IAO_0000118>guanine nucleotide-binding protein G(o) subunit alpha isoform a-Alexa Fluor 488</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000920 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000920">
+        <rdfs:label>Galanin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000924 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000924">
+        <rdfs:label>Glucose</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000925 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000925">
+        <rdfs:label>Glucose-6-phosphate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000927 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000927">
+        <rdfs:label>Glycogen</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000928 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000928">
+        <rdfs:label>GM-TriDAP peptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <obo:IAO_0000115>GM-TriDAP (GlcNAc-MurNAc-L-Ala-D-Glu-mesoDAP), is a muropeptide found mostly in Gram-negative bacterial peptidoglycan.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000931 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000931">
+        <rdfs:label>BODIPY GTP</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000934 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000934">
+        <rdfs:label>H-Leu-NHMec</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <rdfs:comment>substrate for M1-family alanyl aminopeptidase (M1AAP)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000947 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000947">
+        <rdfs:label>Interleukin-8</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000369"/>
+        <obo:IAO_0000118>IL-8</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000954 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000954">
+        <rdfs:label>LDV peptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <obo:IAO_0000115>LDV peptide targeted against the alpha4beta integrin VLA-4</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000963 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000963">
+        <rdfs:label>Macrophage inflammatory protein 3 alpha</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000369"/>
+        <obo:IAO_0000115>MIP3a, CCL20 peptide</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000964 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000964">
+        <rdfs:label>Mannose-6-phosphate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000965 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000965">
+        <rdfs:label>Melanin-concentrating hormone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000970 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000970">
+        <rdfs:label>Muramyl dipeptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000974 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000974">
+        <rdfs:label>Neuropeptide W</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000975 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000975">
+        <rdfs:label>Neuropeptide S</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000976 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000976">
+        <rdfs:label>Neuropeptide Y</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000984 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000984">
+        <rdfs:label>Orexin A</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000985 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000985">
+        <rdfs:label>Oxytocin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001002 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001002">
+        <rdfs:label>Pyr-RTKR-AMC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <rdfs:comment>substrate for virus-encoded NS3 serine proteinase</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001004 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001004">
+        <rdfs:label>R18 peptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <obo:IAO_0000115>The peptide sequence, PHCVPRDLSWLDLEANMCLP, named R18, was identified as an unphosphorylated peptide that binds to 14-3-3 proteins with high affinity (Kd=80 nM). It has been shown to bind to the same amphipathic groove on the surface of 14-3-3 as phosphorylated peptides. R18 can inhibit the formation of the 14-3-3-Raf-1 complex, reduce Raf-1 dependent transcriptional activity in cells and block the activation of ExoS by 14-3-3. It binds to all the 14-3-3 isoforms with equal affinities. This peptide is useful for competitive inhibition experiments.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001007 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001007">
+        <rdfs:label>Resorufin alpha-D-pyranoside</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001008 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001008">
+        <rdfs:label>Resorufin beta-D-glucopyranoside</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002015"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001011 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001011">
+        <rdfs:label>Rhodamine-RGS12-GoLoco peptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001014 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001014">
+        <rdfs:label>RS repeat peptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001020 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001020">
+        <rdfs:label>Sphingosine 1-phosphate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000171"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001023 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001023">
+        <rdfs:label>Suc-Ala-Ala-Pro-Phe-AMC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <rdfs:comment> Substrate for Chymotrypsin.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001033 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001033">
+        <rdfs:label>Thyroid-stimulating hormone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000369"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001034 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001034">
+        <rdfs:label>Thyrotropin-releasing hormone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001035 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001035">
+        <rdfs:label>TMR-pS259-Raf peptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <rdfs:comment>modulators of 14-3-3 proteins
+
+The 14-3-3 proteins are the prototype for a novel class of protein modules that can recognize phosphoserine/threonine (pS/T)-containing motifs in a variety of signaling proteins. To date, 14-3-3 proteins have been reported to bind more than 200 client proteins. Through these interactions, 14-3-3 proteins play important roles in a wide range of vital regulatory processes, such as Bad-induced apoptosis, Raf-1-mediated cell proliferation, and Cdc25-regulated cell cycle progression. </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001039 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001039">
+        <rdfs:label>Ubiquitin-AMC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000365"/>
+        <rdfs:comment>Ubiquitin-AMC is a fluorogenic substrate for a wide range of deubiquitinating enzymes (DUBs), including ubiquitin C-terminal hydrolases (UCHs) and ubiquitin specific proteases (USPs).
+
+UBIQUITIN-7-AMIDO-4-METHYLCOUMARIN</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001040 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001040">
+        <rdfs:label>Ubiquitin-Rho</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000365"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001041 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001041">
+        <rdfs:label>Ubiquitin vinyl sulfone</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000365"/>
+        <obo:IAO_0000115>For use in the detection and identification of deubiquitinylating enzymes</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001042 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001042">
+        <rdfs:label>ULight poly-GT</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <rdfs:comment>This random polymer is a Tyrosine kinase substrate.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001051 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001051">
+        <rdfs:label>WKYMVm peptide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <obo:IAO_0000115>Selective agonist for the formyl peptide receptors FPR1, FPR2 (EC50 = 75 pM) and FPR3 (EC50 = 3 nM), expressed on immune cells. 
+
+Trp-Lys-Tyr-Met-Val-D-Med-NH2</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001052 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001052">
+        <rdfs:label>Z-Arg-Arg-AMC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <rdfs:comment>Substrate for Cathepsin B </rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001053 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001053">
+        <rdfs:label>Z-Phe-Arg-AMC</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+        <rdfs:comment>This is a fluorescent kallikrein substrate, Abs/Em=353/442 nm.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001060 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001060">
+        <rdfs:label>guanosine diphosphate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002010"/>
+        <obo:IAO_0000118>GDP</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0001061 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001061">
+        <rdfs:label>guanosine triphosphate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002010"/>
+        <obo:IAO_0000118>GTP</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002010 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002010">
+        <rdfs:label>nucleotide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003111"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002015 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002015">
+        <rdfs:label>carbohydrate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003111"/>
+        <rdfs:comment>Import the ligands from PRO with IDs</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002016 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002016">
+        <rdfs:label>lipopolysaccharide</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002015"/>
+        <obo:IAO_0000118>LPS</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002051 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002051">
+        <rdfs:label>DNA vector</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003111"/>
+        <obo:IAO_0000115>The plasmid, phagemid or viral genome that is used to recombinantly clone the DNA molecule of interest to be introduced into a host cell (bacterial, eukaryotic), where it can independently replicate.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002066 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002066">
+        <rdfs:label>Serum albumin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000369"/>
+        <obo:IAO_0000118>BSA</obo:IAO_0000118>
+        <obo:IAO_0000118>Bovine serum albumin</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002108 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002108">
+        <rdfs:label>Microtubule-associated protein tau</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000365"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002109 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002109">
+        <rdfs:label>Mitogen-activated protein kinase 14</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000294"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002544 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002544">
+        <rdfs:label>his tag</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002545 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002545">
+        <rdfs:label>myc tag</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002546 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002546">
+        <rdfs:label>HA tag</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002554 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002554">
+        <rdfs:label>protein complex</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003111"/>
+        <obo:IAO_0000115>Two or more proteins interact to form a stable complex. Each of the members of this complex has a distinct role in mediating the overall function of the complex, which can be as a chaperone (DnaK, DnaJ and grpE), an enzyme (mitochondrial respiratory complexes), a signaling complex (G-proteins), etc. It can be viewed as a quaternary structure of the proteins.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002555 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002555">
+        <rdfs:label>protein subunit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003111"/>
+        <obo:IAO_0000115>The individual protein molecule of a protein complex. In the complex, it associates with other protein subunits which are either the same or different, e.g., hemoglobin, microtubule, etc.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002639 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002639">
+        <rdfs:label>Chlorocebus aethiops</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000362"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002657 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002657">
+        <rdfs:label>Infectious bronchitis virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000232"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002670 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002670">
+        <rdfs:label>BJ</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002673 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002673">
+        <rdfs:label>LYMP2-010</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002674 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002674">
+        <rdfs:label>LYMP2-001</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002675 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002675">
+        <rdfs:label>LYMP2-012</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002676 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002676">
+        <rdfs:label>LYMP2-014</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002677 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002677">
+        <rdfs:label>LYMP2-016</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002678 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002678">
+        <rdfs:label>BSC-1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002679 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002679">
+        <rdfs:label>LYMP2-018</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002680 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002680">
+        <rdfs:label>LYMP2-020</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002681 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002681">
+        <rdfs:label>LYMP2-022</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002682 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002682">
+        <rdfs:label>LYMP2-024</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002683 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002683">
+        <rdfs:label>U3A</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002684 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002684">
+        <rdfs:label>LYMP2-026</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002685 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002685">
+        <rdfs:label>MV-4-11</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002686 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002686">
+        <rdfs:label>LYMP2-007</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002687 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002687">
+        <rdfs:label>LYMP2-006</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002688 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002688">
+        <rdfs:label>LYMP2-002</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002689 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002689">
+        <rdfs:label>LYMP2-025</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002690 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002690">
+        <rdfs:label>LYMP2-023</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002691 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002691">
+        <rdfs:label>LYMP2-021</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002692 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002692">
+        <rdfs:label>LYMP2-019</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002693 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002693">
+        <rdfs:label>LYMP2-017</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002694 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002694">
+        <rdfs:label>RBL-2H3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002695 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002695">
+        <rdfs:label>LYMP2-013</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002696 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002696">
+        <rdfs:label>LYMP2-011</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002697 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002697">
+        <rdfs:label>LYMP2-009</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002698 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002698">
+        <rdfs:label>LYMP2-005</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002699 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002699">
+        <rdfs:label>LYMP2-004</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002700 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002700">
+        <rdfs:label>LYMP2-003</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002701 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002701">
+        <rdfs:label>LYMP1-003</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002702 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002702">
+        <rdfs:label>LYMP1-002</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002703 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002703">
+        <rdfs:label>C6</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002704 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002704">
+        <rdfs:label>LYMP2-008</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002705 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002705">
+        <rdfs:label>MSC 80</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002706 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002706">
+        <rdfs:label>LYMP2-015</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002707 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002707">
+        <rdfs:label>OCI-Ly3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002708 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002708">
+        <rdfs:label>C2C12</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002709 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002709">
+        <rdfs:label>HEC-1-A</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002710 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002710">
+        <rdfs:label>WRO</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002711 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002711">
+        <rdfs:label>N2a</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002712 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002712">
+        <rdfs:label>SK-BR-3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002713 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002713">
+        <rdfs:label>H4</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002714 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002714">
+        <rdfs:label>ML-2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002715 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002715">
+        <rdfs:label>KOPN-8</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002716 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002716">
+        <rdfs:label>PPC-1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002717 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002717">
+        <rdfs:label>CSM14.1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002718 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002718">
+        <rdfs:label>BSR</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+        <obo:IAO_0000115>A clone of BHK (Baby hamster kidney) cells.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002737 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002737">
+        <rdfs:label>regulation of catalytic activity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000264"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002742 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002742">
+        <rdfs:label>EdU</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002743 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002743">
+        <rdfs:label>Anti-MPM-2</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000503"/>
+        <obo:IAO_0000115>Recognizes a phosphorylated epitope (S/T)P found in phosphoproteins such as MAP2, HSP70, cdc25, and DNA topoisomerase IIa, most of which are phosphorylated at the onset of mitosis. The number of phosphoproteins recognized by MPM-2 varies from species to species and with the cell type.</obo:IAO_0000115>
+        <rdfs:comment>Millipore #05-368</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002757 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002757">
+        <rdfs:label xml:lang="en">Cyclic guanosine monophosphate</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002010"/>
+        <obo:IAO_0000118>cGMP</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002782 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002782">
+        <rdfs:label xml:lang="en">P-selectin glycoprotein ligand 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000392"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002783 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002783">
+        <rdfs:label xml:lang="en">[35S]GTP-gamma S</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002010"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002789 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002789">
+        <rdfs:label xml:lang="en">Mitogen-activated protein kinase 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000294"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002889 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002889">
+        <rdfs:label>calcium-mediated signaling using intracellular calcium source_bao</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000264"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002890 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002890">
+        <rdfs:label>G-protein coupled receptor signaling pathway_BAO</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000264"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002891 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002891">
+        <rdfs:label>cAMP-mediated signaling_BAO</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000264"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002925 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002925">
+        <rdfs:label xml:lang="en">plasmid DNA construct</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000550"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002927 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002927">
+        <rdfs:label xml:lang="en">disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002930 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002930">
+        <rdfs:label xml:lang="en">anatomical entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002931 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002931">
+        <rdfs:label xml:lang="en">cell line cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003016 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003016">
+        <rdfs:label xml:lang="en">binding site</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003017 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003017">
+        <rdfs:label xml:lang="en">transcription factor binding site</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003016"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003018 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003018">
+        <rdfs:label xml:lang="en">DNA region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
+        <obo:IAO_0000115>The categorization of different functional or non-functional elements in DNA.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003019 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003019">
+        <rdfs:label xml:lang="en">regulatory region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003018"/>
+        <obo:IAO_0000115>The DNA region that is involved in initiating and modulating transcription.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003020 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003020">
+        <rdfs:label xml:lang="en">transcribed region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003018"/>
+        <obo:IAO_0000115>The region of a gene that codes for RNA.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003021 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003021">
+        <rdfs:label xml:lang="en">artificial regulatory region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003019"/>
+        <obo:IAO_0000115>A synthetic DNA element that is known to be regulated by a transcription factor/s, which is cloned upstream of a gene of interest.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003022 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003022">
+        <rdfs:label xml:lang="en">foreign promoter region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003019"/>
+        <obo:IAO_0000115>The regulatory DNA from a non-native gene, e.g., the regulatory region from the actin gene being cloned upstream of the myosin gene in a DNA construct.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003023 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003023">
+        <rdfs:label xml:lang="en">native promoter region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003019"/>
+        <obo:IAO_0000115>The regulatory DNA from a native gene, e.g., the regulatory region from the actin gene being cloned upstream of the actin gene in a DNA construct.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003044 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003044">
+        <rdfs:label>beta galactoside gene</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000582"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003045 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003045">
+        <rdfs:label>chloramphenicol acetyl transferase gene</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000582"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003046 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003046">
+        <rdfs:label>green flourescent protein gene</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000582"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003047 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003047">
+        <rdfs:label>luciferase gene</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000582"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003048 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003048">
+        <rdfs:label>permanent cell line</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002931"/>
+        <obo:IAO_0000115>A cell line that is immortalized.</obo:IAO_0000115>
+        <rdfs:comment>has associated disease some disease
+or
+is bearer of disease (relation in new RO)
+
+Disease import from DOID</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003049 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003049">
+        <rdfs:label>Caspase-3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000222"/>
+        <rdfs:comment>P42574</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003050 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003050">
+        <rdfs:label>DEVD-NucView 488</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003052 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003052">
+        <rdfs:label>cellular component</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
+        <obo:IAO_0000115>The part of a cell or its extracellular environment in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together (from Gene Ontology).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003057 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003057">
+        <rdfs:label xml:lang="en">Glutathione</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003111 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003111">
+        <rdfs:label xml:lang="en">biological macromolecule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003114 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003114">
+        <rdfs:label xml:lang="en">assay biology component</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030000 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030000">
+        <rdfs:label xml:lang="en">Histone H3.3</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000175"/>
+        <rdfs:comment>P84243</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030001 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030001">
+        <rdfs:label xml:lang="en">G2/mitotic-specific cyclin-B1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000175"/>
+        <rdfs:comment>P14635</rdfs:comment>
+        <obo:IAO_0000118>cyclin-B1</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030002 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030002">
+        <rdfs:label xml:lang="en">Antigen KI-67</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000175"/>
+        <rdfs:comment>P46013</rdfs:comment>
+        <obo:IAO_0000118>Ki67</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030003 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030003">
+        <rdfs:label xml:lang="en">Retinoblastoma-associated protein</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000175"/>
+        <obo:IAO_0000118>Retinoblastoma protein</obo:IAO_0000118>
+        <rdfs:comment>P06400</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030004 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030004">
+        <rdfs:label xml:lang="en">Transcription factor AP-1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000282"/>
+        <obo:IAO_0000118>c-jun</obo:IAO_0000118>
+        <rdfs:comment>P05412</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030005 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030005">
+        <rdfs:label xml:lang="en">Annexin A5</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000365"/>
+        <obo:IAO_0000118>Annexin V</obo:IAO_0000118>
+        <rdfs:comment>P08758</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030006 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030006">
+        <rdfs:label xml:lang="en">E-selectin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000237"/>
+        <rdfs:comment>P16581</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030007 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030007">
+        <rdfs:label xml:lang="en">Vascular cell adhesion protein 1</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000237"/>
+        <rdfs:comment>P19320</rdfs:comment>
+        <obo:IAO_0000118>VCAM-1</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030008 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030008">
+        <rdfs:label xml:lang="en">Microtubule-associated proteins 1A/1B light chain 3B</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000175"/>
+        <obo:IAO_0000118>Autophagy-related protein LC3 B</obo:IAO_0000118>
+        <rdfs:comment>Q9GZQ8</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030009 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030009">
+        <rdfs:label xml:lang="en">Tubulin beta-3 chain</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000370"/>
+        <obo:IAO_0000118>Tubulin beta-III</obo:IAO_0000118>
+        <rdfs:comment>Q13509</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030010 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030010">
+        <rdfs:label xml:lang="en">Transcription factor p65</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000282"/>
+        <rdfs:comment>Q04206</rdfs:comment>
+        <obo:IAO_0000118>Nuclear factor NF-kappa-B p65 subunit
+Nuclear factor of kappa light polypeptide gene enhancer in B-cells 3</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0030011 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030011">
+        <rdfs:label xml:lang="en">primary neuron</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000239"/>
+        <rdfs:comment>http://purl.obolibrary.org/obo/CL_0000530</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
