@@ -23,8 +23,8 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_properties.owl">
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:date>Jan23rd 2017</dc:date>
-        <owl:versionInfo>2.2.2</owl:versionInfo>
+        <dc:date>Jan 30th 2017</dc:date>
+        <owl:versionInfo>2.3.1</owl:versionInfo>
         <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
 
 contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>

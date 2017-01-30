@@ -21,13 +21,13 @@
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_ro.owl">
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:date>Jan23rd 2017</dc:date>
+        <dc:date>Jan 30th 2017</dc:date>
         <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
 
 contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
-        <owl:versionInfo>2.2.2</owl:versionInfo>
+        <owl:versionInfo>2.3.1</owl:versionInfo>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_metadata.owl"/>
     </owl:Ontology>

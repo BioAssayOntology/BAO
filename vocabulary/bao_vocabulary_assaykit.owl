@@ -1,37 +1,55 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
-
-<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl/"
-     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl/"
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl#"
+     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl">
-        <rdfs:label>BAO</rdfs:label>
+        <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_metadata.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <owl:versionInfo>2.3.1</owl:versionInfo>
+        <rdfs:label>BAO</rdfs:label>
+        <rdfs:comment>Created by:
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+        <dc:date>Jan 30th 2017</dc:date>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>Jan 23rd 2017</dc:date>
-        <owl:versionInfo>2.2.2</owl:versionInfo>
-        <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_metadata.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     
 
 
@@ -48,7 +66,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 
     <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
 
-    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     
 
 
@@ -65,7 +83,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 
     <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
 
-    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2002/07/owl#topDataProperty"/>
     
 
 
@@ -83,8 +101,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000216 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000216">
-        <rdfs:label>steadylite HTS Reagent</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>steadylite HTS Reagent</rdfs:label>
     </owl:Class>
     
 
@@ -92,8 +110,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000248 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000248">
-        <rdfs:label>assay kit</rdfs:label>
         <obo:IAO_0000115>The title of the kit/biologicals used in the assay.</obo:IAO_0000115>
+        <rdfs:label>assay kit</rdfs:label>
     </owl:Class>
     
 
@@ -101,8 +119,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000298 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000298">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>Steady-Glo Luciferase Assay System</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -110,8 +130,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000299 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000299">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>Proteasome-Glo Chymotrypsin-Like Assay</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -119,8 +141,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000307 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000307">
-        <rdfs:label>PKLight</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>PKLight</rdfs:label>
     </owl:Class>
     
 
@@ -128,8 +150,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000310 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000310">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>P450-Glo CYP3A4 Screening System</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -137,8 +161,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000311 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000311">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>P450-Glo CYP2D6 Screening System</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -146,8 +172,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000333 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000333">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>P450-Glo CYP2C9 Screening System</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -155,8 +183,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000670 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000670">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>P450-Glo CYP2C19 Screening System</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -164,8 +194,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000674 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000674">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>P450-Glo CYP1A2 Screening System</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -173,8 +205,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000675 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000675">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>ONE-Glo Luciferase Assay System</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -182,8 +216,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000678 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000678">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>Kinase-Glo Plus Luminescent Kinase Assay</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -191,8 +227,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000679 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000679">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>Kinase-Glo Luminescent Kinase Assay</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -200,8 +238,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000680 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000680">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>Dual-Luciferase Reporter Assay System</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -209,8 +249,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000681 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000681">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>Chroma-Glo Luciferase Assay System</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -218,8 +260,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000682 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000682">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>CellTiter-Glo Luminescent Cell Viability Assay</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -227,8 +271,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000683 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000683">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>Caspase Glo 3/7 Assay</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -236,8 +282,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000685 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000685">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>Bright-Glo Luciferase Assay System</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -245,8 +293,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000686 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000686">
-        <rdfs:label>britelite plus</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>britelite plus</rdfs:label>
     </owl:Class>
     
 
@@ -254,8 +302,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000687 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000687">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>Beta-Glo Assay System</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -263,8 +313,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000688 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000688">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>BacTiter-Glo Microbial Cell Viability Assay</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -272,8 +324,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000689 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000689">
-        <rdfs:label>ATPLite Luminescence Assay System</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>ATPLite Luminescence Assay System</rdfs:label>
     </owl:Class>
     
 
@@ -281,8 +333,10 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000690 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000690">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
         <rdfs:label>ADP Glo Kinase Assay</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
     </owl:Class>
     
 
@@ -290,8 +344,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000814 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000814">
-        <rdfs:label>Adapta Universal Kinase Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>Adapta Universal Kinase Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -299,8 +353,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000815 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000815">
-        <rdfs:label>ADP Hunter Plus</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>ADP Hunter Plus</rdfs:label>
     </owl:Class>
     
 
@@ -308,8 +362,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000816 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000816">
-        <rdfs:label>Amplex Red Glucose/Glucose Oxidase Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>Amplex Red Glucose/Glucose Oxidase Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -317,8 +371,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000873 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000873">
-        <rdfs:label>Calcium 5 Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>Calcium 5 Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -326,8 +380,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000898 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000898">
-        <rdfs:label>cAMP-screen direct system</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>cAMP-screen direct system</rdfs:label>
     </owl:Class>
     
 
@@ -335,8 +389,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000908 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000908">
-        <rdfs:label>Fluo-8 No Wash Calcium Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>Fluo-8 No Wash Calcium Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -344,8 +398,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000917 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000917">
-        <rdfs:label>FluxOR Thallium Detection Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>FluxOR Thallium Detection Kit</rdfs:label>
     </owl:Class>
     
 
@@ -353,8 +407,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000923 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000923">
-        <rdfs:label>GeneBLAzer</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>GeneBLAzer</rdfs:label>
     </owl:Class>
     
 
@@ -362,8 +416,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000936 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000936">
-        <rdfs:label>High Performance PBX Calcium Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>High Performance PBX Calcium Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -371,8 +425,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000937 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000937">
-        <rdfs:label>HTRF cAMP Detection Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>HTRF cAMP Detection Kit</rdfs:label>
     </owl:Class>
     
 
@@ -380,8 +434,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000938 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000938">
-        <rdfs:label>HTRF cAMP HiRange Detection Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>HTRF cAMP HiRange Detection Kit</rdfs:label>
     </owl:Class>
     
 
@@ -389,8 +443,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000939 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000939">
-        <rdfs:label>HTRF KinEASE-TK</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>HTRF KinEASE-TK</rdfs:label>
     </owl:Class>
     
 
@@ -398,8 +452,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000940 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000940">
-        <rdfs:label>HTScan IKK-beta Kinase Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>HTScan IKK-beta Kinase Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -407,8 +461,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000941 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000941">
-        <rdfs:label>HTScan PKC-beta Kinase Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>HTScan PKC-beta Kinase Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -416,8 +470,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000942 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000942">
-        <rdfs:label>HTScan PKC-theta Kinase Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>HTScan PKC-theta Kinase Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -425,8 +479,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000948 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000948">
-        <rdfs:label>IP-One HTRF Assay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>IP-One HTRF Assay</rdfs:label>
     </owl:Class>
     
 
@@ -434,8 +488,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000953 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000953">
-        <rdfs:label>LANCE cAMP Detection Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>LANCE cAMP Detection Kit</rdfs:label>
     </owl:Class>
     
 
@@ -443,8 +497,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000958 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000958">
-        <rdfs:label>LiveBLAzer FRET - B/G Loading Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>LiveBLAzer FRET - B/G Loading Kit</rdfs:label>
     </owl:Class>
     
 
@@ -452,8 +506,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000983 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000983">
-        <rdfs:label>OptEIA Human IL-8 ELISA Set</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>OptEIA Human IL-8 ELISA Set</rdfs:label>
     </owl:Class>
     
 
@@ -461,8 +515,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0000988 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000988">
-        <rdfs:label>PathHunter Beta-Arrestin Assay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>PathHunter Beta-Arrestin Assay</rdfs:label>
     </owl:Class>
     
 
@@ -470,8 +524,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0001025 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001025">
-        <rdfs:label>Tango GPCR Assay System</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>Tango GPCR Assay System</rdfs:label>
     </owl:Class>
     
 
@@ -479,9 +533,9 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0001200 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001200">
-        <rdfs:label xml:lang="en">Transcreener assay kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
         <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">Transcreener assay kit</rdfs:label>
     </owl:Class>
     
 
@@ -489,9 +543,9 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0001201 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001201">
-        <rdfs:label xml:lang="en">Lactate kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
         <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">Lactate kit</rdfs:label>
     </owl:Class>
     
 
@@ -499,9 +553,9 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0001202 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001202">
-        <rdfs:label xml:lang="en">TruPoint assay kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
         <rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+        <rdfs:label xml:lang="en">TruPoint assay kit</rdfs:label>
     </owl:Class>
     
 
@@ -509,8 +563,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002018 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002018">
-        <rdfs:label>xMap kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>xMap kit</rdfs:label>
     </owl:Class>
     
 
@@ -518,8 +572,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002540 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002540">
-        <rdfs:label>ECL western blotting detection kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>ECL western blotting detection kit</rdfs:label>
     </owl:Class>
     
 
@@ -527,8 +581,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002561 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002561">
-        <rdfs:label>FLIPR Calcium 3 Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>FLIPR Calcium 3 Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -536,8 +590,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002562 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002562">
-        <rdfs:label>LanthaScreen kinase activity assay kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>LanthaScreen kinase activity assay kit</rdfs:label>
     </owl:Class>
     
 
@@ -545,8 +599,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002563 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002563">
-        <rdfs:label>lance TR-FRET kinase assay kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>lance TR-FRET kinase assay kit</rdfs:label>
     </owl:Class>
     
 
@@ -554,8 +608,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002564 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002564">
-        <rdfs:label>AlphaScreen IgG detection kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>AlphaScreen IgG detection kit</rdfs:label>
     </owl:Class>
     
 
@@ -563,8 +617,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002565 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002565">
-        <rdfs:label>AlphaScreen GST detection kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>AlphaScreen GST detection kit</rdfs:label>
     </owl:Class>
     
 
@@ -572,8 +626,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002566 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002566">
-        <rdfs:label>AlphaScreen cAMP assay kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>AlphaScreen cAMP assay kit</rdfs:label>
     </owl:Class>
     
 
@@ -581,8 +635,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002567 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002567">
-        <rdfs:label>ECL peptide assay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>ECL peptide assay</rdfs:label>
     </owl:Class>
     
 
@@ -590,8 +644,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002727 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002727">
-        <rdfs:label>ELISA cAMP Competition Assay using cAMP-Screen Direct System</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>ELISA cAMP Competition Assay using cAMP-Screen Direct System</rdfs:label>
     </owl:Class>
     
 
@@ -599,8 +653,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002728 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002728">
-        <rdfs:label>Vybrant MTT Cell Proliferation Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>Vybrant MTT Cell Proliferation Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -608,8 +662,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002732 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002732">
-        <rdfs:label>Phospho(Thr180/Tyr182)/Total p38 Assay Whole Cell Lysate Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label>Phospho(Thr180/Tyr182)/Total p38 Assay Whole Cell Lysate Kit</rdfs:label>
     </owl:Class>
     
 
@@ -617,8 +671,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002974 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002974">
-        <rdfs:label xml:lang="en">Cellomics Beta-Catenin Activation Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">Cellomics Beta-Catenin Activation Kit</rdfs:label>
     </owl:Class>
     
 
@@ -626,8 +680,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002975 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002975">
-        <rdfs:label xml:lang="en">Cellomics BrdU and Ki67 Cell Proliferation Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">Cellomics BrdU and Ki67 Cell Proliferation Kit</rdfs:label>
     </owl:Class>
     
 
@@ -635,8 +689,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002976 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002976">
-        <rdfs:label xml:lang="en">Cellomics Caspase3 Activation Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">Cellomics Caspase3 Activation Kit</rdfs:label>
     </owl:Class>
     
 
@@ -644,8 +698,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002977 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002977">
-        <rdfs:label xml:lang="en">Cellomics Caspase9 Activation Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">Cellomics Caspase9 Activation Kit</rdfs:label>
     </owl:Class>
     
 
@@ -653,8 +707,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002978 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002978">
-        <rdfs:label xml:lang="en">Cellomics Cell Motility Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">Cellomics Cell Motility Kit</rdfs:label>
     </owl:Class>
     
 
@@ -662,8 +716,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002979 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002979">
-        <rdfs:label xml:lang="en">Cellomics Cell Viability Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">Cellomics Cell Viability Kit</rdfs:label>
     </owl:Class>
     
 
@@ -671,8 +725,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002980 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002980">
-        <rdfs:label xml:lang="en">Cellomics c-Jun Activation Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">Cellomics c-Jun Activation Kit</rdfs:label>
     </owl:Class>
     
 
@@ -680,8 +734,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002981 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002981">
-        <rdfs:label xml:lang="en">Cellomics Cytoskeletal Rearrangement Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">Cellomics Cytoskeletal Rearrangement Kit</rdfs:label>
     </owl:Class>
     
 
@@ -689,8 +743,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002982 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002982">
-        <rdfs:label xml:lang="en">Cellomics Mitotic Index Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">Cellomics Mitotic Index Kit</rdfs:label>
     </owl:Class>
     
 
@@ -698,8 +752,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002983 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002983">
-        <rdfs:label xml:lang="en">Cellomics Multiparameter Cytotoxicity 1 Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">Cellomics Multiparameter Cytotoxicity 1 Kit</rdfs:label>
     </owl:Class>
     
 
@@ -707,8 +761,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002984 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002984">
-        <rdfs:label xml:lang="en">Cellomics Multiplexed NFκB and c-Jun Activation Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">Cellomics Multiplexed NFκB and c-Jun Activation Kit</rdfs:label>
     </owl:Class>
     
 
@@ -716,8 +770,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002985 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002985">
-        <rdfs:label xml:lang="en">Cellomics Multiplexed p53 and p21 Detection Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">Cellomics Multiplexed p53 and p21 Detection Kit</rdfs:label>
     </owl:Class>
     
 
@@ -725,8 +779,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0002986 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002986">
-        <rdfs:label xml:lang="en">Cellomics p38 MAPK Activation Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">Cellomics p38 MAPK Activation Kit</rdfs:label>
     </owl:Class>
     
 
@@ -734,8 +788,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003076 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003076">
-        <rdfs:label xml:lang="en">PolarScreen Competitor Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">PolarScreen Competitor Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -743,8 +797,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003077 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003077">
-        <rdfs:label xml:lang="en">HitHunter Calcium No WashPLUS Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">HitHunter Calcium No WashPLUS Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -752,8 +806,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003078 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003078">
-        <rdfs:label xml:lang="en">HitHunter cAMP Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">HitHunter cAMP Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -761,8 +815,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003079 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003079">
-        <rdfs:label xml:lang="en">AlphaScreen Phosphotyrosine Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">AlphaScreen Phosphotyrosine Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -770,8 +824,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003080 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003080">
-        <rdfs:label xml:lang="en">AlphaScreen cGMP Detection</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">AlphaScreen cGMP Detection</rdfs:label>
     </owl:Class>
     
 
@@ -779,8 +833,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003081 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003081">
-        <rdfs:label xml:lang="en">Alphascreen second messenger IP1 detection kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">Alphascreen second messenger IP1 detection kit</rdfs:label>
     </owl:Class>
     
 
@@ -788,8 +842,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003082 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003082">
-        <rdfs:label xml:lang="en">HTRF biomarkers</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">HTRF biomarkers</rdfs:label>
     </owl:Class>
     
 
@@ -797,8 +851,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003083 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003083">
-        <rdfs:label xml:lang="en">ViaLight Plus kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">ViaLight Plus kit</rdfs:label>
     </owl:Class>
     
 
@@ -806,8 +860,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003084 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003084">
-        <rdfs:label xml:lang="en">QuantiChrom Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">QuantiChrom Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -815,8 +869,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003085 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003085">
-        <rdfs:label xml:lang="en">LanthaScreen Co-Factor Interaction Assay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">LanthaScreen Co-Factor Interaction Assay</rdfs:label>
     </owl:Class>
     
 
@@ -824,8 +878,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003086 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003086">
-        <rdfs:label xml:lang="en">LanthaScreen Competetive Binding Assay</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">LanthaScreen Competetive Binding Assay</rdfs:label>
     </owl:Class>
     
 
@@ -833,8 +887,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003087 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003087">
-        <rdfs:label xml:lang="en">FLIPR Calcium 5 Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">FLIPR Calcium 5 Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -842,8 +896,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003088 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003088">
-        <rdfs:label xml:lang="en">FLIPR Membrane Potential Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">FLIPR Membrane Potential Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -851,8 +905,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003089 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003089">
-        <rdfs:label xml:lang="en">CyQUANT Cell Proliferation Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">CyQUANT Cell Proliferation Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -860,8 +914,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003090 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003090">
-        <rdfs:label xml:lang="en">HTRF KinEASE</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">HTRF KinEASE</rdfs:label>
     </owl:Class>
     
 
@@ -869,8 +923,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003091 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003091">
-        <rdfs:label xml:lang="en">Fluo-4 Calcium Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">Fluo-4 Calcium Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -878,8 +932,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003092 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003092">
-        <rdfs:label xml:lang="en">Calcium Assay Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">Calcium Assay Kit</rdfs:label>
     </owl:Class>
     
 
@@ -887,9 +941,9 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0003109 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003109">
-        <rdfs:label xml:lang="en">KINOMEscan kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
         <rdfs:comment>Kit uses for Kinome scan assays</rdfs:comment>
+        <rdfs:label xml:lang="en">KINOMEscan kit</rdfs:label>
     </owl:Class>
     
 
@@ -897,8 +951,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0140001 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140001">
-        <rdfs:label xml:lang="en">PathScan Apoptosis and Proliferation Multiplex IF Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">PathScan Apoptosis and Proliferation Multiplex IF Kit</rdfs:label>
     </owl:Class>
     
 
@@ -906,8 +960,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0140002 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140002">
-        <rdfs:label xml:lang="en">PathScan EGF Receptor Activation Multiplex IF Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">PathScan EGF Receptor Activation Multiplex IF Kit</rdfs:label>
     </owl:Class>
     
 
@@ -915,8 +969,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0140003 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140003">
-        <rdfs:label xml:lang="en">PathScan EMT Duplex IF Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">PathScan EMT Duplex IF Kit</rdfs:label>
     </owl:Class>
     
 
@@ -924,8 +978,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0140004 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140004">
-        <rdfs:label xml:lang="en">PathScan Multi-Target HCA DNA Damage Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">PathScan Multi-Target HCA DNA Damage Kit</rdfs:label>
     </owl:Class>
     
 
@@ -933,8 +987,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0140005 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140005">
-        <rdfs:label xml:lang="en">PathScan Multi-Target HCA Stress and Apoptosis Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">PathScan Multi-Target HCA Stress and Apoptosis Kit</rdfs:label>
     </owl:Class>
     
 
@@ -942,8 +996,8 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0140006 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140006">
-        <rdfs:label xml:lang="en">PathScan Signaling Nodes Multiplex IF Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">PathScan Signaling Nodes Multiplex IF Kit</rdfs:label>
     </owl:Class>
     
 
@@ -951,18 +1005,435 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0140007 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140007">
-        <rdfs:label xml:lang="en">StemLight Pluripotency Antibody Kit</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <rdfs:label xml:lang="en">StemLight Pluripotency Antibody Kit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140009 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140009">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CytoTox-Glo Cytotoxicity Assay (Promega) uses a luminogenic peptide substrate of luciferase, the AAF-Glo Substrate, to measure dead-cell protease activity, which is released from cells that have lost membrane integrity. </obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/22/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 435031</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.promega.com/resources/protocols/technical-bulletins/101/cytotox-glo-cytotoxicity-assay-protocol/</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CytoTox-Glo (Promega)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140010 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140010">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The CAT ELISA is used to quantitatively measure CAT expression in eukaryotic cells that are transfected with a plasmid bearing a CAT-encoding reporter gene.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 624301</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.sigmaaldrich.com/catalog/product/roche/11363727001?lang=en&amp;region=US</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAT ELISA (Roche/ Sigma-Aldrich)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140011 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140011">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This assay  directly measures the intracellular concentration of the second messenger cAMPin living cells, in real-time. It works with cell lines that contain a proprietary exogenous Cyclic Nucleotide-Gated (CNG) channel (BD Biosciences,  sold to CodexBiosolutions; both in Maryland). The channel is activated by elevated intracellular levels of cAMP, resulting in ion flux (detectable by calcium-responsive dyes) and cell membrane depolarization which can be detected with a fluorescent membrane potential (MP) dye.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/7/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 651719</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.bdbiosciences.com/ds/ab/others/SF47641.pdf</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACTOne cAMP biosensor assay (BD Biosciences; CodexBIosolutions)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140012 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140012">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The CellTiter-Blue Cell Viability Assay provides a homogeneous, fluorescent method for monitoring cell viability. The assay is based on the ability of living cells to convert a redox dye (resazurin) into a fluorescent end product (resorufin)</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 5/27/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1063</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.promega.com/products/cell-health-and-metabolism/cell-viability-assays/celltiter_blue-cell-viability-assay/</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CellTiter-Blue Cell Viability Assay (Promega)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140013 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140013">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Gal-Screen assay system combines direct cell lysis with rapid, ultra-sensitive chemiluminescent detection of _-galactosidase reporter enzyme. </obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/22/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 2788</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.thermofisher.com/order/catalog/product/T1028</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gal-Screen Beta-Galactosidase Reporter Gene Assay system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140014 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140014">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real-time PCR (or RT-PCR) for quantitation of DNA (or RNA, respectively) using the fluorescent dye SYBR green that binds dsDNA and emits fluorescence only when bound.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/26/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 504907</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.qiagen.com/us/shop/pcr/real-time-pcr-enzymes-and-kits/two-step-qrt-pcr/quantitect-sybr-green-pcr-kits/#orderinginformation</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QuantiTect SYBR Green PCR Kits (Qiagen/Thermo-Fisher)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140015 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140015">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Real-time PCR (or RT-PCR) for quantitation of DNA (or RNA, respectively) using a pair of unlabeled PCR primers and a &apos;TaqMan&apos; fluorogenic probe  labeled on the 5&apos; end and minor groove binder (MGB) and nonfluorescent quencher (NFQ) on the 3&apos; end, to detect target as it accumulates during PCR.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/13/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 720492</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.thermofisher.com/us/en/home/life-science/pcr/real-time-pcr/real-time-pcr-assays.html</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TaqMan Real-Time PCR assays (Thermo-Fisher)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140016 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140016">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ultra-Glo (Promega) is a thermostable recombinant luciferase that can be coupled with different luciferin-based substrates to generate a luminescent signal proportional to the substrate abundance.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/26/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 488901</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ultra-Glo Luciferin Detection (Promega)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140017 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140017">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay system (Promega) based on the bioluminescent enzyme luciferase&apos;s catalysis of the substrate luciferin to generate light, adapted for multiple applications, such as cell viability, apoptosis, or kinase, cytochrome P450, or proteasome activity. </obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/1/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 624307</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luciferase-based (&apos;Glo&apos;) Assay System (Promega)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140018 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140018">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A colorimatric assay for cell viability/ proliferation based on the stable tetrazolium salt WST-1, which is cleaved to a soluble formazan by a complex cellular mechanism that occurs primarily at the cell surface. This bioreduction is largely dependent on the glycolytic production of NAD(P)H in viable cells.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 6/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 602337</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WST-1 assay (Roche)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140019 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140019">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/22/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 540282</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reverse Transcription Kit (Applied Biosystems or ABI)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140020 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140020">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A homogeneous bead-based proximity assay (alpha = &apos;amplified luminescent proximity homogeneous assay&apos;). Binding of molecules captured on donor and acceptor beads leads to an energy transfer from one bead to the other, ultimately producing a luminescent/fluorescent signal.  Ligands on the bead allow for detection of many different types of molecules.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/6/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 2444</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alpha Screen Assay Kit (PerkinElmer)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140022 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140022">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A solid phase sandwich ELISA to meaasure human cytochrome c in cell lysates</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/3/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 504407</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Human Cytochrome c ELISA (R&amp;D Systems)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140023 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140023">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/14/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1271</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OptEIA human IL-2 ELISA (BD Biosciences)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140024 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140024">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fluorescence polarization (FP) assay that uses an antibody against ADP and a tracer to measure the progress of any enzyme that produces ADP</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/6/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1795</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TRANSCREENER ADP2 FP Kinase Assay (BellBrook Labs)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140025 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140025">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fluorescence polarization (FP) assay.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/22/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 504453</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polar Screen PPARg Competitor Assay, Green (Invitrogen)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140026 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140026">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QUANTI-Blue is a colorimetric enzyme assay to measure alkaline phosphatase activity.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/14/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1369</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.invivogen.com/quanti-blue</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">QUANTI-Blue (InvivoGen)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140027 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140027">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The ToxiLighte BioAssay Kit is a bioluminescent cytolysis assay kit that measures release of the enzyme, adenylate kinase (AK), from damaged cells.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/9/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 651654</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ToxiLight BioAssay Kit (Lonza)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140028 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140028">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TransAM Kits are DNA-binding ELISAs that facilitate the study of transcription factor activation in mammalian tissue and cell extracts.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/14/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 1295</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.activemotif.com/catalog/634/transam-nf%CE%BAb</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TransAM Kit for NF-kB Family (Active Motif) </rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140029 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140029">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A fluorescence polarization (FP) assay that uses an antibody against AMP or GMP and a tracer to measure the progress of any enzyme that produces AMP or GMP</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/6/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 651607</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TRANSCREENER AMP2/GMP2 FP Assay (BellBrook Labs)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140030 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140030">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A homogeneous, bioluminescent assay to measure caspase-6 activity.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 652277</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caspase-Glo 6 Assay System (Promega)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140031 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140031">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDP-Star is a chemiluminescent substrate of alkaline phosphatase, compatible with both membrane- and solution-based assays. Sold by multiple vendors.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 518</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDP-Star alkaline phosphatase assay system</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140032 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140032">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay kit for measuring hepatitits C virus (HCV) NS3/4A protease activity using a 5-FAM/QXL520 fluorescence resonance energy transfer (FRET) peptide. Called &apos;Enzolyte&apos; as well as &apos;Sensolyte&apos;.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 623964</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.anaspec.com/products/product.asp?id=30173</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sensolyte 520 HCV Protease Assay Kit (AnaSpec)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140033 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140033">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An absorbance-based assay system for measuring aspartate transaminase (known as serum glutamic oxaloacetic transaminase (GOT) or aspartate aminotransferase (ASAT/AAT)), based on the quantification of oxaloacetate produced by AST. In this assay, oxaloacetate and NADH are converted to malate and NAD by the enzyme malate dehydrogenase. The decrease in NADH absorbance at 340 nm is proportionate to AST activity.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 743184</obo:IAO_0000119>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://www.bioassaysys.com/Aspartate-Transaminase-Assay-Kit.html</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EnzyChrom Aspartate Transaminase Assay Kit (BioAssay Systems)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140034 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140034">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FluoZin-2 AM is a cell-permeant (acetoxymymethyl (AM)) fluorescent indicator designed to detect Zn2+ concentrations that are present in synaptic vesicles and released in response to electrical stimulation or excitotoxic agonists. (Sold by Molecular Probes, Themro-Fisher)</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 623952</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FluoZin-2 AM fluorescent assay of zinc concentration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140035 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140035">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This homogeneous (HTRF) phospho-ERK assay is based on a TR-FRET sandwich immunoassay format comprising two specific monoclonal anti-pERK1/2 antibodies (recognizing the phosphorylated residue (Thr202/Tyr204), one labeled with Eu3+-cryptate (donor) and the other labeled with d2 (acceptor). The proximity of donor and acceptor leads to a fluorescent TR-FRET signal; the signal intensity is proportional to the substrate phosphorylation. Also called &apos;HTRF Cellul&apos;ERK Kit&apos;.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 624053</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phospho-ERK1/2 (Thr202/Tyr204) Cellular Assay Kit (Cisbio)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140036 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140036">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IMAP (Immobilized Metal Ion Affinity Particle) technology is a non-antibody-based assay for protein kinases in which a fluorescently labeled peptide substrate that is phosphorylated by a kinase is captured on trivalent metal-containing nanoparticles. IMAP can be adapted for either FP or TR-FRET detection.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 624076</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IMAP Assay of phosphoproteins (Molecular Devices)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140037 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140037">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This Insulin ELISA kit is an FDA registered in vitro diagnostic tool for the quantification of human insulin. It uses a dual-monoclonal antibody sandwich ELISA format, typically in a 96-well or other microplate format, with colorimetric (OD 450 nm) detection.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 488951</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insulin ELISA kit (Alpco)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140038 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140038">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay to monitor protein ubiquitination, using ubiquitin labeled with the LanthaScreen terbium chelate, in combination with a FRET acceptor such as fluorescein-ubiquitin or a fluorescein-labeled antibody.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 2658</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LanthaScreen Tb-Ubiquitin Assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140039 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140039">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A terbium-labeled streptavidin used in combination with a fluorescent molecule to detect interaction via a TR-FRET assay.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 588664</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LanthaScreen Tb-Streptavidin Binding Assay</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140040 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140040">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay system employing enzyme fragment complementation (two fragments of the beta-galactosidase enzyme), applied in U2OS cells engineered to express two appropriately tagged proteins. Inhibition of Keap1-NRF2 interaction results in Nrf2 nuclear translocation, and susbequent complementation and formation of a functional enzyme, detected using a chemiluminescent substrate of beta-galactosidase.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 651833</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PathHunter U2OS Keap1-NRF2 Nuclear Translocation Assay (DiscoverX)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140041 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140041">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A general kit for use in all types of qRT-PCR reactions</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 623968</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">qScript One-step Fast qRT-PCR kit (QuantaBioSciences)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140042 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140042">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A bioluminescent assay sytem for detecting sea pansy (Renilla reniformis) luciferase, an alternative to the firefly (Photinus pyralis) systems.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 624133</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Renilla-Glo luciferase assay system (Promega)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0140043 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140043">
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay for deubiquitination activity, employing a reporter enzyme fused to ubiquitin (making the reporter catalytically inactive). Following cleavage of the Ub-reporter system by the isopeptidase, the free reporter can act upon its fluorescent substrate. </obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 9/30/2016</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 652174</obo:IAO_0000119>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ub-CHOP2-Reporter-Kit (LifeSensors Inc.)</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://www.w3.org/2002/07/owl#Thing -->
 
-    <owl:Class rdf:about="&owl;Thing"/>
+    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
 

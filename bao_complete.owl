@@ -32,11 +32,11 @@
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
-        <owl:versionInfo>2.2.2</owl:versionInfo>
+        <owl:versionInfo>2.3.1</owl:versionInfo>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>Jan 23rd 2017</dc:date>
+        <dc:date>Jan 30th 2017</dc:date>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_complete.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_core.owl"/>
@@ -6418,6 +6418,20 @@ stephan dot schurer at gmail dot com</rdfs:comment>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0190003"/>
     
 
+		
+	
+	<!-- http://www.bioassayontology.org/bao#BAO_0080022 -->
+	
+	<rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0080022">
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/UO#UO_0000190"/>
+	</rdf:Description >
+	
+	<!-- http://www.bioassayontology.org/bao#BAO_0080023 -->
+	
+	<rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0080023">
+        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/UO#UO_0000186"/>
+	</rdf:Description >
+	
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
