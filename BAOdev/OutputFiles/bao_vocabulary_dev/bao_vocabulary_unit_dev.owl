@@ -69,12 +69,6 @@
     
 
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0000179 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000179"/>
-    
-
-
     <!-- http://www.bioassayontology.org/bao#BAO_0080019 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080019">
@@ -127,18 +121,6 @@
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 5/30/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 449752</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">binary unit</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0080024 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080024">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any result reported as a simple binary assessment, such as &apos;active/ inactive&apos;, &apos;true/ false&apos;, etc.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 5/30/2016</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 449752</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">binary endpoint</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
