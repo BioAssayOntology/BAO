@@ -51,18 +51,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UO_0000190 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000190"/>
-    
-
-
-    <!-- http://purl.org/obo/owl/UO#UO_0000186 -->
-
-    <owl:Class rdf:about="http://purl.org/obo/owl/UO#UO_0000186"/>
-    
-
-
     <!-- http://www.bioassayontology.org/bao#BAO_0000077 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000077"/>
@@ -105,7 +93,7 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0080022 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080022">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000190"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0190001"/>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/21/2016</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 2024</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">log change</rdfs:label>
@@ -116,12 +104,18 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0080023 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080023">
-        <rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/UO#UO_0000186"/>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000077"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A simple binary assessment, such as &apos;active/ inactive&apos;, &apos;true/ false&apos;, etc.</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 5/30/16</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 449752</obo:IAO_0000119>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">binary unit</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0190001 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0190001"/>
 </rdf:RDF>
 
 
