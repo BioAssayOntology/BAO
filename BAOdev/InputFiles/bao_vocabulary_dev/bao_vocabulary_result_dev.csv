@@ -3,4 +3,12 @@ ID,A rdfs:label,A IAO:0000119 ,,CI ,,A IAO:0000115 ,A IAO:0000119 ,CLASS_TYPE,A 
 http://www.bioassayontology.org/bao#BAO_0080016,TC50,PubChem AID: 2649,concentration response endpoint,http://www.bioassayontology.org/bao#BAO_0002162,,"The concentration of compound required to kill 50% of a cell population (i.e., 50% inhibitory concentration in a cytotoxicity assay).",,subclass,Date from BAE: 6/22/2016
 http://www.bioassayontology.org/bao#BAO_0080017,TCID50,PubChem AID: 2024,concentration response endpoint,http://www.bioassayontology.org/bao#BAO_0002162,,50% Tissue Culture Infective Dose (TCID50) is the measure of infectious virus titer. This endpoint dilution assay quantifies the amount of virus required to kill 50% of infected hosts or to produce a cytopathic effect in 50% of inoculated tissue culture cells.,,subclass,Date from BAE: 7/21/2016
 http://www.bioassayontology.org/bao#BAO_0080018,reversible inhibition,PubChem AID: 588831,inhibition,http://www.bioassayontology.org/bao#BAO_0000091,,,,subclass,Date from BAE: 7/19/2016
+http://www.bioassayontology.org/bao#BAO_0080019,rate,PubChem AID: ,unit of measurement,http://www.bioassayontology.org/bao#BAO_0000077,,,,subclass,Date from BAE: 7/19/2016
+http://www.bioassayontology.org/bao#BAO_0080020,cm/sec,PubChem AID: 602462,,http://www.bioassayontology.org/bao#BAO_0080019,rate,,,subclass,Date from BAE: 7/6/2016
+http://www.bioassayontology.org/bao#BAO_0080021,nmol/sec,PubChem AID: 652113,,http://www.bioassayontology.org/bao#BAO_0080019,rate,,,subclass,Date from BAE: 7/19/2016
+http://www.bioassayontology.org/bao#BAO_0080022,log change,PubChem AID: 2024,ratio,http://purl.obolibrary.org/obo/UO_0000190,,,,subclass,Date from BAE: 7/21/2016
+http://www.bioassayontology.org/bao#BAO_0080023,binary unit,PubChem AID: 449752,,http://purl.org/obo/owl/UO#UO_0000186,,"A simple binary assessment, such as 'active/ inactive', 'true/ false', etc.",,subclass,Date from BAE: 5/30/16
 http://www.bioassayontology.org/bao#BAO_0080024,binary endpoint,PubChem AID: 449752,Some form of 'subjective' result readout:  this uses a binary of 'true/false' for effect relative to DMSO control,http://www.bioassayontology.org/bao#BAO_0000179,,"Any result reported as a simple binary assessment, such as 'active/ inactive', 'true/ false', etc.",,subclass,Date from BAE: 5/30/2016
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
