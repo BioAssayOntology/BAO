@@ -1,0 +1,65 @@
+[URI of the OWL(RDF/XML) output file]
+http://bioassayontology.org/bao/external/BAO2.0_EFO_import.owl
+
+[Source ontology]
+EFO
+
+[Low level source term URIs]
+http://www.ebi.ac.uk/efo/EFO_0001272 #adult
+http://www.ebi.ac.uk/efo/EFO_0002562 #embryonic day 11.5
+http://www.ebi.ac.uk/efo/EFO_0002563 #embryonic day 12.5
+http://www.ebi.ac.uk/efo/EFO_0002564 #embryonic day 13.5
+http://www.ebi.ac.uk/efo/EFO_0002565 #embryonic day 14.5
+http://www.ebi.ac.uk/efo/EFO_0002566 #embryonic day 15.5
+http://www.ebi.ac.uk/efo/EFO_0002567 #embryonic day 16.5
+http://www.ebi.ac.uk/efo/EFO_0002568 #embryonic day 17.5
+http://www.ebi.ac.uk/efo/EFO_0002569 #embryonic day 18
+http://www.ebi.ac.uk/efo/EFO_0002570 #embryonic day 18.5
+http://www.ebi.ac.uk/efo/EFO_0001323 #fetus
+http://www.ebi.ac.uk/efo/EFO_0001291 #gastrula 50%-epiboly
+http://www.ebi.ac.uk/efo/EFO_0001292 #gastrula 75%-epiboly
+http://www.ebi.ac.uk/efo/EFO_0002560 #gastrula 80%-epiboly
+http://www.ebi.ac.uk/efo/EFO_0001293 #gastrula 90%-epiboly
+http://www.ebi.ac.uk/efo/EFO_0002948 #postnatal
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://www.ebi.ac.uk/efo/EFO_0001272 #adult
+subClassOf http://purl.obolibrary.org/obo/UBERON_0000113 #post-juvenile adult stage
+http://www.ebi.ac.uk/efo/EFO_0002948 #postnatal
+subClassOf http://purl.obolibrary.org/obo/UBERON_0000105 #life cycle stage
+http://www.ebi.ac.uk/efo/EFO_0002562 #embryonic day 11.5
+subClassOf http://purl.obolibrary.org/obo/UBERON_0000068 #embryo stage
+http://www.ebi.ac.uk/efo/EFO_0002563 #embryonic day 12.5
+subClassOf http://purl.obolibrary.org/obo/UBERON_0000068 #embryo stage
+http://www.ebi.ac.uk/efo/EFO_0002564 #embryonic day 13.5
+subClassOf http://purl.obolibrary.org/obo/UBERON_0000068 #embryo stage
+http://www.ebi.ac.uk/efo/EFO_0002565 #embryonic day 14.5
+subClassOf http://purl.obolibrary.org/obo/UBERON_0000068 #embryo stage
+http://www.ebi.ac.uk/efo/EFO_0002566 #embryonic day 15.5
+subClassOf http://purl.obolibrary.org/obo/UBERON_0000068 #embryo stage
+http://www.ebi.ac.uk/efo/EFO_0002567 #embryonic day 16.5
+subClassOf http://purl.obolibrary.org/obo/UBERON_0000068 #embryo stage
+http://www.ebi.ac.uk/efo/EFO_0002568 #embryonic day 17.5
+subClassOf http://purl.obolibrary.org/obo/UBERON_0000068 #embryo stage
+http://www.ebi.ac.uk/efo/EFO_0002569 #embryonic day 18
+subClassOf http://purl.obolibrary.org/obo/UBERON_0000068 #embryo stage
+http://www.ebi.ac.uk/efo/EFO_0002570 #embryonic day 18.5
+subClassOf http://purl.obolibrary.org/obo/UBERON_0000068 #embryo stage
+http://www.ebi.ac.uk/efo/EFO_0001323 #fetus
+subClassOf http://purl.obolibrary.org/obo/UBERON_0000068 #embryo stage
+http://www.ebi.ac.uk/efo/EFO_0001291 #gastrula 50%-epiboly
+subClassOf http://purl.obolibrary.org/obo/UBERON_0000109 #gastrula stage
+http://www.ebi.ac.uk/efo/EFO_0001292 #gastrula 75%-epiboly
+subClassOf http://purl.obolibrary.org/obo/UBERON_0000109 #gastrula stage
+http://www.ebi.ac.uk/efo/EFO_0002560 #gastrula 80%-epiboly
+subClassOf http://purl.obolibrary.org/obo/UBERON_0000109 #gastrula stage
+http://www.ebi.ac.uk/efo/EFO_0001293 #gastrula 90%-epiboly
+subClassOf http://purl.obolibrary.org/obo/UBERON_0000109 #gastrula stage
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties

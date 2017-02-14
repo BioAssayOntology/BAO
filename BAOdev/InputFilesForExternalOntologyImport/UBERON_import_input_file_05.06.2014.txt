@@ -1,0 +1,113 @@
+[URI of the OWL(RDF/XML) output file]
+http://bioassayontology.org/bao/external/BAO2.0_UBERON_import.owl
+
+[Source ontology]
+UBERON
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/UBERON_0000310
+http://purl.obolibrary.org/obo/UBERON_0002048
+http://purl.obolibrary.org/obo/UBERON_0000945
+http://purl.obolibrary.org/obo/UBERON_0000002
+http://purl.obolibrary.org/obo/UBERON_0002114
+http://purl.obolibrary.org/obo/UBERON_0000992
+http://purl.obolibrary.org/obo/UBERON_0000160
+http://purl.obolibrary.org/obo/UBERON_0002369
+http://purl.obolibrary.org/obo/UBERON_0001016
+http://purl.obolibrary.org/obo/UBERON_0000955
+http://purl.obolibrary.org/obo/UBERON_0007811
+http://purl.obolibrary.org/obo/UBERON_0002107
+http://purl.obolibrary.org/obo/UBERON_0001255
+http://purl.obolibrary.org/obo/UBERON_0002113
+http://purl.obolibrary.org/obo/UBERON_0002367
+http://purl.obolibrary.org/obo/UBERON_0002110
+http://purl.obolibrary.org/obo/UBERON_0001264
+http://purl.obolibrary.org/obo/UBERON_0001474
+
+http://purl.obolibrary.org/obo/UBERON_0000995
+http://purl.obolibrary.org/obo/UBERON_0001043
+http://purl.obolibrary.org/obo/UBERON_0002046
+http://purl.obolibrary.org/obo/UBERON_0002097
+http://purl.obolibrary.org/obo/UBERON_0000473
+http://purl.obolibrary.org/obo/UBERON_0002385
+http://purl.obolibrary.org/obo/UBERON_0000997
+http://purl.obolibrary.org/obo/UBERON_0000056
+
+
+http://purl.obolibrary.org/obo/UBERON_0001969
+http://purl.obolibrary.org/obo/UBERON_0000178 #blood
+http://purl.obolibrary.org/obo/UBERON_0001977 #serum
+http://purl.obolibrary.org/obo/UBERON_0002391 #lymph
+http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+
+
+
+[Top level source term URIs and target direct superclass URIs]
+
+http://purl.obolibrary.org/obo/UBERON_0000310
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0000178 #blood
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0001977 #serum
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0002391 #lymph
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0002048
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0000945
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0000002
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0002114
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0000992
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0000160
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0002369
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0001016
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0000955
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0007811
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0002107
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0001255
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0002113
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0002367
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0002110
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0001264
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0001474
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0000995
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0001043
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0002046
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0002097
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0000473
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0002385
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0000997
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+http://purl.obolibrary.org/obo/UBERON_0000056
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+
+http://purl.obolibrary.org/obo/UBERON_0001969
+subClassOf http://purl.obolibrary.org/obo/UBERON_0001062 #anatomical entity
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties

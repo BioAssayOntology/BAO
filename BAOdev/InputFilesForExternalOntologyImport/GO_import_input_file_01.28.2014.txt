@@ -1,0 +1,424 @@
+[URI of the OWL(RDF/XML) output file]
+http://bioassayontology.org/bao/external/BAO2.0_GO_import.owl
+
+[Source ontology]
+GO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0003674 #molecular_function
+http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0051722 #protein C-terminal methylesterase activity (GO)
+http://purl.obolibrary.org/obo/GO_0043086 #negative regulation of catalytic activity (GO)
+http://purl.obolibrary.org/obo/GO_0006821 #chloride transport (GO)
+http://purl.obolibrary.org/obo/GO_0071712 #ER-associated misfolded protein catabolic process (GO)
+http://purl.obolibrary.org/obo/GO_0010888 #negative regulation of lipid storage (GO)
+http://purl.obolibrary.org/obo/GO_0010884 #positive regulation of lipid storage (GO)
+http://purl.obolibrary.org/obo/GO_0009062 #fatty acid catabolic process (GO)
+http://purl.obolibrary.org/obo/GO_0010467 #gene expression (GO)
+http://purl.obolibrary.org/obo/GO_0006351 #transcription, DNA-dependent (GO)
+http://purl.obolibrary.org/obo/GO_0006412 #translation (GO)
+http://purl.obolibrary.org/obo/GO_0007165 #signal transduction (GO)
+http://purl.obolibrary.org/obo/GO_0016301 #kinase activity (GO)
+http://purl.obolibrary.org/obo/GO_0006468 #protein phosphorylation (GO)
+http://purl.obolibrary.org/obo/GO_0006470 #protein dephosphorylation (GO)
+http://purl.obolibrary.org/obo/GO_0042391 #regulation of membrane potential (GO)
+http://purl.obolibrary.org/obo/GO_0051881 #regulation of mitochondrial membrane potential (GO)
+http://purl.obolibrary.org/obo/GO_0045838 #positive regulation of membrane potential (GO)
+http://purl.obolibrary.org/obo/GO_0045837 #negative regulation of membrane potential (GO)
+http://purl.obolibrary.org/obo/GO_0005488 #binding (GO)
+http://purl.obolibrary.org/obo/GO_0008144 #drug binding (GO)
+http://purl.obolibrary.org/obo/GO_0005515 #protein binding (GO)
+http://purl.obolibrary.org/obo/GO_0005102 #receptor binding (GO)
+http://purl.obolibrary.org/obo/GO_0001816 #cytokine production (GO)
+http://purl.obolibrary.org/obo/GO_0050663 #cytokine secretion (GO)
+http://purl.obolibrary.org/obo/GO_0003824 #catalytic activity (GO)
+http://purl.obolibrary.org/obo/GO_0019077 #lytic viral release (GO)
+http://purl.obolibrary.org/obo/GO_0015893 #drug transport (GO)
+http://purl.obolibrary.org/obo/GO_0065009 #regulation of molecular function (GO)
+http://purl.obolibrary.org/obo/GO_0007049 #cell cycle (GO)
+http://purl.obolibrary.org/obo/GO_0000278 #mitotic cell cycle (GO)
+http://purl.obolibrary.org/obo/GO_0051321 #meiotic cell cycle (GO)
+http://purl.obolibrary.org/obo/GO_0022403 #cell cycle phase (GO)
+http://purl.obolibrary.org/obo/GO_0051320 #S phase (GO)
+http://purl.obolibrary.org/obo/GO_0051332 #S phase of meiotic cell cycle (GO)
+http://purl.obolibrary.org/obo/GO_0000084 #S phase of mitotic cell cycle (GO)
+http://purl.obolibrary.org/obo/GO_0000279 #M phase (GO)
+http://purl.obolibrary.org/obo/GO_0000087 #M phase of mitotic cell cycle (GO)
+http://purl.obolibrary.org/obo/GO_0051327 #M phase of meiotic cell cycle (GO)
+http://purl.obolibrary.org/obo/GO_0046718 #viral entry into host cell (GO)
+http://purl.obolibrary.org/obo/GO_0006355 #regulation of transcription, DNA-dependent (GO)
+http://purl.obolibrary.org/obo/GO_0022403 #cell cycle phase (GO)
+http://purl.obolibrary.org/obo/GO_0051318 #G1 phase (GO)
+http://purl.obolibrary.org/obo/GO_0000080 #G1 phase of mitotic cell cycle (GO)
+http://purl.obolibrary.org/obo/GO_0051330 #G1 phase of meiotic cell cycle (GO)
+http://purl.obolibrary.org/obo/GO_0051319 #G2 phase (GO)
+http://purl.obolibrary.org/obo/GO_0000085 #G2 phase of mitotic cell cycle (GO)
+http://purl.obolibrary.org/obo/GO_0051331 #G2 phase of meiotic cell cycle (GO)
+http://purl.obolibrary.org/obo/GO_0006915 #apoptotic process (GO)
+http://purl.obolibrary.org/obo/GO_0010468 #regulation of gene expression
+http://purl.obolibrary.org/obo/GO_0045449 #regulation of transcription
+http://purl.obolibrary.org/obo/GO_0006417 #regulation of translation
+http://purl.obolibrary.org/obo/GO_0065009 #regulation of molecular function
+http://purl.obolibrary.org/obo/GO_0043484 #regulation of RNA splicing
+http://purl.obolibrary.org/obo/GO_0000380 #alternative nuclear mRNA splicing, via spliceosome
+http://purl.obolibrary.org/obo/GO_0046718 #entry of virus into host cell
+http://purl.obolibrary.org/obo/GO_0019079 #viral genome replication
+http://purl.obolibrary.org/obo/GO_0016032 #viral infection
+http://purl.obolibrary.org/obo/GO_0016246 #RNA interference
+http://purl.obolibrary.org/obo/GO_0050821 #protein stabilization
+http://purl.obolibrary.org/obo/GO_0030168 #platelet activation
+http://purl.obolibrary.org/obo/GO_0042493 #response to drug
+http://purl.obolibrary.org/obo/GO_0008219 #cell death
+http://purl.obolibrary.org/obo/GO_0008283 #cell proliferation
+http://purl.obolibrary.org/obo/GO_0051438 #regulation of ubiquitin-protein ligase activity
+http://purl.obolibrary.org/obo/GO_0009372 #quorum sensing
+http://purl.obolibrary.org/obo/GO_0007623 #circadian rhythm
+http://purl.obolibrary.org/obo/GO_0042710 #biofilm formation
+http://purl.obolibrary.org/obo/GO_0061136 #regulation of proteasomal protein catabolic process
+http://purl.obolibrary.org/obo/GO_0051090 #regulation of transcription factor activity
+http://purl.obolibrary.org/obo/GO_0007259 #JAK-STAT cascade
+http://purl.obolibrary.org/obo/GO_0031690 #adrenergic receptor binding
+http://purl.obolibrary.org/obo/GO_0031748 #D1 dopamine receptor binding
+http://purl.obolibrary.org/obo/GO_0031752 #D5 dopamine receptor binding
+http://purl.obolibrary.org/obo/GO_0004939 #beta-adrenergic receptor activity
+http://purl.obolibrary.org/obo/GO_0001591 #dopamine receptor activity, coupled via Gi/Go
+http://purl.obolibrary.org/obo/GO_0001588 #dopamine receptor activity, coupled via Gs
+http://purl.obolibrary.org/obo/GO_0002574 #thrombocyte differentiation
+http://purl.obolibrary.org/obo/GO_0006954 #inflammatory response (GO)
+http://purl.obolibrary.org/obo/GO_0006950 #response to stress (GO)
+http://purl.obolibrary.org/obo/GO_0006281 #DNA repair (GO)
+http://purl.obolibrary.org/obo/GO_0040029 #regulation of gene expression, epigenetic (GO)
+http://purl.obolibrary.org/obo/GO_0035196 #production of miRNAs involved in gene silencing by miRNA (GO)
+http://purl.obolibrary.org/obo/GO_0060964 #regulation of gene silencing by miRNA (GO)
+http://purl.obolibrary.org/obo/GO_0007186 #G-protein coupled receptor signaling pathway (GO)
+http://purl.obolibrary.org/obo/GO_0006914 #autophagy (GO)
+http://purl.obolibrary.org/obo/GO_0000302 #response to reactive oxygen species (GO)
+http://purl.obolibrary.org/obo/GO_0001666 #response to hypoxia (GO)
+http://purl.obolibrary.org/obo/GO_0030334 #regulation of cell migration (GO)
+http://purl.obolibrary.org/obo/GO_0070265 #necrotic cell death (GO)
+http://purl.obolibrary.org/obo/GO_0002673 #regulation of acute inflammatory response (GO)
+http://purl.obolibrary.org/obo/GO_0005783 #endoplasmic reticulum (GO)
+http://purl.obolibrary.org/obo/GO_0005794 #Golgi apparatus (GO)
+http://purl.obolibrary.org/obo/GO_0005634 #nucleus (GO)
+http://purl.obolibrary.org/obo/GO_0005739 #mitochondrion (GO)
+http://purl.obolibrary.org/obo/GO_0005764 #lysosome (GO)
+http://purl.obolibrary.org/obo/GO_0005886 #plasma membrane (GO)
+http://purl.obolibrary.org/obo/GO_0005829 #cytosol (GO)
+http://purl.obolibrary.org/obo/GO_0005737 #cytoplasm (GO)
+http://purl.obolibrary.org/obo/GO_0000786 #nucleosome (GO)
+http://purl.obolibrary.org/obo/GO_0005776 #autophagic vacuole (GO)
+http://purl.obolibrary.org/obo/GO_0005635 #nuclear envelope (GO)
+http://purl.obolibrary.org/obo/GO_0007050 #cell cycle arrest
+http://purl.obolibrary.org/obo/GO_0016310 #phosphorylation
+http://purl.obolibrary.org/obo/GO_0010737 #protein kinase A signaling cascade
+http://purl.obolibrary.org/obo/GO_0043491 #protein kinase B signaling cascade
+http://purl.obolibrary.org/obo/GO_0070528 #protein kinase C signaling cascade
+http://purl.obolibrary.org/obo/GO_0019932 #second-messenger-mediated signaling
+http://purl.obolibrary.org/obo/GO_0007269 #neurotransmitter secretion
+http://purl.obolibrary.org/obo/GO_0003924 #GTPase activity
+http://purl.obolibrary.org/obo/GO_0023014 #signal transduction by phosphorylation
+http://purl.obolibrary.org/obo/GO_0044303
+http://purl.obolibrary.org/obo/GO_0030424
+http://purl.obolibrary.org/obo/GO_0043005
+http://purl.obolibrary.org/obo/GO_0044297
+http://purl.obolibrary.org/obo/GO_1901589
+http://purl.obolibrary.org/obo/GO_0032059
+http://purl.obolibrary.org/obo/GO_0009986
+http://purl.obolibrary.org/obo/GO_0044307
+http://purl.obolibrary.org/obo/GO_0006606
+http://purl.obolibrary.org/obo/GO_0000189
+http://purl.obolibrary.org/obo/GO_0042991
+http://purl.obolibrary.org/obo/GO_0071964
+http://purl.obolibrary.org/obo/GO_0048666
+http://purl.obolibrary.org/obo/GO_0031175
+http://purl.obolibrary.org/obo/GO_0050790
+http://purl.obolibrary.org/obo/GO_0030027
+http://purl.obolibrary.org/obo/GO_0048812
+http://purl.obolibrary.org/obo/GO_0003924
+http://purl.obolibrary.org/obo/GO_0023052 #signaling
+http://purl.obolibrary.org/obo/GO_0004872
+http://purl.obolibrary.org/obo/GO_0002146 #steroid hormone receptor import into nucleus
+http://purl.obolibrary.org/obo/GO_0002147 #glucocorticoid receptor import into nucleus
+http://purl.obolibrary.org/obo/GO_0042348 #NF-kappaB import into nucleus
+http://purl.obolibrary.org/obo/GO_0036166 #phenotypic switching
+http://purl.obolibrary.org/obo/GO_0031099 #regeneration
+http://purl.obolibrary.org/obo/GO_0031102 #neuron projection regeneration
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/GO_0006351 #transcription, DNA-dependent (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0010467 #gene expression (GO)
+http://purl.obolibrary.org/obo/GO_0006412 #translation (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0010467 #gene expression (GO)
+http://purl.obolibrary.org/obo/GO_0051881 #regulation of mitochondrial membrane potential (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0042391 #regulation of membrane potential (GO)
+http://purl.obolibrary.org/obo/GO_0045838 #positive regulation of membrane potential (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0042391 #regulation of membrane potential (GO)
+http://purl.obolibrary.org/obo/GO_0045837 #negative regulation of membrane potential (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0042391 #regulation of membrane potential (GO)
+http://purl.obolibrary.org/obo/GO_0008144 #drug binding (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0005488 #binding (GO)
+http://purl.obolibrary.org/obo/GO_0005515 #protein binding (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0005488 #binding (GO)
+http://purl.obolibrary.org/obo/GO_0005102 #receptor binding (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0005515 #protein binding (GO)
+http://purl.obolibrary.org/obo/GO_0051722 #protein C-terminal methylesterase activity (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0043086 #negative regulation of catalytic activity (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0006821 #chloride transport (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0071712 #ER-associated misfolded protein catabolic process (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0010888 #negative regulation of lipid storage (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0010884 #positive regulation of lipid storage (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0009062 #fatty acid catabolic process (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0010467 #gene expression (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0007165 #signal transduction (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0016301 #kinase activity (GO)
+subClassOf  http://purl.obolibrary.org/obo/GO_0003674 #molecular_function
+http://purl.obolibrary.org/obo/GO_0006468 #protein phosphorylation (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0006470 #protein dephosphorylation (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0042391 #regulation of membrane potential (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0005488 #binding (GO)
+subClassOf  http://purl.obolibrary.org/obo/GO_0003674 #molecular_function
+http://purl.obolibrary.org/obo/GO_0001816 #cytokine production (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0050663 #cytokine secretion (GO)
+subClassOf  http://purl.obolibrary.org/obo/GO_0003674 #molecular_function
+http://purl.obolibrary.org/obo/GO_0003824 #catalytic activity (GO)
+subClassOf  http://purl.obolibrary.org/obo/GO_0003674 #molecular_function
+http://purl.obolibrary.org/obo/GO_0000278 #mitotic cell cycle (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0007049 #cell cycle (GO)
+http://purl.obolibrary.org/obo/GO_0051321 #meiotic cell cycle (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0007049 #cell cycle (GO)
+http://purl.obolibrary.org/obo/GO_0051318 #G1 phase (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0022403 #cell cycle phase (GO)
+http://purl.obolibrary.org/obo/GO_0000080 #G1 phase of mitotic cell cycle (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0051318 #G1 phase (GO)
+http://purl.obolibrary.org/obo/GO_0051330 #G1 phase of meiotic cell cycle (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0051318 #G1 phase (GO)
+http://purl.obolibrary.org/obo/GO_0051319 #G2 phase (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0022403 #cell cycle phase (GO)
+http://purl.obolibrary.org/obo/GO_0000085 #G2 phase of mitotic cell cycle (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0051319 #G2 phase (GO)
+http://purl.obolibrary.org/obo/GO_0051331 #G2 phase of meiotic cell cycle (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0051319 #G2 phase (GO)
+http://purl.obolibrary.org/obo/GO_0051320 #S phase (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0022403 #cell cycle phase (GO)
+http://purl.obolibrary.org/obo/GO_0051332 #S phase of meiotic cell cycle (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0051320 #S phase (GO)
+http://purl.obolibrary.org/obo/GO_0000084 #S phase of mitotic cell cycle (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0051320 #S phase (GO)
+http://purl.obolibrary.org/obo/GO_0000279 #M phase (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0022403 #cell cycle phase (GO)
+http://purl.obolibrary.org/obo/GO_0000087 #M phase of mitotic cell cycle (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0000279 #M phase (GO)
+http://purl.obolibrary.org/obo/GO_0051327 #M phase of meiotic cell cycle (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0000279 #M phase (GO)
+http://purl.obolibrary.org/obo/GO_0006355 #regulation of transcription, DNA-dependent (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0022403 #cell cycle phase (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0007049 #cell cycle (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0019077 #lytic viral release (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0015893 #drug transport (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0065009 #regulation of molecular function (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0046718 #viral entry into host cell (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0010468 #regulation of gene expression
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0045449 #regulation of transcription
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0006417 #regulation of translation
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0065009 #regulation of molecular function
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0043484 #regulation of RNA splicing
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0000380 #alternative nuclear mRNA splicing, via spliceosome
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0046718 #entry of virus into host cell
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0019079 #viral genome replication
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0016032 #viral infection
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0016246 #RNA interference
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0050821 #protein stabilization
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0030168 #platelet activation
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0042493 #response to drug
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0008219 #cell death
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0008283 #cell proliferation
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0051438 #regulation of ubiquitin-protein ligase activity
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0009372 #quorum sensing
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0007623 #circadian rhythm
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0042710 #biofilm formation
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0061136 #regulation of proteasomal protein catabolic process
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0051090 #regulation of transcription factor activity
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0007259 #JAK-STAT cascade
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0031690 #adrenergic receptor binding
+subClassOf http://purl.obolibrary.org/obo/GO_0005102 #receptor binding (GO)
+http://purl.obolibrary.org/obo/GO_0031748 #D1 dopamine receptor binding
+subClassOf http://purl.obolibrary.org/obo/GO_0005102
+http://purl.obolibrary.org/obo/GO_0031752 #D5 dopamine receptor binding
+subClassOf http://purl.obolibrary.org/obo/GO_0005102
+http://purl.obolibrary.org/obo/GO_0004939 #beta-adrenergic receptor activity
+subClassOf http://purl.obolibrary.org/obo/GO_0004872
+http://purl.obolibrary.org/obo/GO_0001591 #dopamine receptor activity, coupled via Gi/Go
+subClassOf http://purl.obolibrary.org/obo/GO_0004872
+http://purl.obolibrary.org/obo/GO_0001588 #dopamine receptor activity, coupled via Gs
+subClassOf http://purl.obolibrary.org/obo/GO_0023052 #signaling
+http://purl.obolibrary.org/obo/GO_0002574 #thrombocyte differentiation
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0006954 #inflammatory response (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0006950 #response to stress (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0006281 #DNA repair (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0040029 #regulation of gene expression, epigenetic (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0035196 #production of miRNAs involved in gene silencing by miRNA (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0060964 #regulation of gene silencing by miRNA (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0007186 #G-protein coupled receptor signaling pathway (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0006914 #autophagy (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0000302 #response to reactive oxygen species (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0001666 #response to hypoxia (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0030334 #regulation of cell migration (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0070265 #necrotic cell death (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0002673 #regulation of acute inflammatory response (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0006915 #apoptotic process (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0007050 #cell cycle arrest
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0016310 #phosphorylation
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0010737 #protein kinase A signaling cascade
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0043491 #protein kinase B signaling cascade
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0070528 #protein kinase C signaling cascade
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0019932 #second-messenger-mediated signaling
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0007269 #neurotransmitter secretion
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0003924
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0023014 #signal transduction by phosphorylation
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0005783 #endoplasmic reticulum (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0005794 #Golgi apparatus (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0005634 #nucleus (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0005739 #mitochondrion (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0005764 #lysosome (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0005886 #plasma membrane (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0005829 #cytosol (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0005737 #cytoplasm (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0000786 #nucleosome (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0005776 #autophagic vacuole (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0005635 #nuclear envelope (GO)
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0044303
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0030424
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0043005
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0044297
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_1901589
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0032059
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0009986
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0044307
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0006606
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0000189
+subClassOf http://purl.obolibrary.org/obo/GO_0006606
+http://purl.obolibrary.org/obo/GO_0042991
+subClassOf http://purl.obolibrary.org/obo/GO_0006606
+http://purl.obolibrary.org/obo/GO_0071964
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0048666
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0031175
+subClassOf http://purl.obolibrary.org/obo/GO_0048666
+http://purl.obolibrary.org/obo/GO_0050790
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0030027
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0048812
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0071964
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0023052 #signaling
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0004872
+subClassOf  http://purl.obolibrary.org/obo/GO_0003674 #molecular_function
+http://purl.obolibrary.org/obo/GO_0002146 #steroid hormone receptor import into nucleus
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0002147 #glucocorticoid receptor import into nucleus
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0042348 #NF-kappaB import into nucleus
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0036166 #phenotypic switching
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0031099 #regeneration
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+http://purl.obolibrary.org/obo/GO_0031102 #neuron projection regeneration
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties

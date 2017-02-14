@@ -1,0 +1,308 @@
+[URI of the OWL(RDF/XML) output file]
+http://bioassayontology.org/bao/external/BAO2.0_PATO_import.owl
+
+[Source ontology]
+PATO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/PATO_0000122
+http://purl.obolibrary.org/obo/PATO_0001323
+http://purl.obolibrary.org/obo/PATO_0000918
+http://purl.obolibrary.org/obo/PATO_0000384
+http://purl.obolibrary.org/obo/PATO_0000383
+http://purl.obolibrary.org/obo/PATO_0002354
+http://purl.obolibrary.org/obo/PATO_0002355
+http://purl.obolibrary.org/obo/PATO_0001518
+http://purl.obolibrary.org/obo/PATO_0000325
+http://purl.obolibrary.org/obo/PATO_0001509
+http://purl.obolibrary.org/obo/PATO_0000060
+http://purl.obolibrary.org/obo/PATO_0000117
+http://purl.obolibrary.org/obo/PATO_0000141
+http://purl.obolibrary.org/obo/PATO_0000052
+http://purl.obolibrary.org/obo/PATO_0000014
+http://purl.obolibrary.org/obo/PATO_0001516
+http://purl.obolibrary.org/obo/PATO_0000047
+http://purl.obolibrary.org/obo/PATO_0001300
+http://purl.obolibrary.org/obo/PATO_0000049
+http://purl.obolibrary.org/obo/PATO_0002220
+http://purl.obolibrary.org/obo/PATO_0002263
+http://purl.obolibrary.org/obo/PATO_0000462
+http://purl.obolibrary.org/obo/PATO_0000467
+http://purl.obolibrary.org/obo/PATO_0001995
+http://purl.obolibrary.org/obo/PATO_0002182
+http://purl.obolibrary.org/obo/PATO_0001018
+http://purl.obolibrary.org/obo/PATO_0000051
+http://purl.obolibrary.org/obo/PATO_0000068
+http://purl.obolibrary.org/obo/PATO_0001154
+http://purl.obolibrary.org/obo/PATO_0000411
+http://purl.obolibrary.org/obo/PATO_0000402
+http://purl.obolibrary.org/obo/PATO_0001708
+http://purl.obolibrary.org/obo/PATO_0001709
+http://purl.obolibrary.org/obo/PATO_0001710
+http://purl.obolibrary.org/obo/PATO_0001708
+http://purl.obolibrary.org/obo/PATO_0001709
+http://purl.obolibrary.org/obo/PATO_0001710
+http://purl.obolibrary.org/obo/PATO_0001629
+http://purl.obolibrary.org/obo/PATO_0000627
+http://purl.obolibrary.org/obo/PATO_0001513
+http://purl.obolibrary.org/obo/PATO_0001791
+http://purl.obolibrary.org/obo/PATO_0000638
+http://purl.obolibrary.org/obo/PATO_0001485
+http://purl.obolibrary.org/obo/PATO_0001959
+http://purl.obolibrary.org/obo/PATO_0001861
+http://purl.obolibrary.org/obo/PATO_0000982
+
+
+http://purl.obolibrary.org/obo/PATO_0000122
+http://purl.obolibrary.org/obo/PATO_0001323
+http://purl.obolibrary.org/obo/PATO_0000585
+http://purl.obolibrary.org/obo/PATO_0000384
+http://purl.obolibrary.org/obo/PATO_0000383
+http://purl.obolibrary.org/obo/PATO_0002354
+http://purl.obolibrary.org/obo/PATO_0002355
+http://purl.obolibrary.org/obo/PATO_0001518
+http://purl.obolibrary.org/obo/PATO_0000325
+http://purl.obolibrary.org/obo/PATO_0001509
+http://purl.obolibrary.org/obo/PATO_0000060
+http://purl.obolibrary.org/obo/PATO_0000052
+http://purl.obolibrary.org/obo/PATO_0000117
+http://purl.obolibrary.org/obo/PATO_0000141
+http://purl.obolibrary.org/obo/PATO_0000014
+http://purl.obolibrary.org/obo/PATO_0001516
+http://purl.obolibrary.org/obo/PATO_0000047
+http://purl.obolibrary.org/obo/PATO_0000049
+http://purl.obolibrary.org/obo/PATO_0001300
+http://purl.obolibrary.org/obo/PATO_0002220
+http://purl.obolibrary.org/obo/PATO_0002263
+http://purl.obolibrary.org/obo/PATO_0000462
+http://purl.obolibrary.org/obo/PATO_0000467
+http://purl.obolibrary.org/obo/PATO_0001995
+http://purl.obolibrary.org/obo/PATO_0001018
+http://purl.obolibrary.org/obo/PATO_0002182
+http://purl.obolibrary.org/obo/PATO_0000051
+http://purl.obolibrary.org/obo/PATO_0000068
+http://purl.obolibrary.org/obo/PATO_0001154
+http://purl.obolibrary.org/obo/PATO_0000411
+http://purl.obolibrary.org/obo/PATO_0000402
+http://purl.obolibrary.org/obo/PATO_0001708
+http://purl.obolibrary.org/obo/PATO_0001709
+http://purl.obolibrary.org/obo/PATO_0001710
+http://purl.obolibrary.org/obo/PATO_0001629
+http://purl.obolibrary.org/obo/PATO_0000627
+http://purl.obolibrary.org/obo/PATO_0001513
+http://purl.obolibrary.org/obo/PATO_0001791
+http://purl.obolibrary.org/obo/PATO_0000638
+http://purl.obolibrary.org/obo/PATO_0001485
+http://purl.obolibrary.org/obo/PATO_0001959
+http://purl.obolibrary.org/obo/PATO_0001861
+http://purl.obolibrary.org/obo/PATO_0000982
+http://purl.obolibrary.org/obo/PATO_0001396
+http://purl.obolibrary.org/obo/PATO_0001566
+http://purl.obolibrary.org/obo/PATO_0002065
+http://purl.obolibrary.org/obo/PATO_0001334
+http://purl.obolibrary.org/obo/PATO_0000921 #width
+http://purl.obolibrary.org/obo/PATO_0002364
+http://purl.obolibrary.org/obo/PATO_0000150
+http://purl.obolibrary.org/obo/PATO_0001928
+http://purl.obolibrary.org/obo/PATO_0000165 #time
+http://purl.obolibrary.org/obo/PATO_0000011 #age
+http://purl.obolibrary.org/obo/PATO_0000574 #decreased length
+http://purl.obolibrary.org/obo/PATO_0000573 #increased length
+http://purl.obolibrary.org/obo/PATO_0000600 #increased width
+http://purl.obolibrary.org/obo/PATO_0000599 #decreased width
+http://purl.obolibrary.org/obo/PATO_0001783 #decreased intensity
+http://purl.obolibrary.org/obo/PATO_0001782 #increased intensity
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/PATO_0000122
+subClassOf http://purl.obolibrary.org/obo/PATO_0001708
+http://purl.obolibrary.org/obo/PATO_0001323
+subClassOf http://purl.obolibrary.org/obo/PATO_0001709
+
+http://purl.obolibrary.org/obo/PATO_0000918
+subClassOf http://purl.obolibrary.org/obo/PATO_0001710
+
+http://purl.obolibrary.org/obo/PATO_0000384
+subClassOf http://purl.obolibrary.org/obo/PATO_0000047
+
+http://purl.obolibrary.org/obo/PATO_0000383
+subClassOf http://purl.obolibrary.org/obo/PATO_0000047
+
+http://purl.obolibrary.org/obo/PATO_0002354
+subClassOf http://purl.obolibrary.org/obo/PATO_0001509
+
+http://purl.obolibrary.org/obo/PATO_0002355
+subClassOf http://purl.obolibrary.org/obo/PATO_0001509
+
+http://purl.obolibrary.org/obo/PATO_0001518
+subClassOf http://purl.obolibrary.org/obo/PATO_0000049
+
+http://purl.obolibrary.org/obo/PATO_0000325
+subClassOf http://purl.obolibrary.org/obo/PATO_0000049
+
+http://purl.obolibrary.org/obo/PATO_0001509
+subClassOf http://purl.obolibrary.org/obo/PATO_0002182
+
+http://purl.obolibrary.org/obo/PATO_0000060
+subClassOf http://purl.obolibrary.org/obo/PATO_0002182
+
+http://purl.obolibrary.org/obo/PATO_0000117
+subClassOf http://purl.obolibrary.org/obo/PATO_0000051
+
+http://purl.obolibrary.org/obo/PATO_0000141
+subClassOf http://purl.obolibrary.org/obo/PATO_0000051
+
+http://purl.obolibrary.org/obo/PATO_0000052
+subClassOf http://purl.obolibrary.org/obo/PATO_0000051
+
+http://purl.obolibrary.org/obo/PATO_0000014
+subClassOf http://purl.obolibrary.org/obo/PATO_0001300
+
+http://purl.obolibrary.org/obo/PATO_0001516
+subClassOf http://purl.obolibrary.org/obo/PATO_0001300
+
+http://purl.obolibrary.org/obo/PATO_0000047
+subClassOf http://purl.obolibrary.org/obo/PATO_0001995
+
+http://purl.obolibrary.org/obo/PATO_0001300
+subClassOf http://purl.obolibrary.org/obo/PATO_0001018
+
+http://purl.obolibrary.org/obo/PATO_0000049
+subClassOf http://purl.obolibrary.org/obo/PATO_0001018
+
+
+http://purl.obolibrary.org/obo/PATO_0002220
+subClassOf http://www.bioassayontology.org/bao#BAO_0000672
+
+http://purl.obolibrary.org/obo/PATO_0002263
+subClassOf http://www.bioassayontology.org/bao#BAO_0000672
+
+
+http://purl.obolibrary.org/obo/PATO_0000462
+subClassOf http://purl.obolibrary.org/obo/PATO_0000068
+
+http://purl.obolibrary.org/obo/PATO_0000467
+subClassOf http://purl.obolibrary.org/obo/PATO_0000068
+
+
+http://purl.obolibrary.org/obo/PATO_0001995
+subClassOf http://www.bioassayontology.org/bao#BAO_0002928
+
+http://purl.obolibrary.org/obo/PATO_0002182
+subClassOf http://www.bioassayontology.org/bao#BAO_0002928
+
+http://purl.obolibrary.org/obo/PATO_0001018
+subClassOf http://www.bioassayontology.org/bao#BAO_0002928
+
+http://purl.obolibrary.org/obo/PATO_0000051
+subClassOf http://www.bioassayontology.org/bao#BAO_0002928
+
+http://purl.obolibrary.org/obo/PATO_0000068
+subClassOf http://www.bioassayontology.org/bao#BAO_0002928
+
+http://purl.obolibrary.org/obo/PATO_0001154
+subClassOf http://purl.obolibrary.org/obo/PATO_0000052
+
+http://purl.obolibrary.org/obo/PATO_0000411
+subClassOf http://purl.obolibrary.org/obo/PATO_0000052
+
+http://purl.obolibrary.org/obo/PATO_0000402
+subClassOf http://purl.obolibrary.org/obo/PATO_0000052
+http://purl.obolibrary.org/obo/PATO_0001708
+subClassOf http://purl.obolibrary.org/obo/PATO_0000117
+
+http://purl.obolibrary.org/obo/PATO_0001709
+subClassOf http://purl.obolibrary.org/obo/PATO_0000117
+
+http://purl.obolibrary.org/obo/PATO_0001710
+subClassOf http://purl.obolibrary.org/obo/PATO_0000117
+
+http://purl.obolibrary.org/obo/PATO_0001708
+subClassOf http://purl.obolibrary.org/obo/PATO_0000117
+
+http://purl.obolibrary.org/obo/PATO_0001709
+subClassOf http://purl.obolibrary.org/obo/PATO_0000117
+
+http://purl.obolibrary.org/obo/PATO_0001710
+subClassOf http://purl.obolibrary.org/obo/PATO_0000117
+
+http://purl.obolibrary.org/obo/PATO_0001629
+subClassOf http://purl.obolibrary.org/obo/PATO_0000060
+
+http://purl.obolibrary.org/obo/PATO_0000627
+subClassOf http://purl.obolibrary.org/obo/PATO_0000060
+
+http://purl.obolibrary.org/obo/PATO_0001513
+subClassOf http://purl.obolibrary.org/obo/PATO_0000060
+
+http://purl.obolibrary.org/obo/PATO_0001791
+subClassOf http://purl.obolibrary.org/obo/PATO_0000060
+
+http://purl.obolibrary.org/obo/PATO_0000638
+subClassOf http://purl.obolibrary.org/obo/PATO_0000141
+http://purl.obolibrary.org/obo/PATO_0001485
+subClassOf http://purl.obolibrary.org/obo/PATO_0000141
+
+http://purl.obolibrary.org/obo/PATO_0001959
+subClassOf http://purl.obolibrary.org/obo/PATO_0000141
+http://purl.obolibrary.org/obo/PATO_0001861
+subClassOf http://purl.obolibrary.org/obo/PATO_0000141
+
+http://purl.obolibrary.org/obo/PATO_0000982
+subClassOf http://purl.obolibrary.org/obo/PATO_0000141
+
+http://purl.obolibrary.org/obo/PATO_0001396
+subClassOf http://www.bioassayontology.org/bao#BAO_0002928
+
+http://purl.obolibrary.org/obo/PATO_0001566
+subClassOf http://purl.obolibrary.org/obo/PATO_0000060
+
+http://purl.obolibrary.org/obo/PATO_0002065 #stellate
+subClassOf http://purl.obolibrary.org/obo/PATO_0000052 #shape
+
+http://purl.obolibrary.org/obo/PATO_0001334 #diameter
+subClassOf http://purl.obolibrary.org/obo/PATO_0001708 #1-D extent
+
+http://purl.obolibrary.org/obo/PATO_0000921 #width
+subClassOf http://purl.obolibrary.org/obo/PATO_0001708 #1-D extent
+
+http://purl.obolibrary.org/obo/PATO_0002364 #shortened
+subClassOf http://purl.obolibrary.org/obo/PATO_0000052 #shape
+
+http://purl.obolibrary.org/obo/PATO_0000150 #texture
+subClassOf http://purl.obolibrary.org/obo/PATO_0000051 #morphology
+
+http://purl.obolibrary.org/obo/PATO_0001928
+subClassOf http://purl.obolibrary.org/obo/PATO_0000150 #texture
+
+http://purl.obolibrary.org/obo/PATO_0000165 #time
+subClassOf http://purl.obolibrary.org/obo/PATO_0001018 #physical quality
+
+http://purl.obolibrary.org/obo/PATO_0000011 #age
+subClassOf http://purl.obolibrary.org/obo/PATO_0000165 #time
+
+http://purl.obolibrary.org/obo/PATO_0000574 #decreased length
+subClassOf http://purl.obolibrary.org/obo/PATO_0000122 #length
+
+http://purl.obolibrary.org/obo/PATO_0000573 #increased length
+subClassOf http://purl.obolibrary.org/obo/PATO_0000122 #length
+
+http://purl.obolibrary.org/obo/PATO_0000600 #increased width
+subClassOf http://purl.obolibrary.org/obo/PATO_0000921 #width
+
+http://purl.obolibrary.org/obo/PATO_0000599 #decreased width
+subClassOf http://purl.obolibrary.org/obo/PATO_0000921 #width
+
+http://purl.obolibrary.org/obo/PATO_0001783 #decreased intensity
+subClassOf http://purl.obolibrary.org/obo/PATO_0000049 #intensity
+
+http://purl.obolibrary.org/obo/PATO_0001782 #increased intensity
+subClassOf http://purl.obolibrary.org/obo/PATO_0000049 #intensity
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties
