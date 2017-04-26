@@ -1,92 +1,45 @@
 <?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY bao "http://www.bioassayontology.org/bao#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
 <rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_format.owl#"
      xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_format.owl"
+     xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:efo="http://www.ebi.ac.uk/efo/">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_format.owl">
-        <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_metadata.owl"/>
+        <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_format.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <dc:date>Jan 30th 2017</dc:date>
-        <rdfs:comment xml:lang="en">There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
+        <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
 
 contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
-        <owl:versionInfo>2.3.1</owl:versionInfo>
-        <dc:relation>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</dc:relation>
+        <owl:versionInfo>2.3.2</owl:versionInfo>
+        <rdfs:label>BAO</rdfs:label>
+        <rdfs:comment>Created by:
+Hande K���k McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+        <rdfs:comment>Contact:
+Stephan Schurer
+stephan dot schurer at gmail dot com</rdfs:comment>
+        <dc:date>26 Apr 2017</dc:date>
     </owl:Ontology>
-    
 
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
-
-    <owl:ObjectProperty rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
-
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    
-
-
-    <!-- 
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -94,307 +47,238 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+	<!-- http://www.bioassayontology.org/bao#BAO_0000007 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000007">
+		<rdfs:label rdf:datatype="&xsd;string">nucleosome format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
+		<obo:IAO_0000115>They are the basic repeating units of the eukaryotic chromatin consisting of DNA wound around a histone protein core.</obo:IAO_0000115>
+	</owl:Class>
 
+	<!-- http://www.bioassayontology.org/bao#BAO_0000019 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000019">
+		<rdfs:label rdf:datatype="&xsd;string">assay format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003113"/>
+		<obo:IAO_0000115>Assay format is a conceptualization of assays based on the biological and / or chemical features of the experimental system. For example assay formats include biochemical assays - referring to assays with purified protein, cell-based - referring to assays in whole cells, or organism-based - referring to assays performed in an organism.</obo:IAO_0000115>
+	</owl:Class>
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0000007 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0000100 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000100">
+		<rdfs:label rdf:datatype="&xsd;string">small-molecule physicochemical format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000019"/>
+		<obo:IAO_0000115>Assays in which the physical and chemical properties of perturbagens are measured, namely, aqueous solubility, octanol water partition, cell permeability models, for e.g.  Caco2 cells, parallel artificial membrane permeability assay (PAMPA), etc.</obo:IAO_0000115>
+	</owl:Class>
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000007">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
-        <obo:IAO_0000115>They are the basic repeating units of the eukaryotic chromatin consisting of DNA wound around a histone protein core.</obo:IAO_0000115>
-        <rdfs:label>nucleosome format</rdfs:label>
-    </owl:Class>
-    
+	<!-- http://www.bioassayontology.org/bao#BAO_0000217 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000217">
+		<rdfs:label rdf:datatype="&xsd;string">biochemical format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000019"/>
+		<obo:IAO_0000115>It is an in vitro format used to measure the activity of a biological macromolecule, either a purified protein or a nucleic acid. It is most often a homogeneous assay type, but can be heterogeneous if a solid phase such as beads is used to immobilize the macromolecule.</obo:IAO_0000115>
+	</owl:Class>
 
+	<!-- http://www.bioassayontology.org/bao#BAO_0000218 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000218">
+		<rdfs:label rdf:datatype="&xsd;string">organism-based format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000019"/>
+		<obo:IAO_0000115>Involves the use of a living organism and is a heterogeneous assay type.</obo:IAO_0000115>
+	</owl:Class>
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0000019 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0000219 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000219">
+		<rdfs:label rdf:datatype="&xsd;string">cell based format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000019"/>
+		<rdfs:label>cell-based format</rdfs:label>
+		<obo:IAO_0000115>Involves the use of living cells of eukaryotic origin and is a heterogeneous assay type.</obo:IAO_0000115>
+	</owl:Class>
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000019">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003113"/>
-        <obo:IAO_0000115>Assay format is a conceptualization of assays based on the biological and / or chemical features of the experimental system. For example assay formats include biochemical assays - referring to assays with purified protein, cell-based - referring to assays in whole cells, or organism-based - referring to assays performed in an organism.</obo:IAO_0000115>
-        <rdfs:label>assay format</rdfs:label>
-    </owl:Class>
-    
+	<!-- http://www.bioassayontology.org/bao#BAO_0000220 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000220">
+		<rdfs:label rdf:datatype="&xsd;string">subcellular format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000366"/>
+		<obo:IAO_0000115>subcellular organelles / component (not individual proteins) obtained via cell lysis and differential centrifugation (or potentially other method of purification / extraction of the organelles)</obo:IAO_0000115>
+	</owl:Class>
 
+	<!-- http://www.bioassayontology.org/bao#BAO_0000221 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000221">
+		<rdfs:label rdf:datatype="&xsd;string">tissue-based format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000019"/>
+		<obo:IAO_0000115>Involves the use of a tissue derived from a living organism and is a heterogeneous assay type.</obo:IAO_0000115>
+	</owl:Class>
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0000100 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0000223 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000223">
+		<rdfs:label rdf:datatype="&xsd;string">protein complex format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000224"/>
+		<obo:IAO_0000115>Two or more proteins interact to form a stable complex. Each of the members of this complex has a distinct role in mediating the overall function of the complex, which can be as a chaperone (DnaK, DnaJ and grpE), an enzyme (mitochondrial respiratory complexes), a signaling complex (G-proteins), etc. It can be viewed as a quaternary structure of the proteins.</obo:IAO_0000115>
+	</owl:Class>
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000100">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000019"/>
-        <obo:IAO_0000115>Assays in which the physical and chemical properties of perturbagens are measured, namely, aqueous solubility, octanol water partition, cell permeability models, for e.g.  Caco2 cells, parallel artificial membrane permeability assay (PAMPA), etc.</obo:IAO_0000115>
-        <rdfs:label>small-molecule physicochemical format</rdfs:label>
-    </owl:Class>
-    
+	<!-- http://www.bioassayontology.org/bao#BAO_0000224 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000224">
+		<rdfs:label rdf:datatype="&xsd;string">protein format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000217"/>
+		<obo:IAO_0000115>In this format, the perturbagen targets a protein to regulate its function.  </obo:IAO_0000115>
+	</owl:Class>
 
+	<!-- http://www.bioassayontology.org/bao#BAO_0000225 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000225">
+		<rdfs:label rdf:datatype="&xsd;string">nucleic acid format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000217"/>
+		<obo:IAO_0000115>In this format, the perturbagen targets a nucleic acid (DNA or RNA) to regulate its function.  </obo:IAO_0000115>
+	</owl:Class>
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0000217 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0000249 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000249">
+		<rdfs:label rdf:datatype="&xsd;string">cell membrane format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
+		<obo:IAO_0000115>The thin outer covering of a cell consisting of lipid-bilayer embedded with proteins. It is semi-permeable and is also called &quot;plasma membrane&quot;</obo:IAO_0000115>
+	</owl:Class>
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000217">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000019"/>
-        <obo:IAO_0000115>It is an in vitro format used to measure the activity of a biological macromolecule, either a purified protein or a nucleic acid. It is most often a homogeneous assay type, but can be heterogeneous if a solid phase such as beads is used to immobilize the macromolecule.</obo:IAO_0000115>
-        <rdfs:label>biochemical format</rdfs:label>
-    </owl:Class>
-    
+	<!-- http://www.bioassayontology.org/bao#BAO_0000250 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000250">
+		<rdfs:label rdf:datatype="&xsd;string">cytosol format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
+		<obo:IAO_0000115>The fluid component of cytoplasm, without the organelles and the insoluble cytoplasmic components.</obo:IAO_0000115>
+	</owl:Class>
 
+	<!-- http://www.bioassayontology.org/bao#BAO_0000251 -->
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0000218 -->
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000251">
+		<rdfs:label rdf:datatype="&xsd;string">microsome format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
+		<obo:IAO_0000115>Microsomes are vesicle-like structures formed as an artifact from the endoplasmic reticulum after the cell has been ruptured by homogenization.</obo:IAO_0000115>
+	</owl:Class>
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000218">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000019"/>
-        <obo:IAO_0000115>Involves the use of a living organism and is a heterogeneous assay type.</obo:IAO_0000115>
-        <rdfs:label>organism-based format</rdfs:label>
-    </owl:Class>
-    
+	<!-- http://www.bioassayontology.org/bao#BAO_0000252 -->
 
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000252">
+		<rdfs:label rdf:datatype="&xsd;string">mitochondrion format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
+		<obo:IAO_0000115>An organelle found in the cytoplasm of eukaryotic cells that metabolizes glucose and other sugars to produce usable energy in the form of ATP. It contains its own genome which encodes proteins, tRNA and rRNA.</obo:IAO_0000115>
+	</owl:Class>
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0000219 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0000253 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000253">
+		<rdfs:label rdf:datatype="&xsd;string">nuclear extract format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
+		<obo:IAO_0000115>It is a soluble extract prepared from the cellular nuclei, which are obtained by differential centrifugation of the cell lysate.</obo:IAO_0000115>
+	</owl:Class>
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000219">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000019"/>
-        <obo:IAO_0000115>Involves the use of living cells of eukaryotic origin and is a heterogeneous assay type.</obo:IAO_0000115>
-        <rdfs:label>cell based format</rdfs:label>
-        <rdfs:label>cell-based format</rdfs:label>
-    </owl:Class>
-    
+	<!-- http://www.bioassayontology.org/bao#BAO_0000254 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000254">
+		<rdfs:label rdf:datatype="&xsd;string">whole cell lysate format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000366"/>
+		<obo:IAO_0000115>A cell whose membrane has been ruptured, either mechanically or by freeze-thawing. The entire cell lysate is used in the assay without extensive purification (or separation).</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0000255 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000255">
+		<rdfs:label rdf:datatype="&xsd;string">rabbit reticulocyte lysate format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000254"/>
+		<obo:IAO_0000115>The lysate contains the cellular components necessary for in vitro protein synthesis (tRNA, ribosomes, amino acids, initiation, elongation and termination factors). It is prepared from rabbit reticulocytes by lysis, followed by treatment with micrococcal nuclease to destroy endogenous mRNA for background reduction.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0000357 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000357">
+		<rdfs:label rdf:datatype="&xsd;string">single protein format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000224"/>
+		<obo:IAO_0000115>one protein sequence</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0000366 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000366">
+		<rdfs:label rdf:datatype="&xsd;string">cell-free format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000019"/>
+		<obo:IAO_0000115>This originates from a cell, but does not use intact (live) cells; does not include biochemical assays, which is one of the major formats that is categorized separately. It is most often a homogeneous assay type, but can be heterogeneous if a solid phase such as beads are used to immobilize the components.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0000371 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000371">
+		<rdfs:label rdf:datatype="&xsd;string">assay phase characteristic</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003113"/>
+		<obo:IAO_0000115>It refers to whether all the assay components are in solution or some are in solid phase, which determines their ability to scatter light.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0000372 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000372">
+		<rdfs:label rdf:datatype="&xsd;string">homogeneous phase</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000371"/>
+		<obo:IAO_0000115>All assay components exist in solution phase at the time of detection (e.g. none of the components are in beads or cells). Technically no component scatters light.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0000373 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000373">
+		<rdfs:label rdf:datatype="&xsd;string">heterogeneous phase</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000371"/>
+		<obo:IAO_0000115>One or more assay components are present in solid phase at time of detection. (e.g.: cells, beads).</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0002163 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002163">
+		<rdfs:label rdf:datatype="&xsd;string">solid phase</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000372"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0002164 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002164">
+		<rdfs:label rdf:datatype="&xsd;string">liquid phase</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000372"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0003113 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003113">
+		<rdfs:label rdf:datatype="&xsd;string">assay format component</rdfs:label>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0020002 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020002">
+		<rdfs:label rdf:datatype="&xsd;string">liposome format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
+		<obo:IAO_0000119>PubChem AID: 602155</obo:IAO_0000119>
+		<obo:IAO_0000116>Date from BAE: 7/19/2016</obo:IAO_0000116>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0020003 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020003">
+		<rdfs:label rdf:datatype="&xsd;string">plasma format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000366"/>
+		<obo:IAO_0000119>PubChem AID: 623907</obo:IAO_0000119>
+		<obo:IAO_0000116>Date from BAE: 7/6/2016</obo:IAO_0000116>
+		<obo:IAO_0000115>Plasma is the liquid part of the blood and lymphatic fluid, which makes up about half of the volume of blood. Plasma is devoid of cells and, unlike serum, has not clotted.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0020004 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020004">
+		<rdfs:label rdf:datatype="&xsd;string">serum format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000366"/>
+		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
+		<obo:IAO_0000116>Date from BAE: 7/6/2016</obo:IAO_0000116>
+		<obo:IAO_0000115>Serum is the clear cell-free liquid that is separated from clotted blood. Serum differs from plasma in that the blood is first allowed to clot before centrifugation (separating from cells) while plasma preparations entail preventing blood clotting. Both are cell-free and contain antibodies. </obo:IAO_0000115>
+	</owl:Class>
 
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000220 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000220">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000366"/>
-        <obo:IAO_0000115>subcellular organelles / component (not individual proteins) obtained via cell lysis and differential centrifugation (or potentially other method of purification / extraction of the organelles)</obo:IAO_0000115>
-        <rdfs:label>subcellular format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000221 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000221">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000019"/>
-        <obo:IAO_0000115>Involves the use of a tissue derived from a living organism and is a heterogeneous assay type.</obo:IAO_0000115>
-        <rdfs:label>tissue-based format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000223 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000223">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000224"/>
-        <obo:IAO_0000115>Two or more proteins interact to form a stable complex. Each of the members of this complex has a distinct role in mediating the overall function of the complex, which can be as a chaperone (DnaK, DnaJ and grpE), an enzyme (mitochondrial respiratory complexes), a signaling complex (G-proteins), etc. It can be viewed as a quaternary structure of the proteins.</obo:IAO_0000115>
-        <rdfs:label>protein complex format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000224 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000224">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000217"/>
-        <obo:IAO_0000115>In this format, the perturbagen targets a protein to regulate its function.  </obo:IAO_0000115>
-        <rdfs:label>protein format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000225 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000225">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000217"/>
-        <obo:IAO_0000115>In this format, the perturbagen targets a nucleic acid (DNA or RNA) to regulate its function.  </obo:IAO_0000115>
-        <rdfs:label>nucleic acid format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000249 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000249">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
-        <obo:IAO_0000115>The thin outer covering of a cell consisting of lipid-bilayer embedded with proteins. It is semi-permeable and is also called &quot;plasma membrane&quot;</obo:IAO_0000115>
-        <rdfs:label>cell membrane format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000250 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000250">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
-        <obo:IAO_0000115>The fluid component of cytoplasm, without the organelles and the insoluble cytoplasmic components.</obo:IAO_0000115>
-        <rdfs:label>cytosol format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000251 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000251">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
-        <obo:IAO_0000115>Microsomes are vesicle-like structures formed as an artifact from the endoplasmic reticulum after the cell has been ruptured by homogenization.</obo:IAO_0000115>
-        <rdfs:label>microsome format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000252 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000252">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
-        <obo:IAO_0000115>An organelle found in the cytoplasm of eukaryotic cells that metabolizes glucose and other sugars to produce usable energy in the form of ATP. It contains its own genome which encodes proteins, tRNA and rRNA.</obo:IAO_0000115>
-        <rdfs:label>mitochondrion format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000253 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000253">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
-        <obo:IAO_0000115>It is a soluble extract prepared from the cellular nuclei, which are obtained by differential centrifugation of the cell lysate.</obo:IAO_0000115>
-        <rdfs:label>nuclear extract format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000254 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000254">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000366"/>
-        <obo:IAO_0000115>A cell whose membrane has been ruptured, either mechanically or by freeze-thawing. The entire cell lysate is used in the assay without extensive purification (or separation).</obo:IAO_0000115>
-        <rdfs:label>whole cell lysate format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000255 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000255">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000254"/>
-        <obo:IAO_0000115>The lysate contains the cellular components necessary for in vitro protein synthesis (tRNA, ribosomes, amino acids, initiation, elongation and termination factors). It is prepared from rabbit reticulocytes by lysis, followed by treatment with micrococcal nuclease to destroy endogenous mRNA for background reduction.</obo:IAO_0000115>
-        <rdfs:label>rabbit reticulocyte lysate format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000357 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000357">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000224"/>
-        <obo:IAO_0000115>one protein sequence</obo:IAO_0000115>
-        <rdfs:label>single protein format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000366 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000366">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000019"/>
-        <obo:IAO_0000115>This originates from a cell, but does not use intact (live) cells; does not include biochemical assays, which is one of the major formats that is categorized separately. It is most often a homogeneous assay type, but can be heterogeneous if a solid phase such as beads are used to immobilize the components.</obo:IAO_0000115>
-        <rdfs:label>cell-free format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000371 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000371">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003113"/>
-        <obo:IAO_0000115>It refers to whether all the assay components are in solution or some are in solid phase, which determines their ability to scatter light.</obo:IAO_0000115>
-        <rdfs:label>assay phase characteristic</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000372 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000372">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000371"/>
-        <obo:IAO_0000115>All assay components exist in solution phase at the time of detection (e.g. none of the components are in beads or cells). Technically no component scatters light.</obo:IAO_0000115>
-        <rdfs:label>homogeneous phase</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000373 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000373">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000371"/>
-        <obo:IAO_0000115>One or more assay components are present in solid phase at time of detection. (e.g.: cells, beads).</obo:IAO_0000115>
-        <rdfs:label>heterogeneous phase</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002163 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002163">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000372"/>
-        <rdfs:label>solid phase</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0002164 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002164">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000372"/>
-        <rdfs:label>liquid phase</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0003113 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003113">
-        <rdfs:label xml:lang="en">assay format component</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0020002 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020002">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/19/2016</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 602155</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liposome format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0020003 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020003">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000366"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plasma is the liquid part of the blood and lymphatic fluid, which makes up about half of the volume of blood. Plasma is devoid of cells and, unlike serum, has not clotted.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/6/2016</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: 623907</obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plasma format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0020004 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020004">
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000366"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Serum is the clear cell-free liquid that is separated from clotted blood. Serum differs from plasma in that the blood is first allowed to clot before centrifugation (separating from cells) while plasma preparations entail preventing blood clotting. Both are cell-free and contain antibodies. </obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Date from BAE: 7/6/2016</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PubChem AID: </obo:IAO_0000119>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">serum format</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#Thing -->
-
-    <owl:Class rdf:about="http://www.w3.org/2002/07/owl#Thing"/>
 </rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
-

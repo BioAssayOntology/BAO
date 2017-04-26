@@ -1,74 +1,45 @@
 <?xml version="1.0"?>
-
-
 <!DOCTYPE rdf:RDF [
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY bao "http://www.bioassayontology.org/bao#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
 ]>
-
-
 <rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_function.owl#"
      xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_function.owl"
+     xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:efo="http://www.ebi.ac.uk/efo/">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_function.owl">
+        <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_function.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
-        <dc:date>Jan 30th 2017</dc:date>
-        <owl:versionInfo>2.3.1</owl:versionInfo>
-        <rdfs:comment xml:lang="en">There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
 
 contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_metadata.owl"/>
+        <owl:versionInfo>2.3.2</owl:versionInfo>
+        <rdfs:label>BAO</rdfs:label>
+        <rdfs:comment>Created by:
+Hande K���k McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+        <rdfs:comment>Contact:
+Stephan Schurer
+stephan dot schurer at gmail dot com</rdfs:comment>
+        <dc:date>26 Apr 2017</dc:date>
     </owl:Ontology>
-    
 
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
-
-    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
-
-    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
-    
-
-
-    <!-- 
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -76,32 +47,17 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+	<!-- http://www.bioassayontology.org/bao#BAO_0003075 -->
 
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003075">
+		<rdfs:label rdf:datatype="&xsd;string">molecular function</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003117"/>
+	</owl:Class>
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0003075 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0003117 -->
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003075">
-        <rdfs:label>molecular function</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003117"/>
-    </owl:Class>
-    
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003117">
+		<rdfs:label rdf:datatype="&xsd;string">function</rdfs:label>
+	</owl:Class>
 
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0003117 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003117">
-        <rdfs:label xml:lang="en">function</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#Thing -->
-
-    <owl:Class rdf:about="&owl;Thing"/>
 </rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
-
