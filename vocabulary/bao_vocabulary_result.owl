@@ -32,12 +32,13 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
         <owl:versionInfo>2.3.2</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande K���k McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>26 Apr 2017</dc:date>
+        <dc:date>11 Jul 2017</dc:date>
     </owl:Ontology>
+
 
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -80,9 +81,10 @@ Percent cytotoxicity = 100-percent viability</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000034">
 		<rdfs:label rdf:datatype="&xsd;string">Kd</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000587"/>
-		<obo:IAO_0000115>Kd � is the equilibrium dissociation constant for a drug.  It describes the affinity between a ligand (L) (such as a drug) and a protein (P). Ligand-protein affinities are influenced by non-covalent intermolecular interactions between the two molecules such as hydrogen bonding, electrostatic interactions, hydrophobic and Van der Waals forces. 
+		<obo:IAO_0000115>Kd – is the equilibrium dissociation constant for a drug.  It describes the affinity between a ligand (L) (such as a drug) and a protein (P). Ligand-protein affinities are influenced by non-covalent intermolecular interactions between the two molecules such as hydrogen bonding, electrostatic interactions, hydrophobic and Van der Waals forces. 
 Kd = ([P] [L]) / [PL]
-The dissociation constant has molar units (M), which corresponds to the concentration of ligand [L] at which the binding site on a particular protein is half occupied, i.e. the concentration of ligand, at which the concentration of protein with ligand bound [PL], equals the concentration of protein with no ligand bound [P]. The smaller the dissociation constant, the more tightly bound the ligand is, or the higher the affinity between ligand and protein. http://www.graphpad.com/curvefit/law_of_mass_action.htm</obo:IAO_0000115>
+The dissociation constant has molar units (M), which corresponds to the concentration of ligand [L] at which the binding site on a particular protein is half occupied, i.e. the concentration of ligand, at which the concentration of protein with ligand bound [PL], equals the concentration of protein with no ligand bound [P]. The smaller the dissociation constant, the more tightly bound the ligand is, or the higher the affinity between ligand and protein. http://www.graphpad.com/curvefit/law_of_mass_action.htm
+        </obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000074 -->
@@ -530,7 +532,7 @@ Percent viability = 100-percent cytotoxicity</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000477">
 		<rdfs:label rdf:datatype="&xsd;string">km</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000487"/>
-		<obo:IAO_0000115>The concentration of substrate at � Vmax, according to the Henri-Michaelis-Menten kinetic model.</obo:IAO_0000115>
+		<obo:IAO_0000115>The concentration of substrate at </obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000479 -->

@@ -14,25 +14,46 @@
 
 <rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_properties.owl#"
      xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_properties.owl"
-     xmlns:bao="http://www.bioassayontology.org/bao#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:bao="http://www.bioassayontology.org/bao#">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_properties.owl">
-        <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:date>Jan 30th 2017</dc:date>
-        <owl:versionInfo>2.3.1</owl:versionInfo>
+        <rdfs:label>bioassay ontology</rdfs:label>
+        <dc:relation>Uma Vempati, Hande Küçük, Ubbo Visser, Saminda Abeyruwan, Kunie Sakurai, Vance Lemmon, Stephan Schurer*</dc:relation>
+        <dc:date>05/09/2013</dc:date>
         <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
 
 contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
-        <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+        <owl:versionInfo>2.1</owl:versionInfo>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_metadata.owl"/>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
     
 
 
@@ -60,7 +81,6 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000106">
         <rdfs:label>has marker</rdfs:label>
-        <owl:inverseOf rdf:resource="&bao;BAO_0000122"/>
     </owl:ObjectProperty>
     
 
@@ -78,6 +98,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000122">
         <rdfs:label>is marker of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000106"/>
     </owl:ObjectProperty>
     
 
@@ -94,7 +115,6 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000154">
         <rdfs:label>has orthogonal assay design</rdfs:label>
-        <owl:inverseOf rdf:resource="&bao;BAO_0000235"/>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001076"/>
     </owl:ObjectProperty>
     
@@ -122,7 +142,6 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000185">
         <rdfs:label>has perturbagen</rdfs:label>
-        <owl:inverseOf rdf:resource="&bao;BAO_0000361"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -141,7 +160,6 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000205">
         <rdfs:label>has assay format</rdfs:label>
-        <owl:inverseOf rdf:resource="&bao;BAO_0000555"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -151,7 +169,6 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000207">
         <rdfs:label>has detection method</rdfs:label>
-        <owl:inverseOf rdf:resource="&bao;BAO_0000600"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -161,7 +178,6 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000208">
         <rdfs:label>has endpoint</rdfs:label>
-        <owl:inverseOf rdf:resource="&bao;BAO_0000559"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -190,7 +206,6 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000211">
         <rdfs:label>has target</rdfs:label>
-        <owl:inverseOf rdf:resource="&bao;BAO_0000598"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -200,7 +215,6 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000212">
         <rdfs:label>has assay method</rdfs:label>
-        <owl:inverseOf rdf:resource="&bao;BAO_0000391"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -210,7 +224,6 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000214">
         <rdfs:label>has specification</rdfs:label>
-        <owl:inverseOf rdf:resource="&bao;BAO_0000594"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -220,6 +233,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000235">
         <rdfs:label>is orthogonal assay design of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000154"/>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001077"/>
     </owl:ObjectProperty>
     
@@ -264,6 +278,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000361">
         <rdfs:label>is perturbagen of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000185"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -273,6 +288,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000391">
         <rdfs:label>is assay method of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000212"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -291,7 +307,6 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <owl:ObjectProperty rdf:about="&bao;BAO_0000398">
         <rdfs:label>is regulated by</rdfs:label>
         <owl:propertyDisjointWith rdf:resource="&bao;BAO_0000589"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0000589"/>
     </owl:ObjectProperty>
     
 
@@ -330,7 +345,6 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:label>is confirmatory assay of</rdfs:label>
         <rdfs:comment>Assay performed to confirm activity of compounds identified in the primary screen.  It can be performed as replicate measurements at a single screening concentration or as concentration-response assay.</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000539"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0000809"/>
     </owl:ObjectProperty>
     
 
@@ -343,7 +357,6 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 Counter assays are also performed to eliminate cytotoxic compounds. The actives from the primary assay are tested on cultured cells and the cell death is estimated commonly by measuring ATP concentration.
 Other example for a counter assays a FRET assay when the primary assay used absorption readout; luminescence readout when the primary assay measured fluorescence intensity, etc.</rdfs:comment>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000539"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0000810"/>
     </owl:ObjectProperty>
     
 
@@ -375,6 +388,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000555">
         <rdfs:label>is assay format of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000205"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -384,6 +398,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000559">
         <rdfs:label>is endpoint of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000208"/>
     </owl:ObjectProperty>
     
 
@@ -392,6 +407,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000589">
         <rdfs:label>is regulator of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000398"/>
     </owl:ObjectProperty>
     
 
@@ -400,6 +416,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000594">
         <rdfs:label>is specification of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000214"/>
     </owl:ObjectProperty>
     
 
@@ -417,6 +434,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000598">
         <rdfs:label>is target of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000211"/>
     </owl:ObjectProperty>
     
 
@@ -425,6 +443,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0000600">
         <rdfs:label>is detection method of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000207"/>
     </owl:ObjectProperty>
     
 
@@ -450,7 +469,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0000808">
         <rdfs:label>has primary assay</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000539"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0001067"/>
     </owl:ObjectProperty>
     
 
@@ -460,6 +478,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0000809">
         <rdfs:label>has confirmatory assay</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000539"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000540"/>
     </owl:ObjectProperty>
     
 
@@ -469,6 +488,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0000810">
         <rdfs:label>has counter assay</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000539"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000541"/>
     </owl:ObjectProperty>
     
 
@@ -478,7 +498,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0000812">
         <rdfs:label>has summary assay</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000539"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0001094"/>
     </owl:ObjectProperty>
     
 
@@ -488,7 +507,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0000922">
         <rdfs:label>has variant construct assay</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000810"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0000930"/>
     </owl:ObjectProperty>
     
 
@@ -498,6 +516,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0000930">
         <rdfs:label>is variant construct assay of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000541"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000922"/>
     </owl:ObjectProperty>
     
 
@@ -507,7 +526,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001058">
         <rdfs:label>has parental cell line assay</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000810"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0001059"/>
     </owl:ObjectProperty>
     
 
@@ -517,6 +535,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001059">
         <rdfs:label>is parental cell line assay of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000541"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0001058"/>
     </owl:ObjectProperty>
     
 
@@ -526,7 +545,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001062">
         <rdfs:label>has compound toxicity assay</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000810"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0001063"/>
     </owl:ObjectProperty>
     
 
@@ -536,6 +554,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001063">
         <rdfs:label>is compound toxicity assay of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000541"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0001062"/>
     </owl:ObjectProperty>
     
 
@@ -545,6 +564,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001067">
         <rdfs:label>is primary assay of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000539"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000808"/>
     </owl:ObjectProperty>
     
 
@@ -554,7 +574,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001068">
         <rdfs:label>has selectivity assay</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000539"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0001069"/>
     </owl:ObjectProperty>
     
 
@@ -564,6 +583,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001069">
         <rdfs:label>is selectivity assay of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000539"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0001068"/>
     </owl:ObjectProperty>
     
 
@@ -574,7 +594,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
         <rdfs:label>has alternate target assay</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000810"/>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001068"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0001071"/>
     </owl:ObjectProperty>
     
 
@@ -585,6 +604,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
         <rdfs:label>is alternate target assay of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000541"/>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001069"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0001070"/>
     </owl:ObjectProperty>
     
 
@@ -594,7 +614,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001072">
         <rdfs:label>has alternate cell line assay</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001068"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0001073"/>
     </owl:ObjectProperty>
     
 
@@ -604,6 +623,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001073">
         <rdfs:label>is alternate cell line assay of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001069"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0001072"/>
     </owl:ObjectProperty>
     
 
@@ -613,7 +633,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001074">
         <rdfs:label>has alternate organism assay</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001068"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0001075"/>
     </owl:ObjectProperty>
     
 
@@ -623,6 +642,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001075">
         <rdfs:label>is alternate organism assay of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001069"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0001074"/>
     </owl:ObjectProperty>
     
 
@@ -632,7 +652,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001076">
         <rdfs:label>has alternate confirmatory assay</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000539"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0001077"/>
     </owl:ObjectProperty>
     
 
@@ -642,6 +661,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001077">
         <rdfs:label>is alternate confirmatory assay of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000539"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0001076"/>
     </owl:ObjectProperty>
     
 
@@ -651,7 +671,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001078">
         <rdfs:label>has orthogonal assay technology</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001076"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0001079"/>
     </owl:ObjectProperty>
     
 
@@ -661,6 +680,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001079">
         <rdfs:label>is orthogonal assay technology of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001077"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0001078"/>
     </owl:ObjectProperty>
     
 
@@ -670,7 +690,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001080">
         <rdfs:label>has alternate assay type</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001076"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0001081"/>
     </owl:ObjectProperty>
     
 
@@ -680,6 +699,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001081">
         <rdfs:label>is alternate assay type of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001077"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0001080"/>
     </owl:ObjectProperty>
     
 
@@ -689,7 +709,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001082">
         <rdfs:label>has alternate assay conditions</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001076"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0001083"/>
     </owl:ObjectProperty>
     
 
@@ -699,6 +718,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001083">
         <rdfs:label>is alternate assay conditions of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001077"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0001082"/>
     </owl:ObjectProperty>
     
 
@@ -708,7 +728,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001084">
         <rdfs:label>has lead optimization assay</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000539"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0001085"/>
     </owl:ObjectProperty>
     
 
@@ -718,6 +737,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001085">
         <rdfs:label>is lead optimization assay of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000539"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0001084"/>
     </owl:ObjectProperty>
     
 
@@ -727,7 +747,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001086">
         <rdfs:label>has physicochemical profiling assay</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000810"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0001087"/>
     </owl:ObjectProperty>
     
 
@@ -737,6 +756,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001087">
         <rdfs:label>is physicochemical profiling assay of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000541"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0001086"/>
     </owl:ObjectProperty>
     
 
@@ -746,7 +766,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001088">
         <rdfs:label>has compound fluorescence assay</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001086"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0001089"/>
     </owl:ObjectProperty>
     
 
@@ -756,6 +775,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001089">
         <rdfs:label>is compound fluorescence assay of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001087"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0001088"/>
     </owl:ObjectProperty>
     
 
@@ -765,7 +785,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001090">
         <rdfs:label>has compound aggregation assay</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001086"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0001091"/>
     </owl:ObjectProperty>
     
 
@@ -775,6 +794,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001091">
         <rdfs:label>is compound aggregation assay of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001087"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0001090"/>
     </owl:ObjectProperty>
     
 
@@ -784,7 +804,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001092">
         <rdfs:label>has compound redox-activity assay</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001086"/>
-        <owl:inverseOf rdf:resource="&bao;BAO_0001093"/>
     </owl:ObjectProperty>
     
 
@@ -794,6 +813,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001093">
         <rdfs:label>is compound redox-activity assay of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0001087"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0001092"/>
     </owl:ObjectProperty>
     
 
@@ -803,6 +823,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0001094">
         <rdfs:label>is summary assay of</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000539"/>
+        <owl:inverseOf rdf:resource="&bao;BAO_0000812"/>
     </owl:ObjectProperty>
     
 
@@ -830,7 +851,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0002000">
         <rdfs:label>has measured entity</rdfs:label>
-        <owl:inverseOf rdf:resource="&bao;BAO_0002660"/>
     </owl:ObjectProperty>
     
 
@@ -916,6 +936,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0002660">
         <rdfs:label>is measured entity of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0002000"/>
         <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
     </owl:ObjectProperty>
     
@@ -1007,7 +1028,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0002846">
         <rdfs:label xml:lang="en">has assay protocol</rdfs:label>
-        <owl:inverseOf rdf:resource="&bao;BAO_0002847"/>
     </owl:ObjectProperty>
     
 
@@ -1016,6 +1036,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0002847">
         <rdfs:label xml:lang="en">is assay protocol of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0002846"/>
     </owl:ObjectProperty>
     
 
@@ -1072,7 +1093,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0002854">
         <rdfs:label xml:lang="en">has bioassay type</rdfs:label>
-        <owl:inverseOf rdf:resource="&bao;BAO_0002855"/>
     </owl:ObjectProperty>
     
 
@@ -1081,6 +1101,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0002855">
         <rdfs:label xml:lang="en">is bioassay type of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0002854"/>
     </owl:ObjectProperty>
     
 
@@ -1113,7 +1134,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0002859">
         <rdfs:label xml:lang="en">has phenotype</rdfs:label>
-        <owl:inverseOf rdf:resource="&bao;BAO_0002860"/>
     </owl:ObjectProperty>
     
 
@@ -1122,6 +1142,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0002860">
         <rdfs:label xml:lang="en">is phenotype of</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0002859"/>
     </owl:ObjectProperty>
     
 
@@ -1195,7 +1216,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0002872">
         <rdfs:label xml:lang="en">is unit of</rdfs:label>
-        <owl:inverseOf rdf:resource="&bao;BAO_0002874"/>
     </owl:ObjectProperty>
     
 
@@ -1204,6 +1224,7 @@ Other example for a counter assays a FRET assay when the primary assay used abso
 
     <owl:ObjectProperty rdf:about="&bao;BAO_0002874">
         <rdfs:label xml:lang="en">has unit</rdfs:label>
+        <owl:inverseOf rdf:resource="&bao;BAO_0002872"/>
     </owl:ObjectProperty>
     
 
@@ -1374,21 +1395,6 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     <owl:ObjectProperty rdf:about="&bao;BAO_0095006">
         <rdfs:label xml:lang="en">has morphological phenotype</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0002859"/>
-    </owl:ObjectProperty>
-	
-	
-	<!-- http://www.bioassayontology.org/bao#BAO_0095009 -->
-
-    <owl:ObjectProperty rdf:about="&bao;BAO_0095009">
-        <rdfs:label xml:lang="en">has assay design method</rdfs:label>
-    </owl:ObjectProperty>
-	
-	
-	
-	<!-- http://www.bioassayontology.org/bao#BAO_0095010 -->
-
-    <owl:ObjectProperty rdf:about="&bao;BAO_0095010">
-        <rdfs:label xml:lang="en">has assay supporting method</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -1964,5 +1970,5 @@ BSL4:</obo:IAO_0000115>
 
 
 
-<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.5.1928) http://owlapi.sourceforge.net -->
 

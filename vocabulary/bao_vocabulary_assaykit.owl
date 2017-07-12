@@ -32,12 +32,13 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
         <owl:versionInfo>2.3.2</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande K���k McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>26 Apr 2017</dc:date>
+        <dc:date>11 Jul 2017</dc:date>
     </owl:Ontology>
+
 
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -572,7 +573,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0002984 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002984">
-		<rdfs:label rdf:datatype="&xsd;string">Cellomics Multiplexed NF?B and c-Jun Activation Kit</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">Cellomics Multiplexed NFκB and c-Jun Activation Kit</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 

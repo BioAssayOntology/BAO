@@ -32,12 +32,13 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
         <owl:versionInfo>2.3.2</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande K���k McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>26 Apr 2017</dc:date>
+        <dc:date>11 Jul 2017</dc:date>
     </owl:Ontology>
+
 
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -586,7 +587,7 @@ citesForInformation or citeAsSourceData some DOI or PMID</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000614">
 		<rdfs:label rdf:datatype="&xsd;string">ChEMBL</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000612"/>
-		<obo:IAO_0000115>It is a public database that contains structure�activity relationship (SAR) data curated from the medicinal chemistry literature.</obo:IAO_0000115>
+		<obo:IAO_0000115>It is a public database that contains structure</obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000615 -->
@@ -1435,7 +1436,7 @@ This includes &apos;parameters&apos;, such as &apos;intensity&apos;, &apos;count
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003002">
 		<rdfs:label rdf:datatype="&xsd;string">signal transduction assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
-		<obo:IAO_0000115>This assay measures one of the series of events that are downstream to the receipt of a chemical signal at the cell�s surface, namely, formation of cyclic AMP, activation of kinase/ transcription factor, cytokine secretion, etc., which will result in a specific cellular activity, such as cell division, cell elongation, etc.</obo:IAO_0000115>
+		<obo:IAO_0000115>This assay measures one of the series of events that are downstream to the receipt of a chemical signal at the cell</obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003003 -->

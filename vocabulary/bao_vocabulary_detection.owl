@@ -32,12 +32,13 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
         <owl:versionInfo>2.3.2</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande K���k McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>26 Apr 2017</dc:date>
+        <dc:date>11 Jul 2017</dc:date>
     </owl:Ontology>
+
 
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -374,7 +375,8 @@ To convert between the absorbance and transmittance scales, the following equati
 		<rdfs:label rdf:datatype="&xsd;string">isothermal titration calorimetry</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000427"/>
 		<obo:IAO_0000118>ITC</obo:IAO_0000118>
-		<obo:IAO_0000115>ITC is a thermodynamic technique that can directly measure the heat released or absorbed during a biomolecular binding event. It can measure the binding affinity (Ka), reaction stoichiometry (n), enthalpy (?H) and entropy (?S) of the interaction between two or more molecules in solution.</obo:IAO_0000115>
+		<obo:IAO_0000115>ITC is a thermodynamic technique that can directly measure the heat released or absorbed during a biomolecular binding event. It can measure the binding affinity (Ka), reaction stoichiometry (n), enthalpy (∆H) and entropy (ΔS) of the interaction between two or more molecules in solution.&lt;/obo:IAO_0000115&gt;
+    </obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000449 -->

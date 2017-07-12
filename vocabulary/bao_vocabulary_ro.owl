@@ -1,33 +1,20 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
-
 <rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_ro.owl#"
      xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_ro.owl"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_ro.owl">
-        <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:date>Jan 30th 2017</dc:date>
+        <rdfs:label>bioassay ontology</rdfs:label>
+        <rdfs:comment>created by:
+Uma Vempati, Hande Küçük, Ubbo Visser, Saminda Abeyruwan, Kunie Sakurai, Vance Lemmon, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
 
 contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
-        <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
-        <owl:versionInfo>2.3.1</owl:versionInfo>
+        <owl:versionInfo>2.1</owl:versionInfo>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_metadata.owl"/>
     </owl:Ontology>
@@ -42,12 +29,18 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
     
 
 
-    <!-- http://purl.org/dc/elements/1.1/source -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <owl:AnnotationProperty rdf:about="&dc;source"/>
     
 
 
@@ -65,7 +58,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0090000 -->
 
     <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0090000">
-        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:label xml:lang="en">phenotype of</rdfs:label>
         <owl:inverseOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0090003"/>
     </owl:ObjectProperty>
@@ -84,7 +77,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0090002 -->
 
     <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0090002">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:label xml:lang="en">part of</rdfs:label>
         <dc:source>http://www.obofoundry.org/ro/#OBO_REL:part_of</dc:source>
         <owl:inverseOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0090004"/>
@@ -103,7 +96,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
     <!-- http://www.bioassayontology.org/bao#BAO_0090004 -->
 
     <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0090004">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:label xml:lang="en">has part</rdfs:label>
     </owl:ObjectProperty>
     
@@ -133,12 +126,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:label xml:lang="en">occurs in</rdfs:label>
         <owl:inverseOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0090010"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0090002"/>
             <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0090007"/>
+            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0090002"/>
         </owl:propertyChainAxiom>
         <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0090007"/>
             <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0090002"/>
+            <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0090007"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
@@ -173,7 +166,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 
     <owl:ObjectProperty rdf:about="http://www.bioassayontology.org/bao#BAO_0090011">
         <rdfs:label xml:lang="en">connected to</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">X connected_to Y if and only if X and Y share a fiat boundary.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">X connected_to Y if and only if X and Y share a fiat boundary.</obo:IAO_0000115>
     </owl:ObjectProperty>
     
 
@@ -197,5 +190,5 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 
 
 
-<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2018) http://owlapi.sourceforge.net -->
 
