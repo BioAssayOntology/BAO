@@ -36,7 +36,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>11 Jul 2017</dc:date>
+        <dc:date>29 Aug 2017</dc:date>
     </owl:Ontology>
 
 
@@ -153,6 +153,7 @@ The technologies used are radioligand binding, resonance energy transfer, fluore
 		<rdfs:label rdf:datatype="&xsd;string">in situ immunoassay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000129"/>
 		<obo:IAO_0000115>In situ refers to in place or position; undisturbed with respect to the antigen that is being tested in the immunoassay. The protein detection and localization is achieved by visualization under a microscope.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000448"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000129 -->
@@ -161,6 +162,7 @@ The technologies used are radioligand binding, resonance energy transfer, fluore
 		<rdfs:label rdf:datatype="&xsd;string">immunoassay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000123"/>
 		<obo:IAO_0000115>It measures the concentration of a substance in a solution based on the specific binding of an antibody to that substance, which produces a measurable signal. The signal measured depends on the label that is associated with this interaction, namely radioactive element (in radioimmunoassays), fluorescent, phosphorescent and chemiluminescent dyes, etc.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000126"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000132 -->
@@ -357,6 +359,7 @@ The technologies used are radioligand binding, resonance energy transfer, fluore
 		<rdfs:label rdf:datatype="&xsd;string">transfection method</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000241"/>
 		<obo:IAO_0000115>This refers to the introduction of nucleic acids into cells using a construct. Plasmids constructs are created by the insertion of a gene or siRNA encoding DNA of interest into a plasmid. The engineered plasmids are introduced into cells by various means, namely, transfection, electroporation, nucleofection, etc which regulates the efficiency and location of gene transfer, for e.g., nucleofection delivers the plasmid directly into the nucleus in contrast to the other methods that deliver into the cytosol.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002155"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000246 -->
@@ -599,6 +602,7 @@ CV=100x[StdDev(sample)/Avg(sample)]</obo:IAO_0000115>
 		<rdfs:label rdf:datatype="&xsd;string">recombinant virus transduction method</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002155"/>
 		<obo:IAO_0000115>This refers to the infection of cells with a modified virus, which introduces viral genome containing the foreign genes. Several types of viruses are utilized for recombinant gene expression, including lentivirus, retrovirus, adenovirus, etc, with each having their own advantages and disadvantages.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000244"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000546 -->
@@ -746,6 +750,7 @@ Yeast and bacterial cell growth is determined by measuring absorbance in a spect
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002076">
 		<rdfs:label rdf:datatype="&xsd;string">extraction from natural source</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003029"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000356"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002077 -->
@@ -753,6 +758,7 @@ Yeast and bacterial cell growth is determined by measuring absorbance in a spect
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002077">
 		<rdfs:label rdf:datatype="&xsd;string">synthesis by a chemical process</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003029"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000356"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002078 -->
@@ -1264,6 +1270,7 @@ A mix and read protocol has been developed that is exceptionally simple and rapi
 		<rdfs:label rdf:datatype="&xsd;string">nucleic acid amplification method</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003034"/>
 		<obo:IAO_0000115>A method that uses purified enzymes to isolate and then replicate specific nucleic acids to levels where they can be detected. Examples are PCR, TMA, NASBA, etc.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002445"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002451 -->
@@ -1343,6 +1350,7 @@ The formazan can then be solubilized producing a concentration dependent colorim
 		<rdfs:label rdf:datatype="&xsd;string">sulforhodamine B staining</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002462"/>
 		<obo:IAO_0000115>The sulforhodamine B (SRB) assay is used for cell density determination, based on the measurement of cellular protein content.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002455"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002461 -->
@@ -1350,6 +1358,7 @@ The formazan can then be solubilized producing a concentration dependent colorim
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002461">
 		<rdfs:label rdf:datatype="&xsd;string">trypan blue cell staining</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002481"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002455"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002462 -->

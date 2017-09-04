@@ -36,7 +36,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>11 Jul 2017</dc:date>
+        <dc:date>29 Aug 2017</dc:date>
     </owl:Ontology>
 
 
@@ -319,6 +319,20 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000938">
 		<rdfs:label rdf:datatype="&xsd;string">HTRF cAMP HiRange Detection Kit</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0000939 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000939">
+		<rdfs:label rdf:datatype="&xsd;string">HTRF KinEASE-TK</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0000939 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000939">
+		<rdfs:label rdf:datatype="&xsd;string">HTRF KinEASE-TK</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 

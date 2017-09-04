@@ -36,7 +36,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>11 Jul 2017</dc:date>
+        <dc:date>29 Aug 2017</dc:date>
     </owl:Ontology>
 
 
@@ -75,7 +75,8 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000072">
 		<rdfs:label rdf:datatype="&xsd;string">assay control</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0110001"/>
-		<obo:IAO_0000115>The role of a compound that is routinely run in the same manner as the test compounds in every run of the assay. This term does not refer to the plate controls used to define the maximum and minimum responses, and they may or may not be a </obo:IAO_0000115>
+		<obo:IAO_0000115>The role of a compound that is routinely run in the same manner as the test compounds in every run of the assay. This term does not refer to the plate controls used to define the maximum and minimum responses, and they may or may not be a “literature standard” or “reference” compound.
+    </obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000079 -->

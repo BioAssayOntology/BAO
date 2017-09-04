@@ -36,7 +36,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>11 Jul 2017</dc:date>
+        <dc:date>29 Aug 2017</dc:date>
     </owl:Ontology>
 
 
@@ -627,6 +627,7 @@ citesForInformation or citeAsSourceData some DOI or PMID</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">calcium redistribution assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000819"/>
 		<obo:IAO_0000115>Calcium functions as second messenger in cell signaling.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000379"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000650 -->
@@ -701,6 +702,7 @@ citesForInformation or citeAsSourceData some DOI or PMID</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">alternate target assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000803"/>
 		<obo:IAO_0000115>This assay is performed with a different but a related target (usually from the same protein family) than that was tested in primary or confirmatory assays, e.g., SIP1 instead of SIP3.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000478"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001065 -->
@@ -1397,6 +1399,7 @@ This includes &apos;parameters&apos;, such as &apos;intensity&apos;, &apos;count
 		<rdfs:label rdf:datatype="&xsd;string">ion channel assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002996"/>
 		<obo:IAO_0000115>Ion channel assays are performed in electrically active cells: neurons, muscle, and endocrine cells.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002998 -->
@@ -1445,6 +1448,7 @@ This includes &apos;parameters&apos;, such as &apos;intensity&apos;, &apos;count
 		<rdfs:label rdf:datatype="&xsd;string">cytokine secretion assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000042"/>
 		<obo:IAO_0000115>It measures the types and amounts of cytokines that are released as the consequence of a signaling event. Cytokines can be quantitated using ELISA-based kits, PCR array, etc.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003004 -->
@@ -1462,6 +1466,7 @@ This includes &apos;parameters&apos;, such as &apos;intensity&apos;, &apos;count
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000042"/>
 		<rdfs:comment>detect some (protein phosphorilation and (&apos;catalyzed by&apos; some kinase))</rdfs:comment>
 		<obo:IAO_0000115>This assay quantifies the phosphorylation levels of a protein. The phosphorylation status is detected by one of several methods: using phosphorylation specific antibodies followed by western blotting or imaging, mass spectrometry, etc.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003004"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003006 -->

@@ -77,15 +77,6 @@ stephan dot schurer at gmail dot com</rdfs:comment>
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_22582 -->
-
-    <owl:Class rdf:about="&obo;CHEBI_22582">
-        <obo:IAO_0000412 rdf:resource="&obo;chebi.owl"/>
-    </owl:Class>
     
 
 
@@ -3726,7 +3717,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0003102"/>
-                        <owl:someValuesFrom rdf:resource="&obo;CHEBI_22582"/>
+                        <owl:someValuesFrom rdf:resource="&obo;CHEBI_33281"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0003102"/>
@@ -3792,7 +3783,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0003102"/>
-                <owl:someValuesFrom rdf:resource="&obo;CHEBI_22582"/>
+                <owl:someValuesFrom rdf:resource="&obo;CHEBI_33281"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3833,7 +3824,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;CHEBI_22582"/>
+                            <rdf:Description rdf:about="&obo;CHEBI_33281"/>
                             <rdf:Description rdf:about="http://www.bioassayontology.org/bao#BAO_0003058"/>
                         </owl:unionOf>
                     </owl:Class>

@@ -36,7 +36,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>11 Jul 2017</dc:date>
+        <dc:date>29 Aug 2017</dc:date>
     </owl:Ontology>
 
 
@@ -303,6 +303,7 @@ As a measure of viable or proliferating cells, different researchers measure dif
 		<obo:IAO_0000115>Ki is the equilibrium inhibitor dissociation constant, the concentration of the competing inhibitor that results in binding to half the enzymes sites at equilibrium in the absence of substrate or other competitors.
 The Cheng and Prusoff equation: Ki - (IC50) / ( 1+ ([L]/Kd)) relates IC50 to Ki under conditions of competitive binding; Kd equilibrium dissociation constant of the (labeled) ligand, [L] ligand concentration.
 The Cheng and Prusoff equation: Ki - (IC50) / ( 1+ ([S]/Km)) relates IC50 to Ki under conditions of competitive inhibition; Ki equilibrium enzyme inhibitor dissociation constant; Km Michaelis-Menton constant, [S] substrate concentration.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000587"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000193 -->
@@ -532,7 +533,8 @@ Percent viability = 100-percent cytotoxicity</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000477">
 		<rdfs:label rdf:datatype="&xsd;string">km</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000487"/>
-		<obo:IAO_0000115>The concentration of substrate at </obo:IAO_0000115>
+		<obo:IAO_0000115>The concentration of substrate at ½ Vmax, according to the Henri-Michaelis-Menten kinetic model.
+        </obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000479 -->
@@ -1494,6 +1496,7 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002809">
 		<rdfs:label rdf:datatype="&xsd;string">Ka</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000587"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002862 -->
