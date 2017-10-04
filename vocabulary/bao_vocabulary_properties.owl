@@ -1398,6 +1398,19 @@ Other example for a counter assays a FRET assay when the primary assay used abso
     </owl:ObjectProperty>
     
 
+	
+	<!-- http://www.bioassayontology.org/bao#BAO_0095009 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0095009">
+        <rdfs:label xml:lang="en">has assay design method</rdfs:label>
+    </owl:ObjectProperty>
+	
+	<!-- http://www.bioassayontology.org/bao#BAO_0095010 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0095010">
+        <rdfs:label xml:lang="en">has assay supporting method</rdfs:label>
+    </owl:ObjectProperty>
+
 
     <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
 
@@ -1944,17 +1957,6 @@ BSL4:</obo:IAO_0000115>
         <rdfs:label xml:lang="en">reports assay measurment value</rdfs:label>
     </owl:DatatypeProperty>
     
-	<!-- http://www.bioassayontology.org/bao#BAO_0095009 -->
-
-    <owl:DatatypeProperty rdf:about="&bao;BAO_0095009">
-        <rdfs:label xml:lang="en">has assay design method</rdfs:label>
-    </owl:DatatypeProperty>
-	
-	<!-- http://www.bioassayontology.org/bao#BAO_0095010 -->
-
-    <owl:DatatypeProperty rdf:about="&bao;BAO_0095010">
-        <rdfs:label xml:lang="en">has assay supporting method</rdfs:label>
-    </owl:DatatypeProperty>
 
     <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
 
