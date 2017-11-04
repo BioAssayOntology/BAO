@@ -9,8 +9,8 @@
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
 ]>
-<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl#"
-     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl"
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/BAO_vocabulary_biology.owl#"
+     xml:base="http://www.bioassayontology.org/bao/BAO_vocabulary_biology.owl"
      xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -22,21 +22,21 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:efo="http://www.ebi.ac.uk/efo/">
-    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl">
-        <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl"/>
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/BAO_vocabulary_biology.owl">
+        <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/BAO_vocabulary_biology.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
 
 contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
-        <owl:versionInfo>2.3.2</owl:versionInfo>
+        <owl:versionInfo>2.4</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>18 Sep 2017</dc:date>
+        <dc:date>3 Nov 2017</dc:date>
     </owl:Ontology>
 
 
@@ -1896,7 +1896,7 @@ Trp-Lys-Tyr-Met-Val-D-Med-NH2</obo:IAO_0000115>
 	<!-- http://www.bioassayontology.org/bao#BAO_0003044 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003044">
-		<rdfs:label rdf:datatype="&xsd;string">beta galactoside gene</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">beta galactosidase gene</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000582"/>
 	</owl:Class>
 
@@ -2081,6 +2081,80 @@ Nuclear factor of kappa light polypeptide gene enhancer in B-cells 3</obo:IAO_00
 		<rdfs:label rdf:datatype="&xsd;string">primary neuron</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000239"/>
 		<rdfs:comment>http://purl.obolibrary.org/obo/CL_0000530</rdfs:comment>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030012 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030012">
+		<rdfs:label rdf:datatype="&xsd;string">Am2.2-beta2AR cell</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<obo:IAO_0000115>U937 cells stably transfected with and expressing the surface displayed fusion protein of FAP (fluorogen activating protein) AM2.2 to the extracellular N-terminus of the human β2AR gene  (thus, &apos;AM2.2-beta2AR&apos;). See PMCID: PMC3621705</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030013 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030013">
+		<rdfs:label rdf:datatype="&xsd;string">Ebola virus</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000232"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030014 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030014">
+		<rdfs:label rdf:datatype="&xsd;string">Am2.2-beta2AR/MG13-CCR5 dual cells</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<obo:IAO_0000115>U937 cells stably transfected with and expressing both the surface displayed fusion protein of FAP (fluorogen activating protein) AM2.2 to the extracellular N-terminus of the human β2AR (AM2.2-beta2AR) and the surface displayed fusion protein of FAP MG13 to the extracellular N-terminus of the murine CCR5 . See PMCID: PMC3621705</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030015 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030015">
+		<rdfs:label rdf:datatype="&xsd;string">MG13-mCCRF cells</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<obo:IAO_0000115>U937 cells stably transfected with and expressing the surface displayed fusion protein of FAP (fluorogen activating protein) MG13 to the extracellular N-terminus of murine CCRF. See PMCID: PMC3621705</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030016 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030016">
+		<rdfs:label rdf:datatype="&xsd;string">AM2.2-GPR32 cells</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<obo:IAO_0000115>U937 cells stably transfected with and expressing the surface displayed fusion protein of FAP (fluorogen activating protein) AM2.2 to GPR32. See PMCID: PMC3621705</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030017 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030017">
+		<rdfs:label rdf:datatype="&xsd;string">GFP tag</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030018 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030018">
+		<rdfs:label rdf:datatype="&xsd;string">KNRK cell</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030019 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030019">
+		<rdfs:label rdf:datatype="&xsd;string">Ltk cell</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030020 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030020">
+		<rdfs:label rdf:datatype="&xsd;string">adipose tissue</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0001062"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030021 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030021">
+		<rdfs:label rdf:datatype="&xsd;string">me-180 cell </rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 </rdf:RDF>

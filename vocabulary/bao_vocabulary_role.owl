@@ -9,8 +9,8 @@
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
 ]>
-<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_role.owl#"
-     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_role.owl"
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/BAO_vocabulary_role.owl#"
+     xml:base="http://www.bioassayontology.org/bao/BAO_vocabulary_role.owl"
      xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -22,21 +22,21 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:efo="http://www.ebi.ac.uk/efo/">
-    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_role.owl">
-        <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_role.owl"/>
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/BAO_vocabulary_role.owl">
+        <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/BAO_vocabulary_role.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
 
 contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
-        <owl:versionInfo>2.3.2</owl:versionInfo>
+        <owl:versionInfo>2.4</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>18 Sep 2017</dc:date>
+        <dc:date>3 Nov 2017</dc:date>
     </owl:Ontology>
 
 

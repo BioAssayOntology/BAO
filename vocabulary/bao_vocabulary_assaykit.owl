@@ -9,8 +9,8 @@
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
 ]>
-<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl#"
-     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl"
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/BAO_vocabulary_assaykit.owl#"
+     xml:base="http://www.bioassayontology.org/bao/BAO_vocabulary_assaykit.owl"
      xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -22,21 +22,21 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:efo="http://www.ebi.ac.uk/efo/">
-    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl">
-        <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl"/>
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/BAO_vocabulary_assaykit.owl">
+        <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/BAO_vocabulary_assaykit.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
 
 contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
-        <owl:versionInfo>2.3.2</owl:versionInfo>
+        <owl:versionInfo>2.4</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>18 Sep 2017</dc:date>
+        <dc:date>3 Nov 2017</dc:date>
     </owl:Ontology>
 
 
@@ -1114,6 +1114,22 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 		<obo:IAO_0000119>PubChem AID: 652174</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>An assay for deubiquitination activity, employing a reporter enzyme fused to ubiquitin (making the reporter catalytically inactive). Following cleavage of the Ub-reporter system by the isopeptidase, the free reporter can act upon its fluorescent substrate. </obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0140044 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140044">
+		<rdfs:label rdf:datatype="&xsd;string">beta-arrestin clustering (aka &apos;Transfluor&apos;) assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+		<obo:IAO_0000115>The Transfluor assay employs a beta-arrestin-GFP fusion protein to detect activation of GPCRs: Upon ligand binding the GPCR, cytosolic arrestin-GFP quickly translocates to the cell membrane and then to endocytic vesicles, where it &apos;clusters&apos; and can be detected by fluorescent image analysis. (Developed / commercialized by Norak, then Molecular Devices)</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0140045 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140045">
+		<rdfs:label rdf:datatype="&xsd;string">PathHunter Cell-Based Kinase Assay Kit</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+		<obo:IAO_0000115>PathHunter Cell-Based Kinase Assays, avaliable for hundreds of kinases, are functional, cell-based assays that employ enzyme fragment complementation (two fragments of the beta-galactosidase enzyme). Each inactive fragment is fused to a different protein (e.g., a tyrosine kinase and its receptor), such that interaxtions between the two proteins drives complementation between the two fragments, resulting in active beta-galactosidase, which cleaves a substrate to generate chemiluminescent signal.</obo:IAO_0000115>
 	</owl:Class>
 
 </rdf:RDF>

@@ -1,0 +1,93 @@
+Added class 'protein profiling assay' with ID <BAO_0010026> as a child of <BAO_0000015>
+Added class 'shotgun MS protein profiling assay' with ID <BAO_0010027> as a child of <BAO_0010026>
+Added class 'SWATH MS protein profiling assay' with ID <BAO_0010028> as a child of <BAO_0010026>
+Added class 'P100 protein profiling assay' with ID <BAO_0010029> as a child of <BAO_0010026>
+Added class 'RPPA protein profiling assay' with ID <BAO_0010030> as a child of <BAO_0010026>
+Added class 'epigenetic assay' with ID <BAO_0010031> as a child of <BAO_0000015>
+Added class 'targeted epigenetic assay' with ID <BAO_0010032> as a child of <BAO_0010031>
+Added class 'Acetylated histone assay' with ID <BAO_0010033> as a child of <BAO_0010032>
+Added class 'Methylated histone assay' with ID <BAO_0010034> as a child of <BAO_0010032>
+Added class 'ChIP-seq assay' with ID <BAO_0010035> as a child of <BAO_0010032>
+Added class 'Epigenetic profiling assay' with ID <BAO_0010036> as a child of <BAO_0010031>
+Added class 'Bisulfite Sequencing assay' with ID <BAO_0010037> as a child of <BAO_0010036>
+Added class 'ATAC-seq epigenetic assay' with ID <BAO_0010038> as a child of <BAO_0010036>
+Added class 'Global chromatin epigenetic profiling assay' with ID <BAO_0010039> as a child of <BAO_0010036>
+Added class 'metabolomic assay' with ID <BAO_0010040> as a child of <BAO_0000015>
+Added class 'Targeted Metabolomic assay' with ID <BAO_0010041> as a child of <BAO_0010040>
+Added class 'Metabolomic Profiling assay' with ID <BAO_0010042> as a child of <BAO_0010040>
+Added class 'Cellarium Metabolomic Profiling Assay' with ID <BAO_0010043> as a child of <BAO_0010042>
+Added class 'targeted transcriptional assay' with ID <BAO_0010044> as a child of <BAO_0002785>
+Added class 'RNA-seq gene expression profiling assay' with ID <BAO_0010045> as a child of <BAO_0002995>
+Added class 'L1000 mRNA profiling assay' with ID <BAO_0010046> as a child of <BAO_0002995>
+Added class 'Nanostring' with ID <BAO_0010047> as a child of <BAO_0002995>
+Added class 'Microarray' with ID <BAO_0010048> as a child of <BAO_0002995>
+Added class 'chromatin acessibility method' with ID <BAO_0040025> as a child of <BAO_0003028>
+Added class 'chemiluminescent labeling method' with ID <BAO_0040026> as a child of <BAO_0002452>
+Added class 'dna-seq method' with ID <BAO_0040027> as a child of <BAO_0002447>
+Added class 'transcription factor occupancy' with ID <BAO_0040028> as a child of <BAO_0040025>
+Added class 'metabolite abundance method' with ID <BAO_0040029> as a child of <BAO_0040011>
+Added class 'epigenetic modification detection method' with ID <BAO_0040030> as a child of <BAO_0003028>
+Added class 'viral titer assay' with ID <BAO_0010049> as a child of <BAO_0000015>
+Added class 'Am2.2-beta2AR cell' with ID <BAO_0030012> as a child of <BAO_0003048>
+Added class 'Ebola virus' with ID <BAO_0030013> as a child of <BAO_0000232>
+Added class 'Am2.2-beta2AR/MG13-CCR5 dual cells' with ID <BAO_0030014> as a child of <BAO_0003048>
+Added class 'MG13-mCCRF cells' with ID <BAO_0030015> as a child of <BAO_0003048>
+Added class 'AM2.2-GPR32 cells' with ID <BAO_0030016> as a child of <BAO_0003048>
+Added class 'beta-arrestin clustering (aka 'Transfluor') assay' with ID <BAO_0140044> as a child of <BAO_0000248>
+Added class 'DNA-small molecule interaction assay' with ID <BAO_0010050> as a child of <BAO_0002989>
+Added class 'RNA-small molecule interaction assay' with ID <BAO_0010051> as a child of <BAO_0002989>
+Added class 'protein profiling assay' with ID <BAO_0010052> as a child of <BAO_0000015>
+Added class 'parallel artificial membrane permeability assay' with ID <BAO_0010053> as a child of <BAO_0002182>
+Added class 'SILAC' with ID <BAO_0040031> as a child of <BAO_0040014>
+Added class 'total cellular lipids format' with ID <BAO_0020005> as a child of <BAO_0000220>
+Added class 'serum supplement' with ID <BAO_0100001> as a child of <BAO_0003043>
+Added class '0.1% Charcoal Dextran Stripped FBS' with ID <BAO_0100002> as a child of <BAO_0100001>
+Added class '0.1% FBS' with ID <BAO_0100003> as a child of <BAO_0100001>
+Added class '0.5% FBS (Dialyzed)' with ID <BAO_0100004> as a child of <BAO_0100001>
+Added class '1% FBS' with ID <BAO_0100005> as a child of <BAO_0100001>
+Added class '1% FBS Charcoal Dextran treated' with ID <BAO_0100006> as a child of <BAO_0100001>
+Added class '10% FBS' with ID <BAO_0100007> as a child of <BAO_0100001>
+Added class '10% FBS (Tet free)' with ID <BAO_0100008> as a child of <BAO_0100001>
+Added class '10% FBS (Dialyzed)' with ID <BAO_0100009> as a child of <BAO_0100001>
+Added class '10% Heat-inactivated FBS' with ID <BAO_0100010> as a child of <BAO_0100001>
+Added class '10% heat-inactivated horse serum' with ID <BAO_0100011> as a child of <BAO_0100001>
+Added class '100% warm FBS' with ID <BAO_0100012> as a child of <BAO_0100001>
+Added class '20% FBS' with ID <BAO_0100013> as a child of <BAO_0100001>
+Added class 'FBS' with ID <BAO_0100014> as a child of <BAO_0100001>
+Added class 'IgG1' with ID <BAO_0120004> as a child of <BAO_0002609>
+Added class 'IgG2' with ID <BAO_0120005> as a child of <BAO_0002609>
+Added class '125I' with ID <BAO_0100015> as a child of <BAO_0003043>
+Added class 'Alexa Fluor' with ID <BAO_0100016> as a child of <BAO_0003043>
+Added class 'Alexa488' with ID <BAO_0100017> as a child of <BAO_0100016>
+Added class 'Alexa594' with ID <BAO_0100018> as a child of <BAO_0100016>
+Added class 'Alexa647' with ID <BAO_0100019> as a child of <BAO_0100016>
+Added class 'AMC' with ID <BAO_0100020> as a child of <BAO_0003043>
+Added class 'calcium-3' with ID <BAO_0100021> as a child of <BAO_0003043>
+Added class 'EDANS' with ID <BAO_0100022> as a child of <BAO_0003043>
+Added class 'Europium; APC' with ID <BAO_0100023> as a child of <BAO_0003043>
+Added class 'FAM/TAMRA' with ID <BAO_0100024> as a child of <BAO_0003043>
+Added class 'MCA' with ID <BAO_0100025> as a child of <BAO_0003043>
+Added class 'MDC' with ID <BAO_0100026> as a child of <BAO_0003043>
+Added class 'RiboGreen' with ID <BAO_0100027> as a child of <BAO_0003043>
+Added class 'SYBR green' with ID <BAO_0100028> as a child of <BAO_0003043>
+Added class 'TAM/DABCYL' with ID <BAO_0100029> as a child of <BAO_0003043>
+Added class 'ThioGlo' with ID <BAO_0100030> as a child of <BAO_0003043>
+Added class 'GFP tag' with ID <BAO_0030017> as a child of <BAO_0000325>
+Added class 'biotin tag' with ID <BAO_0100031> as a child of <BAO_0003043>
+Added class 'cells per well' with ID <BAO_0190004> as a child of <UO_0000200>
+Added class 'cells per microliter' with ID <BAO_0190005> as a child of <UO_0000200>
+Added class 'KNRK cell' with ID <BAO_0030018> as a child of <http://purl.obolibrary.org/obo/CLO_0000019>
+Added class 'Ltk cell' with ID <BAO_0030019> as a child of <http://purl.obolibrary.org/obo/CLO_0000019>
+Added class 'adipose tissue' with ID <BAO_0030020> as a child of <http://purl.obolibrary.org/obo/UBERON_0001062>
+Added class 'endpoint correction present' with ID <BAO_0040032> as a child of <BAO_0000419>
+Added class 'endpoint correction absent' with ID <BAO_0040033> as a child of <BAO_0000419>
+Added class 'PathHunter Cell-Based Kinase Assay Kit' with ID <BAO_0140045> as a child of <BAO_0000248>
+Added class 'single-celled organism-based format' with ID <BAO_0020006> as a child of <BAO_0000218>
+Added class 'multi-celled organism-based format' with ID <BAO_0020007> as a child of <BAO_0000218>
+Added class 'data collection method' with ID <BAO_0040034> as a child of <BAO_0002429>
+Added class 'cell population' with ID <BAO_0040035> as a child of <BAO_0040034>
+Added class 'single-cell ' with ID <BAO_0040036> as a child of <BAO_0040034>
+Added class 'natural product' with ID <BAO_0070001> as a child of <BAO_0000076>
+Added class 'me-180 cell ' with ID <BAO_0030021> as a child of <http://purl.obolibrary.org/obo/CLO_0000019>
+Added class 'assay purpose' with ID <BAO_0010054> as a child of <BAO_0000520>
+Added class 'assay short title' with ID <BAO_0010055> as a child of <BAO_0000520>
