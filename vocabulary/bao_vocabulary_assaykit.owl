@@ -9,8 +9,8 @@
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
 ]>
-<rdf:RDF xmlns="http://www.bioassayontology.org/bao/BAO_vocabulary_assaykit.owl#"
-     xml:base="http://www.bioassayontology.org/bao/BAO_vocabulary_assaykit.owl"
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl#"
+     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl"
      xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -22,8 +22,8 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:efo="http://www.ebi.ac.uk/efo/">
-    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/BAO_vocabulary_assaykit.owl">
-        <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/BAO_vocabulary_assaykit.owl"/>
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl">
+        <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
@@ -36,7 +36,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>3 Nov 2017</dc:date>
+        <dc:date>7 Nov 2017</dc:date>
     </owl:Ontology>
 
 
@@ -1130,6 +1130,14 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">PathHunter Cell-Based Kinase Assay Kit</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000115>PathHunter Cell-Based Kinase Assays, avaliable for hundreds of kinases, are functional, cell-based assays that employ enzyme fragment complementation (two fragments of the beta-galactosidase enzyme). Each inactive fragment is fused to a different protein (e.g., a tyrosine kinase and its receptor), such that interaxtions between the two proteins drives complementation between the two fragments, resulting in active beta-galactosidase, which cleaves a substrate to generate chemiluminescent signal.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0140046 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140046">
+		<rdfs:label rdf:datatype="&xsd;string">CellTiter-Fluor Cell Viability Assay Kit</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+		<obo:IAO_0000115>The CellTiter-Fluor Cell Viability Assay measures the relative number of viable cells in a population. The assay is based on measurement of a conserved and constitutive protease activity within live cells and therefore serves as a biomarker of cell viability. The live-cell protease activity is restricted to intact viable cells and is measured using a fluorogenic, cell-permeant, peptide substrate (Gly-Phe-AFC). The substrate enters intact cells, where it is cleaved by the live-cell protease activity to generate a fluorescent signal proportional to the number of living cells. The live-cell protease becomes inactive upon loss of membrane integrity and leakage into the surrounding culture medium. (description adapted from vendor Promega)</obo:IAO_0000115>
 	</owl:Class>
 
 </rdf:RDF>

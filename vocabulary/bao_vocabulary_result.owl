@@ -9,8 +9,8 @@
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
 ]>
-<rdf:RDF xmlns="http://www.bioassayontology.org/bao/BAO_vocabulary_result.owl#"
-     xml:base="http://www.bioassayontology.org/bao/BAO_vocabulary_result.owl"
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl#"
+     xml:base="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl"
      xmlns:core="http://purl.obolibrary.org/obo/uberon/core#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -22,8 +22,8 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:efo="http://www.ebi.ac.uk/efo/">
-    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/BAO_vocabulary_result.owl">
-        <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/BAO_vocabulary_result.owl"/>
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl">
+        <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
         <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
@@ -36,7 +36,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>3 Nov 2017</dc:date>
+        <dc:date>7 Nov 2017</dc:date>
     </owl:Ontology>
 
 
@@ -1912,7 +1912,6 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 		<rdfs:label rdf:datatype="&xsd;string">pKi</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
 		<obo:IAO_0000115>Negative base-10 logarithm of KI, the equilibrium dissociation constant (Ki) of an antogonist-receptor complex</obo:IAO_0000115>
-		<rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/UO#UO_0000200"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0190005 -->
@@ -1921,7 +1920,6 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 		<rdfs:label rdf:datatype="&xsd;string">pKd</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
 		<obo:IAO_0000115>Negative base-10 logarithm of a solution&apos;s KD (drug affinity dissociation constant)</obo:IAO_0000115>
-		<rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/UO#UO_0000200"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0190006 -->
