@@ -32,12 +32,13 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
         <owl:versionInfo>2.3.2</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande K���k McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>26 Apr 2017</dc:date>
+        <dc:date>1 Dec 2017</dc:date>
     </owl:Ontology>
+
 
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -270,7 +271,8 @@ Here, a protein is a perturbagen whereby its ability to modulate a physiological
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000284">
 		<rdfs:label rdf:datatype="&xsd;string">G protein coupled receptor</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000285"/>
-		<obo:IAO_0000115>G protein-coupled receptors (GPCRs), comprise the largest integral membrane protein family with nearly 1000 members. They integrate extracellular signals from hormones, growth factors, neurotransmitters, etc to downstream cellular responses. They are important pharmacological targets, being associated with a number of diseases. Upon ligand binding extracellularly, the GPCR signals through a downstream heterotrimeric G protein complex, consisting of the ?, ? and ? subunits.</obo:IAO_0000115>
+		<obo:IAO_0000115>G protein-coupled receptors (GPCRs), comprise the largest integral membrane protein family with nearly 1000 members. They integrate extracellular signals from hormones, growth factors, neurotransmitters, etc to downstream cellular responses. They are important pharmacological targets, being associated with a number of diseases. Upon ligand binding extracellularly, the GPCR signals through a downstream heterotrimeric G protein complex, consisting of the α, β and γ subunits.
+    </obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000285 -->
@@ -425,7 +427,7 @@ Here, a protein is a perturbagen whereby its ability to modulate a physiological
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000367">
 		<rdfs:label rdf:datatype="&xsd;string">membrane protein</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000175"/>
-		<obo:IAO_0000115>Membrane proteins are associated with the cell membrane. They can be classified into two broad categories�integral (intrinsic) and peripheral (extrinsic). Intrinsic proteins have one or more segments embedded in the phospholipid bilayer, while extrinsic proteins do not traverse the membrane.</obo:IAO_0000115>
+		<obo:IAO_0000115>Membrane proteins are associated with the cell membrane. They can be classified into two broad categories</obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000368 -->
@@ -433,7 +435,8 @@ Here, a protein is a perturbagen whereby its ability to modulate a physiological
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000368">
 		<rdfs:label rdf:datatype="&xsd;string">G protein</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000367"/>
-		<obo:IAO_0000115>There are two distinct G protein families, namely the heterotrimeric G proteins (consisting of the ?, ? and ? subunits) downstream of the G protein coupled receptors (GPCRs) and the monomeric G proteins that belong to the Ras superfamily of GTPases. Upon ligand binding, the GPCR undergoes a conformational change, which allows it to act as a guanine nucleotide exchange factor (GEF) of an associated G protein. The GTP-bound G ? subunit then signals by regulating the activity of adenylate cyclase, phospholipase, or Rho GEFs.</obo:IAO_0000115>
+		<obo:IAO_0000115>There are two distinct G protein families, namely the heterotrimeric G proteins (consisting of the α, β and γ subunits) downstream of the G protein coupled receptors (GPCRs) and the monomeric G proteins that belong to the Ras superfamily of GTPases. Upon ligand binding, the GPCR undergoes a conformational change, which allows it to act as a guanine nucleotide exchange factor (GEF) of an associated G protein. The GTP-bound G α subunit then signals by regulating the activity of adenylate cyclase, phospholipase, or Rho GEFs.
+    </obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000369 -->
@@ -932,7 +935,7 @@ Very potent reversible inhibitor of caspase-1 (ICE) that contains the optimal te
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000866">
 		<rdfs:label rdf:datatype="&xsd;string">Boc-Val-Pro-Arg-AMC</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
-		<rdfs:comment>Substrate for ?-Thrombin</rdfs:comment>
+		<rdfs:comment>Substrate for α-Thrombin</rdfs:comment>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000875 -->
@@ -1893,7 +1896,7 @@ Trp-Lys-Tyr-Met-Val-D-Med-NH2</obo:IAO_0000115>
 	<!-- http://www.bioassayontology.org/bao#BAO_0003044 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003044">
-		<rdfs:label rdf:datatype="&xsd;string">beta galactoside gene</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">beta galactosidase gene</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000582"/>
 	</owl:Class>
 
@@ -2078,6 +2081,45 @@ Nuclear factor of kappa light polypeptide gene enhancer in B-cells 3</obo:IAO_00
 		<rdfs:label rdf:datatype="&xsd;string">primary neuron</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000239"/>
 		<rdfs:comment>http://purl.obolibrary.org/obo/CL_0000530</rdfs:comment>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030012 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030012">
+		<rdfs:label rdf:datatype="&xsd;string">GFP tag</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000325"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030013 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030013">
+		<rdfs:label rdf:datatype="&xsd;string">Am2.2-beta2AR cell</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<obo:IAO_0000115>U937 cells stably transfected with and expressing the surface displayed fusion protein of FAP (fluorogen activating protein) AM2.2 to the extracellular N-terminus of the human β2AR gene  (thus, &apos;AM2.2-beta2AR&apos;). See PMCID: PMC3621705</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030014 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030014">
+		<rdfs:label rdf:datatype="&xsd;string">Am2.2-beta2AR/MG13-CCR5 dual cells</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<obo:IAO_0000115>U937 cells stably transfected with and expressing both the surface displayed fusion protein of FAP (fluorogen activating protein) AM2.2 to the extracellular N-terminus of the human β2AR (AM2.2-beta2AR) and the surface displayed fusion protein of FAP MG13 to the extracellular N-terminus of the murine CCR5 . See PMCID: PMC3621705</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030015 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030015">
+		<rdfs:label rdf:datatype="&xsd;string">MG13-mCCRF cells</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<obo:IAO_0000115>U937 cells stably transfected with and expressing the surface displayed fusion protein of FAP (fluorogen activating protein) MG13 to the extracellular N-terminus of murine CCRF. See PMCID: PMC3621705</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030016 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030016">
+		<rdfs:label rdf:datatype="&xsd;string">AM2.2-GPR32 cells</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<obo:IAO_0000115>U937 cells stably transfected with and expressing the surface displayed fusion protein of FAP (fluorogen activating protein) AM2.2 to GPR32. See PMCID: PMC3621705</obo:IAO_0000115>
 	</owl:Class>
 
 </rdf:RDF>

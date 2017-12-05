@@ -32,12 +32,13 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
         <owl:versionInfo>2.3.2</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande K���k McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>26 Apr 2017</dc:date>
+        <dc:date>1 Dec 2017</dc:date>
     </owl:Ontology>
+
 
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -80,9 +81,10 @@ Percent cytotoxicity = 100-percent viability</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000034">
 		<rdfs:label rdf:datatype="&xsd;string">Kd</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000587"/>
-		<obo:IAO_0000115>Kd � is the equilibrium dissociation constant for a drug.  It describes the affinity between a ligand (L) (such as a drug) and a protein (P). Ligand-protein affinities are influenced by non-covalent intermolecular interactions between the two molecules such as hydrogen bonding, electrostatic interactions, hydrophobic and Van der Waals forces. 
+		<obo:IAO_0000115>Kd – is the equilibrium dissociation constant for a drug.  It describes the affinity between a ligand (L) (such as a drug) and a protein (P). Ligand-protein affinities are influenced by non-covalent intermolecular interactions between the two molecules such as hydrogen bonding, electrostatic interactions, hydrophobic and Van der Waals forces. 
 Kd = ([P] [L]) / [PL]
-The dissociation constant has molar units (M), which corresponds to the concentration of ligand [L] at which the binding site on a particular protein is half occupied, i.e. the concentration of ligand, at which the concentration of protein with ligand bound [PL], equals the concentration of protein with no ligand bound [P]. The smaller the dissociation constant, the more tightly bound the ligand is, or the higher the affinity between ligand and protein. http://www.graphpad.com/curvefit/law_of_mass_action.htm</obo:IAO_0000115>
+The dissociation constant has molar units (M), which corresponds to the concentration of ligand [L] at which the binding site on a particular protein is half occupied, i.e. the concentration of ligand, at which the concentration of protein with ligand bound [PL], equals the concentration of protein with no ligand bound [P]. The smaller the dissociation constant, the more tightly bound the ligand is, or the higher the affinity between ligand and protein. http://www.graphpad.com/curvefit/law_of_mass_action.htm
+        </obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000074 -->
@@ -301,6 +303,7 @@ As a measure of viable or proliferating cells, different researchers measure dif
 		<obo:IAO_0000115>Ki is the equilibrium inhibitor dissociation constant, the concentration of the competing inhibitor that results in binding to half the enzymes sites at equilibrium in the absence of substrate or other competitors.
 The Cheng and Prusoff equation: Ki - (IC50) / ( 1+ ([L]/Kd)) relates IC50 to Ki under conditions of competitive binding; Kd equilibrium dissociation constant of the (labeled) ligand, [L] ligand concentration.
 The Cheng and Prusoff equation: Ki - (IC50) / ( 1+ ([S]/Km)) relates IC50 to Ki under conditions of competitive inhibition; Ki equilibrium enzyme inhibitor dissociation constant; Km Michaelis-Menton constant, [S] substrate concentration.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000587"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000193 -->
@@ -530,7 +533,8 @@ Percent viability = 100-percent cytotoxicity</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000477">
 		<rdfs:label rdf:datatype="&xsd;string">km</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000487"/>
-		<obo:IAO_0000115>The concentration of substrate at � Vmax, according to the Henri-Michaelis-Menten kinetic model.</obo:IAO_0000115>
+		<obo:IAO_0000115>The concentration of substrate at ½ Vmax, according to the Henri-Michaelis-Menten kinetic model.
+        </obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000479 -->
@@ -1492,6 +1496,7 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002809">
 		<rdfs:label rdf:datatype="&xsd;string">Ka</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000587"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002862 -->
@@ -1899,6 +1904,14 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 449752</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 5/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>Any result reported as a simple binary assessment, such as &apos;active/ inactive&apos;, &apos;true/ false&apos;, etc.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0190006 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0190006">
+		<rdfs:label rdf:datatype="&xsd;string">pKb</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+		<obo:IAO_0000115>Negative base-10 logarithm of a solution&apos;s base dissociation constant (Kb)</obo:IAO_0000115>
 	</owl:Class>
 
 </rdf:RDF>

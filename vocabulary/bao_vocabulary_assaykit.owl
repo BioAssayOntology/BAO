@@ -32,12 +32,13 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
         <owl:versionInfo>2.3.2</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande K���k McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>26 Apr 2017</dc:date>
+        <dc:date>1 Dec 2017</dc:date>
     </owl:Ontology>
+
 
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -572,7 +573,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0002984 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002984">
-		<rdfs:label rdf:datatype="&xsd;string">Cellomics Multiplexed NF?B and c-Jun Activation Kit</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">Cellomics Multiplexed NFκB and c-Jun Activation Kit</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
@@ -1113,6 +1114,38 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 		<obo:IAO_0000119>PubChem AID: 652174</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>An assay for deubiquitination activity, employing a reporter enzyme fused to ubiquitin (making the reporter catalytically inactive). Following cleavage of the Ub-reporter system by the isopeptidase, the free reporter can act upon its fluorescent substrate. </obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0140046 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140046">
+		<rdfs:label rdf:datatype="&xsd;string">CellTiter-Fluor Cell Viability Assay Kit</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+		<obo:IAO_0000115>The CellTiter-Fluor Cell Viability Assay measures the relative number of viable cells in a population. The assay is based on measurement of a conserved and constitutive protease activity within live cells and therefore serves as a biomarker of cell viability. The live-cell protease activity is restricted to intact viable cells and is measured using a fluorogenic, cell-permeant, peptide substrate (Gly-Phe-AFC). The substrate enters intact cells, where it is cleaved by the live-cell protease activity to generate a fluorescent signal proportional to the number of living cells. The live-cell protease becomes inactive upon loss of membrane integrity and leakage into the surrounding culture medium. (description adapted from vendor Promega)</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0140047 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140047">
+		<rdfs:label rdf:datatype="&xsd;string">beta-arrestin clustering (aka &apos;Transfluor&apos;) assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+		<obo:IAO_0000115>The Transfluor assay employs a beta-arrestin-GFP fusion protein to detect activation of GPCRs: Upon ligand binding the GPCR, cytosolic arrestin-GFP quickly translocates to the cell membrane and then to endocytic vesicles, where it &apos;clusters&apos; and can be detected by fluorescent image analysis. (Developed / commercialized by Norak, then Molecular Devices)</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0140048 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140048">
+		<rdfs:label rdf:datatype="&xsd;string">PathHunter Cell-Based Kinase Assay Kit</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+		<obo:IAO_0000115>PathHunter Cell-Based Kinase Assays, avaliable for hundreds of kinases, are functional, cell-based assays that employ enzyme fragment complementation (two fragments of the beta-galactosidase enzyme). Each inactive fragment is fused to a different protein (e.g., a tyrosine kinase and its receptor), such that interaxtions between the two proteins drives complementation between the two fragments, resulting in active beta-galactosidase, which cleaves a substrate to generate chemiluminescent signal.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0140049 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140049">
+		<rdfs:label rdf:datatype="&xsd;string">CellTiter-Fluor Cell Viability Assay Kit</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+		<obo:IAO_0000115>The CellTiter-Fluor Cell Viability Assay measures the relative number of viable cells in a population. The assay is based on measurement of a conserved and constitutive protease activity within live cells and therefore serves as a biomarker of cell viability. The live-cell protease activity is restricted to intact viable cells and is measured using a fluorogenic, cell-permeant, peptide substrate (Gly-Phe-AFC). The substrate enters intact cells, where it is cleaved by the live-cell protease activity to generate a fluorescent signal proportional to the number of living cells. The live-cell protease becomes inactive upon loss of membrane integrity and leakage into the surrounding culture medium. (description adapted from vendor Promega)</obo:IAO_0000115>
 	</owl:Class>
 
 </rdf:RDF>

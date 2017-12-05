@@ -32,12 +32,13 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
         <owl:versionInfo>2.3.2</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande K���k McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>26 Apr 2017</dc:date>
+        <dc:date>1 Dec 2017</dc:date>
     </owl:Ontology>
+
 
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -731,7 +732,8 @@ Potent protein kinase C (PKC) inhibitor (IC50 = 7.9 nM).</obo:IAO_0000115>
 		<obo:IAO_0000115>3-(3,5-Dibromo-4-hydroxy-benzylidene)-5-iodo-1,3-dihydro-indol-2-one
 
 
-Potent, selective and cell-permeable c-Raf1 kinase inhibitor (IC50 = 9 nM). Displays ? 100-fold selectivity for raf kinase over CDK1, CDK2, c-src, ERK2, MEK, p38, Tie2, VEGFR2 and c-fm.</obo:IAO_0000115>
+Potent, selective and cell-permeable c-Raf1 kinase inhibitor (IC50 = 9 nM). Displays ≥ 100-fold selectivity for raf kinase over CDK1, CDK2, c-src, ERK2, MEK, p38, Tie2, VEGFR2 and c-fm.
+    </obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000933 -->
@@ -779,7 +781,8 @@ Selective group III metabotropic glutamate receptor agonist.</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000956">
 		<rdfs:label rdf:datatype="&xsd;string">lipofectamine 2000</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
-		<obo:IAO_0000115>Lipofectamine� 2000 Reagent delivers DNA or siRNA with excellent transfection performance for protein expression, gene silencing, and functional assays. Superior efficiency, optimized protocols, and unparalleled success across a broad range of cell lines.</obo:IAO_0000115>
+		<obo:IAO_0000115>Lipofectamine™ 2000 Reagent delivers DNA or siRNA with excellent transfection performance for protein expression, gene silencing, and functional assays. Superior efficiency, optimized protocols, and unparalleled success across a broad range of cell lines.
+    </obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000957 -->
@@ -884,7 +887,8 @@ Selective group III metabotropic glutamate receptor agonist.</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000995">
 		<rdfs:label rdf:datatype="&xsd;string">pluronic F-127</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
-		<rdfs:comment>Pluronic� F-127 is a nonionic, surfactant polyol (molecular weight approximately 12,500 daltons) that has been found to facilitate the solubilization of water-insoluble dyes and other materials in physiological media.</rdfs:comment>
+		<rdfs:comment>Pluronic® F-127 is a nonionic, surfactant polyol (molecular weight approximately 12,500 daltons) that has been found to facilitate the solubilization of water-insoluble dyes and other materials in physiological media.
+    </rdfs:comment>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000996 -->
@@ -947,9 +951,10 @@ Degrades collagen type I.</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001005">
 		<rdfs:label rdf:datatype="&xsd;string">rauwolscine</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
-		<obo:IAO_0000115>Rauwolscine acts predominantly as a ?2-adrenergic receptor antagonist.
+		<obo:IAO_0000115>Rauwolscine acts predominantly as a α2-adrenergic receptor antagonist.
 
-It has also been shown to function as a 5-HT1A receptor partial agonist and 5-HT2A and 5-HT2B receptor antagonist.</obo:IAO_0000115>
+It has also been shown to function as a 5-HT1A receptor partial agonist and 5-HT2A and 5-HT2B receptor antagonist.
+    </obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001006 -->
@@ -980,7 +985,8 @@ It has also been shown to function as a 5-HT1A receptor partial agonist and 5-HT
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>4-(3-Butoxy-4-methoxyphenyl)methyl-2-imidazolidone
 
-Widely used inhibitor of cyclic nucleotide phosphodiesterase, selective for PDE4 (IC50 = 2.0 ?M). </obo:IAO_0000115>
+Widely used inhibitor of cyclic nucleotide phosphodiesterase, selective for PDE4 (IC50 = 2.0 μM).
+    </obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001013 -->
@@ -996,9 +1002,9 @@ Widely used inhibitor of cyclic nucleotide phosphodiesterase, selective for PDE4
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001017">
 		<rdfs:label rdf:datatype="&xsd;string">SNC80</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
-		<obo:IAO_0000115>A highly selective and potent non-peptide ?-opioid agonist, 2000-fold selective over ?-opioid receptors.
+		<obo:IAO_0000115>A highly selective and potent non-peptide δ-opioid agonist, 2000-fold selective over μ-opioid receptors.
 
- (+)-4-[(?R)-?-((2S,5R)-4-Allyl-2,5-di
+ (+)-4-[(αR)-α-((2S,5R)-4-Allyl-2,5-di
 methyl-1-piperazinyl)-3-methoxybenzyl]-N,N-diethyl
 benzamide</obo:IAO_0000115>
 	</owl:Class>
@@ -1008,9 +1014,10 @@ benzamide</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001018">
 		<rdfs:label rdf:datatype="&xsd;string">sodium orthovanadate</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
-		<obo:IAO_0000115>Sodium orthovanadate is the chemical compound Na3VO4 and contains the tetrahedral VO43?.
+		<obo:IAO_0000115>Sodium orthovanadate is the chemical compound Na3VO4 and contains the tetrahedral VO43−.
 
-It is an inhibitor of protein tyrosine phosphatases, alkaline phosphatases and a number of ATPases, most likely acting as a phosphate analogue. The VO43- ion binds reversibly to the active sites of most protein tyrosine phosphatases.</obo:IAO_0000115>
+It is an inhibitor of protein tyrosine phosphatases, alkaline phosphatases and a number of ATPases, most likely acting as a phosphate analogue. The VO43- ion binds reversibly to the active sites of most protein tyrosine phosphatases.
+    </obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001021 -->
@@ -1026,7 +1033,7 @@ It is an inhibitor of protein tyrosine phosphatases, alkaline phosphatases and a
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001022">
 		<rdfs:label rdf:datatype="&xsd;string">stibavirin</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
-		<obo:IAO_0000115>The stibonic acid compound, NSC13778, also know as stibavirin, previously has been reported to inhibit the interaction between transcription factors C/EBP, C/EBP�, CREB, Fos/JunD, and VBP and their cognate DNA sequences, HIV nucleocapsid protein p7 and viral RNA, and HIV gp120 and CD4. Now, we report that this compound is a potent inhibitor of the interaction between transcription factors TFE3, Alveolar Soft Part Sarcoma (ASPS) associated fusion protein ASPL-TFE3 type 1, and ASPL-TFE3 type 2 and their cognate DNA. 
+		<obo:IAO_0000115>The stibonic acid compound, NSC13778, also know as stibavirin, previously has been reported to inhibit the interaction between transcription factors C/EBP, C/EBPß, CREB, Fos/JunD, and VBP and their cognate DNA sequences, HIV nucleocapsid protein p7 and viral RNA, and HIV gp120 and CD4. Now, we report that this compound is a potent inhibitor of the interaction between transcription factors TFE3, Alveolar Soft Part Sarcoma (ASPS) associated fusion protein ASPL-TFE3 type 1, and ASPL-TFE3 type 2 and their cognate DNA. 
 
 Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 	</owl:Class>
@@ -1214,7 +1221,7 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 	<!-- http://www.bioassayontology.org/bao#BAO_0002537 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002537">
-		<rdfs:label rdf:datatype="&xsd;string">ethyleneglycol-bis(?-aminoethyl)-N,N,N?,N?-tetraacetic acid</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">ethyleneglycol-bis(β-aminoethyl)-N,N,N′,N′-tetraacetic acid</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>EGTA</obo:IAO_0000118>
 	</owl:Class>
@@ -1351,7 +1358,7 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003053">
 		<rdfs:label rdf:datatype="&xsd;string">PIPES</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
-		<obo:IAO_0000118>piperazine-N,N?-bis(2-ethanesulfonic acid)</obo:IAO_0000118>
+		<obo:IAO_0000118>piperazine-N,N&apos;-bis(2-ethanesulfonic acid)</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003054 -->
@@ -1366,7 +1373,7 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003055">
 		<rdfs:label rdf:datatype="&xsd;string">octyl glucoside</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
-		<obo:IAO_0000118>n-octyl-?-D-glucoside</obo:IAO_0000118>
+		<obo:IAO_0000118>n-octyl-β-D-glucoside</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003056 -->
@@ -1388,6 +1395,242 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003116">
 		<rdfs:label rdf:datatype="&xsd;string">material entity</rdfs:label>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100001 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100001">
+		<rdfs:label rdf:datatype="&xsd;string">serum supplement</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+		<obo:IAO_0000115>Serum is the blood fraction remaining after the natural coagulation of blood, followed by centrifugation to remove any remaining red blood cells. Serum is thought to provide basic elements required for cell culture, including growth factors, attachment factors, iron transporters, vitamins, amino acids, lipids, carbohydrates, hormones, and trace elements. Fetal bovine serum (FBS), also called fetal calf serum (FCS), comes from the blood drawn from a bovine (cow) fetus via a closed system of collection at the slaughterhouse. FBS/FCS is the most widely used serum-supplement for the in vitro cell culture of eukaryotic cells. This is due to it having a very low level of antibodies and containing more growth factors, allowing for versatility in many different cell culture applications. Serum contains many factors that are not
+ controlled for, which can have a direct or indirect effect on the cells in culture, thus creating significant variability between suppliers and lots from a single supplier. Different methods, such as heat inactivation or dialysis, are sometimes used to eliminate undesired components (such as labile growth factors, vitamins, etc. or the complement system). Some suppliers test serum for the presence of other factors such as tetracylcine or mycoplasma.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100002 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100002">
+		<rdfs:label rdf:datatype="&xsd;string">125I</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100003 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100003">
+		<rdfs:label rdf:datatype="&xsd;string">Alexa Fluor</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100004 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100004">
+		<rdfs:label rdf:datatype="&xsd;string">AMC</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+		<obo:IAO_0000115>AMC is an abbreviation for 7-Amino-4-methylcoumarin, is a chromophore for enzyme substrates. A synonym is coumarin 120</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100005 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100005">
+		<rdfs:label rdf:datatype="&xsd;string">calcium-3</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100006 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100006">
+		<rdfs:label rdf:datatype="&xsd;string">EDANS</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+		<obo:IAO_0000115>EDANS (5-((2-Aminoethyl)amino)naphthalene-1-sulfonic acid) is a common donor for developing FRET-based nucleic acid probes and protease substrates. EDANS is often paired with DABCYL or DABSYL.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100007 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100007">
+		<rdfs:label rdf:datatype="&xsd;string">Europium; APC</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100008 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100008">
+		<rdfs:label rdf:datatype="&xsd;string">FAM/TAMRA</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100009 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100009">
+		<rdfs:label rdf:datatype="&xsd;string">MCA</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+		<obo:IAO_0000115>MCA is an abbreviation for methoxycoumarin, or 7-Methoxycoumarin-4-acetic acid, commonly used as a fluorescent label for peptides.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100010 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100010">
+		<rdfs:label rdf:datatype="&xsd;string">MDC</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+		<obo:IAO_0000115>MDC is an abbreviation for monodansyl cadaverine (aka dansylcadaverine), an autofluorescent dye commonly used to monitor autophagy</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100011 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100011">
+		<rdfs:label rdf:datatype="&xsd;string">RiboGreen</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100012 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100012">
+		<rdfs:label rdf:datatype="&xsd;string">SYBR green</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100013 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100013">
+		<rdfs:label rdf:datatype="&xsd;string">TAM/DABCYL</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100014 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100014">
+		<rdfs:label rdf:datatype="&xsd;string">ThioGlo</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100015 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100015">
+		<rdfs:label rdf:datatype="&xsd;string">biotin tag</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100016 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100016">
+		<rdfs:label rdf:datatype="&xsd;string">0.1% Charcoal Dextran Stripped FBS</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0100001"/>
+		<obo:IAO_0000115>Note: Fetal bovine serum (FBS) is also called fetal calf serum (FCS).</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100017 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100017">
+		<rdfs:label rdf:datatype="&xsd;string">0.1% FBS</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0100001"/>
+		<obo:IAO_0000115>Note: Fetal bovine serum (FBS) is also called fetal calf serum (FCS).</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100018 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100018">
+		<rdfs:label rdf:datatype="&xsd;string">0.5% FBS (Dialyzed)</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0100001"/>
+		<obo:IAO_0000115>Note: Fetal bovine serum (FBS) is also called fetal calf serum (FCS).</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100019 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100019">
+		<rdfs:label rdf:datatype="&xsd;string">1% FBS</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0100001"/>
+		<obo:IAO_0000115>Note: Fetal bovine serum (FBS) is also called fetal calf serum (FCS).</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100020 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100020">
+		<rdfs:label rdf:datatype="&xsd;string">1% FBS Charcoal Dextran treated</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0100001"/>
+		<obo:IAO_0000115>Note: Fetal bovine serum (FBS) is also called fetal calf serum (FCS). Note: &apos;Charcoal Dextran treated&apos; sometimes abbreviated as &apos;C/D&apos;.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100021 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100021">
+		<rdfs:label rdf:datatype="&xsd;string">10% FBS</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0100001"/>
+		<obo:IAO_0000115>Note: Fetal bovine serum (FBS) is also called fetal calf serum (FCS).</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100022 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100022">
+		<rdfs:label rdf:datatype="&xsd;string">10% FBS (Tet free)</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0100001"/>
+		<obo:IAO_0000115>Note: Fetal bovine serum (FBS) is also called fetal calf serum (FCS).</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100023 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100023">
+		<rdfs:label rdf:datatype="&xsd;string">10% FBS (Dialyzed)</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0100001"/>
+		<obo:IAO_0000115>Note: Fetal bovine serum (FBS) is also called fetal calf serum (FCS).</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100024 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100024">
+		<rdfs:label rdf:datatype="&xsd;string">10% Heat-inactivated FBS</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0100001"/>
+		<obo:IAO_0000115>Note: Fetal bovine serum (FBS) is also called fetal calf serum (FCS).</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100025 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100025">
+		<rdfs:label rdf:datatype="&xsd;string">10% heat-inactivated horse serum</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0100001"/>
+		<obo:IAO_0000115>Note: Fetal bovine serum (FBS) is also called fetal calf serum (FCS).</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100026 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100026">
+		<rdfs:label rdf:datatype="&xsd;string">100% warm FBS</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0100001"/>
+		<obo:IAO_0000115>Note: Fetal bovine serum (FBS) is also called fetal calf serum (FCS).</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100027 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100027">
+		<rdfs:label rdf:datatype="&xsd;string">20% FBS</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0100001"/>
+		<obo:IAO_0000115>Note: Fetal bovine serum (FBS) is also called fetal calf serum (FCS).</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100028 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100028">
+		<rdfs:label rdf:datatype="&xsd;string">FBS</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0100001"/>
+		<obo:IAO_0000115>Note: Fetal bovine serum (FBS) is also called fetal calf serum (FCS).</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100029 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100029">
+		<rdfs:label rdf:datatype="&xsd;string">Alexa488</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0100003"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100030 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100030">
+		<rdfs:label rdf:datatype="&xsd;string">Alexa594</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0100003"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100031 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100031">
+		<rdfs:label rdf:datatype="&xsd;string">Alexa647</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0100003"/>
 	</owl:Class>
 
 </rdf:RDF>

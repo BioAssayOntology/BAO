@@ -32,12 +32,13 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
         <owl:versionInfo>2.3.2</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande K���k McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>26 Apr 2017</dc:date>
+        <dc:date>1 Dec 2017</dc:date>
     </owl:Ontology>
+
 
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -52,7 +53,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000028">
 		<rdfs:label rdf:datatype="&xsd;string">assay quality assessment method</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002754"/>
-		<obo:IAO_0000115>Commonly used statistical parameters for monitoring assay quality include Z and Z? factors. Prior to starting a large screen, and after assay optimization and miniaturization, pilot screens are performed to assess the quality of the assay run and to assess / validate the suitability of a assay for a high-throughput screening run.</obo:IAO_0000115>
+		<obo:IAO_0000115>Commonly used statistical parameters for monitoring assay quality include Z and Z&apos; factors. Prior to starting a large screen, and after assay optimization and miniaturization, pilot screens are performed to assess the quality of the assay run and to assess / validate the suitability of a assay for a high-throughput screening run.</obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000043 -->
@@ -152,6 +153,7 @@ The technologies used are radioligand binding, resonance energy transfer, fluore
 		<rdfs:label rdf:datatype="&xsd;string">in situ immunoassay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000129"/>
 		<obo:IAO_0000115>In situ refers to in place or position; undisturbed with respect to the antigen that is being tested in the immunoassay. The protein detection and localization is achieved by visualization under a microscope.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000448"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000129 -->
@@ -160,6 +162,7 @@ The technologies used are radioligand binding, resonance energy transfer, fluore
 		<rdfs:label rdf:datatype="&xsd;string">immunoassay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000123"/>
 		<obo:IAO_0000115>It measures the concentration of a substance in a solution based on the specific binding of an antibody to that substance, which produces a measurable signal. The signal measured depends on the label that is associated with this interaction, namely radioactive element (in radioimmunoassays), fluorescent, phosphorescent and chemiluminescent dyes, etc.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000126"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000132 -->
@@ -356,6 +359,7 @@ The technologies used are radioligand binding, resonance energy transfer, fluore
 		<rdfs:label rdf:datatype="&xsd;string">transfection method</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000241"/>
 		<obo:IAO_0000115>This refers to the introduction of nucleic acids into cells using a construct. Plasmids constructs are created by the insertion of a gene or siRNA encoding DNA of interest into a plasmid. The engineered plasmids are introduced into cells by various means, namely, transfection, electroporation, nucleofection, etc which regulates the efficiency and location of gene transfer, for e.g., nucleofection delivers the plasmid directly into the nucleus in contrast to the other methods that deliver into the cytosol.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002155"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000246 -->
@@ -598,6 +602,7 @@ CV=100x[StdDev(sample)/Avg(sample)]</obo:IAO_0000115>
 		<rdfs:label rdf:datatype="&xsd;string">recombinant virus transduction method</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002155"/>
 		<obo:IAO_0000115>This refers to the infection of cells with a modified virus, which introduces viral genome containing the foreign genes. Several types of viruses are utilized for recombinant gene expression, including lentivirus, retrovirus, adenovirus, etc, with each having their own advantages and disadvantages.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000244"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000546 -->
@@ -745,6 +750,7 @@ Yeast and bacterial cell growth is determined by measuring absorbance in a spect
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002076">
 		<rdfs:label rdf:datatype="&xsd;string">extraction from natural source</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003029"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000356"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002077 -->
@@ -752,6 +758,7 @@ Yeast and bacterial cell growth is determined by measuring absorbance in a spect
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002077">
 		<rdfs:label rdf:datatype="&xsd;string">synthesis by a chemical process</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003029"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000356"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002078 -->
@@ -1263,6 +1270,7 @@ A mix and read protocol has been developed that is exceptionally simple and rapi
 		<rdfs:label rdf:datatype="&xsd;string">nucleic acid amplification method</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003034"/>
 		<obo:IAO_0000115>A method that uses purified enzymes to isolate and then replicate specific nucleic acids to levels where they can be detected. Examples are PCR, TMA, NASBA, etc.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002445"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002451 -->
@@ -1342,6 +1350,7 @@ The formazan can then be solubilized producing a concentration dependent colorim
 		<rdfs:label rdf:datatype="&xsd;string">sulforhodamine B staining</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002462"/>
 		<obo:IAO_0000115>The sulforhodamine B (SRB) assay is used for cell density determination, based on the measurement of cellular protein content.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002455"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002461 -->
@@ -1349,6 +1358,7 @@ The formazan can then be solubilized producing a concentration dependent colorim
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002461">
 		<rdfs:label rdf:datatype="&xsd;string">trypan blue cell staining</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002481"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002455"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002462 -->
@@ -2235,6 +2245,90 @@ microarray, bead based method or RNASeq.</obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 651658</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>Changes in protein thermal stability can be induced by ligand binding, and this thermodynamic stabilization can be measured by a variety of methods, often reported as a delta Tm (or change in the melting temperature of the protein).</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0040025 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040025">
+		<rdfs:label rdf:datatype="&xsd;string">data collection method</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002429"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0040026 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040026">
+		<rdfs:label rdf:datatype="&xsd;string">endpoint correction present</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000419"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0040027 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040027">
+		<rdfs:label rdf:datatype="&xsd;string">endpoint correction absent</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000419"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0040028 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040028">
+		<rdfs:label rdf:datatype="&xsd;string">cell population</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040025"/>
+		<obo:IAO_0000115>A data collection method that entails measurements of an entire population of cells.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0040029 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040029">
+		<rdfs:label rdf:datatype="&xsd;string">single-cell </rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040025"/>
+		<obo:IAO_0000115>A data collection method that entails measurements from only a single cell.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0040030 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040030">
+		<rdfs:label rdf:datatype="&xsd;string">chemiluminescent labeling method</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002452"/>
+		<obo:IAO_0000115>A method that uses chemilumiscence to quantify the labeled entity. For this, an enzyme converts a substrate to a  product that emits photons of light</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0040031 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040031">
+		<rdfs:label rdf:datatype="&xsd;string">dna-seq method</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002447"/>
+		<obo:IAO_0000115>A method that is used to identify the precise order/sequence of the nucleotides in a dna molecule by using the shotgun method in which DNA is fragmented and then the individual frgaments are sequenced</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0040032 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040032">
+		<rdfs:label rdf:datatype="&xsd;string">chromatin acessibility method</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002202"/>
+		<obo:IAO_0000115>A method that is used to identify open / accessible genomic sites of remodeled chromatin</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0040033 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040033">
+		<rdfs:label rdf:datatype="&xsd;string">metabolite abundance method</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040011"/>
+		<obo:IAO_0000115>A method that is used to quantify various cell metabolites or metabolism-related analytes (e.g. O2, glucose, pH)</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0040034 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040034">
+		<rdfs:label rdf:datatype="&xsd;string">epigenetic modification detection method</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002202"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0040035 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040035">
+		<rdfs:label rdf:datatype="&xsd;string">transcription factor occupancy</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040032"/>
+		<obo:IAO_0000115>A method that is used to identify the DNA regions that are being occupied by a predefined transcriptional factor(s)</obo:IAO_0000115>
 	</owl:Class>
 
 </rdf:RDF>

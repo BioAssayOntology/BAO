@@ -32,12 +32,13 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
         <owl:versionInfo>2.3.2</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande K���k McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>26 Apr 2017</dc:date>
+        <dc:date>1 Dec 2017</dc:date>
     </owl:Ontology>
+
 
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -84,7 +85,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000218">
 		<rdfs:label rdf:datatype="&xsd;string">organism-based format</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000019"/>
-		<obo:IAO_0000115>Involves the use of a living organism and is a heterogeneous assay type.</obo:IAO_0000115>
+		<obo:IAO_0000115>Involves the use of a living organism, either single or multi-celled, and is a heterogeneous assay type.</obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000219 -->
@@ -93,7 +94,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">cell based format</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000019"/>
 		<rdfs:label>cell-based format</rdfs:label>
-		<obo:IAO_0000115>Involves the use of living cells of eukaryotic origin and is a heterogeneous assay type.</obo:IAO_0000115>
+		<obo:IAO_0000115>Involves the use of living cells of eukaryotic origin, derived from a multicellular organism, and is a heterogeneous assay type. Typically, this refers to permanent (immortal) cell lines, or primary cells, or some form of stem cells. This is distinct from a single-celled organism-based format (classically bacteria or yeast).</obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000220 -->
@@ -279,6 +280,29 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/6/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>Serum is the clear cell-free liquid that is separated from clotted blood. Serum differs from plasma in that the blood is first allowed to clot before centrifugation (separating from cells) while plasma preparations entail preventing blood clotting. Both are cell-free and contain antibodies. </obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0020005 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020005">
+		<rdfs:label rdf:datatype="&xsd;string">single-celled organism-based format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000218"/>
+		<obo:IAO_0000115>Involves the use of a unicellular living organism such as bacteria or yeast--but not cell lines derived from multicellular organisms.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0020006 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020006">
+		<rdfs:label rdf:datatype="&xsd;string">multi-celled organism-based format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000218"/>
+		<obo:IAO_0000115>Involves the use of a multicellular living organism, such as C. elegans (nematode), Drosophila (fruitfly), zebrafish, mouse, etc. This would encompass all in vivo studies.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0020007 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020007">
+		<rdfs:label rdf:datatype="&xsd;string">total cellular lipids format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
 	</owl:Class>
 
 </rdf:RDF>

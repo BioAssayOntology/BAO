@@ -32,12 +32,13 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
         <owl:versionInfo>2.3.2</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande K���k McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>26 Apr 2017</dc:date>
+        <dc:date>1 Dec 2017</dc:date>
     </owl:Ontology>
+
 
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -199,6 +200,30 @@ The term probe also refers to the MLI screening effort, which has the goal to ge
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003120">
 		<rdfs:label rdf:datatype="&xsd;string">assay screened entity component</rdfs:label>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0070002 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0070002">
+		<rdfs:label rdf:datatype="&xsd;string">Tox21 Compound Library</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000648"/>
+		<obo:IAO_0000115>The Tox21 compound collection is a library of approximately 10,000 (10K) environmental chemicals and drugs (~10,500 chemicals (~8,300 unique)), also referred to as the &apos;Tox21 10K library&apos;. Several publications, from NCATS and EPA.  See also https://www.epa.gov/chemical-research/toxicology-testing-21st-century-tox21 or https://ncats.nih.gov/tox21/about/operations.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0070003 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0070003">
+		<rdfs:label rdf:datatype="&xsd;string">natural product</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
+		<obo:IAO_0000115>A compound or extract derived from a living organism.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0070004 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0070004">
+		<rdfs:label rdf:datatype="&xsd;string">Tox21 Compound Library</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000648"/>
+		<obo:IAO_0000115>The Tox21 compound collection is a library of approximately 10,000 (10K) environmental chemicals and drugs (~10,500 chemicals (~8,300 unique)), also referred to as the &apos;Tox21 10K library&apos;. Several publications, from NCATS and EPA.  See also https://www.epa.gov/chemical-research/toxicology-testing-21st-century-tox21 or https://ncats.nih.gov/tox21/about/operations.</obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0700003 -->

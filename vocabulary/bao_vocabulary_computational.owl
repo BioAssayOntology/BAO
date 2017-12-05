@@ -32,12 +32,13 @@ contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
         <owl:versionInfo>2.3.2</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande K���k McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>26 Apr 2017</dc:date>
+        <dc:date>1 Dec 2017</dc:date>
     </owl:Ontology>
+
 
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -168,6 +169,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002235">
 		<rdfs:label rdf:datatype="&xsd;string">DIALIGN sequence alignment</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002233"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002245"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002236 -->
@@ -207,6 +209,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">Clustal sequence alignment</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002245"/>
 		<obo:IAO_0000115>Multiple sequence alignment computer program.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002239"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002241 -->
@@ -362,6 +365,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002261">
 		<rdfs:label rdf:datatype="&xsd;string">2D structure similarity search</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002260"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002371"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002262 -->
@@ -383,6 +387,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002264">
 		<rdfs:label rdf:datatype="&xsd;string">3D structure similarity search</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002260"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002371"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002265 -->
@@ -539,6 +544,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002286">
 		<rdfs:label rdf:datatype="&xsd;string">CHARMM force field simulation</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002284"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002398"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002287 -->
@@ -681,7 +687,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002318">
 		<rdfs:label rdf:datatype="&xsd;string">ab initio quantum chemistry computational method</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002317"/>
-		<obo:IAO_0000115>Methods of quantum mechanical calculations independent of any experiment other than the determination of fundamental constants. The methods are based on the use of the full Schr?ger equation to treat all the electrons of a chemical system.</obo:IAO_0000115>
+		<obo:IAO_0000115>Methods of quantum mechanical calculations independent of any experiment other than the determination of fundamental constants. The methods are based on the use of the full Schr</obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002319 -->
