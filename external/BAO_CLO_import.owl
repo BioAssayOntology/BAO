@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.bioassayontology.org/bao/external/bao_CLO_import.owl#"
-     xml:base="http://www.bioassayontology.org/bao/external/bao_CLO_import.owl"
+<rdf:RDF xmlns="http://bioassayontology.org/bao/external/BAO_CLO_import.owl#"
+     xml:base="http://bioassayontology.org/bao/external/BAO_CLO_import.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
@@ -9,7 +9,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:cellline="http://www.ebi.ac.uk/cellline/"
      xmlns:bao="http://www.bioassayontology.org/bao#">
-    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/external/bao_CLO_import.owl"/>
+    <owl:Ontology rdf:about="http://bioassayontology.org/bao/external/BAO_CLO_import.owl"/>
     
 
 
@@ -21,40 +21,29 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasDbXref"/>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/definition"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>label</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasOBONamespace"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/is_metadata_tag"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
         <rdfs:label>textual definition</rdfs:label>
         <rdfs:label>definition</rdfs:label>
         <rdfs:label xml:lang="en">definition</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
-Barry Smith
-
-The official OBI definition, explaining the meaning of a class or property: &#39;Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions&#39;  is terrible.
-
-Can you fix to something like:
-
-A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
-
-Alan Ruttenberg
-
-Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can&#39;t be evaluated by those criteria. 
-
-On the specifics of the proposed definition:
-
-We don&#39;t have definitions of &#39;meaning&#39; or &#39;expression&#39; or &#39;property&#39;. For &#39;reference&#39; in the intended sense I think we use the term &#39;denotation&#39;. For &#39;expression&#39;, I think we you mean symbol, or identifier. For &#39;meaning&#39; it differs for class and property. For class we want documentation that let&#39;s the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let&#39;s the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The &#39;intended reader&#39; part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
-
-Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
-
-We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  </obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000111>definition</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor note</rdfs:label>
         <rdfs:label>editor note</rdfs:label>
@@ -69,7 +58,17 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/cellline/definition_editor"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label>imported from</rdfs:label>
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">imported from</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
         <rdfs:label>has curation status</rdfs:label>
@@ -90,7 +89,12 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/CLO_0000178">
+        <rdfs:label>Cell line LINCS ID</rdfs:label>
+        <rdfs:label xml:lang="en">Cell line LINCS ID</rdfs:label>
+        <cellline:definition_editor>Oliver He, Jiangan Xie</cellline:definition_editor>
+        <cellline:definition>An annotation property that represents an LINCS ID of a cell line.</cellline:definition>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
         <rdfs:label>term editor</rdfs:label>
@@ -101,7 +105,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label>alternative term</rdfs:label>
@@ -111,8 +114,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">alternative term</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/id"/>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/cellline/definition"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <rdfs:label>editor preferred term~editor preferred label</rdfs:label>
@@ -120,13 +123,12 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:label>editor preferred label</rdfs:label>
         <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
+        <obo:IAO_0000111>editor preferred term~editor preferred label</obo:IAO_0000111>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">editor preferred label</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <rdfs:label>example of usage</rdfs:label>
@@ -137,44 +139,8 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">example of usage</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/alternative_term"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasDbXref"/>
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/definition"/>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
-        <rdfs:label>label</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/CLO_0037244">
-        <rdfs:label xml:lang="en">PubChem AID</rdfs:label>
-        <cellline:definition_editor>Oliver He</cellline:definition_editor>
-        <cellline:definition>An annotation property that represents a PubMed BioAssay Identifier accession number.</cellline:definition>
-        <obo:IAO_0000119>https://pubchem.ncbi.nlm.nih.gov/help.html</obo:IAO_0000119>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasOBONamespace"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/is_metadata_tag"/>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/cellline/definition_editor"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <rdfs:label>imported from</rdfs:label>
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en">imported from</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/CLO_0000178">
-        <rdfs:label>Cell line LINCS ID</rdfs:label>
-        <rdfs:label xml:lang="en">Cell line LINCS ID</rdfs:label>
-        <cellline:definition_editor>Oliver He, Jiangan Xie</cellline:definition_editor>
-        <cellline:definition>An annotation property that represents an LINCS ID of a cell line.</cellline:definition>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/id"/>
     
 
 
@@ -228,7 +194,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117>Yongqun He, Matthew Brush, Allen Xiang, Asiyah Yu Lin,  Sirarat Sarntivijai, James Malone, Jie Zheng, Tomasz Adamusiak</obo:IAO_0000117>
         <obo:IAO_0000118>continuous cell line cell</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </owl:Class>
     
 
@@ -269,8 +234,8 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
         <rdfs:seeAlso>CVCL: CVCL_0079</rdfs:seeAlso>
         <rdfs:seeAlso>Sanger: COSMIC ID:906800</rdfs:seeAlso>
         <rdfs:seeAlso>CHEMBL: CHEMBL3308147</rdfs:seeAlso>
-        <obo:CLO_0000178>LCL-1042</obo:CLO_0000178>
         <obo:IAO_0000118>697</obo:IAO_0000118>
+        <obo:CLO_0000178>LCL-1042</obo:CLO_0000178>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -600,8 +565,8 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
         <rdfs:seeAlso>RRID:CVCL_0291</rdfs:seeAlso>
         <efo:definition>immortal human epithelial cell line cell that was derived from some colon epithelial cell from a human patient with the disease colon carcinoma</efo:definition>
         <efo:alternative_term></efo:alternative_term>
-        <obo:CLO_0000178>LCL-1161</obo:CLO_0000178>
         <rdfs:seeAlso>MeSH: D045325</rdfs:seeAlso>
+        <obo:CLO_0000178>LCL-1161</obo:CLO_0000178>
         <rdfs:seeAlso>HyperCLDB: cl1575</rdfs:seeAlso>
         <rdfs:comment>disease: colorectal carcinoma</rdfs:comment>
         <rdfs:seeAlso>ECACC: 91091005</rdfs:seeAlso>
@@ -636,8 +601,8 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000119>WEB: http://www.atcc.org/products/all/CCL-2.aspx</obo:IAO_0000119>
         <rdfs:seeAlso>EFO: EFO_0001185</rdfs:seeAlso>
-        <cellline:definition>an immortal human uterine cervix-derived epithelial cell line that was derived from cervical adenocarcinoma cancer cells taken on February 8, 1951 from Henrietta Lacks, a patient who died of her cancer on October 4, 1951.</cellline:definition>
         <rdfs:seeAlso>MeSH: D006367</rdfs:seeAlso>
+        <cellline:definition>an immortal human uterine cervix-derived epithelial cell line that was derived from cervical adenocarcinoma cancer cells taken on February 8, 1951 from Henrietta Lacks, a patient who died of her cancer on October 4, 1951.</cellline:definition>
         <rdfs:seeAlso>RRID:CVCL_0030</rdfs:seeAlso>
         <rdfs:seeAlso>ATCC: CCL-2</rdfs:seeAlso>
         <rdfs:seeAlso>CHEMBL: CHEMBL3308376</rdfs:seeAlso>
@@ -972,8 +937,8 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
         <obo:CLO_0000178>LCL-1195</obo:CLO_0000178>
         <rdfs:seeAlso>PubChem AID: 504653</rdfs:seeAlso>
         <obo:IAO_0000118>SW403</obo:IAO_0000118>
-        <rdfs:seeAlso>ATCC: CCL-230</rdfs:seeAlso>
         <rdfs:seeAlso>Sanger: COSMIC ID:910908</rdfs:seeAlso>
+        <rdfs:seeAlso>ATCC: CCL-230</rdfs:seeAlso>
         <rdfs:seeAlso>RRID: CVCL_0545</rdfs:seeAlso>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
@@ -1275,416 +1240,6 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
         <obo:IAO_0000115>A Hela-derived cell line cell that expresses ubiquitinated GFP (Green Fluroescent Protein)</obo:IAO_0000115>
         <rdfs:seeAlso>PubChem AID: 463185</rdfs:seeAlso>
         <obo:IAO_0000117>JX, YH</obo:IAO_0000117>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037228 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037228">
-        <rdfs:label xml:lang="en">GripTite 293 MSR cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">602478</obo:CLO_0037244>
-        <obo:IAO_0000119>https://pubchem.ncbi.nlm.nih.gov/bioassay/602478</obo:IAO_0000119>
-        <obo:IAO_0000119>https://www.thermofisher.com/order/catalog/product/R79507</obo:IAO_0000119>
-        <cellline:definition>The GripTite™ 293 MSR Cell Line is a genetically engineered Human Embryonic Kidney (HEK 293) cell line that expresses the human macrophage scavenger receptor and strongly adheres to standard tissue culture plates for dependable results.</cellline:definition>
-        <rdfs:seeAlso>ThermoFisher: R79507</rdfs:seeAlso>
-        <obo:IAO_0000118>GripTite™ 293 MSR</obo:IAO_0000118>
-        <rdfs:seeAlso>BAO: BAO_0030043</rdfs:seeAlso>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037243 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037243">
-        <rdfs:label xml:lang="en">2B4/BCL-2 cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">493062</obo:CLO_0037244>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <rdfs:seeAlso>BAO: BAO_0030042</rdfs:seeAlso>
-        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/books/NBK143557</obo:IAO_0000119>
-        <cellline:definition>A mouse T-cell hybridoma cell line cell that is derived from the murine hybridoma cell line 2B4, stably transfected to overexpress the human protein BCL-2.</cellline:definition>
-        <obo:IAO_0000119>https://www.google.com/patents/WO2007123791A2?cl=en</obo:IAO_0000119>
-        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pubmed/16697956</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037246 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037246">
-        <rdfs:label xml:lang="en">2B4/MCL-1 cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">493059</obo:CLO_0037244>
-        <cellline:definition>A mouse T-cell hybridoma cell line cell that is derived from the murine hybridoma cell line 2B4, stably transfected to overexpress the human protein MCL-1.</cellline:definition>
-        <rdfs:seeAlso>BAO: BAO_0030044</rdfs:seeAlso>
-        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pubmed/16697956</obo:IAO_0000119>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/books/NBK143557</obo:IAO_0000119>
-        <obo:IAO_0000119>https://www.google.com/patents/WO2007123791A2?cl=en</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037247 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037247">
-        <rdfs:label xml:lang="en">AVA5 cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">463235</obo:CLO_0037244>
-        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pubmed/27013634</obo:IAO_0000119>
-        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pubmed/10390360</obo:IAO_0000119>
-        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pubmed/1110665</obo:IAO_0000119>
-        <cellline:definition>AVA5 cells are derived from the Huh-7 human hepatoma cell line, stably-expressing the HCV replicon (sub-genomic [CON1], genotype 1b); http://www.apath.com/index.html. See also PMID: 27013634, 1110665, 10390360</cellline:definition>
-        <obo:IAO_0000117>BAO, YH</obo:IAO_0000117>
-        <rdfs:seeAlso>BAO: BAO_0030045</rdfs:seeAlso>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037249 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037249">
-        <rdfs:label xml:lang="en">BCL-2 1863 cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">624396</obo:CLO_0037244>
-        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2919900/</obo:IAO_0000119>
-        <rdfs:seeAlso>BAO: BAO_0030052</rdfs:seeAlso>
-        <cellline:definition>A murine leukemia cell line driven by the overexpression of Myc and BCL-2.</cellline:definition>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037251 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037251">
-        <rdfs:label xml:lang="en">C17.2 cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1353</obo:CLO_0037244>
-        <rdfs:seeAlso>BAO: BAO_0030046</rdfs:seeAlso>
-        <obo:IAO_0000119>http://www.sigmaaldrich.com/catalog/product/sigma/07062902</obo:IAO_0000119>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <cellline:definition>An immortalised mouse neural progenitor cell line cell that is capable of differentiation in vitro and is established by retorviral-mediated transduction of the avian myc oncogene into mitotic progenitor cells of neonatal mouse cerrebellum. Mouse strain CD1 x C57BL/6.</cellline:definition>
-        <obo:IAO_0000119>http://web.expasy.org/cellosaurus/CVCL_4511</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037253 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037253">
-        <rdfs:label xml:lang="en">CEM21 cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">651610</obo:CLO_0037244>
-        <rdfs:seeAlso>BAO: BAO_0030049</rdfs:seeAlso>
-        <efo:alternative_term>CEM#21</efo:alternative_term>
-        <cellline:definition>CEM21 (aka CEM#21 or CEM-R5Luc1#21) is derived from CEM.NKR-CCR5 by stable transfecttion of a Tet-activator responsive Luciferase reporter</cellline:definition>
-        <efo:alternative_term>CEM-R5Luc1#21</efo:alternative_term>
-        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pubmed/10516002</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037254 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037254">
-        <rdfs:label xml:lang="en">DPX2 cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">434939</obo:CLO_0037244>
-        <rdfs:seeAlso>BAO: BAO_0030035</rdfs:seeAlso>
-        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pubmed/22912432</obo:IAO_0000119>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <cellline:definition>DPX2 (aka DPX-2) is a HepG2-derived cell line stably integrated with a PXR (pregnane X receptor) expression vector plus a luciferase reporter, used to detect PXR activation/ CYP3A induction</cellline:definition>
-        <obo:IAO_0000118>DPX-2</obo:IAO_0000118>
-        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pubmed/15548381</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037255 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037255">
-        <rdfs:label xml:lang="en">FA2N-4 cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">623928</obo:CLO_0037244>
-        <cellline:definition>FA2N-4 is a human hepatocyte cell line. Reference:  http://web.expasy.org/cellosaurus/CVCL_0267</cellline:definition>
-        <obo:IAO_0000119>http://purl.bioontology.org/ontology/MCCL/MCC_0000158</obo:IAO_0000119>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <rdfs:seeAlso>BAO: BAO_0030036</rdfs:seeAlso>
-        <obo:IAO_0000119>http://web.expasy.org/cellosaurus/CVCL_0267</obo:IAO_0000119>
-        <obo:IAO_0000119>http://cellfinder.org/ontology?id=CF_194407</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037256 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037256">
-        <rdfs:label xml:lang="en">HBL-1 cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">651646</obo:CLO_0037244>
-        <rdfs:seeAlso>BAO: BAO_0030037</rdfs:seeAlso>
-        <rdfs:seeAlso>RRID:CVCL_4213</rdfs:seeAlso>
-        <cellline:definition>HBL-1 (aka human is an EBV-negative B-cell lymphoma cell line established from the pleural effusion of a patient with malignant lymphoma, diffuse, large cell.</cellline:definition>
-        <rdfs:seeAlso>BTO: BTO_0002522</rdfs:seeAlso>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <obo:IAO_0000119>http://purl.obolibrary.org/obo/BTO_0002522</obo:IAO_0000119>
-        <obo:IAO_0000119>http://web.expasy.org/cellosaurus/CVCL_4213</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037257 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037257">
-        <rdfs:label xml:lang="en">HMC-1-8 cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">449755</obo:CLO_0037244>
-        <obo:IAO_0000119>http://web.expasy.org/cellosaurus/CVCL_2949</obo:IAO_0000119>
-        <cellline:definition>HMC-1-8 is a human breast cancer cell line</cellline:definition>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <obo:IAO_0000119>http://portals.broadinstitute.org/ccle/cell%20lines/HMC18_BREAST</obo:IAO_0000119>
-        <rdfs:seeAlso>RRID:CVCL_2949</rdfs:seeAlso>
-        <rdfs:seeAlso>BAO: BAO_0030037</rdfs:seeAlso>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037258 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037258">
-        <rdfs:label xml:lang="en">HMLE_sh_ECAD cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2717</obo:CLO_0037244>
-        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pubmed/22941295</obo:IAO_0000119>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <rdfs:seeAlso>BAO: BAO_0030038</rdfs:seeAlso>
-        <cellline:definition>HMLE_sh_ECAD is a stable cell line mimicking a cancer stem cell (CSC), derived by knocking down E-Cadherin (via shRNA) in human breast epithelial cells to induce epithelial to mesenchymal transition (EMT)</cellline:definition>
-        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pubmed/19682730</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037259 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037259">
-        <rdfs:label xml:lang="en">HMLE_sh_eGFP cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">463074</obo:CLO_0037244>
-        <cellline:definition>HMLE_sh_eGFP is a human breast epithelial cell line containing shRNA to GFP (green fluorescent reporter); used as an isogenic control line for HMLE_sh_ECAD</cellline:definition>
-        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pubmed/19682730</obo:IAO_0000119>
-        <rdfs:seeAlso>BAO: BAO_0030039</rdfs:seeAlso>
-        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pubmed/22941295</obo:IAO_0000119>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037260 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037260">
-        <rdfs:label xml:lang="en">HMLE_sh_TWIST cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">588703</obo:CLO_0037244>
-        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pubmed/19682730</obo:IAO_0000119>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <cellline:definition>HMLE_sh_TWIST is a stable cell line mimicking a cancer stem cell (CSC), derived by knocking down TWIST (via shRNA) in human breast epithelial cells to induce epithelial to mesenchymal transition (EMT); isogenic with another CSC line, HMLE_sh_ECAD</cellline:definition>
-        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pubmed/22941295</obo:IAO_0000119>
-        <rdfs:seeAlso>BAO: BAO_0030040</rdfs:seeAlso>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037262 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037262">
-        <rdfs:label xml:lang="en">LEADING LIGHT Wnt Reporter cell line cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">651570</obo:CLO_0037244>
-        <obo:IAO_0000119>http://www.enzolifesciences.com/ENZ-61001/leading-light-wnt-reporter-assay-starter-kit/</obo:IAO_0000119>
-        <cellline:definition>An engineered 3T3 mouse fibroblast cell line, which expresses the firefly luciferase reporter gene under the control of Wnt-responsive promoters (TCF/LEF).</cellline:definition>
-        <rdfs:seeAlso>BAO: BAO_0030031</rdfs:seeAlso>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037263 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037263">
-        <rdfs:label xml:lang="en">MCL-1 1780 cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">624396</obo:CLO_0037244>
-        <rdfs:seeAlso>BAO: BAO_0030053</rdfs:seeAlso>
-        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2919900/</obo:IAO_0000119>
-        <cellline:definition>MCL-1 1780 is a murine leukemia cell line driven by the overexpression of Myc and MCL-1.</cellline:definition>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <rdfs:comment>Source: Anthony Letai (Dana Farber)</rdfs:comment>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037264 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037264">
-        <rdfs:label xml:lang="en">MG213 cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">652260</obo:CLO_0037244>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <cellline:definition>MG213 is a subline of the BRG1/BRM-deficient cell line SW13 (http://purl.obolibrary.org/obo/CLO_0009185) that contains a stably integrated glucocorticoid-responsive MMTV-luciferase reporter.</cellline:definition>
-        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3615482/</obo:IAO_0000119>
-        <rdfs:seeAlso>BAO: BAO_0030048</rdfs:seeAlso>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037265 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037265">
-        <rdfs:label xml:lang="en">PathHunter CHO-K1 DRD2L Beta-Arrestin cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">624495</obo:CLO_0037244>
-        <obo:IAO_0000119>https://www.discoverx.com/products/cell-line/cho-k1-drd2l-beta-arrestin-cell-line-93-0579c2</obo:IAO_0000119>
-        <rdfs:seeAlso>BAO: BAO_0030056</rdfs:seeAlso>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <cellline:definition>A PathHunter Beta-Arrestin GPCR cell line (DiscoverX), engineered to co-express the ProLink (PK) tagged GPCR (DRD2L, long form of human DRD2) and the Enzyme Acceptor (EA) tagged Beta-Arrestin. Activation of DRD2L-PK induces Beta-Arrestin-EA recruitment, forcing complementation of the two Beta-galactosidase enzyme fragments (EA and PK). The resulting functional enzyme hydrolyzes substrate to generate a chemiluminescent signal.</cellline:definition>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037266 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037266">
-        <rdfs:label xml:lang="en">PathHunter CHO-K1 DRD3 Beta-Arrestin cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">624500</obo:CLO_0037244>
-        <obo:IAO_0000119>https://www.discoverx.com/products/cell-line/cho-k1-drd3-beta-arrestin-cell-line-93-0591c2</obo:IAO_0000119>
-        <rdfs:seeAlso>BAO: BAO_0030057</rdfs:seeAlso>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <cellline:definition>A PathHunter Beta-Arrestin GPCR cell line (DiscoverX), engineered to co-express the ProLink (PK) tagged GPCR (human DRD3) and the Enzyme Acceptor (EA) tagged Beta-Arrestin. Activation of DRD3-PK induces Beta-Arrestin-EA recruitment, forcing complementation of the two Beta-galactosidase enzyme fragments (EA and PK). The resulting functional enzyme hydrolyzes substrate to generate a chemiluminescent signal.</cellline:definition>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037268 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037268">
-        <rdfs:label xml:lang="en">RAW-Blue cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">652166</obo:CLO_0037244>
-        <rdfs:seeAlso>BAO: BAO_0030060</rdfs:seeAlso>
-        <obo:IAO_0000119>http://www.invivogen.com/raw-blue</obo:IAO_0000119>
-        <rdfs:seeAlso>RRID:CVCL_X594</rdfs:seeAlso>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <obo:IAO_0000119>http://web.expasy.org/cellosaurus/CVCL_X594</obo:IAO_0000119>
-        <cellline:definition>RAW-Blue cells are derived from the murine RAW 264.7 macrophages with chromosomal integration of a secreted embryonic alkaline phosphatase (SEAP) reporter construct inducible by NF-κB and AP-1.</cellline:definition>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037269 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037269">
-        <rdfs:label xml:lang="en">S16 cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">624032</obo:CLO_0037244>
-        <cellline:definition>A rat immortilized Schwann cell line.</cellline:definition>
-        <rdfs:seeAlso>RRID:CVCL_B072</rdfs:seeAlso>
-        <efo:alternative_term>S-16 cell</efo:alternative_term>
-        <rdfs:seeAlso>BAO: BAO_0030061</rdfs:seeAlso>
-        <obo:IAO_0000119>http://purl.obolibrary.org/obo/BTO_0002937</obo:IAO_0000119>
-        <obo:IAO_0000119>http://web.expasy.org/cellosaurus/CVCL_B072</obo:IAO_0000119>
-        <rdfs:seeAlso>BTO: BTO_0002937</rdfs:seeAlso>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037270 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037270">
-        <rdfs:label xml:lang="en">SW1 cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1355</obo:CLO_0037244>
-        <rdfs:seeAlso>BAO: BAO_0030062</rdfs:seeAlso>
-        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pubmed/2832058/</obo:IAO_0000119>
-        <cellline:definition>A mouse melanoma cell line (which harbors N-Ras mutation), isolated from a small amelanotic lung metastasis in a mouse
-with a s.c. K-1735 tumor.</cellline:definition>
-        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3158838/</obo:IAO_0000119>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037271 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037271">
-        <rdfs:label xml:lang="en">Tango cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">485366</obo:CLO_0037244>
-        <obo:IAO_0000119>https://pdspdb.unc.edu/prestotango/</obo:IAO_0000119>
-        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pubmed/18165312</obo:IAO_0000119>
-        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pubmed/25895059</obo:IAO_0000119>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <cellline:definition>&#39;Tango cell&#39; refers to one of many stable cell lines, all based on the parental line HEK293T, designed to work in a &#39;Tango beta-arrestin&#39; recruitiment assay to measure receptor activation for more than 300 GPCRs.  See PMID25895059 and https://pdspdb.unc.edu/prestotango/</cellline:definition>
-        <rdfs:seeAlso>BTO: BAO_0030063</rdfs:seeAlso>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037272 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037272">
-        <rdfs:label xml:lang="en">TMD8 cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">651712</obo:CLO_0037244>
-        <cellline:definition>Human diffuse large B cell lymphoma cell line derived from a 62-year-old male patient</cellline:definition>
-        <rdfs:seeAlso>BAO: BAO_0030064</rdfs:seeAlso>
-        <obo:IAO_0000119>http://www.ebi.ac.uk/efo/EFO_0006496</obo:IAO_0000119>
-        <rdfs:seeAlso>RRID:CVCL_A442</rdfs:seeAlso>
-        <obo:IAO_0000119>http://web.expasy.org/cellosaurus/CVCL_A442</obo:IAO_0000119>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CLO_0037276 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037276">
-        <rdfs:label xml:lang="en">U87-EGFRvIII cell</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:CLO_0037244 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">504935</obo:CLO_0037244>
-        <cellline:definition>U87-EGFRvIII (aka U87/vIII) is a stable cell line derived from U87MG (a human glioblastoma) to overexpress the most common mutation of epidermal growth factor receptor (EGFR) found in human glioblastomas--an in-frame deletion of an 801-bp sequence in the extracellular domain of EGFR termed EGFRvIII. (descr. in PMID 15548697).</cellline:definition>
-        <rdfs:seeAlso>BAO: BAO_0030059</rdfs:seeAlso>
-        <efo:alternative_term>U87/vIII</efo:alternative_term>
-        <cellline:definition_editor>BAO, YH</cellline:definition_editor>
-        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pubmed/15548697/</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     

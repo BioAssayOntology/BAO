@@ -1,0 +1,48 @@
+BAO 2.3.1
+Total Classes: 2064
+Duplicate Classes: 0
+Duplicate Annotation Count
+IAO_0000115 : 0
+IAO_0000116 : 0
+IAO_0000119 : 24
+IAO_0000118 : 11
+comment : 0
+label : 3
+
+
+BAO 2.3.2 (Provisional)
+Total Classes: 2051
+Duplicate Classes: 0
+Duplicate Annotation Count
+IAO_0000115 : 0
+IAO_0000116 : 0
+IAO_0000119 : 24
+IAO_0000118 : 11
+comment : 0
+label : 3
+
+
+Only in version 2.3.2
+--------------------------------------
+Only in version 2.3.1
+BAO_0190007
+BAO_0190006
+BAO_0190005
+BAO_0190004
+--------Highest Value-----------------
+0003910
+0010025
+0020004
+0030011
+0040024
+0050003
+0080024
+0110002
+0120003
+0140043
+0150091
+0165001
+0170032
+0180024
+0190003
+0700004
