@@ -36,7 +36,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>1 Dec 2017</dc:date>
+        <dc:date>6 Dec 2017</dc:date>
     </owl:Ontology>
 
 
@@ -1785,236 +1785,181 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0010026 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010026">
-		<rdfs:label rdf:datatype="&xsd;string">assay purpose</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000520"/>
-		<obo:IAO_0000115>The reason for performing the assay</obo:IAO_0000115>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0010027 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010027">
-		<rdfs:label rdf:datatype="&xsd;string">assay short title</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000520"/>
-		<obo:IAO_0000115>A shortened name of an assay, often abbreviated from the full title to fit within a limited number of characters</obo:IAO_0000115>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0010028 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010028">
-		<rdfs:label rdf:datatype="&xsd;string">DNA-small molecule interaction assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
-		<obo:IAO_0000115>An interaction between DNA (single- or double-stranded) and a small molecule (e.g., hormone, organic compound with a low molecular weight (&lt;800 Da)).</obo:IAO_0000115>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0010029 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010029">
-		<rdfs:label rdf:datatype="&xsd;string">RNA-small molecule interaction assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
-		<obo:IAO_0000115>An interaction between any RNA (such as mRNA, tRNA, rRNA, miRNA, lincRNA, synthetic RNA) and a small molecule (e.g., hormone, organic compound with a low molecular weight (&lt;800 Da)).</obo:IAO_0000115>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0010030 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010030">
-		<rdfs:label rdf:datatype="&xsd;string">viral titer assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
-		<obo:IAO_0000115>A titer (or titre) is a measure of concentration. A viral titer assay is any method to quantify the number of viruses in a specific volume. Common methods include a plaque formation assay (PFA), focus forming assay (FFA), which yield results of plaque or focus forming units per ml (pfu or ffu/ ml), or endpoint dilution assay (TCID50, which measures the amount of virus needed to kill 50% 0of infected hosts or cells).  TCID50 and pfu/ml results are not equivalent.</obo:IAO_0000115>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0010031 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010031">
-		<rdfs:label rdf:datatype="&xsd;string">protein profiling assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0010032 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010032">
-		<rdfs:label rdf:datatype="&xsd;string">parallel artificial membrane permeability assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
-		<obo:IAO_0000115>PAMPA (parallel artificial membrane permeability assay) is a method which determines the permeability of substances from a donor compartment, through a lipid-infused artificial membrane into an acceptor compartment. It is used as an in vitro model of passive, transcellular permeation to predict oral absorption. PAMPA is an alternative to the cell-based Caco-2 permeability assay: Caco-2 uses compartments of different volumes separated by a monolayer of cells grown on a filter. PAMPA, however, uses chambers of the same size, separated by a filter coated with lipid in organic solvent.</obo:IAO_0000115>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0010033 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010033">
 		<rdfs:label rdf:datatype="&xsd;string">protein profiling assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000115>Protein profiling assays can be used to identify and quantify proteins together with their post-translational modifications</obo:IAO_0000115>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0010034 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0010027 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010034">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010027">
 		<rdfs:label rdf:datatype="&xsd;string">shotgun MS protein profiling assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010033"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010026"/>
 		<obo:IAO_0000115>An assay that is used to identify in a data-dependent mode proteins by combining the HPLC and MS methods. It is also known as liquid chromatography-coupled tandem mass spectrometry (LC-MS)</obo:IAO_0000115>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0010035 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0010028 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010035">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010028">
 		<rdfs:label rdf:datatype="&xsd;string">SWATH MS protein profiling assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010033"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010026"/>
 		<obo:IAO_0000115>Sequential window acquisition of all theoretical mass spectra (SWATH) MS is a mass spectrometrical method thatcouples data-independent acquisition is coupled with peptide spectral library match</obo:IAO_0000115>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0010036 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0010029 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010036">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010029">
 		<rdfs:label rdf:datatype="&xsd;string">P100 protein profiling assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010033"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010026"/>
 		<obo:IAO_0000115>A targeted phosphoproteomic assay that uses a data-driven approach to identify and quantify a set of 96 phosphopeptide probes</obo:IAO_0000115>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0010037 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0010030 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010037">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010030">
 		<rdfs:label rdf:datatype="&xsd;string">RPPA protein profiling assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010033"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010026"/>
 		<obo:IAO_0000115>Reverse phase protein array (RPPA) is a an assay that measures multiple protein expression levels in a large number of biological samples simultaneously using high quality antibodies</obo:IAO_0000115>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0010038 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0010031 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010038">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010031">
 		<rdfs:label rdf:datatype="&xsd;string">epigenetic assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000115>Epigenetic assays that can be used to identify epigenome modifications together with the epigenetic enzymes that regulate it. The epigenetic assays are split in two categories: targeted epigenetic assays and epigenetic profiling assays depending on whether they are used to identify a modifications on a global scale or only measure and identify a predetermined list of targets</obo:IAO_0000115>
 	</owl:Class>
 
+	<!-- http://www.bioassayontology.org/bao#BAO_0010032 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010032">
+		<rdfs:label rdf:datatype="&xsd;string">targeted epigenetic assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010031"/>
+		<obo:IAO_0000115>Assays that measure a targeted and predetermined subset of the epigenetic modifications in a cell</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010033 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010033">
+		<rdfs:label rdf:datatype="&xsd;string">Acetylated histone assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010032"/>
+		<obo:IAO_0000115>An assay that quantifies the levels of the acetylated histones in a cell. Acetylated histones are involved in the regulation of chromatin structure and thetranscription factor recruitment</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010034 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010034">
+		<rdfs:label rdf:datatype="&xsd;string">Methylated histone assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010032"/>
+		<obo:IAO_0000115>An assay that quantifies the levels of the methylated histones in a cell</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010035 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010035">
+		<rdfs:label rdf:datatype="&xsd;string">ChIP-seq assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010032"/>
+		<obo:IAO_0000115>An assay that identifies genome-wide DNA binding sites for transcription factors and other proteins</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010036 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010036">
+		<rdfs:label rdf:datatype="&xsd;string">Epigenetic profiling assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010031"/>
+		<obo:IAO_0000115>Assays that are used to capture the genome-wide epigenetic modifications in a cell</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010037 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010037">
+		<rdfs:label rdf:datatype="&xsd;string">Bisulfite Sequencing assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010036"/>
+		<obo:IAO_0000115>An assay that is used to determine themethylation marks in a cells genome</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010038 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010038">
+		<rdfs:label rdf:datatype="&xsd;string">ATAC-seq epigenetic assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010036"/>
+		<obo:IAO_0000115>ATAC-seq (assay for transposase-accessible chromatin using sequencing) is an assay that identifies open-chromatin sites on the whole genome level by using theTn5 transposase, which inserts sequencing adapters into accessible regions of chromatin</obo:IAO_0000115>
+	</owl:Class>
+
 	<!-- http://www.bioassayontology.org/bao#BAO_0010039 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010039">
-		<rdfs:label rdf:datatype="&xsd;string">targeted epigenetic assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010038"/>
-		<obo:IAO_0000115>Assays that measure a targeted and predetermined subset of the epigenetic modifications in a cell</obo:IAO_0000115>
+		<rdfs:label rdf:datatype="&xsd;string">Global chromatin epigenetic profiling assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010036"/>
+		<obo:IAO_0000115>A mass spectrometry-based assay that is used to identify and quantify post-translational modifications on histone proteins from bulk chromatin</obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010040 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010040">
-		<rdfs:label rdf:datatype="&xsd;string">Acetylated histone assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010039"/>
-		<obo:IAO_0000115>An assay that quantifies the levels of the acetylated histones in a cell. Acetylated histones are involved in the regulation of chromatin structure and thetranscription factor recruitment</obo:IAO_0000115>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0010041 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010041">
-		<rdfs:label rdf:datatype="&xsd;string">Methylated histone assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010039"/>
-		<obo:IAO_0000115>An assay that quantifies the levels of the methylated histones in a cell</obo:IAO_0000115>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0010042 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010042">
-		<rdfs:label rdf:datatype="&xsd;string">ChIP-seq assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010039"/>
-		<obo:IAO_0000115>An assay that identifies genome-wide DNA binding sites for transcription factors and other proteins</obo:IAO_0000115>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0010043 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010043">
-		<rdfs:label rdf:datatype="&xsd;string">Epigenetic profiling assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010038"/>
-		<obo:IAO_0000115>Assays that are used to capture the genome-wide epigenetic modifications in a cell</obo:IAO_0000115>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0010044 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010044">
-		<rdfs:label rdf:datatype="&xsd;string">Bisulfite Sequencing assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010043"/>
-		<obo:IAO_0000115>An assay that is used to determine themethylation marks in a cells genome</obo:IAO_0000115>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0010045 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010045">
-		<rdfs:label rdf:datatype="&xsd;string">ATAC-seq epigenetic assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010043"/>
-		<obo:IAO_0000115>ATAC-seq (assay for transposase-accessible chromatin using sequencing) is an assay that identifies open-chromatin sites on the whole genome level by using theTn5 transposase, which inserts sequencing adapters into accessible regions of chromatin</obo:IAO_0000115>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0010046 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010046">
-		<rdfs:label rdf:datatype="&xsd;string">Global chromatin epigenetic profiling assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010043"/>
-		<obo:IAO_0000115>A mass spectrometry-based assay that is used to identify and quantify post-translational modifications on histone proteins from bulk chromatin</obo:IAO_0000115>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0010047 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010047">
 		<rdfs:label rdf:datatype="&xsd;string">metabolomic assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000115>Assays that identify and quantify cell metabolites (metabolic analytes)</obo:IAO_0000115>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0010048 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0010041 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010048">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010041">
 		<rdfs:label rdf:datatype="&xsd;string">Targeted Metabolomic assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010047"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010040"/>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0010049 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0010042 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010049">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010042">
 		<rdfs:label rdf:datatype="&xsd;string">Metabolomic Profiling assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010047"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010040"/>
 		<obo:IAO_0000115>Assays that profile key metabolomic parameters</obo:IAO_0000115>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0010050 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0010043 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010050">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010043">
 		<rdfs:label rdf:datatype="&xsd;string">Cellarium Metabolomic Profiling Assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010049"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010042"/>
 		<obo:IAO_0000115> A high throughput live-cell microarray screening assay that is used to detect metabolic analytes such as oxygen, pH and glucose at the single-cell level</obo:IAO_0000115>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0010051 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0010044 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010051">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010044">
 		<rdfs:label rdf:datatype="&xsd;string">targeted transcriptional assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#-"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000115>Assays that quantify the expression of a predetermined RNA transcript / set of transcripts</obo:IAO_0000115>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0010052 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0010045 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010052">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010045">
 		<rdfs:label rdf:datatype="&xsd;string">RNA-seq gene expression profiling assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002995"/>
 		<obo:IAO_0000115>An assay that uses NGS (Next Generation Sequencing) to quantify the expression of the entire RNA transcripts in a cell / cell population</obo:IAO_0000115>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0010053 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0010046 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010053">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010046">
 		<rdfs:label rdf:datatype="&xsd;string">L1000 mRNA profiling assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002995"/>
 		<obo:IAO_0000115>L1000 is a bead-based, high-throughput gene expression assay in which cultured cells are treated with various chemical and genetic perturbations and the corresponding transcriptional responses are measured</obo:IAO_0000115>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0010054 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0010047 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010054">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010047">
 		<rdfs:label rdf:datatype="&xsd;string">Nanostring</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002995"/>
 		<obo:IAO_0000115>An assay that uses barcoded hybridization probes to quantify the expression of RNA transcripts</obo:IAO_0000115>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0010055 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0010048 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010055">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010048">
 		<rdfs:label rdf:datatype="&xsd;string">Microarray</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002995"/>
 		<obo:IAO_0000115>An array based method that simultaneously measures the expression of tens of thousands of RNA transcripts</obo:IAO_0000115>

@@ -36,7 +36,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>1 Dec 2017</dc:date>
+        <dc:date>6 Dec 2017</dc:date>
     </owl:Ontology>
 
 
@@ -155,14 +155,14 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0190007">
 		<rdfs:label rdf:datatype="&xsd;string">cells per well</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/UO#UO_0000200"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000200"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0190008 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0190008">
 		<rdfs:label rdf:datatype="&xsd;string">cells per microliter</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.org/obo/owl/UO#UO_0000200"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000200"/>
 	</owl:Class>
 
 </rdf:RDF>

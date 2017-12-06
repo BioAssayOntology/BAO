@@ -36,7 +36,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>1 Dec 2017</dc:date>
+        <dc:date>6 Dec 2017</dc:date>
     </owl:Ontology>
 
 
@@ -2250,84 +2250,47 @@ microarray, bead based method or RNASeq.</obo:IAO_0000115>
 	<!-- http://www.bioassayontology.org/bao#BAO_0040025 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040025">
-		<rdfs:label rdf:datatype="&xsd;string">data collection method</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002429"/>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0040026 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040026">
-		<rdfs:label rdf:datatype="&xsd;string">endpoint correction present</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000419"/>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0040027 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040027">
-		<rdfs:label rdf:datatype="&xsd;string">endpoint correction absent</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000419"/>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0040028 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040028">
-		<rdfs:label rdf:datatype="&xsd;string">cell population</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040025"/>
-		<obo:IAO_0000115>A data collection method that entails measurements of an entire population of cells.</obo:IAO_0000115>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0040029 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040029">
-		<rdfs:label rdf:datatype="&xsd;string">single-cell </rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040025"/>
-		<obo:IAO_0000115>A data collection method that entails measurements from only a single cell.</obo:IAO_0000115>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0040030 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040030">
 		<rdfs:label rdf:datatype="&xsd;string">chemiluminescent labeling method</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002452"/>
 		<obo:IAO_0000115>A method that uses chemilumiscence to quantify the labeled entity. For this, an enzyme converts a substrate to a  product that emits photons of light</obo:IAO_0000115>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0040031 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0040026 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040031">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040026">
 		<rdfs:label rdf:datatype="&xsd;string">dna-seq method</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002447"/>
 		<obo:IAO_0000115>A method that is used to identify the precise order/sequence of the nucleotides in a dna molecule by using the shotgun method in which DNA is fragmented and then the individual frgaments are sequenced</obo:IAO_0000115>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0040032 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0040027 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040032">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040027">
 		<rdfs:label rdf:datatype="&xsd;string">chromatin acessibility method</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002202"/>
 		<obo:IAO_0000115>A method that is used to identify open / accessible genomic sites of remodeled chromatin</obo:IAO_0000115>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0040033 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0040028 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040033">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040028">
 		<rdfs:label rdf:datatype="&xsd;string">metabolite abundance method</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040011"/>
 		<obo:IAO_0000115>A method that is used to quantify various cell metabolites or metabolism-related analytes (e.g. O2, glucose, pH)</obo:IAO_0000115>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0040034 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0040029 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040034">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040029">
 		<rdfs:label rdf:datatype="&xsd;string">epigenetic modification detection method</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002202"/>
 	</owl:Class>
 
-	<!-- http://www.bioassayontology.org/bao#BAO_0040035 -->
+	<!-- http://www.bioassayontology.org/bao#BAO_0040030 -->
 
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040035">
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040030">
 		<rdfs:label rdf:datatype="&xsd;string">transcription factor occupancy</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040032"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040027"/>
 		<obo:IAO_0000115>A method that is used to identify the DNA regions that are being occupied by a predefined transcriptional factor(s)</obo:IAO_0000115>
 	</owl:Class>
 
