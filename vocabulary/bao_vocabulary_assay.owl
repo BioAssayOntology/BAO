@@ -29,14 +29,14 @@
         <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
 
 contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
-        <owl:versionInfo>2.3.2</owl:versionInfo>
+        <owl:versionInfo>2.4</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>6 Feb 2018</dc:date>
+        <dc:date>8 Feb 2018</dc:date>
     </owl:Ontology>
 
 
@@ -659,9 +659,10 @@ citesForInformation or citeAsSourceData some DOI or PMID</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0000684 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000684">
-		<rdfs:label rdf:datatype="&xsd;string">physicochemical profiling assay</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">artifact assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000803"/>
 		<obo:IAO_0000115>Compound profiling assays are performed with the primary purpose of providing information that is of general interest to interpreting HTS results or relevant physicochemical properties; for example in the context of identifying possible assay artifacts.  Examples include fluorescence, or inhibition of the enzyme luciferase that are part of common assay designs; another example is solubility. Compound profiling is categorized as stage, because it refers to the purpose of the assay. Profiling assays are typically independent from a screening campaign. Profiling assays performed as part of a campaign (on a limited set of compounds) would be considered secondary (typically counter screen) assays.</obo:IAO_0000115>
+		<obo:IAO_0000118>physicochemical profiling assay</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000803 -->
@@ -1841,7 +1842,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0010033 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010033">
-		<rdfs:label rdf:datatype="&xsd;string">Acetylated histone assay</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">acetylated histone assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010032"/>
 		<obo:IAO_0000115>An assay that quantifies the levels of the acetylated histones in a cell. Acetylated histones are involved in the regulation of chromatin structure and thetranscription factor recruitment</obo:IAO_0000115>
 	</owl:Class>
@@ -1849,7 +1850,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0010034 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010034">
-		<rdfs:label rdf:datatype="&xsd;string">Methylated histone assay</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">methylated histone assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010032"/>
 		<obo:IAO_0000115>An assay that quantifies the levels of the methylated histones in a cell</obo:IAO_0000115>
 	</owl:Class>
@@ -1865,7 +1866,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0010036 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010036">
-		<rdfs:label rdf:datatype="&xsd;string">Epigenetic profiling assay</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">epigenetic profiling assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010031"/>
 		<obo:IAO_0000115>Assays that are used to capture the genome-wide epigenetic modifications in a cell</obo:IAO_0000115>
 	</owl:Class>
@@ -1881,7 +1882,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0010038 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010038">
-		<rdfs:label rdf:datatype="&xsd;string">ATAC-seq epigenetic assay</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">ATAC-seq epigenetic profiling assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010036"/>
 		<obo:IAO_0000115>ATAC-seq (assay for transposase-accessible chromatin using sequencing) is an assay that identifies open-chromatin sites on the whole genome level by using theTn5 transposase, which inserts sequencing adapters into accessible regions of chromatin</obo:IAO_0000115>
 	</owl:Class>
@@ -1889,7 +1890,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0010039 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010039">
-		<rdfs:label rdf:datatype="&xsd;string">Global chromatin epigenetic profiling assay</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">global chromatin epigenetic profiling assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010036"/>
 		<obo:IAO_0000115>A mass spectrometry-based assay that is used to identify and quantify post-translational modifications on histone proteins from bulk chromatin</obo:IAO_0000115>
 	</owl:Class>
@@ -1905,14 +1906,14 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0010041 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010041">
-		<rdfs:label rdf:datatype="&xsd;string">Targeted Metabolomic assay</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">targeted metabolomic assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010040"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010042 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010042">
-		<rdfs:label rdf:datatype="&xsd;string">Metabolomic Profiling assay</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">metabolomic profiling assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010040"/>
 		<obo:IAO_0000115>Assays that profile key metabolomic parameters</obo:IAO_0000115>
 	</owl:Class>
@@ -1920,7 +1921,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0010043 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010043">
-		<rdfs:label rdf:datatype="&xsd;string">Cellarium Metabolomic Profiling Assay</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">Cellarium metabolomic profiling assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010042"/>
 		<obo:IAO_0000115> A high throughput live-cell microarray screening assay that is used to detect metabolic analytes such as oxygen, pH and glucose at the single-cell level</obo:IAO_0000115>
 	</owl:Class>

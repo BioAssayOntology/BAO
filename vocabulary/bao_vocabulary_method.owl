@@ -29,14 +29,14 @@
         <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
 
 contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
-        <owl:versionInfo>2.3.2</owl:versionInfo>
+        <owl:versionInfo>2.4</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>6 Feb 2018</dc:date>
+        <dc:date>8 Feb 2018</dc:date>
     </owl:Ontology>
 
 
@@ -1968,7 +1968,6 @@ microarray, bead based method or RNASeq.</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003025">
 		<rdfs:label rdf:datatype="&xsd;string">phosphoprotein-specific antibody-coated bead based method</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002013"/>
-		<obo:IAO_0000115>It is a high-throughput gene expression signature analysis tailored for the measurement of up to 1000 transcripts in many thousands of samples by combining multiplex ligation-mediated amplication with the Luminex FlexMAP(Luminex, Austin, TX, USA) optically addressed and barcoded microsphere and flow cytometric detection system, that is referred to as LMF. (Reference: &apos;A method for high-throughput gene expression signature analysis&apos; , David Peck et al., 2006) </obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003026 -->
