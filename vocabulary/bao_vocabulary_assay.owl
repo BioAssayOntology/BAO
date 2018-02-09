@@ -36,7 +36,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>8 Feb 2018</dc:date>
+        <dc:date>9 Feb 2018</dc:date>
     </owl:Ontology>
 
 
@@ -661,8 +661,9 @@ citesForInformation or citeAsSourceData some DOI or PMID</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000684">
 		<rdfs:label rdf:datatype="&xsd;string">artifact assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000803"/>
-		<obo:IAO_0000115>Compound profiling assays are performed with the primary purpose of providing information that is of general interest to interpreting HTS results or relevant physicochemical properties; for example in the context of identifying possible assay artifacts.  Examples include fluorescence, or inhibition of the enzyme luciferase that are part of common assay designs; another example is solubility. Compound profiling is categorized as stage, because it refers to the purpose of the assay. Profiling assays are typically independent from a screening campaign. Profiling assays performed as part of a campaign (on a limited set of compounds) would be considered secondary (typically counter screen) assays.</obo:IAO_0000115>
+		<obo:IAO_0000115>Artifact (aka &apos;artefact&apos;) assays are performed to help interpret HTS results by testing whether a &apos;hit&apos; might be due to some inherent physicochemical property of the compound or perturbagen alone - in the absence of any target. Examples include fluorescence, or inhibition of the enzyme luciferase, which are part of common assay designs; another example is solubility (e.g., if a compound aggregates and interferes with an assay readout).</obo:IAO_0000115>
 		<obo:IAO_0000118>physicochemical profiling assay</obo:IAO_0000118>
+		<obo:IAO_0000118>artefact assay</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000803 -->
