@@ -25,7 +25,7 @@
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_unit.owl">
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_unit.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
 
 contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
@@ -36,7 +36,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>9 Feb 2018</dc:date>
+        <dc:date>1 Mar 2018</dc:date>
     </owl:Ontology>
 
 

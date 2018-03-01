@@ -68,7 +68,7 @@ mailing list: http://groups.google.com/group/sio-ontology
 role chains:
 &apos;has capability&apos; o &apos;is realized in&apos; -&gt; &apos;is participant in&apos;</rdfs:comment>
         <dc:rights>use,share,modify,commercial;
-by attribution [http://creativecommons.org/licenses/by/3.0/].</dc:rights>
+by attribution [https://creativecommons.org/licenses/by-sa/4.0/].</dc:rights>
         <owl:versionIRI rdf:resource="http://bioassayontology.org/bao/external/bao_gpcr_v1.1_sio_import.owl"/>
     </owl:Ontology>
     

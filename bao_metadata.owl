@@ -20,7 +20,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_metadata.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </owl:Ontology>
     
 

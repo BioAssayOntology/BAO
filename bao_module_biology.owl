@@ -26,7 +26,7 @@
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#"
      xmlns:bao="http://www.bioassayontology.org/bao#">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_module_biology.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_function.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_phenotype.owl"/>
@@ -73,7 +73,7 @@
      -->
 
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_metadata.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
 </rdf:RDF>
 

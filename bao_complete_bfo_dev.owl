@@ -31,7 +31,7 @@ Feb 4th 2014</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://bfo.googlecode.com/svn/trunk/src/ontology/owl-group/specification/"/>
         <rdfs:seeAlso rdf:resource="http://bfo.googlecode.com/svn/trunk/src/tools/"/>
         <foaf:homepage rdf:resource="http://code.google.com/p/bfo/"/>
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <rdfs:seeAlso rdf:resource="http://goo.gl/bIlrEE"/>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>
@@ -23381,7 +23381,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_screenedentity.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0003473">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
@@ -23859,7 +23859,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_instrument.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0003421">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
@@ -24161,7 +24161,7 @@ Feb 4th 2014</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&obo;go#gocheck_do_not_annotate"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao-bfo.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0011238">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
@@ -24454,7 +24454,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;chebi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_unit.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0011222">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
@@ -77471,7 +77471,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;chebi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_method.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;CLO_0003704">
         <obo:IAO_0000412 rdf:resource="&obo;clo.owl"/>
@@ -78155,7 +78155,7 @@ Feb 4th 2014</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&obo;uberon/core#vertebrate_core"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_core.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0000981">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
@@ -78835,7 +78835,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0002530">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
@@ -79233,7 +79233,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;chebi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_materialentity.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_4552">
         <obo:IAO_0000412 rdf:resource="&obo;doid.owl"/>
@@ -79964,7 +79964,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_format.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;CHEBI_39316">
         <obo:IAO_0000412 rdf:resource="&obo;chebi.owl"/>
@@ -80057,13 +80057,13 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_ro.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0009695">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_function.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0001808">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
@@ -80122,7 +80122,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_properties.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;CHEBI_60901">
         <obo:IAO_0000412 rdf:resource="&obo;chebi.owl"/>
@@ -80164,7 +80164,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_module_vocabularies.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0010338">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
@@ -80803,7 +80803,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;chebi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_metadata.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;CHEBI_72470">
         <obo:IAO_0000412 rdf:resource="&obo;chebi.owl"/>
@@ -81209,7 +81209,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0003859">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
@@ -81377,7 +81377,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_computational.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0003075">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
@@ -81996,7 +81996,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_phenotype.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0004178">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
@@ -82439,7 +82439,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;chebi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_software.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0008787">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
@@ -82908,7 +82908,7 @@ Feb 4th 2014</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_module_biology.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000186">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
@@ -83749,7 +83749,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_detection.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0001669">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
@@ -84427,7 +84427,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;chebi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_quality.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;CHEBI_27780">
         <obo:IAO_0000412 rdf:resource="&obo;chebi.owl"/>
@@ -85928,7 +85928,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0010930">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
@@ -86660,7 +86660,7 @@ Feb 4th 2014</rdfs:comment>
         <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_organization.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;CHEBI_50218">
         <obo:IAO_0000412 rdf:resource="&obo;chebi.owl"/>
@@ -96802,7 +96802,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:RO_0001900 rdf:resource="&obo;RO_0001901"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao+external.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0005129">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
@@ -96856,7 +96856,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_module_properties.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_1422">
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
@@ -97269,7 +97269,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;CHEBI_64909">
         <obo:IAO_0000412 rdf:resource="&obo;chebi.owl"/>
@@ -97677,7 +97677,7 @@ Feb 4th 2014</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_role.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0002262">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>

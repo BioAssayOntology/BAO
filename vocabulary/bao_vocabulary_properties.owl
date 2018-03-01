@@ -29,7 +29,7 @@
 
 contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
         <owl:versionInfo>2.1</owl:versionInfo>
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_metadata.owl"/>
     </owl:Ontology>
     

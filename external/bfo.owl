@@ -40,7 +40,7 @@
         <rdfs:isDefinedBy rdf:resource="http://bfo.googlecode.com/svn/trunk/src/ontology/owl-group/specification/"/>
         <rdfs:seeAlso rdf:resource="http://bfo.googlecode.com/svn/trunk/src/tools/"/>
         <foaf:homepage rdf:resource="http://code.google.com/p/bfo/"/>
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <rdfs:seeAlso rdf:resource="http://goo.gl/bIlrEE"/>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-devel"/>
         <rdfs:seeAlso rdf:resource="http://groups.google.com/group/bfo-discuss"/>

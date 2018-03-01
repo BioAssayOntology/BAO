@@ -33,7 +33,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_complete.owl"/>
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_core.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_external.owl"/>
@@ -6198,76 +6198,76 @@ stephan dot schurer at gmail dot com</rdfs:comment>
      -->
 
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_ro.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_computational.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_metadata.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_format.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_people.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_function.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_method.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_phenotype.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_module_biology.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_software.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_properties.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_screenedentity.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_instrument.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_detection.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_unit.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_materialentity.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_organization.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_role.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_module_properties.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_quality.owl">
-        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
     </rdf:Description>
     
 
