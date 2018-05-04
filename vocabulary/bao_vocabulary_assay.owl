@@ -36,7 +36,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>1 Mar 2018</dc:date>
+        <dc:date>4 May 2018</dc:date>
     </owl:Ontology>
 
 
@@ -1972,6 +1972,128 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010049">
 		<rdfs:label rdf:datatype="&xsd;string">Microwestern</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010026"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010050 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010050">
+		<rdfs:label rdf:datatype="&xsd;string">Bead-based immunoassay for protein state</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003005"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010051 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010051">
+		<rdfs:label rdf:datatype="&xsd;string">ELISA protein secretion profiling assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003003"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010052 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010052">
+		<rdfs:label rdf:datatype="&xsd;string">ELISA protein state assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003005"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010026"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010053 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010053">
+		<rdfs:label rdf:datatype="&xsd;string">Fluorescence imaging apoptosis assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002043"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010054 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010054">
+		<rdfs:label rdf:datatype="&xsd;string">Fluorescence imaging cell count assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002805"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010055 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010055">
+		<rdfs:label rdf:datatype="&xsd;string">Fluorescence imaging cell cycle state assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002786"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010056 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010056">
+		<rdfs:label rdf:datatype="&xsd;string">Fluorescence imaging cell growth inhibition assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010057 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010057">
+		<rdfs:label rdf:datatype="&xsd;string">Fluorescence imaging morphology assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002991"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010058 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010058">
+		<rdfs:label rdf:datatype="&xsd;string">Fluorescence imaging multiplex cytological profiling assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002991"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010059 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010059">
+		<rdfs:label rdf:datatype="&xsd;string">Fluorescence imaging protein state assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003005"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010060 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010060">
+		<rdfs:label rdf:datatype="&xsd;string">MEMA cell growth assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002991"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002100"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003009"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010061 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010061">
+		<rdfs:label rdf:datatype="&xsd;string">MS protein quantification assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010062 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010062">
+		<rdfs:label rdf:datatype="&xsd;string">MS protein state assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010063 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010063">
+		<rdfs:label rdf:datatype="&xsd;string">P100 phosphoprotein quantification assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010064 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010064">
+		<rdfs:label rdf:datatype="&xsd;string">RNA-seq gene expression profiling assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010065 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010065">
+		<rdfs:label rdf:datatype="&xsd;string">RPPA protein state assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010066 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010066">
+		<rdfs:label rdf:datatype="&xsd;string">SWATH-MS protein quantification assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#"/>
 	</owl:Class>
 
 </rdf:RDF>
