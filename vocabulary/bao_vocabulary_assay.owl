@@ -2058,42 +2058,35 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010061">
 		<rdfs:label rdf:datatype="&xsd;string">MS protein quantification assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010027"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010062 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010062">
 		<rdfs:label rdf:datatype="&xsd;string">MS protein state assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010027"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010063 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010063">
 		<rdfs:label rdf:datatype="&xsd;string">P100 phosphoprotein quantification assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#"/>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0010064 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010064">
-		<rdfs:label rdf:datatype="&xsd;string">RNA-seq gene expression profiling assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010029"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010065 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010065">
 		<rdfs:label rdf:datatype="&xsd;string">RPPA protein state assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010030"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010066 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010066">
 		<rdfs:label rdf:datatype="&xsd;string">SWATH-MS protein quantification assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010028"/>
 	</owl:Class>
 
 </rdf:RDF>
