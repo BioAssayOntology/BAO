@@ -36,7 +36,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>4 May 2018</dc:date>
+        <dc:date>31 May 2018</dc:date>
     </owl:Ontology>
 
 
@@ -384,7 +384,7 @@ Percent viability = 100-percent cytotoxicity</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000260">
 		<rdfs:label rdf:datatype="&xsd;string">signal increase corresponding to activation</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000519"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080026"/>
 		<obo:IAO_0000115>Increase in perturbation (reported by the endpoint mode of action, activation) is correlated to increase in signal.</obo:IAO_0000115>
 	</owl:Class>
 
@@ -392,7 +392,7 @@ Percent viability = 100-percent cytotoxicity</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000261">
 		<rdfs:label rdf:datatype="&xsd;string">signal decrease corresponding to inhibition</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000519"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080025"/>
 		<obo:IAO_0000115>Increase in perturbation (reported by the endpoint mode of action, inhibition) is correlated to decrease in signal.</obo:IAO_0000115>
 	</owl:Class>
 
@@ -1346,7 +1346,7 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002152">
 		<rdfs:label rdf:datatype="&xsd;string">signal decrease corresponding to activation</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000519"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080025"/>
 		<obo:IAO_0000115>Increase in perturbation (reported by the endpoint mode of action, activation) is correlated to decrease in signal.</obo:IAO_0000115>
 	</owl:Class>
 
@@ -1354,7 +1354,7 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002153">
 		<rdfs:label rdf:datatype="&xsd;string">signal increase corresponding to inhibition</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000519"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080026"/>
 		<obo:IAO_0000115>Increase in perturbation (reported by the endpoint mode of action, inhibition) is correlated to increase in signal.</obo:IAO_0000115>
 	</owl:Class>
 
@@ -1904,6 +1904,20 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 449752</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 5/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>Any result reported as a simple binary assessment, such as &apos;active/ inactive&apos;, &apos;true/ false&apos;, etc.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080025 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080025">
+		<rdfs:label rdf:datatype="&xsd;string">signal decrease</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000519"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080026 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080026">
+		<rdfs:label rdf:datatype="&xsd;string">signal increase</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000519"/>
 	</owl:Class>
 
 </rdf:RDF>
