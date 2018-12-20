@@ -1396,6 +1396,20 @@ Other example for a counter assays a FRET assay when the primary assay used abso
         <rdfs:label xml:lang="en">has morphological phenotype</rdfs:label>
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0002859"/>
     </owl:ObjectProperty>
+	
+	<!-- http://www.bioassayontology.org/bao#BAO_0095007 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0095011">
+        <rdfs:label xml:lang="en">has positive control</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000740"/>
+    </owl:ObjectProperty>
+	
+	<!-- http://www.bioassayontology.org/bao#BAO_0095008 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0095012">
+        <rdfs:label xml:lang="en">has negative control</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000740"/>
+    </owl:ObjectProperty>
     
 
 

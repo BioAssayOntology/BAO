@@ -61,7 +61,7 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_narrow_synonym</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002604">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is opposite_of</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is opposite of</rdfs:label>
         <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RO:0002604</oboInOwl:hasDbXref>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_opposite_of</oboInOwl:id>
         <oboInOwl:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is_opposite_of</oboInOwl:shorthand>
@@ -456,6 +456,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000585">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypotrophic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000068"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000117"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000918"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A decreased size quality inhering in a bearer by virtue of the bearer&#39;s exhibiting reduced size of a cell or constituent group of cells (for example, organ).</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PATO:0000412</oboInOwl:hasAlternativeId>

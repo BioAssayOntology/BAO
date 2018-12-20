@@ -26,17 +26,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_instrument.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
-
-contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
-        <owl:versionInfo>2.4</owl:versionInfo>
+        <owl:versionInfo>2.5</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>31 May 2018</dc:date>
+        <dc:date>20 Dec 2018</dc:date>
     </owl:Ontology>
 
 
@@ -1442,6 +1439,34 @@ http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 623970</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0150092 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150092">
+		<rdfs:label rdf:datatype="&xsd;string">Velos-MS</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0150093 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150093">
+		<rdfs:label rdf:datatype="&xsd;string">NGS Instrument</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000698"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0150094 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150094">
+		<rdfs:label rdf:datatype="&xsd;string">Odyssey Plate Reader</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000699"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0150095 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150095">
+		<rdfs:label rdf:datatype="&xsd;string">Luminex 200 Flow Cytometer</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 </rdf:RDF>

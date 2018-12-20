@@ -26,17 +26,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
-
-contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
-        <owl:versionInfo>2.4</owl:versionInfo>
+        <owl:versionInfo>2.5</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>31 May 2018</dc:date>
+        <dc:date>20 Dec 2018</dc:date>
     </owl:Ontology>
 
 
@@ -141,7 +138,7 @@ The dissociation constant has molar units (M), which corresponds to the concentr
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000090">
 		<rdfs:label rdf:datatype="&xsd;string">cytotoxicity</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000091"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080004"/>
 		<obo:IAO_0000115>It is the toxic or cell-death inducing property of a perturbagen. Known cytotoxic agents mediate cell death commonly by necrosis, apoptosis, or autophagy. Cytotoxicity can be detected by measuring various aspects of the death process: e.g. membrane permeability, ATP concentration, DNA fragmentation, etc.</obo:IAO_0000115>
 	</owl:Class>
 
@@ -1027,7 +1024,7 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
 	<!-- http://www.bioassayontology.org/bao#BAO_0001491 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001491">
-		<rdfs:label rdf:datatype="&xsd;string">positive allosteric modulation’</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">positive allosteric modulation</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000489"/>
 	</owl:Class>
 
@@ -1753,7 +1750,7 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003910">
 		<rdfs:label rdf:datatype="&xsd;string">allosteric antagonism</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002902"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002903"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0080001 -->
@@ -1918,6 +1915,55 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080026">
 		<rdfs:label rdf:datatype="&xsd;string">signal increase</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000519"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080027 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080027">
+		<rdfs:label rdf:datatype="&xsd;string">protein level</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002136"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080028 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080028">
+		<rdfs:label rdf:datatype="&xsd;string">quantified endpoint</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080029 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080029">
+		<rdfs:label rdf:datatype="&xsd;string">quantified entity</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080028"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080030 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080030">
+		<rdfs:label rdf:datatype="&xsd;string">metabaloid profile</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002136"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080031 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080031">
+		<rdfs:label rdf:datatype="&xsd;string">Cell Painting Profile</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002136"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080032 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080032">
+		<rdfs:label rdf:datatype="&xsd;string">epigenetic profile</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002137"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080033 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080033">
+		<rdfs:label rdf:datatype="&xsd;string">cell profile</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002138"/>
 	</owl:Class>
 
 </rdf:RDF>

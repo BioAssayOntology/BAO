@@ -26,17 +26,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_software.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
-
-contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
-        <owl:versionInfo>2.4</owl:versionInfo>
+        <owl:versionInfo>2.5</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>31 May 2018</dc:date>
+        <dc:date>20 Dec 2018</dc:date>
     </owl:Ontology>
 
 

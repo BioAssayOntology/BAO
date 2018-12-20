@@ -19,22 +19,19 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/definition">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/organizational_class"/>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/WBls_definition_citation">
         <efo:WBls_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/WBls_definition_citation is an annotation property that is drawn from WBls</efo:WBls_definition_citation>
         <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation">
-        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation is an annotation property that is drawn from NCI_Thesaurus</efo:definition>
         <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation is an annotation property that is drawn from NCI_Thesaurus</efo:NCI_Thesaurus_definition_citation>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/NCI_Thesaurus_definition_citation is an annotation property that is drawn from NCI_Thesaurus</obo:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/reason_for_obsolescence"/>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/definition_citation">
-        <efo:definition>A definition citation is a document, ontology class, person or organization from which the definition of the class is derived. It is used in the same sense as a citation in literature, in that the definition may have been derived from these sources or that this definition is related to these source.</efo:definition>
+        <obo:IAO_0000115>A definition citation is a document, ontology class, person or organization from which the definition of the class is derived. It is used in the same sense as a citation in literature, in that the definition may have been derived from these sources or that this definition is related to these source.</obo:IAO_0000115>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/MSH_definition_citation">
         <efo:MSH_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/MESH_definition_citation is an annotation property that is drawn from MESH</efo:MSH_definition_citation>
@@ -48,11 +45,14 @@
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0100001">
         <rdfs:label>term replaced by</rdfs:label>
-        <efo:definition>Use on obsolete terms, relating the term to another term that can be used as a substitute
-
-Add as annotation triples in the granting ontology</efo:definition>
         <obo:IAO_0000117>Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000114>IAO_0000125</obo:IAO_0000114>
+        <obo:IAO_0000115>Use on obsolete terms, relating the term to another term that can be used as a substitute
+
+Add as annotation triples in the granting ontology</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
@@ -65,8 +65,8 @@ Add as annotation triples in the granting ontology</efo:definition>
         <rdfs:label>has curation status</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/FBdv_definition_citation">
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/FBdv_definition_citation is an annotation property that is drawn from FBdv</obo:IAO_0000115>
         <efo:FBdv_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/FBdv_definition_citation is an annotation property that is drawn from FBdv</efo:FBdv_definition_citation>
-        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/FBdv_definition_citation is an annotation property that is drawn from FBdv</efo:definition>
         <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/bioportal_provenance"/>
@@ -74,7 +74,7 @@ Add as annotation triples in the granting ontology</efo:definition>
         <rdfs:label>term editor</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/EVM_definition_citation">
-        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EVM_definition_citation is an annotation property that is drawn from EVM</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EVM_definition_citation is an annotation property that is drawn from EVM</obo:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/ZFS_definition_citation">
@@ -83,7 +83,7 @@ Add as annotation triples in the granting ontology</efo:definition>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/obsoleted_in_version"/>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/EV_definition_citation">
-        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EV_definition_citation is an annotation property that is drawn from EV</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EV_definition_citation is an annotation property that is drawn from EV</obo:IAO_0000115>
         <efo:EV_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.ebi.ac.uk/efo/EV_definition_citation is an annotation property that is drawn from EV</efo:EV_definition_citation>
         <rdfs:subPropertyOf rdf:resource="http://www.ebi.ac.uk/efo/definition_citation"/>
     </owl:AnnotationProperty>
@@ -97,7 +97,7 @@ Add as annotation triples in the granting ontology</efo:definition>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/alternative_term">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alternative_term</rdfs:label>
-        <efo:definition>An alternative label for a given entity such as a commonly used abbreviation or synonym. </efo:definition>
+        <obo:IAO_0000115>An alternative label for a given entity such as a commonly used abbreviation or synonym. </obo:IAO_0000115>
     </owl:AnnotationProperty>
     
 
@@ -153,7 +153,7 @@ Add as annotation triples in the granting ontology</efo:definition>
     <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0001272">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adult</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000113"/>
-        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A maturity quality inhering in an individual by virtue of the individual having attained sexual maturity and full growth</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A maturity quality inhering in an individual by virtue of the individual having attained sexual maturity and full growth</obo:IAO_0000115>
         <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A maturity quality inhering in an individual by virtue of the individual having attained sexual maturity and full growth[accessedResource: NIFSTD:birnlex_681][accessDate: 05-04-2011]</efo:bioportal_provenance>
         <efo:EV_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EV:0300070</efo:EV_definition_citation>
         <efo:EVM_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EVM:2990028</efo:EVM_definition_citation>
@@ -259,7 +259,7 @@ Add as annotation triples in the granting ontology</efo:definition>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000068"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
-        <efo:definition>mouse embryo stage at age 11.5 days</efo:definition>
+        <obo:IAO_0000115>mouse embryo stage at age 11.5 days</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </owl:Class>
     
@@ -272,7 +272,7 @@ Add as annotation triples in the granting ontology</efo:definition>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000068"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
-        <efo:definition>mouse embryo stage at age 12.5 days</efo:definition>
+        <obo:IAO_0000115>mouse embryo stage at age 12.5 days</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </owl:Class>
     
@@ -285,7 +285,7 @@ Add as annotation triples in the granting ontology</efo:definition>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000068"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
-        <efo:definition>mouse embryo stage at age 13.5 days</efo:definition>
+        <obo:IAO_0000115>mouse embryo stage at age 13.5 days</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </owl:Class>
     
@@ -298,7 +298,7 @@ Add as annotation triples in the granting ontology</efo:definition>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000068"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
-        <efo:definition>mouse embryo stage at age 14.5 days</efo:definition>
+        <obo:IAO_0000115>mouse embryo stage at age 14.5 days</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </owl:Class>
     
@@ -311,7 +311,7 @@ Add as annotation triples in the granting ontology</efo:definition>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000068"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
-        <efo:definition>mouse embryo stage at age 15.5 days</efo:definition>
+        <obo:IAO_0000115>mouse embryo stage at age 15.5 days</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </owl:Class>
     
@@ -324,7 +324,7 @@ Add as annotation triples in the granting ontology</efo:definition>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000068"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
-        <efo:definition>mouse embryo stage at age 16.5 days</efo:definition>
+        <obo:IAO_0000115>mouse embryo stage at age 16.5 days</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </owl:Class>
     
@@ -337,7 +337,7 @@ Add as annotation triples in the granting ontology</efo:definition>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000068"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
-        <efo:definition>mouse embryo stage at age 17.5 days</efo:definition>
+        <obo:IAO_0000115>mouse embryo stage at age 17.5 days</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </owl:Class>
     
@@ -350,7 +350,7 @@ Add as annotation triples in the granting ontology</efo:definition>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000068"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
-        <efo:definition>mouse embryo stage at age 18 days</efo:definition>
+        <obo:IAO_0000115>mouse embryo stage at age 18 days</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </owl:Class>
     
@@ -363,7 +363,7 @@ Add as annotation triples in the granting ontology</efo:definition>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000068"/>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomasz Adamusiak</obo:IAO_0000117>
-        <efo:definition>mouse embryo stage at age 18.5 days</efo:definition>
+        <obo:IAO_0000115>mouse embryo stage at age 18.5 days</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </owl:Class>
     
@@ -376,8 +376,8 @@ Add as annotation triples in the granting ontology</efo:definition>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UBERON_0000105"/>
         <efo:NCI_Thesaurus_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NCIt:C81317</efo:NCI_Thesaurus_definition_citation>
         <efo:SNOMEDCT_definition_citation rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:263844007</efo:SNOMEDCT_definition_citation>
-        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The stage of the mother from immediately after the birth of offspring and extending for about six weeks</efo:definition>
-        <efo:definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The time period after birth.</efo:definition>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The stage of the mother from immediately after the birth of offspring and extending for about six weeks</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The time period after birth.</obo:IAO_0000115>
         <efo:bioportal_provenance rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The time period after birth.[accessedResource: NCIt:C81317][accessDate: 05-04-2011]</efo:bioportal_provenance>
         <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </owl:Class>
