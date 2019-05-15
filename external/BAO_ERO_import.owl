@@ -5,8 +5,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:bao="http://www.bioassayontology.org/bao#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/external/BAO_ERO_import.owl"/>
     
 
@@ -65,14 +64,6 @@
         <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
-        <rdfs:label xml:lang="en">alternative term</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
-        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
-        <obo:IAO_0000111 xml:lang="en">alternative term</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
@@ -80,6 +71,14 @@
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <rdfs:label xml:lang="en">example of usage</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     </owl:AnnotationProperty>
     
@@ -107,24 +106,30 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ERO_0002177 -->
+    <!-- http://purl.obolibrary.org/obo/ERO_0001500 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002177">
-        <rdfs:label xml:lang="en">stable isotope labeling by amino acids in cell culture</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040014"/>
-        <obo:IAO_0000115>A mass spectrometry labeling technique that detects differences in protein abundance among samples using non-radioactive isotopic labeling.</obo:IAO_0000115>
-        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Stable_isotope_labeling_by_amino_acids_in_cell_culture</obo:IAO_0000119>
-        <obo:IAO_0000118>SILAC</obo:IAO_0000118>
-        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001500">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liquid chromatography </rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A chromatography technique in which the mobile phase is a liquid and is carried out either in a column or a plane for the purpose of separating mixtures.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Used to identify protein sequences.</obo:IAO_0000112>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Chromatography#Liquid_chromatography</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ero.owl"/>
     </owl:Class>
     
 
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0040014 -->
+    <!-- http://purl.obolibrary.org/obo/ERO_0002176 -->
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040014"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0002176">
+        <rdfs:label xml:lang="en">isobaric labeling</rdfs:label>
+        <obo:IAO_0000117>PERSON:Tenille Johnson</obo:IAO_0000117>
+        <obo:IAO_0000115>A mass spectrometry labeling technique in which peptides or proteins are labeled with various chemical groups that are isobaric, or the same in mass, but which fragment during tandem mass spectrometry to yield reporter ions of different mass.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Isobaric_labeling</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ero.owl"/>
+    </owl:Class>
 </rdf:RDF>
 
 

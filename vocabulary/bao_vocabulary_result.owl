@@ -33,7 +33,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>20 Dec 2018</dc:date>
+        <dc:date>25 Apr 2019</dc:date>
     </owl:Ontology>
 
 
@@ -850,8 +850,8 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001244">
 		<rdfs:label rdf:datatype="&xsd;string">ED90</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002116"/>
 		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002116"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001245 -->
@@ -1384,8 +1384,8 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002752">
 		<rdfs:label rdf:datatype="&xsd;string">measured concentration</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000180"/>
 		<obo:IAO_0000115>Measured / detected concentration of the perturbagen / compound in the assay or a subsystem (locally) in the assay. For example measured absolute concentration in the brain. This is in contrast to screening concentration, which is the (final assumed) concentration of a compound added to the assay.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000180"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002758 -->

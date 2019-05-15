@@ -33,7 +33,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>20 Dec 2018</dc:date>
+        <dc:date>25 Apr 2019</dc:date>
     </owl:Ontology>
 
 
@@ -385,8 +385,8 @@ Measure group links to those classes that can vary among different measurements 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000517">
 		<rdfs:label rdf:datatype="&xsd;string">summary assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000029"/>
 		<obo:IAO_0000115>It is a PubChem-specific assay stage. A summary assay references and summarizes the assays in PubChem that correspond to a screening campaign or a probe development project.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000029"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000520 -->
@@ -606,8 +606,8 @@ citesForInformation or citeAsSourceData some DOI or PMID</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000623">
 		<rdfs:label rdf:datatype="&xsd;string">compound toxicity assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000803"/>
 		<obo:IAO_0000115>This assay is performed to identify compounds that have an ability to kill the cells (cytotoxic).</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000803"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000647 -->
@@ -1687,9 +1687,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010016">
 		<rdfs:label rdf:datatype="&xsd;string">dish</rdfs:label>
+		<obo:IAO_0000116>Date from BAE: 5/13/2016</obo:IAO_0000116>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
 		<obo:IAO_0000119>PubChem AID: 623915</obo:IAO_0000119>
-		<obo:IAO_0000116>Date from BAE: 5/13/2016</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010017 -->
@@ -2084,6 +2084,44 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010066">
 		<rdfs:label rdf:datatype="&xsd;string">SWATH-MS protein quantification assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010028"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010067 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010067">
+		<rdfs:label rdf:datatype="&xsd;string">Protein-Protein NanoBRET Assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002990"/>
+		<obo:IAO_0000115>A variant of the BRET assay utilizing Nanoluc luciferace, providing higher stability, smaller size, greater separation of donor and acceptor wavelengths, and higher fluorescence intensity, enabling more accurate and precise quantification of protein-protein interactions</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010068 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010068">
+		<rdfs:label rdf:datatype="&xsd;string">Protein-Small Molecule NanoBRET Assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000110"/>
+		<obo:IAO_0000115>A variant of the BRET assay utilizing Nanoluc luciferace, providing higher stability, smaller size, greater separation of donor and acceptor wavelengths, and higher fluorescence intensity, enabling more accurate and precise quantification of protein-small molecule interactions</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010069 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010069">
+		<rdfs:label rdf:datatype="&xsd;string">Kinase NanoBRET Assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010068"/>
+		<obo:IAO_0000115>A specific application of protein-small molecule NanoBRET examining the interaction of small molecules with specific kinases</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010070 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010070">
+		<rdfs:label rdf:datatype="&xsd;string">Tandem Mass Tag (TMT) MS Protein Quantification</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010026"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010071 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010071">
+		<rdfs:label rdf:datatype="&xsd;string">Liquid Chromatography/Mass Spectroscopy (LC/MS) protein quantification</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010026"/>
 	</owl:Class>
 
 </rdf:RDF>

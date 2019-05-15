@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://bioassayontology.org/bao/external/BAO_PATO_import.owl#"
-     xml:base="http://bioassayontology.org/bao/external/BAO_PATO_import.owl"
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/external/BAO_PATO_import.owl#"
+     xml:base="http://www.bioassayontology.org/bao/external/BAO_PATO_import.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -8,7 +8,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:bao="http://www.bioassayontology.org/bao#">
-    <owl:Ontology rdf:about="http://bioassayontology.org/bao/external/BAO_PATO_import.owl"/>
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/external/BAO_PATO_import.owl"/>
     
 
 

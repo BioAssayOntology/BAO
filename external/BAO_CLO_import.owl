@@ -7,6 +7,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:cellline="http://www.ebi.ac.uk/cellline/"
      xmlns:bao="http://www.bioassayontology.org/bao#">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/external/BAO_CLO_import.owl"/>
@@ -21,12 +22,43 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">shorthand</rdfs:label>
+        <rdfs:label>shorthand</rdfs:label>
+        <rdfs:label xml:lang="en">shorthand</rdfs:label>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
         <rdfs:label>textual definition</rdfs:label>
+        <rdfs:label>定义</rdfs:label>
+        <rdfs:label>文本定义</rdfs:label>
         <rdfs:label>definition</rdfs:label>
         <rdfs:label xml:lang="en">definition</rdfs:label>
+        <rdfs:label xml:lang="en">textual definition</rdfs:label>
+        <rdfs:label xml:lang="zh">定义</rdfs:label>
+        <rdfs:label xml:lang="zh">文本定义</rdfs:label>
+        <obo:IAO_0000111>textual definition</obo:IAO_0000111>
+        <obo:IAO_0000116 xml:lang="en">2012-04-05: 
+Barry Smith
+
+OBI的官方定义解释了一个类或属性的含义：&#39;应该是亚里士多德式的，形式化和规范化的。可以用口语定义&#39;是糟糕的。
+
+您能解决这样的问题吗？
+
+解释关于类或属性的表达含义的必要和充分条件的陈述。
+
+Alan Ruttenberg
+
+您提出的定义是一个合理的备选，除非它很常见，没有给出必要和充分的条件。大多数情况下它们是必要的，偶尔是必要的，充分的或者仅仅仅充分的。它们通常使用不是自己定义的术语，因此它们实际上不能通过这些标准进行评估。
+
+关于拟议定义的具体内容：
+
+我们没有“含义”，或“表达”或“属性”的定义。对于在预期意义上的“参考”，我认为我们使用术语“指示”。对于&#39;表达&#39;，我认为我们和你的意思是符号，或标识符。对于“含义”，它不同于类和属性。对于类，我们希望文档能够让读者确定一个实体是否是该类的实例。对于属性，让我们的目标读者决定，给定一对潜在的关系，判断关系成立的断言正确与否。 “目标读者”部分表明我们也指定了我们期望的能够理解定义的人，并且概括了人类和计算机读者以包含文本和逻辑定义。
+
+就我个人而言，我更愿意削弱对文档的定义，并指出什么是可取的。
+
+我们还有一个悬而未决的问题，就是如何针对不同的受众定位不同的定义。临床读者阅读chebi需要来自受过化学训练的受众的不同类型的定义文档/定义，同样需要一个适合本体工作者的定义。 </obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2012-04-05: 
 Barry Smith
 
@@ -51,14 +83,22 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="zh">OBI的官方定义，解释类或属性的含义。应该是亚里士多德式的，形式化和规范化的。 可以通过口语定义进行扩充。</obo:IAO_0000115>
+        <obo:IAO_0000111>definition</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="en">textual definition</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="zh">官方的定义，解释类或属性的含义。应该是亚里士多德式的，形式化和规范化的。 可以通过口语定义进行扩充。</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="zh">定义</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor note</rdfs:label>
+        <rdfs:label>编者注</rdfs:label>
         <rdfs:label>editor note</rdfs:label>
         <rdfs:label xml:lang="en">editor note</rdfs:label>
+        <rdfs:label xml:lang="zh">编者注</rdfs:label>
+        <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</oboInOwl:is_metadata_tag>
         <obo:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IAO:0000116</obo:hasDbXref>
         <obo:shorthand rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor_note</obo:shorthand>
         <obo:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">editor_note</obo:id>
@@ -66,84 +106,155 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</obo:hasOBONamespace>
         <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obfoundry.org/obo/obi&gt;</obo:IAO_0000119>
+        <oboInOwl:hasDbXref xml:lang="en">IAO:0000116</oboInOwl:hasDbXref>
+        <obo:hasDbXref xml:lang="en">IAO:0000116</obo:hasDbXref>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">editor note</obo:IAO_0000111>
+        <oboInOwl:shorthand xml:lang="en">editor_note</oboInOwl:shorthand>
+        <oboInOwl:id xml:lang="en">editor_note</oboInOwl:id>
+        <obo:shorthand xml:lang="en">editor_note</obo:shorthand>
+        <obo:id xml:lang="en">editor_note</obo:id>
+        <obo:hasOBONamespace xml:lang="en">uberon</obo:hasOBONamespace>
+        <oboInOwl:hasOBONamespace xml:lang="en">uberon</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="zh">管理者注释用于其编辑器。它可能不包含在本体的出版版本中，所以它应该不包含最终用户了解本体所需的信息。</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="zh">编者注</obo:IAO_0000111>
+        <obo:id xml:lang="zh">编辑_注释</obo:id>
+        <obo:shorthand xml:lang="zh">编辑_注释</obo:shorthand>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+        <rdfs:label>数据库_交叉_引用</rdfs:label>
+        <rdfs:label>database_cross_reference</rdfs:label>
+        <rdfs:label xml:lang="en">database_cross_reference</rdfs:label>
+        <rdfs:label xml:lang="zh">数据库_交叉_引用</rdfs:label>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
         <rdfs:label>has curation status</rdfs:label>
         <rdfs:label xml:lang="en">has curation status</rdfs:label>
+        <rdfs:label>有管理状态</rdfs:label>
+        <rdfs:label xml:lang="zh">有管理状态</rdfs:label>
         <obo:IAO_0000119 xml:lang="en">OBI_0000281</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON:Bill Bug</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">has curation status</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="zh">有管理状态</obo:IAO_0000111>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/shorthand"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <rdfs:label>definition source</rdfs:label>
         <rdfs:label xml:lang="en">definition source</rdfs:label>
+        <rdfs:label>定义来源</rdfs:label>
+        <rdfs:label xml:lang="zh">定义来源</rdfs:label>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
         <obo:IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="zh">定义来源</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="zh">正式引用，例如在外部数据库中的标识符，用于表示/定义的属性源（S）。自由文本表示/为定义属性源（S）。实例：在2007年1月31日的作者姓名，URI，MeSH术语C04，PUBMEDID，维基uri</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="zh">论OBO-讨论邮件-列表，请参阅http://bit.ly/hgm99w</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <rdfs:label>definition editor</rdfs:label>
         <rdfs:label>term editor</rdfs:label>
+        <rdfs:label>术语编辑者</rdfs:label>
+        <rdfs:label xml:lang="en">definition editor</rdfs:label>
         <rdfs:label xml:lang="en">term editor</rdfs:label>
+        <rdfs:label xml:lang="zh">术语编辑者</rdfs:label>
         <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See http://code.google.com/p/information-artifact-ontology/issues/detail?id=115.</obo:IAO_0000116>
+        <obo:IAO_0000116 xml:lang="en">20110707, MC: label update to term editor and definition modified accordingly. See https://github.com/information-artifact-ontology/IAO/issues/115.</obo:IAO_0000116>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">Name of editor entering the definition in the file. The definition editor is a point of contact for information regarding the term. The definition editor may be, but is not always, the author of the definition, which may have been worked upon by several people</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">Name of editor entering the term in the file. The term editor is a point of contact for information regarding the term. The term editor may be, but is not always, the author of the definition, which may have been worked upon by several people</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">definition editor</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">term editor</obo:IAO_0000111>
+        <obo:IAO_0000116 xml:lang="zh">20110707，MC：术语编辑和定义进行相应的修改。见http://code.google.com/p/information-artifact-ontology/issues/detail?id=115。</obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="zh">术语编辑者</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="zh">输入文件中术语编辑者的名称。术语编辑者是有关术语的信息交汇点。术语编辑者可以是，但并不总是，定义的作者，这可能是由几个人完成</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
         <rdfs:label>alternative term</rdfs:label>
         <rdfs:label xml:lang="en">alternative term</rdfs:label>
+        <rdfs:label>替代术语</rdfs:label>
+        <rdfs:label xml:lang="zh">替代术语</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">alternative term</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="zh">一类或属性的替代名称，这意味着与所述首选名称同样的事物（语义上等价）</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="zh">替代术语</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
+        <rdfs:label>有_obo_命名空间</rdfs:label>
+        <rdfs:label>has_obo_namespace</rdfs:label>
+        <rdfs:label xml:lang="en">has_obo_namespace</rdfs:label>
+        <rdfs:label xml:lang="zh">有_obo_命名空间</rdfs:label>
+    </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/cellline/definition"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
-        <rdfs:label>editor preferred term~editor preferred label</rdfs:label>
+        <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
+        <rdfs:label>编辑首选术语~编辑首选标签</rdfs:label>
         <rdfs:label>editor preferred term</rdfs:label>
         <rdfs:label>editor preferred label</rdfs:label>
-        <rdfs:label xml:lang="en">editor preferred label</rdfs:label>
+        <rdfs:label>编辑首选术语</rdfs:label>
         <rdfs:label xml:lang="en">editor preferred term</rdfs:label>
-        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:label>editor preferred term~editor preferred label</rdfs:label>
+        <rdfs:label xml:lang="en">editor preferred term~editor preferred label</rdfs:label>
+        <rdfs:label xml:lang="zh">编辑首选术语</rdfs:label>
+        <rdfs:label>编辑首选标签</rdfs:label>
+        <rdfs:label xml:lang="zh">编辑首选标签</rdfs:label>
+        <obo:IAO_0000111>editor preferred term</obo:IAO_0000111>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
+        <obo:IAO_0000111>editor preferred term~editor preferred label</obo:IAO_0000111>
+        <obo:IAO_0000111>editor preferred label</obo:IAO_0000111>
+        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">editor preferred label</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">editor preferred term</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="zh">对于一类或属性的简洁的、有意义的、与人类友好的名称由本体开发商首选。 （美国英语）</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="zh">编辑首选术语</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="zh">编辑首选标签</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <rdfs:label>example of usage</rdfs:label>
+        <rdfs:label>用法示例</rdfs:label>
         <rdfs:label xml:lang="en">example of usage</rdfs:label>
+        <rdfs:label xml:lang="zh">用法示例</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A phrase describing how a term should be used and/or a citation to a work which uses it. May also include other kinds of examples that facilitate immediate understanding, such as widely know prototypes or instances of a class, or cases where a relation is said to hold.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">example of usage</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="zh">例子</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="zh">用法示例</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="zh">短语描述一个类的名字应该如何使用。也可包括其他类型有助于直接理解类的语义的例子，如广为人知的类的原型子类或实例。虽然高水平的术语必不可少，对于低级别术语的示例（例如，Affymetrix HU133阵列）不</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/alternative_term"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasDbXref"/>
     <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/definition"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>标签</rdfs:label>
         <rdfs:label>label</rdfs:label>
+        <rdfs:label xml:lang="en">label</rdfs:label>
+        <obo:IAO_0000111>label</obo:IAO_0000111>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/CLO_0037244">
         <rdfs:label xml:lang="en">PubChem AID</rdfs:label>
@@ -151,6 +262,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <cellline:definition>An annotation property that represents a PubMed BioAssay Identifier accession number.</cellline:definition>
         <obo:IAO_0000119>https://pubchem.ncbi.nlm.nih.gov/help.html</obo:IAO_0000119>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/hasOBONamespace"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/is_metadata_tag"/>
@@ -159,20 +271,32 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label>imported from</rdfs:label>
         <rdfs:label xml:lang="en">imported from</rdfs:label>
+        <rdfs:label>引自</rdfs:label>
+        <rdfs:label xml:lang="zh">引自</rdfs:label>
         <obo:IAO_0000115 xml:lang="en">For external terms/classes, the ontology from which the term was imported</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">PERSON:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON:Melanie Courtot</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">imported from</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="zh">外部术语/类，术语引入的本体</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="zh">引自</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/CLO_0000178">
         <rdfs:label xml:lang="en">LINCS ID</rdfs:label>
+        <rdfs:label>细胞系LINCS ID</rdfs:label>
+        <rdfs:label xml:lang="en">Cell line LINCS ID</rdfs:label>
+        <rdfs:label xml:lang="zh">细胞系LINCS ID</rdfs:label>
+        <cellline:definition xml:lang="en">An annotation property that represents an LINCS ID of a cell line.</cellline:definition>
         <cellline:definition_editor>Oliver He, Jiangan Xie, Jie Zheng</cellline:definition_editor>
+        <cellline:definition_editor>Oliver He, Jiangan Xie</cellline:definition_editor>
         <cellline:definition>An annotation property that represents an ID used in the NIH LINCS project.</cellline:definition>
+        <cellline:definition_editor xml:lang="en">Oliver He, Jiangan Xie</cellline:definition_editor>
+        <cellline:definition>表示细胞系的LINCS ID的注释属性。</cellline:definition>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/id"/>
     
 
@@ -203,13 +327,25 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000001">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell line cell</rdfs:label>
+        <rdfs:label xml:lang="en">cell line cell</rdfs:label>
+        <rdfs:label xml:lang="zh">细胞系细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cultured cell that is part of a cell line - a stable and homogeneous population of cells with a common biological origin and propagation history in culture
+</obo:IAO_0000115>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell line cell</obo:IAO_0000111>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">一个培养细胞，它是一个细胞株（一个稳定的，同质的细胞群，具有共同的生物学起源和增殖史）的一部分
+</obo:IAO_0000115>
         <rdfs:comment>A &#39;cell line cell&#39; is a part of a cell line established through the passaging/selection of a primary cultured cells or the experimental modification of an existing cell line. New types of cell line cells are established after sufficient passaging of a primary culture to establish a stable and homogenous population that qualifies as a line (typically 1-20 passages), or following some spontaneous or experimental modification that confers novel characteristics to an existing line. A cell line cell typically has mutations of five or more genes compared to the original cell that derives the cell line cell. Some gene mutations may turn on some oncogenes.  Cell line cells can be in active culture, stored in a quiescent state for future use (e.g. frozen in liquid nitrogen), or applied in experimental procedures.  </rdfs:comment>
-        <obo:IAO_0000117>Yongqun He, Matthew Brush, Sirarat Sarntivijai, Alexander Diehl, Jie Zheng, Yu Lin, Bjoern Peters</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">A &#39;cell line cell&#39; is a part of a cell line established through the passaging/selection of a primary cultured cells or the experimental modification of an existing cell line. New types of cell line cells are established after sufficient passaging of a primary culture to establish a stable and homogenous population that qualifies as a line (typically 1-20 passages), or following some spontaneous or experimental modification that confers novel characteristics to an existing line. A cell line cell typically has mutations of five or more genes compared to the original cell that derives the cell line cell. Some gene mutations may turn on some oncogenes.  Cell line cells can be in active culture, stored in a quiescent state for future use (e.g. frozen in liquid nitrogen), or applied in experimental procedures.  </rdfs:comment>
         <obo:IAO_0000115 xml:lang="en">A cultured cell that is part of a cell line - a stable and homogeneous population of cells with a common biological origin and propagation history in culture</obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He, Matthew Brush, Sirarat Sarntivijai, Alexander Diehl, Jie Zheng, Yu Lin, Bjoern Peters</obo:IAO_0000117>
+        <rdfs:comment xml:lang="zh">“细胞系细胞”是通过原代培养细胞的传代/选择或现有细胞系的实验性修饰而建立的细胞系的一部分。新类型的细胞系细胞的建立过程是原代培养物充分传代后以建立符合条件（典型地1-20代）的稳定且同质的群体，或者在某些自发或实验性修饰之后赋予现有细胞系新的特征。与产生细胞系细胞的原始细胞相比，细胞系细胞通常具有5个或更多个基因的突变。 一些基因突变可能会开启一些致癌基因。 细胞系细胞可处于活性培养物中，以静止状态储存以供将来使用（例如在液氮中冷冻），或者在实验程序使用。</rdfs:comment>
+        <obo:IAO_0000115>一个培养细胞，它是一个细胞株（一个稳定的，同质的细胞群，具有共同的生物学起源和增殖史）的一部分</obo:IAO_0000115>
         <obo:IAO_0000115>A cultured cell that is part of a cell line - a stable and homogeneous population of cells with a common biological origin and propagation history in culture
 </obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Yongqun He, Matthew Brush, Sirarat Sarntivijai, Alexander Diehl, Jie Zheng, Yu Lin, Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">cell line cell</obo:IAO_0000111>
+        <obo:IAO_0000111 xml:lang="zh">细胞系细胞</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </owl:Class>
@@ -220,12 +356,23 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000019">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immortal cell line cell</rdfs:label>
+        <rdfs:label xml:lang="en">immortal cell line cell</rdfs:label>
+        <rdfs:label xml:lang="zh">永生细胞系细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000001"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immortal cell line cell</obo:IAO_0000111>
+        <obo:IAO_0000118>连续细胞系细胞</obo:IAO_0000118>
+        <obo:IAO_0000118>永久细胞系细胞</obo:IAO_0000118>
+        <obo:IAO_0000115>预期能够进行无限次分裂的细胞系细胞，作为永生细胞系一部分，能够支持体外无限增殖。</obo:IAO_0000115>
         <obo:IAO_0000118>permanent cell line cell</obo:IAO_0000118>
         <obo:IAO_0000115>A cell line cell that is expected to be capable of an unlimited number of divisions, and is thus able to support indefinite propagation in vitro as part of an immortal cell line.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A cell line cell that is expected to be capable of an unlimited number of divisions, and is thus able to support indefinite propagation in vitro as part of an immortal cell line.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He, Matthew Brush, Allen Xiang, Asiyah Yu Lin,  Sirarat Sarntivijai, James Malone, Jie Zheng, Tomasz Adamusiak</obo:IAO_0000117>
+        <obo:IAO_0000117 xml:lang="en">Yongqun He, Matthew Brush, Allen Xiang, Asiyah Yu Lin,  Sirarat Sarntivijai, James Malone, Jie Zheng, Tomasz Adamusiak</obo:IAO_0000117>
         <obo:IAO_0000118>continuous cell line cell</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">continuous cell line cell</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="en">immortal cell line cell</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">permanent cell line cell</obo:IAO_0000118>
+        <obo:IAO_0000111 xml:lang="zh">永生细胞系细胞</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </owl:Class>
@@ -236,23 +383,53 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000031">
         <rdfs:label xml:lang="en">cell line</rdfs:label>
+        <rdfs:label xml:lang="zh">细胞系</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
-        <obo:IAO_0000117>MB, SS, JZ, MAH, BP, CS, YH</obo:IAO_0000117>
-        <obo:IAO_0000115>A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture).  
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture).  
 </obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">He, Tong-Chuan, et al., Identification of c-MYC as a target of the APC pathway. Science 281.5382 (1998): 1509-1512.:  &quot;To evaluate the transcriptional effects of APC, we studied a human colorectal cancer cell line (HT29-APC) containing a zinc-inducible APC gene and a control cell line (HT29–β-Gal) containing an analogous inducible lacZ gene&quot;. 
+
+Note that common usage in the literature is often of the form &quot;a human colorectal cancer cell line&quot;, as seen above. But such references to studies in &quot;a line&quot; refer to the fact that discrete populations of cells that are input into culturing or experiments, not an entire lineage of cells.  It is these discrete populations that we refer to as &#39;cell lines&#39;.
+</obo:IAO_0000112>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In the spring of 2013, a working group comprised of domain experts and representatives from CLO, OBI, CL, and ReO worked to establish a consensus model and definitions of cultured cells across these efforts. This included a careful characterization of how the term &#39;cell line&#39; should be defined and applied.  Notes about this work and its outcomes can be found on the CLO wiki here: 
+http://code.google.com/p/clo-ontology/wiki/Cell_Lines
+</obo:IAO_0000116>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The term &#39;line&#39; is used when a culture has undergone an intentional experimental process to establish a more uniform and stable population of cells (see &#39;establishing cell line&#39;). This will require one or more passages, but may involve additional selection processes. Through such passaging and/or selection processes, the resulting &#39;line&#39; attains some level of genetic stability and compositional homogeneity which is typically absent in primary cultures. Because of their relative homogeneity, ‘lines’ are capable of being characterized and stably propagated over a period of time.  A new *type* of cell line can be established not only through the passaging/selection of a primary culture, but also through experimental modifications of existing lines (e.g. immortalization, stable genetic modifications, drug selection for a resistant subset, etc.).  
+
+The definition provided here establishes the &#39;scale&#39; of cell populations that qualify as cell lines - specifically those with a shared propagation history in culture. In this way,  the &#39;cell line&#39; class demarcates populations that represent what researchers actually use in the practice of science - e.g. as inputs to culturing, experimentation, and sharing. The definition is such that cell lines will exhibit important attributes. For example, they will have a relatively homogenous cell type composition as they have experienced similar selective pressures due to their continuous co-propagation. In addition, these populations can also be characterized by a passage number, again owing to their common passaging history.  As defined here,  &#39;cell line&#39; can refer to a population of cells in active culture, applied experimentally, or stored in a quiescent state for future use. 
+</rdfs:comment>
         <rdfs:comment>The term &#39;line&#39; is used when a culture has undergone an intentional experimental process to establish a more uniform and stable population of cells (see &#39;establishing cell line&#39;). This will require one or more passages, but may involve additional selection processes. Through such passaging and/or selection processes, the resulting &#39;line&#39; attains some level of genetic stability and compositional homogeneity which is typically absent in primary cultures. Because of their relative homogeneity, ‘lines’ are capable of being characterized and stably propagated over a period of time.  A new *type* of cell line can be established not only through the passaging/selection of a primary culture, but also through experimental modifications of existing lines (e.g. immortalization, stable genetic modifications, drug selection for a resistant subset, etc.).  
 	
 The definition provided here establishes the &#39;scale&#39; of cell populations that qualify as cell lines - specifically those with a shared propagation history in culture. In this way,  the &#39;cell line&#39; class demarcates populations that represent what researchers actually use in the practice of science - e.g. as inputs to culturing, experimentation, and sharing. The definition is such that cell lines will exhibit important attributes. For example, they will have a relatively homogenous cell type composition as they have experienced similar selective pressures due to their continuous co-propagation. In addition, these populations can also be characterized by a passage number, again owing to their common passaging history.  As defined here,  &#39;cell line&#39; can refer to a population of cells in active culture, applied experimentally, or stored in a quiescent state for future use. 
+</rdfs:comment>
+        <rdfs:comment>当培养物经过有意的实验过程以建立更均匀和稳定的细胞群时（参见“建立细胞系”），使用术语“系”。这将需要一个或多次传代，但可能涉及额外的选择过程。通过这样的传代和/或选择过程，产生的&#39;细胞系&#39;达到一定水平的遗传稳定性和组成均一性，这在原代培养物中通常是不存在的。由于它们的相对同质性，“细胞系”能够在一段时间内被表征和稳定地增殖。一种新*型*细胞系不仅可以通过原代培养物的传代/选择建立，而且可以通过对现有系列的实验性修饰（例如永生化，稳定的遗传修饰，用于抗性子集的药物选择等）来建立。 
+
+这里提供的定义确立了符合细胞系特征的细胞群的“范围” - 特别是那些在培养中具有共同繁殖历史的细胞群。通过这种方式，“细胞系”类划分代表研究人员在科学实践中实际使用的细胞群 - 例如作为培养、实验和分享的投入。定义是这样的，细胞系将显示重要的属性。例如，它们将具有相对均匀的细胞类型组成，因为它们的连续共增殖而经历了类似的选择压力。此外，这些细胞群还可以通过传代数来表征，这也是由于它们共同的传代史。如此处所定义的，“细胞系”可以指活性培养物中，实验性应用的或以静止状态存储以备将来使用的细胞群。 
 </rdfs:comment>
         <obo:IAO_0000112>He, Tong-Chuan, et al., Identification of c-MYC as a target of the APC pathway. Science 281.5382 (1998): 1509-1512.:  &quot;To evaluate the transcriptional effects of APC, we studied a human colorectal cancer cell line (HT29-APC) containing a zinc-inducible APC gene and a control cell line (HT29–β-Gal) containing an analogous inducible lacZ gene&quot;. 
 	
 Note that common usage in the literature is often of the form &quot;a human colorectal cancer cell line&quot;, as seen above. But such references to studies in &quot;a line&quot; refer to the fact that discrete populations of cells that are input into culturing or experiments, not an entire lineage of cells.  It is these discrete populations that we refer to as &#39;cell lines&#39;.
 </obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture). </obo:IAO_0000115>
         <obo:IAO_0000116>In the spring of 2013, a working group comprised of domain experts and representatives from CLO, OBI, CL, and ReO worked to establish a consensus model and definitions of cultured cells across these efforts. This included a careful characterization of how the term &#39;cell line&#39; should be defined and applied.  Notes about this work and its outcomes can be found on the CLO wiki here: 
 http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 </obo:IAO_0000116>
+        <obo:IAO_0000116>在2013年春季，由CLO，OBI，CL和ReO的领域专家和代表组成的工作组经过这些努力中建立了共识模型和培养细胞的定义。 这包括仔细描述术语“细胞系”应该如何定义和应用。 关于这项工作及其结果的说明可以在CLO wiki上找到：
+http://code.google.com/p/clo-ontology/wiki/Cell_Lines
+</obo:IAO_0000116>
+        <obo:IAO_0000115>培养的细胞群体代表具有共同繁殖历史（即已经在培养中一起连续传代）的遗传稳定且同质的培养细胞群体。 
+</obo:IAO_0000115>
+        <obo:IAO_0000117>MB, SS, JZ, MAH, BP, CS, YH</obo:IAO_0000117>
+        <obo:IAO_0000115>A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture).  
+</obo:IAO_0000115>
+        <obo:IAO_0000112>He, Tong-Chuan, et al., Identification of c-MYC as a target of the APC pathway. Science 281.5382 (1998): 1509-1512.:  &quot;为了评估APC的转录效应，我们研究了含有锌诱导型APC基因的人结直肠癌细胞系（HT29-APC）和含有类似诱导型lacZ基因的对照细胞系（HT29-β-Gal）&quot;.  
+
+请注意，文献中的常见用法通常是“人类结直肠癌细胞系”的形式&quot;,如上所见。 但是对&quot;一个细胞系&quot;研究的这种引用，指的是输入培养或实验的离散细胞群体，而不是整个细胞系。 我们将这些离散的群体称为&#39;细胞系&#39;。
+</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">A cultured cell population that represents a genetically stable and homogenous population of cultured cells that shares a common propagation history (i.e. has been successively passaged together in culture). </obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">MB, SS, JZ, MAH, BP, CS, YH</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">cell line</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="zh">一个培养细胞群体，其代表具有共同增殖历史（即已经在培养中一起连续传代）的遗传稳定且同质的培养细胞群体。</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="zh">细胞系</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </owl:Class>
@@ -279,20 +456,33 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001230">
         <rdfs:label>HEK293</rdfs:label>
+        <rdfs:label xml:lang="en">HEK293</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">293 cell</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://web.expasy.org/cellosaurus/CVCL_0045</obo:IAO_0000119>
+        <rdfs:seeAlso>ATCC: CRL-1573</rdfs:seeAlso>
         <obo:IAO_0000118>293</obo:IAO_0000118>
-        <rdfs:seeAlso xml:lang="en">BTO: BTO_0000007</rdfs:seeAlso>
-        <rdfs:seeAlso xml:lang="en">EFO: EFO_0001182)</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">293</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://hek293.com/</obo:IAO_0000119>
-        <efo:alternative_term xml:lang="en">Human Embryonic Kidney 293</efo:alternative_term>
         <rdfs:seeAlso>RRID: CVCL_0045</rdfs:seeAlso>
         <obo:IAO_0000119>WEB: https://www.atcc.org/Products/All/CRL-1573.aspx</obo:IAO_0000119>
         <obo:IAO_0000118>293 HEK</obo:IAO_0000118>
-        <obo:IAO_0000119>WEB: http://web.expasy.org/cellosaurus/CVCL_0045</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">293 HEK</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">293 cell</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">ATCC: CRL-1573</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">BTO: BTO_0000007</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">EFO: EFO_0001182)</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">HEK 293</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">293 细胞</obo:IAO_0000118>
         <obo:IAO_0000118>HEK-293</obo:IAO_0000118>
-        <rdfs:seeAlso>ATCC: CRL-1573</rdfs:seeAlso>
         <obo:IAO_0000118>HEK 293</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">HEK-293</obo:IAO_0000118>
+        <efo:alternative_term xml:lang="en">Human Embryonic Kidney 293</efo:alternative_term>
+        <rdfs:seeAlso xml:lang="en">RRID: CVCL_0045</rdfs:seeAlso>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://hek293.com/</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://web.expasy.org/cellosaurus/CVCL_0045</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">WEB: https://www.atcc.org/Products/All/CRL-1573.aspx</obo:IAO_0000119>
+        <efo:alternative_term xml:lang="zh">人胚肾 293</efo:alternative_term>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -302,10 +492,15 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001235">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">293T/17 cell</rdfs:label>
+        <rdfs:label xml:lang="en">293T/17 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">293T/17 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <rdfs:seeAlso>ATCC: CRL-11268</rdfs:seeAlso>
         <obo:IAO_0000119>WEB: https://www.atcc.org/Products/All/CRL-11268.aspx</obo:IAO_0000119>
         <obo:IAO_0000118>293T/17</obo:IAO_0000118>
+        <rdfs:seeAlso>ATCC: CRL-11268</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">293T/17</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">ATCC: CRL-11268</rdfs:seeAlso>
+        <obo:IAO_0000119 xml:lang="en">WEB: https://www.atcc.org/Products/All/CRL-11268.aspx</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -315,14 +510,23 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001601">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A549 cell</rdfs:label>
+        <rdfs:label xml:lang="en">A549 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">A549 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:CLO_0000178>LCL-1601</obo:CLO_0000178>
-        <rdfs:seeAlso>EFO: EFO_0001086</rdfs:seeAlso>
-        <rdfs:seeAlso>CVCL: CVCL_0023</rdfs:seeAlso>
         <rdfs:seeAlso>CHEMBL: CHEMBL3307651</rdfs:seeAlso>
+        <rdfs:seeAlso>CVCL: CVCL_0023</rdfs:seeAlso>
         <rdfs:seeAlso>ATCC: CCL-185</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">A549</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">CVCL: CVCL_0023</rdfs:seeAlso>
+        <rdfs:seeAlso>EFO: EFO_0001086</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: CCL-185</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">EFO: EFO_0001086</rdfs:seeAlso>
         <rdfs:seeAlso>HyperCLDB: cl207</rdfs:seeAlso>
         <obo:IAO_0000118>A549</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3307651</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl207</rdfs:seeAlso>
+        <obo:CLO_0000178 xml:lang="en">LCL-1601</obo:CLO_0000178>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -332,13 +536,21 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001654">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACHN cell</rdfs:label>
+        <rdfs:label xml:lang="en">ACHN cell</rdfs:label>
+        <rdfs:label xml:lang="zh">ACHN 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:CLO_0000178>LCL-1756</obo:CLO_0000178>
-        <rdfs:seeAlso>CHEMBL: CHEMBL3307633</rdfs:seeAlso>
-        <rdfs:seeAlso>CVCL: CVCL_1067</rdfs:seeAlso>
         <rdfs:seeAlso>EFO: EFO_0002108</rdfs:seeAlso>
         <obo:IAO_0000118>ACHN</obo:IAO_0000118>
         <rdfs:seeAlso>ATCC: CRL-1611</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: CRL-1611</rdfs:seeAlso>
+        <rdfs:seeAlso>CHEMBL: CHEMBL3307633</rdfs:seeAlso>
+        <rdfs:seeAlso>CVCL: CVCL_1067</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">ACHN</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3307633</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CVCL: CVCL_1067</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">EFO: EFO_0002108</rdfs:seeAlso>
+        <obo:CLO_0000178 xml:lang="en">LCL-1756</obo:CLO_0000178>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -360,9 +572,13 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001842">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BA/F3 cell</rdfs:label>
+        <rdfs:label xml:lang="en">BA/F3 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">BA/F3 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl5028</rdfs:seeAlso>
         <obo:IAO_0000118>BA/F3</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">BA/F3</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl5028</rdfs:seeAlso>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -372,14 +588,24 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002044">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BT-549 cell</rdfs:label>
+        <rdfs:label xml:lang="en">BT-549 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">BT-549 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>CVCL: CVCL_1092</rdfs:seeAlso>
-        <rdfs:seeAlso>ATCC: HTB-122</rdfs:seeAlso>
+        <rdfs:comment>疾病：导管癌</rdfs:comment>
         <rdfs:seeAlso>EFO: EFO_0001096</rdfs:seeAlso>
-        <rdfs:comment>disease: ductal carcinoma</rdfs:comment>
         <obo:IAO_0000118>BT-549</obo:IAO_0000118>
-        <rdfs:seeAlso>CHEMBL: CHEMBL3308490</rdfs:seeAlso>
         <obo:CLO_0000178>LCL-1310</obo:CLO_0000178>
+        <rdfs:seeAlso>CHEMBL: CHEMBL3308490</rdfs:seeAlso>
+        <rdfs:seeAlso>ATCC: HTB-122</rdfs:seeAlso>
+        <rdfs:comment>disease: ductal carcinoma</rdfs:comment>
+        <rdfs:seeAlso xml:lang="en">ATCC: HTB-122</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">BT-549</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3308490</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CVCL: CVCL_1092</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">EFO: EFO_0001096</rdfs:seeAlso>
+        <obo:CLO_0000178 xml:lang="en">LCL-1310</obo:CLO_0000178>
+        <rdfs:comment xml:lang="en">disease: ductal carcinoma</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -389,10 +615,15 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002115">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C-33 A cell</rdfs:label>
+        <rdfs:label xml:lang="en">C-33 A cell</rdfs:label>
+        <rdfs:label xml:lang="zh">C-33 A 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: HTB-31</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: HTB-31</rdfs:seeAlso>
         <obo:IAO_0000118>C-33 A</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">C-33 A</obo:IAO_0000118>
         <obo:CLO_0000178>LCL-1300</obo:CLO_0000178>
+        <obo:CLO_0000178 xml:lang="en">LCL-1300</obo:CLO_0000178>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -402,9 +633,13 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002175">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAKI-1 cell</rdfs:label>
+        <rdfs:label xml:lang="en">CAKI-1 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">CAKI-1 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl623</rdfs:seeAlso>
         <obo:IAO_0000118>CAKI-1</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">CAKI-1</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl623</rdfs:seeAlso>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -431,17 +666,30 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002191">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calu-1 cell</rdfs:label>
+        <rdfs:label xml:lang="en">Calu-1 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">Calu-1 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:comment>疾病：表皮样癌（肺原发）</rdfs:comment>
         <rdfs:seeAlso>ATCC: HTB-54</rdfs:seeAlso>
-        <rdfs:seeAlso>EFO: EFO_0002151</rdfs:seeAlso>
         <rdfs:comment>disease: epidermoid carcinoma (lung primary)</rdfs:comment>
         <obo:IAO_0000117>ZN</obo:IAO_0000117>
         <rdfs:seeAlso>CHEMBL: CHEMBL3308031</rdfs:seeAlso>
-        <obo:CLO_0000178>LCL-1580</obo:CLO_0000178>
         <rdfs:seeAlso>CVCL: CVCL_0608</rdfs:seeAlso>
+        <rdfs:seeAlso>EFO: EFO_0002151</rdfs:seeAlso>
+        <obo:CLO_0000178>LCL-1580</obo:CLO_0000178>
+        <rdfs:seeAlso xml:lang="en">ATCC: HTB-54</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3308031</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CVCL: CVCL_0608</rdfs:seeAlso>
         <obo:IAO_0000118>Calu-1</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Calu-1</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">EFO: EFO_0002151</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl631</rdfs:seeAlso>
         <rdfs:seeAlso>HyperCLDB: cl632</rdfs:seeAlso>
         <rdfs:seeAlso>HyperCLDB: cl631</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl632</rdfs:seeAlso>
+        <obo:CLO_0000178 xml:lang="en">LCL-1580</obo:CLO_0000178>
+        <obo:IAO_0000117 xml:lang="en">ZN</obo:IAO_0000117>
+        <rdfs:comment xml:lang="en">disease: epidermoid carcinoma (lung primary)</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -451,13 +699,21 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002334">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCRF-CEM cell</rdfs:label>
+        <rdfs:label xml:lang="en">CCRF-CEM cell</rdfs:label>
+        <rdfs:label xml:lang="zh">CCRF-CEM 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000118>CCRF-CEM</obo:IAO_0000118>
         <rdfs:seeAlso>EFO: EFO_0002128</rdfs:seeAlso>
         <rdfs:seeAlso>CVCL: CVCL_0207</rdfs:seeAlso>
         <rdfs:seeAlso>ATCC: CCL-119</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">CCRF-CEM</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3307641</rdfs:seeAlso>
         <obo:CLO_0000178>LCL-1012</obo:CLO_0000178>
         <rdfs:seeAlso>CHEMBL: CHEMBL3307641</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: CCL-119</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CVCL: CVCL_0207</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">EFO: EFO_0002128</rdfs:seeAlso>
+        <obo:CLO_0000178 xml:lang="en">LCL-1012</obo:CLO_0000178>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -479,11 +735,18 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002421">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHO cell</rdfs:label>
+        <rdfs:label xml:lang="en">CHO cell</rdfs:label>
+        <rdfs:label xml:lang="zh">CHO 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000118>中国仓鼠卵巢细胞</obo:IAO_0000118>
+        <rdfs:seeAlso>MeSH: D016466</rdfs:seeAlso>
         <obo:IAO_0000118>CHO</obo:IAO_0000118>
         <obo:IAO_0000118>Chinese Hamster Ovary cell</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Chinese Hamster Ovary cell</obo:IAO_0000118>
         <rdfs:seeAlso>HyperCLDB: cl721</rdfs:seeAlso>
-        <rdfs:seeAlso>MeSH: D016466</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">CHO</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl721</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">MeSH: D016466</rdfs:seeAlso>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -493,9 +756,13 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002462">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHO-K1 cell</rdfs:label>
+        <rdfs:label xml:lang="en">CHO-K1 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">CHO-K1 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: CCL-61</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: CCL-61</rdfs:seeAlso>
         <obo:IAO_0000118>CHO-K1</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">CHO-K1</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -505,15 +772,26 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002544">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COLO 205 cell</rdfs:label>
+        <rdfs:label xml:lang="en">COLO 205 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">COLO 205 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>CHEMBL: CHEMBL3308348</rdfs:seeAlso>
         <obo:CLO_0000178>LCL-1173</obo:CLO_0000178>
+        <rdfs:comment>疾病：结肠直肠腺癌（结肠原发性）</rdfs:comment>
         <obo:IAO_0000118>COLO 205</obo:IAO_0000118>
         <rdfs:comment>disease: colorectal adenocarcinoma (colon primary)</rdfs:comment>
         <rdfs:seeAlso>CVCL: CVCL_0218</rdfs:seeAlso>
         <rdfs:seeAlso>EFO: EFO_0003082</rdfs:seeAlso>
         <rdfs:seeAlso>ATCC: CCL-222</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: CCL-222</rdfs:seeAlso>
         <rdfs:seeAlso>ECACC: 87061208</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3308348</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">COLO 205</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">CVCL: CVCL_0218</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ECACC: 87061208</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">EFO: EFO_0003082</rdfs:seeAlso>
+        <obo:CLO_0000178 xml:lang="en">LCL-1173</obo:CLO_0000178>
+        <rdfs:comment xml:lang="en">disease: colorectal adenocarcinoma (colon primary)</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -523,10 +801,15 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002597">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COS-7 cell</rdfs:label>
+        <rdfs:label xml:lang="en">COS-7 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">COS-7 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>MeSH: D019556</rdfs:seeAlso>
-        <rdfs:seeAlso>ATCC: CRL-1651</rdfs:seeAlso>
         <obo:IAO_0000118>COS-7</obo:IAO_0000118>
+        <rdfs:seeAlso>ATCC: CRL-1651</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: CRL-1651</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">COS-7</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">MeSH: D019556</rdfs:seeAlso>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -536,13 +819,22 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002785">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DLD-1 cell</rdfs:label>
+        <rdfs:label xml:lang="en">DLD-1 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">DLD-1 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <rdfs:seeAlso>CHEMBL: CHEMBL3307580</rdfs:seeAlso>
-        <rdfs:seeAlso>CVCL: CVCL_0248</rdfs:seeAlso>
         <rdfs:seeAlso>ATCC: CCL-221</rdfs:seeAlso>
+        <rdfs:seeAlso>CVCL: CVCL_0248</rdfs:seeAlso>
+        <rdfs:seeAlso>CHEMBL: CHEMBL3307580</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CVCL: CVCL_0248</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">DLD-1</obo:IAO_0000118>
+        <obo:CLO_0000178 xml:lang="en">LCL-1175</obo:CLO_0000178>
         <rdfs:comment>disease: colorectal adenocarcinoma</rdfs:comment>
         <obo:IAO_0000118>DLD-1</obo:IAO_0000118>
+        <rdfs:comment>疾病：结肠直肠腺癌</rdfs:comment>
+        <rdfs:seeAlso xml:lang="en">ATCC: CCL-221</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3307580</rdfs:seeAlso>
         <obo:CLO_0000178>LCL-1175</obo:CLO_0000178>
+        <rdfs:comment xml:lang="en">disease: colorectal adenocarcinoma</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -552,11 +844,18 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002840">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DU 145 cell</rdfs:label>
+        <rdfs:label xml:lang="en">DU 145 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">DU 145 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:comment>disease: carcinoma (prostate primary)</rdfs:comment>
+        <rdfs:comment>疾病：癌（前列腺原发性）</rdfs:comment>
         <rdfs:seeAlso>ATCC: HTB-81</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: HTB-81</rdfs:seeAlso>
         <obo:IAO_0000118>DU 145</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">DU 145</obo:IAO_0000118>
         <obo:CLO_0000178>LCL-1146</obo:CLO_0000178>
+        <obo:CLO_0000178 xml:lang="en">LCL-1146</obo:CLO_0000178>
+        <rdfs:comment xml:lang="en">disease: carcinoma (prostate primary)</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -566,10 +865,16 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003603">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H-4-II-E cell</rdfs:label>
+        <rdfs:label xml:lang="en">H-4-II-E cell</rdfs:label>
+        <rdfs:label xml:lang="zh">H-4-II-E 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000118>H-4-II-E</obo:IAO_0000118>
         <rdfs:comment>disease: hepatoma</rdfs:comment>
         <rdfs:seeAlso>ATCC: CRL-1548</rdfs:seeAlso>
-        <obo:IAO_0000118>H-4-II-E</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">ATCC: CRL-1548</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">H-4-II-E</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">disease: hepatoma</rdfs:comment>
+        <rdfs:comment>疾病：肝癌</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -592,21 +897,39 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003665">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HCT 116 cell</rdfs:label>
+        <rdfs:label xml:lang="en">HCT 116 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">HCT 116 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:IAO_0000118>HCT 116</obo:IAO_0000118>
-        <obo:IAO_0000118>HCT-116</obo:IAO_0000118>
         <rdfs:seeAlso>ATCC: CCL-247</rdfs:seeAlso>
+        <efo:definition>患有疾病结肠癌的患者的一些结肠上皮细胞衍生的永生人类上皮细胞系细胞</efo:definition>
         <rdfs:seeAlso>RRID:CVCL_0291</rdfs:seeAlso>
         <efo:definition>immortal human epithelial cell line cell that was derived from some colon epithelial cell from a human patient with the disease colon carcinoma</efo:definition>
-        <efo:alternative_term></efo:alternative_term>
         <obo:CLO_0000178>LCL-1161</obo:CLO_0000178>
-        <rdfs:seeAlso>MeSH: D045325</rdfs:seeAlso>
-        <rdfs:seeAlso>HyperCLDB: cl1575</rdfs:seeAlso>
         <rdfs:comment>disease: colorectal carcinoma</rdfs:comment>
         <rdfs:seeAlso>ECACC: 91091005</rdfs:seeAlso>
-        <obo:IAO_0000119>WEB: https://www.atcc.org/products/all/CCL-247.aspx</obo:IAO_0000119>
+        <rdfs:seeAlso xml:lang="en">ECACC: 91091005</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">HCT 116</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">HCT-116</obo:IAO_0000118>
         <efo:alternative_term>HCT116</efo:alternative_term>
+        <obo:IAO_0000118>HCT 116</obo:IAO_0000118>
+        <obo:IAO_0000118>HCT-116</obo:IAO_0000118>
+        <efo:alternative_term></efo:alternative_term>
+        <efo:alternative_term xml:lang="en">HCT116</efo:alternative_term>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl1575</rdfs:seeAlso>
+        <obo:CLO_0000178 xml:lang="en">LCL-1161</obo:CLO_0000178>
+        <rdfs:seeAlso>MeSH: D045325</rdfs:seeAlso>
+        <rdfs:seeAlso>HyperCLDB: cl1575</rdfs:seeAlso>
+        <efo:alternative_term xml:lang="en"></efo:alternative_term>
+        <rdfs:seeAlso xml:lang="en">ATCC: CCL-247</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">MeSH: D045325</rdfs:seeAlso>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://web.expasy.org/cellosaurus/CVCL_0291</obo:IAO_0000119>
+        <obo:IAO_0000119>WEB: https://www.atcc.org/products/all/CCL-247.aspx</obo:IAO_0000119>
+        <rdfs:seeAlso xml:lang="en">RRID:CVCL_0291</rdfs:seeAlso>
         <obo:IAO_0000119>WEB: http://web.expasy.org/cellosaurus/CVCL_0291</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">WEB: https://www.atcc.org/products/all/CCL-247.aspx</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en">disease: colorectal carcinoma</rdfs:comment>
+        <efo:definition xml:lang="en">immortal human epithelial cell line cell that was derived from some colon epithelial cell from a human patient with the disease colon carcinoma</efo:definition>
+        <rdfs:comment>疾病：结直肠癌</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -616,13 +939,21 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003679">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HEL cell</rdfs:label>
+        <rdfs:label xml:lang="en">HEL cell</rdfs:label>
+        <rdfs:label xml:lang="zh">HEL 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:IAO_0000118>HEL</obo:IAO_0000118>
         <rdfs:seeAlso>DSMZ: ACC 11</rdfs:seeAlso>
-        <rdfs:seeAlso>HyperCLDB: cl1585</rdfs:seeAlso>
-        <rdfs:seeAlso>CVCL: CVCL_0001</rdfs:seeAlso>
+        <obo:IAO_0000118>HEL</obo:IAO_0000118>
         <obo:CLO_0000178>LCL-1053</obo:CLO_0000178>
         <rdfs:seeAlso>CHEMBL: CHEMBL3308090</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3308090</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">HEL</obo:IAO_0000118>
+        <rdfs:seeAlso>HyperCLDB: cl1585</rdfs:seeAlso>
+        <rdfs:seeAlso>CVCL: CVCL_0001</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CVCL: CVCL_0001</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">DSMZ: ACC 11</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl1585</rdfs:seeAlso>
+        <obo:CLO_0000178 xml:lang="en">LCL-1053</obo:CLO_0000178>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -632,19 +963,34 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003684">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HeLa cell</rdfs:label>
+        <rdfs:label xml:lang="en">HeLa cell</rdfs:label>
+        <rdfs:label xml:lang="zh">HeLa 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:IAO_0000119>WEB: http://www.atcc.org/products/all/CCL-2.aspx</obo:IAO_0000119>
         <rdfs:seeAlso>EFO: EFO_0001185</rdfs:seeAlso>
-        <cellline:definition>an immortal human uterine cervix-derived epithelial cell line that was derived from cervical adenocarcinoma cancer cells taken on February 8, 1951 from Henrietta Lacks, a patient who died of her cancer on October 4, 1951.</cellline:definition>
-        <rdfs:seeAlso>MeSH: D006367</rdfs:seeAlso>
-        <rdfs:seeAlso>RRID:CVCL_0030</rdfs:seeAlso>
-        <rdfs:seeAlso>ATCC: CCL-2</rdfs:seeAlso>
         <rdfs:seeAlso>CHEMBL: CHEMBL3308376</rdfs:seeAlso>
+        <obo:IAO_0000119>WEB: https://www.ncbi.nlm.nih.gov/pubmed/12001993</obo:IAO_0000119>
+        <rdfs:seeAlso xml:lang="en">ATCC: CCL-2</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3308376</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">EFO: EFO_0001185</rdfs:seeAlso>
+        <obo:IAO_0000119>WEB: http://www.atcc.org/products/all/CCL-2.aspx</obo:IAO_0000119>
+        <rdfs:seeAlso>MeSH: D006367</rdfs:seeAlso>
+        <cellline:definition>an immortal human uterine cervix-derived epithelial cell line that was derived from cervical adenocarcinoma cancer cells taken on February 8, 1951 from Henrietta Lacks, a patient who died of her cancer on October 4, 1951.</cellline:definition>
+        <rdfs:seeAlso>RRID:CVCL_0030</rdfs:seeAlso>
+        <cellline:definition>1951年2月8日从一位于1951年10月4日因癌症死亡的病人Henrietta Lacks中获取的宫颈腺癌癌细胞衍生的永生人类子宫颈衍生上皮细胞系。</cellline:definition>
+        <rdfs:seeAlso>ATCC: CCL-2</rdfs:seeAlso>
         <rdfs:seeAlso>HyperCLDB: cl1601</rdfs:seeAlso>
         <obo:IAO_0000118>HeLa</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">HeLa</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl1601</rdfs:seeAlso>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/HeLa</obo:IAO_0000119>
         <obo:CLO_0000178>LCL-1512</obo:CLO_0000178>
-        <obo:IAO_0000119>WEB: https://www.ncbi.nlm.nih.gov/pubmed/12001993</obo:IAO_0000119>
+        <obo:CLO_0000178 xml:lang="en">LCL-1512</obo:CLO_0000178>
+        <rdfs:seeAlso xml:lang="en">MeSH: D006367</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">RRID:CVCL_0030</rdfs:seeAlso>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/HeLa</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://www.atcc.org/products/all/CCL-2.aspx</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">WEB: https://www.ncbi.nlm.nih.gov/pubmed/12001993</obo:IAO_0000119>
+        <cellline:definition xml:lang="en">an immortal human uterine cervix-derived epithelial cell line that was derived from cervical adenocarcinoma cancer cells taken on February 8, 1951 from Henrietta Lacks, a patient who died of her cancer on October 4, 1951.</cellline:definition>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -654,19 +1000,32 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003704">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hep G2 cell</rdfs:label>
+        <rdfs:label xml:lang="en">Hep G2 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">Hep G2 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso xml:lang="en">ATCC: HB-8065</rdfs:seeAlso>
         <obo:IAO_0000119>WEB: https://www.atcc.org/products/all/HB-8065.aspx</obo:IAO_0000119>
-        <obo:IAO_0000118>HEP G2</obo:IAO_0000118>
-        <obo:CLO_0000178>LCL-1925</obo:CLO_0000178>
-        <obo:IAO_0000118>HepG2</obo:IAO_0000118>
-        <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Hep_G2</obo:IAO_0000119>
-        <rdfs:seeAlso>HyperCLDB: cl1644</rdfs:seeAlso>
         <obo:IAO_0000118>Hep G2</obo:IAO_0000118>
-        <rdfs:seeAlso>ATCC: HB-8065</rdfs:seeAlso>
         <obo:IAO_0000118>HEPG2</obo:IAO_0000118>
-        <rdfs:seeAlso xml:lang="en">RRID:CVCL_0027</rdfs:seeAlso>
         <obo:IAO_0000119>WEB: http://web.expasy.org/cellosaurus/CVCL_0027</obo:IAO_0000119>
         <obo:IAO_0000118>HEP-G2</obo:IAO_0000118>
+        <obo:IAO_0000118>HEP G2</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">HepG2</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl1644</rdfs:seeAlso>
+        <obo:CLO_0000178>LCL-1925</obo:CLO_0000178>
+        <obo:IAO_0000118>HepG2</obo:IAO_0000118>
+        <obo:CLO_0000178 xml:lang="en">LCL-1925</obo:CLO_0000178>
+        <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Hep_G2</obo:IAO_0000119>
+        <rdfs:seeAlso>HyperCLDB: cl1644</rdfs:seeAlso>
+        <rdfs:seeAlso>ATCC: HB-8065</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">HEP G2</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">HEP-G2</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">HEPG2</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Hep G2</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">RRID:CVCL_0027</rdfs:seeAlso>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://web.expasy.org/cellosaurus/CVCL_0027</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">WEB: https://en.wikipedia.org/wiki/Hep_G2</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">WEB: https://www.atcc.org/products/all/HB-8065.aspx</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -676,16 +1035,29 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003775">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HL-60 cell</rdfs:label>
+        <rdfs:label xml:lang="en">HL-60 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">HL-60 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl1684</rdfs:seeAlso>
         <rdfs:seeAlso>HyperCLDB: cl1689</rdfs:seeAlso>
         <rdfs:seeAlso>EFO: EFO_0002793</rdfs:seeAlso>
-        <rdfs:comment>disease: promyeloblast; acute promyelocytic leukemia</rdfs:comment>
-        <rdfs:seeAlso>CHEMBL: CHEMBL3307654</rdfs:seeAlso>
-        <rdfs:seeAlso>ATCC: CCL-240</rdfs:seeAlso>
         <rdfs:seeAlso>CVCL: CVCL_0002</rdfs:seeAlso>
         <obo:CLO_0000178>LCL-1054</obo:CLO_0000178>
         <rdfs:seeAlso>MeSH: D018922</rdfs:seeAlso>
+        <rdfs:comment>disease: promyeloblast; acute promyelocytic leukemia</rdfs:comment>
+        <rdfs:seeAlso>CHEMBL: CHEMBL3307654</rdfs:seeAlso>
+        <rdfs:seeAlso>ATCC: CCL-240</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: CCL-240</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3307654</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CVCL: CVCL_0002</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">EFO: EFO_0002793</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">HL-60</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl1684</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl1689</rdfs:seeAlso>
+        <obo:CLO_0000178 xml:lang="en">LCL-1054</obo:CLO_0000178>
+        <rdfs:seeAlso xml:lang="en">MeSH: D018922</rdfs:seeAlso>
+        <rdfs:comment xml:lang="en">disease: promyeloblast; acute promyelocytic leukemia</rdfs:comment>
+        <rdfs:comment>疾病：早幼粒细胞; 急性早幼粒细胞白血病</rdfs:comment>
         <obo:IAO_0000118>HL-60</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
@@ -696,12 +1068,20 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0004009">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hs 578T cell</rdfs:label>
+        <rdfs:label xml:lang="en">Hs 578T cell</rdfs:label>
+        <rdfs:label xml:lang="zh">Hs 578T 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000118>Hs 578T</obo:IAO_0000118>
-        <efo:alternative_term>HS578T</efo:alternative_term>
         <obo:CLO_0000178>LCL-1315</obo:CLO_0000178>
         <rdfs:seeAlso>ATCC: HTB-126</rdfs:seeAlso>
         <rdfs:comment>disease: ductal carcinoma</rdfs:comment>
+        <efo:alternative_term>HS578T</efo:alternative_term>
+        <rdfs:seeAlso xml:lang="en">ATCC: HTB-126</rdfs:seeAlso>
+        <efo:alternative_term xml:lang="en">HS578T</efo:alternative_term>
+        <obo:IAO_0000118 xml:lang="en">Hs 578T</obo:IAO_0000118>
+        <obo:CLO_0000178 xml:lang="en">LCL-1315</obo:CLO_0000178>
+        <rdfs:comment xml:lang="en">disease: ductal carcinoma</rdfs:comment>
+        <rdfs:comment>疾病：导管癌</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -711,10 +1091,16 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0004276">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HT-1080 cell</rdfs:label>
+        <rdfs:label xml:lang="en">HT-1080 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">HT-1080 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000118>HT-1080</obo:IAO_0000118>
         <rdfs:comment>disease: fibrosarcoma</rdfs:comment>
+        <rdfs:comment>疾病：纤维肉瘤</rdfs:comment>
         <rdfs:seeAlso>ATCC: CCL-121</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: CCL-121</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">HT-1080</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">disease: fibrosarcoma</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -724,17 +1110,30 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0004283">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HT-29 cell</rdfs:label>
+        <rdfs:label xml:lang="en">HT-29 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">HT-29 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: HTB-38</rdfs:seeAlso>
-        <rdfs:seeAlso>CHEMBL: CHEMBL3307768</rdfs:seeAlso>
         <rdfs:seeAlso>CVCL: CVCL_0320</rdfs:seeAlso>
-        <efo:alternative_term>HT29</efo:alternative_term>
-        <rdfs:seeAlso>EFO: EFO_0001193</rdfs:seeAlso>
         <rdfs:comment>disease: colorectal adenocarcinoma</rdfs:comment>
         <obo:IAO_0000118>HT-29</obo:IAO_0000118>
         <obo:CLO_0000178>LCL-1180</obo:CLO_0000178>
-        <rdfs:seeAlso>HyperCLDB: cl1752</rdfs:seeAlso>
+        <rdfs:comment>疾病：结肠直肠腺癌</rdfs:comment>
+        <rdfs:seeAlso>CHEMBL: CHEMBL3307768</rdfs:seeAlso>
+        <efo:alternative_term>HT29</efo:alternative_term>
+        <rdfs:seeAlso>EFO: EFO_0001193</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: HTB-38</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3307768</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CVCL: CVCL_0320</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">EFO: EFO_0001193</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">HT-29</obo:IAO_0000118>
+        <efo:alternative_term xml:lang="en">HT29</efo:alternative_term>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl1752</rdfs:seeAlso>
+        <obo:CLO_0000178 xml:lang="en">LCL-1180</obo:CLO_0000178>
         <rdfs:seeAlso>MeSH: D019073</rdfs:seeAlso>
+        <rdfs:seeAlso>HyperCLDB: cl1752</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">MeSH: D019073</rdfs:seeAlso>
+        <rdfs:comment xml:lang="en">disease: colorectal adenocarcinoma</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -744,11 +1143,17 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0004307">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HUV-EC-C cell</rdfs:label>
+        <rdfs:label xml:lang="en">HUV-EC-C cell</rdfs:label>
+        <rdfs:label xml:lang="zh">HUV-EC-C 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:IAO_0000119>WEB: https://www.atcc.org/Products/All/CRL-1730.aspx</obo:IAO_0000119>
         <obo:IAO_0000118>HUVEC</obo:IAO_0000118>
         <rdfs:seeAlso>ATCC: CRL-1730</rdfs:seeAlso>
         <obo:IAO_0000118>HUV-EC-C</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">ATCC: CRL-1730</rdfs:seeAlso>
+        <obo:IAO_0000119>WEB: https://www.atcc.org/Products/All/CRL-1730.aspx</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">HUV-EC-C</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">HUVEC</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">WEB: https://www.atcc.org/Products/All/CRL-1730.aspx</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -758,11 +1163,18 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0004342">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEC-6 cell</rdfs:label>
+        <rdfs:label xml:lang="en">IEC-6 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">IEC-6 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl1802</rdfs:seeAlso>
+        <rdfs:comment>疾病：上皮</rdfs:comment>
         <obo:IAO_0000118>IEC-6</obo:IAO_0000118>
-        <rdfs:seeAlso>ATCC: CRL-1592</rdfs:seeAlso>
         <rdfs:comment>disease: epithelium</rdfs:comment>
+        <rdfs:seeAlso>ATCC: CRL-1592</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: CRL-1592</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl1802</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">IEC-6</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">disease: epithelium</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -772,14 +1184,25 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007043">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JURKAT cell</rdfs:label>
+        <rdfs:label xml:lang="en">JURKAT cell</rdfs:label>
+        <rdfs:label xml:lang="zh">JURKAT 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>RRID: CVCL_0065</rdfs:seeAlso>
         <obo:IAO_0000118>JURKAT</obo:IAO_0000118>
         <rdfs:seeAlso>HyperCLDB: cl5296</rdfs:seeAlso>
-        <cellline:definition>an immortalized human T lymphocyte cell that was derived in the late 1970s from the peripheral blood of a 14-year-old boy with T cell leukemia</cellline:definition>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl5296</rdfs:seeAlso>
         <rdfs:comment>disease: leukemia, T cell</rdfs:comment>
         <rdfs:seeAlso>MeSH: D019169</rdfs:seeAlso>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Jurkat_cells</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">JURKAT</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">MeSH: D019169</rdfs:seeAlso>
+        <cellline:definition>永生的人类T淋巴细胞，衍生自20世纪70年代后期一名14岁的患有T细胞白血病的男孩的外周血</cellline:definition>
+        <rdfs:comment>疾病：白血病，T细胞</rdfs:comment>
+        <rdfs:seeAlso xml:lang="en">RRID: CVCL_0065</rdfs:seeAlso>
+        <obo:IAO_0000119 xml:lang="en">WEB: https://en.wikipedia.org/wiki/Jurkat_cells</obo:IAO_0000119>
+        <cellline:definition>an immortalized human T lymphocyte cell that was derived in the late 1970s from the peripheral blood of a 14-year-old boy with T cell leukemia</cellline:definition>
+        <cellline:definition xml:lang="en">an immortalized human T lymphocyte cell that was derived in the late 1970s from the peripheral blood of a 14-year-old boy with T cell leukemia</cellline:definition>
+        <rdfs:comment xml:lang="en">disease: leukemia, T cell</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -789,9 +1212,13 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007203">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L6 cell</rdfs:label>
+        <rdfs:label xml:lang="en">L6 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">L6 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000118>L6</obo:IAO_0000118>
         <rdfs:seeAlso>ATCC: CRL-1458</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: CRL-1458</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">L6</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -801,22 +1228,43 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007606">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCF7 cell</rdfs:label>
+        <rdfs:label xml:lang="en">MCF7 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">MCF7 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:comment>疾病：腺癌（乳腺原发性）</rdfs:comment>
         <rdfs:seeAlso>RRID: CVCL_0031</rdfs:seeAlso>
-        <cellline:definition>an immortal breast cancer cell line cell isolated in 1970 from a 69-year-old Caucasian woman.</cellline:definition>
+        <obo:IAO_0000118>MCF-7 细胞</obo:IAO_0000118>
         <rdfs:seeAlso>HyperCLDB: cl3372</rdfs:seeAlso>
         <obo:IAO_0000119>WEB: http://web.expasy.org/cellosaurus/CVCL_0031</obo:IAO_0000119>
         <rdfs:seeAlso>EFO: EFO_0002082</rdfs:seeAlso>
-        <rdfs:comment>disease: adenocarcinoma   (mammary gland primary)</rdfs:comment>
+        <cellline:definition>1970年从一名69岁的白种女人身上分离出的一种永生的乳腺癌细胞系细胞。</cellline:definition>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/MCF-7</obo:IAO_0000119>
-        <obo:IAO_0000117>ZN</obo:IAO_0000117>
-        <rdfs:seeAlso>CHEMBL: CHEMBL3308403</rdfs:seeAlso>
         <rdfs:seeAlso>HyperCLDB: cl3366</rdfs:seeAlso>
-        <obo:IAO_0000118>MCF-7 cell</obo:IAO_0000118>
         <obo:IAO_0000118>MCF 7 cell</obo:IAO_0000118>
         <rdfs:seeAlso>ATCC: HTB-22</rdfs:seeAlso>
+        <cellline:definition>an immortal breast cancer cell line cell isolated in 1970 from a 69-year-old Caucasian woman.</cellline:definition>
+        <rdfs:comment>disease: adenocarcinoma   (mammary gland primary)</rdfs:comment>
+        <rdfs:seeAlso xml:lang="en">ATCC: HTB-22</rdfs:seeAlso>
+        <obo:IAO_0000117>ZN</obo:IAO_0000117>
+        <rdfs:seeAlso>CHEMBL: CHEMBL3308403</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3308403</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">EFO: EFO_0002082</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl3366</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl3372</rdfs:seeAlso>
+        <obo:CLO_0000178 xml:lang="en">LCL-1460</obo:CLO_0000178>
+        <obo:IAO_0000118 xml:lang="en">MCF 7 cell</obo:IAO_0000118>
+        <obo:IAO_0000118>MCF-7 cell</obo:IAO_0000118>
+        <obo:IAO_0000118>MCF 7 细胞</obo:IAO_0000118>
         <obo:CLO_0000178>LCL-1460</obo:CLO_0000178>
+        <obo:IAO_0000118 xml:lang="en">MCF-7 cell</obo:IAO_0000118>
         <obo:IAO_0000118>MCF7</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">MCF7</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">RRID: CVCL_0031</rdfs:seeAlso>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://web.expasy.org/cellosaurus/CVCL_0031</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">WEB: https://en.wikipedia.org/wiki/MCF-7</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">ZN</obo:IAO_0000117>
+        <cellline:definition xml:lang="en">an immortal breast cancer cell line cell isolated in 1970 from a 69-year-old Caucasian woman.</cellline:definition>
+        <rdfs:comment xml:lang="en">disease: adenocarcinoma   (mammary gland primary)</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -826,15 +1274,26 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007634">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MDA-MB-231 cell</rdfs:label>
+        <rdfs:label xml:lang="en">MDA-MB-231 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">MDA-MB-231 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>EFO: EFO_0001209</rdfs:seeAlso>
         <cellline:definition>an immortal breast cancer cell line cell derived from a human patient with breast adenocarcinoma</cellline:definition>
+        <cellline:definition>从乳腺癌患者中获得的永生乳腺癌细胞系细胞</cellline:definition>
         <obo:IAO_0000118>MDA-MB-231</obo:IAO_0000118>
         <rdfs:seeAlso>CHEMBL: CHEMBL3307960</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: HTB-26</rdfs:seeAlso>
         <rdfs:seeAlso>RRID: CVCL_0062</rdfs:seeAlso>
-        <rdfs:seeAlso>ATCC: HTB-26</rdfs:seeAlso>
         <obo:IAO_0000117>ZN, YH</obo:IAO_0000117>
+        <rdfs:seeAlso>ATCC: HTB-26</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3307960</rdfs:seeAlso>
         <obo:CLO_0000178>LCL-1461</obo:CLO_0000178>
+        <rdfs:seeAlso xml:lang="en">EFO: EFO_0001209</rdfs:seeAlso>
+        <obo:CLO_0000178 xml:lang="en">LCL-1461</obo:CLO_0000178>
+        <obo:IAO_0000118 xml:lang="en">MDA-MB-231</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">RRID: CVCL_0062</rdfs:seeAlso>
+        <obo:IAO_0000117 xml:lang="en">ZN, YH</obo:IAO_0000117>
+        <cellline:definition xml:lang="en">an immortal breast cancer cell line cell derived from a human patient with breast adenocarcinoma</cellline:definition>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -844,9 +1303,13 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007646">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MDCK cell</rdfs:label>
+        <rdfs:label xml:lang="en">MDCK cell</rdfs:label>
+        <rdfs:label xml:lang="zh">MDCK 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl5078</rdfs:seeAlso>
         <obo:IAO_0000118>MDCK</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl5078</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">MDCK</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -856,13 +1319,22 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007657">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ME-180 cell</rdfs:label>
+        <rdfs:label xml:lang="en">ME-180 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">ME-180 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <rdfs:comment>disease: epidermoid carcinoma   (cervix primary)</rdfs:comment>
-        <rdfs:seeAlso>CHEMBL: CHEMBL3308114</rdfs:seeAlso>
-        <obo:CLO_0000178>LCL-1305</obo:CLO_0000178>
+        <rdfs:seeAlso xml:lang="en">ATCC: HTB-33</rdfs:seeAlso>
+        <rdfs:comment>疾病：表皮样癌（宫颈原发性）</rdfs:comment>
         <rdfs:seeAlso>CVCL: CVCL_1401</rdfs:seeAlso>
+        <rdfs:seeAlso>CHEMBL: CHEMBL3308114</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3308114</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CVCL: CVCL_1401</rdfs:seeAlso>
+        <rdfs:comment>disease: epidermoid carcinoma (cervix primary)</rdfs:comment>
+        <obo:CLO_0000178>LCL-1305</obo:CLO_0000178>
         <rdfs:seeAlso>ATCC: HTB-33</rdfs:seeAlso>
+        <obo:CLO_0000178 xml:lang="en">LCL-1305</obo:CLO_0000178>
         <obo:IAO_0000118>ME-180</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">ME-180</obo:IAO_0000118>
+        <rdfs:comment xml:lang="en">disease: epidermoid carcinoma   (cervix primary)</rdfs:comment>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -872,10 +1344,15 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007865">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRC-5 cell</rdfs:label>
+        <rdfs:label xml:lang="en">MRC-5 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">MRC-5 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl3564</rdfs:seeAlso>
         <rdfs:seeAlso>ATCC: CCL-171</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: CCL-171</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl3564</rdfs:seeAlso>
         <obo:IAO_0000118>MRC-5</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">MRC-5</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -885,11 +1362,17 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007904">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mv 1 Lu cell</rdfs:label>
+        <rdfs:label xml:lang="en">Mv 1 Lu cell</rdfs:label>
+        <rdfs:label xml:lang="zh">Mv 1 Lu 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl3604</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl3604</rdfs:seeAlso>
         <rdfs:seeAlso>HyperCLDB: cl3609</rdfs:seeAlso>
         <rdfs:seeAlso>HyperCLDB: cl3608</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl3608</rdfs:seeAlso>
         <obo:IAO_0000118>Mv 1 Lu</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl3609</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">Mv 1 Lu</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -899,12 +1382,19 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0008172">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIH-3T3 cell</rdfs:label>
+        <rdfs:label xml:lang="en">NIH-3T3 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">NIH-3T3 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl3710</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: CRL-1658</rdfs:seeAlso>
         <rdfs:seeAlso>HyperCLDB: cl3711</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl3711</rdfs:seeAlso>
         <obo:IAO_0000118>NIH-3T3</obo:IAO_0000118>
-        <rdfs:seeAlso>ATCC: CRL-1658</rdfs:seeAlso>
         <rdfs:seeAlso>MeSH: D041681</rdfs:seeAlso>
+        <rdfs:seeAlso>ATCC: CRL-1658</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl3710</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">MeSH: D041681</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">NIH-3T3</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -914,12 +1404,19 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009015">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SH-SY5Y cell</rdfs:label>
+        <rdfs:label xml:lang="en">SH-SY5Y cell</rdfs:label>
+        <rdfs:label xml:lang="zh">SH-SY5Y 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:IAO_0000118>SH-SY5Y</obo:IAO_0000118>
         <efo:alternative_term>SHSY5Y</efo:alternative_term>
-        <obo:CLO_0000178>LCL-2000</obo:CLO_0000178>
-        <obo:IAO_0000119>https://www.atcc.org/en/Products/Cells_and_Microorganisms/By_Tissue/Bone_Marrow/CRL-2266.aspx</obo:IAO_0000119>
         <rdfs:seeAlso>ATCC: CRL-2266</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: CRL-2266</rdfs:seeAlso>
+        <obo:IAO_0000118>SH-SY5Y</obo:IAO_0000118>
+        <obo:CLO_0000178>LCL-2000</obo:CLO_0000178>
+        <obo:CLO_0000178 xml:lang="en">LCL-2000</obo:CLO_0000178>
+        <efo:alternative_term xml:lang="en">SHSY5Y</efo:alternative_term>
+        <obo:IAO_0000119>https://www.atcc.org/en/Products/Cells_and_Microorganisms/By_Tissue/Bone_Marrow/CRL-2266.aspx</obo:IAO_0000119>
+        <obo:IAO_0000118 xml:lang="en">SH-SY5Y</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">https://www.atcc.org/en/Products/Cells_and_Microorganisms/By_Tissue/Bone_Marrow/CRL-2266.aspx</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -951,13 +1448,21 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009059">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SK-N-SH cell</rdfs:label>
+        <rdfs:label xml:lang="en">SK-N-SH cell</rdfs:label>
+        <rdfs:label xml:lang="zh">SK-N-SH 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: HTB-11</rdfs:seeAlso>
         <rdfs:seeAlso>EFO: EFO_0003072</rdfs:seeAlso>
         <rdfs:seeAlso>CHEMBL: CHEMBL3307745</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: HTB-11</rdfs:seeAlso>
         <obo:CLO_0000178>LCL-1971</obo:CLO_0000178>
         <obo:IAO_0000118>SK-N-SH</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3307745</rdfs:seeAlso>
         <rdfs:seeAlso>CVCL: CVCL_0531</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CVCL: CVCL_0531</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">EFO: EFO_0003072</rdfs:seeAlso>
+        <obo:CLO_0000178 xml:lang="en">LCL-1971</obo:CLO_0000178>
+        <obo:IAO_0000118 xml:lang="en">SK-N-SH</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -983,15 +1488,25 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009348">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THP-1 cell</rdfs:label>
+        <rdfs:label xml:lang="en">THP-1 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">THP-1 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:CLO_0000178>LCL-1072</obo:CLO_0000178>
         <rdfs:seeAlso>ATCC: TIB-202</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: TIB-202</rdfs:seeAlso>
         <rdfs:seeAlso>EFO: EFO_0001253</rdfs:seeAlso>
         <rdfs:seeAlso>CVCL: CVCL_0006</rdfs:seeAlso>
         <efo:alternative_term>THP1</efo:alternative_term>
         <rdfs:seeAlso>HyperCLDB: cl4514</rdfs:seeAlso>
         <rdfs:seeAlso>CHEMBL: CHEMBL3307574</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3307574</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CVCL: CVCL_0006</rdfs:seeAlso>
         <obo:IAO_0000118>THP-1</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">EFO: EFO_0001253</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl4514</rdfs:seeAlso>
+        <obo:CLO_0000178 xml:lang="en">LCL-1072</obo:CLO_0000178>
+        <obo:IAO_0000118 xml:lang="en">THP-1</obo:IAO_0000118>
+        <efo:alternative_term xml:lang="en">THP1</efo:alternative_term>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -1001,15 +1516,25 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009454">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U-2 OS cell</rdfs:label>
+        <rdfs:label xml:lang="en">U-2 OS cell</rdfs:label>
+        <rdfs:label xml:lang="zh">U-2 OS 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:CLO_0000178>LCL-1431</obo:CLO_0000178>
         <rdfs:seeAlso>ATCC: HTB-96</rdfs:seeAlso>
         <rdfs:seeAlso>CHEMBL: CHEMBL3307757</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CHEMBL: CHEMBL3307757</rdfs:seeAlso>
         <rdfs:seeAlso>CVCL: CVCL_0042</rdfs:seeAlso>
         <obo:IAO_0000118>U-2 OS</obo:IAO_0000118>
         <obo:IAO_0000118>U2OS</obo:IAO_0000118>
+        <rdfs:seeAlso xml:lang="en">ATCC: HTB-96</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">CVCL: CVCL_0042</rdfs:seeAlso>
         <obo:IAO_0000119>WEB: https://www.atcc.org/Products/All/HTB-96.aspx</obo:IAO_0000119>
         <rdfs:seeAlso>EFO: EFO_0002869</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">EFO: EFO_0002869</rdfs:seeAlso>
+        <obo:CLO_0000178 xml:lang="en">LCL-1431</obo:CLO_0000178>
+        <obo:IAO_0000118 xml:lang="en">U-2 OS</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">U2OS</obo:IAO_0000118>
+        <obo:IAO_0000119 xml:lang="en">WEB: https://www.atcc.org/Products/All/HTB-96.aspx</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -1032,11 +1557,17 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009524">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vero cell</rdfs:label>
+        <rdfs:label xml:lang="en">Vero cell</rdfs:label>
+        <rdfs:label xml:lang="zh">Vero 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl4644</rdfs:seeAlso>
         <obo:IAO_0000118>Vero</obo:IAO_0000118>
-        <rdfs:seeAlso>ATCC: CCL-81</rdfs:seeAlso>
         <rdfs:seeAlso>MeSH: D014709</rdfs:seeAlso>
+        <rdfs:seeAlso>ATCC: CCL-81</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: CCL-81</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl4644</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">MeSH: D014709</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">Vero</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -1046,10 +1577,15 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009526">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VERO 76 cell</rdfs:label>
+        <rdfs:label xml:lang="en">VERO 76 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">VERO 76 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:IAO_0000118>VERO 76</obo:IAO_0000118>
         <rdfs:seeAlso>ATCC: CRL-1587</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: CRL-1587</rdfs:seeAlso>
+        <obo:IAO_0000118>VERO 76</obo:IAO_0000118>
         <rdfs:seeAlso>HyperCLDB: cl4655</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl4655</rdfs:seeAlso>
+        <obo:IAO_0000118 xml:lang="en">VERO 76</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -1059,11 +1595,17 @@ http://code.google.com/p/clo-ontology/wiki/Cell_Lines
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009527">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VERO C1008 cell</rdfs:label>
+        <rdfs:label xml:lang="en">VERO C1008 cell</rdfs:label>
+        <rdfs:label xml:lang="zh">VERO C1008 细胞</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: CRL-1586</rdfs:seeAlso>
-        <obo:IAO_0000118>VERO C1008</obo:IAO_0000118>
         <rdfs:seeAlso>HyperCLDB: cl4656</rdfs:seeAlso>
         <rdfs:seeAlso>HyperCLDB: cl4657</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">ATCC: CRL-1586</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl4656</rdfs:seeAlso>
+        <rdfs:seeAlso xml:lang="en">HyperCLDB: cl4657</rdfs:seeAlso>
+        <obo:IAO_0000118>VERO C1008</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">VERO C1008</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     

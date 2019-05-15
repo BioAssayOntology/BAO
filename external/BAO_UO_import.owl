@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.bioassayontology.org/bao/external/bao_UO_import.owl#"
-     xml:base="http://www.bioassayontology.org/bao/external/bao_UO_import.owl"
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/external/BAO_UO_import.owl#"
+     xml:base="http://www.bioassayontology.org/bao/external/BAO_UO_import.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/external/bao_UO_import.owl"/>
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/external/BAO_UO_import.owl"/>
     
 
 
@@ -413,7 +413,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/UO_0000036">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">year</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000003"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A time unit which is equal to 12 months which is science is taken to be equal to 365.25 days.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A time unit which is equal to 12 months which in science is taken to be equal to 365.25 days.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UO:0000036</oboInOwl:id>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">george gkoutos</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unit.ontology</oboInOwl:hasOBONamespace>

@@ -33,7 +33,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>20 Dec 2018</dc:date>
+        <dc:date>25 Apr 2019</dc:date>
     </owl:Ontology>
 
 
@@ -486,8 +486,8 @@ Membrane potential can be measured either by using electrophysiological techniqu
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000448">
 		<rdfs:label rdf:datatype="&xsd;string">morphology assessment method</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002202"/>
 		<obo:IAO_0000115>The technologies used to measure the size and shape of cells and organelles (phenotype). These are detected by microscopy.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002202"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000464 -->
@@ -1565,8 +1565,8 @@ The formazan can then be solubilized producing a concentration dependent colorim
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002489">
 		<rdfs:label rdf:datatype="&xsd;string">hybrid screening</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002488"/>
 		<obo:IAO_0000115>Refers to variations on the two-hybrid technique, which measures activation of a reporter gene caused by binding between fusion proteins or other molecular entities.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002488"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002490 -->
@@ -2288,6 +2288,21 @@ microarray, bead based method or RNASeq.</obo:IAO_0000115>
 		<rdfs:label rdf:datatype="&xsd;string">transcription factor occupancy</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040027"/>
 		<obo:IAO_0000115>A method that is used to identify the DNA regions that are being occupied by a predefined transcriptional factor(s)</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0040031 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040031">
+		<rdfs:label rdf:datatype="&xsd;string">size separation method</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002202"/>
+		<obo:IAO_0000115>Techniques used to separate mixtures of macromolecules based on physical size and mass</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0040032 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040032">
+		<rdfs:label rdf:datatype="&xsd;string">NanoBRET</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002755"/>
 	</owl:Class>
 
 </rdf:RDF>

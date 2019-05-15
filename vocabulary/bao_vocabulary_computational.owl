@@ -33,7 +33,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>20 Dec 2018</dc:date>
+        <dc:date>25 Apr 2019</dc:date>
     </owl:Ontology>
 
 
@@ -324,8 +324,8 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002256">
 		<rdfs:label rdf:datatype="&xsd;string">Lipinski rule of 5 filtering</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002255"/>
 		<obo:IAO_0000115>Set of criteria for predicting the oral bioavailability of a compound on the basis of simple molecular features (molecular weight, CLogP, numbers of hydrogen- bond donors and acceptors).</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002255"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002257 -->
