@@ -20,4 +20,4 @@ The data content in [git-BioAssay Ontology](https://github.com/BioAssayOntology)
 
 #### Contribute
 We are open to collaboration and/or contributions from the community.  Any bugs or feature request please submit into [git-BioAssay Ontology](https://github.com/BioAssayOntology).
-This project adheres to the [Contributor Covenant code of conduct] (https://www.contributor-covenant.org/version/1/4/code-of-conduct.html).
+This project adheres to the [Contributor Covenant code of conduct](https://www.contributor-covenant.org/version/1/4/code-of-conduct.html).
