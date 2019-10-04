@@ -33,7 +33,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>25 Apr 2019</dc:date>
+        <dc:date>4 Oct 2019</dc:date>
     </owl:Ontology>
 
 
@@ -1964,6 +1964,14 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080033">
 		<rdfs:label rdf:datatype="&xsd;string">cell profile</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002138"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080034 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080034">
+		<rdfs:label rdf:datatype="&xsd;string">beta-arrestin clustering assay</rdfs:label>
+		<obo:IAO_0000115>The Transfluor assay employs a a beta-arrestin-GFP fusion protein to detect activation of GPCRs: Upon ligand binding the GPCR, cytosolic arrestin-GFP quickly translocates to the cell membrane and then to endocytic vesicles, where it &apos;clusters&apos; and can be detected by fluorescent image analysis. (Developed / commercialized by Norak, then Molecular Devices)</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000110"/>
 	</owl:Class>
 
 </rdf:RDF>

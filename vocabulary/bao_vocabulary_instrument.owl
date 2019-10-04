@@ -33,7 +33,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>25 Apr 2019</dc:date>
+        <dc:date>4 Oct 2019</dc:date>
     </owl:Ontology>
 
 
@@ -1467,6 +1467,7 @@ http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150095">
 		<rdfs:label rdf:datatype="&xsd;string">Luminex 200 Flow Cytometer</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
+		<obo:IAO_0000115>The Luminex 100/200 System is the combination of three core xMAP® Technologies. The first is xMAP microspheres, a family of fluorescently dyed micron-sized polystyrene microspheres that act as both the identifier and the solid surface to build the assay. The second is a flow cytometry-based instrument, the Luminex 100/200 analyzer, which integrates key xMAP detection components, such as lasers, optics, fluidics, and high-speed digital signal processors. The third component is the xPONENT® software, which is designed for protocol-based data acquisition with robust data regression analysis. From https://www.luminexcorp.com/research-luminex-100200/</obo:IAO_0000115>
 	</owl:Class>
 
 </rdf:RDF>

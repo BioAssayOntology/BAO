@@ -33,7 +33,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>25 Apr 2019</dc:date>
+        <dc:date>4 Oct 2019</dc:date>
     </owl:Ontology>
 
 
@@ -1782,21 +1782,21 @@ Trp-Lys-Tyr-Met-Val-D-Med-NH2</obo:IAO_0000115>
 	<!-- http://www.bioassayontology.org/bao#BAO_0002889 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002889">
-		<rdfs:label rdf:datatype="&xsd;string">calcium-mediated signaling using intracellular calcium source_bao</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">calcium-mediated signaling using intracellular calcium</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000264"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002890 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002890">
-		<rdfs:label rdf:datatype="&xsd;string">G-protein coupled receptor signaling pathway_BAO</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">G-protein coupled receptor signaling</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000264"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002891 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002891">
-		<rdfs:label rdf:datatype="&xsd;string">cAMP-mediated signaling_BAO</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">cAMP-mediated</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000264"/>
 	</owl:Class>
 
