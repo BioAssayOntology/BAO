@@ -33,7 +33,7 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>4 Oct 2019</dc:date>
+        <dc:date>3 Feb 2020</dc:date>
     </owl:Ontology>
 
 
@@ -314,8 +314,8 @@ To convert between the absorbance and transmittance scales, the following equati
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000363">
 		<rdfs:label rdf:datatype="&xsd;string">fluorescence intensity</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000583"/>
 		<obo:IAO_0000115>Fluorescence intensity is the measure of fluorescence from a sample.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000046"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000382 -->

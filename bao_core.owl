@@ -18,7 +18,7 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_core.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_module_vocabularies.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:date>4 Oct 2019</dc:date>
+        <dc:date>3 Feb 2020</dc:date>
         <owl:versionInfo>2.5</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
