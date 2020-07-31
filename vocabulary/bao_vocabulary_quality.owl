@@ -26,14 +26,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_quality.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.5</owl:versionInfo>
+        <owl:versionInfo>2.6</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>3 Feb 2020</dc:date>
+        <dc:date>31 Jul 2020</dc:date>
     </owl:Ontology>
 
 
@@ -85,14 +85,14 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000037">
 		<rdfs:label rdf:datatype="&xsd;string">labeled</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0120001"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000038 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000038">
 		<rdfs:label rdf:datatype="&xsd;string">unlabeled</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0120001"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000088 -->
@@ -107,7 +107,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000089">
 		<rdfs:label rdf:datatype="&xsd;string">wild type</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0120002"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
 		<obo:IAO_0000115>The phenotype of an organism that is most common in nature and was unmodified.</obo:IAO_0000115>
 	</owl:Class>
 
@@ -115,7 +115,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000099">
 		<rdfs:label rdf:datatype="&xsd;string">antibiotic resistance</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0120000"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001396"/>
 		<obo:IAO_0000115>It is the quality which allows a microorganism to survive after exposure to one or more antibiotics.</obo:IAO_0000115>
 	</owl:Class>
 
@@ -123,7 +123,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000138">
 		<rdfs:label rdf:datatype="&xsd;string">molecular structure</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0120001"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000228 -->
@@ -154,7 +154,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000565">
 		<rdfs:label rdf:datatype="&xsd;string">wavelength</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0120003"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
 		<obo:IAO_0000115>A physical quality which is equal to the distance between repeating units of a wave pattern (from PATO).
 For fluorescence measurements, it is the wavelength at which the fluorophore is excited and the wavelength at which it emits fluorescence. In the case of absorbance, it is the wavelength at which light is absorbed by a biological entity or a dye.</obo:IAO_0000115>
 	</owl:Class>
@@ -250,7 +250,7 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002057">
 		<rdfs:label rdf:datatype="&xsd;string">engineered</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0120002"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
 		<obo:IAO_0000115>The phenotype of an organism that has been derived by genetic modification.</obo:IAO_0000115>
 	</owl:Class>
 
@@ -258,7 +258,7 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002099">
 		<rdfs:label rdf:datatype="&xsd;string">cell growth property</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0120000"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001396"/>
 		<obo:IAO_0000115>Cell line culturing describes the growth mode of a cell line, whether it grows attached to the culture dish (adherent) or floating (suspension) in the culture medium or partially attached (mixed adherent and suspension).</obo:IAO_0000115>
 	</owl:Class>
 
@@ -319,7 +319,7 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002609">
 		<rdfs:label rdf:datatype="&xsd;string">antibody isotype</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0120001"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
 		<obo:IAO_0000115>The different varieties or classes of antibodies, which differ in their properties and biological functions.</obo:IAO_0000115>
 	</owl:Class>
 
@@ -362,7 +362,7 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002618">
 		<rdfs:label rdf:datatype="&xsd;string">purity</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0120001"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002619 -->
@@ -390,7 +390,7 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002636">
 		<rdfs:label rdf:datatype="&xsd;string">bandwidth</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0120003"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
 		<obo:IAO_0000115>Bandwidth is the range of wavelength of light that it allows to pass through the filter, which is either excitation or emission type.</obo:IAO_0000115>
 	</owl:Class>
 
@@ -420,7 +420,7 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002844">
 		<rdfs:label rdf:datatype="&xsd;string">Gram staining</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0120002"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002928 -->
@@ -454,21 +454,21 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003072">
 		<rdfs:label rdf:datatype="&xsd;string">activated</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0120001"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003073 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003073">
 		<rdfs:label rdf:datatype="&xsd;string">synthetic</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0120001"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003074 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003074">
 		<rdfs:label rdf:datatype="&xsd;string">endogenous</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0120001"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0120000 -->
@@ -476,6 +476,7 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0120000">
 		<rdfs:label rdf:datatype="&xsd;string">cellular quality</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002928"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0120001 -->
@@ -483,6 +484,7 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0120001">
 		<rdfs:label rdf:datatype="&xsd;string">molecular quality</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002928"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0120002 -->
@@ -490,6 +492,7 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0120002">
 		<rdfs:label rdf:datatype="&xsd;string">organismal quality</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002928"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0120003 -->
@@ -497,6 +500,7 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0120003">
 		<rdfs:label rdf:datatype="&xsd;string">physical quality</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002928"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 </rdf:RDF>

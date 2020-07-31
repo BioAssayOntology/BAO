@@ -26,14 +26,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_materialentity.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.5</owl:versionInfo>
+        <owl:versionInfo>2.6</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>3 Feb 2020</dc:date>
+        <dc:date>31 Jul 2020</dc:date>
     </owl:Ontology>
 
 
@@ -1392,6 +1392,139 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003116">
 		<rdfs:label rdf:datatype="&xsd;string">material entity</rdfs:label>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100001 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100001">
+		<rdfs:label rdf:datatype="&xsd;string">DiFMUP (Molecular Probes)</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+		<obo:IAO_0000115>A fluorinated 4-methylumbelliferyl phosphate (MUP) derivative that has a lower pKa than that of MUP, making DiFMUP an excellent substrate for continuously assaying acid phosphatases at low pH. The reaction product of DiFMUP has excitation/emission maxima of ~358/450 nm.</obo:IAO_0000115>
+		<obo:IAO_0000118>6,8-Difluoro-4-Methylumbelliferyl Phosphate</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100002 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100002">
+		<rdfs:label rdf:datatype="&xsd;string">alamarBlue</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+		<obo:IAO_0000115>alamarBlue is a cell viability assay reagent which contains the cell permeable, non-toxic, and weakly fluorescent blue indicator dye called resazurin.</obo:IAO_0000115>
+		<obo:IAO_0000118>Alamar Blue</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100003 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100003">
+		<rdfs:label rdf:datatype="&xsd;string">Alexa555</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51121"/>
+		<obo:IAO_0000115>Fluorescent dye with an excitation/emission maxima of ~555/580 nm.</obo:IAO_0000115>
+		<obo:IAO_0000118>Alexa Fluor 555</obo:IAO_0000118>
+		<obo:IAO_0000118> Alexa555</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100004 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100004">
+		<rdfs:label rdf:datatype="&xsd;string">Alexa568</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51121"/>
+		<obo:IAO_0000115>Fluorescent dye with an excitation/emission maxima of ~578/603 nm.</obo:IAO_0000115>
+		<obo:IAO_0000118>Alexa Fluor 568</obo:IAO_0000118>
+		<obo:IAO_0000118> Alexa568</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100005 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100005">
+		<rdfs:label rdf:datatype="&xsd;string">ammonium acetate</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+		<obo:IAO_0000115>Common buffer component with the chemical formula NH4CH3CO2.</obo:IAO_0000115>
+		<obo:IAO_0000118>ammonium ethanoate</obo:IAO_0000118>
+		<obo:IAO_0000118> AmOAc</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100006 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100006">
+		<rdfs:label rdf:datatype="&xsd;string">beta-mercaptoethanol</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+		<obo:IAO_0000115>Used to reduce disulfide bonds</obo:IAO_0000115>
+		<obo:IAO_0000118>2-mercaptoethanol</obo:IAO_0000118>
+		<obo:IAO_0000118> Î²-mercaptoethanol</obo:IAO_0000118>
+		<obo:IAO_0000118> BME</obo:IAO_0000118>
+		<obo:IAO_0000118> 2BME</obo:IAO_0000118>
+		<obo:IAO_0000118> thioglycol</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100007 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100007">
+		<rdfs:label rdf:datatype="&xsd;string">BIS-TRIS</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+		<obo:IAO_0000115>Common buffering agent</obo:IAO_0000115>
+		<obo:IAO_0000118>Bis-tris methane</obo:IAO_0000118>
+		<obo:IAO_0000118> BTM</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100008 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100008">
+		<rdfs:label rdf:datatype="&xsd;string">DAPI</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51121"/>
+		<obo:IAO_0000115>Blue-fluorescent DNA stain</obo:IAO_0000115>
+		<obo:IAO_0000118>4â€²,6-diamidino-2-phenylindole</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100009 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100009">
+		<rdfs:label rdf:datatype="&xsd;string">formamide</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+		<obo:IAO_0000115>Organic solvent which allows for the denaturation and renaturation of nucleic acids at room temperature. Often used as a quenching agent.</obo:IAO_0000115>
+		<obo:IAO_0000118>methanamide</obo:IAO_0000118>
+		<obo:IAO_0000118> carbamaldehyde</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100010 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100010">
+		<rdfs:label rdf:datatype="&xsd;string">magnesium chloride</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+		<obo:IAO_0000115>Hygroscopic salt commonly used in buffers</obo:IAO_0000115>
+		<obo:IAO_0000118>MgCl2</obo:IAO_0000118>
+		<obo:IAO_0000118> Magnesium dichloride</obo:IAO_0000118>
+		<obo:IAO_0000118> chloromagnestite</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100011 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100011">
+		<rdfs:label rdf:datatype="&xsd;string">potassium chloride</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+		<obo:IAO_0000115>Inorganic salt commonly used in buffers</obo:IAO_0000115>
+		<obo:IAO_0000118>KCl</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100012 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100012">
+		<rdfs:label rdf:datatype="&xsd;string">sodium chloride</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+		<obo:IAO_0000115>Commonly used salt</obo:IAO_0000115>
+		<obo:IAO_0000118>NaCl</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100013 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100013">
+		<rdfs:label rdf:datatype="&xsd;string">GPCR arrestin complex</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0100014 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100014">
+		<rdfs:label rdf:datatype="&xsd;string">GPCR complex</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 </rdf:RDF>

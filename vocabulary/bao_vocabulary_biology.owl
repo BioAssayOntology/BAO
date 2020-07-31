@@ -26,14 +26,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.5</owl:versionInfo>
+        <owl:versionInfo>2.6</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>3 Feb 2020</dc:date>
+        <dc:date>31 Jul 2020</dc:date>
     </owl:Ontology>
 
 
@@ -56,7 +56,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000119">
 		<rdfs:label rdf:datatype="&xsd;string">induced pluripotent stem cell</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002931"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000001"/>
 		<obo:IAO_0000118>iPSC</obo:IAO_0000118>
 	</owl:Class>
 
@@ -147,7 +147,7 @@ Here, a protein is a perturbagen whereby its ability to modulate a physiological
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000239">
 		<rdfs:label rdf:datatype="&xsd;string">primary cell</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002931"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000001"/>
 		<obo:IAO_0000115>Cells that are cultured from a subject (tissue or tumor) and which are not immortalized. They can undergo only a limited number of cell divisions prior to reaching senescence.</obo:IAO_0000115>
 	</owl:Class>
 
@@ -157,6 +157,7 @@ Here, a protein is a perturbagen whereby its ability to modulate a physiological
 		<rdfs:label rdf:datatype="&xsd;string">biological process</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
 		<obo:IAO_0000115>Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end (from GO).</obo:IAO_0000115>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000269 -->
@@ -671,14 +672,14 @@ Here, a protein is a perturbagen whereby its ability to modulate a physiological
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000732">
 		<rdfs:label rdf:datatype="&xsd;string">Cos-7</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000743 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000743">
 		<rdfs:label rdf:datatype="&xsd;string">Schneider&apos;s Drosophila Line 2</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000745 -->
@@ -706,7 +707,7 @@ Here, a protein is a perturbagen whereby its ability to modulate a physiological
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000758">
 		<rdfs:label rdf:datatype="&xsd;string">U937 (CD59+)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000762 -->
@@ -1305,6 +1306,7 @@ Trp-Lys-Tyr-Met-Val-D-Med-NH2</obo:IAO_0000115>
 		<rdfs:label rdf:datatype="&xsd;string">carbohydrate</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003111"/>
 		<rdfs:comment>Import the ligands from PRO with IDs</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002016 -->
@@ -1401,329 +1403,329 @@ Trp-Lys-Tyr-Met-Val-D-Med-NH2</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002670">
 		<rdfs:label rdf:datatype="&xsd;string">BJ</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002673 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002673">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-010</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002674 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002674">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-001</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002675 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002675">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-012</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002676 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002676">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-014</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002677 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002677">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-016</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002678 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002678">
 		<rdfs:label rdf:datatype="&xsd;string">BSC-1</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002679 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002679">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-018</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002680 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002680">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-020</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002681 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002681">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-022</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002682 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002682">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-024</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002683 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002683">
 		<rdfs:label rdf:datatype="&xsd;string">U3A</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002684 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002684">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-026</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002685 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002685">
 		<rdfs:label rdf:datatype="&xsd;string">MV-4-11</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002686 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002686">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-007</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002687 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002687">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-006</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002688 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002688">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-002</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002689 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002689">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-025</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002690 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002690">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-023</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002691 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002691">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-021</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002692 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002692">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-019</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002693 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002693">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-017</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002694 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002694">
 		<rdfs:label rdf:datatype="&xsd;string">RBL-2H3</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002695 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002695">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-013</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002696 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002696">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-011</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002697 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002697">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-009</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002698 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002698">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-005</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002699 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002699">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-004</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002700 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002700">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-003</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002701 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002701">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP1-003</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002702 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002702">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP1-002</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002703 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002703">
 		<rdfs:label rdf:datatype="&xsd;string">C6</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002704 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002704">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-008</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002705 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002705">
 		<rdfs:label rdf:datatype="&xsd;string">MSC 80</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002706 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002706">
 		<rdfs:label rdf:datatype="&xsd;string">LYMP2-015</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002707 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002707">
 		<rdfs:label rdf:datatype="&xsd;string">OCI-Ly3</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002708 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002708">
 		<rdfs:label rdf:datatype="&xsd;string">C2C12</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002709 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002709">
 		<rdfs:label rdf:datatype="&xsd;string">HEC-1-A</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002710 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002710">
 		<rdfs:label rdf:datatype="&xsd;string">WRO</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002711 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002711">
 		<rdfs:label rdf:datatype="&xsd;string">N2a</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002712 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002712">
 		<rdfs:label rdf:datatype="&xsd;string">SK-BR-3</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002713 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002713">
 		<rdfs:label rdf:datatype="&xsd;string">H4</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002714 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002714">
 		<rdfs:label rdf:datatype="&xsd;string">ML-2</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002715 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002715">
 		<rdfs:label rdf:datatype="&xsd;string">KOPN-8</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002716 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002716">
 		<rdfs:label rdf:datatype="&xsd;string">PPC-1</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002717 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002717">
 		<rdfs:label rdf:datatype="&xsd;string">CSM14.1</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002718 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002718">
 		<rdfs:label rdf:datatype="&xsd;string">BSR</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003048"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
 		<obo:IAO_0000115>A clone of BHK (Baby hamster kidney) cells.</obo:IAO_0000115>
 	</owl:Class>
 
@@ -1731,7 +1733,7 @@ Trp-Lys-Tyr-Met-Val-D-Med-NH2</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002737">
 		<rdfs:label rdf:datatype="&xsd;string">regulation of catalytic activity</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000264"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002742 -->
@@ -1783,21 +1785,21 @@ Trp-Lys-Tyr-Met-Val-D-Med-NH2</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002889">
 		<rdfs:label rdf:datatype="&xsd;string">calcium-mediated signaling using intracellular calcium</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000264"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002890 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002890">
 		<rdfs:label rdf:datatype="&xsd;string">G-protein coupled receptor signaling</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000264"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002891 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002891">
 		<rdfs:label rdf:datatype="&xsd;string">cAMP-mediated</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000264"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002925 -->
@@ -1812,6 +1814,7 @@ Trp-Lys-Tyr-Met-Val-D-Med-NH2</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002927">
 		<rdfs:label rdf:datatype="&xsd;string">disease</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002930 -->
@@ -1819,6 +1822,7 @@ Trp-Lys-Tyr-Met-Val-D-Med-NH2</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002930">
 		<rdfs:label rdf:datatype="&xsd;string">anatomical entity</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002931 -->
@@ -1826,6 +1830,7 @@ Trp-Lys-Tyr-Met-Val-D-Med-NH2</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002931">
 		<rdfs:label rdf:datatype="&xsd;string">cell line cell</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003016 -->
@@ -1922,13 +1927,14 @@ Trp-Lys-Tyr-Met-Val-D-Med-NH2</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003048">
 		<rdfs:label rdf:datatype="&xsd;string">permanent cell line</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002931"/>
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000001"/>
 		<rdfs:comment>has associated disease some disease
 or
 is bearer of disease (relation in new RO)
 
 Disease import from DOID</rdfs:comment>
 		<obo:IAO_0000115>A cell line that is immortalized.</obo:IAO_0000115>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003049 -->
@@ -1952,6 +1958,7 @@ Disease import from DOID</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">cellular component</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
 		<obo:IAO_0000115>The part of a cell or its extracellular environment in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together (from Gene Ontology).</obo:IAO_0000115>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003057 -->

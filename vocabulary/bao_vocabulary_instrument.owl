@@ -26,14 +26,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_instrument.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.5</owl:versionInfo>
+        <owl:versionInfo>2.6</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>3 Feb 2020</dc:date>
+        <dc:date>31 Jul 2020</dc:date>
     </owl:Ontology>
 
 
@@ -1123,10 +1123,10 @@ http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150059">
 		<rdfs:label rdf:datatype="&xsd;string">FacSCAN flow cytometer</rdfs:label>
+		<obo:IAO_0000115>A flow cell_based benchtop cytometer (Becton Dickinson (BD))</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 1758</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/24/2016</obo:IAO_0000116>
-		<obo:IAO_0000115>A flow cell_based benchtop cytometer (Becton Dickinson (BD))</obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150060 -->
@@ -1468,6 +1468,56 @@ http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">Luminex 200 Flow Cytometer</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000115>The Luminex 100/200 System is the combination of three core xMAP® Technologies. The first is xMAP microspheres, a family of fluorescently dyed micron-sized polystyrene microspheres that act as both the identifier and the solid surface to build the assay. The second is a flow cytometry-based instrument, the Luminex 100/200 analyzer, which integrates key xMAP detection components, such as lasers, optics, fluidics, and high-speed digital signal processors. The third component is the xPONENT® software, which is designed for protocol-based data acquisition with robust data regression analysis. From https://www.luminexcorp.com/research-luminex-100200/</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0150096 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150096">
+		<rdfs:label rdf:datatype="&xsd;string">Luminex 200 Flow Cytometer</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
+		<obo:IAO_0000115>The Luminex 200 system is a compact analyzer that performs up to 100 immunoassays simultaneously using a single drop of fluid.</obo:IAO_0000115>
+		<obo:IAO_0000118></obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0150097 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150097">
+		<rdfs:label rdf:datatype="&xsd;string">FlexStation III Microplate Reader</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
+		<obo:IAO_0000115>The FlexStation 3 Multi-Mode Microplate Reader measures absorbance, fluorescence intensity, fluorescence polarization, luminescence, and time-resolved fluorescence for biochemical and cell-based assays. The reader adds up to three transfers of assay reagents from a 96- or 384-well source plate to enhance assay design using integrated fluidics.</obo:IAO_0000115>
+		<obo:IAO_0000118>FlexStation 3</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0150098 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150098">
+		<rdfs:label rdf:datatype="&xsd;string">IN Cell Analyzer 2500</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
+		<obo:IAO_0000115>IN Cell Analyzer 2500HS is a widefield high-content imaging system equipped with deconvolution.</obo:IAO_0000115>
+		<obo:IAO_0000118></obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0150099 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150099">
+		<rdfs:label rdf:datatype="&xsd;string">IN Cell Analyzer 6500</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
+		<obo:IAO_0000115>IN Cell Analyzer 6500HS is a laser-based high-content imaging system featuring IRIS confocal technology.</obo:IAO_0000115>
+		<obo:IAO_0000118></obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0150100 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150100">
+		<rdfs:label rdf:datatype="&xsd;string">Spectramax L</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003118"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0150101 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150101">
+		<rdfs:label rdf:datatype="&xsd;string">PHERAstar FSX</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003118"/>
 	</owl:Class>
 
 </rdf:RDF>

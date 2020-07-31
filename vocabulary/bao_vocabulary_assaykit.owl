@@ -26,14 +26,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.5</owl:versionInfo>
+        <owl:versionInfo>2.6</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>3 Feb 2020</dc:date>
+        <dc:date>31 Jul 2020</dc:date>
     </owl:Ontology>
 
 
@@ -801,11 +801,11 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140012">
 		<rdfs:label rdf:datatype="&xsd;string">CellTiter-Blue Cell Viability Assay (Promega)</rdfs:label>
-		<obo:IAO_0000119>https://www.promega.com/products/cell-health-and-metabolism/cell-viability-assays/celltiter_blue-cell-viability-assay/</obo:IAO_0000119>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 1063</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 5/27/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>The CellTiter-Blue Cell Viability Assay provides a homogeneous, fluorescent method for monitoring cell viability. The assay is based on the ability of living cells to convert a redox dye (resazurin) into a fluorescent end product (resorufin)</obo:IAO_0000115>
+		<obo:IAO_0000119>https://www.promega.com/products/cell-health-and-metabolism/cell-viability-assays/celltiter_blue-cell-viability-assay/</obo:IAO_0000119>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140013 -->
@@ -1097,10 +1097,10 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140042">
 		<rdfs:label rdf:datatype="&xsd;string">Renilla-Glo luciferase assay system (Promega)</rdfs:label>
-		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
-		<obo:IAO_0000115>A bioluminescent assay sytem for detecting sea pansy (Renilla reniformis) luciferase, an alternative to the firefly (Photinus pyralis) systems.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: 624133</obo:IAO_0000119>
+		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
+		<obo:IAO_0000115>A bioluminescent assay sytem for detecting sea pansy (Renilla reniformis) luciferase, an alternative to the firefly (Photinus pyralis) systems.</obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140043 -->

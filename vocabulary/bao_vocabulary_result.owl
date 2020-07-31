@@ -26,14 +26,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.5</owl:versionInfo>
+        <owl:versionInfo>2.6</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>3 Feb 2020</dc:date>
+        <dc:date>31 Jul 2020</dc:date>
     </owl:Ontology>
 
 
@@ -850,8 +850,8 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001244">
 		<rdfs:label rdf:datatype="&xsd;string">ED90</rdfs:label>
-		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002116"/>
+		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001245 -->
@@ -1384,8 +1384,8 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002752">
 		<rdfs:label rdf:datatype="&xsd;string">measured concentration</rdfs:label>
-		<obo:IAO_0000115>Measured / detected concentration of the perturbagen / compound in the assay or a subsystem (locally) in the assay. For example measured absolute concentration in the brain. This is in contrast to screening concentration, which is the (final assumed) concentration of a compound added to the assay.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000180"/>
+		<obo:IAO_0000115>Measured / detected concentration of the perturbagen / compound in the assay or a subsystem (locally) in the assay. For example measured absolute concentration in the brain. This is in contrast to screening concentration, which is the (final assumed) concentration of a compound added to the assay.</obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002758 -->
@@ -1972,6 +1972,16 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 		<rdfs:label rdf:datatype="&xsd;string">beta-arrestin clustering assay</rdfs:label>
 		<obo:IAO_0000115>The Transfluor assay employs a a beta-arrestin-GFP fusion protein to detect activation of GPCRs: Upon ligand binding the GPCR, cytosolic arrestin-GFP quickly translocates to the cell membrane and then to endocytic vesicles, where it &apos;clusters&apos; and can be detected by fluorescent image analysis. (Developed / commercialized by Norak, then Molecular Devices)</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000110"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080035 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080035">
+		<rdfs:label rdf:datatype="&xsd;string">perturbagen / positive control ratio endpoint</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
+		<obo:IAO_0000115>The property values are divided by the average value for the positive control wells and multiplied by 100: X&apos; = 100*(X/PosAvg)</obo:IAO_0000115>
+		<obo:IAO_0000118>percent postive control</obo:IAO_0000118>
+		<obo:IAO_0000118> % positive control</obo:IAO_0000118>
 	</owl:Class>
 
 </rdf:RDF>

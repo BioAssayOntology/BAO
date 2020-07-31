@@ -26,14 +26,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.5</owl:versionInfo>
+        <owl:versionInfo>2.6</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>3 Feb 2020</dc:date>
+        <dc:date>31 Jul 2020</dc:date>
     </owl:Ontology>
 
 
@@ -171,8 +171,8 @@ Measure group links to those classes that can vary among different measurements 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000162">
 		<rdfs:label rdf:datatype="&xsd;string">metal ion redistribution assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002999"/>
 		<obo:IAO_0000115>Metal ions such as copper, iron, magnesium and zinc are transported between different cellular compartments to bring about specific functions. This is regulated by their influx and efflux across membranes, which could occur either by passive diffusion or active transport.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002999"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000178 -->
@@ -606,8 +606,8 @@ citesForInformation or citeAsSourceData some DOI or PMID</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000623">
 		<rdfs:label rdf:datatype="&xsd;string">compound toxicity assay</rdfs:label>
-		<obo:IAO_0000115>This assay is performed to identify compounds that have an ability to kill the cells (cytotoxic).</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000803"/>
+		<obo:IAO_0000115>This assay is performed to identify compounds that have an ability to kill the cells (cytotoxic).</obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000647 -->
@@ -1687,9 +1687,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010016">
 		<rdfs:label rdf:datatype="&xsd;string">dish</rdfs:label>
-		<obo:IAO_0000116>Date from BAE: 5/13/2016</obo:IAO_0000116>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
 		<obo:IAO_0000119>PubChem AID: 623915</obo:IAO_0000119>
+		<obo:IAO_0000116>Date from BAE: 5/13/2016</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010017 -->
@@ -1787,6 +1787,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">protein profiling assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000115>Protein profiling assays can be used to identify and quantify proteins together with their post-translational modifications</obo:IAO_0000115>
+		<obo:IAO_0000118>protein quantification assay</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010027 -->
@@ -2122,6 +2123,88 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010071">
 		<rdfs:label rdf:datatype="&xsd;string">Liquid Chromatography/Mass Spectroscopy (LC/MS) protein quantification</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010026"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010072 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010072">
+		<rdfs:label rdf:datatype="&xsd;string">parallel artificial membrane permeability assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
+		<obo:IAO_0000115>A method which determines the permeability of substances from a donor compartment, through a lipid-infused artificial membrane into an acceptor compartment. At the beginning of the test, the drug is added to the donor compartment, and the acceptor compartment is drug-free. After an incubation period the amount of drug is measured in each compartment. Mass balance allows calculation of drug that remains in the membrane. It is used as an in vitro model of passive, transcellular permeation to predict oral absorption. PAMPA is an alternative to the cell-based Caco-2 permeability assay</obo:IAO_0000115>
+		<obo:IAO_0000118>PAMPA</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000026"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010073 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010073">
+		<rdfs:label rdf:datatype="&xsd;string">assay screening throughput</rdfs:label>
+		<obo:IAO_0000115>This descripts the relative maximum throughput of an assay in regards to its screening potential.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010074 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010074">
+		<rdfs:label rdf:datatype="&xsd;string">high throughput screening</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010073"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010075 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010075">
+		<rdfs:label rdf:datatype="&xsd;string">medium throughput screening</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010073"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010076 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010076">
+		<rdfs:label rdf:datatype="&xsd;string">low throughput screening</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010072"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010077 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010077">
+		<rdfs:label rdf:datatype="&xsd;string">GPCR Signaling</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010078 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010078">
+		<rdfs:label rdf:datatype="&xsd;string">Arrestin2 recruitment assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010077"/>
+		<obo:IAO_0000115>A variant of a BRET assay wherein fluorescently tagged beta-arrestin2 is detected when in proximity of a G-protein coupled receptor with an Rluc C-terminal tag.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010079 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010079">
+		<rdfs:label rdf:datatype="&xsd;string">PRESTO-TANGO</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010077"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010078"/>
+		<obo:IAO_0000115>Beta-arrestin2 fused to the TEV protease liberates a tTA molecule fused to the C-terminus of a target G-protein coupled receptor when in close proximity, resulting in a tTA-driven expression of RLuc from a genomic TETO7-RLuc locus.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010080 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010080">
+		<rdfs:label rdf:datatype="&xsd;string">Heterotrimeric G-protein dissassociation assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002990"/>
+		<obo:IAO_0000115>Measure release of the heterotrimeric G-protein complex from G-protein coupled receptors (GPCRs). When activated GPCRs catalyze the exchange of GDP for GTP in the G-alpha subunit of the Galpha-beta-gamma heterotrimeric complex, resulting in the disassociation of these subunits from the GPCR of interest.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010081 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010081">
+		<rdfs:label rdf:datatype="&xsd;string">TRUPath</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002990"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010080"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010077"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010080"/>
+		<obo:IAO_0000115>Measures heterotrimer G-protein disassociation using BRET between alpha and gamma subunits.</obo:IAO_0000115>
 	</owl:Class>
 
 </rdf:RDF>
