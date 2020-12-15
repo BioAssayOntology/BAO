@@ -21,19 +21,20 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:efo="http://www.ebi.ac.uk/efo/">
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+	 xmlns:bao="http://www.bioassayontology.org/bao/#">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_screenedentity.owl">
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_screenedentity.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.6</owl:versionInfo>
+        <owl:versionInfo>2.7</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>31 Jul 2020</dc:date>
+        <dc:date>15 Dec 2020</dc:date>
     </owl:Ontology>
 
 
@@ -56,99 +57,99 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000176">
 		<rdfs:label rdf:datatype="&xsd;string">small molecule</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
 		<obo:IAO_0000115>Small molecule is an organic compound with a low molecular weight (&lt;800 Da) which is used to screen against a biological target, e.g. protein, nucleic acid, cell or organism  to test its ability to bind it and bring about a change in activity. It is either isolated from a natural source or is synthesized.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000215 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000215">
 		<rdfs:label rdf:datatype="&xsd;string">small molecule probe</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000176"/>
 		<obo:IAO_0000115>A small molecule useful to interrogate a biological system of interest.  It has to be active in the system studies, i.e. cell permeable or active in vivo and be sufficiently efficacious and selective.
 The term probe also refers to the MLI screening effort, which has the goal to generate chemical probes.  In addition, the MLI requires a novel chemical probe to be superior to the state of the art in terms of efficacy and selectivity and in-vivo properties.  A list of probes generated is available here: http://mli.nih.gov/mli/mlp-probes/
 </obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000176"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000313 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000313">
 		<rdfs:label rdf:datatype="&xsd;string">morpholino oligonucleotide</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
 		<obo:IAO_0000115>Morpholinos are antisense oligos that bind to specific mRNAs to reduce gene expression. They are small (~25 base) and possess altered back structures compared to DNA or RNA making them resistant to cleavage by nucleases. They are used extensively as tools to investigate zebrafish, Xenopus and sea urchin embryonic development.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000322 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000322">
 		<rdfs:label rdf:datatype="&xsd;string">miRNA</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
 		<obo:IAO_0000118>micro RNA</obo:IAO_0000118>
 		<obo:IAO_0000118>micro ribonucleic acid</obo:IAO_0000118>
 		<obo:IAO_0000115>miRNAs or microRNAs are short RNAs (~22 nucleotides long) that bind to complementary sequences in the three prime untranslated regions (3&apos; UTRs) of target messenger RNA transcripts (mRNAs), usually resulting in gene silencing.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000323 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000323">
 		<rdfs:label rdf:datatype="&xsd;string">shRNA</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
 		<obo:IAO_0000118>short hairpin ribonucleic acid</obo:IAO_0000118>
 		<obo:IAO_0000118>short hairpin RNA</obo:IAO_0000118>
 		<obo:IAO_0000115>Short hairpin RNA (shRNA) can be used to achieve stable knockdown of gene expression. shRNA molecules are cloned into lentiviral or other vectors and expressed by a pol III type promoter.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000324 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000324">
 		<rdfs:label rdf:datatype="&xsd;string">siRNA</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
 		<obo:IAO_0000118>small interfering ribonucleic acid</obo:IAO_0000118>
 		<obo:IAO_0000115>In the RNAi pathway,  the double stranded RNAs first get processed into 20-25 nucleotide small interfering RNAs (siRNAs) by an RNase III-like enzyme called Dicer. The siRNAs enter into endoribonuclease-containing complexes known as RNA-induced silencing complexes (RISCs), and bring about the cleavage of the target mRNAs to achieve gene silencing.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000544 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000544">
 		<rdfs:label rdf:datatype="&xsd;string">esiRNA</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
 		<obo:IAO_0000118>Endoribonuclease-prepared siRNA</obo:IAO_0000118>
 		<obo:IAO_0000115>esiRNAs are endoribonuclease-prepared siRNA pools comprised of a heterogeneous mixture of siRNAs that all target the same mRNA sequence.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000648 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000648">
 		<rdfs:label rdf:datatype="&xsd;string">compound library</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000661"/>
 		<obo:IAO_0000115>The name of a small molecule collection from one source, which can be either commercial or academic, e.g., MLSMR, LOPAC, etc. This collection is generally diverse and contains compounds that modulate diverse biological targets.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000661"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000661 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000661">
 		<rdfs:label rdf:datatype="&xsd;string">perturbagen library</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003120"/>
 		<obo:IAO_0000115>It is a collection of perturbagens, e.g., compound, siRNA, miRNA, etc, which are sold by different vendors, or generated in academic institutions.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003120"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000663 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000663">
 		<rdfs:label rdf:datatype="&xsd;string">siRNA library</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000661"/>
 		<obo:IAO_0000118>small interfering ribonucleic acid library</obo:IAO_0000118>
 		<obo:IAO_0000115>siRNA libraries consist of large number of siRNAs, which represent a single organism, a diseased state, etc. They bring about the cleavage of the target mRNAs to achieve gene silencing.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000661"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000664 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000664">
 		<rdfs:label rdf:datatype="&xsd;string">miRNA library</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000661"/>
 		<obo:IAO_0000118>micro ribonucleic acid library</obo:IAO_0000118>
 		<obo:IAO_0000118>micro RNA library</obo:IAO_0000118>
 		<obo:IAO_0000115>It is a collection of miRNAs or microRNAs, which represents a single organism, a diseased state, etc. miRNAs bind the complementary sequences in the 3&apos; UTRs of target mRNA transcripts, usually resulting in gene silencing.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000661"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000733 -->
@@ -203,28 +204,28 @@ The term probe also refers to the MLI screening effort, which has the goal to ge
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0070002">
 		<rdfs:label rdf:datatype="&xsd;string">Tox21 Compound Library</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000648"/>
 		<obo:IAO_0000115>The Tox21 compound collection is a library of approximately 10,000 (10K) environmental chemicals and drugs (~10,500 chemicals (~8,300 unique)), also referred to as the &apos;Tox21 10K library&apos;. Several publications, from NCATS and EPA.  See also https://www.epa.gov/chemical-research/toxicology-testing-21st-century-tox21 or https://ncats.nih.gov/tox21/about/operations.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000648"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0700003 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0700003">
 		<rdfs:label rdf:datatype="&xsd;string">bivalent small molecule-peptide</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
 		<obo:IAO_0000119>PubChem AID: 451462</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 5/5/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>A synthetic ligand consisting of a small molecule tethered (covalently or non-covalently) to a peptide.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000076"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0700004 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0700004">
 		<rdfs:label rdf:datatype="&xsd;string">FDA-approved compound library</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000648"/>
 		<obo:IAO_0000119>PubChem AID: 1117303</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>Any compound library consisting solely of small molecules that have been approved by the FDA. Often used for &apos;drug re-purposing&apos; assays. The specific compounds included in any given FDA-approved compound library may differ based on availability or timing.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000648"/>
 	</owl:Class>
 
 </rdf:RDF>

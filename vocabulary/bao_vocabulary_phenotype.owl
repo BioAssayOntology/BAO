@@ -21,19 +21,20 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:efo="http://www.ebi.ac.uk/efo/">
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+	 xmlns:bao="http://www.bioassayontology.org/bao/#">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_phenotype.owl">
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_phenotype.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.6</owl:versionInfo>
+        <owl:versionInfo>2.7</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>31 Jul 2020</dc:date>
+        <dc:date>15 Dec 2020</dc:date>
     </owl:Ontology>
 
 
@@ -55,32 +56,32 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170001">
 		<rdfs:label rdf:datatype="&xsd;string">molecular phenotype</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002542"/>
 		<obo:IAO_0000115>The molecular characteristics of a cell of tissue including expressed coding and non-coding RNAs, proteins and their post-translational modifications, lipids, carbohydrates and small molecules that characterize the state in a cell or tissue and that result from the interaction of its genotype and the environment.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002542"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0170002 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170002">
 		<rdfs:label rdf:datatype="&xsd;string">morphological phenotype</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002542"/>
 		<obo:IAO_0000115>The form and structure of an organism and its parts, including cells, that result from the interaction of its genotype and the environment.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002542"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0170003 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170003">
 		<rdfs:label rdf:datatype="&xsd;string">biochemical phenotype</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170001"/>
 		<obo:IAO_0000115>The proteins and their post-translational modifications, lipids, carbohydrates and small molecules that characterize the state in a cell or tissue and that result from the interaction of its genotype and the environment.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170001"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0170004 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170004">
 		<rdfs:label rdf:datatype="&xsd;string">transcriptional phenotype</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170001"/>
 		<obo:IAO_0000115>The coding and non-coding RNAs expressed in a cell or tissue that result from the interaction of its genotype and the environment.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170001"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0170005 -->
@@ -171,16 +172,16 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170017">
 		<rdfs:label rdf:datatype="&xsd;string">M phase mitotic cell phenotype</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170016"/>
 		<rdfs:comment>mitotic cell phenotype</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170016"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0170018 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0170018">
 		<rdfs:label rdf:datatype="&xsd;string">S phase mitotic cell phenotype</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170016"/>
 		<rdfs:comment>DNA replicated mitotic cell phenotype</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0170016"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0170019 -->

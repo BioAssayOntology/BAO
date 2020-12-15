@@ -16,6 +16,7 @@
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao+external.owl">
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_external.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/external/BAO_NCBITaxon_import.owl"/>
+		<owl:imports rdf:resource="http://www.bioassayontology.org/bao/external/BAO_NCIT_import.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/external/BAO_CLO_import.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/external/BAO_UO_import.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/external/BAO_PATO_import.owl"/>

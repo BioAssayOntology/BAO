@@ -21,19 +21,20 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:efo="http://www.ebi.ac.uk/efo/">
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+	 xmlns:bao="http://www.bioassayontology.org/bao/#">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_quality.owl">
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_quality.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.6</owl:versionInfo>
+        <owl:versionInfo>2.7</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>31 Jul 2020</dc:date>
+        <dc:date>15 Dec 2020</dc:date>
     </owl:Ontology>
 
 
@@ -49,8 +50,8 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000013">
 		<rdfs:label rdf:datatype="&xsd;string">primary structure</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000138"/>
 		<obo:IAO_0000115>The quality of a biological macromolecule (DNA, RNA or protein), which could either be unmodified&apos; (native) or modified, e.g., methylated, phosphorylated, etc.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000138"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000014 -->
@@ -85,29 +86,26 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000037">
 		<rdfs:label rdf:datatype="&xsd;string">labeled</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000038 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000038">
 		<rdfs:label rdf:datatype="&xsd;string">unlabeled</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000088 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000088">
 		<rdfs:label rdf:datatype="&xsd;string">methylated</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002158"/>
 		<obo:IAO_0000115>A quality of a DNA or RNA residue that has a methyl group attached to it.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002158"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000089 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000089">
 		<rdfs:label rdf:datatype="&xsd;string">wild type</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
 		<obo:IAO_0000115>The phenotype of an organism that is most common in nature and was unmodified.</obo:IAO_0000115>
 	</owl:Class>
 
@@ -115,7 +113,6 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000099">
 		<rdfs:label rdf:datatype="&xsd;string">antibiotic resistance</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001396"/>
 		<obo:IAO_0000115>It is the quality which allows a microorganism to survive after exposure to one or more antibiotics.</obo:IAO_0000115>
 	</owl:Class>
 
@@ -123,38 +120,36 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000138">
 		<rdfs:label rdf:datatype="&xsd;string">molecular structure</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000228 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000228">
 		<rdfs:label rdf:datatype="&xsd;string">fused</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000013"/>
 		<obo:IAO_0000115>Fusion proteins or chimeric proteins are created through the joining of two or more cDNAs which encode different proteins. Upon expression, a single polypeptide containing each of the proteins results. Generally, the protein of interest is tagged with a reporter protein, e.g. luciferase, GFP, etc, whose expression could easily be monitored.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000013"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000230 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000230">
 		<rdfs:label rdf:datatype="&xsd;string">deleted</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000643"/>
 		<obo:IAO_0000115>A quality of the genetic material (DNA or RNA) that harbors a change (mutation), where one or more nucleotides are lost (spontaneously) or removed (intentionally).</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000643"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000465 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000465">
 		<rdfs:label rdf:datatype="&xsd;string">unpurified</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002619"/>
 		<obo:IAO_0000115>Crude protein preparation</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002619"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000565 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000565">
 		<rdfs:label rdf:datatype="&xsd;string">wavelength</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
 		<obo:IAO_0000115>A physical quality which is equal to the distance between repeating units of a wave pattern (from PATO).
 For fluorescence measurements, it is the wavelength at which the fluorophore is excited and the wavelength at which it emits fluorescence. In the case of absorbance, it is the wavelength at which light is absorbed by a biological entity or a dye.</obo:IAO_0000115>
 	</owl:Class>
@@ -163,80 +158,80 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000566">
 		<rdfs:label rdf:datatype="&xsd;string">excitation wavelength</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000565"/>
 		<obo:IAO_0000115>For fluorescence measurements, it is the wavelength at which a fluorophore is excited</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000565"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000567 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000567">
 		<rdfs:label rdf:datatype="&xsd;string">emission wavelength</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000565"/>
 		<obo:IAO_0000115>For fluorescence measurements, it is the wavelength at which an excited fluorophore emits fluorescence.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000565"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000568 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000568">
 		<rdfs:label rdf:datatype="&xsd;string">absorbance wavelength</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000565"/>
 		<obo:IAO_0000115>In absorbance measurements, it is the wavelength at which light is absorbed by a biological entity or a dye</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000565"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000570 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000570">
 		<rdfs:label rdf:datatype="&xsd;string">partially purified</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002619"/>
 		<obo:IAO_0000115>The protein is only partially purified</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002619"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000641 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000641">
 		<rdfs:label rdf:datatype="&xsd;string">inserted</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000643"/>
 		<obo:IAO_0000115>A quality of the genetic material (DNA or RNA) that harbors a change (mutation), where one or more nucleotides are added either spontaneously (within the cell) or intentionally (experimentally).</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000643"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000642 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000642">
 		<rdfs:label rdf:datatype="&xsd;string">point mutated</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000643"/>
 		<obo:IAO_0000115>A quality of the genetic material (DNA or RNA) that harbors a change (mutation), where one nucleotide is replaced by a different nucleotide either spontaneously (within the cell) or intentionally (experimentally).</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000643"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000643 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000643">
 		<rdfs:label rdf:datatype="&xsd;string">mutated</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000013"/>
 		<obo:IAO_0000115>Mutation is any alteration in a gene, which may be disease causing or a normal variant. Mutations are introduced into the genes and subsequently, introduced into cells for expression. Different types of mutations include missense, nonsense, deletions, insertions, etc.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000013"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000644 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000644">
 		<rdfs:label rdf:datatype="&xsd;string">truncated</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000643"/>
 		<obo:IAO_0000115>A quality of a protein that harbors a change (mutation), where a portion of the protein towards the carboxyl-terminal is missing either spontaneously (within the cell) or intentionally (experimentally).</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000643"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000672 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000672">
 		<rdfs:label rdf:datatype="&xsd;string">posttranslationally modified</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000013"/>
 		<obo:IAO_0000115>A quality of an amino acid residue that has a moiety (e.g., phosphate, carbohydrate) attached to it after translation.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000013"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000673 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000673">
 		<rdfs:label rdf:datatype="&xsd;string">amino acid substituted</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000643"/>
 		<obo:IAO_0000115>A quality of a protein that harbors a change (mutation), where either one or more amino acids are replaced by different ones to study the role of those amino acids in the function of the protein.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000643"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002038 -->
@@ -250,7 +245,6 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002057">
 		<rdfs:label rdf:datatype="&xsd;string">engineered</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
 		<obo:IAO_0000115>The phenotype of an organism that has been derived by genetic modification.</obo:IAO_0000115>
 	</owl:Class>
 
@@ -258,7 +252,6 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002099">
 		<rdfs:label rdf:datatype="&xsd;string">cell growth property</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001396"/>
 		<obo:IAO_0000115>Cell line culturing describes the growth mode of a cell line, whether it grows attached to the culture dish (adherent) or floating (suspension) in the culture medium or partially attached (mixed adherent and suspension).</obo:IAO_0000115>
 	</owl:Class>
 
@@ -287,17 +280,17 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002157">
 		<rdfs:label rdf:datatype="&xsd;string">native form</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000013"/>
 		<obo:IAO_0000118>canonical form</obo:IAO_0000118>
 		<obo:IAO_0000115>A quality of a protein of being the predominant form in an organism.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000013"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002158 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002158">
 		<rdfs:label rdf:datatype="&xsd;string">posttranscriptionally modified</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000013"/>
 		<obo:IAO_0000115>A quality of a DNA or RNA residue that has a group (e.g., methyl) attached to it after transcription.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000013"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002552 -->
@@ -311,15 +304,14 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002560">
 		<rdfs:label rdf:datatype="&xsd;string">glycosylated</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000672"/>
 		<obo:IAO_0000115>A quality of an amino acid residue that has a carbohydrate moiety attached to it.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000672"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002609 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002609">
 		<rdfs:label rdf:datatype="&xsd;string">antibody isotype</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
 		<obo:IAO_0000115>The different varieties or classes of antibodies, which differ in their properties and biological functions.</obo:IAO_0000115>
 	</owl:Class>
 
@@ -362,7 +354,6 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002618">
 		<rdfs:label rdf:datatype="&xsd;string">purity</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002619 -->
@@ -390,7 +381,6 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002636">
 		<rdfs:label rdf:datatype="&xsd;string">bandwidth</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001018"/>
 		<obo:IAO_0000115>Bandwidth is the range of wavelength of light that it allows to pass through the filter, which is either excitation or emission type.</obo:IAO_0000115>
 	</owl:Class>
 
@@ -398,8 +388,8 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002646">
 		<rdfs:label rdf:datatype="&xsd;string">isoform</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000013"/>
 		<obo:IAO_0000115>A quality of a protein that harbors a variation from the native protein (called canonical form), which could arise due to alternative promoter usage, alternative splicing, alternative translation initiation and ribosomal frameshifting.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000013"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002842 -->
@@ -420,7 +410,6 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002844">
 		<rdfs:label rdf:datatype="&xsd;string">Gram staining</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0001995"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002928 -->
@@ -454,53 +443,50 @@ For fluorescence measurements, it is the wavelength at which the fluorophore is 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003072">
 		<rdfs:label rdf:datatype="&xsd;string">activated</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003073 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003073">
 		<rdfs:label rdf:datatype="&xsd;string">synthetic</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003074 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003074">
 		<rdfs:label rdf:datatype="&xsd;string">endogenous</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0002182"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0120000 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0120000">
 		<rdfs:label rdf:datatype="&xsd;string">cellular quality</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002928"/>
 		<obo:deprecated>true</obo:deprecated>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002928"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0120001 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0120001">
 		<rdfs:label rdf:datatype="&xsd;string">molecular quality</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002928"/>
 		<obo:deprecated>true</obo:deprecated>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002928"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0120002 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0120002">
 		<rdfs:label rdf:datatype="&xsd;string">organismal quality</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002928"/>
 		<obo:deprecated>true</obo:deprecated>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002928"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0120003 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0120003">
 		<rdfs:label rdf:datatype="&xsd;string">physical quality</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002928"/>
 		<obo:deprecated>true</obo:deprecated>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002928"/>
 	</owl:Class>
 
 </rdf:RDF>

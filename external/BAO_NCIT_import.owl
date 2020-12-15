@@ -1,0 +1,636 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.bioassayontology.org/bao/external/BAO_NCIT_import.owl#"
+     xml:base="http://www.bioassayontology.org/bao/external/BAO_NCIT_import.owl"
+     xmlns:bao="http://www.bioassayontology.org/bao#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:obo="http://purl.obolibrary.org/obo/">
+    <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/external/BAO_NCIT_import.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P98">
+        <rdfs:label>DesignNote</rdfs:label>
+        <oboInOwl:hasExactSynonym>DesignNote</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P107>DesignNote</obo:NCIT_P107>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_NHC0>P98</obo:NCIT_NHC0>
+        <obo:IAO_0000115>A property representing notations made by NCI vocabulary curators. They are intended to provide supplemental, unstructured information to the user or additional insight about the concept.</obo:IAO_0000115>
+        <obo:NCIT_P108>DesignNote</obo:NCIT_P108>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P322">
+        <rdfs:label>Contributing_Source</rdfs:label>
+        <obo:NCIT_P107>Contributing Source</obo:NCIT_P107>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:IAO_0000115>A property is used to indicate when a non-EVS entity has contributed to, and has a stake in, a concept. This is used where such entities, within or outside NCI, have indicated the need to be able to track their own concepts. A single concept can have multiple instances of this property if multiple entities have such a defined stake.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Contributing_Source</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>P322</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Contributing_Source</obo:NCIT_P108>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P366">
+        <rdfs:label>Legacy Concept Name</rdfs:label>
+        <oboInOwl:hasExactSynonym>Legacy Concept Name</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A property representing a retired unique concept identifier created and stored as Concept Name by legacy EVS software. Use of these values was long discouraged, but continued as late as 2009 when creation of new values ceased and Concept Name was retired. Legacy values are intended solely to help resolve and update earlier coding.</obo:IAO_0000115>
+        <obo:NCIT_P108>Legacy Concept Name</obo:NCIT_P108>
+        <protege:readOnly>true</protege:readOnly>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Legacy_Concept_Name</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>P366</obo:NCIT_NHC0>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <oboInOwl:hasExactSynonym>DEFINITION</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A property representing the English language definitions of what NCI means by the concept. They may also include information about the definition&#39;s source and attribution in a form that can easily be interpreted by software.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P375">
+        <rdfs:label>Maps_To</rdfs:label>
+        <obo:IAO_0000115>A property representing that a term in another terminology has been mapped to a term in NCIt and describes the relationship between the mapped terms.</obo:IAO_0000115>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_NHC0>P375</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Maps_To</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Maps_To</oboInOwl:hasExactSynonym>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has exact synonym</rdfs:label>
+        <obo:IAO_0000115>A property representing a fully qualified synonym, contains the string, term type, source, and an optional source code if appropriate. Each subfield is deliniated to facilitate interpretation by software.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Synonym with Source Data</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>FULL_SYN</oboInOwl:hasExactSynonym>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P325">
+        <rdfs:label>ALT_DEFINITION</rdfs:label>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>ALT_DEFINITION</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P107>[source] Definition</obo:NCIT_P107>
+        <obo:NCIT_P108>ALT_DEFINITION</obo:NCIT_P108>
+        <obo:IAO_0000115>A property representing the English language definition of a concept from a source other than NCI.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>P325</obo:NCIT_NHC0>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P106">
+        <rdfs:label>Semantic_Type</rdfs:label>
+        <oboInOwl:hasExactSynonym>Semantic_Type</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:IAO_0000115>A property that represents a description of the sort of thing or category to which a concept belongs in the context of the UMLS semantic network.</obo:IAO_0000115>
+        <obo:NCIT_P107>Semantic Type</obo:NCIT_P107>
+        <obo:NCIT_P108>Semantic_Type</obo:NCIT_P108>
+        <obo:NCIT_NHC0>P106</obo:NCIT_NHC0>
+        <obo:NCIT_P98>In general, applying semantic types aids in allowing users (or computer programs) to draw conclusions about concepts by virtue of the categories to which they have been assigned.  We use a set of semantic types developed for the UMLS Metathesaurus. There are currently 134 semantic types in the UMLS.</obo:NCIT_P98>
+    </owl:AnnotationProperty>
+    <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
+        <rdfs:label>label</rdfs:label>
+    </rdf:Description>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in subset</rdfs:label>
+        <oboInOwl:hasExactSynonym>Concept_In_Subset</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>An association that connects the concept defining a particular terminology subset with concepts that belong to this subset.</obo:IAO_0000115>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_NHC0">
+        <rdfs:label>code</rdfs:label>
+        <oboInOwl:hasExactSynonym>code</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A property representing a concept unique identifier within the NCI Enterprise Vocabulary Service&#39;s NCI Thesaurus.</obo:IAO_0000115>
+        <obo:NCIT_P108>code</obo:NCIT_P108>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_NHC0>NHC0</obo:NCIT_NHC0>
+        <protege:readOnly>true</protege:readOnly>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P208">
+        <rdfs:label>NCI_META_CUI</rdfs:label>
+        <oboInOwl:hasExactSynonym>NCI_META_CUI</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:IAO_0000115>A property representing the concept unique identifier (CUI) for those concepts that appear in NCI Metathesaurus but not in the National Library of Medicine Unified Medical Language System (NLM UMLS).</obo:IAO_0000115>
+        <obo:NCIT_P108>NCI_META_CUI</obo:NCIT_P108>
+        <obo:NCIT_P107>NCI Metathesaurus CUI</obo:NCIT_P107>
+        <obo:NCIT_NHC0>P208</obo:NCIT_NHC0>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P107">
+        <rdfs:label>Display_Name</rdfs:label>
+        <oboInOwl:hasExactSynonym>Display Name</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P107>Display Name</obo:NCIT_P107>
+        <obo:NCIT_P108>Display_Name</obo:NCIT_P108>
+        <obo:IAO_0000115>A property representing an alternative Preferred Name for use in some NCI systems.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Display_Name</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_NHC0>P107</obo:NCIT_NHC0>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://protege.stanford.edu/plugins/owl/protege#readOnly"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P108">
+        <rdfs:label>Preferred_Name</rdfs:label>
+        <oboInOwl:hasExactSynonym>Preferred Term</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:NCIT_P107>Preferred Name</obo:NCIT_P107>
+        <oboInOwl:hasExactSynonym>Preferred Name</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>P108</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Preferred_Name</obo:NCIT_P108>
+        <obo:IAO_0000115>A property representing the word or phrase that NCI uses by preference to refer to the concept.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Preferred_Name</oboInOwl:hasExactSynonym>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/NCIT_P207">
+        <rdfs:label>UMLS_CUI</rdfs:label>
+        <obo:NCIT_NHC0>P207</obo:NCIT_NHC0>
+        <obo:NCIT_P108>UMLS_CUI</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>UMLS_CUI</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Conceptual Entity</obo:NCIT_P106>
+        <obo:IAO_0000115>A property representing the concept unique identifier (CUI) assigned by the National Library of Medicine (NLM). If a concept in any NCI-maintained knowledgebase exists in the NLM Unified Medical Language System (UMLS), NCI includes the NLM CUI among the information we provide about the concept.</obo:IAO_0000115>
+        <obo:NCIT_P107>UMLS CUI</obo:NCIT_P107>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C101294 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C101294">
+        <rdfs:label>Whole Genome Sequencing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79364"/>
+        <obo:NCIT_P207>C3640076</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Whole Genome Sequencing</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Whole Genome Sequencing</obo:NCIT_P108>
+        <obo:IAO_0000115>A procedure that can determine the DNA sequence for nearly the entire genome of an individual.</obo:IAO_0000115>
+        <obo:NCIT_P106>Molecular Biology Research Technique</obo:NCIT_P106>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>WGS</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P375>WGS</obo:NCIT_P375>
+        <obo:NCIT_P322>CTRP</obo:NCIT_P322>
+        <obo:NCIT_NHC0>C101294</obo:NCIT_NHC0>
+        <obo:NCIT_P107>Whole Genome Sequencing</obo:NCIT_P107>
+        <obo:NCIT_P322>GDC</obo:NCIT_P322>
+        <obo:NCIT_P322>ICDC</obo:NCIT_P322>
+        <obo:NCIT_P325>A DNA sequencing technique in which the entirety of the individual&#39;s genome is sequenced.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>WHOLE GENOME SEQUENCING</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C116977"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C142799"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C157711"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159039"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159067"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159079"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C165451"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C166371"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C166372"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C85492"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C122936 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C122936">
+        <rdfs:label>Patient Derived Xenograft</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79364"/>
+        <oboInOwl:hasExactSynonym>Patient-Derived Xenograft Model</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Patient Derived Xenograft</obo:NCIT_P108>
+        <obo:NCIT_P106>Experimental Model of Disease</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Patient Derived Xenograft</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C122936</obo:NCIT_NHC0>
+        <obo:NCIT_P207>C4050317</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>PDTX</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Patient-Derived Xenograft</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>PDX</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The transfer of a tumor fragment from a patient into an immunodeficient mouse.</obo:IAO_0000115>
+        <obo:NCIT_P107>Patient Derived Xenograft</obo:NCIT_P107>
+        <obo:NCIT_P322>CTRP</obo:NCIT_P322>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C116977"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C118169"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C127803 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C127803">
+        <rdfs:label>Dose Response Study</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79364"/>
+        <obo:NCIT_P325>A study of the effect of dose changes on the efficacy of a drug in order to determine the dose-response relationship and optimal dose of a therapy.</obo:NCIT_P325>
+        <obo:NCIT_P208>CL509446</obo:NCIT_P208>
+        <obo:NCIT_P108>Dose Response Study</obo:NCIT_P108>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P106>Research Activity</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>DOSE RESPONSE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Dose Response Study</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>A study of the effect of dose changes on the efficacy of a drug in order to determine the dose-response relationship and optimal dose of a therapy.</obo:IAO_0000115>
+        <obo:NCIT_NHC0>C127803</obo:NCIT_NHC0>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C132298"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66739"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C134270 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C134270">
+        <rdfs:label>Potency Assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79364"/>
+        <oboInOwl:hasExactSynonym>Potency Assay</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
+        <obo:NCIT_P208>CL521998</obo:NCIT_P208>
+        <obo:NCIT_P108>Potency Assay</obo:NCIT_P108>
+        <obo:NCIT_NHC0>C134270</obo:NCIT_NHC0>
+        <obo:IAO_0000115>The determination of the strength of a material, as measured by the ability to produce a specific response. The potency of a pharmacologic substance is measured by the amount needed to produce a certain effect.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C16681 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16681">
+        <rdfs:label>Histology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79364"/>
+        <oboInOwl:hasExactSynonym>Microanatomy</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C0019638</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>histology</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The study of the structure of the cells and their arrangement to constitute tissues and, finally, the association among these to form organs.  In pathology, the microscopic process of identifying normal and abnormal morphologic characteristics in tissues, by employing various cytochemical and immunocytochemical stains.</obo:IAO_0000115>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P108>Histology</obo:NCIT_P108>
+        <obo:NCIT_P366>Histology</obo:NCIT_P366>
+        <obo:NCIT_P322>GDC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>Histology</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Biomedical Occupation or Discipline</obo:NCIT_P106>
+        <obo:NCIT_P325>The study of tissues and cells under a microscope.</obo:NCIT_P325>
+        <obo:NCIT_P375>Histology</obo:NCIT_P375>
+        <obo:NCIT_NHC0>C16681</obo:NCIT_NHC0>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C157711"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C159020"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C17376 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17376">
+        <rdfs:label>Mutagenesis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79367"/>
+        <oboInOwl:hasExactSynonym>Molecular Biology, Mutagenesis</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Mutagenesis</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Mutagenesis</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
+        <obo:NCIT_NHC0>C17376</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Genetics-Mutagenesis</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>Production of genetic alterations by any technique, including chemicals, radiation, recombination, or other molecular biology methods.</obo:IAO_0000115>
+        <obo:NCIT_P207>C0079866</obo:NCIT_P207>
+        <obo:NCIT_P366>Mutagenesis</obo:NCIT_P366>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18079 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18079">
+        <rdfs:label>Cardiovascular Pharmacology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+        <oboInOwl:hasExactSynonym>CARDIOVASCULAR PHARMACOLOGY</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Cardiovascular Pharmacology</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>Cardiovascular Pharmacology; the study of the effects of drugs upon the heart or circulatory system</obo:IAO_0000115>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P325>The study of the effects of drugs upon the heart or circulatory system.</obo:NCIT_P325>
+        <obo:NCIT_P207>C0596271</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C18079</obo:NCIT_NHC0>
+        <obo:NCIT_P108>Cardiovascular Pharmacology</obo:NCIT_P108>
+        <obo:NCIT_P366>Cardiovascular_Pharmacology</obo:NCIT_P366>
+        <obo:NCIT_P106>Biomedical Occupation or Discipline</obo:NCIT_P106>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90003"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18639 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18639">
+        <rdfs:label>Quantitative Autoradiography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002532"/>
+        <oboInOwl:hasExactSynonym>Autoradiography, Quantitative</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Quantitative Autoradiography</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Quantitative Autoradiography</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C18639</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Research Activity</obo:NCIT_P106>
+        <obo:IAO_0000115>Autoradiographic analysis performed in accordance with specified guidelines that will result in a defined correspondence between the intensity of the autoradiographic image and the amount of radioactivity present in the sample.  This permits assignment of a value to the amount of radioactive material in the object under study.</obo:IAO_0000115>
+        <obo:NCIT_P366>Autoradiography_Quantitative</obo:NCIT_P366>
+        <obo:NCIT_P207>C1510991</obo:NCIT_P207>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18803 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18803">
+        <rdfs:label>Gene Knock-Out Model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79364"/>
+        <oboInOwl:hasExactSynonym>Gene Knock-Out Model</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Gene_Knock-Out_Model</obo:NCIT_P366>
+        <obo:NCIT_P106>Experimental Model of Disease</obo:NCIT_P106>
+        <obo:NCIT_P108>Gene Knock-Out Model</obo:NCIT_P108>
+        <obo:NCIT_NHC0>C18803</obo:NCIT_NHC0>
+        <obo:IAO_0000115>Models of human disease produced through gene knockout methods</obo:IAO_0000115>
+        <obo:NCIT_P207>C1517490</obo:NCIT_P207>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C18996 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C18996">
+        <rdfs:label>Renal Pharmacology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+        <obo:IAO_0000115>The science concerned with drugs and their actions and uses in kidney biology and the treatment of kidney disease.</obo:IAO_0000115>
+        <obo:NCIT_P207>C0596818</obo:NCIT_P207>
+        <obo:NCIT_P108>Renal Pharmacology</obo:NCIT_P108>
+        <obo:NCIT_P325>The science concerned with drugs and their actions and uses in kidney biology and the treatment of kidney disease. (NCI)</obo:NCIT_P325>
+        <obo:NCIT_NHC0>C18996</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Biomedical Occupation or Discipline</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>RENAL PHARMACOLOGY</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Renal Pharmacology</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Renal_Pharmacology</obo:NCIT_P366>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90003"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C19286 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C19286">
+        <rdfs:label>Tissue Slice Technology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79364"/>
+        <oboInOwl:hasExactSynonym>Tissue Slice Technology</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C19286</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Research Activity</obo:NCIT_P106>
+        <obo:NCIT_P108>Tissue Slice Technology</obo:NCIT_P108>
+        <obo:NCIT_P207>C1519528</obo:NCIT_P207>
+        <obo:IAO_0000115>A technology used for preclinical research as an alternative to some animal testing.  Micrometer-thin slices of various organs are incubated with various experimental compounds for assays involving toxicology, absorption, distribution, and metabolism.</obo:IAO_0000115>
+        <obo:NCIT_P366>Tissue_Slice_Technology</obo:NCIT_P366>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C19425 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C19425">
+        <rdfs:label>Migration Assay</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79364"/>
+        <oboInOwl:hasExactSynonym>Migration Assays</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P108>Migration Assay</obo:NCIT_P108>
+        <obo:NCIT_P366>Migration_Assays</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Migration Assay</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C19425</obo:NCIT_NHC0>
+        <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
+        <obo:NCIT_P207>C1513300</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Cell Migration Assay</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>An in vitro assay in which cultured cells are monitored and analyzed for their ability to move into an acellular area of a culture material.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C19812 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C19812">
+        <rdfs:label>Xenograft Model</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79367"/>
+        <obo:NCIT_NHC0>C19812</obo:NCIT_NHC0>
+        <obo:NCIT_P366>Xenograft_Model</obo:NCIT_P366>
+        <obo:NCIT_P108>Xenograft Model</obo:NCIT_P108>
+        <obo:NCIT_P207>C1520166</obo:NCIT_P207>
+        <obo:IAO_0000115>An experimental system in which (usually) human tumor cells are transplanted into immunocompromised mice that do not reject human cells; cells may be implanted under the skin or into the organ type in which the tumor originated. These model systems may be used for drug development and studies of molecular biological mechanisms of cancer.</obo:IAO_0000115>
+        <obo:NCIT_P106>Experimental Model of Disease</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Xenograft Model</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C20604 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C20604">
+        <rdfs:label>Affinity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79364"/>
+        <obo:NCIT_P106>Qualitative Concept</obo:NCIT_P106>
+        <obo:NCIT_P108>Affinity</obo:NCIT_P108>
+        <obo:NCIT_P366>Affinity</obo:NCIT_P366>
+        <obo:NCIT_P325>In chemistry and biology, the strength of the attaction between two substances, such as two chemicals, or an antigen and an antibody.</obo:NCIT_P325>
+        <oboInOwl:hasExactSynonym>Affinity</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C20604</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>affinity</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C1510827</obo:NCIT_P207>
+        <obo:IAO_0000115>The strength of noncovalent chemical binding between two substances as measured by the dissociation constant of the complex.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C79364 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C79364">
+        <rdfs:label>Pharmacology: Primary Pharmacodynamics</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002183"/>
+        <obo:NCIT_P325>The branch of pharmacology that deals with the biochemical and physiological effects of a drug and the mechanism of drug action in relation to its desired therapeutic target.</obo:NCIT_P325>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P108>Pharmacology: Primary Pharmacodynamics</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>PRIMARY PHARMACODYNAMICS</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366>Pharmacology_Primary_Pharmacodynamics</obo:NCIT_P366>
+        <obo:NCIT_P106>Regulation or Law</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Pharmacology: Primary Pharmacodynamics</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>FDA RPS Pharmacology: Primary Pharmacodynamics</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C2698783</obo:NCIT_P207>
+        <obo:NCIT_NHC0>C79364</obo:NCIT_NHC0>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90003"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C96962"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C79365 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C79365">
+        <rdfs:label>Pharmacology: Secondary Pharmacodynamics</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002183"/>
+        <oboInOwl:hasExactSynonym>FDA RPS Pharmacology: Secondary Pharmacodynamics</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P207>C2698785</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>SECONDARY PHARMACODYNAMICS</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>The branch of pharmacology that deals with the biochemical and physiological effects of a drug and the mechanism of drug action not related to its desired therapeutic target.</obo:NCIT_P325>
+        <obo:NCIT_P366>Pharmacology_Secondary_Pharmacodynamics</obo:NCIT_P366>
+        <oboInOwl:hasExactSynonym>Pharmacology: Secondary Pharmacodynamics</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C79365</obo:NCIT_NHC0>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P106>Regulation or Law</obo:NCIT_P106>
+        <obo:NCIT_P108>Pharmacology: Secondary Pharmacodynamics</obo:NCIT_P108>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90003"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C96962"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C79367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C79367">
+        <rdfs:label>Pharmacology: Pharmacodynamic Drug Interactions</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002183"/>
+        <obo:NCIT_NHC0>C79367</obo:NCIT_NHC0>
+        <obo:NCIT_P322>FDA</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>PHARMACODYNAMIC DRUG INTERACTIONS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>FDA RPS Pharmacology: Pharmacodynamic Drug Interactions</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>Pharmacology: Pharmacodynamic Drug Interactions</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Regulation or Law</obo:NCIT_P106>
+        <obo:NCIT_P366>Pharmacology_Pharmacodynamic_Drug_Interactions</obo:NCIT_P366>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P207>C2698782</obo:NCIT_P207>
+        <obo:NCIT_P325>The branch of pharmacology that deals with the mechanism of action and biochemical and physiological effects of drug-drug interactions.</obo:NCIT_P325>
+        <obo:NCIT_P108>Pharmacology: Pharmacodynamic Drug Interactions</obo:NCIT_P108>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90003"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C96962"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C89775 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C89775">
+        <rdfs:label>Bleeding Time</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79364"/>
+        <obo:NCIT_P108>Bleeding Time</obo:NCIT_P108>
+        <obo:IAO_0000115>The amount of time it take for a cessation of bleeding. It is a measurement of the ability of capillaries and platelets to interact to form a blood clot.</obo:IAO_0000115>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <oboInOwl:hasExactSynonym>BLEEDT</oboInOwl:hasExactSynonym>
+        <obo:NCIT_NHC0>C89775</obo:NCIT_NHC0>
+        <oboInOwl:hasExactSynonym>Clotting Time Homeostasis</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P325>A measurement of the time from the start to cessation of an induced bleed.</obo:NCIT_P325>
+        <obo:NCIT_P106>Laboratory Procedure</obo:NCIT_P106>
+        <obo:NCIT_P207>C0005729</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>Bleeding Time</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C65047"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C67154"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C90370 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C90370">
+        <rdfs:label>Central Nervous System Pharmacology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+        <obo:NCIT_NHC0>C90370</obo:NCIT_NHC0>
+        <obo:NCIT_P207>C2983593</obo:NCIT_P207>
+        <obo:NCIT_P108>Central Nervous System Pharmacology</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym>Central Nervous System Pharmacology</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115>The branch of pharmacology that deals with the central nervous system.</obo:IAO_0000115>
+        <obo:NCIT_P106>Biomedical Occupation or Discipline</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>CNS PHARMACOLOGY</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P325>The branch of pharmacology that deals with the central nervous system. (NCI)</obo:NCIT_P325>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90003"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCIT_C90449 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C90449">
+        <rdfs:label>Respiratory Pharmacology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+        <obo:NCIT_NHC0>C90449</obo:NCIT_NHC0>
+        <obo:NCIT_P322>CDISC</obo:NCIT_P322>
+        <obo:NCIT_P325>The branch of pharmacology that deals with the respiratory system. (NCI)</obo:NCIT_P325>
+        <obo:NCIT_P108>Respiratory Pharmacology</obo:NCIT_P108>
+        <obo:IAO_0000115>The branch of pharmacology that deals with the respiratory system.</obo:IAO_0000115>
+        <obo:NCIT_P207>C0597399</obo:NCIT_P207>
+        <oboInOwl:hasExactSynonym>RESPIRATORY PHARMACOLOGY</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P106>Biomedical Occupation or Discipline</obo:NCIT_P106>
+        <oboInOwl:hasExactSynonym>Respiratory Pharmacology</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90003"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002183 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002183"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002532 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002532"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0002533 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002533"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 1.3.5.1016) http://owlapi.sourceforge.net -->
+

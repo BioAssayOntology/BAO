@@ -21,20 +21,35 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:efo="http://www.ebi.ac.uk/efo/">
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+	 xmlns:bao="http://www.bioassayontology.org/bao/#">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl">
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_assaykit.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.6</owl:versionInfo>
+        <owl:versionInfo>2.7</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>31 Jul 2020</dc:date>
+        <dc:date>15 Dec 2020</dc:date>
     </owl:Ontology>
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+	<!-- http://www.bioassayontology.org/bao/submitted_by -->
+
+	<owl:AnnotationProperty rdf:about="http://www.bioassayontology.org/bao/submitted_by"/>
+
 
 
     <!--
@@ -63,18 +78,18 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000298">
 		<rdfs:label rdf:datatype="&xsd;string">Steady-Glo Luciferase Assay System</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000299 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000299">
 		<rdfs:label rdf:datatype="&xsd;string">Proteasome-Glo Chymotrypsin-Like Assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000307 -->
@@ -88,117 +103,117 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000310">
 		<rdfs:label rdf:datatype="&xsd;string">P450-Glo CYP3A4 Screening System</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000311 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000311">
 		<rdfs:label rdf:datatype="&xsd;string">P450-Glo CYP2D6 Screening System</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000333 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000333">
 		<rdfs:label rdf:datatype="&xsd;string">P450-Glo CYP2C9 Screening System</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000670 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000670">
 		<rdfs:label rdf:datatype="&xsd;string">P450-Glo CYP2C19 Screening System</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000674 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000674">
 		<rdfs:label rdf:datatype="&xsd;string">P450-Glo CYP1A2 Screening System</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000675 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000675">
 		<rdfs:label rdf:datatype="&xsd;string">ONE-Glo Luciferase Assay System</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000678 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000678">
 		<rdfs:label rdf:datatype="&xsd;string">Kinase-Glo Plus Luminescent Kinase Assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000679 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000679">
 		<rdfs:label rdf:datatype="&xsd;string">Kinase-Glo Luminescent Kinase Assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000680 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000680">
 		<rdfs:label rdf:datatype="&xsd;string">Dual-Luciferase Reporter Assay System</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000681 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000681">
 		<rdfs:label rdf:datatype="&xsd;string">Chroma-Glo Luciferase Assay System</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000682 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000682">
 		<rdfs:label rdf:datatype="&xsd;string">CellTiter-Glo Luminescent Cell Viability Assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000683 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000683">
 		<rdfs:label rdf:datatype="&xsd;string">Caspase Glo 3/7 Assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000685 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000685">
 		<rdfs:label rdf:datatype="&xsd;string">Bright-Glo Luciferase Assay System</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000686 -->
@@ -212,18 +227,18 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000687">
 		<rdfs:label rdf:datatype="&xsd;string">Beta-Glo Assay System</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000688 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000688">
 		<rdfs:label rdf:datatype="&xsd;string">BacTiter-Glo Microbial Cell Viability Assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000689 -->
@@ -237,9 +252,9 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000690">
 		<rdfs:label rdf:datatype="&xsd;string">ADP Glo Kinase Assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000814 -->
@@ -393,24 +408,24 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001200">
 		<rdfs:label rdf:datatype="&xsd;string">Transcreener assay kit</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001201 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001201">
 		<rdfs:label rdf:datatype="&xsd;string">Lactate kit</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001202 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001202">
 		<rdfs:label rdf:datatype="&xsd;string">TruPoint assay kit</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002018 -->
@@ -711,8 +726,8 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003109">
 		<rdfs:label rdf:datatype="&xsd;string">KINOMEscan kit</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<rdfs:comment>Kit uses for Kinome scan assays</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140001 -->
@@ -768,357 +783,368 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140009">
 		<rdfs:label rdf:datatype="&xsd;string">CytoTox-Glo (Promega)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>https://www.promega.com/resources/protocols/technical-bulletins/101/cytotox-glo-cytotoxicity-assay-protocol/</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/22/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>CytoTox-Glo Cytotoxicity Assay (Promega) uses a luminogenic peptide substrate of luciferase, the AAF-Glo Substrate, to measure dead-cell protease activity, which is released from cells that have lost membrane integrity. </obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 435031</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140010 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140010">
 		<rdfs:label rdf:datatype="&xsd;string">CAT ELISA (Roche/ Sigma-Aldrich)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 624301</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>The CAT ELISA is used to quantitatively measure CAT expression in eukaryotic cells that are transfected with a plasmid bearing a CAT-encoding reporter gene.</obo:IAO_0000115>
 		<obo:IAO_0000119>http://www.sigmaaldrich.com/catalog/product/roche/11363727001?lang=en&amp;region=US</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140011 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140011">
 		<rdfs:label rdf:datatype="&xsd;string">ACTOne cAMP biosensor assay (BD Biosciences; CodexBIosolutions)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>http://www.bdbiosciences.com/ds/ab/others/SF47641.pdf</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/7/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>This assay  directly measures the intracellular concentration of the second messenger cAMPin living cells, in real-time. It works with cell lines that contain a proprietary exogenous Cyclic Nucleotide-Gated (CNG) channel (BD Biosciences,  sold to CodexBiosolutions; both in Maryland). The channel is activated by elevated intracellular levels of cAMP, resulting in ion flux (detectable by calcium-responsive dyes) and cell membrane depolarization which can be detected with a fluorescent membrane potential (MP) dye.</obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 651719</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140012 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140012">
 		<rdfs:label rdf:datatype="&xsd;string">CellTiter-Blue Cell Viability Assay (Promega)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 1063</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 5/27/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>The CellTiter-Blue Cell Viability Assay provides a homogeneous, fluorescent method for monitoring cell viability. The assay is based on the ability of living cells to convert a redox dye (resazurin) into a fluorescent end product (resorufin)</obo:IAO_0000115>
 		<obo:IAO_0000119>https://www.promega.com/products/cell-health-and-metabolism/cell-viability-assays/celltiter_blue-cell-viability-assay/</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140013 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140013">
 		<rdfs:label rdf:datatype="&xsd;string">Gal-Screen Beta-Galactosidase Reporter Gene Assay system</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>https://www.thermofisher.com/order/catalog/product/T1028</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/22/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>The Gal-Screen assay system combines direct cell lysis with rapid, ultra-sensitive chemiluminescent detection of _-galactosidase reporter enzyme. </obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 2788</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140014 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140014">
 		<rdfs:label rdf:datatype="&xsd;string">QuantiTect SYBR Green PCR Kits (Qiagen/Thermo-Fisher)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>https://www.qiagen.com/us/shop/pcr/real-time-pcr-enzymes-and-kits/two-step-qrt-pcr/quantitect-sybr-green-pcr-kits/#orderinginformation</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/26/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>Real-time PCR (or RT-PCR) for quantitation of DNA (or RNA, respectively) using the fluorescent dye SYBR green that binds dsDNA and emits fluorescence only when bound.</obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 504907</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140015 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140015">
 		<rdfs:label rdf:datatype="&xsd;string">TaqMan Real-Time PCR assays (Thermo-Fisher)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>https://www.thermofisher.com/us/en/home/life-science/pcr/real-time-pcr/real-time-pcr-assays.html</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/13/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>Real-time PCR (or RT-PCR) for quantitation of DNA (or RNA, respectively) using a pair of unlabeled PCR primers and a &apos;TaqMan&apos; fluorogenic probe  labeled on the 5&apos; end and minor groove binder (MGB) and nonfluorescent quencher (NFQ) on the 3&apos; end, to detect target as it accumulates during PCR.</obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 720492</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140016 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140016">
 		<rdfs:label rdf:datatype="&xsd;string">Ultra-Glo Luciferin Detection (Promega)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: 488901</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/26/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>Ultra-Glo (Promega) is a thermostable recombinant luciferase that can be coupled with different luciferin-based substrates to generate a luminescent signal proportional to the substrate abundance.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140017 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140017">
 		<rdfs:label rdf:datatype="&xsd;string">Luciferase-based (&apos;Glo&apos;) Assay System (Promega)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 624307</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>An assay system (Promega) based on the bioluminescent enzyme luciferase&apos;s catalysis of the substrate luciferin to generate light, adapted for multiple applications, such as cell viability, apoptosis, or kinase, cytochrome P450, or proteasome activity. </obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140018 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140018">
 		<rdfs:label rdf:datatype="&xsd;string">WST-1 assay (Roche)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 602337</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>A colorimatric assay for cell viability/ proliferation based on the stable tetrazolium salt WST-1, which is cleaved to a soluble formazan by a complex cellular mechanism that occurs primarily at the cell surface. This bioreduction is largely dependent on the glycolytic production of NAD(P)H in viable cells.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140019 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140019">
 		<rdfs:label rdf:datatype="&xsd;string">Reverse Transcription Kit (Applied Biosystems or ABI)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 540282</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/22/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140020 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140020">
 		<rdfs:label rdf:datatype="&xsd;string">Alpha Screen Assay Kit (PerkinElmer)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 2444</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/6/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>A homogeneous bead-based proximity assay (alpha = &apos;amplified luminescent proximity homogeneous assay&apos;). Binding of molecules captured on donor and acceptor beads leads to an energy transfer from one bead to the other, ultimately producing a luminescent/fluorescent signal.  Ligands on the bead allow for detection of many different types of molecules.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140022 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140022">
 		<rdfs:label rdf:datatype="&xsd;string">Human Cytochrome c ELISA (R&amp;D Systems)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 504407</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/3/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>A solid phase sandwich ELISA to meaasure human cytochrome c in cell lysates</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140023 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140023">
 		<rdfs:label rdf:datatype="&xsd;string">OptEIA human IL-2 ELISA (BD Biosciences)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 1271</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/14/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140024 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140024">
 		<rdfs:label rdf:datatype="&xsd;string">TRANSCREENER ADP2 FP Kinase Assay (BellBrook Labs)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 1795</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/6/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>A fluorescence polarization (FP) assay that uses an antibody against ADP and a tracer to measure the progress of any enzyme that produces ADP</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140025 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140025">
 		<rdfs:label rdf:datatype="&xsd;string">Polar Screen PPARg Competitor Assay, Green (Invitrogen)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 504453</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/22/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>A fluorescence polarization (FP) assay.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140026 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140026">
 		<rdfs:label rdf:datatype="&xsd;string">QUANTI-Blue (InvivoGen)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>http://www.invivogen.com/quanti-blue</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/14/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>QUANTI-Blue is a colorimetric enzyme assay to measure alkaline phosphatase activity.</obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 1369</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140027 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140027">
 		<rdfs:label rdf:datatype="&xsd;string">ToxiLight BioAssay Kit (Lonza)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 651654</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/9/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>The ToxiLighte BioAssay Kit is a bioluminescent cytolysis assay kit that measures release of the enzyme, adenylate kinase (AK), from damaged cells.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140028 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140028">
 		<rdfs:label rdf:datatype="&xsd;string">TransAM Kit for NF-kB Family (Active Motif) </rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>https://www.activemotif.com/catalog/634/transam-nf%CE%BAb</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/14/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>TransAM Kits are DNA-binding ELISAs that facilitate the study of transcription factor activation in mammalian tissue and cell extracts.</obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 1295</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140029 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140029">
 		<rdfs:label rdf:datatype="&xsd;string">TRANSCREENER AMP2/GMP2 FP Assay (BellBrook Labs)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 651607</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/6/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>A fluorescence polarization (FP) assay that uses an antibody against AMP or GMP and a tracer to measure the progress of any enzyme that produces AMP or GMP</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140030 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140030">
 		<rdfs:label rdf:datatype="&xsd;string">Caspase-Glo 6 Assay System (Promega)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: 652277</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>A homogeneous, bioluminescent assay to measure caspase-6 activity.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140031 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140031">
 		<rdfs:label rdf:datatype="&xsd;string">CDP-Star alkaline phosphatase assay system</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 518</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>CDP-Star is a chemiluminescent substrate of alkaline phosphatase, compatible with both membrane- and solution-based assays. Sold by multiple vendors.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140032 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140032">
 		<rdfs:label rdf:datatype="&xsd;string">Sensolyte 520 HCV Protease Assay Kit (AnaSpec)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>http://www.anaspec.com/products/product.asp?id=30173</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>An assay kit for measuring hepatitits C virus (HCV) NS3/4A protease activity using a 5-FAM/QXL520 fluorescence resonance energy transfer (FRET) peptide. Called &apos;Enzolyte&apos; as well as &apos;Sensolyte&apos;.</obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 623964</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140033 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140033">
 		<rdfs:label rdf:datatype="&xsd;string">EnzyChrom Aspartate Transaminase Assay Kit (BioAssay Systems)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 743184</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>An absorbance-based assay system for measuring aspartate transaminase (known as serum glutamic oxaloacetic transaminase (GOT) or aspartate aminotransferase (ASAT/AAT)), based on the quantification of oxaloacetate produced by AST. In this assay, oxaloacetate and NADH are converted to malate and NAD by the enzyme malate dehydrogenase. The decrease in NADH absorbance at 340 nm is proportionate to AST activity.</obo:IAO_0000115>
 		<obo:IAO_0000119>https://www.bioassaysys.com/Aspartate-Transaminase-Assay-Kit.html</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140034 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140034">
 		<rdfs:label rdf:datatype="&xsd;string">FluoZin-2 AM fluorescent assay of zinc concentration</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 623952</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>FluoZin-2 AM is a cell-permeant (acetoxymymethyl (AM)) fluorescent indicator designed to detect Zn2+ concentrations that are present in synaptic vesicles and released in response to electrical stimulation or excitotoxic agonists. (Sold by Molecular Probes, Themro-Fisher)</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140035 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140035">
 		<rdfs:label rdf:datatype="&xsd;string">Phospho-ERK1/2 (Thr202/Tyr204) Cellular Assay Kit (Cisbio)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 624053</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>This homogeneous (HTRF) phospho-ERK assay is based on a TR-FRET sandwich immunoassay format comprising two specific monoclonal anti-pERK1/2 antibodies (recognizing the phosphorylated residue (Thr202/Tyr204), one labeled with Eu3+-cryptate (donor) and the other labeled with d2 (acceptor). The proximity of donor and acceptor leads to a fluorescent TR-FRET signal; the signal intensity is proportional to the substrate phosphorylation. Also called &apos;HTRF Cellul&apos;ERK Kit&apos;.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140036 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140036">
 		<rdfs:label rdf:datatype="&xsd;string">IMAP Assay of phosphoproteins (Molecular Devices)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 624076</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>IMAP (Immobilized Metal Ion Affinity Particle) technology is a non-antibody-based assay for protein kinases in which a fluorescently labeled peptide substrate that is phosphorylated by a kinase is captured on trivalent metal-containing nanoparticles. IMAP can be adapted for either FP or TR-FRET detection.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140037 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140037">
 		<rdfs:label rdf:datatype="&xsd;string">insulin ELISA kit (Alpco)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 488951</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>This Insulin ELISA kit is an FDA registered in vitro diagnostic tool for the quantification of human insulin. It uses a dual-monoclonal antibody sandwich ELISA format, typically in a 96-well or other microplate format, with colorimetric (OD 450 nm) detection.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140038 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140038">
 		<rdfs:label rdf:datatype="&xsd;string">LanthaScreen Tb-Ubiquitin Assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 2658</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>An assay to monitor protein ubiquitination, using ubiquitin labeled with the LanthaScreen terbium chelate, in combination with a FRET acceptor such as fluorescein-ubiquitin or a fluorescein-labeled antibody.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140039 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140039">
 		<rdfs:label rdf:datatype="&xsd;string">LanthaScreen Tb-Streptavidin Binding Assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 588664</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>A terbium-labeled streptavidin used in combination with a fluorescent molecule to detect interaction via a TR-FRET assay.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140040 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140040">
 		<rdfs:label rdf:datatype="&xsd;string">PathHunter U2OS Keap1-NRF2 Nuclear Translocation Assay (DiscoverX)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 651833</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>An assay system employing enzyme fragment complementation (two fragments of the beta-galactosidase enzyme), applied in U2OS cells engineered to express two appropriately tagged proteins. Inhibition of Keap1-NRF2 interaction results in Nrf2 nuclear translocation, and susbequent complementation and formation of a functional enzyme, detected using a chemiluminescent substrate of beta-galactosidase.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140041 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140041">
 		<rdfs:label rdf:datatype="&xsd;string">qScript One-step Fast qRT-PCR kit (QuantaBioSciences)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 623968</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>A general kit for use in all types of qRT-PCR reactions</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140042 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140042">
 		<rdfs:label rdf:datatype="&xsd;string">Renilla-Glo luciferase assay system (Promega)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 		<obo:IAO_0000119>PubChem AID: 624133</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>A bioluminescent assay sytem for detecting sea pansy (Renilla reniformis) luciferase, an alternative to the firefly (Photinus pyralis) systems.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0140017"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140043 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140043">
 		<rdfs:label rdf:datatype="&xsd;string">Ub-CHOP2-Reporter-Kit (LifeSensors Inc.)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000119>PubChem AID: 652174</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>An assay for deubiquitination activity, employing a reporter enzyme fused to ubiquitin (making the reporter catalytically inactive). Following cleavage of the Ub-reporter system by the isopeptidase, the free reporter can act upon its fluorescent substrate. </obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0140046 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140046">
 		<rdfs:label rdf:datatype="&xsd;string">CellTiter-Fluor Cell Viability Assay Kit</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 		<obo:IAO_0000115>The CellTiter-Fluor Cell Viability Assay measures the relative number of viable cells in a population. The assay is based on measurement of a conserved and constitutive protease activity within live cells and therefore serves as a biomarker of cell viability. The live-cell protease activity is restricted to intact viable cells and is measured using a fluorogenic, cell-permeant, peptide substrate (Gly-Phe-AFC). The substrate enters intact cells, where it is cleaved by the live-cell protease activity to generate a fluorescent signal proportional to the number of living cells. The live-cell protease becomes inactive upon loss of membrane integrity and leakage into the surrounding culture medium. (description adapted from vendor Promega)</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0140047 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0140047">
+		<rdfs:label rdf:datatype="&xsd;string">HEPATOPAC® co-culture kit</rdfs:label>
+		<obo:IAO_0000118>HepatoPac® micropatterned co-culture </obo:IAO_0000118>
+		<obo:IAO_0000118>HepatoPac®</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
+		<obo:IAO_0000118>HepatoPac kit </obo:IAO_0000118>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
 </rdf:RDF>

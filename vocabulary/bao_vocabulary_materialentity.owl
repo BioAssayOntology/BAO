@@ -21,19 +21,20 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:efo="http://www.ebi.ac.uk/efo/">
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+	 xmlns:bao="http://www.bioassayontology.org/bao/#">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_materialentity.owl">
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_materialentity.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.6</owl:versionInfo>
+        <owl:versionInfo>2.7</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>31 Jul 2020</dc:date>
+        <dc:date>15 Dec 2020</dc:date>
     </owl:Ontology>
 
 
@@ -49,8 +50,8 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000012">
 		<rdfs:label rdf:datatype="&xsd;string">phosphate buffered saline</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>PBS</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000021 -->
@@ -78,8 +79,8 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000114">
 		<rdfs:label rdf:datatype="&xsd;string">culture medium</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003116"/>
 		<obo:IAO_0000115>The liquid broth used to grow cells, which is optimized for each cell type and includes additives such as growth factors, buffers, amino acids, antibiotics, etc. This information can be obtained from ATCC or found in relevant publications.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003116"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000115 -->
@@ -100,8 +101,8 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000118">
 		<rdfs:label rdf:datatype="&xsd;string">DMSO</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Dimethyl sulfoxide (DMSO) is a common organic solvent that is used to solubilize the chemical compounds prior to their addition to an assay. DMSO can have a significant impact on enzyme activity and the concentration of DMSO in the wells containing compound should be identical to the concentration of DMSO in the control wells. DMSO can also impact the solubility of a compound and its observed potency. Therefore, the concentration of DMSO should be consistent in replicate experiments.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000172 -->
@@ -115,42 +116,42 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000174">
 		<rdfs:label rdf:datatype="&xsd;string">peptoid</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Peptoids are a class of biomimetic polymers based on oligo-N-substituted glycine backbones, designed to mimic
 peptides and proteins. Peptoids are resistant to proteolysis and not typically denatured by solvent, temperature, or chemical denaturants.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000495 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000495">
 		<rdfs:label rdf:datatype="&xsd;string">DNA aptamer</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>deoxyribonucleic acid aptamer</obo:IAO_0000118>
 		<obo:IAO_0000115>Aptamers are synthetic affinity probes. DNA aptamers are oligonucleotides that bind to a specific target molecule, such as small molecules, proteins, nucleic acids and cells. They are created by selecting them from a large random sequence pool through repeated rounds of in vitro selection.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000497 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000497">
 		<rdfs:label rdf:datatype="&xsd;string">peptide aptamer</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Aptamers are synthetic affinity probes. Peptide aptamers consist of a variable peptide loop attached at both ends of a protein scaffold, such as thioredoxin-A. They bind to target proteins with high affinity, similar to that of an antibody. They are designed to inhibit the function of other protein inside the cell.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000500 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000500">
 		<rdfs:label rdf:datatype="&xsd;string">molecular beacon</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Molecular beacons are hairpin shaped oligonucleotide probes with an internally quenched fluorophore whose fluorescence is restored upon binding to a target nucleic acid. They are used to detect nucleic acids in solution.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000596 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000596">
 		<rdfs:label rdf:datatype="&xsd;string">assay medium</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003116"/>
 		<obo:IAO_0000115>The cell culture broth used while performing an assay on cells, which is optimized for each assay type. Some interfering additives such as serum, growth factors, buffers, amino acids, antibiotics, etc. might be eliminated in this medium.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003116"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000638 -->
@@ -171,24 +172,24 @@ peptides and proteins. Peptoids are resistant to proteolysis and not typically d
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000666">
 		<rdfs:label rdf:datatype="&xsd;string">metal salt</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>An ionic compound (principally consisting of Na, K, Li, Ca, and Mg as cation) which is used as an additive in an assay.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000693 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000693">
 		<rdfs:label rdf:datatype="&xsd;string">HEPES</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000694 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000694">
 		<rdfs:label rdf:datatype="&xsd;string">tris</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>Tris (hydroxymethyl) aminomethane</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000695 -->
@@ -265,8 +266,8 @@ peptides and proteins. Peptoids are resistant to proteolysis and not typically d
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000761">
 		<rdfs:label rdf:datatype="&xsd;string">3-isobutyl-1-methylanxthine</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>IBMX</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000763 -->
@@ -294,8 +295,8 @@ peptides and proteins. Peptoids are resistant to proteolysis and not typically d
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000772">
 		<rdfs:label rdf:datatype="&xsd;string">triiodothyronine</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>T3</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000773 -->
@@ -309,8 +310,8 @@ peptides and proteins. Peptoids are resistant to proteolysis and not typically d
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000777">
 		<rdfs:label rdf:datatype="&xsd;string">CDP-ME</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>4-diphosphocytidyl-2-C-methyl-D-erythritol</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000778 -->
@@ -534,28 +535,28 @@ peptides and proteins. Peptoids are resistant to proteolysis and not typically d
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000862">
 		<rdfs:label rdf:datatype="&xsd;string">bisindolylmaleimide</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>PKC inhibitor
 
 3-{1-[3-(dimethylamino)propyl]-1H-indol-3-yl}-4-(1H-indol-3-yl)-1H-pyrrole-2,5-dione</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000867 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000867">
 		<rdfs:label rdf:datatype="&xsd;string">Brij-35</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>Brij-35 is a nonionic polyoxyethylene surfactant that is most frequently used as a component of cell lysis buffers or a surfactant in various HPLC applications.</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000868 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000868">
 		<rdfs:label rdf:datatype="&xsd;string">BRL-54443</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>5-Hydroxy-3-(1-methylpiperidin-4-yl)-1H-indole
 
 A potent 5-ht1E/1F receptor agonist</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000870 -->
@@ -583,8 +584,8 @@ A potent 5-ht1E/1F receptor agonist</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000880">
 		<rdfs:label rdf:datatype="&xsd;string">CHAPS</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>CHAPS is a zwitterionic detergent used in the laboratory to solubilize biological macromolecules such as proteins. It is used as a non-denaturing solvent in the process of protein purification and is especially useful in purifying membrane proteins, which are often sparingly soluble or insoluble in aqueous solution due to their native hydrophobicity. CHAPS can also be used in conjunction with nonionic detergents such as Triton X-100.</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000882 -->
@@ -605,17 +606,17 @@ A potent 5-ht1E/1F receptor agonist</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000885">
 		<rdfs:label rdf:datatype="&xsd;string">cysteine</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Cysteine has antioxidant properties due to the ability of thiols to undergo redox reactions. </obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000886 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000886">
 		<rdfs:label rdf:datatype="&xsd;string">inositol-1-phosphate</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>IP1</obo:IAO_0000118>
 		<obo:IAO_0000118>inositol monophosphate</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000890 -->
@@ -629,8 +630,8 @@ A potent 5-ht1E/1F receptor agonist</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000891">
 		<rdfs:label rdf:datatype="&xsd;string">diminazene aceturate</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>It intercalates DNA and RNA.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000892 -->
@@ -651,8 +652,8 @@ A potent 5-ht1E/1F receptor agonist</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000895">
 		<rdfs:label rdf:datatype="&xsd;string">DTT</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Dithiothreitol (DTT) is the common name for a small-molecule redox reagent known as Cleland&apos;s reagent. DTT&apos;s formula is C4H10O2S2 and the molecular structure of its reduced form is shown at the right; its oxidized form is a disulfide-bonded 6-membered ring (shown below). Its name derives from the four-carbon sugar, threose. </obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000897 -->
@@ -715,30 +716,30 @@ A potent 5-ht1E/1F receptor agonist</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000929">
 		<rdfs:label rdf:datatype="&xsd;string">Go6976</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>5,6,7,13-Tetrahydro-13-methyl-5-oxo-12H-indolo[2,3-a]pyrrolo[3,4-c]carbazole-12-propanenitrile
 
 Potent protein kinase C (PKC) inhibitor (IC50 = 7.9 nM).</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000932 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000932">
 		<rdfs:label rdf:datatype="&xsd;string">GW5074</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>3-(3,5-Dibromo-4-hydroxy-benzylidene)-5-iodo-1,3-dihydro-indol-2-one
 
 
 Potent, selective and cell-permeable c-Raf1 kinase inhibitor (IC50 = 9 nM). Displays ≥ 100-fold selectivity for raf kinase over CDK1, CDK2, c-src, ERK2, MEK, p38, Tie2, VEGFR2 and c-fm.
     </obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000933 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000933">
 		<rdfs:label rdf:datatype="&xsd;string">GW8510</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>An inhibitor of cyclin kinase 2 (CDK2) which prevents and/or reduces the side effects of chemotherapy (alopecia, plantar-palmar syndrome and mucositis).</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000945 -->
@@ -752,8 +753,8 @@ Potent, selective and cell-permeable c-Raf1 kinase inhibitor (IC50 = 9 nM). Disp
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000949">
 		<rdfs:label rdf:datatype="&xsd;string">IPEGAL</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>IGEPAL CA-630 is a nonionic, non-denaturing detergent. Its official IUPAC name is octylphenoxypolyethoxyethanol.</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000950 -->
@@ -767,19 +768,19 @@ Potent, selective and cell-permeable c-Raf1 kinase inhibitor (IC50 = 9 nM). Disp
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000952">
 		<rdfs:label rdf:datatype="&xsd;string">L-AP4</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>L-(+)-2-Amino-4-phosphonobutyric acid
 
 Selective group III metabotropic glutamate receptor agonist.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000956 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000956">
 		<rdfs:label rdf:datatype="&xsd;string">lipofectamine 2000</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Lipofectamine™ 2000 Reagent delivers DNA or siRNA with excellent transfection performance for protein expression, gene silencing, and functional assays. Superior efficiency, optimized protocols, and unparalleled success across a broad range of cell lines.
     </obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000957 -->
@@ -821,16 +822,16 @@ Selective group III metabotropic glutamate receptor agonist.</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000972">
 		<rdfs:label rdf:datatype="&xsd;string">NBD C6-HPC</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>2-(6-(7-Nitrobenz-2-Oxa-1,3-Diazol-4-yl)amino)Hexanoyl-1-Hexadecanoyl-sn-Glycero-3-Phosphocholine (NBD C6-HPC)</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000978 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000978">
 		<rdfs:label rdf:datatype="&xsd;string">NP-40</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>NP-40 is a commercially available detergent. The full name of NP-40 is Tergitol-type NP-40, which is nonyl phenoxypolyethoxylethanol.</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000980 -->
@@ -851,25 +852,25 @@ Selective group III metabotropic glutamate receptor agonist.</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000987">
 		<rdfs:label rdf:datatype="&xsd;string">para-nitrophenylphosphate</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>PNPP</obo:IAO_0000118>
 		<rdfs:comment>para-Nitrophenylphosphate (pNPP) is a chromogenic substrate for acid and alkaline phosphatase in ELISA assays. Under their influence the decay to yellow para-nitrophenol is catalysed. This product can be measured with a 405 nm spectrophotometer.</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000990 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000990">
 		<rdfs:label rdf:datatype="&xsd;string">phosphoenolpyruvate</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>It has the high-energy phosphate bond found (-61.9 kJ/mol) in living organisms, and is involved in glycolysis and gluconeogenesis. In plants, it is also involved in the biosynthesis of various aromatic compounds, and in carbon fixation; in bacteria, it is also used as the source of energy for the phosphotransferase system.</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000991 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000991">
 		<rdfs:label rdf:datatype="&xsd;string">phosphoethanolamine</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>Phosphorylethanolamine or phosphoethanolamine is an ethanolamine derivative that is used to construct sphingomyelins.</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000992 -->
@@ -883,9 +884,9 @@ Selective group III metabotropic glutamate receptor agonist.</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000995">
 		<rdfs:label rdf:datatype="&xsd;string">pluronic F-127</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>Pluronic® F-127 is a nonionic, surfactant polyol (molecular weight approximately 12,500 daltons) that has been found to facilitate the solubilization of water-insoluble dyes and other materials in physiological media.
     </rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000996 -->
@@ -906,10 +907,10 @@ Selective group III metabotropic glutamate receptor agonist.</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000998">
 		<rdfs:label rdf:datatype="&xsd;string">probenecid</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>4-(Dipropylsulfamoyl)benzoic acid
 
 Inhibitor of multidrug resistance-associated proteins (MRP). </obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000999 -->
@@ -937,21 +938,21 @@ Inhibitor of multidrug resistance-associated proteins (MRP). </obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001003">
 		<rdfs:label rdf:datatype="&xsd;string">pyrimidine-4,6-dicarboxylic acid</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>pyrimidine-4,6-dicarboxylic acid, bis-(4-fluoro-3-methyl-benzylamide)
 
 Degrades collagen type I.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001005 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001005">
 		<rdfs:label rdf:datatype="&xsd;string">rauwolscine</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Rauwolscine acts predominantly as a α2-adrenergic receptor antagonist.
 
 It has also been shown to function as a 5-HT1A receptor partial agonist and 5-HT2A and 5-HT2B receptor antagonist.
     </obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001006 -->
@@ -979,60 +980,60 @@ It has also been shown to function as a 5-HT1A receptor partial agonist and 5-HT
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001012">
 		<rdfs:label rdf:datatype="&xsd;string">Ro 20-1724</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>4-(3-Butoxy-4-methoxyphenyl)methyl-2-imidazolidone
 
 Widely used inhibitor of cyclic nucleotide phosphodiesterase, selective for PDE4 (IC50 = 2.0 μM).
     </obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001013 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001013">
 		<rdfs:label rdf:datatype="&xsd;string">rolipram</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Rolipram is a PDE4-inhibitor. </obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001017 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001017">
 		<rdfs:label rdf:datatype="&xsd;string">SNC80</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>A highly selective and potent non-peptide δ-opioid agonist, 2000-fold selective over μ-opioid receptors.
 
  (+)-4-[(αR)-α-((2S,5R)-4-Allyl-2,5-di
 methyl-1-piperazinyl)-3-methoxybenzyl]-N,N-diethyl
 benzamide</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001018 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001018">
 		<rdfs:label rdf:datatype="&xsd;string">sodium orthovanadate</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Sodium orthovanadate is the chemical compound Na3VO4 and contains the tetrahedral VO43−.
 
 It is an inhibitor of protein tyrosine phosphatases, alkaline phosphatases and a number of ATPases, most likely acting as a phosphate analogue. The VO43- ion binds reversibly to the active sites of most protein tyrosine phosphatases.
     </obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001021 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001021">
 		<rdfs:label rdf:datatype="&xsd;string">staurosporine</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Staurosporine (antibiotic AM-2282 or STS) is a natural product originally isolated in 1977 from the bacterium Streptomyces staurosporeus.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001022 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001022">
 		<rdfs:label rdf:datatype="&xsd;string">stibavirin</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>The stibonic acid compound, NSC13778, also know as stibavirin, previously has been reported to inhibit the interaction between transcription factors C/EBP, C/EBPß, CREB, Fos/JunD, and VBP and their cognate DNA sequences, HIV nucleocapsid protein p7 and viral RNA, and HIV gp120 and CD4. Now, we report that this compound is a potent inhibitor of the interaction between transcription factors TFE3, Alveolar Soft Part Sarcoma (ASPS) associated fusion protein ASPL-TFE3 type 1, and ASPL-TFE3 type 2 and their cognate DNA. 
 
 Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001024 -->
@@ -1053,10 +1054,10 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001027">
 		<rdfs:label rdf:datatype="&xsd;string">TG003</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>219479  Cdc2-Like Kinase Inhibitor, TG003 
 
 (Z)-1-(3-Ethyl-5-methoxy-2,3-dihydrobenzothiazol-2-ylidene)propan-2-one, Clk Inhibitor, TG003</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001028 -->
@@ -1077,25 +1078,25 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001032">
 		<rdfs:label rdf:datatype="&xsd;string">thioflavine S</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>used for staining of senile amyloid deposits/plaques</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001037 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001037">
 		<rdfs:label rdf:datatype="&xsd;string">triton X-100</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>Triton X-100 (C14H22O(C2H4O)n) is a nonionic surfactant which has a hydrophilic polyethylene oxide group (on average it has 9.5 ethylene oxide units) and a hydrocarbon lipophilic or hydrophobic group.</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001038 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001038">
 		<rdfs:label rdf:datatype="&xsd;string">tween 20</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>Polysorbate 20 (common commercial brand names include Alkest TW 20 and Tween 20) is a polysorbate surfactant whose stability and relative non-toxicity allows it to be used as a detergent and emulsifier in a number of domestic, scientific, and pharmacological applications. It is a polyoxyethylene derivative of sorbitan monolaurate, and is distinguished from the other members in the polysorbate range by the length of the polyoxyethylene chain and the fatty acid ester moiety.
 </rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001044 -->
@@ -1109,8 +1110,8 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001050">
 		<rdfs:label rdf:datatype="&xsd;string">WIN55212</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>WIN 55,212-2 is a potent cannabinoid receptor agonist.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001054 -->
@@ -1124,88 +1125,88 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001213">
 		<rdfs:label rdf:datatype="&xsd;string">Fluormone PL Far Red</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001215 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001215">
 		<rdfs:label rdf:datatype="&xsd;string">Fluormone ES2 Green</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001216 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001216">
 		<rdfs:label rdf:datatype="&xsd;string">Fluorescein</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001217 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001217">
 		<rdfs:label rdf:datatype="&xsd;string">Amplex red reagent</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001218 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001218">
 		<rdfs:label rdf:datatype="&xsd;string">Atto 495</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001220 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001220">
 		<rdfs:label rdf:datatype="&xsd;string">QuantaBlu</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001221 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001221">
 		<rdfs:label rdf:datatype="&xsd;string">Sytox Orange</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001222 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001222">
 		<rdfs:label rdf:datatype="&xsd;string">Ellman and apos&apos;s reagent</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001223 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001223">
 		<rdfs:label rdf:datatype="&xsd;string">3H</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001224 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001224">
 		<rdfs:label rdf:datatype="&xsd;string">35S</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001234 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0001234">
 		<rdfs:label rdf:datatype="&xsd;string">ACP-tag</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002149 -->
@@ -1219,16 +1220,16 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002537">
 		<rdfs:label rdf:datatype="&xsd;string">ethyleneglycol-bis(β-aminoethyl)-N,N,N′,N′-tetraacetic acid</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>EGTA</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002538 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002538">
 		<rdfs:label rdf:datatype="&xsd;string">ethylenediaminetetraacetic acid</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>EDTA</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002547 -->
@@ -1263,16 +1264,16 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002596">
 		<rdfs:label rdf:datatype="&xsd;string">culture serum</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003116"/>
 		<obo:IAO_0000115>The serum used in cell culture medium. Cultured cells require serum or growth factors for growth by cell division. In the laboratory, each cell type is grown in a medium supplemented with a variable concentration of serum (up to 20%) which is optimized for its growth. Specialized sera include dextran charcoal treated serum, which lacks certain hormones, growth factors, etc, dialyzed serum, which lacks low molecular weight molecules (below 10,000 MW), such as glucose, amino acids, low molecular weight hormones, cytokines, etc. Most commonly, fetal bovine serum is used in cell culture, but other sera such as horse serum are also used.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003116"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002597 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002597">
 		<rdfs:label rdf:datatype="&xsd;string">assay serum</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003116"/>
 		<obo:IAO_0000115>The serum used in assay medium while performing a cell-based assay and is optimized for each assay type. In certain assays, the cells could be maintained at either a lower concentration of the serum or in a specialized serum, including dextran charcoal treated serum, dialyzed serum, etc. This is done to avoid interference with the assay measurements.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003116"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002641 -->
@@ -1300,8 +1301,8 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002720">
 		<rdfs:label rdf:datatype="&xsd;string">MES</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>2-(N-morpholino)ethanesulfonic acid</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002725 -->
@@ -1315,9 +1316,9 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002781">
 		<rdfs:label rdf:datatype="&xsd;string">inositol 1,4,5-trisphosphate</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>IP3</obo:IAO_0000118>
 		<obo:IAO_0000118>inositol trisphosphate</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002784 -->
@@ -1331,16 +1332,16 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002904">
 		<rdfs:label rdf:datatype="&xsd;string">HBSS</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>Hank&apos;s balanced salt solution</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003043 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003043">
 		<rdfs:label rdf:datatype="&xsd;string">molecular entity</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003116"/>
 		<rdfs:comment>Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity (from OBI).</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003116"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003051 -->
@@ -1354,8 +1355,8 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003053">
 		<rdfs:label rdf:datatype="&xsd;string">PIPES</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>piperazine-N,N&apos;-bis(2-ethanesulfonic acid)</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003054 -->
@@ -1369,16 +1370,16 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003055">
 		<rdfs:label rdf:datatype="&xsd;string">octyl glucoside</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>n-octyl-β-D-glucoside</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003056 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003056">
 		<rdfs:label rdf:datatype="&xsd;string">tris(2-carboxyethyl)phosphine hydrochloride</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000118>TCEP</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003108 -->
@@ -1398,90 +1399,87 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100001">
 		<rdfs:label rdf:datatype="&xsd;string">DiFMUP (Molecular Probes)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>A fluorinated 4-methylumbelliferyl phosphate (MUP) derivative that has a lower pKa than that of MUP, making DiFMUP an excellent substrate for continuously assaying acid phosphatases at low pH. The reaction product of DiFMUP has excitation/emission maxima of ~358/450 nm.</obo:IAO_0000115>
 		<obo:IAO_0000118>6,8-Difluoro-4-Methylumbelliferyl Phosphate</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0100002 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100002">
 		<rdfs:label rdf:datatype="&xsd;string">alamarBlue</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>alamarBlue is a cell viability assay reagent which contains the cell permeable, non-toxic, and weakly fluorescent blue indicator dye called resazurin.</obo:IAO_0000115>
 		<obo:IAO_0000118>Alamar Blue</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0100003 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100003">
 		<rdfs:label rdf:datatype="&xsd;string">Alexa555</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51121"/>
 		<obo:IAO_0000115>Fluorescent dye with an excitation/emission maxima of ~555/580 nm.</obo:IAO_0000115>
 		<obo:IAO_0000118>Alexa Fluor 555</obo:IAO_0000118>
-		<obo:IAO_0000118> Alexa555</obo:IAO_0000118>
+		<obo:IAO_0000118>Alexa555</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0100004 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100004">
 		<rdfs:label rdf:datatype="&xsd;string">Alexa568</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51121"/>
 		<obo:IAO_0000115>Fluorescent dye with an excitation/emission maxima of ~578/603 nm.</obo:IAO_0000115>
 		<obo:IAO_0000118>Alexa Fluor 568</obo:IAO_0000118>
-		<obo:IAO_0000118> Alexa568</obo:IAO_0000118>
+		<obo:IAO_0000118>Alexa568</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0100005 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100005">
 		<rdfs:label rdf:datatype="&xsd;string">ammonium acetate</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Common buffer component with the chemical formula NH4CH3CO2.</obo:IAO_0000115>
 		<obo:IAO_0000118>ammonium ethanoate</obo:IAO_0000118>
-		<obo:IAO_0000118> AmOAc</obo:IAO_0000118>
+		<obo:IAO_0000118>AmOAc</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0100006 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100006">
 		<rdfs:label rdf:datatype="&xsd;string">beta-mercaptoethanol</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Used to reduce disulfide bonds</obo:IAO_0000115>
 		<obo:IAO_0000118>2-mercaptoethanol</obo:IAO_0000118>
-		<obo:IAO_0000118> Î²-mercaptoethanol</obo:IAO_0000118>
-		<obo:IAO_0000118> BME</obo:IAO_0000118>
-		<obo:IAO_0000118> 2BME</obo:IAO_0000118>
-		<obo:IAO_0000118> thioglycol</obo:IAO_0000118>
+		<obo:IAO_0000118>BME</obo:IAO_0000118>
+		<obo:IAO_0000118>2BME</obo:IAO_0000118>
+		<obo:IAO_0000118>thioglycol</obo:IAO_0000118>
+		<obo:IAO_0000118>β-mercaptoethanol</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0100007 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100007">
 		<rdfs:label rdf:datatype="&xsd;string">BIS-TRIS</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Common buffering agent</obo:IAO_0000115>
 		<obo:IAO_0000118>Bis-tris methane</obo:IAO_0000118>
-		<obo:IAO_0000118> BTM</obo:IAO_0000118>
+		<obo:IAO_0000118>BTM</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0100008 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100008">
 		<rdfs:label rdf:datatype="&xsd;string">DAPI</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_51121"/>
 		<obo:IAO_0000115>Blue-fluorescent DNA stain</obo:IAO_0000115>
-		<obo:IAO_0000118>4â€²,6-diamidino-2-phenylindole</obo:IAO_0000118>
+		<obo:IAO_0000118>4&apos;,6-diamidino-2-phenylindole</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0100009 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100009">
 		<rdfs:label rdf:datatype="&xsd;string">formamide</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Organic solvent which allows for the denaturation and renaturation of nucleic acids at room temperature. Often used as a quenching agent.</obo:IAO_0000115>
 		<obo:IAO_0000118>methanamide</obo:IAO_0000118>
-		<obo:IAO_0000118> carbamaldehyde</obo:IAO_0000118>
+		<obo:IAO_0000118>carbamaldehyde</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0100010 -->
@@ -1491,26 +1489,26 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Hygroscopic salt commonly used in buffers</obo:IAO_0000115>
 		<obo:IAO_0000118>MgCl2</obo:IAO_0000118>
-		<obo:IAO_0000118> Magnesium dichloride</obo:IAO_0000118>
-		<obo:IAO_0000118> chloromagnestite</obo:IAO_0000118>
+		<obo:IAO_0000118>Magnesium dichloride</obo:IAO_0000118>
+		<obo:IAO_0000118>chloromagnestite</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0100011 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100011">
 		<rdfs:label rdf:datatype="&xsd;string">potassium chloride</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Inorganic salt commonly used in buffers</obo:IAO_0000115>
 		<obo:IAO_0000118>KCl</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0100012 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100012">
 		<rdfs:label rdf:datatype="&xsd;string">sodium chloride</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Commonly used salt</obo:IAO_0000115>
 		<obo:IAO_0000118>NaCl</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0100013 -->

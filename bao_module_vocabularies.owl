@@ -39,7 +39,6 @@
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_screenedentity.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_software.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_unit.owl"/>
-		<owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_automated_axioms.owl"/>
     </owl:Ontology>
     
 

@@ -21,19 +21,20 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:efo="http://www.ebi.ac.uk/efo/">
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+	 xmlns:bao="http://www.bioassayontology.org/bao/#">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_instrument.owl">
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_instrument.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.6</owl:versionInfo>
+        <owl:versionInfo>2.7</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>31 Jul 2020</dc:date>
+        <dc:date>15 Dec 2020</dc:date>
     </owl:Ontology>
 
 
@@ -56,16 +57,16 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000692">
 		<rdfs:label rdf:datatype="&xsd;string">Infinite F200</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000115>Tecan Infinite F200 is a multifunctional microplate filter-based reader with injector option, that provides high performance for the vast majority of microplate applications and research. It has been designed as a general purpose laboratory instrument for professional use, supporting common 6 to 384-well microplates. (Manufacturer description)</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000697 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000697">
 		<rdfs:label rdf:datatype="&xsd;string">detection instrument</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003118"/>
 		<obo:IAO_0000115>The names of equipment used for measurement/readout from an assay, e.g. FLIPR, ViewLux plate reader, PHERAstar, etc.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003118"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000698 -->
@@ -275,25 +276,25 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002110">
 		<rdfs:label rdf:datatype="&xsd;string">fluorescence microscope filter</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003118"/>
 		<obo:IAO_0000115>This categorizes the devices that selectively transmit light in a particular range of wavelengths, including excitation and emission filters.  For optimal results, the distance between the wavelengths of the excitation and emission filter should be more than 85% of the sum of both filters&#146; bandwidths.
     </obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003118"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002111 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002111">
 		<rdfs:label rdf:datatype="&xsd;string">excitation filter</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002110"/>
 		<obo:IAO_0000115>An excitation filter is an optical-glass filter used in fluorescence microscopy for selection of the excitation wavelength of light from a light source.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002110"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002112 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002112">
 		<rdfs:label rdf:datatype="&xsd;string">emission filter</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002110"/>
 		<obo:IAO_0000115>An emission filter is an optical-glass filter used in fluorescence microscopy for selection of the emission wavelength of light from a fluorescent molecule, e.g.,  fluorophore or dye.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002110"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002556 -->
@@ -419,199 +420,199 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002937">
 		<rdfs:label rdf:datatype="&xsd;string">imaging cytometer</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002935"/>
 		<obo:IAO_0000115>An imageing cytometer is an instrument for image-based study or measurement of cells. (definition from OBI)</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002935"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002938 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002938">
 		<rdfs:label rdf:datatype="&xsd;string">3i Marianas</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>Intelligent Imaging Innovations
 www.intelligent-imaging.com</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002939 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002939">
 		<rdfs:label rdf:datatype="&xsd;string">Acumen</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>TTP LabTech
 http://www.ttplabtech.com/products/acumen/index.html</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002940 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002940">
 		<rdfs:label rdf:datatype="&xsd;string">ArrayScan VTI HCS Reader</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>Thermo Fisher Scientific
 www.cellomics.com</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002941 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002941">
 		<rdfs:label rdf:datatype="&xsd;string">BD Pathway 435</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>BD Biosciences
 http://www.bdbiosciences.com/instruments/pathway/index.jsp</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002942 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002942">
 		<rdfs:label rdf:datatype="&xsd;string">BD Pathway 855</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>BD Biosciences
 http://www.bdbiosciences.com/instruments/pathway/index.jsp</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002943 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002943">
 		<rdfs:label rdf:datatype="&xsd;string">BioFlux 1000</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>FLUXION
 http://www.fluxionbio.com/products/bioflux-live-cell-imaging-with-flow/</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002944 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002944">
 		<rdfs:label rdf:datatype="&xsd;string">Celigo S Imaging Cell Cytometer</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>Brooks Life Science Systems
 http://www.brooks.com/products/life-science-systems/instruments-and-devices/celigo-cytometer</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002945 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002945">
 		<rdfs:label rdf:datatype="&xsd;string">Cell Voyager 1000</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>Yokogawa
 http://www.yokogawa.com/scanner/products/cv1000e.htm</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002946 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002946">
 		<rdfs:label rdf:datatype="&xsd;string">Cell Voyager 6000</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>Yokogawa
 http://www.yokogawa.com/hca/product/cv6000.htm</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002947 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002947">
 		<rdfs:label rdf:datatype="&xsd;string">Cell Voyager 7000</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>Yokogawa
 http://www.yokogawa.com/hca/product/cv7000.htm</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002948 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002948">
 		<rdfs:label rdf:datatype="&xsd;string">FlowSight</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>Amnis
 https://www.amnis.com/documents/brochures/FS_Brochure_Final.pdf</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002949 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002949">
 		<rdfs:label rdf:datatype="&xsd;string">iCyte Automated Imaging Cytometer</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>CompuCyte
 http://www.compucyte.com/icyte.htm</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002950 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002950">
 		<rdfs:label rdf:datatype="&xsd;string">ImageStreamX Mark II Imaging Flow Cytometer</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>Amnis
 https://www.amnis.com/documents/brochures/ISX-MKII%20Brochure_Final_Web.pdf</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002951 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002951">
 		<rdfs:label rdf:datatype="&xsd;string">ImageXpress Micro</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>Molecular Devices
 http://www.moleculardevices.com/Products/Instruments/High-Content-Screening.html</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002952 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002952">
 		<rdfs:label rdf:datatype="&xsd;string">ImageXpress Ultra</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>Molecular Devices
 http://www.moleculardevices.com/Products/Instruments/High-Content-Screening.html</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002953 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002953">
 		<rdfs:label rdf:datatype="&xsd;string">ImageXpress Velos Laser Scanning Cytometer</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>formerly known as: isocyte cytometer
 
 Molecular Devices
 http://www.moleculardevices.com/Products/Instruments/High-Content-Screening.html</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002954 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002954">
 		<rdfs:label rdf:datatype="&xsd;string">IN Cell Analyzer 2000</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>GE Healthcare
 http://www.biacore.com/high-content-analysis/index.html</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002955 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002955">
 		<rdfs:label rdf:datatype="&xsd;string">IN Cell Analyzer 6000</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>GE Healthcare
 http://www.biacore.com/high-content-analysis/index.html</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002956 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002956">
 		<rdfs:label rdf:datatype="&xsd;string">Opera</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>Perkin Elmer
 http://www.perkinelmer.com/pages/020/cellularimaging/products/opera.xhtml</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002957 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002957">
 		<rdfs:label rdf:datatype="&xsd;string">Operetta</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>Perkin Elmer
 http://www.perkinelmer.com/pages/020/cellularimaging/products/operetta.xhtml</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002958 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002958">
 		<rdfs:label rdf:datatype="&xsd;string">Tali Image Cytometer</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>life technologies
 http://www.invitrogen.com/site/us/en/home/Products-and-Services/Applications/Cell-Analysis/Cellular-Imaging/imaging-cytometry/Tali-Image-Cytometer/Tali-Image-Cytometer-Specifications.html</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003093 -->
@@ -680,18 +681,18 @@ http://www.invitrogen.com/site/us/en/home/Products-and-Services/Applications/Cel
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150000">
 		<rdfs:label rdf:datatype="&xsd;string">IN Cell Analyzer 2200</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>GE Healthcare
 http://www.biacore.com/high-content-analysis/index.html</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150001 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150001">
 		<rdfs:label rdf:datatype="&xsd;string">IN Cell Analyzer 3000</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>GE Healthcare
 http://www.biacore.com/high-content-analysis/index.html</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150002 -->
@@ -705,42 +706,42 @@ http://www.biacore.com/high-content-analysis/index.html</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150003">
 		<rdfs:label rdf:datatype="&xsd;string">CellInsight NXT HCS Platform</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>Thermo Fisher Scientific
 www.cellomics.com</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150004 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150004">
 		<rdfs:label rdf:datatype="&xsd;string">ArrayScan II HCS Reader</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>Thermo Fisher Scientific Cellomics</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150005 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150005">
 		<rdfs:label rdf:datatype="&xsd;string">ArrayScan 3.1 HCS Reader</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>Thermo Fisher Scientific Cellomics</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150006 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150006">
 		<rdfs:label rdf:datatype="&xsd;string">ArrayScan 4.0 HCS Reader</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>Thermo Fisher Scientific Cellomics</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150007 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150007">
 		<rdfs:label rdf:datatype="&xsd;string">KineticScan HCS Reader</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<rdfs:comment>Cellomics
 http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150008 -->
@@ -1048,75 +1049,75 @@ http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150052">
 		<rdfs:label rdf:datatype="&xsd;string">IonWorks automated electrophysiology system (Molecular Devices)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 2581</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/26/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>Automated patch clamp systems for ion channel research</obo:IAO_0000115>
 		<obo:IAO_0000119>https://www.moleculardevices.com/systems/automated-electrophysiology</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150053 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150053">
 		<rdfs:label rdf:datatype="&xsd;string">Analyst AD (Molecular Devices)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 463184</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/25/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>Assay development system (plate-reader) with four modes: fluorescence, luminescence, absorbance, and Epi-absorbance (Molecular Devices)</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150054 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150054">
 		<rdfs:label rdf:datatype="&xsd;string">Axopatch 200B amplifier (Molecular Devices)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>https://www.moleculardevices.com/systems/axon-conventional-patch-clamp/axopatch-200b-amplifier</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/26/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>An instument for single-channel recoding and whole-cell voltage-clamp recording (Axon Instruments/ Molecular Devices)</obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 504828</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150055 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150055">
 		<rdfs:label rdf:datatype="&xsd;string">Becton Dickinson (BD) LSRII FACS</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 652043</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 5/11/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>The BD LSRII FACS is an air-cooled multi-laser benchtop flow cytometer.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150056 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150056">
 		<rdfs:label rdf:datatype="&xsd;string">Synergy 2 Multi-Mode Reader (BioTek)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>http://www.biotek.com/products/microplate_detection/synergy2_multimode_microplate_reader.html</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/18/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>The Synergy 2 Multi-Mode Plate Reader&apos;s (BioTek) detection modes include fluorescence intensity, fluorescence polarization, time-resolved fluorescence, AlphaScreen, luminescence and UV-visible absorbance.</obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 652216</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150057 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150057">
 		<rdfs:label rdf:datatype="&xsd;string">BMG PHERAstar FSX plate reader (BMG Labtech, Cary NC)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>http://www.bmglabtech.com/en/products/pherastar-fsx/#tab-product-detail</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/2/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>BMG PHERAstar is a multi-mode benchtop plate reader; FSX and other models (BMG Labtech)</obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 435018</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150058 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150058">
 		<rdfs:label rdf:datatype="&xsd;string">Countess  automatic cell counter</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 588370</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>An automated cell counting device: Countess; Countes II FL has fluorescence capabilites (Invitrogen/ ThermoFisher)</obo:IAO_0000115>
 		<obo:IAO_0000119>https://www.thermofisher.com/us/en/home/life-science/cell-analysis/cell-analysis-instruments/automated-cell-counters/countess-ii-fl-automated-cell-counter.html</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150059 -->
@@ -1124,321 +1125,321 @@ http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150059">
 		<rdfs:label rdf:datatype="&xsd;string">FacSCAN flow cytometer</rdfs:label>
 		<obo:IAO_0000115>A flow cell_based benchtop cytometer (Becton Dickinson (BD))</obo:IAO_0000115>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 1758</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/24/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150060 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150060">
 		<rdfs:label rdf:datatype="&xsd;string">Molecular Devices Vmax plate reader</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 2649</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/22/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>A filter-based absorbance platereader for kinetic and endpoint assays (Molecualr Devices)</obo:IAO_0000115>
 		<obo:IAO_0000119>https://www.moleculardevices.com/systems/microplate-readers/absorbance-readers</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150061 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150061">
 		<rdfs:label rdf:datatype="&xsd;string">Molecular Devices SpectraMax Plate reader</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 504388</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/22/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>Several models of UV-visible absorbance microplate readers: SpectraMax 190; SpectraMax Plus 384; SpectraMax 340PC384 (Molecular Devices)</obo:IAO_0000115>
 		<obo:IAO_0000119>https://www.moleculardevices.com/systems/microplate-readers/absorbance-readers</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150062 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150062">
 		<rdfs:label rdf:datatype="&xsd;string">Qpatch automated patch clamp system (Biolin)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 623915</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 5/13/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>Several models of automated patch clamp systems for studying ion channels: QPatch8, QPAtch16, QpatchHT (Biolin Scientific)</obo:IAO_0000115>
 		<obo:IAO_0000119>http://www.biolinscientific.com/product/qpatch-88x/</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150063 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150063">
 		<rdfs:label rdf:datatype="&xsd;string">LightCycler 480 Real-Time PCR detection instrument</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>https://lifescience.roche.com/shop/products/lightcycler14301-480-instrument-ii</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/15/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>One of several models of a plate-based real-time PCR device (Roche )</obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 651770, 720492</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150064 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150064">
 		<rdfs:label rdf:datatype="&xsd;string">Mx3005P RT-PCR instrument (Agilent Technologies)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>http://www.genomics.agilent.com/en/Mx3005P-Mx3000P-qPCR-Instruments-Software/Mx3005P-qPCR-System/?cid=AG-PT-199&amp;tabId=AG-PR-1127</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/7/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>The Agilent Mx3005P QPCR System, a benchtop RT-PCR plate reader, has been replaced with the AriaMx system (Agilent Technologies)</obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 2427</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150065 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150065">
 		<rdfs:label rdf:datatype="&xsd;string">Synergy HT Multi-Mode Reader (BioTek)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 504653</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/25/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>The Synergy HT (or HTX) is a  Multi-Mode Plate Reader  (BioTek) is a single-channel absorbance, fluorescence and luminescence microplate reader.</obo:IAO_0000115>
 		<obo:IAO_0000119>http://www.biotek.com/products/microplate_detection/synergy2_multimode_microplate_reader.html</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150066 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150066">
 		<rdfs:label rdf:datatype="&xsd;string">GloMax luminometer (Promega)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 624302</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/1/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>One of several models of luminometer, either single-tube to multiple plate readers (Promega). Some models are multimode and can also read fluorescence or absorbance in addition to luminescence )</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150067 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150067">
 		<rdfs:label rdf:datatype="&xsd;string">LTQ-Orbitrap Velos (Thermo Scientific)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 602339</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>A mass spectrometer</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150068 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150068">
 		<rdfs:label rdf:datatype="&xsd;string">Appled Biosystems Real-Time PCR System (ThermoFisher)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 540282</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/22/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>Encompasses various models--ABI-9300, ABI-7500, and  QuantStudio.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150069 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150069">
 		<rdfs:label rdf:datatype="&xsd;string">Agilent 1100 series LC-MSD SL</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 602415</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>A mass spectrometer</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150070 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150070">
 		<rdfs:label rdf:datatype="&xsd;string">VE-2 whole-cell patch clamp amplifier (Alembic Instruments)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 2692</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/4/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150071 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150071">
 		<rdfs:label rdf:datatype="&xsd;string">micro-Quant Plate Reader (BioTek)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 624061</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/10/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>A microplate spectrophotometer</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150072 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150072">
 		<rdfs:label rdf:datatype="&xsd;string">SpectraMax Gemini XS microplate fluorometer (Molecular Devices)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 651896</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/11/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150073 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150073">
 		<rdfs:label rdf:datatype="&xsd;string">Typhoon FLA 9000 laser scanner (GE Healthcare)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 602172</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/1/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150074 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150074">
 		<rdfs:label rdf:datatype="&xsd;string">Fluoroskan Ascent FL Microplate Fluorometer and Luminometer (ThermoFisher)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 720723</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/12/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150075 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150075">
 		<rdfs:label rdf:datatype="&xsd;string">iMIC platform/ Polychrome V imaging system, (TILL Photonics/ FEI Munic GmbH)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<obo:IAO_0000119>PubChem AID: 2719</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/4/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150076 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150076">
 		<rdfs:label rdf:datatype="&xsd;string">Infinte M200 plate reader (Tecan)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 602457</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/2/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150077 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150077">
 		<rdfs:label rdf:datatype="&xsd;string">Multiskan EX plate reader (Thermo Scientific)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 720722</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/12/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150078 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150078">
 		<rdfs:label rdf:datatype="&xsd;string">Wallac 1420 (Victor2) Microplate reader (PerkinElmer)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 1061</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/18/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150079 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150079">
 		<rdfs:label rdf:datatype="&xsd;string">SpectraFluor Plus Microplate Reader (Tecan)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 1745</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/20/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150080 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150080">
 		<rdfs:label rdf:datatype="&xsd;string">TSQ Quantum Triple Quadrupole LC-MS (Thermo Scientific)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 602143</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/8/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150081 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150081">
 		<rdfs:label rdf:datatype="&xsd;string">Typhoon Trio variable-mode imager (Amersham/ GE LifeSciences)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 623937</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/19/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>A laser-based scanner that produces digital images of radioactive, fluorescent, or chemiluminescent samples</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150082 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150082">
 		<rdfs:label rdf:datatype="&xsd;string">IN Cell Analyzer 1000</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 		<obo:IAO_0000119>https://www.gelifesciences.com/gehcls_images/GELS/Related%20Content/Files/1314742967685/litdoc28402704_20110831020220.pdf</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/15/2016</obo:IAO_0000116>
 		<obo:IAO_0000119>PubChem AID: 456</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002937"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150083 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150083">
 		<rdfs:label rdf:datatype="&xsd;string">xCELLigence RTCA DP cellular impedance instrument (Acea Biosciences)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 602291</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/22/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>The xCELLigence RTCA DP instrument uses noninvasive electrical impedance monitoring to quantify cell proliferation, morphology change, and attachment quality in a label-free, real-time manner. </obo:IAO_0000115>
 		<obo:IAO_0000119>http://www.aceabio.com/product/rtca-dp/</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150084 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150084">
 		<rdfs:label rdf:datatype="&xsd;string">BD FACSAria flow cytometer (BD Biosciences)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 720665</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150085 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150085">
 		<rdfs:label rdf:datatype="&xsd;string">Biacore 3000 SPR System (GE Healthcare)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 651876</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>One of several models of surface plasmon resonance (SPR) instruments.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150086 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150086">
 		<rdfs:label rdf:datatype="&xsd;string">ChemiDoc XRS Imaging System (BioRad)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 652251</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>Imaging system based on CCD high-resolution detection, supports multiple detection methods including fluorescence, colorimetry, densitometry, chemiluminescence, and chemifluorescence.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150087 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150087">
 		<rdfs:label rdf:datatype="&xsd;string">FACScalibur flow cytometer (BD Biosciences)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 720663</obo:IAO_0000119>
 		<obo:IAO_0000116>9Date from BAE: /30/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150088 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150088">
 		<rdfs:label rdf:datatype="&xsd;string">FLUOstar Omega microplate reader (BMG Labtech)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 623961</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150089 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150089">
 		<rdfs:label rdf:datatype="&xsd;string">Pico patch clamp amplifier (Tecella)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 623974</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150090 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150090">
 		<rdfs:label rdf:datatype="&xsd;string">Storm PhosphorImager (Molecular Dynamics/ GE)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 2704</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>An imaging system for blots, gels, etc, to replace use of film; can be used for autoradiography, fluorescence, and chemifluorescence imaging.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150091 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150091">
 		<rdfs:label rdf:datatype="&xsd;string">Varioskan LUX multimode microplate reader (ThermoFisher)</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000119>PubChem AID: 623970</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150092 -->
@@ -1466,35 +1467,36 @@ http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150095">
 		<rdfs:label rdf:datatype="&xsd;string">Luminex 200 Flow Cytometer</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000115>The Luminex 100/200 System is the combination of three core xMAP® Technologies. The first is xMAP microspheres, a family of fluorescently dyed micron-sized polystyrene microspheres that act as both the identifier and the solid surface to build the assay. The second is a flow cytometry-based instrument, the Luminex 100/200 analyzer, which integrates key xMAP detection components, such as lasers, optics, fluidics, and high-speed digital signal processors. The third component is the xPONENT® software, which is designed for protocol-based data acquisition with robust data regression analysis. From https://www.luminexcorp.com/research-luminex-100200/</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150096 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150096">
 		<rdfs:label rdf:datatype="&xsd;string">Luminex 200 Flow Cytometer</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
+		<obo:deprecated></obo:deprecated>
 		<obo:IAO_0000115>The Luminex 200 system is a compact analyzer that performs up to 100 immunoassays simultaneously using a single drop of fluid.</obo:IAO_0000115>
 		<obo:IAO_0000118></obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150097 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150097">
 		<rdfs:label rdf:datatype="&xsd;string">FlexStation III Microplate Reader</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000115>The FlexStation 3 Multi-Mode Microplate Reader measures absorbance, fluorescence intensity, fluorescence polarization, luminescence, and time-resolved fluorescence for biochemical and cell-based assays. The reader adds up to three transfers of assay reagents from a 96- or 384-well source plate to enhance assay design using integrated fluidics.</obo:IAO_0000115>
 		<obo:IAO_0000118>FlexStation 3</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150098 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150098">
 		<rdfs:label rdf:datatype="&xsd;string">IN Cell Analyzer 2500</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000115>IN Cell Analyzer 2500HS is a widefield high-content imaging system equipped with deconvolution.</obo:IAO_0000115>
 		<obo:IAO_0000118></obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150099 -->

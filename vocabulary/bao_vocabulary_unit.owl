@@ -21,19 +21,20 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:efo="http://www.ebi.ac.uk/efo/">
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
+	 xmlns:bao="http://www.bioassayontology.org/bao/#">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_unit.owl">
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_unit.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.6</owl:versionInfo>
+        <owl:versionInfo>2.7</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>31 Jul 2020</dc:date>
+        <dc:date>15 Dec 2020</dc:date>
     </owl:Ontology>
 
 
@@ -77,34 +78,33 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080019">
 		<rdfs:label rdf:datatype="&xsd;string">rate</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000077"/>
 		<obo:IAO_0000119>PubChem AID: </obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/19/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000077"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0080020 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080020">
 		<rdfs:label rdf:datatype="&xsd;string">cm/sec</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080019"/>
 		<obo:IAO_0000119>PubChem AID: 602462</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/6/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0080021 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080021">
 		<rdfs:label rdf:datatype="&xsd;string">nmol/sec</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080019"/>
 		<obo:IAO_0000119>PubChem AID: 652113</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/19/2016</obo:IAO_0000116>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080019"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0080022 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080022">
 		<rdfs:label rdf:datatype="&xsd;string">log change</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000190"/>
 		<obo:IAO_0000119>PubChem AID: 2024</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 7/21/2016</obo:IAO_0000116>
 	</owl:Class>
@@ -113,81 +113,79 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080023">
 		<rdfs:label rdf:datatype="&xsd;string">binary unit</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000077"/>
 		<obo:IAO_0000119>PubChem AID: 449752</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 5/30/16</obo:IAO_0000116>
 		<obo:IAO_0000115>A simple binary assessment, such as &apos;active/ inactive&apos;, &apos;true/ false&apos;, etc.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000077"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0190000 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0190000">
 		<rdfs:label rdf:datatype="&xsd;string">concentration unit</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000077"/>
 		<obo:IAO_0000115>It describes the most common unit used in calculating volumetric stoichiometry: molarity. Units include: molar, millimolar, micromolar, nanomolar.</obo:IAO_0000115>
 		<obo:deprecated>true</obo:deprecated>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000077"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0190001 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0190001">
 		<rdfs:label rdf:datatype="&xsd;string">ratio</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000077"/>
 		<obo:deprecated>true</obo:deprecated>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000077"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0190002 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0190002">
 		<rdfs:label rdf:datatype="&xsd;string">temperature unit</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000077"/>
 		<obo:deprecated>true</obo:deprecated>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000077"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0190003 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0190003">
 		<rdfs:label rdf:datatype="&xsd;string">time unit</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000077"/>
 		<obo:deprecated>true</obo:deprecated>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000077"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0190004 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0190004">
 		<rdfs:label rdf:datatype="&xsd;string">pKi</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
 		<obo:IAO_0000115>Negative base-10 logarithm of KI, the equilibrium dissociation constant (Ki) of an antogonist-receptor complex</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0190005 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0190005">
 		<rdfs:label rdf:datatype="&xsd;string">pKd</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
 		<obo:IAO_0000115>Negative base-10 logarithm of a solution&apos;s KD (drug affinity dissociation constant)</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0190006 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0190006">
 		<rdfs:label rdf:datatype="&xsd;string">pKb</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
 		<obo:IAO_0000115>Negative base-10 logarithm of a solution&apos;s base dissociation constant (Kb)</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0190007 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0190007">
 		<rdfs:label rdf:datatype="&xsd;string">cells per well</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000200"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0190008 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0190008">
 		<rdfs:label rdf:datatype="&xsd;string">cells per microliter</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000200"/>
 	</owl:Class>
 
 </rdf:RDF>
