@@ -27,14 +27,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.7</owl:versionInfo>
+        <owl:versionInfo>2.7.1</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>15 Dec 2020</dc:date>
+        <dc:date>18 May 2021</dc:date>
     </owl:Ontology>
 
 
@@ -1912,10 +1912,10 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080024">
 		<rdfs:label rdf:datatype="&xsd;string">binary endpoint</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080045"/>
 		<obo:IAO_0000119>PubChem AID: 449752</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 5/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>Any result reported as a simple binary assessment, such as &apos;active/ inactive&apos;, &apos;true/ false&apos;, etc.</obo:IAO_0000115>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0080025 -->
@@ -1943,6 +1943,7 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080028">
 		<rdfs:label rdf:datatype="&xsd;string">quantified endpoint</rdfs:label>
+		<obo:deprecated>true</obo:deprecated>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
 	</owl:Class>
 
@@ -1950,7 +1951,6 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080029">
 		<rdfs:label rdf:datatype="&xsd;string">quantified entity</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080028"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0080030 -->
@@ -2007,6 +2007,79 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
 		<obo:IAO_0000118>Relative Induction Score (RIS) </obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080037 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080037">
+		<rdfs:label rdf:datatype="&xsd;string">Emax</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002118"/>
+		<obo:IAO_0000115>Maximum induction effect (dimensionless)</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080038 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080038">
+		<rdfs:label rdf:datatype="&xsd;string">molar attenuation coefficient</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+		<obo:IAO_0000115>This is a measurement of how strongly a chemical species attenuates light at a given wavelength. Common units are L/(mol*cm).</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080039 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080039">
+		<rdfs:label rdf:datatype="&xsd;string">max fold increase</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000193"/>
+		<obo:IAO_0000115>The maximum observed fold increase.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080040 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080040">
+		<rdfs:label rdf:datatype="&xsd;string">fraction unbound</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+		<obo:IAO_0000115>The fraction of compound that does not bind to substrate (e.x. plasma proteins)</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080041 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080041">
+		<rdfs:label rdf:datatype="&xsd;string">cell count</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000583"/>
+		<obo:IAO_0000115>Count of cells as an endpoint</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080042 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080042">
+		<rdfs:label rdf:datatype="&xsd;string">ratio endpoint</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
+		<obo:IAO_0000115>A ratio endpoint is the relative relation between two quantitative results (a/b)</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080043 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080043">
+		<rdfs:label rdf:datatype="&xsd;string">blood to plasma ratio</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080042"/>
+		<obo:IAO_0000115>The ratio of the concentration of molecule in whole blood (i.e. contains both red blood cells and plasma) to the concentration of molecule in plasma, namely CB/CP.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080044 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080044">
+		<rdfs:label rdf:datatype="&xsd;string">AC50 Ratio</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080042"/>
+		<obo:IAO_0000115>Ratio of AC50 values</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080045 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080045">
+		<rdfs:label rdf:datatype="&xsd;string">categorical endpoint</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
+		<obo:IAO_0000115>A categorical endpoint is any result that can take one of a limited number of possible values. </obo:IAO_0000115>
 	</owl:Class>
 
 </rdf:RDF>

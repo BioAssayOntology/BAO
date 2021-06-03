@@ -18,8 +18,8 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_core.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_module_vocabularies.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:date>15 Dec 2020</dc:date>
-        <owl:versionInfo>2.7</owl:versionInfo>
+        <dc:date>18 May 2021</dc:date>
+        <owl:versionInfo>2.7.1</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
@@ -3999,6 +3999,10 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080022">
 		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/UO_0000190"/>
+	</owl:Class>
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080029">
+		<rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33232"/>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100003">

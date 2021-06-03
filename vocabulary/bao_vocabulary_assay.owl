@@ -27,14 +27,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.7</owl:versionInfo>
+        <owl:versionInfo>2.7.1</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>15 Dec 2020</dc:date>
+        <dc:date>18 May 2021</dc:date>
     </owl:Ontology>
 
 
@@ -80,7 +80,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000010">
 		<rdfs:label rdf:datatype="&xsd;string">functional</rdfs:label>
-		<obo:IAO_0000115>An assay where the measured signal corresponds to a complex response such as cell survival, proliferation, localization of a protein, nuclear translocation etc. The molecular target is not assumed.</obo:IAO_0000115>
+		<obo:IAO_0000115>An assay  where the measured signal corresponds to a direct read out of the analyte (e.g. enzyme activity) or an indirect complex response such as cell survival, proliferation, localization of a protein, nuclear translocation etc. </obo:IAO_0000115>
 		<obo:IAO_0000118>functional assay</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000008"/>
 	</owl:Class>
@@ -4448,6 +4448,29 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>DiscoverX gpcrMAX assay</obo:IAO_0000118>
 		<obo:IAO_0000118>gpcrMAX </obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013016 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013016">
+		<rdfs:label rdf:datatype="&xsd;string">functional target-based
+</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000010"/>
+		<obo:IAO_0000115>An assay where the measure signal is a direct or coupled readout of the proteins native mechanistic or conformational cycle. This can include:
+
+(1) assays that directly or indirectly measure product of an enzymatic cycle (e.g.: NADPH consumption, antibody based  detection  of phosphorylated peptide substrate, mass spec product detection and  quantitation, electrofluidic mobility shift assay, etc);
+
+(2) assays  that directly or indirectly measure the transmission of signal as a  result of the interaction with a membrane bound receptor detected through fluorescent dye that detects the release of intracellular calcium,  nuclear receptor, and
+
+(3) biochemical assays that measures the increase or decrease of an RNA transcript as a result of interaction with a nuclear receptor</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013017 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013017">
+		<rdfs:label rdf:datatype="&xsd;string">functional phenotypic</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000010"/>
+		<obo:IAO_0000115>An assay  where the measured signal is a phenotypic response of the system or the  readout is indirect (e.g. comparing cell survival between wildtype and  mutant protein).</obo:IAO_0000115>
 	</owl:Class>
 
 </rdf:RDF>
