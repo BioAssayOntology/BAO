@@ -18,8 +18,8 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_core.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_module_vocabularies.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:date>18 May 2021</dc:date>
-        <owl:versionInfo>2.7.1</owl:versionInfo>
+        <dc:date>8 Jul 2021</dc:date>
+        <owl:versionInfo>2.7.2</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>

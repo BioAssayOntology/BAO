@@ -27,14 +27,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_organization.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.7.1</owl:versionInfo>
+        <owl:versionInfo>2.7.2</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>18 May 2021</dc:date>
+        <dc:date>8 Jul 2021</dc:date>
     </owl:Ontology>
 
 
@@ -579,6 +579,15 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">HMS</rdfs:label>
 		<rdfs:comment>Harward Medical School</rdfs:comment>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000709"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0200000 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0200000">
+		<rdfs:label rdf:datatype="&xsd;string">Illumina</rdfs:label>
+		<obo:IAO_0000115>A biotechnology company that develops, manufactures, and markets integrated systems for the analysis of genetic variation and biological function. The company provides a line of products and services that serves the sequencing, genotyping, gene expression, and proteomics markets.
+Explanation: Not currently available as a commercial company, but well known and used in next-gen sequencing circles.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002091"/>
 	</owl:Class>
 
 </rdf:RDF>
