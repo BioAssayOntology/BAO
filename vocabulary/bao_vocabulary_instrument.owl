@@ -27,14 +27,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_instrument.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.7.2</owl:versionInfo>
+        <owl:versionInfo>2.7.4</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>8 Jul 2021</dc:date>
+        <dc:date>10 Nov 2022</dc:date>
     </owl:Ontology>
 
 
@@ -1475,10 +1475,10 @@ http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150096">
 		<rdfs:label rdf:datatype="&xsd;string">Luminex 200 Flow Cytometer</rdfs:label>
-		<obo:deprecated></obo:deprecated>
 		<obo:IAO_0000115>The Luminex 200 system is a compact analyzer that performs up to 100 immunoassays simultaneously using a single drop of fluid.</obo:IAO_0000115>
 		<obo:IAO_0000118></obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150097 -->
@@ -1503,9 +1503,9 @@ http://www.bilatec.com/weiterepdf/KinetcScan%20HCS%20Reader.pdf</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0150099">
 		<rdfs:label rdf:datatype="&xsd;string">IN Cell Analyzer 6500</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 		<obo:IAO_0000115>IN Cell Analyzer 6500HS is a laser-based high-content imaging system featuring IRIS confocal technology.</obo:IAO_0000115>
 		<obo:IAO_0000118></obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000697"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0150100 -->
