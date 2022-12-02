@@ -331,26 +331,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C16504 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16504">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal Model of Disease</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
-        <obo:NCIT_P325 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An animal with a disease either the same as or like a disease in humans. Animal models are used to study the development and progression of diseases and to test new treatments before they are given to humans. Animals with transplanted human cancers or other tissues are called xenograft models.</obo:NCIT_P325>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal Model of Disease</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal Model of Disease</obo:NCIT_P108>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal disease whose pathologic mechanisms are sufficiently similar to those of a human disease for the animal disease to serve as a model.</obo:IAO_0000115>
-        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Animal_Model</obo:NCIT_P366>
-        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0012644</obo:NCIT_P207>
-        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C16504</obo:NCIT_NHC0>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disease Models, Animal</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Experimental Model of Disease</obo:NCIT_P106>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animal model</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/NCIT_C16681 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C16681">
@@ -436,31 +416,6 @@
         <obo:NCIT_A29 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9341"/>
         <obo:NCIT_A39 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9357"/>
         <obo:NCIT_A40 rdf:resource="http://purl.obolibrary.org/obo/NCIT_C9477"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C17206 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C17206">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toxicology</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000008"/>
-        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biomedical Occupation or Discipline</obo:NCIT_P106>
-        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0040541</obo:NCIT_P207>
-        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C17206</obo:NCIT_NHC0>
-        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDISC</obo:NCIT_P322>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TOX</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P325 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The study of poisons, including the source, effect, and treatment of poisoning. It is a branch of pharmacology (the study of drugs).</obo:NCIT_P325>
-        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toxicology</obo:NCIT_P108>
-        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toxicology</obo:NCIT_P366>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toxicology</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toxicology is the branch of pharmacology that deals with the nature and effects and treatments of poisons.</obo:IAO_0000115>
-        <obo:NCIT_P325 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Toxicology is the study of the adverse effects of chemical, physical or biological agents on people, animals, and the environment.</obo:NCIT_P325>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">toxicology</oboInOwl:hasExactSynonym>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90002"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
     </owl:Class>
     
@@ -583,7 +538,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C19812">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xenograft Model</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79364"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79367"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An experimental system in which (usually) human tumor cells are transplanted into immunocompromised mice that do not reject human cells; cells may be implanted under the skin or into the organ type in which the tumor originated. These model systems may be used for drug development and studies of molecular biological mechanisms of cancer.</obo:IAO_0000115>
         <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C1520166</obo:NCIT_P207>
         <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C19812</obo:NCIT_NHC0>
@@ -610,48 +565,6 @@
         <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Qualitative Concept</obo:NCIT_P106>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The strength of noncovalent chemical binding between two substances as measured by the dissociation constant of the complex.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">affinity</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C49663 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C49663">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pharmacokinetic Study</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000009"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study of the process by which a drug is absorbed, distributed, metabolized, and eliminated by the body.</obo:IAO_0000115>
-        <obo:NCIT_P325 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A study of the process by which a drug is absorbed, distributed, metabolized, and eliminated by the body. (NCI)</obo:NCIT_P325>
-        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C49663</obo:NCIT_NHC0>
-        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDISC</obo:NCIT_P322>
-        <obo:NCIT_P208 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CL354156</obo:NCIT_P208>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PHARMACOKINETIC</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PK Study</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pharmacokinetic Study</obo:NCIT_P108>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pharmacokinetic Study</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pharmacokinetic_Study</obo:NCIT_P366>
-        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Research Activity</obo:NCIT_P106>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C132298"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66739"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C66830"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/NCIT_C63536 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C63536">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003112"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A detailed examination, analysis, or critical inspection of a subject designed to discover facts about it.</obo:IAO_0000115>
-        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C0947630</obo:NCIT_P207>
-        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C63536</obo:NCIT_NHC0>
-        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Research Activity</obo:NCIT_P106>
-        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study</obo:NCIT_P366>
-        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study</obo:NCIT_P108>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Study</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
     </owl:Class>
     
@@ -800,40 +713,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/NCIT_C90452 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C90452">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Safety Pharmacology</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000008"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A branch of pharmacology that investigates the potential undesirable pharmacodynamic effects of a substance on physiological functions in relation to exposure in the therapeutic range and above. (safetypharmacology.org)</obo:IAO_0000115>
-        <obo:NCIT_P325 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A branch of pharmacology that investigates the potential undesirable pharmacodynamic effects of a substance on physiological functions in relation to exposure in the therapeutic range and above. (safetypharmacology.org) (NCI)</obo:NCIT_P325>
-        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biomedical Occupation or Discipline</obo:NCIT_P106>
-        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C2983660</obo:NCIT_P207>
-        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C90452</obo:NCIT_NHC0>
-        <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDISC</obo:NCIT_P322>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SP</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Safety Pharmacology</oboInOwl:hasExactSynonym>
-        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Safety Pharmacology</obo:NCIT_P108>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C61410"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C77526"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/NCIT_C90002"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000008 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000008"/>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0000009 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000009"/>
-    
-
-
     <!-- http://www.bioassayontology.org/bao#BAO_0002183 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002183"/>
@@ -849,18 +728,6 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0002533 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002533"/>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0003112 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003112"/>
-    
-
-
-    <!-- http://www.bioassayontology.org/bao#BAO_0003114 -->
-
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003114"/>
 </rdf:RDF>
 
 
