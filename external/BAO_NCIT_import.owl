@@ -538,7 +538,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C19812">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Xenograft Model</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79367"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCIT_C79364"/>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An experimental system in which (usually) human tumor cells are transplanted into immunocompromised mice that do not reject human cells; cells may be implanted under the skin or into the organ type in which the tumor originated. These model systems may be used for drug development and studies of molecular biological mechanisms of cancer.</obo:IAO_0000115>
         <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C1520166</obo:NCIT_P207>
         <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C19812</obo:NCIT_NHC0>
@@ -574,6 +574,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C79364">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pharmacology: Primary Pharmacodynamics</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002183"/>
         <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C2698783</obo:NCIT_P207>
         <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C79364</obo:NCIT_NHC0>
         <obo:NCIT_P322 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CDISC</obo:NCIT_P322>
