@@ -26,15 +26,15 @@
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl">
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:date>31 January 2023</dc:date>
-        <owl:versionInfo>2.7.4</owl:versionInfo>
-        <rdfs:label>BAO</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <owl:versionInfo>2.7.5</owl:versionInfo>
+        <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
-stephan dot schurer at gmail dot com</rdfs:comment>
+schurer at med dot miami dot edu</rdfs:comment>
+        <dc:date>March 9, 2023</dc:date>
     </owl:Ontology>
 
 
@@ -46,6 +46,9 @@ stephan dot schurer at gmail dot com</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+	<!-- http://www.bioassayontology.org/bao/hasXref -->
+
+	<owl:AnnotationProperty rdf:about="http://www.bioassayontology.org/bao/hasXref"/>
 	<!-- http://www.bioassayontology.org/bao/submitted_by -->
 
 	<owl:AnnotationProperty rdf:about="http://www.bioassayontology.org/bao/submitted_by"/>
@@ -808,19 +811,18 @@ citesForInformation or citeAsSourceData some DOI or PMID</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002005">
 		<rdfs:label rdf:datatype="&xsd;string">kinase activity assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002795"/>
 		<obo:IAO_0000118>kinase assay </obo:IAO_0000118>
 		<obo:IAO_0000118>kinase activity panel </obo:IAO_0000118>
 		<obo:IAO_0000118>kinase profiling </obo:IAO_0000118>
 		<obo:IAO_0000118>kinase screen </obo:IAO_0000118>
 		<obo:IAO_0000118>kinase panel</obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002795"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002041 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002041">
 		<rdfs:label rdf:datatype="&xsd;string">cell cycle assay</rdfs:label>
-		<obo:IAO_0000118>cell cycle analysis</obo:IAO_0000118>
 		<rdfs:comment>endpoints: 
 percent proliferation
 percent interphase
@@ -828,6 +830,7 @@ percent mitosis
 percent G2-M arrested
 percent non-arrested</rdfs:comment>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+		<obo:IAO_0000118>cell cycle analysis</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002043 -->
@@ -949,6 +952,7 @@ percent non-arrested</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">pharmacodynamic assay</rdfs:label>
 		<obo:IAO_0000118></obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002184 -->
@@ -973,11 +977,12 @@ For HCS measurement, we need to define &apos;assay measurement&apos; as the outc
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002188">
 		<rdfs:label rdf:datatype="&xsd;string">drug interaction assay</rdfs:label>
-		<obo:IAO_0000118>DDI </obo:IAO_0000118>
 		<obo:IAO_0000118>drug-drug interaction assay </obo:IAO_0000118>
+		<obo:IAO_0000118>DDI </obo:IAO_0000118>
 		<obo:IAO_0000118>drug-drug interactions </obo:IAO_0000118>
 		<obo:IAO_0000118>drug-drug interaction </obo:IAO_0000118>
 		<obo:IAO_0000118>FDA RPS Pharmacokinetics: Drug Interactions</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
 	</owl:Class>
 
@@ -985,9 +990,9 @@ For HCS measurement, we need to define &apos;assay measurement&apos; as the outc
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002189">
 		<rdfs:label rdf:datatype="&xsd;string">toxicity assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000118>toxicology assay</obo:IAO_0000118>
 		<obo:IAO_0000118>tox assay</obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002190 -->
@@ -1086,14 +1091,14 @@ For HCS measurement, we need to define &apos;assay measurement&apos; as the outc
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002530">
 		<rdfs:label rdf:datatype="&xsd;string">bioavailability assay</rdfs:label>
 		<obo:IAO_0000118>bioavailability study</obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002531 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002531">
 		<rdfs:label rdf:datatype="&xsd;string">non-specific protein binding assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002532 -->
@@ -1108,7 +1113,7 @@ For HCS measurement, we need to define &apos;assay measurement&apos; as the outc
 		<obo:IAO_0000118>tissue exposure </obo:IAO_0000118>
 		<obo:IAO_0000118>drug tissue exposure </obo:IAO_0000118>
 		<obo:IAO_0000118>tissue drug distribution</obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002533 -->
@@ -1123,7 +1128,7 @@ For HCS measurement, we need to define &apos;assay measurement&apos; as the outc
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002534">
 		<rdfs:label rdf:datatype="&xsd;string">drug abuse assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002765"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002535 -->
@@ -1204,7 +1209,7 @@ For HCS measurement, we need to define &apos;assay measurement&apos; as the outc
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002765">
 		<rdfs:label rdf:datatype="&xsd;string">organism behavior assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000008"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002769 -->
@@ -1260,6 +1265,7 @@ For HCS measurement, we need to define &apos;assay measurement&apos; as the outc
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002785">
 		<rdfs:label rdf:datatype="&xsd;string">gene expression assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000118>gene expression assay</obo:IAO_0000118>
 		<obo:IAO_0000115>This assay quantifies the expression level of the entire gene pool in a cell or a subpopulation (e.g. tissue-specific gene expression, kinases) using either microarray, bead method, RNASeq, or reporter gene method.</obo:IAO_0000115>
 	</owl:Class>
@@ -1324,6 +1330,7 @@ For HCS measurement, we need to define &apos;assay measurement&apos; as the outc
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002805">
 		<rdfs:label rdf:datatype="&xsd;string">cell proliferation assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000118>anti-proliferation </obo:IAO_0000118>
 		<obo:IAO_0000118>cell proliferation inhibitor </obo:IAO_0000118>
 		<obo:IAO_0000118>cell proliferation inhibition </obo:IAO_0000118>
@@ -1411,6 +1418,7 @@ This includes &apos;parameters&apos;, such as &apos;intensity&apos;, &apos;count
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002989">
 		<rdfs:label rdf:datatype="&xsd;string">binding assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000118>ligand binding </obo:IAO_0000118>
 		<obo:IAO_0000115>It is performed to quantify the interactions between two molecules, e.g. small molecule-protein, protein-protein, protein-DNA, etc.</obo:IAO_0000115>
 		<obo:IAO_0000118>ligand binding assay</obo:IAO_0000118>
@@ -1447,12 +1455,14 @@ This includes &apos;parameters&apos;, such as &apos;intensity&apos;, &apos;count
 		<obo:IAO_0000118>cytotox assay </obo:IAO_0000118>
 		<obo:IAO_0000118>cytotoxic activity </obo:IAO_0000118>
 		<obo:IAO_0000118>in vitro cytotoxic activity</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002994 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002994">
 		<rdfs:label rdf:datatype="&xsd;string">enzyme activity assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000118>enzymatic activities</obo:IAO_0000118>
 		<obo:IAO_0000115>It is used to measure the effect of a perturbagen on the enzyme activity, which can be measured either directly or coupled to a secondary signal. </obo:IAO_0000115>
 	</owl:Class>
@@ -1461,11 +1471,11 @@ This includes &apos;parameters&apos;, such as &apos;intensity&apos;, &apos;count
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002995">
 		<rdfs:label rdf:datatype="&xsd;string">transcriptional profiling assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002785"/>
 		<obo:IAO_0000118>transcriptomic profiling </obo:IAO_0000118>
 		<obo:IAO_0000115>This assay quantifies the expression level of the entire gene pool in a cell or a subpopulation (e.g. tissue-specific gene expression, kinases) using a bead-based method.</obo:IAO_0000115>
 		<obo:IAO_0000118>transcriptional profiling </obo:IAO_0000118>
 		<obo:IAO_0000118>transcriptional profile</obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002785"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002996 -->
@@ -1521,6 +1531,7 @@ This includes &apos;parameters&apos;, such as &apos;intensity&apos;, &apos;count
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003002">
 		<rdfs:label rdf:datatype="&xsd;string">signal transduction assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000115>This assay measures one of the series of events that are downstream to the receipt of a chemical signal at the cell</obo:IAO_0000115>
 		<obo:IAO_0000118>cell signalling </obo:IAO_0000118>
 		<obo:IAO_0000118>cell signaling assay </obo:IAO_0000118>
@@ -1532,19 +1543,18 @@ This includes &apos;parameters&apos;, such as &apos;intensity&apos;, &apos;count
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003003">
 		<rdfs:label rdf:datatype="&xsd;string">cytokine secretion assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000042"/>
 		<obo:IAO_0000115>It measures the types and amounts of cytokines that are released as the consequence of a signaling event. Cytokines can be quantitated using ELISA-based kits, PCR array, etc.</obo:IAO_0000115>
 		<obo:IAO_0000118>cytokine release </obo:IAO_0000118>
 		<obo:IAO_0000118>cytokine release assay</obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000042"/>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003004 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003004">
 		<rdfs:label rdf:datatype="&xsd;string">posttranslation modification assay</rdfs:label>
-		<obo:IAO_0000115>This assay quantifies the modification that a protein can undergo after it is synthesized by translation. E.g. phosphorylation, acetylation, etc. The modification status is detected by one of several methods such as using modification specific antibodies followed by western blotting, imaging; mass spectrometry, etc.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
+		<obo:IAO_0000115>This assay quantifies the modification that a protein can undergo after it is synthesized by translation. E.g. phosphorylation, acetylation, etc. The modification status is detected by one of several methods such as using modification specific antibodies followed by western blotting, imaging; mass spectrometry, etc.</obo:IAO_0000115>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003005 -->
@@ -1594,6 +1604,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003009">
 		<rdfs:label rdf:datatype="&xsd;string">cell viability assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000115>This assay type measures the cellular state of living or dying by measuring an indicator of life or death. Cell life indicators include ATP content, cell number, dehydrogenase activity, DNA content, esterase activity, mitochondrial membrane potential, membrane integrity, and protease activity. Cell death indicators include caspase activity, chromatin condensation, and phospholipid redistribution.</obo:IAO_0000115>
 		<obo:IAO_0000118>viability assays </obo:IAO_0000118>
 		<obo:IAO_0000118>viability assay</obo:IAO_0000118>
@@ -1747,6 +1758,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010011">
 		<rdfs:label rdf:datatype="&xsd;string">in vivo efficacy assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002183"/>
 		<obo:IAO_0000118>in vivo efficacy </obo:IAO_0000118>
 		<obo:IAO_0000118>in vivo efficacy study </obo:IAO_0000118>
 		<obo:IAO_0000118>efficacy comparison </obo:IAO_0000118>
@@ -1759,6 +1771,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>evaluation of efficacy </obo:IAO_0000118>
 		<obo:IAO_0000118>efficacy study </obo:IAO_0000118>
 		<obo:IAO_0000118>evaluate the efficacy </obo:IAO_0000118>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010012 -->
@@ -1819,8 +1832,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010018">
 		<rdfs:label rdf:datatype="&xsd;string">gel</rdfs:label>
-		<obo:IAO_0000116>Date from BAE: 6/2/2016</obo:IAO_0000116>
 		<obo:IAO_0000119>PubChem AID: 449751</obo:IAO_0000119>
+		<obo:IAO_0000116>Date from BAE: 6/2/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>Gel electrophoresis is a method for separation and analysis of macromolecules (DNA, RNA and proteins) and their fragments, based on their size and charge. This general method encompasses different types of matrices (gels) with different properties. The most common types are polyacrylamide and agarose, both low-throughput methods.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
 	</owl:Class>
@@ -1899,6 +1912,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010026">
 		<rdfs:label rdf:datatype="&xsd;string">protein profiling assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000118>protein quantification assay </obo:IAO_0000118>
 		<obo:IAO_0000118>protein profiling</obo:IAO_0000118>
 		<obo:IAO_0000115>Protein profiling assays can be used to identify and quantify proteins together with their post-translational modifications</obo:IAO_0000115>
@@ -2044,6 +2058,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010044">
 		<rdfs:label rdf:datatype="&xsd;string">targeted transcriptional assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000118>RNA expression</obo:IAO_0000118>
 		<obo:IAO_0000115>Assays that quantify the expression of a predetermined RNA transcript / set of transcripts</obo:IAO_0000115>
 	</owl:Class>
@@ -2247,8 +2262,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">parallel artificial membrane permeability assay</rdfs:label>
 		<obo:IAO_0000115>A method which determines the permeability of substances from a donor compartment, through a lipid-infused artificial membrane into an acceptor compartment. At the beginning of the test, the drug is added to the donor compartment, and the acceptor compartment is drug-free. After an incubation period the amount of drug is measured in each compartment. Mass balance allows calculation of drug that remains in the membrane. It is used as an in vitro model of passive, transcellular permeation to predict oral absorption. PAMPA is an alternative to the cell-based Caco-2 permeability assay</obo:IAO_0000115>
 		<obo:IAO_0000118>PAMPA</obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000026"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010073 -->
@@ -2283,6 +2297,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010077">
 		<rdfs:label rdf:datatype="&xsd;string">GPCR Signaling</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
 		<obo:IAO_0000118>GPCR assay </obo:IAO_0000118>
 		<obo:IAO_0000118>GPCR pharmacology </obo:IAO_0000118>
 		<obo:IAO_0000118>GPCR profiling </obo:IAO_0000118>
@@ -2304,9 +2319,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010079">
 		<rdfs:label rdf:datatype="&xsd;string">PRESTO-TANGO</rdfs:label>
 		<obo:IAO_0000115>Beta-arrestin2 fused to the TEV protease liberates a tTA molecule fused to the C-terminus of a target G-protein coupled receptor when in close proximity, resulting in a tTA-driven expression of RLuc from a genomic TETO7-RLuc locus.</obo:IAO_0000115>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010077"/>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010078"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000248"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010080 -->
@@ -2333,15 +2346,13 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">drug absorption assay</rdfs:label>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<obo:IAO_0000118>drug absorption assay</obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010083 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010083">
 		<rdfs:label rdf:datatype="&xsd;string">permeability assay</rdfs:label>
-		<obo:IAO_0000118>paracellular permeability assay</obo:IAO_0000118>
-		<obo:IAO_0000118>transcellular permeability assay</obo:IAO_0000118>
 		<obo:IAO_0000118>permeability study </obo:IAO_0000118>
 		<obo:IAO_0000118>permeabillity studies </obo:IAO_0000118>
 		<obo:IAO_0000118>assessment of permeability </obo:IAO_0000118>
@@ -2350,6 +2361,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<obo:IAO_0000118>drug permeability </obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010082"/>
+		<obo:IAO_0000118>paracellular permeability assay</obo:IAO_0000118>
+		<obo:IAO_0000118>transcellular permeability assay</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010084 -->
@@ -2435,7 +2448,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>metabolism in vitro</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<obo:IAO_0000118>in vitro metabolism </obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010091 -->
@@ -2484,8 +2497,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010094">
 		<rdfs:label rdf:datatype="&xsd;string">portal vein study</rdfs:label>
 		<obo:IAO_0000118>portal vein study</obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010090"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010278"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010095 -->
@@ -2966,11 +2979,11 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010137">
 		<rdfs:label rdf:datatype="&xsd;string">BSA binding asssay</rdfs:label>
-		<obo:IAO_0000118>2% BSA binding</obo:IAO_0000118>
 		<obo:IAO_0000118>bovine serum albumin binding </obo:IAO_0000118>
 		<obo:IAO_0000118>binding to BSA </obo:IAO_0000118>
 		<obo:IAO_0000118></obo:IAO_0000118>
 		<obo:IAO_0000118>binding to bovine serum albumin </obo:IAO_0000118>
+		<obo:IAO_0000118>2% BSA binding</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<obo:IAO_0000118>BSA binding </obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010136"/>
@@ -2994,7 +3007,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">drug excretion assay</rdfs:label>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<obo:IAO_0000118>FDA RPS Pharmacokinetics: Excretion</obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010140 -->
@@ -3529,12 +3542,12 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010190">
 		<rdfs:label rdf:datatype="&xsd;string">BSEP inhibition assay</rdfs:label>
-		<obo:IAO_0000118>inhibition of bile salt export pump</obo:IAO_0000118>
-		<obo:IAO_0000118>bile salt export pump inhibition</obo:IAO_0000118>
 		<obo:IAO_0000118>BSEP inhibition </obo:IAO_0000118>
 		<obo:IAO_0000118>ABCB11 inhibition</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010189"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<obo:IAO_0000118>inhibition of bile salt export pump</obo:IAO_0000118>
+		<obo:IAO_0000118>bile salt export pump inhibition</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010191 -->
@@ -3676,8 +3689,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010204">
 		<rdfs:label rdf:datatype="&xsd;string">transporter substrate assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003008"/>
 		<obo:IAO_0000118>transporter substrate identification </obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003008"/>
 		<obo:IAO_0000118>transporter substrate assay</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
@@ -3686,8 +3699,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010205">
 		<rdfs:label rdf:datatype="&xsd;string">efflux transporter substrate assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010204"/>
 		<obo:IAO_0000118>efflux transporter substrate identification</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010204"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -3695,8 +3708,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010206">
 		<rdfs:label rdf:datatype="&xsd;string">P-gp substrate assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010205"/>
 		<obo:IAO_0000118>P-gp substrate assay </obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010205"/>
 		<obo:IAO_0000118>P-gp substrate identification </obo:IAO_0000118>
 		<obo:IAO_0000118>P-glycoprotein (P-gp) substrate assay </obo:IAO_0000118>
 		<obo:IAO_0000118>P-gp substrate identification assay </obo:IAO_0000118>
@@ -3711,8 +3724,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010207">
 		<rdfs:label rdf:datatype="&xsd;string">MRP2 substrate assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010205"/>
 		<obo:IAO_0000118>MRP2 substrate </obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010205"/>
 		<obo:IAO_0000118>ABCC2 substrate</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
@@ -3721,8 +3734,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010208">
 		<rdfs:label rdf:datatype="&xsd;string">BCRP substrate assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010205"/>
 		<obo:IAO_0000118>BCRP substrate assessment </obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010205"/>
 		<obo:IAO_0000118>BCRP substrate identification </obo:IAO_0000118>
 		<obo:IAO_0000118>BCRP substrate identification assay </obo:IAO_0000118>
 		<obo:IAO_0000118>ABCG2 substrate </obo:IAO_0000118>
@@ -3734,9 +3747,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010209">
 		<rdfs:label rdf:datatype="&xsd;string">MATE1 substrate assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010205"/>
 		<obo:IAO_0000118>MATE1 substrate</obo:IAO_0000118>
 		<obo:IAO_0000118>SLC47A1 substrate </obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010205"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -3744,10 +3757,10 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010210">
 		<rdfs:label rdf:datatype="&xsd;string">MATE2 substrate assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010205"/>
 		<obo:IAO_0000118>MATE2-K substrate </obo:IAO_0000118>
 		<obo:IAO_0000118>SLC47A2 substrate</obo:IAO_0000118>
 		<obo:IAO_0000118>MATE2 substrate </obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010205"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -3755,8 +3768,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010211">
 		<rdfs:label rdf:datatype="&xsd;string">uptake transporter substrate assay</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010204"/>
 		<obo:IAO_0000118>uptake transporter substrate identification</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010204"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -3886,10 +3899,10 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010223">
 		<rdfs:label rdf:datatype="&xsd;string">pharmacometrics</rdfs:label>
 		<obo:IAO_0000118>PK modeling </obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
 		<obo:IAO_0000118>pharmacometrics </obo:IAO_0000118>
 		<obo:IAO_0000118>in silico pharmacometrics </obo:IAO_0000118>
 		<obo:IAO_0000118>pharmacometrics and modeling</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -3914,8 +3927,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010225">
 		<rdfs:label rdf:datatype="&xsd;string">method development and validation</rdfs:label>
 		<obo:IAO_0000118>methods of analysis</obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010226 -->
@@ -3923,7 +3936,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010226">
 		<rdfs:label rdf:datatype="&xsd;string">other pharmacokinetic studies</rdfs:label>
 		<obo:IAO_0000118>other pharmacokinetic studies</obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -3934,6 +3947,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>PK non-rodent </obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010228 -->
@@ -3943,6 +3957,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>non-rodent urinary excretion</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010227"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010229 -->
@@ -3952,6 +3967,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>non-rodent IV clearance</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010227"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010230 -->
@@ -3961,6 +3977,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>non-rodent IV half-life</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010227"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010231 -->
@@ -3974,6 +3991,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>non-rodent % bioavailability </obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010227"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010232 -->
@@ -3983,6 +4001,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>non-rodent oral half-life</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010227"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010233 -->
@@ -3992,6 +4011,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>non-rodent Vdss</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010227"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010234 -->
@@ -4001,6 +4021,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>PK rodent</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010235 -->
@@ -4010,6 +4031,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>rodent urinary excretion</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010234"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010236 -->
@@ -4019,6 +4041,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>rodent IV clearance</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010234"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010237 -->
@@ -4028,19 +4051,21 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>rodent IV half-life</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010234"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010238 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010238">
 		<rdfs:label rdf:datatype="&xsd;string">rodent oral bioavailability</rdfs:label>
-		<obo:IAO_0000118>rodent %F </obo:IAO_0000118>
 		<obo:IAO_0000118>rodent % bioavailability </obo:IAO_0000118>
+		<obo:IAO_0000118>rodent %F </obo:IAO_0000118>
 		<obo:IAO_0000118>rodent % F </obo:IAO_0000118>
 		<obo:IAO_0000118>rodent F </obo:IAO_0000118>
 		<obo:IAO_0000118>rodent (%F)</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010234"/>
+		<obo:deprecated>true</obo:deprecated>
 		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
@@ -4051,6 +4076,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>rodent oral half-life</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010234"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010240 -->
@@ -4060,6 +4086,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>rodent Vdss</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010234"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010241 -->
@@ -4111,13 +4138,13 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010245">
 		<rdfs:label rdf:datatype="&xsd;string">GSH adduct formation</rdfs:label>
-		<obo:IAO_0000118>reactive metabolite assay</obo:IAO_0000118>
 		<obo:IAO_0000118>GSH-adducts </obo:IAO_0000118>
 		<obo:IAO_0000118>formation of GSH adduct </obo:IAO_0000118>
 		<obo:IAO_0000118>formation of GSH adducts </obo:IAO_0000118>
 		<obo:IAO_0000118>GSH trapping</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010243"/>
+		<obo:IAO_0000118>reactive metabolite assay</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010246 -->
@@ -4148,6 +4175,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>kinome scannning </obo:IAO_0000118>
 		<obo:IAO_0000118>kinome panel </obo:IAO_0000118>
 		<obo:IAO_0000118>kinome assay </obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -4162,6 +4190,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>CRISPR </obo:IAO_0000118>
 		<obo:IAO_0000118>CRISPR-Cas9-mediated gene editing</obo:IAO_0000118>
 		<obo:IAO_0000118>CRISPR editing </obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002431"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -4170,6 +4199,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010250">
 		<rdfs:label rdf:datatype="&xsd;string">cell binding assay</rdfs:label>
 		<obo:IAO_0000118>cell binding</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -4181,6 +4211,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>pathway biology </obo:IAO_0000118>
 		<obo:IAO_0000118>pathway activity</obo:IAO_0000118>
 		<obo:IAO_0000118>biological pathway assay </obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -4189,6 +4220,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010252">
 		<rdfs:label rdf:datatype="&xsd;string">protein expression assay</rdfs:label>
 		<obo:IAO_0000118>protein expression assay</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -4203,6 +4235,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>tumor cell - T cell co-culture assay </obo:IAO_0000118>
 		<obo:IAO_0000118>T cell - tumor cell co-culture assay</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002805"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010254 -->
@@ -4218,6 +4251,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>mouse syngeneic tumor models </obo:IAO_0000118>
 		<obo:IAO_0000118>syngeneic mouse tumor model </obo:IAO_0000118>
 		<obo:IAO_0000118>syngeneic tumor models </obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010279"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010255 -->
@@ -4227,6 +4261,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>T-cell graft</obo:IAO_0000118>
 		<obo:IAO_0000118>T-cell engraftment </obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010279"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010256 -->
@@ -4244,6 +4279,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>PK/PD</obo:IAO_0000118>
 		<obo:IAO_0000118>PK/PD assays </obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002183"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010257 -->
@@ -4255,6 +4292,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>Dahl rat models</obo:IAO_0000118>
 		<obo:IAO_0000118>Dahl salt-sensitive rat </obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010279"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010258 -->
@@ -4266,6 +4304,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>concentration response assay</obo:IAO_0000118>
 		<obo:IAO_0000118>concentration response relationship </obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000409"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010259 -->
@@ -4275,6 +4314,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>receptor occupancy assay</obo:IAO_0000118>
 		<obo:IAO_0000118>target occupancy assay </obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000110"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010260 -->
@@ -4285,6 +4325,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>model of delayed type hypersensitivity</obo:IAO_0000118>
 		<obo:IAO_0000118>delayed type hypersensitivity (DTH) in mice </obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010279"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010261 -->
@@ -4294,6 +4335,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>thermofluor studies </obo:IAO_0000118>
 		<obo:IAO_0000118>thermofluor study</obo:IAO_0000118>
 		<obo:IAO_0000118>thermofluor assay </obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002804"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -4306,6 +4348,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>tumor cell killing </obo:IAO_0000118>
 		<obo:IAO_0000118>in vitro hepatocyte killing</obo:IAO_0000118>
 		<obo:IAO_0000118>immune cell killing assay </obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002993"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -4317,6 +4360,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>CEREP screen </obo:IAO_0000118>
 		<obo:IAO_0000118>CEREP</obo:IAO_0000118>
 		<obo:IAO_0000118>CEREP screening assay </obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -4325,6 +4369,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010264">
 		<rdfs:label rdf:datatype="&xsd;string">biosensor method</rdfs:label>
 		<obo:IAO_0000118>biosensor assay</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000035"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -4338,6 +4383,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>Annexin V staining </obo:IAO_0000118>
 		<obo:IAO_0000118>FITC Annexin V apoptosis detection</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010266 -->
@@ -4346,6 +4392,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">Epitope Mapping</rdfs:label>
 		<obo:IAO_0000118>Epitope Mapping</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000466"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010267 -->
@@ -4357,6 +4404,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>drug-protein equilibrium dialysis </obo:IAO_0000118>
 		<obo:IAO_0000118>equilibrium dialysis for protein binding</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000123"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010268 -->
@@ -4366,6 +4414,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>orthotopic model </obo:IAO_0000118>
 		<obo:IAO_0000118>orthotopic tumor models </obo:IAO_0000118>
 		<obo:IAO_0000118>orthotopic mouse model</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010279"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -4374,6 +4423,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010269">
 		<rdfs:label rdf:datatype="&xsd;string">chemotaxis assay</rdfs:label>
 		<obo:IAO_0000118>chemotaxis assay</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -4384,6 +4434,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>biomarker assay </obo:IAO_0000118>
 		<obo:IAO_0000118>biomarker assessment </obo:IAO_0000118>
 		<obo:IAO_0000118>biomarker identification</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -4456,7 +4507,28 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>GPCRmax pharmacology panel </obo:IAO_0000118>
 		<obo:IAO_0000118>DiscoverX gpcrMAX assay</obo:IAO_0000118>
 		<obo:IAO_0000118>gpcrMAX </obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010077"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010278 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010278">
+		<rdfs:label rdf:datatype="&xsd;string">preclinical study</rdfs:label>
+		<obo:IAO_0000115>In vitro, in vivo, ex vivo, or in silico experimental evaluation of hit compounds in order to determine basic information about their safety, biological efficacy, and/or ADME properties.</obo:IAO_0000115>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<bao:hasXref>https://www.elsevier.com/books/T/A/9780128212226</bao:hasXref>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003112"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0010279 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010279">
+		<rdfs:label rdf:datatype="&xsd;string">disease model</rdfs:label>
+		<obo:IAO_0000115>A disease model is an animal or cells displaying all or some of the pathological processes that are observed in the actual human or animal disease.</obo:IAO_0000115>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<bao:hasXref>https://www.nature.com/subjects/disease-model</bao:hasXref>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0013016 -->
