@@ -26,17 +26,16 @@
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_method.owl">
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_method.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.7.2</owl:versionInfo>
+        <dc:date>31 January 2023</dc:date>
+        <owl:versionInfo>2.7.4</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>8 Jul 2021</dc:date>
     </owl:Ontology>
-
 
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -283,6 +282,12 @@ The technologies used are radioligand binding, resonance energy transfer, fluore
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000165">
 		<rdfs:label rdf:datatype="&xsd;string">caspase activity determination</rdfs:label>
+		<obo:IAO_0000118>caspase activity</obo:IAO_0000118>
+		<obo:IAO_0000118>caspase activity assay</obo:IAO_0000118>
+		<obo:IAO_0000118>caspase apoptosis assay</obo:IAO_0000118>
+		<obo:IAO_0000118>caspase activity measurements</obo:IAO_0000118>
+		<obo:IAO_0000118>caspase-3 activation</obo:IAO_0000118>
+		<obo:IAO_0000118>caspase-3 and caspase-8 activity</obo:IAO_0000118>
 		<obo:IAO_0000115>Caspases are cysteine proteases which play an important role in apoptosis. They are synthesized and stored in cells as inactive procaspases. Once apoptosis is initiated in a cell, the procaspases get activated by proteolytic cleavage. This sets in motion a caspase cascade, which leads to the activation of proteins involved in the chromatin fragmentation and finally culminates in cell death.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000127"/>
 	</owl:Class>
@@ -1200,6 +1205,7 @@ A mix and read protocol has been developed that is exceptionally simple and rapi
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002438">
 		<rdfs:label rdf:datatype="&xsd;string">gene knockdown by siRNA transfection</rdfs:label>
+		<obo:IAO_0000118>gene knockdown siRNA</obo:IAO_0000118>
 		<obo:IAO_0000118>siRNA knockdown </obo:IAO_0000118>
 		<obo:IAO_0000118>siRNA gene knockdown</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002434"/>
@@ -2253,9 +2259,9 @@ microarray, bead based method or RNASeq.</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040022">
 		<rdfs:label rdf:datatype="&xsd;string">in vivo efficacy method</rdfs:label>
+		<obo:IAO_0000115>Any study performed in a whole, living organism (usually an animal such as a mouse or rat), to test the effects of a treatment on a specific disease modeled in this animal. Study design and measured endpoints vary tremendously and depend on the particular aspects of the targeted disease. Ideally, the endpoints measured will correlate with how efficacy would be measured in humans.</obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 687012</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
-		<obo:IAO_0000115>Any study performed in a whole, living organism (usually an animal such as a mouse or rat), to test the effects of a treatment on a specific disease modeled in this animal. Study design and measured endpoints vary tremendously and depend on the particular aspects of the targeted disease. Ideally, the endpoints measured will correlate with how efficacy would be measured in humans.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040021"/>
 	</owl:Class>
 

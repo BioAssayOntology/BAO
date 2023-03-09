@@ -26,15 +26,15 @@
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl">
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <dc:date>31 January 2023</dc:date>
         <owl:versionInfo>2.7.4</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
 stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>10 Nov 2022</dc:date>
     </owl:Ontology>
 
 
@@ -71,7 +71,7 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0000009 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000009">
-		<rdfs:label rdf:datatype="&xsd;string">ADMET</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">ADME</rdfs:label>
 		<obo:IAO_0000115>ADMET stands for absorption, distribution, metabolism, excretion and toxicity. Admet assays are performed for verifying the bio-availability,  toxicity, metabolic stability, and drug-drug interaction potential of drugs: They quantify absorption of drugs in the intestine which is dependent on their solubility; distribution which ascertains their binding to plasma proteins, central nervous system penetration; metabolism where the in vivo clearance is monitored; and finally, toxicity in terms of inhibition of liver cytochrome p450 enzymes or hERG which could cause drug-drug interactions and cardiac arrhythmias, respectively.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000008"/>
 	</owl:Class>
@@ -820,6 +820,7 @@ citesForInformation or citeAsSourceData some DOI or PMID</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002041">
 		<rdfs:label rdf:datatype="&xsd;string">cell cycle assay</rdfs:label>
+		<obo:IAO_0000118>cell cycle analysis</obo:IAO_0000118>
 		<rdfs:comment>endpoints: 
 percent proliferation
 percent interphase
@@ -972,8 +973,8 @@ For HCS measurement, we need to define &apos;assay measurement&apos; as the outc
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002188">
 		<rdfs:label rdf:datatype="&xsd;string">drug interaction assay</rdfs:label>
-		<obo:IAO_0000118>drug-drug interaction assay </obo:IAO_0000118>
 		<obo:IAO_0000118>DDI </obo:IAO_0000118>
+		<obo:IAO_0000118>drug-drug interaction assay </obo:IAO_0000118>
 		<obo:IAO_0000118>drug-drug interactions </obo:IAO_0000118>
 		<obo:IAO_0000118>drug-drug interaction </obo:IAO_0000118>
 		<obo:IAO_0000118>FDA RPS Pharmacokinetics: Drug Interactions</obo:IAO_0000118>
@@ -984,6 +985,8 @@ For HCS measurement, we need to define &apos;assay measurement&apos; as the outc
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002189">
 		<rdfs:label rdf:datatype="&xsd;string">toxicity assay</rdfs:label>
+		<obo:IAO_0000118>toxicology assay</obo:IAO_0000118>
+		<obo:IAO_0000118>tox assay</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 	</owl:Class>
 
@@ -1816,8 +1819,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010018">
 		<rdfs:label rdf:datatype="&xsd;string">gel</rdfs:label>
-		<obo:IAO_0000119>PubChem AID: 449751</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/2/2016</obo:IAO_0000116>
+		<obo:IAO_0000119>PubChem AID: 449751</obo:IAO_0000119>
 		<obo:IAO_0000115>Gel electrophoresis is a method for separation and analysis of macromolecules (DNA, RNA and proteins) and their fragments, based on their size and charge. This general method encompasses different types of matrices (gels) with different properties. The most common types are polyacrylamide and agarose, both low-throughput methods.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000512"/>
 	</owl:Class>
@@ -2337,6 +2340,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010083">
 		<rdfs:label rdf:datatype="&xsd;string">permeability assay</rdfs:label>
+		<obo:IAO_0000118>paracellular permeability assay</obo:IAO_0000118>
+		<obo:IAO_0000118>transcellular permeability assay</obo:IAO_0000118>
 		<obo:IAO_0000118>permeability study </obo:IAO_0000118>
 		<obo:IAO_0000118>permeabillity studies </obo:IAO_0000118>
 		<obo:IAO_0000118>assessment of permeability </obo:IAO_0000118>
@@ -2961,11 +2966,11 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010137">
 		<rdfs:label rdf:datatype="&xsd;string">BSA binding asssay</rdfs:label>
+		<obo:IAO_0000118>2% BSA binding</obo:IAO_0000118>
 		<obo:IAO_0000118>bovine serum albumin binding </obo:IAO_0000118>
 		<obo:IAO_0000118>binding to BSA </obo:IAO_0000118>
 		<obo:IAO_0000118></obo:IAO_0000118>
 		<obo:IAO_0000118>binding to bovine serum albumin </obo:IAO_0000118>
-		<obo:IAO_0000118>2% BSA binding</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<obo:IAO_0000118>BSA binding </obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010136"/>
@@ -3524,6 +3529,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010190">
 		<rdfs:label rdf:datatype="&xsd;string">BSEP inhibition assay</rdfs:label>
+		<obo:IAO_0000118>inhibition of bile salt export pump</obo:IAO_0000118>
+		<obo:IAO_0000118>bile salt export pump inhibition</obo:IAO_0000118>
 		<obo:IAO_0000118>BSEP inhibition </obo:IAO_0000118>
 		<obo:IAO_0000118>ABCB11 inhibition</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010189"/>
@@ -3669,8 +3676,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010204">
 		<rdfs:label rdf:datatype="&xsd;string">transporter substrate assay</rdfs:label>
-		<obo:IAO_0000118>transporter substrate identification </obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003008"/>
+		<obo:IAO_0000118>transporter substrate identification </obo:IAO_0000118>
 		<obo:IAO_0000118>transporter substrate assay</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
@@ -3679,8 +3686,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010205">
 		<rdfs:label rdf:datatype="&xsd;string">efflux transporter substrate assay</rdfs:label>
-		<obo:IAO_0000118>efflux transporter substrate identification</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010204"/>
+		<obo:IAO_0000118>efflux transporter substrate identification</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -3688,8 +3695,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010206">
 		<rdfs:label rdf:datatype="&xsd;string">P-gp substrate assay</rdfs:label>
-		<obo:IAO_0000118>P-gp substrate assay </obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010205"/>
+		<obo:IAO_0000118>P-gp substrate assay </obo:IAO_0000118>
 		<obo:IAO_0000118>P-gp substrate identification </obo:IAO_0000118>
 		<obo:IAO_0000118>P-glycoprotein (P-gp) substrate assay </obo:IAO_0000118>
 		<obo:IAO_0000118>P-gp substrate identification assay </obo:IAO_0000118>
@@ -3704,8 +3711,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010207">
 		<rdfs:label rdf:datatype="&xsd;string">MRP2 substrate assay</rdfs:label>
-		<obo:IAO_0000118>MRP2 substrate </obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010205"/>
+		<obo:IAO_0000118>MRP2 substrate </obo:IAO_0000118>
 		<obo:IAO_0000118>ABCC2 substrate</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
@@ -3714,8 +3721,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010208">
 		<rdfs:label rdf:datatype="&xsd;string">BCRP substrate assay</rdfs:label>
-		<obo:IAO_0000118>BCRP substrate assessment </obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010205"/>
+		<obo:IAO_0000118>BCRP substrate assessment </obo:IAO_0000118>
 		<obo:IAO_0000118>BCRP substrate identification </obo:IAO_0000118>
 		<obo:IAO_0000118>BCRP substrate identification assay </obo:IAO_0000118>
 		<obo:IAO_0000118>ABCG2 substrate </obo:IAO_0000118>
@@ -3727,9 +3734,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010209">
 		<rdfs:label rdf:datatype="&xsd;string">MATE1 substrate assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010205"/>
 		<obo:IAO_0000118>MATE1 substrate</obo:IAO_0000118>
 		<obo:IAO_0000118>SLC47A1 substrate </obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010205"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -3737,10 +3744,10 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010210">
 		<rdfs:label rdf:datatype="&xsd;string">MATE2 substrate assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010205"/>
 		<obo:IAO_0000118>MATE2-K substrate </obo:IAO_0000118>
 		<obo:IAO_0000118>SLC47A2 substrate</obo:IAO_0000118>
 		<obo:IAO_0000118>MATE2 substrate </obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010205"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -3748,8 +3755,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010211">
 		<rdfs:label rdf:datatype="&xsd;string">uptake transporter substrate assay</rdfs:label>
-		<obo:IAO_0000118>uptake transporter substrate identification</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010204"/>
+		<obo:IAO_0000118>uptake transporter substrate identification</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -4027,8 +4034,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010238">
 		<rdfs:label rdf:datatype="&xsd;string">rodent oral bioavailability</rdfs:label>
-		<obo:IAO_0000118>rodent % bioavailability </obo:IAO_0000118>
 		<obo:IAO_0000118>rodent %F </obo:IAO_0000118>
+		<obo:IAO_0000118>rodent % bioavailability </obo:IAO_0000118>
 		<obo:IAO_0000118>rodent % F </obo:IAO_0000118>
 		<obo:IAO_0000118>rodent F </obo:IAO_0000118>
 		<obo:IAO_0000118>rodent (%F)</obo:IAO_0000118>
@@ -4104,6 +4111,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010245">
 		<rdfs:label rdf:datatype="&xsd;string">GSH adduct formation</rdfs:label>
+		<obo:IAO_0000118>reactive metabolite assay</obo:IAO_0000118>
 		<obo:IAO_0000118>GSH-adducts </obo:IAO_0000118>
 		<obo:IAO_0000118>formation of GSH adduct </obo:IAO_0000118>
 		<obo:IAO_0000118>formation of GSH adducts </obo:IAO_0000118>
