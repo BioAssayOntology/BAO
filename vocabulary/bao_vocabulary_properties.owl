@@ -22,13 +22,14 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:bao="http://www.bioassayontology.org/bao#">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_properties.owl">
-        <rdfs:label>bioassay ontology</rdfs:label>
-        <dc:relation>Uma Vempati, Hande Küçük, Ubbo Visser, Saminda Abeyruwan, Kunie Sakurai, Vance Lemmon, Stephan Schurer*</dc:relation>
-        <dc:date>05/09/2013</dc:date>
+        <rdfs:label>Bioassay ontology</rdfs:label>
+        <rdfs:comment>Created by:
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner,colette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung,  Stephan Schurer*</rdfs:comment>
+        <dc:date>May 12, 2023</dc:date>
         <rdfs:comment>There is a one-to-one correspondance with rdf:label value and concept descriptions. Concept description starts with the prefix BAO_. 
 
 contact: Stephan Schurer:  stephan dot schurer at gmail dot com</rdfs:comment>
-        <owl:versionInfo>2.1</owl:versionInfo>
+        <owl:versionInfo>2.8.2</owl:versionInfo>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_metadata.owl"/>
     </owl:Ontology>
@@ -1411,6 +1412,11 @@ Other example for a counter assays a FRET assay when the primary assay used abso
         <rdfs:subPropertyOf rdf:resource="&bao;BAO_0000740"/>
     </owl:ObjectProperty>
     
+   <!-- http://www.bioassayontology.org/bao#BAO_0095013 -->
+
+    <owl:ObjectProperty rdf:about="&bao;BAO_0095013">
+        <rdfs:label xml:lang="en">has experimental setting</rdfs:label>
+    </owl:ObjectProperty>
 
 
     <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
