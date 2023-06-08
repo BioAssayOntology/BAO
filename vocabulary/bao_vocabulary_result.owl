@@ -27,14 +27,12 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.7.2</owl:versionInfo>
+        <owl:versionInfo>2.8.3</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
-        <rdfs:comment>Contact:
-Stephan Schurer
-stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>8 Jul 2021</dc:date>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner,colette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung,  Stephan Schurer*</rdfs:comment>
+        <rdfs:comment>Contact:Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
+        <dc:date>June 8, 2023</dc:date>
     </owl:Ontology>
 
 
@@ -46,6 +44,9 @@ stephan dot schurer at gmail dot com</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+	<!-- http://www.bioassayontology.org/bao/hasXref -->
+
+	<owl:AnnotationProperty rdf:about="http://www.bioassayontology.org/bao/hasXref"/>
 	<!-- http://www.bioassayontology.org/bao/submitted_by -->
 
 	<owl:AnnotationProperty rdf:about="http://www.bioassayontology.org/bao/submitted_by"/>
@@ -1993,10 +1994,10 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080035">
 		<rdfs:label rdf:datatype="&xsd;string">perturbagen / positive control ratio endpoint</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
 		<obo:IAO_0000115>The property values are divided by the average value for the positive control wells and multiplied by 100: X&apos; = 100*(X/PosAvg)</obo:IAO_0000115>
 		<obo:IAO_0000118>percent postive control</obo:IAO_0000118>
 		<obo:IAO_0000118>% positive control</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000143"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0080036 -->
@@ -2004,8 +2005,8 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080036">
 		<rdfs:label rdf:datatype="&xsd;string">Relative Induction Score</rdfs:label>
 		<obo:IAO_0000118>RIS</obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
 		<obo:IAO_0000118>Relative Induction Score (RIS) </obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
@@ -2069,9 +2070,9 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080044">
 		<rdfs:label rdf:datatype="&xsd;string">AC50 Ratio</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080042"/>
 		<obo:IAO_0000115>Ratio of AC50 values</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080042"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002162"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0080045 -->
@@ -2080,6 +2081,25 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 		<rdfs:label rdf:datatype="&xsd;string">categorical endpoint</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
 		<obo:IAO_0000115>A categorical endpoint is any result that can take one of a limited number of possible values. </obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080046 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080046">
+		<rdfs:label rdf:datatype="&xsd;string">electrical endpoint</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
+		<obo:IAO_0000115>Branch of endpoints reported by electrical measurements.</obo:IAO_0000115>
+		<bao:submitted_by>https://github.com/Scientist328455 https://github.com/BioAssayOntology/BAO/issues/62</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080047 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080047">
+		<rdfs:label rdf:datatype="&xsd;string">electrical current density</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080046"/>
+		<obo:IAO_0000115>Electrical current density is a measure of the density of flow of electric charge; it is the electric current per unit area of cross section. Electric current density is a vector-valued quantity.</obo:IAO_0000115>
+		<bao:hasXref>https://qudt.org/vocab/quantitykind/ElectricCurrentDensity</bao:hasXref>
+		<bao:submitted_by>https://github.com/Scientist328455 https://github.com/BioAssayOntology/BAO/issues/62</bao:submitted_by>
 	</owl:Class>
 
 </rdf:RDF>
