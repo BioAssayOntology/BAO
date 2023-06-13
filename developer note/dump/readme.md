@@ -1,4 +1,4 @@
-#. BAO DB
+# dump BAO DB
 
 The BAO ontology files have a tight dependency on BAO database, generated using OntoJog and OntoFox.
 
