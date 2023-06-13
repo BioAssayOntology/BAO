@@ -27,14 +27,12 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.8</owl:versionInfo>
+        <owl:versionInfo>2.8.4</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung, Stephan Schurer*</rdfs:comment>
-        <rdfs:comment>Contact:
-Stephan Schurer
-stephan dot schurer at med dot miami dot edu</rdfs:comment>
-        <dc:date></dc:date>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner,colette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung,  Stephan Schurer*</rdfs:comment> 
+	<rdfs:comment>Contact:Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
+        <dc:date>June 13, 2023</dc:date>
     </owl:Ontology>
 
 
@@ -3090,6 +3088,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>CYP induction screen</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010146"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010148 -->
@@ -4553,6 +4552,16 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">functional phenotypic</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000010"/>
 		<obo:IAO_0000115>An assay  where the measured signal is a phenotypic response of the system or the  readout is indirect (e.g. comparing cell survival between wildtype and  mutant protein).</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013018 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013018">
+		<rdfs:label rdf:datatype="&xsd;string">toxicology</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000008"/>
+		<obo:IAO_0000115>Toxicology, as a subdivision of pharmacology, entails the meticulous investigation of the adverse effects imparted by chemical substances on living organisms.</obo:IAO_0000115>
+		<bao:hasXref>https://www.sciencedirect.com/science/article/pii/027323008790064X?via%3Dihub</bao:hasXref>
+		<bao:submitted_by>https://github.com/BioAssayOntology/BAO/issues/84</bao:submitted_by>
 	</owl:Class>
 
 </rdf:RDF>

@@ -27,15 +27,29 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_format.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.7.2</owl:versionInfo>
+        <owl:versionInfo>2.8.4</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
-        <rdfs:comment>Contact:
-Stephan Schurer
-stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>8 Jul 2021</dc:date>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner,colette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung,  Stephan Schurer*</rdfs:comment>   
+        <dc:date>June 13, 2023</dc:date>
     </owl:Ontology>
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+	<!-- http://www.bioassayontology.org/bao/hasXref -->
+
+	<owl:AnnotationProperty rdf:about="http://www.bioassayontology.org/bao/hasXref"/>
+	<!-- http://www.bioassayontology.org/bao/submitted_by -->
+
+	<owl:AnnotationProperty rdf:about="http://www.bioassayontology.org/bao/submitted_by"/>
+
 
 
     <!--
@@ -313,6 +327,16 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020009">
 		<rdfs:label rdf:datatype="&xsd;string">in vivo</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0020005"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0020010 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020010">
+		<rdfs:label rdf:datatype="&xsd;string">S9 fraction format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
+		<obo:IAO_0000115>Obtained by disrupting and centrifuging human liver or intestine cells, resulting in a combination of cell cytosol and microsomes. It encompasses a diverse array of drug-metabolizing enzymes and serves as a commonly utilized medium for conducting in vitro DMPK studies.</obo:IAO_0000115>
+		<bao:hasXref>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5405623/</bao:hasXref>
+		<bao:submitted_by>https://github.com/BioAssayOntology/BAO/issues/84</bao:submitted_by>
 	</owl:Class>
 
 </rdf:RDF>
