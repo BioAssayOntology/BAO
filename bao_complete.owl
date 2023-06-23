@@ -25,7 +25,7 @@
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <rdfs:comment>Created by:
 Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner,colette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung,  Stephan Schurer*</rdfs:comment>        
-	<rdfs:comment>Contact:Stephan Schurer stephan dot schurer at med dot miami dot edu<rdfs:comment>
+	<rdfs:comment>Contact:Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
     </owl:Ontology>
     
 
