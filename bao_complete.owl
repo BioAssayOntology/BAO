@@ -19,8 +19,8 @@
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_core.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_external.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:date>June 13, 2023</dc:date>
-        <owl:versionInfo>2.8.4</owl:versionInfo>
+        <dc:date>June 28, 2023</dc:date>
+        <owl:versionInfo>2.8.5</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <rdfs:comment>Created by:
