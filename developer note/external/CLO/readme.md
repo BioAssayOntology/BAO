@@ -5,4 +5,4 @@ tranfer the file locally
 
 ### OntoFox
 run OntoFox
-rename file to BAO_CHEBI_import.owl
+rename file to BAO_CLO_import.owl
