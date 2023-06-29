@@ -2,7 +2,7 @@
 
 What do we know about https://github.com/BioAssayOntology/BAO/blob/master/external/BAO_CHEBI_import.owl?
 - git history:  whinis committed on Sep 4, 2017
-- BAO DB and OntoJog do not have the capability to fully generate the external file
+- [BAO tools git - 3](https://github.com/BioAssayOntology/tools/issues/3)
 
 ### OntoJog
 - template is irrelevant
