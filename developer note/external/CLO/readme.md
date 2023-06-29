@@ -1,4 +1,8 @@
 ## [CLO](https://github.com/BioAssayOntology/BAO/tree/master/developer%20note/external/CLO)
 ### OntoJog
-(template, db, ..)
+run OntoJog
+tranfer the file locally
+
 ### OntoFox
+run OntoFox
+rename file to BAO_CHEBI_import.owl
