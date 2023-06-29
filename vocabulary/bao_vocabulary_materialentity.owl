@@ -27,14 +27,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_materialentity.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.7.2</owl:versionInfo>
+        <owl:versionInfo>2.8.6</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, add_name, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
-stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>8 Jul 2021</dc:date>
+stephan dot schurer at med dot miami dot edu</rdfs:comment>
+        <dc:date>29 June 2023</dc:date>
     </owl:Ontology>
 
 
@@ -368,6 +368,7 @@ peptides and proteins. Peptoids are resistant to proteolysis and not typically d
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000795">
 		<rdfs:label rdf:datatype="&xsd;string">furafylline</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000796 -->
@@ -382,6 +383,7 @@ peptides and proteins. Peptoids are resistant to proteolysis and not typically d
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000797">
 		<rdfs:label rdf:datatype="&xsd;string">quinidine</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
+		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000799 -->
@@ -1486,11 +1488,11 @@ Proc Amer Assoc Cancer Res, Volume 47, 2006</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0100010">
 		<rdfs:label rdf:datatype="&xsd;string">magnesium chloride</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<obo:IAO_0000115>Hygroscopic salt commonly used in buffers</obo:IAO_0000115>
 		<obo:IAO_0000118>MgCl2</obo:IAO_0000118>
 		<obo:IAO_0000118>Magnesium dichloride</obo:IAO_0000118>
 		<obo:IAO_0000118>chloromagnestite</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0100011 -->

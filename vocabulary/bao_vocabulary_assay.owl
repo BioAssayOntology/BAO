@@ -27,12 +27,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.8.5</owl:versionInfo>
+        <owl:versionInfo>2.8.6</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
-       <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner,colette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung,  Stephan Schurer*</rdfs:comment>        
-	<rdfs:comment>Contact:Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
-        <dc:date>June 28, 2023</dc:date>
+        <rdfs:comment>Created by:
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, add_name, Stephan Schurer*</rdfs:comment>
+        <rdfs:comment>Contact:
+Stephan Schurer
+stephan dot schurer at med dot miami dot edu</rdfs:comment>
+        <dc:date>29 June 2023</dc:date>
     </owl:Ontology>
 
 
@@ -3428,7 +3430,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0010178 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010178">
-		<rdfs:label rdf:datatype="&xsd;string">UGT1A6 with BSA</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">UGT1A6 with BSA assay</rdfs:label>
 		<obo:IAO_0000118>UGT1A6 with BSA</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010173"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
@@ -3437,7 +3439,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0010179 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010179">
-		<rdfs:label rdf:datatype="&xsd;string">UGT1A6 without BSA</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">UGT1A6 without BSA assay</rdfs:label>
 		<obo:IAO_0000118>UGT1A6 without BSA</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010173"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
