@@ -19,15 +19,16 @@
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_core.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_external.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:date>June 28, 2023</dc:date>
-        <owl:versionInfo>2.8.5</owl:versionInfo>
+        <dc:date>June 29, 2023</dc:date>
+        <owl:versionInfo>2.8.6</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner,colette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung,  Stephan Schurer*</rdfs:comment>        
-	<rdfs:comment>Contact:Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
+     <rdfs:comment>Created by:
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner,colette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung,  Stephan Schurer*</rdfs:comment>
+        <rdfs:comment>Contact:
+Stephan Schurer
+stephan dot schurer at med dot miami dot edu</rdfs:comment>
     </owl:Ontology>
-    
 
 
     <!-- 
@@ -25524,6 +25525,36 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:allValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000201"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_77780"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_165840"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_28593"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_50730"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45735"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010126">
@@ -25830,6 +25861,24 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000193"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_8050"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3219"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6931"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010150">
@@ -25869,6 +25918,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000193"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_8050"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010151">
@@ -25906,6 +25961,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000193"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3219"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
@@ -26064,6 +26125,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000193"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6931"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010156">
@@ -26094,6 +26161,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_73472"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010159">
@@ -26113,6 +26186,42 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_8050"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_179062"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3219"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_2674"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47381"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_7565"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
@@ -26136,6 +26245,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_8050"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010161">
@@ -26155,6 +26270,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3219"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
@@ -26178,6 +26299,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_179062"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010163">
@@ -26197,6 +26324,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_2674"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
@@ -26220,6 +26353,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47381"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010165">
@@ -26239,6 +26378,24 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_7565"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6931"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17347"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
@@ -26277,6 +26434,60 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:allValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_8050"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3219"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_2674"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_179062"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47381"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4470"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6931"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17347"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_7565"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010169">
@@ -26310,6 +26521,60 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0001258"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_8050"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_179062"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3219"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_2674"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47381"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4470"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6931"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17347"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_7565"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010170">
@@ -26329,6 +26594,60 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_8050"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_179062"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3219"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_2674"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47381"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4470"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6931"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17347"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_7565"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
@@ -26358,6 +26677,54 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0001258"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_8050"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_3219"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_2674"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_179062"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_47381"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4470"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6931"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_17347"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010173">
@@ -26377,6 +26744,36 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23965"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45951"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_44915"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_7823"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10110"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
@@ -26400,6 +26797,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23965"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010175">
@@ -26419,6 +26822,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23965"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
@@ -26442,6 +26851,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45951"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010177">
@@ -26461,6 +26876,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45951"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
@@ -26526,6 +26947,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_44915"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010181">
@@ -26545,6 +26972,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_44915"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
@@ -26568,6 +27001,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_7823"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010183">
@@ -26587,6 +27026,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_7823"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
@@ -26610,6 +27055,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10110"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010185">
@@ -26629,6 +27080,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_10110"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
@@ -26694,6 +27151,24 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0002462"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38545"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36257"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6801"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010189">
@@ -26713,6 +27188,24 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000205"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000219"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38545"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6801"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36257"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
@@ -26791,6 +27284,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002004"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0001230"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38545"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
@@ -26883,6 +27382,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0001230"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_36257"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010194">
@@ -26920,6 +27425,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002004"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0001230"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6801"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
@@ -26961,6 +27472,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0001230"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6801"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010196">
@@ -26992,6 +27509,24 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002004"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0002462"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38545"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_4873"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6801"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
@@ -27150,6 +27685,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0001230"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38545"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010201">
@@ -27187,6 +27728,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002004"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0001230"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_38545"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
@@ -27228,6 +27775,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0001230"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6801"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010203">
@@ -27265,6 +27818,12 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002004"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0001230"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6801"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 	</owl:Class>
