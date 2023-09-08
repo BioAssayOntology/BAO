@@ -19,8 +19,8 @@
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_core.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_external.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:date>August 22, 2023</dc:date>
-        <owl:versionInfo>2.8.7</owl:versionInfo>
+        <dc:date>September 8, 2023</dc:date>
+        <owl:versionInfo>2.8.8</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
      <rdfs:comment>Created by:
@@ -23769,6 +23769,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0013020"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002921"/>
 				<owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
 			</owl:Restriction>
@@ -25233,6 +25239,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002921"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
 			</owl:Restriction>
@@ -25296,6 +25308,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000205"/>
+				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0020010"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095013"/>
 				<owl:allValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0020008"/>
 			</owl:Restriction>
@@ -25350,6 +25368,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0013020"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095013"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0020008"/>
 			</owl:Restriction>
@@ -25361,6 +25385,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002854"/>
 				<owl:allValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000009"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -25454,6 +25484,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002854"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000009"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -25611,6 +25647,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095013"/>
 				<owl:allValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0020008"/>
 			</owl:Restriction>
@@ -25640,6 +25682,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000205"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000219"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0080048"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -25755,6 +25803,18 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000205"/>
+				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0020010"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0080048"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002921"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
 			</owl:Restriction>
@@ -25796,6 +25856,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
 				<owl:allValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000201"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0080048"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -25865,6 +25931,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_45735"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0080048"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -26055,6 +26127,18 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000205"/>
+				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0020011"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000207"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0002090"/>
 			</owl:Restriction>
@@ -26088,6 +26172,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0000208"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCIT_C20610"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095013"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0020008"/>
 			</owl:Restriction>
@@ -26105,6 +26195,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002854"/>
 				<owl:allValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000009"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -26259,6 +26355,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002921"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
 			</owl:Restriction>
@@ -26272,6 +26374,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 				<owl:allValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000009"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
 	</owl:Class>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010142">
@@ -26279,6 +26387,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002854"/>
 				<owl:allValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000009"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -26294,6 +26408,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002854"/>
 				<owl:someValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0000009"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -26847,6 +26967,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002921"/>
 				<owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
 			</owl:Restriction>
@@ -26909,6 +27035,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_73472"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -28602,6 +28734,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095013"/>
 				<owl:allValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0020008"/>
 			</owl:Restriction>
@@ -28649,6 +28787,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002004"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0001230"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -28769,6 +28913,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6801"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -28944,6 +29094,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002921"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
 			</owl:Restriction>
@@ -29001,6 +29157,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002921"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
 			</owl:Restriction>
@@ -29054,6 +29216,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002004"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0001230"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -29121,6 +29289,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002921"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
 			</owl:Restriction>
@@ -29184,6 +29358,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002921"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
 			</owl:Restriction>
@@ -29243,6 +29423,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002739"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CHEBI_6801"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -29484,6 +29670,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002921"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
 			</owl:Restriction>
@@ -29565,6 +29757,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095013"/>
 				<owl:allValuesFrom rdf:resource="http://www.bioassayontology.org/bao#BAO_0020008"/>
 			</owl:Restriction>
@@ -29606,6 +29804,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002004"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0001230"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -29745,6 +29949,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002921"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
 			</owl:Restriction>
@@ -29792,6 +30002,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002004"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0001230"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -29847,6 +30063,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002921"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
 			</owl:Restriction>
@@ -29894,6 +30116,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002004"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0001230"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -29949,6 +30177,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
 			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002921"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_9606"/>
 			</owl:Restriction>
@@ -29996,6 +30230,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002004"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0001230"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
@@ -30092,6 +30332,12 @@ stephan dot schurer at med dot miami dot edu</rdfs:comment>
 			<owl:Restriction>
 				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0002004"/>
 				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/CLO_0001230"/>
+			</owl:Restriction>
+		</rdfs:subClassOf>
+		<rdfs:subClassOf>
+			<owl:Restriction>
+				<owl:onProperty rdf:resource="http://www.bioassayontology.org/bao#BAO_0095009"/>
+				<owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/ERO_0001500"/>
 			</owl:Restriction>
 		</rdfs:subClassOf>
 		<rdfs:subClassOf>
