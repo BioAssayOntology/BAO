@@ -27,14 +27,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.8.6</owl:versionInfo>
+        <owl:versionInfo>2.8.8</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, add_name, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Caty Chung, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
-stephan dot schurer at med dot miami dot edu</rdfs:comment>
-        <dc:date>29 June 2023</dc:date>
+Sschurer at miami dot edu</rdfs:comment>
+        <dc:date>September 8, 2023</dc:date>
     </owl:Ontology>
 
 
@@ -2802,7 +2802,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0010123 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010123">
-		<rdfs:label rdf:datatype="&xsd;string">CYP reaction phenotyping</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">CYP reaction phenotyping assay</rdfs:label>
 		<obo:IAO_0000118>Cytochrome P450 phenotyping</obo:IAO_0000118>
 		<obo:IAO_0000118>CYP450 reaction phenotyping</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
@@ -2815,7 +2815,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0010124 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010124">
-		<rdfs:label rdf:datatype="&xsd;string">CYP chemical inhibition</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">CYP chemical inhibition assay</rdfs:label>
 		<obo:IAO_0000118>CYP chemical inhibition phenotyping</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010123"/>
@@ -2880,7 +2880,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0010129 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010129">
-		<rdfs:label rdf:datatype="&xsd;string">UGT chemical inhibition</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">UGT chemical inhibition assay</rdfs:label>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<obo:IAO_0000118>UGT phenotyping- chemical inhibition</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010128"/>
@@ -3311,15 +3311,6 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010167">
 		<rdfs:label rdf:datatype="&xsd;string">CYP single point inhibition assay</rdfs:label>
 		<obo:IAO_0000118>CYP single point inhibition</obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010159"/>
-		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
-	</owl:Class>
-
-	<!-- http://www.bioassayontology.org/bao#BAO_0010168 -->
-
-	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010168">
-		<rdfs:label rdf:datatype="&xsd;string">definitive CYP IC50</rdfs:label>
-		<obo:IAO_0000118>definitive CYP IC50</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010159"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
@@ -4065,7 +4056,6 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010234"/>
 		<obo:deprecated>true</obo:deprecated>
-		<obo:deprecated>true</obo:deprecated>
 		<obo:IAO_0000118>rodent % bioavailability</obo:IAO_0000118>
 		<obo:IAO_0000118>rodent %F</obo:IAO_0000118>
 		<obo:IAO_0000118>rodent % F</obo:IAO_0000118>
@@ -4565,6 +4555,26 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000115>Toxicology, as a subdivision of pharmacology, entails the meticulous investigation of the adverse effects imparted by chemical substances on living organisms.</obo:IAO_0000115>
 		<bao:hasXref>https://www.sciencedirect.com/science/article/pii/027323008790064X?via%3Dihub</bao:hasXref>
 		<bao:submitted_by>https://github.com/BioAssayOntology/BAO/issues/84</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013019 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013019">
+		<rdfs:label rdf:datatype="&xsd;string">clearance</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
+		<obo:IAO_0000115>The rate at which a drug is removed or cleared from the whole or part of the body.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C199688</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013020 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013020">
+		<rdfs:label rdf:datatype="&xsd;string">CLint</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0013019"/>
+		<obo:IAO_0000115>Intrinsic metabolic clearance is defined as ratio of maximum metabolism rate, Vmax, and the Michaelis-Menten constant, Km.</obo:IAO_0000115>
+		<bao:hasXref>http://www.owl-ontologies.com/2009/11/5/PKO.owl#CLint</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
 </rdf:RDF>

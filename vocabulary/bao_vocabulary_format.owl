@@ -27,11 +27,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_format.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.8.4</owl:versionInfo>
+        <owl:versionInfo>2.8.8</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner,colette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung,  Stephan Schurer*</rdfs:comment>   
-        <dc:date>June 13, 2023</dc:date>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Caty Chung, Stephan Schurer*</rdfs:comment>
+        <rdfs:comment>Contact:
+Stephan Schurer
+Sschurer at miami dot edu</rdfs:comment>
+        <dc:date>September 8, 2023</dc:date>
     </owl:Ontology>
 
 
@@ -337,6 +340,17 @@ Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda
 		<obo:IAO_0000115>Obtained by disrupting and centrifuging human liver or intestine cells, resulting in a combination of cell cytosol and microsomes. It encompasses a diverse array of drug-metabolizing enzymes and serves as a commonly utilized medium for conducting in vitro DMPK studies.</obo:IAO_0000115>
 		<bao:hasXref>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5405623/</bao:hasXref>
 		<bao:submitted_by>https://github.com/BioAssayOntology/BAO/issues/84</bao:submitted_by>
+		<obo:IAO_0000118>S9 format</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0020011 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020011">
+		<rdfs:label rdf:datatype="&xsd;string">blood format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000366"/>
+		<obo:IAO_0000115>The liquid component of blood devoid of cellular elements (such as red blood cells, white blood cells, and platelets) and insoluble components, typically obtained through processes like centrifugation or filtration.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.org/net/OCRe/OCRe.owl#OCRE400034</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
 </rdf:RDF>

@@ -27,12 +27,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.8.3</owl:versionInfo>
+        <owl:versionInfo>2.8.8</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner,colette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung,  Stephan Schurer*</rdfs:comment>
-        <rdfs:comment>Contact:Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
-        <dc:date>June 8, 2023</dc:date>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Caty Chung, Stephan Schurer*</rdfs:comment>
+        <rdfs:comment>Contact:
+Stephan Schurer
+stephan dot schurer at gmail dot com</rdfs:comment>
+        <dc:date>September 8, 2023</dc:date>
     </owl:Ontology>
 
 
@@ -1769,6 +1771,15 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002903"/>
 	</owl:Class>
 
+	<!-- http://www.bioassayontology.org/bao#BAO_0010168 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010168">
+		<rdfs:label rdf:datatype="&xsd;string">definitive CYP IC50</rdfs:label>
+		<obo:IAO_0000118>definitive CYP IC50</obo:IAO_0000118>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000190"/>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
 	<!-- http://www.bioassayontology.org/bao#BAO_0080001 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080001">
@@ -2005,9 +2016,9 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080036">
 		<rdfs:label rdf:datatype="&xsd;string">Relative Induction Score</rdfs:label>
 		<obo:IAO_0000118>RIS</obo:IAO_0000118>
-		<obo:IAO_0000118>Relative Induction Score (RIS) </obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<obo:IAO_0000118>Relative Induction Score (RIS)</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0080037 -->
@@ -2100,6 +2111,16 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 		<obo:IAO_0000115>Electrical current density is a measure of the density of flow of electric charge; it is the electric current per unit area of cross section. Electric current density is a vector-valued quantity.</obo:IAO_0000115>
 		<bao:hasXref>https://qudt.org/vocab/quantitykind/ElectricCurrentDensity</bao:hasXref>
 		<bao:submitted_by>https://github.com/Scientist328455 https://github.com/BioAssayOntology/BAO/issues/62</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080048 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080048">
+		<rdfs:label rdf:datatype="&xsd;string">fraction metabolised</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+		<obo:IAO_0000115>The fraction of the bioavailable dose which has been metabolized.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C184704</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
 </rdf:RDF>
