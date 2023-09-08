@@ -528,6 +528,23 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCIT_C20610 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C20610">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partition Coefficient</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A constant symbolizing the ratio of a dissolved substance in a two-phase system. (from EPA Terminology Reference System)</obo:IAO_0000115>
+        <obo:NCIT_P207 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C1518903</obo:NCIT_P207>
+        <obo:NCIT_NHC0 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C20610</obo:NCIT_NHC0>
+        <obo:NCIT_P108 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partition Coefficient</obo:NCIT_P108>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partition Coefficient</oboInOwl:hasExactSynonym>
+        <obo:NCIT_P366 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Partition_Coefficient</obo:NCIT_P366>
+        <obo:NCIT_P106 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quantitative Concept</obo:NCIT_P106>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncit.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCIT_C89775 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCIT_C89775">
@@ -556,6 +573,12 @@
     <!-- http://www.bioassayontology.org/bao#BAO_0000015 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000015"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0000179 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000179"/>
     
 
 
