@@ -27,15 +27,32 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.7.2</owl:versionInfo>
+        <owl:versionInfo>2.8.9</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Caty Chung, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
-stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>8 Jul 2021</dc:date>
+sschurer at miami dot edu</rdfs:comment>
+        <dc:date>Oct 9, 2023</dc:date>
     </owl:Ontology>
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+	<!-- http://www.bioassayontology.org/bao/hasXref -->
+
+	<owl:AnnotationProperty rdf:about="http://www.bioassayontology.org/bao/hasXref"/>
+	<!-- http://www.bioassayontology.org/bao/submitted_by -->
+
+	<owl:AnnotationProperty rdf:about="http://www.bioassayontology.org/bao/submitted_by"/>
+
 
 
     <!--
@@ -2029,6 +2046,517 @@ Nuclear factor of kappa light polypeptide gene enhancer in B-cells 3</obo:IAO_00
 		<rdfs:label rdf:datatype="&xsd;string">primary neuron</rdfs:label>
 		<rdfs:comment>http://purl.obolibrary.org/obo/CL_0000530</rdfs:comment>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000239"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030012 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030012">
+		<rdfs:label rdf:datatype="&xsd;string">Aldehyde oxidase</rdfs:label>
+		<obo:IAO_0000115>A protein that has been modified with either a molecular or protein and can be used either as a method of pulling down, antibody binding, luminescense, or tracer </obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>An aldehyde oxidoreductase expressed predominantly in the LIVER; LUNGS; and KIDNEY. It catalyzes the oxidation of a variety of organic aldehydes and N-heterocyclic compounds to CARBOXYLIC ACIDS, and also oxidizes quinoline and pyridine derivatives. The enzyme utilizes molybdenum cofactor and FAD as cofactors.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.bioontology.org/ontology/MESH/D042931</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030013 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030013">
+		<rdfs:label rdf:datatype="&xsd;string">Broad substrate specificity ATP-binding cassette transporter ABCG2</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000283"/>
+		<obo:IAO_0000115>Broad substrate specificity ATP-binding cassette transporter ABCG2 is encoded by the human ABCG2 gene. This protein is involved in the transport of urate, heme, porphyrin and xenobiotics.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C21253</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030014 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030014">
+		<rdfs:label rdf:datatype="&xsd;string">Bile salt export pump</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000283"/>
+		<obo:IAO_0000115>Bile salt export pumpis encoded by the human ABCB11 gene. This protein plays a role in bile salt secretion.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C123861</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030015 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030015">
+		<rdfs:label rdf:datatype="&xsd;string">EST1</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>The protein-coding gene EST1 located on the chromosome XII.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/NCBIGene_850934</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030016 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030016">
+		<rdfs:label rdf:datatype="&xsd;string">EST2</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>Reverse transcriptase subunit of the telomerase holoenzyme; essential for telomerase core catalytic activity, involved in other aspects of telomerase assembly and function; mutations in human homolog are associated with aplastic anemia.</obo:IAO_0000115>
+		<bao:hasXref>https://www.yeastgenome.org/locus/S000004310</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030017 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030017">
+		<rdfs:label rdf:datatype="&xsd;string">Cytochrome P450 1A2</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>Cytochrome P450 1A2 is encoded by the human CYP1A2 gene. This protein is involved in the hydroxylation of fatty acids, steroids and xenobiotics.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17673</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030018 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030018">
+		<rdfs:label rdf:datatype="&xsd;string">Cytochrome P450 2B6</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>Cytochrome P450 2B6 is encoded by the human CYP2B6 gene. This protein plays a role in the metabolism of steroids and pharmaceuticals.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C40050</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030019 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030019">
+		<rdfs:label rdf:datatype="&xsd;string">Cytochrome P450 2C19</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>Cytochrome P450 2C19 is encoded by the human CYP2C19 gene. This protein is involved in steroid, terpenoid and drug metabolism.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C25948</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030020 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030020">
+		<rdfs:label rdf:datatype="&xsd;string">Cytochrome P450 2C8</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>Cytochrome P450 2C8 is encoded by the human CYP2C8 gene. This protein is involved in the oxidation of steroids, fatty acids, and xenobiotics.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C46001</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030021 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030021">
+		<rdfs:label rdf:datatype="&xsd;string">Cytochrome P450 2C9</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>Cytochrome P450 2C9 is encoded by the human CYP2C9 gene. This protein is involved in the oxidation of fatty acids, steroids and xenobiotics.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28750</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030022 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030022">
+		<rdfs:label rdf:datatype="&xsd;string">Cytochrome P450 3A4</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>Cytochrome P450 3A4 is encoded by the human CYP3A4 gene. This protein is involved in the oxidation of steroids, fatty acids and xenobiotics.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17573</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030023 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030023">
+		<rdfs:label rdf:datatype="&xsd;string">Cytochrome P450 2D12</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>This protein is involved in steroid, terpenoid and drug metabolism.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16484</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030024 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030024">
+		<rdfs:label rdf:datatype="&xsd;string">Cytochrome P450 2D9</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>This protein is involved in steroid, terpenoid and drug metabolism.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16484</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030025 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030025">
+		<rdfs:label rdf:datatype="&xsd;string">Cytochrome P450 2D6</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>Cytochrome P450 2D6 is encoded by the human CYP2D6 gene. This protein plays a role in flavoprotein metabolism.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17287</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030026 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030026">
+		<rdfs:label rdf:datatype="&xsd;string">Cytochrome P450 3A7</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>Cytochrome P450 3A7 is encoded by the human CYP3A7 gene. This protein plays a role in the oxidation of steroids, fatty acids, and xenobiotics.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C46000</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030027 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030027">
+		<rdfs:label rdf:datatype="&xsd;string">Epoxide hydrolase 1</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>Epoxide hydrolase 1 is encoded by the human EPHX1 gene. This protein is involved in the hydrolysis of cyclic organic compounds.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16860</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030028 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030028">
+		<rdfs:label rdf:datatype="&xsd;string">Cytochrome P450 3A5</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>Cytochrome P450 3A5 is encoded by the human CYP3A5 gene. This protein is involved in the oxidation of steroids, fatty acids, and xenobiotics.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C45999</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030029 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030029">
+		<rdfs:label rdf:datatype="&xsd;string">Cytochrome P450 3A10</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>This protein is involved in steroid, terpenoid and drug metabolism.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16484</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030030 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030030">
+		<rdfs:label rdf:datatype="&xsd;string">Cytochrome P450 2D11</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>This protein is involved in steroid, terpenoid and drug metabolism.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16484</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030031 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030031">
+		<rdfs:label rdf:datatype="&xsd;string">Multidrug and toxin extrusion protein 1</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000283"/>
+		<obo:IAO_0000115>Multidrug and toxin extrusion protein 1 is encoded by the human SLC47A1 gene. This protein plays a role in transport of cationic drugs across membranes.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C113566</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030032 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030032">
+		<rdfs:label rdf:datatype="&xsd;string">Multidrug and toxin extrusion protein 2</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000283"/>
+		<obo:IAO_0000115>Multidrug and toxin extrusion protein 2 is encoded by the human SLC47A2 gene. This protein is involved in both excretion of toxic electrolytes and secretion of cationic drugs.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C113569</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030033 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030033">
+		<rdfs:label rdf:datatype="&xsd;string">ATP-dependent translocase ABCB1</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>A protein that is a translation product of the human ABCB1 gene.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_000001891</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030034 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030034">
+		<rdfs:label rdf:datatype="&xsd;string">ATP-binding cassette sub-family C member 2</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000283"/>
+		<obo:IAO_0000115>A protein that is a translation product of the human ABCC2 gene.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_000003558</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030035 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030035">
+		<rdfs:label rdf:datatype="&xsd;string">ATP-binding cassette sub-family C member 3</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000283"/>
+		<obo:IAO_0000115>A protein that is a translation product of the human ABCC3 gene.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_000003559</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030036 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030036">
+		<rdfs:label rdf:datatype="&xsd;string">Solute carrier family 15 member 1</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000283"/>
+		<obo:IAO_0000115>A protein that is a translation product of the human SLC15A1 gene.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_000014940</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030037 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030037">
+		<rdfs:label rdf:datatype="&xsd;string">FMO3</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>The protein-coding gene FMO3 (flavin containing monooxygenase 3).</obo:IAO_0000115>
+		<bao:hasXref>http://identifiers.org/ncbigene/2328</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030038 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030038">
+		<rdfs:label rdf:datatype="&xsd;string">Amine oxidase [flavin-containing] A</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>Catalyzes the oxidative deamination of primary and some secondary amine such as neurotransmitters, with concomitant reduction of oxygen to hydrogen peroxide and has important functions in the metabolism of neuroactive and vasoactive amines in the central nervous system and peripheral tissues.</obo:IAO_0000115>
+		<bao:hasXref>https://www.ebi.ac.uk/interpro/protein/UniProt/P21397/</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030039 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030039">
+		<rdfs:label rdf:datatype="&xsd;string">Amine oxidase [flavin-containing] B</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>Catalyzes the oxidative deamination of primary and some secondary amines such as neurotransmitters, and exogenous amines including the tertiary amine, neurotoxin MPTP, with concomitant reduction of oxygen to hydrogen peroxide and participates in the metabolism of neuroactive and vasoactive amines in the central nervous system and peripheral tissues.</obo:IAO_0000115>
+		<bao:hasXref>https://www.uniprot.org/uniprotkb/P27338/entry</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030040 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030040">
+		<rdfs:label rdf:datatype="&xsd;string">Solute carrier family 22 member 6</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000283"/>
+		<obo:IAO_0000115>A protein that is a translation product of the human SLC22A6 gene.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_000014993</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030041 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030041">
+		<rdfs:label rdf:datatype="&xsd;string">Solute carrier family 22 member 7</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000283"/>
+		<obo:IAO_0000115>A protein that is a translation product of the human SLC22A7 gene.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_000014994</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030042 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030042">
+		<rdfs:label rdf:datatype="&xsd;string">Solute carrier family 22 member 8</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000283"/>
+		<obo:IAO_0000115>A protein that is a translation product of the SLC22A8 gene.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_Q8R0S9</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030043 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030043">
+		<rdfs:label rdf:datatype="&xsd;string">Solute carrier organic anion transporter family member 1B1</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000283"/>
+		<obo:IAO_0000115>Solute carrier organic anion transporter family member 1B1 is encoded by the human SLCO1B1 gene. This protein is involved in the sodium-independent uptake of endogenous compounds in the liver.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C106616</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030044 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030044">
+		<rdfs:label rdf:datatype="&xsd;string">Solute carrier organic anion transporter family member 1B3</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000283"/>
+		<obo:IAO_0000115>A sodium-independent organic anion transporter that functions in the uptake of various drugs and endogenous compounds including estradiol; taurocholate; leukotriene c4; and methotrexate.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.bioontology.org/ontology/MESH/D000074542</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030045 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030045">
+		<rdfs:label rdf:datatype="&xsd;string">Solute carrier organic anion transporter family member 2B1</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000283"/>
+		<obo:IAO_0000115>Solute carrier organic anion transporter family member 2B1 is encoded by the human SLCO2B1 gene. This protein is involved in transport of organic anions and may function in regulation of placental uptake of sulfated steroids.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C105431</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030046 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030046">
+		<rdfs:label rdf:datatype="&xsd;string">Solute carrier family 22 member 1</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000283"/>
+		<obo:IAO_0000115>Solute carrier family 22 member 1 is encoded by the human SLC22A1 gene. This protein is involved in bidirectional cation transport.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C105075</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030047 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030047">
+		<rdfs:label rdf:datatype="&xsd;string">Steroid transmembrane transporter SLC22A24</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000283"/>
+		<obo:IAO_0000115>A protein that is a translation product of the human SLC22A24 gene.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_000030620</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030048 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030048">
+		<rdfs:label rdf:datatype="&xsd;string">UDP-glucuronosyltransferase 1A1</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>A protein that is a translation product of the human UGT1A1 gene.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_000017048</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030049 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030049">
+		<rdfs:label rdf:datatype="&xsd;string">UDP-glucuronosyltransferase 1A3</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>A protein that is a translation product of the human UGT1A3 gene.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_000017050</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030050 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030050">
+		<rdfs:label rdf:datatype="&xsd;string">UDP-glucuronosyltransferase 1A4</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>A protein that is a translation product of the human UGT1A4 gene.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_000017051</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030051 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030051">
+		<rdfs:label rdf:datatype="&xsd;string">UDP-glucuronosyltransferase 1-6</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>UDP-glucuronosyltransferase 1-6 is encoded by the human UGT1A6 gene. This protein is involved in the elimination of phenolic metabolites.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C105574</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030052 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030052">
+		<rdfs:label rdf:datatype="&xsd;string">UDP-glucuronosyltransferase 1A7</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>A protein that is a translation product of the mouse Ugt1a7c gene.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_000017223</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030053 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030053">
+		<rdfs:label rdf:datatype="&xsd;string">UDP-glucuronosyltransferase 1A8</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>A protein that is a translation product of the human UGT1A8 gene.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_000017055</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030054 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030054">
+		<rdfs:label rdf:datatype="&xsd;string">UDP-glucuronosyltransferase 1A9</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>A PPAR alpha and PPAR gamma target gene. The enzyme plays an important role in elimination and detoxification of drugs, xenobiotics, and metabolizing endogenous compounds, including catecholestrogens and fibrates.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.bioontology.org/ontology/MESH/D000090264</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030055 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030055">
+		<rdfs:label rdf:datatype="&xsd;string">UDP-glucuronosyltransferase 1A10</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>A protein that is a translation product of the human UGT1A10 gene.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_000017049</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030056 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030056">
+		<rdfs:label rdf:datatype="&xsd;string">UDP-glucuronosyltransferase 2B4</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>A protein that is a translation product of the human UGT2B4 gene</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_000017064</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030057 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030057">
+		<rdfs:label rdf:datatype="&xsd;string">UDP-glucuronosyltransferase 2B7</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>UDP-glucuronosyltransferase 2B7 is encoded by the human UGT2B7 gene. This protein plays a role in regulating the metabolism of estrogen metabolites.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C105577</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030058 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030058">
+		<rdfs:label rdf:datatype="&xsd;string">UDP-glucuronosyltransferase 2B10</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>A protein that is a translation product of the human UGT2B10 gene.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_000017059</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030059 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030059">
+		<rdfs:label rdf:datatype="&xsd;string">UDP-glucuronosyltransferase 2B15</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>UDP-glucuronosyltransferase 2B15 is encoded by the human UGT2B15 gene. This protein is involved in the catabolism of xenobiotics and steroids.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C105422</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030060 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030060">
+		<rdfs:label rdf:datatype="&xsd;string">UDP-glucuronosyltransferase 2B23</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>A protein that contains a C-terminal UDPGT domain that in active form catalyzes the transfer of glucuronic acid to a wide variety of exogenous and endogenous lipophilic substrates.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_000024849</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030061 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030061">
+		<rdfs:label rdf:datatype="&xsd;string">Sodium/bile acid cotransporter</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000283"/>
+		<obo:IAO_0000115>A protein that is a translation product of the SLC10A1 gene</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/PR_000014917</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030062 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030062">
+		<rdfs:label rdf:datatype="&xsd;string">UDP-glucuronosyltransferase 2B17</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000279"/>
+		<obo:IAO_0000115>UDP-glucuronosyltransferase 2B17 is encoded by the human UGT2B17 gene. This protein plays a role in the metabolism of steroids and xenobiotics.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C105425</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
 </rdf:RDF>

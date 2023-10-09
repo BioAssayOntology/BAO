@@ -26,16 +26,17 @@
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_method.owl">
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_method.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:date>31 January 2023</dc:date>
-        <owl:versionInfo>2.7.4</owl:versionInfo>
-        <rdfs:label>BAO</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
+        <owl:versionInfo>2.8.9</owl:versionInfo>
+        <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Caty Chung, Stephan Schurer*</rdfs:comment>
+Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Caty Chung, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
-stephan dot schurer at gmail dot com</rdfs:comment>
+sschurer at miami dot edu</rdfs:comment>
+        <dc:date>Oct 9, 2023</dc:date>
     </owl:Ontology>
+
 
     <!--
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -45,6 +46,9 @@ stephan dot schurer at gmail dot com</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+	<!-- http://www.bioassayontology.org/bao/hasXref -->
+
+	<owl:AnnotationProperty rdf:about="http://www.bioassayontology.org/bao/hasXref"/>
 	<!-- http://www.bioassayontology.org/bao/submitted_by -->
 
 	<owl:AnnotationProperty rdf:about="http://www.bioassayontology.org/bao/submitted_by"/>
@@ -188,12 +192,11 @@ The technologies used are radioligand binding, resonance energy transfer, fluore
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000134">
 		<rdfs:label rdf:datatype="&xsd;string">ELISA</rdfs:label>
-		<obo:IAO_0000118>Enzyme linked immunosorbent assay </obo:IAO_0000118>
-		<obo:IAO_0000118>enzyme-linked immunosorbent assay </obo:IAO_0000118>
 		<obo:IAO_0000118>ELISA assay</obo:IAO_0000118>
 		<obo:IAO_0000118>Enzyme linked immunosorbent assay</obo:IAO_0000118>
 		<obo:IAO_0000115>Enzyme linked immunosorbent assay or ELISA is used to detect the presence of a particular protein, either an antigen or antibody in the sample such as a body fluid.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000466"/>
+		<obo:IAO_0000118>enzyme-linked immunosorbent assay</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000137 -->
@@ -282,12 +285,6 @@ The technologies used are radioligand binding, resonance energy transfer, fluore
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000165">
 		<rdfs:label rdf:datatype="&xsd;string">caspase activity determination</rdfs:label>
-		<obo:IAO_0000118>caspase activity</obo:IAO_0000118>
-		<obo:IAO_0000118>caspase activity assay</obo:IAO_0000118>
-		<obo:IAO_0000118>caspase apoptosis assay</obo:IAO_0000118>
-		<obo:IAO_0000118>caspase activity measurements</obo:IAO_0000118>
-		<obo:IAO_0000118>caspase-3 activation</obo:IAO_0000118>
-		<obo:IAO_0000118>caspase-3 and caspase-8 activity</obo:IAO_0000118>
 		<obo:IAO_0000115>Caspases are cysteine proteases which play an important role in apoptosis. They are synthesized and stored in cells as inactive procaspases. Once apoptosis is initiated in a cell, the procaspases get activated by proteolytic cleavage. This sets in motion a caspase cascade, which leads to the activation of proteins involved in the chromatin fragmentation and finally culminates in cell death.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000127"/>
 	</owl:Class>
@@ -1054,10 +1051,10 @@ A mix and read protocol has been developed that is exceptionally simple and rapi
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002419">
 		<rdfs:label rdf:datatype="&xsd;string">enzyme-linked immunosorbent spot assay</rdfs:label>
-		<obo:IAO_0000118>ELISPOT assay </obo:IAO_0000118>
 		<obo:IAO_0000118>ELISPOT</obo:IAO_0000118>
 		<obo:IAO_0000115>The ELISPOT assay is based on, and was developed from a modified version of the ELISA immunoassay. ELISPOT assays were originally developed to enumerate B cells secreting antigen-specific antibodies, and have subsequently been adapted for various tasks, especially the identification and enumeration of cytokine-producing cells at the single cell level. Simply put, at appropriate conditions the ELISPOT assay allows visualization of the secretory product of individual activated or responding cells. Each spot that develops in the assay represents a single reactive cell. Thus, the ELISPOT assay provides both qualitative (type of immune protein) and quantitative (number of responding cells) information.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000134"/>
+		<obo:IAO_0000118>ELISPOT assay</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002420 -->
@@ -1196,19 +1193,19 @@ A mix and read protocol has been developed that is exceptionally simple and rapi
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002437">
 		<rdfs:label rdf:datatype="&xsd;string">gene knockdown by shRNA transfection</rdfs:label>
-		<obo:IAO_0000118>shRNA gene knockdown </obo:IAO_0000118>
 		<obo:IAO_0000118>shRNA knockdown</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002434"/>
+		<obo:IAO_0000118>shRNA gene knockdown</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002438 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002438">
 		<rdfs:label rdf:datatype="&xsd;string">gene knockdown by siRNA transfection</rdfs:label>
-		<obo:IAO_0000118>gene knockdown siRNA</obo:IAO_0000118>
-		<obo:IAO_0000118>siRNA knockdown </obo:IAO_0000118>
 		<obo:IAO_0000118>siRNA gene knockdown</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002434"/>
+		<obo:IAO_0000118>gene knockdown siRNA</obo:IAO_0000118>
+		<obo:IAO_0000118>siRNA knockdown</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002439 -->
@@ -1674,11 +1671,11 @@ The premise behind the test is the activation of downstream reporter gene(s) by 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002499">
 		<rdfs:label rdf:datatype="&xsd;string">parallel artificial membrane permeation assay</rdfs:label>
-		<obo:IAO_0000118>PAMPA </obo:IAO_0000118>
-		<obo:IAO_0000118>Parallel artificial membrane permeability assay </obo:IAO_0000118>
-		<obo:IAO_0000118>Parallel artificial membrane permeability </obo:IAO_0000118>
 		<obo:IAO_0000118>PAMPA permeability assay</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002485"/>
+		<obo:IAO_0000118>PAMPA</obo:IAO_0000118>
+		<obo:IAO_0000118>Parallel artificial membrane permeability assay</obo:IAO_0000118>
+		<obo:IAO_0000118>Parallel artificial membrane permeability</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002500 -->
@@ -1897,10 +1894,10 @@ The premise behind the test is the activation of downstream reporter gene(s) by 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002649">
 		<rdfs:label rdf:datatype="&xsd;string">co-culture</rdfs:label>
-		<obo:IAO_0000118>Organoid </obo:IAO_0000118>
-		<obo:IAO_0000118>Organoids </obo:IAO_0000118>
 		<obo:IAO_0000118>co-culture assay</obo:IAO_0000118>
+		<obo:IAO_0000118>Organoids</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002647"/>
+		<obo:IAO_0000118>Organoid</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002730 -->
@@ -2063,9 +2060,9 @@ microarray, bead based method or RNASeq.</obo:IAO_0000115>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003033">
 		<rdfs:label rdf:datatype="&xsd;string">mobility shift assessment method</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000123"/>
-		<obo:IAO_0000118>mobility shift </obo:IAO_0000118>
-		<obo:IAO_0000118>mobility shift isolated enzyme assay </obo:IAO_0000118>
 		<obo:IAO_0000118>mobility shift assay</obo:IAO_0000118>
+		<obo:IAO_0000118>mobility shift</obo:IAO_0000118>
+		<obo:IAO_0000118>mobility shift isolated enzyme assay</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003034 -->
@@ -2259,9 +2256,9 @@ microarray, bead based method or RNASeq.</obo:IAO_0000115>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040022">
 		<rdfs:label rdf:datatype="&xsd;string">in vivo efficacy method</rdfs:label>
-		<obo:IAO_0000115>Any study performed in a whole, living organism (usually an animal such as a mouse or rat), to test the effects of a treatment on a specific disease modeled in this animal. Study design and measured endpoints vary tremendously and depend on the particular aspects of the targeted disease. Ideally, the endpoints measured will correlate with how efficacy would be measured in humans.</obo:IAO_0000115>
 		<obo:IAO_0000119>PubChem AID: 687012</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
+		<obo:IAO_0000115>Any study performed in a whole, living organism (usually an animal such as a mouse or rat), to test the effects of a treatment on a specific disease modeled in this animal. Study design and measured endpoints vary tremendously and depend on the particular aspects of the targeted disease. Ideally, the endpoints measured will correlate with how efficacy would be measured in humans.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040021"/>
 	</owl:Class>
 
@@ -2353,7 +2350,6 @@ microarray, bead based method or RNASeq.</obo:IAO_0000115>
 		<rdfs:label rdf:datatype="&xsd;string">ligand covalent binding method</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000123"/>
 		<bao:submitted_by>Pistoia SEED</bao:submitted_by>
-		<obo:IAO_0000118></obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0040034 -->
@@ -2363,7 +2359,6 @@ microarray, bead based method or RNASeq.</obo:IAO_0000115>
 		<obo:IAO_0000115>the lysine ligand covalent binding method is used to measure binding of an amine-reactive molecule with a lysine residue on a protein of interest. Binding assessment can be measured by protein mass spectrometry or other direct-binding methodology.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040033"/>
 		<bao:submitted_by>Pistoia SEED</bao:submitted_by>
-		<obo:IAO_0000118></obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0040035 -->
@@ -2373,7 +2368,6 @@ microarray, bead based method or RNASeq.</obo:IAO_0000115>
 		<obo:IAO_0000115>the methionine ligand covalent binding method is used to measure binding of an thioether-reactive molecule with a methionine residue on a protein of interest. Binding assessment can be measured by protein mass spectrometry or other direct-binding methodology.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040033"/>
 		<bao:submitted_by>Pistoia SEED</bao:submitted_by>
-		<obo:IAO_0000118></obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0040036 -->
@@ -2383,7 +2377,6 @@ microarray, bead based method or RNASeq.</obo:IAO_0000115>
 		<obo:IAO_0000115>the serine ligand covalent binding method is used to measure binding of an alcohol-reactive molecule with a serine residue on a protein of interest. Binding assessment can be measured by protein mass spectrometry or other direct-binding methodology.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040033"/>
 		<bao:submitted_by>Pistoia SEED</bao:submitted_by>
-		<obo:IAO_0000118></obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0040037 -->
@@ -2393,7 +2386,6 @@ microarray, bead based method or RNASeq.</obo:IAO_0000115>
 		<obo:IAO_0000115>the tyrosine ligand covalent binding method is used to measure binding of a phenol-reactive molecule with a tyrosine residue on a protein of interest. Binding assessment can be measured by protein mass spectrometry or other direct-binding methodology.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040033"/>
 		<bao:submitted_by>Pistoia SEED</bao:submitted_by>
-		<obo:IAO_0000118></obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0040038 -->
@@ -2403,7 +2395,6 @@ microarray, bead based method or RNASeq.</obo:IAO_0000115>
 		<obo:IAO_0000115>the N-terminal ligand covalent binding method is used to measure binding of an amine-reactive molecule with the N-terminus of a protein of interest. Binding assessment can be measured by protein mass spectrometry or other direct-binding methodology.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040033"/>
 		<bao:submitted_by>Pistoia SEED</bao:submitted_by>
-		<obo:IAO_0000118></obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0040039 -->
@@ -2413,7 +2404,6 @@ microarray, bead based method or RNASeq.</obo:IAO_0000115>
 		<obo:IAO_0000115>the threonine ligand covalent binding method is used to measure binding of an alcohol-reactive molecule with a threonine residue on a protein of interest. Binding assessment can be measured by protein mass spectrometry or other direct-binding methodology.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040033"/>
 		<bao:submitted_by>Pistoia SEED</bao:submitted_by>
-		<obo:IAO_0000118></obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0040040 -->
@@ -2423,7 +2413,6 @@ microarray, bead based method or RNASeq.</obo:IAO_0000115>
 		<obo:IAO_0000115>the unnatural amino acid ligand covalent binding method is used to measure binding of a reactive molecule with a particular unnatural residue on a protein of interest. Binding assessment can be measured by protein mass spectrometry or other direct-binding methodology. Unnatural amino acids can contain a variety of ‘bioorthogonal’ chemical handles.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040033"/>
 		<bao:submitted_by>Pistoia SEED</bao:submitted_by>
-		<obo:IAO_0000118></obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0040041 -->
@@ -2432,8 +2421,19 @@ microarray, bead based method or RNASeq.</obo:IAO_0000115>
 		<rdfs:label rdf:datatype="&xsd;string">cysteine ligand covalent binding method</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040034"/>
 		<bao:submitted_by>Pistoia SEED</bao:submitted_by>
-		<obo:IAO_0000118></obo:IAO_0000118>
 		<obo:IAO_0000115>the cysteine ligand covalent binding method is used to measure binding of a thiol-reactive molecule with a cysteine residue on a protein of interest. Binding assessment can be measured by protein mass spectrometry or other direct-binding methodology.</obo:IAO_0000115>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0040042 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040042">
+		<rdfs:label rdf:datatype="&xsd;string">liquid chromatography-tandem mass spectrometry</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0040031"/>
+		<obo:IAO_0000115>A method wherein liquid chromatography is coupled to tandem mass spectrometry.</obo:IAO_0000115>
+		<bao:hasXref>http://purl.obolibrary.org/obo/CHMO_0000701</bao:hasXref>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C122168</bao:hasXref>
+		<bao:hasXref>http://purl.obolibrary.org/obo/ERO_0001349</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 	</owl:Class>
 
 </rdf:RDF>
