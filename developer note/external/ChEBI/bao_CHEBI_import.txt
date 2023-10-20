@@ -5,13 +5,34 @@ http://www.bioassayontology.org/bao/external/BAO_CHEBI_import.owl
 CHEBI
 
 [Low level source term URIs]
-http://purl.obolibrary.org/obo/CHEBI_165840
-http://purl.obolibrary.org/obo/CHEBI_24431
-http://purl.obolibrary.org/obo/CHEBI_28593
+http://purl.obolibrary.org/obo/CHEBI_38545
+http://purl.obolibrary.org/obo/CHEBI_3219
+http://purl.obolibrary.org/obo/CHEBI_8050
+http://purl.obolibrary.org/obo/CHEBI_6931
+http://purl.obolibrary.org/obo/CHEBI_179062
+http://purl.obolibrary.org/obo/CHEBI_2674
+http://purl.obolibrary.org/obo/CHEBI_47381
+http://purl.obolibrary.org/obo/CHEBI_7565
+http://purl.obolibrary.org/obo/CHEBI_77780
+http://purl.obolibrary.org/obo/CHEBI_50730
+http://purl.obolibrary.org/obo/CHEBI_45735
+http://purl.obolibrary.org/obo/CHEBI_4470
 http://purl.obolibrary.org/obo/CHEBI_17347
 http://purl.obolibrary.org/obo/CHEBI_6801
 http://purl.obolibrary.org/obo/CHEBI_36257
+http://purl.obolibrary.org/obo/CHEBI_73472
+http://purl.obolibrary.org/obo/CHEBI_23965
+http://purl.obolibrary.org/obo/CHEBI_45951
+http://purl.obolibrary.org/obo/CHEBI_44915
+http://purl.obolibrary.org/obo/CHEBI_7823
+http://purl.obolibrary.org/obo/CHEBI_10110
+http://purl.obolibrary.org/obo/CHEBI_23367
 http://purl.obolibrary.org/obo/CHEBI_4873
+http://purl.obolibrary.org/obo/CHEBI_28593
+http://purl.obolibrary.org/obo/CHEBI_165840
+http://purl.obolibrary.org/obo/CHEBI_9590
+http://purl.obolibrary.org/obo/CHEBI_50275
+http://purl.obolibrary.org/obo/CHEBI_7936
 http://purl.obolibrary.org/obo/CHEBI_33232 #application
 includeAllChildren
 http://purl.obolibrary.org/obo/CHEBI_24432 #biological role
@@ -21,24 +42,57 @@ includeAllChildren
 http://purl.obolibrary.org/obo/CHEBI_33281 #antimicrobial agent
 includeAllChildren
 
-
-
 [Top level source term URIs and target direct superclass URIs]
-http://purl.obolibrary.org/obo/CHEBI_24431
-http://purl.obolibrary.org/obo/CHEBI_165840
-subClassOf http://purl.obolibrary.org/obo/CHEBI_24431
-http://purl.obolibrary.org/obo/CHEBI_24431
-subClassOf http://www.bioassayontology.org/bao#BAO_0002753
-http://purl.obolibrary.org/obo/CHEBI_28593
-subClassOf http://purl.obolibrary.org/obo/CHEBI_24431
+http://purl.obolibrary.org/obo/CHEBI_38545
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_3219
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_8050
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_6931
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_179062
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_2674
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_47381
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_7565
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_77780
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_50730
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_45735
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_4470
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
 http://purl.obolibrary.org/obo/CHEBI_17347
-subClassOf http://purl.obolibrary.org/obo/CHEBI_24431
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
 http://purl.obolibrary.org/obo/CHEBI_6801
-subClassOf http://purl.obolibrary.org/obo/CHEBI_24431
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
 http://purl.obolibrary.org/obo/CHEBI_36257
-subClassOf http://purl.obolibrary.org/obo/CHEBI_24431
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_73472
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_23965
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_45951
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_44915
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_7823
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_10110
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_23367
+subClassOf http://www.bioassayontology.org/bao#BAO_0003116
 http://purl.obolibrary.org/obo/CHEBI_4873
-subClassOf http://purl.obolibrary.org/obo/CHEBI_24431
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_28593
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
+http://purl.obolibrary.org/obo/CHEBI_165840
+subClassOf http://purl.obolibrary.org/obo/CHEBI_23367
 http://purl.obolibrary.org/obo/CHEBI_33232 #application
 subClassOf http://www.bioassayontology.org/bao#BAO_0002929
 http://purl.obolibrary.org/obo/CHEBI_24432 #biological role
@@ -60,4 +114,5 @@ http://www.geneontology.org/formats/oboInOwl#hasDefinition
 mapTo http://purl.obolibrary.org/obo/IAO_0000115 #iao:definition
 http://www.w3.org/2000/01/rdf-schema#label
 copyTo http://purl.obolibrary.org/obo/IAO_0000111 #iao:preferredTerm
+
 

@@ -80,6 +80,24 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_10110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_10110">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zidovudine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3&#39;-azido-3&#39;-deoxythymidine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AZT</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Azidothymidine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Retrovir</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zidovudin</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zidovudinum</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zidovudine</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">zidovudine</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_102248 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_102248">
@@ -215,8 +233,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_131492">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wnt signalling activator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35224"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52206"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_195251"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wnt signaling activator</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wnt signaling activators</obo:IAO_0000118>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wnt signalling activator</obo:IAO_0000111>
@@ -1103,7 +1120,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_134083">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypoxia-inducible factor pathway activator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52206"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_195251"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HIF pathway activator</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HIF pathway activators</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hypoxia activator</obo:IAO_0000118>
@@ -4091,7 +4108,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_150006">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SERCA activator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52206"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_195252"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 7.2.2.10 activator</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 7.2.2.10 activators</obo:IAO_0000118>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SERCA activator</obo:IAO_0000111>
@@ -4251,7 +4268,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_165840">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Furafylline</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-(uran-2-ylmethyl)-1,8-dimethyl-7H-purine-2,6-dione</obo:IAO_0000118>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Furafylline</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
@@ -4686,7 +4703,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_17347">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">testosterone</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17beta-Hydroxy-4-androsten-3-one</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17beta-hydroxy-4-androsten-3-one</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">17beta-hydroxyandrost-4-en-3-one</obo:IAO_0000118>
@@ -4877,6 +4894,18 @@
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Donor</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">donneur</obo:IAO_0000118>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">donor</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_179062 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_179062">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(S)-Mephenytoin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(5S)-5-ethyl-3-methyl-5-phenylimidazolidine-2,4-dione</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(S)-Mephenytoin</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
     </owl:Class>
     
@@ -5359,6 +5388,234 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_195251 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_195251">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">activator</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24432"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">activator</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">activators</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_195252 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_195252">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">enzyme activator</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_195251"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52206"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">enzyme activator</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">enzyme activators</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_195299 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_195299">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grace_C1_2023</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24432"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grace_C1_2023</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hezinglila Grace compound 1</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_195331 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_195331">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 2.6.1.13 (ornithine aminotransferase) inhibitor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_76879"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 2.6.1.13 (ornithine aminotransferase) inhibitor</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 2.6.1.13 (ornithine aminotransferase) inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 2.6.1.13 inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 2.6.1.13 inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-ornithine 5-aminotransferase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-ornithine 5-aminotransferase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-ornithine aminotransferase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-ornithine aminotransferase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-ornithine:alpha-ketoglutarate -aminotransferase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-ornithine:alpha-ketoglutarate -aminotransferase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OAT inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">OAT inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine 5-aminotransferase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine 5-aminotransferase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine aminotransferase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine aminotransferase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine delta-transaminase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine delta-transaminase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine transaminase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine transaminase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine--oxo-acid transaminase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine--oxo-acid transaminase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine-2-oxoacid aminotransferase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine-2-oxoacid aminotransferase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine-alpha-ketoglutarate aminotransferase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine-alpha-ketoglutarate aminotransferase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine-keto acid aminotransferase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine-keto acid aminotransferase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine-keto acid transaminase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine-keto acid transaminase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine-ketoglutarate aminotransferase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine-ketoglutarate aminotransferase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine-oxo acid aminotransferase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine-oxo acid aminotransferase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine:alpha-oxoglutarate transaminase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ornithine:alpha-oxoglutarate transaminase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_195444 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_195444">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insulin-like growth factor-binding protein inhibitor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35222"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGFBP inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IGFBP inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insulin-like growth factor-binding protein inhibitor</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">insulin-like growth factor-binding protein inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_195525 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_195525">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 2.7.12.1 (dual-specificity kinase) inhibitor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_88285"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADK1 inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ADK1 inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arabidopsis dual specificity kinase 1 inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arabidopsis dual specificity kinase 1 inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLK1 inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CLK1 inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 2.7.12.1 (dual-specificity kinase) inhibitor</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 2.7.12.1 (dual-specificity kinase) inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 2.7.12.1 inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 2.7.12.1 inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mps1p inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mps1p inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dDYRK2 inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dDYRK2 inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dual-specificity kinase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dual-specificity kinase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_195530 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_195530">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCNA inhibitor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35222"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52206"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCNA inhibitor</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PCNA inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proliferating cell nuclear antigen inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">proliferating cell nuclear antigen inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_195542 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_195542">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sphingosine-1-phosphate receptor 2 antagonist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_144987"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EDG-5 antagonist</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EDG-5 antagonists</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EDG5 antagonist</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EDG5 antagonists</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1P2 antagonist</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1P2 antagonists</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1PR2 antagonist</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1PR2 antagonists</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sphingosine-1-phosphate receptor 2 antagonist</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sphingosine-1-phosphate receptor 2 antagonists</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_195561 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_195561">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 3.5.3.1 (arginase) inhibitor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_195562"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 3.5.3.1 (arginase) inhibitor</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 3.5.3.1 (arginase) inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 3.5.3.1 inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 3.5.3.1 inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-arginase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L-arginase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arginase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arginase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arginine amidinase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arginine amidinase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arginine transamidinase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">arginine transamidinase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">canavanase inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">canavanase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_195562 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_195562">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 3.5.3.* (non-peptide linear amidine C-N hydrolase) inhibitor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_76764"/>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 3.5.3.* (non-peptide linear amidine C-N hydrolase) inhibitor</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 3.5.3.* (non-peptide linear amidine C-N hydrolase) inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 3.5.3.* inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 3.5.3.* inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-peptide linear amidine C-N hydrolase (EC 3.5.3.*) inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">non-peptide linear amidine C-N hydrolase (EC 3.5.3.*) inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_196956 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_196956">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcitonin gene-related peptide receptor antagonist</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_88295"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CGRP antagonist</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CGRP antagonists</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcitonin gene-related peptide receptor antagonist</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">calcitonin gene-related peptide receptor antagonists</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_197347 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_197347">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rac1 inhibitor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35222"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rac-1 inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rac-1 inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rac1 inhibitor</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rac1 inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ras-related C3 botulinum toxin substrate 1 inhibitor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ras-related C3 botulinum toxin substrate 1 inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_20569 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_20569">
@@ -5719,6 +5976,23 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_23367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular entity</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003116"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entidad molecular</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entidades moleculares</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">entite moleculaire</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular entities</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular entity</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular entity</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molekulare Entitaet</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_23529 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23529">
@@ -5792,6 +6066,19 @@
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inhibidores enzimaticos</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inhibiteur enzymatique</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inhibiteurs enzymatiques</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_23965 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23965">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estradiol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estra-1,3,5(10)-triene-3,17-diol</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estradiol</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oestradiol</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
     </owl:Class>
     
@@ -5878,18 +6165,6 @@
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group transfer coenzymes</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23354"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group transfer coenzymes</obo:IAO_0000111>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/CHEBI_24431 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_24431">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical entity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002753"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical entity</obo:IAO_0000111>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chemical entity</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
     </owl:Class>
     
@@ -6425,6 +6700,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_2674 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_2674">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amodiaquine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-[(7-chloroquinolin-4-yl)amino]-2-[(diethylamino)methyl]phenol</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amodiaquine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amodiaquina</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amodiaquine</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amodiaquine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amodiaquinum</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_26841 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_26841">
@@ -6536,7 +6827,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_28593">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quinidine</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(+)-Quinidine</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(+)-quinidine</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(8R,9S)-quinidine</obo:IAO_0000118>
@@ -6558,6 +6849,19 @@
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quinidina</obo:IAO_0000118>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quinidine</obo:IAO_0000111>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quinidine</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_3219 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_3219">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bupropion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-(tert-butylamino)-1-(3-chlorophenyl)propan-1-one</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bupropion</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">bupropion</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
     </owl:Class>
     
@@ -8269,7 +8573,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_36257">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taurocholate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-[(3alpha,7alpha,12alpha-trihydroxy-24-oxo-5beta-cholan-24-yl)amino]ethanesulfonate</obo:IAO_0000118>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taurocholate</obo:IAO_0000111>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">taurocholate</obo:IAO_0000118>
@@ -9345,6 +9649,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_38545 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_38545">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rosuvastatin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(3R,5S,6E)-7-(4-(4-fluorophenyl)-6-(1-methylethyl)-2-(ethyl(methylsulfonyl)amino)-5-pyrimidinyl)-3,5-dihydroxy-6-heptenoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(3R,5S,6E)-7-{4-(4-fluorophenyl)-2-[methyl(methylsulfonyl)amino]-6-(propan-2-yl)pyrimidin-5-yl}-3,5-dihydroxyhept-6-enoic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(3R,5S,6E)-7-{4-(4-fluorophenyl)-6-isopropyl-2-[methyl(methylsulfonyl)amino]pyrimidin-5-yl}-3,5-dihydroxyhept-6-enoic acid</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rosuvastatin</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rosuvastatin</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_38623 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_38623">
@@ -9976,6 +10295,109 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_4470 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_4470">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dextromethorphan</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(+)-3-methoxy-N-methylmorphinan</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(+)-dextromethorphan</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(4aS,10S,10aS)-6-methoxy-11-methyl-1,3,4,9,10,10a-hexahydro-2H-10,4a-(epiminoethano)phenanthrene</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(9alpha,13alpha,14alpha)-3-methoxy-17-methylmorphinan</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-methoxy-17-methyl-9alpha,13alpha,14alpha-morphinan</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Albutussin</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antussan</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BA 2666</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BA-2666</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Balminil DM</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Benylin DM</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calmylin</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">D-methorphan</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DXM</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Delsym</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dextromorphan</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medicon</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Romilar</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tusilan</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">d-Methorphan</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">destrometerfano</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dextromethorfan</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dextromethorphan</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dextromethorphan</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dextromethorphane</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dextromethorphanum</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dextrometorfano</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_44915 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_44915">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">propofol</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2,6-BIS(1-METHYLETHYL)PHENOL</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2,6-Diisopropylphenol</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2,6-bis(1-methylethyl)phenol</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2,6-bis(propan-2-yl)phenol</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diprivan</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disoprivan</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Disoprofol</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Propofol</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rapinovet</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">propofol</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">propofol</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">propofolum</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_45735 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_45735">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">troleandomycin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(3R,5R,6S,7R,8R,11R,12S,13R,14S,15S)-12-[(4-O-acetyl-2,6-dideoxy-3-O-methyl-alpha-L-arabino-hexopyranosyl)oxy]-14-{[2-O-acetyl-3,4,6-trideoxy-3-(dimethylamino)-beta-D-xylo-hexopyranosyl]oxy}-5,7,8,11,13,15-hexamethyl-4,10-dioxo-1,9-dioxaspiro[2.13]hexadecan-6-yl acetate</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oleandocetine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oleandomycin triacetate</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oleandomycin triacetyl ester</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triacetyloleandomycin</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triacetyloleandomycinum</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tribiocillina</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triocetin</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">troleandomicina</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">troleandomycin</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">troleandomycin</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">troleandomycine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">troleandomycinum</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_45951 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_45951">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trifluoperazine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10-[3-(4-METHYL-PIPERAZIN-1-YL)-PROPYL]-2-TRIFLUOROMETHYL-10H-PHENOTHIAZINE</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10-[3-(4-methyl-1-piperazinyl)propyl]-2-(trifluoromethyl)-10H-phenothiazine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10-[3-(4-methylpiperazin-1-yl)propyl]-2-(trifluoromethyl)-10H-phenothiazine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trifluoperazine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trifluoperazina</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trifluoperazine</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trifluoperazine</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trifluoperazinum</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trifluoromethyl-10-(3&#39;-(1-methyl-4-piperazinyl)propyl)phenothiazine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trifluoroperazine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trifluperazine</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_46787 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_46787">
@@ -9986,6 +10408,27 @@
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solvant</obo:IAO_0000118>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solvent</obo:IAO_0000111>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">solvents</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_47381 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_47381">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diclofenac</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-((2,6-dichlorophenyl)amino)benzeneacetic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2-[(2,6-dichlorophenyl)amino]benzeneacetic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Diclofenac</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2-(2,6-dichloroanilino)phenyl]acetic acid</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diclofenac</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diclofenac</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diclofenac acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diclofenaco</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diclofenacum</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">diclofenamic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{2-[(2,6-dichlorophenyl)amino]phenyl}acetic acid</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
     </owl:Class>
     
@@ -10487,7 +10930,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_4873">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estropipate</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estropipate</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piperazine estrone sulfate</obo:IAO_0000118>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">estropipate</obo:IAO_0000111>
@@ -11101,6 +11544,28 @@
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary alcohol dehydrogenase inhibitors</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yeast alcohol dehydrogenase inhibitor</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">yeast alcohol dehydrogenase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50275 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50275">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">esomeprazole</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(-)-omeprazole</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(S)-(-)-omeprazole</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(S)-omeprazole</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-methoxy-2-{(S)-[(4-methoxy-3,5-dimethylpyridin-2-yl)methyl]sulfinyl}-1H-benzimidazole</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alenia</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Escz</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Esofag</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inexium paranova</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">esomeprazol</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">esomeprazole</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">esomeprazole</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">esomeprazolum</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
     </owl:Class>
     
@@ -12004,6 +12469,23 @@
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">peptidoglycan transglycosylase inhibitors</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">undecaprenyldiphospho-(N-acetyl-D-glucosaminyl-(1-&gt;4)-N-acetyl-D-muramoylpentapeptide):undecaprenyldiphospho-(N-acetyl-D-glucosaminyl-(1-&gt;4)-N-acetyl-D-muramoylpentapeptide) disaccharidetransferase inhibitor</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">undecaprenyldiphospho-(N-acetyl-D-glucosaminyl-(1-&gt;4)-N-acetyl-D-muramoylpentapeptide):undecaprenyldiphospho-(N-acetyl-D-glucosaminyl-(1-&gt;4)-N-acetyl-D-muramoylpentapeptide) disaccharidetransferase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_50730 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_50730">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">montelukast</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(R-(E))-1-(((1-(3-(2-(7-Chloro-2-quinolinyl)ethenyl)phenyl)-3-(2-(1-hydroxy-1-methylethyl)phenyl)propyl)thio)methyl)cyclopropaneacetic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-[[[(1 R)-1-[3-[(1E)-2-(7-chloro-2-quinolinyl)ethenyl] phenyl]-3-[2-(1-hydroxy-1-methylethyl)phenyl]propyl]sulfanyl]methyl]cyclopropaneacetic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MONTELUKAST</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Montelukast</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">montelukast</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">montelukast</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{1-[({(1R)-1-{3-[(E)-2-(7-chloroquinolin-2-yl)ethenyl]phenyl}-3-[2-(2-hydroxypropan-2-yl)phenyl]propyl}sulfanyl)methyl]cyclopropyl}acetic acid</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
     </owl:Class>
     
@@ -18314,7 +18796,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_6801">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">metformin</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_24431"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1,1-dimethylbiguanide</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LA 6023</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LA-6023</obo:IAO_0000118>
@@ -18633,6 +19115,23 @@
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phosphodiesterase IV inhibitors</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type 4 phosphodiesterase inhibitor</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">type 4 phosphodiesterase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_6931 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_6931">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">midazolam</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8-chloro-6-(2-fluorophenyl)-1-methyl-4H-imidazo[1,5-a][1,4]benzodiazepine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Buccolam</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dormicum</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mezolam</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">midazolam</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">midazolam</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">midazolamum</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
     </owl:Class>
     
@@ -18975,7 +19474,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_71033">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbamylphosphate synthetase I activator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35224"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_195252"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbamylphosphate synthetase I activator</obo:IAO_0000111>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">carbamylphosphate synthetase I activators</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
@@ -20068,6 +20567,21 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_73472 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_73472">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kynuramine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2&#39;,3-diaminopropiophenone</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-amino-1-(2-aminophenyl)-1-propanone</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-amino-1-(2-aminophenyl)propan-1-one</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kynuramine</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kynurenamine</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_73618 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_73618">
@@ -20173,7 +20687,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_73966">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitric oxide synthase activator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35224"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_195252"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOS activator</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NOS activators</obo:IAO_0000118>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nitric oxide synthase activator</obo:IAO_0000111>
@@ -21070,6 +21584,30 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_7565 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_7565">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nifedipine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-(2&#39;-Nitrophenyl)-2,6-dimethyl-1,4-dihydropyridin-3,5-dicarbonsaeuredimethylester</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adalat</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adapine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coracten</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nifecard</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nifecor</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nifedipine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nifedipres</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Procardia</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dimethyl 2,6-dimethyl-4-(2-nitrophenyl)-1,4-dihydropyridine-3,5-dicarboxylate</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nifedipine</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nifedipine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nifedipino</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nifedipinum</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_75763 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_75763">
@@ -21213,7 +21751,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_76022">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soluble guanylate cyclase activator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35224"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_195252"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sGC activator</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sGC activators</obo:IAO_0000118>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">soluble guanylate cyclase activator</obo:IAO_0000111>
@@ -25379,7 +25917,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_77324">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-glucuronosyltransferase activator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35224"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_195252"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-glucuronosyltransferase activator</obo:IAO_0000111>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UDP-glucuronosyltransferase activators</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
@@ -25734,8 +26272,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_77731">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p53 activator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35224"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52206"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_195251"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular tumor antigen p53 activator</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular tumor antigen p53 activators</obo:IAO_0000118>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">p53 activator</obo:IAO_0000111>
@@ -25932,6 +26469,29 @@
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pyrroline-5-carboxylate dehydrogenase inhibitors</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pyrroline-5-carboxylic acid dehydrogenase inhibitor</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pyrroline-5-carboxylic acid dehydrogenase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_77780 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_77780">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulfaphenazole</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-phenyl-5-sulfanilamidopyrazole</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-(p-aminobenzenesulfonamido)-2-phenylpyrazole</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-amino-N-(1-phenyl-1H-pyrazol-5-yl)benzenesulfonamide</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5-sulfanilamido-1-phenylpyrazole</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N&#39;-(1-phenylpyrazol-5-yl)sulfanilamide</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N(1)-(1-phenylpyrazol-5-yl)sulfanilamide</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sulfabid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulfafenazol</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulfaphenazol</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulfaphenazole</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulfaphenazole</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulfaphenazolum</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sulphaphenazole</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
     </owl:Class>
     
@@ -26480,6 +27040,23 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_7823 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_7823">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oxazepam</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(+-)-Oxazepam</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(RS)-Oxazepam</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7-chloro-3-hydroxy-5-phenyl-1,3-dihydro-2H-1,4-benzodiazepin-2-one</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxazepam</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Serax</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tazepam</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">oxazepam</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_78248 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_78248">
@@ -26954,8 +27531,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_78606">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hsp70 inducer</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35224"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52206"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_195251"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hsp70 activator</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hsp70 activators</obo:IAO_0000118>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hsp70 inducer</obo:IAO_0000111>
@@ -27581,6 +28157,23 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CHEBI_7936 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_7936">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paroxetine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(-)-(3S,4R)-4-(p-fluorophenyl)-3-((3,4-(methylenedioxy)phenoxy)methyl)piperidine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(3S,4R)-3-[(1,3-benzodioxol-5-yloxy)methyl]-4-(4-fluorophenyl)piperidine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(3S-trans)-3-((1,3-benzodioxol-5-yloxy)methyl)-4-(4-fluorophenyl)piperidine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paroxetine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paroxetina</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paroxetine</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">paroxetinum</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CHEBI_79386 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_79386">
@@ -27628,6 +28221,34 @@
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tryptophanyl-transfer ribonucleic acid synthetase inhibitors</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tryptophanyl-transfer ribonucleic synthetase inhibitor</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tryptophanyl-transfer ribonucleic synthetase inhibitors</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_8050 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_8050">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenacetin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1-Acetamido-4-ethoxybenzene</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-Ethoxyacetanilide</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acetophenetidin</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acetophenetidine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acetophenetin</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acetphenetidin</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Achrocidin</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Codempiral</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Commotional</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contradol</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contradouleur</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fenacetina</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">N-(4-ethoxyphenyl)acetamide</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenacetin</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenacetine</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Phenacetinum</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenacetin</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">phenacetin</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
     </owl:Class>
     
@@ -28988,7 +29609,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_85053">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EC 2.7.11.31 {[hydroxymethylglutaryl-CoA reductase (NADPH)] kinase} activator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35224"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_195252"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-hydroxy-3-methylglutaryl coenzyme A reductase kinase activator</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-hydroxy-3-methylglutaryl coenzyme A reductase kinase activators</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3-hydroxy-3-methylglutaryl-CoA reductase kinase activator</obo:IAO_0000118>
@@ -29653,7 +30274,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_88355">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha-secretase activator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35224"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_195252"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha-secretase activator</obo:IAO_0000111>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">alpha-secretase activators</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
@@ -29911,7 +30532,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_90374">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">histone acetyltransferase activator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35224"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_195252"/>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HAT activator</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HAT activators</obo:IAO_0000118>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">histone acetyltransferase activator</obo:IAO_0000111>
@@ -30500,8 +31121,7 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_91189">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VEGF activator</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_35224"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_52206"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_195251"/>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VEGF activator</obo:IAO_0000111>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VEGF activators</obo:IAO_0000118>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VEGF inducer</obo:IAO_0000118>
@@ -30563,15 +31183,37 @@
     
 
 
-    <!-- http://www.bioassayontology.org/bao#BAO_0002753 -->
+    <!-- http://purl.obolibrary.org/obo/CHEBI_9590 -->
 
-    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002753"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_9590">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tienilic acid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2,3-Dichloro-4-(2-thenoyl)phenoxy)acetic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">(2,3-Dichloro-4-(2-thiophenecarbonyl)phenoxy)acetic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-(2-Theonyl)-2,3-dichlorphenoxyessigsaeure</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4-(2-Thienylketo)-2,3-dichlorophenoxyacetic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thienylic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ticrynafen</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">[2,3-dichloro-4-(2-thienylcarbonyl)phenoxy]acetic acid</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acide tienilique</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acido tienilico</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acidum tienilicum</obo:IAO_0000118>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tienilic acid</obo:IAO_0000118>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tienilic acid</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+    </owl:Class>
     
 
 
     <!-- http://www.bioassayontology.org/bao#BAO_0002929 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002929"/>
+    
+
+
+    <!-- http://www.bioassayontology.org/bao#BAO_0003116 -->
+
+    <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003116"/>
 </rdf:RDF>
 
 
