@@ -27,14 +27,14 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.8.9</owl:versionInfo>
+        <owl:versionInfo>2.8.11</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Caty Chung, Stephan Schurer*</rdfs:comment>
+Saminda Abeyruwan,  Caty Chung,  Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact:
 Stephan Schurer
-Sschurer at miami dot edu</rdfs:comment>
-        <dc:date>Oct 9, 2023</dc:date>
+stephan dot schurer at med dot miami dot edu</rdfs:comment>
+       <dc:date>February 21, 2024</dc:date>
     </owl:Ontology>
 
 
@@ -982,6 +982,10 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
 		<rdfs:label rdf:datatype="&xsd;string">Kinactivation</rdfs:label>
 		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000587"/>
+		<obo:IAO_0000115>maximum rate of inactivation</obo:IAO_0000115>
+		<obo:IAO_0000118>kinact</obo:IAO_0000118>
+		<bao:submitted_by>https://github.com/Scientist328455</bao:submitted_by>
+		<bao:hasXref>https://doi.org/10.1177/1087057116671509</bao:hasXref>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001259 -->
@@ -2132,6 +2136,16 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 		<bao:hasXref>https://github.com/BioAssayOntology/BAO/issues/103</bao:hasXref>
 		<bao:submitted_by>https://github.com/Scientist328455</bao:submitted_by>
 		<obo:IAO_0000118>tissue-to-plasma concentration ratio</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080050 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080050">
+		<rdfs:label rdf:datatype="&xsd;string">kobs</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000487"/>
+		<obo:IAO_0000115>observed rate constant</obo:IAO_0000115>
+		<bao:hasXref>https://doi.org/10.1177/1087057116671509</bao:hasXref>
+		<bao:submitted_by>https://github.com/Scientist328455</bao:submitted_by>
 	</owl:Class>
 
 </rdf:RDF>
