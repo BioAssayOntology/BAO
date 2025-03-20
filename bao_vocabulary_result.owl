@@ -27,14 +27,11 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.8.7</owl:versionInfo>
+        <owl:versionInfo>2.8.13</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
-        <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Caty Chung, Stephan Schurer*</rdfs:comment>
-        <rdfs:comment>Contact:
-Stephan Schurer
-sschurer at med dot miami dot edu</rdfs:comment>
-        <dc:date>August 22, 2023</dc:date>
+        <rdfs:comment>Created by: Caty Chung, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*</rdfs:comment>
+        <rdfs:comment>Contact: Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
+        <dc:date>March20, 2025</dc:date>
     </owl:Ontology>
 
 
@@ -982,6 +979,11 @@ In nucleic acid thermodynamics, it is the temperature at which 50% of the DNA st
 		<rdfs:label rdf:datatype="&xsd;string">Kinactivation</rdfs:label>
 		<rdfs:comment>IRI prefix change from BAO_02000 to BAO_00012 in January 2017</rdfs:comment>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000587"/>
+		<obo:IAO_0000115>maximum rate of inactivation</obo:IAO_0000115>
+		<obo:IAO_0000118>kinact</obo:IAO_0000118>
+		<bao:submitted_by>https://github.com/Scientist328455</bao:submitted_by>
+		<bao:hasXref>https://doi.org/10.1177/1087057116671509</bao:hasXref>
+		<bao:hasXref>https://doi.org/10.1177/1087057116671509</bao:hasXref>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0001259 -->
@@ -2111,6 +2113,81 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 		<obo:IAO_0000115>Electrical current density is a measure of the density of flow of electric charge; it is the electric current per unit area of cross section. Electric current density is a vector-valued quantity.</obo:IAO_0000115>
 		<bao:hasXref>https://qudt.org/vocab/quantitykind/ElectricCurrentDensity</bao:hasXref>
 		<bao:submitted_by>https://github.com/Scientist328455 https://github.com/BioAssayOntology/BAO/issues/62</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080048 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080048">
+		<rdfs:label rdf:datatype="&xsd;string">fraction metabolised</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+		<obo:IAO_0000115>The fraction of the bioavailable dose which has been metabolized.</obo:IAO_0000115>
+		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C184704</bao:hasXref>
+		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080049 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080049">
+		<rdfs:label rdf:datatype="&xsd;string">Kp</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080042"/>
+		<obo:IAO_0000115>Kp values are defined as the ratio of total concentration of compound in the tissue to total concentration of compound in the plasma at steady state.</obo:IAO_0000115>
+		<bao:hasXref>https://github.com/BioAssayOntology/BAO/issues/103</bao:hasXref>
+		<bao:submitted_by>https://github.com/Scientist328455</bao:submitted_by>
+		<obo:IAO_0000118>tissue-to-plasma concentration ratio</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080050 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080050">
+		<rdfs:label rdf:datatype="&xsd;string">kobs</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000487"/>
+		<obo:IAO_0000115>observed rate constant</obo:IAO_0000115>
+		<bao:submitted_by>https://github.com/Scientist328455</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080051 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080051">
+		<rdfs:label rdf:datatype="&xsd;string">physiological endpoint</rdfs:label>
+		<obo:IAO_0000115>A physiological endpoint is a response from either an isolated tissue or organ (i.e. smooth muscle contraction, urine output ) that also serves as an observed enpoint for a bioassay.</obo:IAO_0000115>
+		<obo:IAO_0000115>physiological endpoint</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000179"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080052 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080052">
+		<rdfs:label rdf:datatype="&xsd;string">urine output</rdfs:label>
+		<obo:IAO_0000115>urine output</obo:IAO_0000115>
+		<obo:IAO_0000115>The amount of urine excreted.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080051"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080053 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080053">
+		<rdfs:label rdf:datatype="&xsd;string">relative bias</rdfs:label>
+		<obo:IAO_0000115>relative bias</obo:IAO_0000115>
+		<obo:IAO_0000115>Ratio of functional bias calculated for a test agonist compound/the measured functional bias of a reference agonist compound allowing for normalization within a single assay (parameter: ΔLog τ/KA).</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080042"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0080054 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0080054">
+		<rdfs:label rdf:datatype="&xsd;string">bias factor</rdfs:label>
+		<obo:IAO_0000115>bias factor</obo:IAO_0000115>
+		<obo:IAO_0000115>The bias factor, defined as 10ˆΔΔLogτ/KA(assay1-assay2), quantifies the difference in relative agonist activity between two assays. A higher bias factor indicates a greater distinction in the agonist&apos;s performance across the two assays relative to the reference agonist.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080042"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1016/j.cell.2017.10.035</obo:IAO_0000119>
 	</owl:Class>
 
 </rdf:RDF>

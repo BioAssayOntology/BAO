@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.bioassayontology.org/bao/bao_complete.owl#"
      xml:base="http://www.bioassayontology.org/bao/bao_complete.owl"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -19,15 +19,12 @@
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_core.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_external.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:date>February 21, 2024</dc:date>
-        <owl:versionInfo>2.8.11</owl:versionInfo>
+        <dc:date>March20, 2025</dc:date>
+        <owl:versionInfo>2.8.13</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-     <rdfs:comment>Created by:
-Saminda Abeyruwan,  Caty Chung,  Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*</rdfs:comment>
-        <rdfs:comment>Contact:
-Stephan Schurer
-stephan dot schurer at med dot miami dot edu</rdfs:comment>
+     <rdfs:comment>Created by: Caty Chung, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*</rdfs:comment>
+        <rdfs:comment>Contact: Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
     </owl:Ontology>
 
 
