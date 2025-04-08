@@ -27,15 +27,26 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_detection.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.7.2</owl:versionInfo>
+        <owl:versionInfo>2.8.14</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
-        <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Stephan Schurer*</rdfs:comment>
-        <rdfs:comment>Contact:
-Stephan Schurer
-stephan dot schurer at gmail dot com</rdfs:comment>
-        <dc:date>8 Jul 2021</dc:date>
+        <rdfs:comment>Created by: Caty Chung, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*</rdfs:comment>
+        <rdfs:comment>Contact: Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
+        <dc:date>April 8, 2025</dc:date>
     </owl:Ontology>
+
+
+    <!--
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+	<!-- http://www.bioassayontology.org/bao/submitted_by -->
+
+	<owl:AnnotationProperty rdf:about="http://www.bioassayontology.org/bao/submitted_by"/>
+
 
 
     <!--
@@ -93,10 +104,8 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 		<obo:IAO_0000118>Fluorescence-activated cell sorting</obo:IAO_0000118>
 		<obo:IAO_0000115>Flow cytometry uses the principles of light scattering and fluorescence from fluorochrome molecules to generate specific multi-parameter data from particles and cells in the size range of 0.5um to 40um diameter.
 </obo:IAO_0000115>
-		<obo:IAO_0000118>FACS </obo:IAO_0000118>
-		<obo:IAO_0000118>FACS assay </obo:IAO_0000118>
-		<obo:IAO_0000118>Fluorescence-activated cell sorting </obo:IAO_0000118>
 		<obo:IAO_0000118>flow cytometry assay</obo:IAO_0000118>
+		<obo:IAO_0000118>FACS assay</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000017 -->
@@ -105,7 +114,8 @@ stephan dot schurer at gmail dot com</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">scintillation proximity assay</rdfs:label>
 		<obo:IAO_0000118>SPA</obo:IAO_0000118>
 		<obo:IAO_0000115>Scintillation proximity assay (SPA) eliminates the separation step of unbound radioisotopes and is performed using low energy radioisotopes (3H and 125I) as labels, which have short range electron emission. SPA involves the use of microscopic beads which are first coated with a receptor protein of interest and contain a scintillant. When stimulated by the binding of radio-labeled ligand molecules, they emit light, which is detected by the photomultiplier tube. SPA is suitable for high throughput since the protocol has no wash or separation steps.</obo:IAO_0000115>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000405"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002776"/>
+		<obo:IAO_0000116>[EdgeRewiring: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000035 -->
@@ -203,7 +213,8 @@ Mass spectrometry is used to determine the chemical structure of molecules. The 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000061">
 		<rdfs:label rdf:datatype="&xsd;string">impedance</rdfs:label>
 		<obo:IAO_0000115>Impedance biosensors measure the electrical opposition of an interface in AC steady state with constant DC bias conditions. This is accomplished by imposing a small sinusoidal voltage at a particular frequency and measuring the resulting current; the process can be repeated at different frequencies. The current-voltage ratio gives the impedance.</obo:IAO_0000115>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000163"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0080046"/>
+		<obo:IAO_0000116>[EdgeRewiring: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000062 -->
@@ -336,7 +347,8 @@ To convert between the absorbance and transmittance scales, the following equati
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000401">
 		<rdfs:label rdf:datatype="&xsd;string">filter assay</rdfs:label>
 		<obo:IAO_0000115>This assay is performed to study interaction between a radio-labeled ligand and the receptor. The reaction mixture containing the receptor and radioligand is transferred to a filter plate, washed to remove the unbound radioligand. The bound complex remains on the filter, which can be eluted into the scintillation fluid and the radioactivity measured. Filter assays differ from SPA because a separation of free radioligand and radioligand bound to the receptor is required for measurement.</obo:IAO_0000115>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000405"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002989"/>
+		<obo:IAO_0000116>[EdgeRewiring: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000404 -->
@@ -360,7 +372,8 @@ To convert between the absorbance and transmittance scales, the following equati
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000408">
 		<rdfs:label rdf:datatype="&xsd;string">lysate based</rdfs:label>
 		<obo:IAO_0000115>This assay is performed to study interaction between a radio-labeled ligand and the receptor in presence of cold ligand. The cells exposed to the radioligand and cold ligand are washed to remove the unbound ligands. They are then lysed and the bound radioactivity is counted in a liquid scintillation counter.</obo:IAO_0000115>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000405"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
+		<obo:IAO_0000116>[EdgeRewiring: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000427 -->
@@ -596,7 +609,8 @@ CNT based biosensors are used to detect protein interactions, e.g. protein-DNA, 
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002527">
 		<rdfs:label rdf:datatype="&xsd;string">autoradiography</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000657"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0050005"/>
+		<obo:IAO_0000116>[EdgeRewiring: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002528 -->
@@ -604,7 +618,8 @@ CNT based biosensors are used to detect protein interactions, e.g. protein-DNA, 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002528">
 		<rdfs:label rdf:datatype="&xsd;string">phosphorimaging</rdfs:label>
 		<obo:IAO_0000115>The use of photostimulated luminescence to make a form of X-ray image.</obo:IAO_0000115>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000657"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0050005"/>
+		<obo:IAO_0000116>[EdgeRewiring: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002529 -->
@@ -632,6 +647,172 @@ CNT based biosensors are used to detect protein interactions, e.g. protein-DNA, 
 		<obo:IAO_0000116>Date from BAE: 9/30/2016</obo:IAO_0000116>
 		<obo:IAO_0000115>Any method entailing basic measurements that require no special instrumentation. Examples are measuring a tumor size using calipers, or a subject&apos;s weight using a scale.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000035"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0050004 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050004">
+		<rdfs:label rdf:datatype="&xsd;string">Cherenkov counting method</rdfs:label>
+		<obo:IAO_0000115>Cherenkov counting can be used for detection of hard beta-emitting radionuclides via LSC, but its counting efficiency is sensitive to color quench, and depends on the emitted ß-energy, the sample volume and its concentration, the type of counting vial, rthe efractive index and the type of photocathode.</obo:IAO_0000115>
+		<obo:IAO_0000115>Cherenkov counting method</obo:IAO_0000115>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.3390/ma14216719</obo:IAO_0000119>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000405"/>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0050005 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050005">
+		<rdfs:label rdf:datatype="&xsd;string">radiometric imaging method</rdfs:label>
+		<obo:IAO_0000115>Radiometric imaging techniques are methods used to create images by detecting the decay of radiolabeled atoms, enabling accurate visualization of the distribution of radioactive atoms on two-dimensional (2D) surfaces.</obo:IAO_0000115>
+		<obo:IAO_0000115>radiometric imaging method</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000657"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1016/B978-012379777-3/50005-4</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0050006 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050006">
+		<rdfs:label rdf:datatype="&xsd;string">radiometry separation method</rdfs:label>
+		<obo:IAO_0000115>Method used to separate excess free ligand must be separated rapidly from the bound receptor-ligand complex.</obo:IAO_0000115>
+		<obo:IAO_0000115>radiometry separation method</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002500"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0050007 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050007">
+		<rdfs:label rdf:datatype="&xsd;string">organ bath method</rdfs:label>
+		<obo:IAO_0000115>Traditionally, tissue-organ baths are used for in vitro dose response experiments, used extensively to investigate the physiology and pharmacology of tissue preparations (ring/vessel or strip) from various species (chick, toad, rabbit, rat, guinea-pig, etc.). Tissues or organs have been isolated for these studies include muscle (Smooth or Skeletal), arterial rings or strips, uterine tissue or Vas deferens, ileum, colon, atrial or Ventricle and diaphragm. Typically, these experiments are performed in a temperature controlled environment and perfused with an oxygenated physiological solution, which allows the study of evoked tissue responses to pharmacological drug/agents (Dose Response studies), electrical stimulation or both pharmacological and electrical stimulation.The recorded responses or biological activity usually are the contraction/relaxation of muscle in the tissue: Force (isometric), Displacement (isotonic).</obo:IAO_0000115>
+		<obo:IAO_0000115>organ bath method</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002202"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0050008 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050008">
+		<rdfs:label rdf:datatype="&xsd;string">electrical stimulation method</rdfs:label>
+		<obo:IAO_0000115>Electrical field stimulation, in which the stimulating current is applied uniformly to the tissue, is useful in several experimental situations. All muscle cells are simultaneously, directly, and nearly equally stimulated. Since each cell is excited without the necessity of propagation, field stimulation ensures that all cells become activated in visceral smooth muscle, despite possible lability of cell-to-cell transmission or decremental propagation, and in normally nonpropagating multiunit smooth muscles. When recording contraction of isolated smooth muscles, field stimulation enables the maximal (for a given set of conditions) isometric developed tension to be recorded because all cells are simultaneously in their active state, and the lack of longitudinal propagation minimizes the passive series elastic element contribution from uncontracted cells in series with contracted cells.</obo:IAO_0000115>
+		<obo:IAO_0000115>electrical stimulation method</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0050007"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://link.springer.com/chapter/10.1007/978-1-4684-2751-6_16</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0050009 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050009">
+		<rdfs:label rdf:datatype="&xsd;string">gamma counting method</rdfs:label>
+		<obo:IAO_0000115>Method used for the detection of for detecting gamma radioaction emissions.</obo:IAO_0000115>
+		<obo:IAO_0000115>gamma counting method</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000405"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1177/000456328001700101</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0050010 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050010">
+		<rdfs:label rdf:datatype="&xsd;string">centrifugation</rdfs:label>
+		<obo:IAO_0000115>A process where a rotating machine exposes a specimen to centrifugal force. This process can be used to remove moisture from a specimen, to subject an organism to increased gravitational forces, or to separate the components of heterogeneous mixtures based on density differences.</obo:IAO_0000115>
+		<obo:IAO_0000115>centrifugation</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002500"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://www.eionet.europa.eu/gemet/en/concept/1262</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0050011 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050011">
+		<rdfs:label rdf:datatype="&xsd;string">filter assay method</rdfs:label>
+		<obo:IAO_0000115>Procedures used in binding assays for separation of bound and free ligands.</obo:IAO_0000115>
+		<obo:IAO_0000115>filter assay method</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002500"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1002/jnr.490080405</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0050012 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050012">
+		<rdfs:label rdf:datatype="&xsd;string">dextran-coated charcoal method</rdfs:label>
+		<obo:IAO_0000115>In ligand binding assays and immunoassays, dextran-coated charcoal is commonly used to separate free ligands or hormones from their bound forms, such as antibody-bound hormones. Dextran &quot;coats&quot; the charcoal, creating a sieve-like surface that facilitates this separation. This method is particularly used in immunoassays to distinguish free hormones from those bound to antibodies. Studies have also explored how small molecules interact with charcoal alone or when mixed with substances like dextran, albumin, immunoglobulin (IgG), or insulin to better understand the mechanism of differential adsorption.</obo:IAO_0000115>
+		<obo:IAO_0000115>dextran-coated charcoal method</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002500"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1080/15321818208056986</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0050013 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050013">
+		<rdfs:label rdf:datatype="&xsd;string">proximity-based method</rdfs:label>
+		<obo:IAO_0000115>A proximity-based method is a biophysical approach used to monitor the spatial closeness of proteins or molecules within live cells by exploiting measurable signals generated through interactions, such as energy transfer, between tagged molecular components. For example, techniques like Bioluminescence Resonance Energy Transfer (BRET) utilize the transfer of energy from a donor enzyme (e.g., luciferase) to an acceptor fluorophore, resulting in a quantifiable signal that denotes proximity. These methods are widely applied to study protein-protein interactions, protein-ligand interactions, receptor proximity, and intracellular signaling. Advances in technologies such as NanoBRET and NanoBiT have further expanded the utility and scope of proximity-based methods for various biological applications.</obo:IAO_0000115>
+		<obo:IAO_0000115>proximity-based method</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000035"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.3389/fbioe.2019.00056</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0050014 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050014">
+		<rdfs:label rdf:datatype="&xsd;string">micturition assessment method</rdfs:label>
+		<obo:IAO_0000115>The micturition assessment method is a technique used to evaluate bladder emptying rates and overall bladder motility.</obo:IAO_0000115>
+		<obo:IAO_0000115>micturition assessment method</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002202"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1211/002235702397</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0050015 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050015">
+		<rdfs:label rdf:datatype="&xsd;string">gut transit method</rdfs:label>
+		<obo:IAO_0000115>The gut transit method is a technique used to evaluate gut function by tracking the movement of a substance through the gastrointestinal tract.</obo:IAO_0000115>
+		<obo:IAO_0000115>gut transit method</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002202"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1038/s41598-018-23717-4</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0050016 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050016">
+		<rdfs:label rdf:datatype="&xsd;string">electrical impedance measurement</rdfs:label>
+		<obo:IAO_0000115>Electrical impedance measurement involves determining the difference (delta change) between the applied voltage and the corresponding current.</obo:IAO_0000115>
+		<obo:IAO_0000115>electrical impedance measurement</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002202"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1016/B978-0-323-98337-2.00012-2</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0050017 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0050017">
+		<rdfs:label rdf:datatype="&xsd;string">isometric tension recording method</rdfs:label>
+		<obo:IAO_0000115>isometric tension recording method</obo:IAO_0000115>
+		<obo:IAO_0000115>Isometric tension recording is a technique used to measure tension.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000035"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1007/s11302-024-09993-y</obo:IAO_0000119>
 	</owl:Class>
 
 </rdf:RDF>

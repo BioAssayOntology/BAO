@@ -27,14 +27,11 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.8.8</owl:versionInfo>
+        <owl:versionInfo>2.8.14</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
-        <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Caty Chung, Stephan Schurer*</rdfs:comment>
-        <rdfs:comment>Contact:
-Stephan Schurer
-Sschurer at miami dot edu</rdfs:comment>
-        <dc:date>September 8, 2023</dc:date>
+        <rdfs:comment>Created by: Caty Chung, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*</rdfs:comment>
+        <rdfs:comment>Contact: Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
+        <dc:date>April 8, 2025</dc:date>
     </owl:Ontology>
 
 
@@ -322,7 +319,6 @@ Measure group links to those classes that can vary among different measurements 
 		<obo:IAO_0000118>biochemical specificity</obo:IAO_0000118>
 		<obo:IAO_0000118>selectivity</obo:IAO_0000118>
 		<obo:IAO_0000118>biochemical selectivity</obo:IAO_0000118>
-		<obo:IAO_0000118>specificity</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000492 -->
@@ -935,7 +931,6 @@ percent non-arrested</rdfs:comment>
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002182">
 		<rdfs:label rdf:datatype="&xsd;string">pharmacokinetic assay</rdfs:label>
 		<obo:IAO_0000118>ADME assay</obo:IAO_0000118>
-		<obo:IAO_0000118>ADME assay</obo:IAO_0000118>
 		<obo:IAO_0000118>pharmacokinetics</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000118>PK</obo:IAO_0000118>
@@ -950,7 +945,6 @@ percent non-arrested</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002183">
 		<rdfs:label rdf:datatype="&xsd;string">pharmacodynamic assay</rdfs:label>
-		<obo:IAO_0000118></obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:deprecated>true</obo:deprecated>
 	</owl:Class>
@@ -1453,9 +1447,10 @@ This includes &apos;parameters&apos;, such as &apos;intensity&apos;, &apos;count
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002993">
 		<rdfs:label rdf:datatype="&xsd;string">cytotoxicity assay</rdfs:label>
 		<obo:IAO_0000118>in vitro cytotoxic activity</obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002189"/>
 		<obo:IAO_0000118>cytotox assay</obo:IAO_0000118>
 		<obo:IAO_0000118>cytotoxic activity</obo:IAO_0000118>
+		<obo:IAO_0000116>[EdgeRewiring: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002994 -->
@@ -1914,7 +1909,6 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">protein profiling assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000118>protein profiling</obo:IAO_0000118>
-		<obo:IAO_0000118>protein quantification assay</obo:IAO_0000118>
 		<obo:IAO_0000115>Protein profiling assays can be used to identify and quantify proteins together with their post-translational modifications</obo:IAO_0000115>
 		<obo:IAO_0000118>protein quantification assay</obo:IAO_0000118>
 	</owl:Class>
@@ -2419,7 +2413,6 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>LLCPK1 monolayer assay</obo:IAO_0000118>
 		<obo:IAO_0000118>LLCPK1 monolayer bidirectional permeability</obo:IAO_0000118>
 		<obo:IAO_0000118>LLCPK1 assay</obo:IAO_0000118>
-		<obo:IAO_0000118>LLCPK1 monolayer permeability</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010089 -->
@@ -2980,7 +2973,6 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010137">
 		<rdfs:label rdf:datatype="&xsd;string">BSA binding asssay</rdfs:label>
-		<obo:IAO_0000118></obo:IAO_0000118>
 		<obo:IAO_0000118>2% BSA binding</obo:IAO_0000118>
 		<obo:IAO_0000118>bovine serum albumin binding</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
@@ -4575,6 +4567,445 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000115>Intrinsic metabolic clearance is defined as ratio of maximum metabolism rate, Vmax, and the Michaelis-Menten constant, Km.</obo:IAO_0000115>
 		<bao:hasXref>http://www.owl-ontologies.com/2009/11/5/PKO.owl#CLint</bao:hasXref>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013021 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013021">
+		<rdfs:label rdf:datatype="&xsd;string">guinea pig ileum (GPI) assay</rdfs:label>
+		<obo:IAO_0000115>Guinea pig ileum assay measures the inhibitory effect of opioid receptor activation on electrically stimulated smooth muscle contractions, reflecting the reduction in excitatory neurotransmitter release in isolate tissue (guinea pig ileum, GPI). GPI assay investigates selectivity of Mu opioid receptors in guinea pig ileum.</obo:IAO_0000115>
+		<obo:IAO_0000115>guinea pig ileum (GPI) assay</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0013039"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1073/pnas.89.24.11871</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013022 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013022">
+		<rdfs:label rdf:datatype="&xsd;string">mouse vas deferens (MVD) assay</rdfs:label>
+		<obo:IAO_0000115>Mouse vas deferens assay measures the inhibitory effect of opioid receptor activation on electrically stimulated smooth muscle contractions, reflecting the reduction in excitatory neurotransmitter release in isolate tissue (mouse vas deferens, MVD). MVD assay investigates selectivity of delta opioid receptors in mouse vas deferens.</obo:IAO_0000115>
+		<obo:IAO_0000115>mouse vas deferens (MVD) assay</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0013039"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1073/pnas.89.24.11871</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013023 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013023">
+		<rdfs:label rdf:datatype="&xsd;string">rabbit vas deferens (RVD) assay</rdfs:label>
+		<obo:IAO_0000115>Smooth muscle contraction assay measures the inhibitory effect of opioid receptor activation on electrically stimulated smooth muscle contractions, reflecting the reduction in excitatory neurotransmitter release in isolate tissue (rabbit vas deferens, RVD assay investigates selectivity of kappa opioid receptors in mouse vas deferens).</obo:IAO_0000115>
+		<obo:IAO_0000115>rabbit vas deferens (RVD) assay</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0013039"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.3791/52324</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013024 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013024">
+		<rdfs:label rdf:datatype="&xsd;string">antinociception assay</rdfs:label>
+		<obo:IAO_0000115>The term antinociception refers to the reduction of pain states observed in nonhuman animals, where evaluating the subjective experience of pain is not feasible.</obo:IAO_0000115>
+		<obo:IAO_0000115>antinociception assay</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002765"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1016/j.pharmthera.2021.107961</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013025 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013025">
+		<rdfs:label rdf:datatype="&xsd;string">organ function assay</rdfs:label>
+		<obo:IAO_0000115>Organ function assays are based on observing outcomes based on organ function such as micturition assays (urine output) or gut function assays (gut transit, or gut motility assays) in live animals.</obo:IAO_0000115>
+		<obo:IAO_0000115>organ function assay</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000010"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1080/10790268.2019.1661697</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013026 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013026">
+		<rdfs:label rdf:datatype="&xsd;string">renal function assay</rdfs:label>
+		<obo:IAO_0000115>Organ function assays are based on observing outcomes based on organ function such as micrition assays (urine output) or gut function assays (gut transit, or gut motility assays) in live animals.</obo:IAO_0000115>
+		<obo:IAO_0000115>renal function assay</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0013025"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1080/10790268.2019.1661697</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013027 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013027">
+		<rdfs:label rdf:datatype="&xsd;string">micturition assay</rdfs:label>
+		<obo:IAO_0000115>Kidney function assays (micturition assays) are assays that measure urination or voiding behaviour of animals.</obo:IAO_0000115>
+		<obo:IAO_0000115>micturition assay</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0013026"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1152/ajprenal.00350.2018</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013028 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013028">
+		<rdfs:label rdf:datatype="&xsd;string">gut function assay</rdfs:label>
+		<obo:IAO_0000115>Gut function assays in preclinical animal models evaluate parameters associated with gut function such as motility in colon sections, transit throughout the gastrointestinal system, or general status of gut microbiome.</obo:IAO_0000115>
+		<obo:IAO_0000115>gut function assay</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000010"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1053/j.gastro.2013.01.047</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013029 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013029">
+		<rdfs:label rdf:datatype="&xsd;string">gut transit assay</rdfs:label>
+		<obo:IAO_0000115>Gut transit assays evaluate the duration of time it takes for a substance (i.e. charcoal meal in gastrointestinal motility test) to move through the entire intestestinal tract.</obo:IAO_0000115>
+		<obo:IAO_0000115>gut transit assay</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0013028"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1038/s41598-018-23717-4</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013030 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013030">
+		<rdfs:label rdf:datatype="&xsd;string">gut motility assay</rdfs:label>
+		<obo:IAO_0000115>Gut motility assays in isolated sections of colon monitor characteristics of migrating contractions recorded in isolated colon, but do not reflect gut transit throughout the entire gastrointestinal system.</obo:IAO_0000115>
+		<obo:IAO_0000115>gut motility assay</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0013028"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1038/s41598-018-23717-4</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013031 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013031">
+		<rdfs:label rdf:datatype="&xsd;string">accumulation assay</rdfs:label>
+		<obo:IAO_0000115>accumulation assay</obo:IAO_0000115>
+		<obo:IAO_0000115>Accumulation assays are techniques used to measure receptor signaling activities by directly or indirectly quantifying intracellular molecules, such as second messengers.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013032 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013032">
+		<rdfs:label rdf:datatype="&xsd;string">second messenger accumulation assay</rdfs:label>
+		<obo:IAO_0000115>second messenger accumulation assay</obo:IAO_0000115>
+		<obo:IAO_0000115>Accumulation assays are techniques used to measure receptor signaling activities by directly or indirectly quantifying intracellular levels of second messengers.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0013031"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013033 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013033">
+		<rdfs:label rdf:datatype="&xsd;string">cAMP accumulation assay</rdfs:label>
+		<obo:IAO_0000115>cAMP accumulation assays are methods used to measure receptor signaling activities by directly or indirectly quantifying intracellular cAMP levels. These assays often involve forskolin-stimulated cAMP production, where forskolin activates adenylyl cyclase to amplify cAMP levels following the activation of the stimulatory G protein (Gs).</obo:IAO_0000115>
+		<obo:IAO_0000115>cAMP accumulation assay</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0013032"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1016/B978-0-12-381298-8.00021-6</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013034 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013034">
+		<rdfs:label rdf:datatype="&xsd;string">label-free receptor assay</rdfs:label>
+		<obo:IAO_0000115>Label-free receptor assays commonly involve recording real-time, integrated signals from whole cells. These comprehensive measurements capture the complexity of receptor signaling, enabling the study of receptor systems biology, receptor cross-talk, and the integration of receptor signaling pathways.</obo:IAO_0000115>
+		<obo:IAO_0000115>label-free receptor assay</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1016/j.ddtec.2010.05.001</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013035 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013035">
+		<rdfs:label rdf:datatype="&xsd;string">thermal nociception assay</rdfs:label>
+		<obo:IAO_0000115>Pre-clinical assays that evaluate thermal (hot and cold) pain thresholds in animals.</obo:IAO_0000115>
+		<obo:IAO_0000115>thermal nociception assay</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0013024"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1093/gerona/glr210</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013036 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013036">
+		<rdfs:label rdf:datatype="&xsd;string">chemical nociception assay</rdfs:label>
+		<obo:IAO_0000115>Pre-clinical assays that induce chemical injuries in test animals to evaluate chemical pain thresholds (more commonly chemically induced inflammation).</obo:IAO_0000115>
+		<obo:IAO_0000115>chemical nociception assay</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0013024"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1016/0304-3959(92)90003-t</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013037 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013037">
+		<rdfs:label rdf:datatype="&xsd;string">mechanical nociception assay</rdfs:label>
+		<obo:IAO_0000115>A preclinical mechanical nociception assay is used to evaluate sensitivity to mechanical stimuli, classifying responses into dynamic (triggered by brushing), punctate (triggered by touch), and static (triggered by pressure) nociception. Dynamic mechanical sensitivity is typically assessed by gently brushing the skin with tools such as a cotton bud, paintbrush, or cotton ball, mimicking conditions that may evoke nociceptive responses, including contact with clothing, bed sheets, or towels.</obo:IAO_0000115>
+		<obo:IAO_0000115>mechanical nociception assay</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0013024"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.3389/fnmol.2017.00284</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013038 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013038">
+		<rdfs:label rdf:datatype="&xsd;string">[35S]GTPgammaS radioligand binding assay</rdfs:label>
+		<obo:IAO_0000115>The [35S]GTPγS assay is an assay that evaluates G protein activation triggered by agonist binding to a GPCR. It does so by measuring the binding of the non-hydrolyzable [35S]GTPγS analog to Gα subunits, providing a functional readout of receptor occupancy at one of the earliest receptor-mediated signaling events. This assay is done in many different formats including in cell lines, cell membrane, tissue homogenate, and SPA.</obo:IAO_0000115>
+		<obo:IAO_0000115>[35S]GTPgammaS radioligand binding assay</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002776"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1016/j.lfs.2003.07.005</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013039 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013039">
+		<rdfs:label rdf:datatype="&xsd;string">smooth muscle contraction assay</rdfs:label>
+		<obo:IAO_0000115>Smooth muscle assay are organ-bath based ex vivo assay that measure the inhibition or activation of electrically stimulated twitch tissue isolated in an organ bath. The assay endpoint is the measurement of the isometric contraction of an isolated smooth muscle.</obo:IAO_0000115>
+		<obo:IAO_0000115>smooth muscle contraction assay</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://dx.doi.org/10.3791/52324-v</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013040 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013040">
+		<rdfs:label rdf:datatype="&xsd;string">hERG patch clamp assay</rdfs:label>
+		<obo:IAO_0000115>hERG patch clamp assay is a bioassay that uses patch clamp electrophysiology to measure the activity of hERG potassium channels in vitro. It assesses the extent to which a compound inhibits hERG channel currents, providing a functional evaluation of a drug&#146;s potential to cause QT interval prolongation and associated cardiac arrhythmias.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1038/nature04710</obo:IAO_0000119>
+		<obo:IAO_0000118>hERG patch clamp screen</obo:IAO_0000118>
+		<obo:IAO_0000118>hERG patch clamp</obo:IAO_0000118>
+		<obo:IAO_0000118>hERG ephys</obo:IAO_0000118>
+		<obo:IAO_0000118>hERG automated patch clamp</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013041 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013041">
+		<rdfs:label rdf:datatype="&xsd;string">hERG binding assay</rdfs:label>
+		<obo:IAO_0000115>hERG binding assay is a bioassay that measures the binding affinity of a compound to hERG (human Ether-à-go-go-Related Gene) potassium channels using radiolabeled ligands. This assay serves as an in vitro screening method to assess the potential of a drug to interact with hERG channels, providing early insight into the risk of drug-induced QT interval prolongation.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1016/S0008-6363(02)00846-5</obo:IAO_0000119>
+		<obo:IAO_0000118>hERG dofetilide binding</obo:IAO_0000118>
+		<obo:IAO_0000118>hERG binding</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013042 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013042">
+		<rdfs:label rdf:datatype="&xsd;string">Langendorff assay</rdfs:label>
+		<obo:IAO_0000115>Langendorff assay is an ex vivo bioassay that measures cardiac function by perfusing an isolated heart in a controlled system to assess the effects of compounds on parameters such as heart rate, contractility, coronary flow, and electrophysiological activity. This assay enables the evaluation of direct cardiac responses, including arrhythmogenic potential and myocardial performance, independent of systemic influences.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1016/S0735-1097(02)02963-4</obo:IAO_0000119>
+		<obo:IAO_0000118>Isolated guinea pig heart QT assay</obo:IAO_0000118>
+		<obo:IAO_0000118>Langendorff assay</obo:IAO_0000118>
+		<obo:IAO_0000118>lang</obo:IAO_0000118>
+		<obo:IAO_0000118>perfused heart assay</obo:IAO_0000118>
+		<obo:IAO_0000118>Isolated heart QT assay</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013043 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013043">
+		<rdfs:label rdf:datatype="&xsd;string">isolated aorta assay</rdfs:label>
+		<obo:IAO_0000115>Isolated aorta assay is an ex vivo bioassay that evaluates the contractile and vasorelaxant responses of isolated aortic tissue exposed to test compounds. By measuring changes in vascular tension, this assay assesses the effects of drugs on smooth muscle function, vascular reactivity, and potential cardiovascular liabilities.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1161/01.ATV.0000184760.14028.54</obo:IAO_0000119>
+		<obo:IAO_0000118>isolated aorta assay</obo:IAO_0000118>
+		<obo:IAO_0000118>contraction assay</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013044 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013044">
+		<rdfs:label rdf:datatype="&xsd;string">cardiomyocyte repolarization assay</rdfs:label>
+		<obo:IAO_0000115>Cardiomyocyte repolarization assay is a bioassay that evaluates the effects of compounds on the repolarization phase of action potentials in cardiac cells. By measuring changes in action potential duration or ionic currents in cardiomyocytes, this assay helps assess the potential for drug-induced arrhythmias, including QT interval prolongation.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1016/j.celrep.2018.08.016</obo:IAO_0000119>
+		<obo:IAO_0000118>cardiomyocyte repolarization assay</obo:IAO_0000118>
+		<obo:IAO_0000118>myocyte repolarization assay</obo:IAO_0000118>
+		<obo:IAO_0000118>myocyte repolarization</obo:IAO_0000118>
+		<obo:IAO_0000118>cardiomyocyte repolarization</obo:IAO_0000118>
+		<obo:IAO_0000118>cardiomyocyte repolarization study</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013045 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013045">
+		<rdfs:label rdf:datatype="&xsd;string">PTZ-induced convulsion assay</rdfs:label>
+		<obo:IAO_0000115>PTZ-induced convulsion assay is an in vivo bioassay used to evaluate the pro- or anti-convulsant effects of compounds by measuring seizure activity induced by pentylenetetrazol (PTZ), a chemical convulsant. This assay helps assess a drug&#146;s potential impact on central nervous system excitability and seizure threshold.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1016/j.ejphar.2009.03.015</obo:IAO_0000119>
+		<obo:IAO_0000118>PTZ-induced convulsions</obo:IAO_0000118>
+		<obo:IAO_0000118>PTZ-induced convulsion</obo:IAO_0000118>
+		<obo:IAO_0000118>pentylenetetrazole-induced convusion</obo:IAO_0000118>
+		<obo:IAO_0000118>PTZ-induced seizures</obo:IAO_0000118>
+		<obo:IAO_0000118>PTZ-induced seizure</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013046 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013046">
+		<rdfs:label rdf:datatype="&xsd;string">platelet aggregation assay</rdfs:label>
+		<obo:IAO_0000115>Platelet aggregation assay is a bioassay used to measure the extent and rate at which platelets clump together in response to agonists such as ADP, collagen, or thrombin. This assay evaluates the effects of compounds on platelet function and is commonly used to assess pro-thrombotic or anti-thrombotic potential.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>Michelson, A. D. (2012). Platelets (3rd ed.). Elsevier</obo:IAO_0000119>
+		<obo:IAO_0000118>platelet aggregation</obo:IAO_0000118>
+		<obo:IAO_0000118>platelet function assay</obo:IAO_0000118>
+		<obo:IAO_0000118>platelet aggregometry assay</obo:IAO_0000118>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013047 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013047">
+		<rdfs:label rdf:datatype="&xsd;string">action potential duration assay</rdfs:label>
+		<obo:IAO_0000115>Action potential duration assay is a bioassay that measures the time course of an action potential in excitable cells, particularly cardiomyocytes or neurons, to assess how compounds affect the duration of depolarization and repolarization phases. This assay is used to evaluate drug-induced changes in cardiac or neuronal electrophysiology.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1038/sj.bjp.0702674</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013048 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013048">
+		<rdfs:label rdf:datatype="&xsd;string">multichannel ion channel screening</rdfs:label>
+		<obo:IAO_0000115>A bioassay that evaluates the effects of compounds on multiple ion channels simultaneously to assess potential drug-induced disruptions in ion channel function. This screening approach is commonly used in safety pharmacology to predict cardiac or neurological liabilities associated with ion channel modulation.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1016/j.vascn.2013.01.004</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013049 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013049">
+		<rdfs:label rdf:datatype="&xsd;string">telemetry ECG in conscious animals</rdfs:label>
+		<obo:IAO_0000115>A bioassay that involves continuous electrocardiogram monitoring in freely moving, conscious animals using implanted telemetry devices. This assay is used to assess cardiac electrophysiological parameters, including heart rate, rhythm, and QT interval, to evaluate the potential cardiac effects of drug candidates in a physiologically relevant, unrestrained setting.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002184"/>
+		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1016/j.vascn.2015.04.004</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013050 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013050">
+		<rdfs:label rdf:datatype="&xsd;string">EEG recording assay</rdfs:label>
+		<obo:IAO_0000115>A bioassay that records electrical activity in the brain through electroencephalography (EEG) to monitor neuronal function and detect abnormal brain activity such as seizures. This assay is commonly used in safety pharmacology studies to evaluate the potential neurotoxic or proconvulsant effects of drug candidates.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1016/j.vascn.2016.03.001</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013051 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013051">
+		<rdfs:label rdf:datatype="&xsd;string">whole-body plethysmography</rdfs:label>
+		<obo:IAO_0000115>A non-invasive bioassay used to assess respiratory function by measuring parameters such as respiratory rate, tidal volume, and airflow in conscious, unrestrained animals. This method enables evaluation of drug-induced effects on pulmonary function and is commonly used in safety pharmacology for respiratory assessments.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1186/1465-9921-8-63</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013052 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013052">
+		<rdfs:label rdf:datatype="&xsd;string">bronchoconstriction assay</rdfs:label>
+		<obo:IAO_0000115>A bioassay that evaluates the effect of compounds on airway constriction by measuring changes in airway resistance or smooth muscle contraction, typically in response to bronchoconstrictive agents. This assay is used to assess drug-induced effects on respiratory function, particularly in the context of asthma or airway hyperresponsiveness.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>Raeburn, D., &amp; Giembycz, M. A. (1994). Pharmacology of airway smooth muscle. In Handbook of Experimental Pharmacology (Vol. 98, pp. 447&#150;472). Springer</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013053 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013053">
+		<rdfs:label rdf:datatype="&xsd;string">nephrotoxicity biomarker assay</rdfs:label>
+		<obo:IAO_0000115>A bioassay used to detect kidney injury by measuring specific biomarkers indicative of nephrotoxic effects. These assays assess the impact of compounds on renal function or structure through the quantification of biomarkers such as KIM-1, NGAL, or cystatin C, providing early and sensitive detection of drug-induced kidney toxicity.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002189"/>
+		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>doi: 10.4062/biomolther.2012.20.3.268</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013054 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013054">
+		<rdfs:label rdf:datatype="&xsd;string">Ames test</rdfs:label>
+		<obo:IAO_0000115>A bioassay that assesses the mutagenic potential of chemical compounds by measuring their ability to induce mutations in the DNA of Salmonella typhimurium or Escherichia coli strains that are deficient in DNA repair. This assay is widely used in drug safety testing to predict genotoxicity and potential carcinogenicity of new compounds.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002189"/>
+		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1016/S0027-5107(00)00064-6</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013055 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013055">
+		<rdfs:label rdf:datatype="&xsd;string">micronucleus assay</rdfs:label>
+		<obo:IAO_0000115>A bioassay that detects chromosomal damage by measuring the formation of micronuclei, which are small extranuclear bodies containing chromosomal fragments or whole chromosomes located in the cytoplasm of interphase cells. This assay is widely used in toxicology to assess the genotoxic potential of chemical compounds in vitro or in vivo.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002189"/>
+		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1038/nprot.2007.77</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013056 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013056">
+		<rdfs:label rdf:datatype="&xsd;string">LDH release assay</rdfs:label>
+		<obo:IAO_0000115>LDH release assay is a bioassay that measures the release of lactate dehydrogenase (LDH) from damaged or lysed cells into the extracellular environment. It is commonly used to assess cytotoxicity by quantifying the loss of membrane integrity following chemical or biological exposure.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002993"/>
+		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000119>https://doi.org/10.1016/0022-1759(88)90310-9</obo:IAO_0000119>
 	</owl:Class>
 
 </rdf:RDF>
