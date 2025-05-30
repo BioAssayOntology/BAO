@@ -27,11 +27,11 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_format.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.8.13</owl:versionInfo>
+        <owl:versionInfo>2.8.15</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by: Caty Chung, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact: Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
-        <dc:date>March20, 2025</dc:date>
+        <dc:date>May 30, 2025</dc:date>
     </owl:Ontology>
 
 
@@ -355,11 +355,10 @@
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020012">
 		<rdfs:label rdf:datatype="&xsd;string">tissue membrane format</rdfs:label>
 		<obo:IAO_0000115>Tissue membrane format (often using morter and pestal to homogenize tissue) is considered a cell-free subcellular format that contains issues and broken down components of cells.</obo:IAO_0000115>
-		<obo:IAO_0000115>tissue membrane format</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
 		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
-		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
 		<obo:IAO_0000119>https://doi.org/10.1016/B978-0-12-411604-7.00009-X</obo:IAO_0000119>
+		<obo:IAO_0000116>[DefinitionUpdate: BAO v 2.8.15 (May 2025)] [NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0020013 -->
@@ -367,11 +366,10 @@
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020013">
 		<rdfs:label rdf:datatype="&xsd;string">synaptosomal fraction format</rdfs:label>
 		<obo:IAO_0000115>The synaptosomal fraction represents neuronal components, specifically crude synaptosomes, which are obtained by breaking open neural tissue and centrifuging it to separate synaptic structures (from neurons) from the soluble cytosolic material. This fraction contains synaptosomes but may also include other cellular contaminants until further purification steps are applied.</obo:IAO_0000115>
-		<obo:IAO_0000115>synaptosomal fraction format</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
 		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
-		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
 		<obo:IAO_0000119>https://doi.org/10.1016/j.xpro.2023.102061</obo:IAO_0000119>
+		<obo:IAO_0000116>[DefinitionUpdate: BAO v 2.8.15 (May 2025)] [NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0020014 -->
@@ -379,11 +377,10 @@
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020014">
 		<rdfs:label rdf:datatype="&xsd;string">synaptosomal P2 fraction format</rdfs:label>
 		<obo:IAO_0000115>The P2 synaptosomal fraction is a crude neuronal sub-cellular fraction enriched in synaptosomes, obtained by centrifuging lysate at 10,000 × g to separate the cytosol (S2) from the pellet, which is resuspended in Buffer B.</obo:IAO_0000115>
-		<obo:IAO_0000115>synaptosomal P2 fraction format</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0020013"/>
 		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
-		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
 		<obo:IAO_0000119>https://doi.org/10.1016/j.xpro.2023.102061</obo:IAO_0000119>
+		<obo:IAO_0000116>[DefinitionUpdate: BAO v 2.8.15 (May 2025)] [NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 </rdf:RDF>
