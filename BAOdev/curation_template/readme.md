@@ -5,3 +5,5 @@ Bioassay Ontology is systematically curated using predefined templates. These te
 
 
 The curation template, available as a spreadsheet, can be downloaded from here.
+
+Google dev https://drive.google.com/drive/folders/1SgCjqcpWq4CXj34rDZD5AOI0qJ3VkrN2
