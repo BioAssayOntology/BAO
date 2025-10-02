@@ -7,7 +7,8 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:obo="http://purl.obolibrary.org/obo/">
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:efo="http://www.ebi.ac.uk/efo/">
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/external/BAO_CLO_import.owl"/>
     
 
@@ -45,7 +46,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
         <rdfs:label>definition source</rdfs:label>
         <rdfs:label xml:lang="en">definition source</rdfs:label>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
+        <obo:IAO_0000119>Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
@@ -54,8 +55,8 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rdfs:isDefinedBy</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Is defined by.</obo:IAO_0000115>
+        <rdfs:label>rdfs:isDefinedBy</rdfs:label>
+        <obo:IAO_0000115>Is defined by.</obo:IAO_0000115>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114">
         <rdfs:label>has curation status</rdfs:label>
@@ -93,20 +94,19 @@
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">see also</rdfs:label>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://www.w3.org/2000/01/rdf-schema#seeAlso</oboInOwl:hasDbXref>
+        <rdfs:label>see also</rdfs:label>
         <oboInOwl:is_metadata_tag rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</oboInOwl:is_metadata_tag>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:shorthand>seeAlso</oboInOwl:shorthand>
         <oboInOwl:hasDbXref>seeAlso</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>http://www.w3.org/2000/01/rdf-schema#seeAlso</oboInOwl:hasDbXref>
         <oboInOwl:id>seeAlso</oboInOwl:id>
+        <oboInOwl:hasOBONamespace>uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasDbXref rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label>textual definition</rdfs:label>
         <rdfs:label>definition</rdfs:label>
         <rdfs:label xml:lang="en">definition</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The official definition.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2012-04-05: 
 Barry Smith
 
@@ -131,13 +131,14 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000115>The official definition.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">definition</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
         <rdfs:label>database_cross_reference</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Reference database or publication source.</obo:IAO_0000115>
+        <obo:IAO_0000115>Reference database or publication source.</obo:IAO_0000115>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
         <rdfs:label>example of usage</rdfs:label>
@@ -170,13 +171,13 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">id</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifier for an individual entity.</obo:IAO_0000115>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</obo:IAO_0000115>
+        <rdfs:label>id</rdfs:label>
+        <obo:IAO_0000115>An identifier for an individual entity.</obo:IAO_0000115>
+        <obo:IAO_0000115>An identifier is an information content entity that is the outcome of a dubbing process and is used to refer to one instance of entity shared by a group of people to refer to that individual entity.</obo:IAO_0000115>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">comment</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Comment.</obo:IAO_0000115>
+        <rdfs:label>comment</rdfs:label>
+        <obo:IAO_0000115>Comment.</obo:IAO_0000115>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/CLO_0000178">
         <rdfs:label xml:lang="en">LINCS ID</rdfs:label>
@@ -185,8 +186,8 @@ We also have the outstanding issue of how to aim different definitions to differ
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
         <rdfs:label>has_obo_namespace</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name space of the ontology.</obo:IAO_0000115>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</rdfs:comment>
+        <rdfs:comment>disease_ontology</rdfs:comment>
+        <obo:IAO_0000115>Name space of the ontology.</obo:IAO_0000115>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#is_metadata_tag"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/CLO_0037244">
@@ -198,10 +199,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#shorthand">
         <rdfs:label>shorthand</rdfs:label>
     </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.ebi.ac.uk/efo/alternative_term"/>
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label">
         <rdfs:label>label</rdfs:label>
         <rdfs:label xml:lang="en">label</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A human readable name for this class.</obo:IAO_0000115>
+        <obo:IAO_0000115>A human readable name for this class.</obo:IAO_0000115>
     </owl:AnnotationProperty>
     
 
@@ -231,11 +233,11 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/CLO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000001">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell line cell</rdfs:label>
+        <rdfs:label>cell line cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003114"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell line cell</obo:IAO_0000111>
         <obo:IAO_0000115>A cultured cell that is part of a cell line - a stable and homogeneous population of cells with a common biological origin and propagation history in culture
 </obo:IAO_0000115>
+        <obo:IAO_0000111>cell line cell</obo:IAO_0000111>
         <obo:IAO_0000117>Yongqun He, Matthew Brush, Sirarat Sarntivijai, Alexander Diehl, Jie Zheng, Yu Lin, Bjoern Peters</obo:IAO_0000117>
         <rdfs:comment>A &#39;cell line cell&#39; is a part of a cell line established through the passaging/selection of a primary cultured cells or the experimental modification of an existing cell line. New types of cell line cells are established after sufficient passaging of a primary culture to establish a stable and homogenous population that qualifies as a line (typically 1-20 passages), or following some spontaneous or experimental modification that confers novel characteristics to an existing line. A cell line cell typically has mutations of five or more genes compared to the original cell that derives the cell line cell. Some gene mutations may turn on some oncogenes.  Cell line cells can be in active culture, stored in a quiescent state for future use (e.g. frozen in liquid nitrogen), or applied in experimental procedures.  </rdfs:comment>
         <obo:IAO_0000115 xml:lang="en">A cultured cell that is part of a cell line - a stable and homogeneous population of cells with a common biological origin and propagation history in culture</obo:IAO_0000115>
@@ -248,9 +250,9 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/CLO_0000019 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0000019">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immortal cell line cell</rdfs:label>
+        <rdfs:label>immortal cell line cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000001"/>
-        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">immortal cell line cell</obo:IAO_0000111>
+        <obo:IAO_0000111>immortal cell line cell</obo:IAO_0000111>
         <obo:IAO_0000117>Yongqun He, Matthew Brush, Allen Xiang, Asiyah Yu Lin,  Sirarat Sarntivijai, James Malone, Jie Zheng, Tomasz Adamusiak</obo:IAO_0000117>
         <obo:IAO_0000118>continuous cell line cell</obo:IAO_0000118>
         <obo:IAO_0000115>A cell line cell that is expected to be capable of an unlimited number of divisions, and is thus able to support indefinite propagation in vitro as part of an immortal cell line.</obo:IAO_0000115>
@@ -291,7 +293,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0001008 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001008">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">697 cell</rdfs:label>
+        <rdfs:label>697 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>CVCL: CVCL_0079</rdfs:seeAlso>
         <rdfs:seeAlso>CHEMBL: CHEMBL3308147</rdfs:seeAlso>
@@ -309,7 +311,6 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001230">
         <rdfs:label>HEK293</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
-        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">293 cell</obo:IAO_0000118>
         <obo:IAO_0000118>293 HEK</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://web.expasy.org/cellosaurus/CVCL_0045</obo:IAO_0000119>
         <obo:IAO_0000119>WEB: https://www.atcc.org/Products/All/CRL-1573.aspx</obo:IAO_0000119>
@@ -318,6 +319,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
         <obo:IAO_0000119>WEB: http://hek293.com/</obo:IAO_0000119>
         <rdfs:seeAlso>RRID: CVCL_0045</rdfs:seeAlso>
         <rdfs:seeAlso>ATCC: CRL-1573</rdfs:seeAlso>
+        <obo:IAO_0000118>293 cell</obo:IAO_0000118>
         <rdfs:seeAlso xml:lang="en">BTO: BTO_0000007</rdfs:seeAlso>
         <rdfs:seeAlso xml:lang="en">EFO: EFO_0001182)</rdfs:seeAlso>
         <obo:IAO_0000118>HEK-293</obo:IAO_0000118>
@@ -330,7 +332,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0001235 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001235">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">293T/17 cell</rdfs:label>
+        <rdfs:label>293T/17 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: CRL-11268</rdfs:seeAlso>
         <obo:IAO_0000118>293T/17</obo:IAO_0000118>
@@ -343,7 +345,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0001601 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001601">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A549 cell</rdfs:label>
+        <rdfs:label>A549 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>CVCL: CVCL_0023</rdfs:seeAlso>
         <rdfs:seeAlso>HyperCLDB: cl207</rdfs:seeAlso>
@@ -360,7 +362,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0001654 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001654">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ACHN cell</rdfs:label>
+        <rdfs:label>ACHN cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>CVCL: CVCL_1067</rdfs:seeAlso>
         <obo:CLO_0000178>LCL-1756</obo:CLO_0000178>
@@ -376,7 +378,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0001716 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001716">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">AML12 cell</rdfs:label>
+        <rdfs:label>AML12 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: CRL-2254</rdfs:seeAlso>
         <obo:IAO_0000118>AML12</obo:IAO_0000118>
@@ -388,7 +390,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0001842 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0001842">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BA/F3 cell</rdfs:label>
+        <rdfs:label>BA/F3 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000118>BA/F3</obo:IAO_0000118>
         <rdfs:seeAlso>HyperCLDB: cl5028</rdfs:seeAlso>
@@ -400,7 +402,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0002044 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002044">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BT-549 cell</rdfs:label>
+        <rdfs:label>BT-549 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: HTB-122</rdfs:seeAlso>
         <rdfs:comment>disease: ductal carcinoma</rdfs:comment>
@@ -417,7 +419,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0002115 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002115">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">C-33 A cell</rdfs:label>
+        <rdfs:label>C-33 A cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: HTB-31</rdfs:seeAlso>
         <obo:CLO_0000178>LCL-1300</obo:CLO_0000178>
@@ -430,7 +432,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0002172 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002172">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caco-2 cell</rdfs:label>
+        <rdfs:label>Caco-2 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>MeSH: D018938</rdfs:seeAlso>
         <rdfs:seeAlso>EFO: EFO_0001099</rdfs:seeAlso>
@@ -449,7 +451,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0002175 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002175">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CAKI-1 cell</rdfs:label>
+        <rdfs:label>CAKI-1 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000118>CAKI-1</obo:IAO_0000118>
         <rdfs:seeAlso>HyperCLDB: cl623</rdfs:seeAlso>
@@ -461,7 +463,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0002176 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002176">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caki-1 cell</rdfs:label>
+        <rdfs:label>Caki-1 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:CLO_0000178>LCL-1774</obo:CLO_0000178>
         <rdfs:comment>disease: clear cell carcinoma (kidney primary)</rdfs:comment>
@@ -478,7 +480,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0002191 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002191">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calu-1 cell</rdfs:label>
+        <rdfs:label>Calu-1 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl632</rdfs:seeAlso>
         <rdfs:seeAlso>HyperCLDB: cl631</rdfs:seeAlso>
@@ -498,7 +500,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0002334 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002334">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CCRF-CEM cell</rdfs:label>
+        <rdfs:label>CCRF-CEM cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000118>CCRF-CEM</obo:IAO_0000118>
         <rdfs:seeAlso>EFO: EFO_0002128</rdfs:seeAlso>
@@ -514,7 +516,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0002420 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002420">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHL-1 cell</rdfs:label>
+        <rdfs:label>CHL-1 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000118>CHL-1</obo:IAO_0000118>
         <rdfs:seeAlso>ATCC: CRL-9446</rdfs:seeAlso>
@@ -526,7 +528,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0002421 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002421">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHO cell</rdfs:label>
+        <rdfs:label>CHO cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>MeSH: D016466</rdfs:seeAlso>
         <rdfs:seeAlso>HyperCLDB: cl721</rdfs:seeAlso>
@@ -540,7 +542,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0002462 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002462">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CHO-K1 cell</rdfs:label>
+        <rdfs:label>CHO-K1 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000118>CHO-K1</obo:IAO_0000118>
         <rdfs:seeAlso>ATCC: CCL-61</rdfs:seeAlso>
@@ -552,7 +554,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0002544 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002544">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COLO 205 cell</rdfs:label>
+        <rdfs:label>COLO 205 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:comment>disease: colorectal adenocarcinoma (colon primary)</rdfs:comment>
         <obo:CLO_0000178>LCL-1173</obo:CLO_0000178>
@@ -570,7 +572,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0002597 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002597">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">COS-7 cell</rdfs:label>
+        <rdfs:label>COS-7 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: CRL-1651</rdfs:seeAlso>
         <rdfs:seeAlso>MeSH: D019556</rdfs:seeAlso>
@@ -583,7 +585,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0002785 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002785">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DLD-1 cell</rdfs:label>
+        <rdfs:label>DLD-1 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:comment>disease: colorectal adenocarcinoma</rdfs:comment>
         <rdfs:seeAlso>ATCC: CCL-221</rdfs:seeAlso>
@@ -599,7 +601,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0002840 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0002840">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DU 145 cell</rdfs:label>
+        <rdfs:label>DU 145 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:comment>disease: carcinoma (prostate primary)</rdfs:comment>
         <obo:CLO_0000178>LCL-1146</obo:CLO_0000178>
@@ -613,7 +615,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0003603 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003603">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H-4-II-E cell</rdfs:label>
+        <rdfs:label>H-4-II-E cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:comment>disease: hepatoma</rdfs:comment>
         <obo:IAO_0000118>H-4-II-E</obo:IAO_0000118>
@@ -626,7 +628,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0003610 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003610">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">H69AR cell</rdfs:label>
+        <rdfs:label>H69AR cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: CRL-11351</rdfs:seeAlso>
         <obo:IAO_0000118>H69AR</obo:IAO_0000118>
@@ -639,7 +641,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0003665 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003665">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HCT 116 cell</rdfs:label>
+        <rdfs:label>HCT 116 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000118></obo:IAO_0000118>
         <rdfs:seeAlso>MeSH: D045325</rdfs:seeAlso>
@@ -663,7 +665,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0003679 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003679">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HEL cell</rdfs:label>
+        <rdfs:label>HEL cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl1585</rdfs:seeAlso>
         <rdfs:seeAlso>DSMZ: ACC 11</rdfs:seeAlso>
@@ -679,7 +681,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0003684 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003684">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HeLa cell</rdfs:label>
+        <rdfs:label>HeLa cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>CHEMBL: CHEMBL3308376</rdfs:seeAlso>
         <obo:IAO_0000119>WEB: http://www.atcc.org/products/all/CCL-2.aspx</obo:IAO_0000119>
@@ -701,7 +703,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0003704 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003704">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hep G2 cell</rdfs:label>
+        <rdfs:label>Hep G2 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:CLO_0000178>LCL-1925</obo:CLO_0000178>
         <rdfs:seeAlso>HyperCLDB: cl1644</rdfs:seeAlso>
@@ -723,7 +725,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0003775 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0003775">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HL-60 cell</rdfs:label>
+        <rdfs:label>HL-60 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>CHEMBL: CHEMBL3307654</rdfs:seeAlso>
         <rdfs:seeAlso>ATCC: CCL-240</rdfs:seeAlso>
@@ -743,7 +745,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0004009 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0004009">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hs 578T cell</rdfs:label>
+        <rdfs:label>Hs 578T cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:CLO_0000178>LCL-1315</obo:CLO_0000178>
         <obo:IAO_0000118>HS578T</obo:IAO_0000118>
@@ -758,7 +760,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0004276 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0004276">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HT-1080 cell</rdfs:label>
+        <rdfs:label>HT-1080 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: CCL-121</rdfs:seeAlso>
         <rdfs:comment>disease: fibrosarcoma</rdfs:comment>
@@ -771,7 +773,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0004283 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0004283">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HT-29 cell</rdfs:label>
+        <rdfs:label>HT-29 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000118>HT-29</obo:IAO_0000118>
         <rdfs:seeAlso>CVCL: CVCL_0320</rdfs:seeAlso>
@@ -791,7 +793,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0004307 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0004307">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HUV-EC-C cell</rdfs:label>
+        <rdfs:label>HUV-EC-C cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000118>HUV-EC-C</obo:IAO_0000118>
         <rdfs:seeAlso>ATCC: CRL-1730</rdfs:seeAlso>
@@ -805,7 +807,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0004342 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0004342">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">IEC-6 cell</rdfs:label>
+        <rdfs:label>IEC-6 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl1802</rdfs:seeAlso>
         <obo:IAO_0000118>IEC-6</obo:IAO_0000118>
@@ -819,7 +821,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0007043 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007043">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JURKAT cell</rdfs:label>
+        <rdfs:label>JURKAT cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Jurkat_cells</obo:IAO_0000119>
         <rdfs:comment>disease: leukemia, T cell</rdfs:comment>
@@ -836,7 +838,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0007203 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007203">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">L6 cell</rdfs:label>
+        <rdfs:label>L6 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: CRL-1458</rdfs:seeAlso>
         <obo:IAO_0000118>L6</obo:IAO_0000118>
@@ -845,10 +847,24 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CLO_0007331 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007331">
+        <rdfs:label>LLC-PK subscript(1) cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <rdfs:seeAlso>MeSH: D018374</rdfs:seeAlso>
+        <obo:IAO_0000118>LLC-PK subscript(1)</obo:IAO_0000118>
+        <rdfs:seeAlso>HyperCLDB: cl3221</rdfs:seeAlso>
+        <rdfs:seeAlso>ATCC: CL-101</rdfs:seeAlso>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/CLO_0007606 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007606">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MCF7 cell</rdfs:label>
+        <rdfs:label>MCF7 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000118>MCF 7 cell</obo:IAO_0000118>
         <rdfs:seeAlso>RRID: CVCL_0031</rdfs:seeAlso>
@@ -873,7 +889,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0007634 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007634">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MDA-MB-231 cell</rdfs:label>
+        <rdfs:label>MDA-MB-231 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: HTB-26</rdfs:seeAlso>
         <obo:IAO_0000118>MDA-MB-231</obo:IAO_0000118>
@@ -891,10 +907,13 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0007646 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007646">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MDCK cell</rdfs:label>
+        <rdfs:label>MDCK cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl5078</rdfs:seeAlso>
         <obo:IAO_0000118>MDCK</obo:IAO_0000118>
+        <obo:IAO_0000115>A model mammalian cell line cell that was genereated from the initial isolation in 1958 of epithelial cells from the kidney tubule of an adult Cocker Spaniel dog by Stewart H. Madin and Norman B. Darby, Jr..</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Madin-Darby_canine_kidney_cells</obo:IAO_0000119>
+        <efo:alternative_term>Madin-Darby canine kidney cell</efo:alternative_term>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
     </owl:Class>
     
@@ -903,7 +922,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0007657 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007657">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ME-180 cell</rdfs:label>
+        <rdfs:label>ME-180 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: HTB-33</rdfs:seeAlso>
         <rdfs:comment>disease: epidermoid carcinoma (cervix primary)</rdfs:comment>
@@ -919,7 +938,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0007865 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007865">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRC-5 cell</rdfs:label>
+        <rdfs:label>MRC-5 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl3564</rdfs:seeAlso>
         <rdfs:seeAlso>ATCC: CCL-171</rdfs:seeAlso>
@@ -932,7 +951,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0007904 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0007904">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mv 1 Lu cell</rdfs:label>
+        <rdfs:label>Mv 1 Lu cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl3604</rdfs:seeAlso>
         <obo:IAO_0000118>Mv 1 Lu</obo:IAO_0000118>
@@ -946,7 +965,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0008172 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0008172">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIH-3T3 cell</rdfs:label>
+        <rdfs:label>NIH-3T3 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: CRL-1658</rdfs:seeAlso>
         <rdfs:seeAlso>MeSH: D041681</rdfs:seeAlso>
@@ -961,7 +980,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0009015 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009015">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SH-SY5Y cell</rdfs:label>
+        <rdfs:label>SH-SY5Y cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000118>SH-SY5Y</obo:IAO_0000118>
         <rdfs:seeAlso>ATCC: CRL-2266</rdfs:seeAlso>
@@ -976,7 +995,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0009047 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009047">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SK-MEL-5 cell</rdfs:label>
+        <rdfs:label>SK-MEL-5 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:CLO_0000178>LCL-1282</obo:CLO_0000178>
         <rdfs:seeAlso>ATCC: HTB-70</rdfs:seeAlso>
@@ -998,7 +1017,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0009059 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009059">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SK-N-SH cell</rdfs:label>
+        <rdfs:label>SK-N-SH cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:CLO_0000178>LCL-1971</obo:CLO_0000178>
         <rdfs:seeAlso>EFO: EFO_0003072</rdfs:seeAlso>
@@ -1014,7 +1033,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0009215 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009215">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SW403 cell</rdfs:label>
+        <rdfs:label>SW403 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: CCL-230</rdfs:seeAlso>
         <obo:IAO_0000118>SW403</obo:IAO_0000118>
@@ -1030,7 +1049,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0009348 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009348">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">THP-1 cell</rdfs:label>
+        <rdfs:label>THP-1 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: TIB-202</rdfs:seeAlso>
         <obo:CLO_0000178>LCL-1072</obo:CLO_0000178>
@@ -1048,7 +1067,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0009454 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009454">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">U-2 OS cell</rdfs:label>
+        <rdfs:label>U-2 OS cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <obo:IAO_0000118>U-2 OS</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: https://www.atcc.org/Products/All/HTB-96.aspx</obo:IAO_0000119>
@@ -1066,7 +1085,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0009463 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009463">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obsolete: U87 MG cell</rdfs:label>
+        <rdfs:label>obsolete: U87 MG cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl5280</rdfs:seeAlso>
         <rdfs:comment>There is a CLO term for the cell line already: http://purl.obolibrary.org/obo/CLO_0009464</rdfs:comment>
@@ -1079,7 +1098,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0009524 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009524">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vero cell</rdfs:label>
+        <rdfs:label>Vero cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl4644</rdfs:seeAlso>
         <obo:IAO_0000118>Vero</obo:IAO_0000118>
@@ -1093,7 +1112,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0009526 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009526">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VERO 76 cell</rdfs:label>
+        <rdfs:label>VERO 76 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>ATCC: CRL-1587</rdfs:seeAlso>
         <rdfs:seeAlso>HyperCLDB: cl4655</rdfs:seeAlso>
@@ -1106,7 +1125,7 @@ The definition provided here establishes the &#39;scale&#39; of cell populations
     <!-- http://purl.obolibrary.org/obo/CLO_0009527 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0009527">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VERO C1008 cell</rdfs:label>
+        <rdfs:label>VERO C1008 cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
         <rdfs:seeAlso>HyperCLDB: cl4657</rdfs:seeAlso>
         <rdfs:seeAlso>ATCC: CRL-1586</rdfs:seeAlso>
@@ -1736,6 +1755,49 @@ with a s.c. K-1735 tumor.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/CLO_0037460 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037460">
+        <rdfs:label xml:lang="en">MDCK-II cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/21982418/</obo:IAO_0000119>
+        <efo:alternative_term>MDCKII</efo:alternative_term>
+        <obo:IAO_0000119>https://www.cellosaurus.org/CVCL_0424</obo:IAO_0000119>
+        <efo:alternative_term>MDCK II</efo:alternative_term>
+        <rdfs:seeAlso>BTO; BTO:0004607</rdfs:seeAlso>
+        <rdfs:seeAlso>Wikidata; Q54904781</rdfs:seeAlso>
+        <obo:IAO_0000118>MDCK-I</obo:IAO_0000118>
+        <efo:alternative_term>MDCK-2</efo:alternative_term>
+        <rdfs:seeAlso>HyperCLDB: cl5079</rdfs:seeAlso>
+        <rdfs:seeAlso>ChEMBL-Cells; CHEMBL3308862</rdfs:seeAlso>
+        <efo:alternative_term>MDCKII-WT</efo:alternative_term>
+        <rdfs:seeAlso>CVCL_0424</rdfs:seeAlso>
+        <efo:alternative_term>MDCK2</efo:alternative_term>
+        <efo:alternative_term>MDCK Type II</efo:alternative_term>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CLO_0037461 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CLO_0037461">
+        <rdfs:label xml:lang="en">MDCKII-LE cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CLO_0000019"/>
+        <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/21766308/</obo:IAO_0000119>
+        <obo:IAO_0000118>Ralph Russ Canine Kidney</obo:IAO_0000118>
+        <obo:IAO_0000118>MDCKII-LE</obo:IAO_0000118>
+        <obo:IAO_0000118>RRCK</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.cellosaurus.org/CVCL_VR40</obo:IAO_0000119>
+        <rdfs:seeAlso>Wikidata; Q95987829</rdfs:seeAlso>
+        <obo:IAO_0000115>Compared to the parent cell line, has a lower expression of endogenous ABCB1/MDR1.</obo:IAO_0000115>
+        <rdfs:seeAlso>CVCL_VR40</rdfs:seeAlso>
+        <efo:alternative_term>MDCKII-Low Efflux</efo:alternative_term>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/clo.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.bioassayontology.org/bao#BAO_0003114 -->
 
     <owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003114"/>
@@ -1743,5 +1805,5 @@ with a s.c. K-1735 tumor.</obo:IAO_0000115>
 
 
 
-<!-- Generated by the OWL API (version 1.3.5.1016) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
 
