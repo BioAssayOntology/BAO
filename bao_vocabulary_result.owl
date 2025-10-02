@@ -27,10 +27,11 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_result.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.8.16</owl:versionInfo>
+        <owl:versionInfo>2.8.17</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
+        <rdfs:comment>Created by: Caty Chung, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact: Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
-        <dc:date>June 26, 2025</dc:date>
+        <dc:date></dc:date>
     </owl:Ontology>
 
 
@@ -231,10 +232,12 @@ As a measure of viable or proliferating cells, different researchers measure dif
 	<!-- http://www.bioassayontology.org/bao#BAO_0000179 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000179">
-		<rdfs:label rdf:datatype="&xsd;string">result</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">endpoint</rdfs:label>
 		<rdfs:label>endpoint</rdfs:label>
 		<obo:IAO_0000115>The endpoint is a quantitive or qualitative interpretable standardized representation of a perturbation (a change from a defined reference state of a &quot;closed&quot; model system) that is measured by the bioassay.  An endpoint consists of a series of data points, one for each perturbing agent (screened entity) tested the assay.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003115"/>
+		<obo:IAO_0000118>result</obo:IAO_0000118>
+		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000180 -->
@@ -1267,17 +1270,28 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 	<!-- http://www.bioassayontology.org/bao#BAO_0002133 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002133">
-		<rdfs:label rdf:datatype="&xsd;string">permeability A-B</rdfs:label>
-		<obo:IAO_0000115>This is measured to assess the transport of a drug across the cell monolayer in the apical to basolateral (A-B) direction. Typically, CaCo2 cells are used in the permeability measurements during the ADME phase, which model the intestinal epithelium..</obo:IAO_0000115>
+		<rdfs:label rdf:datatype="&xsd;string">apical‑to‑basolateral permeability (A &gt; B)</rdfs:label>
+		<obo:IAO_0000115>Measurement of compound transport across a polarized epithelial monolayer from the apical to the basolateral side, typically reported as Papp (cm/s)</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002808"/>
+		<obo:IAO_0000118>A‑to‑B permeability</obo:IAO_0000118>
+		<obo:IAO_0000118>absorptive permeability</obo:IAO_0000118>
+		<obo:IAO_0000118>apical &gt; basolateral</obo:IAO_0000118>
+		<obo:IAO_0000119>https://doi.org/10.14573/altex.2403271</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002134 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002134">
-		<rdfs:label rdf:datatype="&xsd;string">permeability B-A</rdfs:label>
-		<obo:IAO_0000115>This is measured to assess the transport of a drug across the cell monolayer in the basolateral to apical (B-A) direction. Typically, CaCo2 cells are used in the permeability measurements during the ADME phase, which model the intestinal epithelium.</obo:IAO_0000115>
+		<rdfs:label rdf:datatype="&xsd;string">basolateral‑to‑apical permeability (B &gt; A)</rdfs:label>
+		<obo:IAO_0000115>Measurement of compound transport across a polarized epithelial monolayer from the basolateral to the apical side, typically reported as Papp (cm/s)</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002808"/>
+		<obo:IAO_0000118>B‑to‑A permeability</obo:IAO_0000118>
+		<obo:IAO_0000118>basolateral &gt; apical</obo:IAO_0000118>
+		<obo:IAO_0000118>secretory permeability</obo:IAO_0000118>
+		<obo:IAO_0000118>efflux‑directional permeability</obo:IAO_0000118>
+		<obo:IAO_0000119>https://doi.org/10.14573/altex.2403271</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002135 -->
@@ -1417,10 +1431,14 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 	<!-- http://www.bioassayontology.org/bao#BAO_0002759 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002759">
-		<rdfs:label rdf:datatype="&xsd;string">CL</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">clearance</rdfs:label>
 		<obo:IAO_0000118>Drug clearance</obo:IAO_0000118>
-		<obo:IAO_0000115>Clearance is the volume of plasma from which the drug is completely removed per unit time, or, alternatively, the volume of plasma that would have to lose all of the drug that it contains within a unit of time to account for an observed rate of drug elimination.</obo:IAO_0000115>
+		<obo:IAO_0000115>Clearance is defined as the volume of plasma cleared of a drug over a specified time period.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002758"/>
+		<obo:IAO_0000118>CL</obo:IAO_0000118>
+		<obo:IAO_0000118>drug clearance</obo:IAO_0000118>
+		<obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/books/NBK557758</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002766 -->
@@ -1503,8 +1521,12 @@ m= y2-y1 / x2-x1</obo:IAO_0000115>
 	<!-- http://www.bioassayontology.org/bao#BAO_0002808 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002808">
-		<rdfs:label rdf:datatype="&xsd;string">permeability</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">apparent permeability coefficient (Papp)</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002128"/>
+		<obo:IAO_0000118>Papp</obo:IAO_0000118>
+		<obo:IAO_0000115>A rate measure of how quickly a compound crosses a biological or artificial membrane, expressed in centimeters per second (cm/s), calculated from the transport rate normalized to membrane area and donor concentration</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1007/s10928-008-9086-4</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002809 -->

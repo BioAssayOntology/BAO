@@ -27,10 +27,11 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_method.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.8.16</owl:versionInfo>
+        <owl:versionInfo>2.8.17</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
+        <rdfs:comment>Created by: Caty Chung, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact: Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
-        <dc:date>June 26, 2025</dc:date>
+        <dc:date></dc:date>
     </owl:Ontology>
 
 
@@ -1666,12 +1667,15 @@ The premise behind the test is the activation of downstream reporter gene(s) by 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002499 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0002499">
-		<rdfs:label rdf:datatype="&xsd;string">parallel artificial membrane permeation assay</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">artificial membrane preparation</rdfs:label>
 		<obo:IAO_0000118>PAMPA permeability assay</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002485"/>
 		<obo:IAO_0000118>PAMPA</obo:IAO_0000118>
 		<obo:IAO_0000118>Parallel artificial membrane permeability assay</obo:IAO_0000118>
 		<obo:IAO_0000118>Parallel artificial membrane permeability</obo:IAO_0000118>
+		<obo:IAO_0000115>The process of constructing non-native membrane like structures from synthetic or natural amphiphilic molecules, polymers, surfactants, or modified macromolecules that mimic the composition, architecture, and functional properties of biological membranes.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1039/D1CS00029B</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002500 -->

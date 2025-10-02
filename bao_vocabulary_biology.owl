@@ -27,11 +27,11 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.8.15</owl:versionInfo>
+        <owl:versionInfo>2.8.17</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by: Caty Chung, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact: Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
-        <dc:date>May 30, 2025</dc:date>
+        <dc:date></dc:date>
     </owl:Ontology>
 
 
@@ -2596,6 +2596,17 @@ Nuclear factor of kappa light polypeptide gene enhancer in B-cells 3</obo:IAO_00
 		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
 		<obo:IAO_0000119>https://doi.org/10.1371/journal.pntd.0001762</obo:IAO_0000119>
 		<obo:IAO_0000116>[DefinitionUpdate: BAO v 2.8.15 (May 2025)] [NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0030064 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0030064">
+		<rdfs:label rdf:datatype="&xsd;string">Multidrug resistance-associated protein 2</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000283"/>
+		<obo:IAO_0000115>The multidrug resistance protein 2 (MRP2; ABCC2) is an ATP-binding cassette transporter accepting a diverse range of substrates, including glutathione, glucuronide, and sulfate conjugates of many endo- and xenobiotics.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1124/jpet.102.035014</obo:IAO_0000119>
+		<bao:submitted_by>Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 </rdf:RDF>

@@ -27,11 +27,11 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.8.15</owl:versionInfo>
+        <owl:versionInfo>2.8.17</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <rdfs:comment>Created by: Caty Chung, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact: Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
-        <dc:date>May 30, 2025</dc:date>
+        <dc:date></dc:date>
     </owl:Ontology>
 
 
@@ -1727,7 +1727,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>Caco-2 permeability</obo:IAO_0000118>
 		<obo:IAO_0000119>PubChem AID: 504629</obo:IAO_0000119>
 		<obo:IAO_0000116>Date from BAE: 6/6/2016</obo:IAO_0000116>
-		<obo:IAO_0000115>A common in vitro ADME assay that uses the Caco-2 cell line (derived from human colon carcinoma) to assess transport in both directions (apical to basolateral (A-B) and basolateral to apical (B-A)) across the cell monolayer), to predict the in vivo absorption of drugs across the gut wall and to investigate drug efflux.</obo:IAO_0000115>
+		<obo:IAO_0000115>Caco-2 permeability assay is an in vitro ADME (Absorption, Distribution, Metabolism, and Excretion) assay that uses Caco-2 cell line (derived from human colon carcinoma) to assess bidirectional transport (apical to basolateral (A?B) and basolateral to apical (B?A)) across a confluent epithelial cell monolayer. Primarily used to predict in vivo absorption across the intestinal epithelium, this assay can also serve as a cost-effective early screen for passive permeability in drug discovery, including as a preliminary filter for compounds intended to cross other biological barriers such as the blood&#150;brain barrier.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1023/b:pham.0000008043.71001.43</obo:IAO_0000119>
+		<obo:IAO_0000116>Date from BAE: 6/6/2016[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010009 -->
@@ -2259,7 +2261,10 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">parallel artificial membrane permeability assay</rdfs:label>
 		<obo:IAO_0000115>A method which determines the permeability of substances from a donor compartment, through a lipid-infused artificial membrane into an acceptor compartment. At the beginning of the test, the drug is added to the donor compartment, and the acceptor compartment is drug-free. After an incubation period the amount of drug is measured in each compartment. Mass balance allows calculation of drug that remains in the membrane. It is used as an in vitro model of passive, transcellular permeation to predict oral absorption. PAMPA is an alternative to the cell-based Caco-2 permeability assay</obo:IAO_0000115>
 		<obo:IAO_0000118>PAMPA</obo:IAO_0000118>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010083"/>
+		<obo:IAO_0000115>The PAMPA assay is used as an in vitro model of passive, transcellular permeability.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/books/NBK326710/</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010073 -->
@@ -2287,7 +2292,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010076">
 		<rdfs:label rdf:datatype="&xsd;string">low throughput screening</rdfs:label>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010072"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010073"/>
+		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010077 -->
@@ -2368,8 +2374,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">Ussing chamber permeability assay</rdfs:label>
 		<obo:IAO_0000118>Ussing chamber assay</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
-		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010008"/>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002778"/>
 		<obo:IAO_0000118>Ussing chamber permeability</obo:IAO_0000118>
+		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010085 -->
@@ -2391,6 +2398,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010083"/>
 		<obo:IAO_0000118>MDCK assay</obo:IAO_0000118>
 		<obo:IAO_0000118>MDCK permeability</obo:IAO_0000118>
+		<obo:IAO_0000115>MDCK permeability assay is a cell-based drug discovery assay using monolayers of Madin-Darby canine kidney (MDCK) cells to measure how well a compound permeates a biological barrier, often to predict its intestinal absorption or potential for blood-brain barrier (BBB) penetration.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://www.creative-bioarray.com/Services/mdck-permeability-assay.htm</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010087 -->
@@ -2408,7 +2418,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0010088 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010088">
-		<rdfs:label rdf:datatype="&xsd;string">LLCPK1 monolayer permeability assay</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">LLC-PK1 monolayer permeability assay</rdfs:label>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010083"/>
 		<obo:IAO_0000118>bidirectional permeability across LLCPK1 monolayers</obo:IAO_0000118>
@@ -2416,6 +2426,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>LLCPK1 monolayer assay</obo:IAO_0000118>
 		<obo:IAO_0000118>LLCPK1 monolayer bidirectional permeability</obo:IAO_0000118>
 		<obo:IAO_0000118>LLCPK1 assay</obo:IAO_0000118>
+		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010089 -->
@@ -4555,11 +4566,13 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0013019 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013019">
-		<rdfs:label rdf:datatype="&xsd;string">clearance</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">clearance assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002182"/>
-		<obo:IAO_0000115>The rate at which a drug is removed or cleared from the whole or part of the body.</obo:IAO_0000115>
 		<bao:hasXref>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C199688</bao:hasXref>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<obo:IAO_0000115>A clearance assay evaluates how quickly a substance is removed or &quot;cleared&quot; from a biological system, such as the body or a cellular environment. These assays can be in vivo, which are performed on living organisms (e.g., to measure glymphatic clearance in mice), or in vitro, which are performed in a lab setting using cells or tissues</obo:IAO_0000115>
+		<obo:IAO_0000119>https://www.sciencedirect.com/topics/immunology-and-microbiology/drug-clearance</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0013020 -->
@@ -4992,6 +5005,17 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<bao:submitted_by>Semantic Enrichment of ELN Data (SEED) (https://www.pistoiaalliance.org) - Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
 		<obo:IAO_0000116>[NodeCreation: BAO v 2.8.14 (April 2025)]</obo:IAO_0000116>
 		<obo:IAO_0000119>https://doi.org/10.1016/0022-1759(88)90310-9</obo:IAO_0000119>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0013057 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0013057">
+		<rdfs:label rdf:datatype="&xsd;string">active efflux substrate assay</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010139"/>
+		<obo:IAO_0000115>An active efflux substrate assay is a scientific test used to study the ability of a substance (the substrate) to be transported out of a cell by an active efflux pump.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.3390/antibiotics9120855</obo:IAO_0000119>
+		<bao:submitted_by>Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 </rdf:RDF>

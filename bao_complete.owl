@@ -19,8 +19,8 @@
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_core.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_external.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:date>June 26, 2025</dc:date>
-        <owl:versionInfo>2.8.16</owl:versionInfo>
+        <dc:date>October 2, 2025</dc:date>
+        <owl:versionInfo>2.8.17</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <rdfs:comment>Created by: Caty Chung, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*</rdfs:comment>
