@@ -27,14 +27,11 @@
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_format.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.8.8</owl:versionInfo>
+        <owl:versionInfo>2.8.17</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
-        <rdfs:comment>Created by:
-Hande Küçük McGinty, Janice Kranz, Joseph Ostrow, Alex Clark, Yu Lin, Saminda Abeyruwan, Uma Vempati, Kunie Sakurai, Vance Lemmon, Ubbo Visser, John Turner, Caty Chung, Stephan Schurer*</rdfs:comment>
-        <rdfs:comment>Contact:
-Stephan Schurer
-Sschurer at miami dot edu</rdfs:comment>
-        <dc:date>September 8, 2023</dc:date>
+        <rdfs:comment>Created by: Caty Chung, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*</rdfs:comment>
+        <rdfs:comment>Contact: Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
+        <dc:date></dc:date>
     </owl:Ontology>
 
 
@@ -351,6 +348,50 @@ Sschurer at miami dot edu</rdfs:comment>
 		<obo:IAO_0000115>The liquid component of blood devoid of cellular elements (such as red blood cells, white blood cells, and platelets) and insoluble components, typically obtained through processes like centrifugation or filtration.</obo:IAO_0000115>
 		<bao:hasXref>http://purl.org/net/OCRe/OCRe.owl#OCRE400034</bao:hasXref>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0020012 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020012">
+		<rdfs:label rdf:datatype="&xsd;string">tissue membrane format</rdfs:label>
+		<obo:IAO_0000115>Tissue membrane format (often using morter and pestal to homogenize tissue) is considered a cell-free subcellular format that contains issues and broken down components of cells.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000119>https://doi.org/10.1016/B978-0-12-411604-7.00009-X</obo:IAO_0000119>
+		<obo:IAO_0000116>[DefinitionUpdate: BAO v 2.8.15 (May 2025)] [NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0020013 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020013">
+		<rdfs:label rdf:datatype="&xsd;string">synaptosomal fraction format</rdfs:label>
+		<obo:IAO_0000115>The synaptosomal fraction represents neuronal components, specifically crude synaptosomes, which are obtained by breaking open neural tissue and centrifuging it to separate synaptic structures (from neurons) from the soluble cytosolic material. This fraction contains synaptosomes but may also include other cellular contaminants until further purification steps are applied.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000220"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000119>https://doi.org/10.1016/j.xpro.2023.102061</obo:IAO_0000119>
+		<obo:IAO_0000116>[DefinitionUpdate: BAO v 2.8.15 (May 2025)] [NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0020014 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020014">
+		<rdfs:label rdf:datatype="&xsd;string">synaptosomal P2 fraction format</rdfs:label>
+		<obo:IAO_0000115>The P2 synaptosomal fraction is a crude neuronal sub-cellular fraction enriched in synaptosomes, obtained by centrifuging lysate at 10,000 × g to separate the cytosol (S2) from the pellet, which is resuspended in Buffer B.</obo:IAO_0000115>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0020013"/>
+		<bao:submitted_by>Opioid Drug Ontology (ODO) (https://opioiddrugontology.github.io/) - Nicolette Ross (https://orcid.org/0000-0002-4677-2140)</bao:submitted_by>
+		<obo:IAO_0000119>https://doi.org/10.1016/j.xpro.2023.102061</obo:IAO_0000119>
+		<obo:IAO_0000116>[DefinitionUpdate: BAO v 2.8.15 (May 2025)] [NodeCreation: BAO v 2.8.13 (March 2025)]</obo:IAO_0000116>
+	</owl:Class>
+
+	<!-- http://www.bioassayontology.org/bao#BAO_0020015 -->
+
+	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0020015">
+		<rdfs:label rdf:datatype="&xsd;string">Transwell chamber format</rdfs:label>
+		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000219"/>
+		<obo:IAO_0000115>Assay format using a permeable support insert (Transwell) to form a polarized cell monolayer separating apical and basolateral compartments for permeability measurements.</obo:IAO_0000115>
+		<obo:IAO_0000119>dx.doi.org/10.17504/protocols.io.5qpvo3wn9v4o/v1</obo:IAO_0000119>
+		<bao:submitted_by>Joan Glenny Pescov (https://orcid.org/0009-0008-8186-7058)</bao:submitted_by>
+		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 </rdf:RDF>
