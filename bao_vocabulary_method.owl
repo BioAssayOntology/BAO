@@ -26,12 +26,12 @@
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_method.owl">
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_method.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.8.17</owl:versionInfo>
+        <dc:date>October 5, 2025</dc:date>
+        <owl:versionInfo>2.8.18</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <rdfs:comment>Created by: Caty Chung, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact: Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
-        <dc:date></dc:date>
     </owl:Ontology>
 
 
@@ -284,6 +284,9 @@ The technologies used are radioligand binding, resonance energy transfer, fluore
 		<rdfs:label rdf:datatype="&xsd;string">caspase activity determination</rdfs:label>
 		<obo:IAO_0000115>Caspases are cysteine proteases which play an important role in apoptosis. They are synthesized and stored in cells as inactive procaspases. Once apoptosis is initiated in a cell, the procaspases get activated by proteolytic cleavage. This sets in motion a caspase cascade, which leads to the activation of proteins involved in the chromatin fragmentation and finally culminates in cell death.</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000127"/>
+		<obo:IAO_0000118>caspase apoptosis assay</obo:IAO_0000118>
+		<obo:IAO_0000118>caspase activity measurements</obo:IAO_0000118>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000166 -->

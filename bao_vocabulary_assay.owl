@@ -26,12 +26,12 @@
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl">
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_assay.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.8.17</owl:versionInfo>
+        <dc:date>October 5, 2025</dc:date>
+        <owl:versionInfo>2.8.18</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <rdfs:comment>Created by: Caty Chung, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact: Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
-        <dc:date></dc:date>
     </owl:Ontology>
 
 
@@ -163,6 +163,9 @@ Measure group links to those classes that can vary among different measurements 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0000042">
 		<rdfs:label rdf:datatype="&xsd;string">Cue Signal Response assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
+		<obo:IAO_0000115>An assay that measures how defined extracellular cues or stimuli trigger intracellular signaling events that drive specific cellular responses</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1089/cmb.2004.11.544</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0000110 -->
@@ -827,6 +830,9 @@ percent G2-M arrested
 percent non-arrested</rdfs:comment>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000118>cell cycle analysis</obo:IAO_0000118>
+		<obo:IAO_0000115>An assay that measures the distribution of cells across different phases of the cell cycle to evaluate proliferation status or cell cycle perturbations</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1385/1-59259-811-0:301</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002043 -->
@@ -947,6 +953,9 @@ percent non-arrested</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">pharmacodynamic assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:deprecated>true</obo:deprecated>
+		<obo:IAO_0000115>An assay that measures the biochemical, physiological, or molecular effects of a drug on a biological system, providing quantitative markers of target engagement or downstream pharmacological response</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.2165/00003088-199834040-00005</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002184 -->
@@ -955,6 +964,8 @@ percent non-arrested</rdfs:comment>
 		<rdfs:label rdf:datatype="&xsd;string">QT interval assay</rdfs:label>
 		<obo:IAO_0000118>QT interval study</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002533"/>
+		<obo:IAO_0000115>An assay that assesses a drug&apos;s potential to cause QT interval prolongation, a delay in the repolarization phase of the cardiac cycle. Significant QT prolongation is a biomarker for an increased risk of developing a potentially fatal cardiac arrhythmia known as Torsades de Pointes.</obo:IAO_0000115>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002185 -->
@@ -987,6 +998,8 @@ For HCS measurement, we need to define &apos;assay measurement&apos; as the outc
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
 		<obo:IAO_0000118>toxicology assay</obo:IAO_0000118>
 		<obo:IAO_0000118>tox assay</obo:IAO_0000118>
+		<obo:IAO_0000115>An assay that quantifies the degree to which a substance is toxic to living cells. These assays measure cellular health indicators like membrane integrity (e.g., lactate dehydrogenase release), metabolic activity (e.g., MTT reduction), or cell count to determine the concentration of the substance that induces cell death.</obo:IAO_0000115>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002190 -->
@@ -1086,6 +1099,9 @@ For HCS measurement, we need to define &apos;assay measurement&apos; as the outc
 		<rdfs:label rdf:datatype="&xsd;string">bioavailability assay</rdfs:label>
 		<obo:IAO_0000118>bioavailability study</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+		<obo:IAO_0000115>An assay that measures the rate and extent to which an active drug or compound becomes available in the systemic circulation or target biological compartment following administration</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1002/wics.1310</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002531 -->
@@ -1116,6 +1132,9 @@ For HCS measurement, we need to define &apos;assay measurement&apos; as the outc
 		<rdfs:label rdf:datatype="&xsd;string">safety pharmacology assay</rdfs:label>
 		<obo:IAO_0000118>safety pharmacology assay</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
+		<obo:IAO_0000115>An assay that evaluates the potential undesirable pharmacodynamic effects of a drug candidate on vital physiological functions such as the cardiovascular, respiratory, and central nervous systems</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1038/bjp.2008.280</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002534 -->
@@ -1530,11 +1549,11 @@ This includes &apos;parameters&apos;, such as &apos;intensity&apos;, &apos;count
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003002">
 		<rdfs:label rdf:datatype="&xsd;string">signal transduction assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0000015"/>
-		<obo:IAO_0000115>This assay measures one of the series of events that are downstream to the receipt of a chemical signal at the cell</obo:IAO_0000115>
-		<obo:IAO_0000118>cell signaling</obo:IAO_0000118>
 		<obo:IAO_0000118>cell signalling</obo:IAO_0000118>
 		<obo:IAO_0000118>cell signaling assay</obo:IAO_0000118>
 		<obo:IAO_0000118>cell signalling assay</obo:IAO_0000118>
+		<obo:IAO_0000115>An assay that measures molecular processes by which cells convert extracellular stimuli into intracellular signals, encompassing receptor activation, second messengers, and downstream effectors.</obo:IAO_0000115>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003003 -->
@@ -1550,9 +1569,10 @@ This includes &apos;parameters&apos;, such as &apos;intensity&apos;, &apos;count
 	<!-- http://www.bioassayontology.org/bao#BAO_0003004 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0003004">
-		<rdfs:label rdf:datatype="&xsd;string">posttranslation modification assay</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">post-translational modification assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
 		<obo:IAO_0000115>This assay quantifies the modification that a protein can undergo after it is synthesized by translation. E.g. phosphorylation, acetylation, etc. The modification status is detected by one of several methods such as using modification specific antibodies followed by western blotting, imaging; mass spectrometry, etc.</obo:IAO_0000115>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0003005 -->
@@ -2299,7 +2319,7 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 	<!-- http://www.bioassayontology.org/bao#BAO_0010077 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010077">
-		<rdfs:label rdf:datatype="&xsd;string">GPCR Signaling</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">GPCR signaling assay</rdfs:label>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
 		<obo:IAO_0000118>GPCR signaling assay</obo:IAO_0000118>
 		<obo:IAO_0000118>GPCR assay</obo:IAO_0000118>
@@ -2307,6 +2327,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>GPCR profiling</obo:IAO_0000118>
 		<obo:IAO_0000118>GPCR functional assay</obo:IAO_0000118>
 		<obo:IAO_0000118>GPCR screening assay</obo:IAO_0000118>
+		<obo:IAO_0000115>An assay that measures the activation of G protein&#150;coupled receptors by quantifying downstream signaling events induced by ligand stimulation</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1038/aps.2011.173</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010078 -->
@@ -2366,6 +2389,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>assessment of permeability</obo:IAO_0000118>
 		<obo:IAO_0000118>bidirectional assay</obo:IAO_0000118>
 		<obo:IAO_0000118>drug permeability</obo:IAO_0000118>
+		<obo:IAO_0000115>A permeability assay is a standardized in vitro or ex vivo experimental procedure used to quantitatively measure the rate and mechanism by which a substance (typically a drug candidate or small molecule) traverses a biological or synthetic semi-permeable barrier.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.3390/mps5010017</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010084 -->
@@ -2376,7 +2402,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002778"/>
 		<obo:IAO_0000118>Ussing chamber permeability</obo:IAO_0000118>
-		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000115>The Ussing Chamber permeability assay is a fundamental electrophysiological technique used to measure the active and passive transport of ions, nutrients, and drug molecules across a biological membrane or epithelial cell monolayer.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1111/j.1748-1716.1951.tb00800.x</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)][BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010085 -->
@@ -2388,6 +2416,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010083"/>
 		<obo:IAO_0000118>BCRP permeability assay</obo:IAO_0000118>
 		<obo:IAO_0000118>BCRP assessment of permeability</obo:IAO_0000118>
+		<obo:IAO_0000115>The MDCK-BCRP permeability assay is a functional in vitro system used to quantify the overall directional permeability (Papp) of a compound across a cellular barrier. The assay utilizes a polarized cell monolayer (MDCK cells stably transfected with human BCRP) on a filter support, which allows for simultaneous measurement of both passive permeability (non-saturable movement across the lipid membrane) and BCRP-mediated active efflux (energy-dependent transport).</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1016/j.xphs.2019.02.005</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010086 -->
@@ -2413,6 +2444,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>RRCK assay</obo:IAO_0000118>
 		<obo:IAO_0000118>Ralph Russ Canine Kidney assay</obo:IAO_0000118>
 		<obo:IAO_0000118>Ralph Russ Canine Kidney (RRCK) assay</obo:IAO_0000118>
+		<obo:IAO_0000115>The RRCK permeability assay is a proprietary in vitro assay that uses a specific subclone of the MDCK canine kidney cell line to determine a compound&apos;s passive membrane permeability coefficient (Papp) across a cellular monolayer. The RRCK cell line is characterized by low or minimal expression of endogenous efflux transporters, which reduces interference from active transport mechanisms, thus isolating the passive diffusion component of drug permeation.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1002/jps.22674</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010088 -->
@@ -2426,7 +2460,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>LLCPK1 monolayer assay</obo:IAO_0000118>
 		<obo:IAO_0000118>LLCPK1 monolayer bidirectional permeability</obo:IAO_0000118>
 		<obo:IAO_0000118>LLCPK1 assay</obo:IAO_0000118>
-		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000115>The LLC-PK1 monolayer permeability assay is an in vitro experimental system used in pharmacology and drug discovery to quantitatively assess the rate of transport of drug candidates across a cellular barrier, specifically focusing on passive transcellular permeability and the activity of specific drug efflux/uptake transporters.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1186/s13321-024-00826-z</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.17 (Oct 2025)][BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010089 -->
@@ -2441,6 +2477,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>MDCKII monolayer bidirectional permeability</obo:IAO_0000118>
 		<obo:IAO_0000118>MDCKII assay</obo:IAO_0000118>
 		<obo:IAO_0000118>MDCKII permeability</obo:IAO_0000118>
+		<obo:IAO_0000115>The MDCKII monolayer permeability assay utilizes a Madin-Darby canine kidney II (MDCKII) epithelial cell sub-line, which, when grown on porous transwell filters, rapidly differentiates to form a tight, polarized cellular barrier. This system is employed to measure the apparent permeability coefficient (Papp) of a compound across the barrier, providing a high-throughput screening tool to estimate passive transcellular permeability and the likelihood of intestinal absorption.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.4155/fmc.11.149</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010090 -->
@@ -2456,6 +2495,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>metabolism - in vitro</obo:IAO_0000118>
 		<obo:IAO_0000118>Pharmacokinetics: Metabolism In Vitro</obo:IAO_0000118>
 		<obo:IAO_0000118>in vitro metabolism</obo:IAO_0000118>
+		<obo:IAO_0000115>An assay that uses an in vitro system to quantify the metabolic clearance rate of a test compound and/or identify its metabolite structures to characterize the compound&apos;s metabolic stability in the early stages of drug development.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.5772/intechopen_111605</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010091 -->
@@ -3386,6 +3428,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>UGT inhibition</obo:IAO_0000118>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010157"/>
+		<obo:IAO_0000115>An assay that measures how a test compound inhibits one or more UDP-glucuronosyltransferase (UGT) enzymes by quantifying the reduction in the formation rate of glucuronide metabolites (relative to control) under defined conditions</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1007/s00216-009-3441-1</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010174 -->
@@ -3535,6 +3580,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>efflux transporter inhibition assay</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010188"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
+		<obo:IAO_0000115>An efflux transporter inhibition assay is a standardized in vitro pharmacological experiment designed to determine the potential of a test compound to inhibit the function of specific efflux transporters (membrane proteins that actively pump substrates out of cells).</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1124/dmd.113.051052</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010190 -->
@@ -3547,6 +3595,10 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>inhibition of bile salt export pump</obo:IAO_0000118>
 		<obo:IAO_0000118>bile salt export pump inhibition</obo:IAO_0000118>
 		<obo:IAO_0000118>BSEP inhibition</obo:IAO_0000118>
+		<obo:IAO_0000119>https://doi.org/10.1002/cpt.1222</obo:IAO_0000119>
+		<obo:IAO_0000115>A BSEP inhibition assay is a critical in vitro functional assay used to measure the potential of a drug or chemical to inhibit the Bile Salt Export Pump (BSEP), also known as ABCB11. The primary purpose of the assay is to evaluate the risk of Drug-Induced Liver Injury (DILI) associated with a test compound.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1002/cpt.1222</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010191 -->
@@ -3558,6 +3610,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<obo:IAO_0000118>inhibition of BCRP</obo:IAO_0000118>
 		<obo:IAO_0000118>BCRP inhibition</obo:IAO_0000118>
+		<obo:IAO_0000115>A BCRP inhibition assay is a specific in vitro functional assay used to characterize the activity of the Breast Cancer Resistance Protein (BCRP or ABCG2) efflux transporter. It is primarily designed to assess the potential of a test compound (inhibitor) to block BCRP&apos;s active transport function, thereby mitigating its efflux activity.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1517/17460441.2014.922540</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010192 -->
@@ -3568,6 +3623,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010189"/>
 		<obo:IAO_0000118>MRP2 inhibition</obo:IAO_0000118>
+		<obo:IAO_0000115>The MRP2 inhibition assay is a functional in vitro study that quantifies a compound&apos;s ability to block the active efflux function of the human Multidrug Resistance-associated Protein 2 (MRP2 or ABCC2) transporter. It typically uses inside-out membrane vesicles (IOVs) prepared from MRP2-expressing cells, which allows the transporter&apos;s ATP-dependent efflux activity to be measured as an easily quantifiable substrate accumulation into the vesicle.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1016/j.ejps.2020.105395</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010193 -->
@@ -3582,6 +3640,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>P-glycoprotein (P-gp) inhibition assay</obo:IAO_0000118>
 		<obo:IAO_0000118>multi-drug resistance 1 inhibition</obo:IAO_0000118>
 		<obo:IAO_0000118>MDR1 inhibition</obo:IAO_0000118>
+		<obo:IAO_0000115>The P-gp inhibition assay is a functional in vitro study that quantifies the concentration-dependent disruption of the active efflux function of the human P-glycoprotein (P-gp or ABCB1) transporter. This ATP-driven efflux activity, which normally pushes drug substrates out of cells, is measured as a decrease in the P-gp-mediated transport of a probe substrate (like digoxin) when the test compound is present in a polarized cell monolayer or an inside-out membrane vesicle system.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1016/j.ejps.2020.105395</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010194 -->
@@ -3592,6 +3653,8 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010189"/>
 		<obo:IAO_0000118>SLC47A1 inhibition</obo:IAO_0000118>
+		<obo:IAO_0000115>A MATE1 inhibition assay is an in vitro functional assay designed to determine the potential of a test compound to block the transport function of the Multidrug and Toxin Extrusion 1 (MATE1 or SLC47A1) transporter. The assay utilizes MATE1&apos;s role as a proton-cation antiporter to measure its active transport activity and the subsequent IC50 of the inhibitor. This is accomplished by intentionally reversing MATE1&apos;s physiological efflux direction to simplify detection.</obo:IAO_0000115>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010195 -->
@@ -3603,6 +3666,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0010189"/>
 		<obo:IAO_0000118>MATE2-K inhibition</obo:IAO_0000118>
 		<obo:IAO_0000118>MATE2 inhibition</obo:IAO_0000118>
+		<obo:IAO_0000115>The MATE2 inhibition assay is a functional in vitro assay used to evaluate the potential of a drug candidate to inhibit the transport activity of the human Multidrug and Toxin Extrusion 2-K (MATE2-K or SLC47A2) transporter. The assay fundamentally measures the interference with MATE2-K-mediated active efflux (the physiological function) by observing the effect on substrate accumulation in a cell system.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1021/jm301302s</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010196 -->
@@ -4144,6 +4210,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>GSH-adducts</obo:IAO_0000118>
 		<obo:IAO_0000118>formation of GSH adduct</obo:IAO_0000118>
 		<obo:IAO_0000118>formation of GSH adducts</obo:IAO_0000118>
+		<obo:IAO_0000115>An assay used to detect and characterize the formation of chemically reactive metabolites from a parent drug. The assay determines if a drug is bioactivated into an electrophilic species that can covalently bind to the nucleophilic thiol of glutathione (GSH), a major cellular antioxidant. The formation of GSH adducts serves as an important indicator of a drug&apos;s potential to cause toxicity through reactive metabolites.</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1021/tx0496791</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010246 -->
@@ -4206,12 +4275,11 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0010251">
 		<rdfs:label rdf:datatype="&xsd;string">signaling pathway assay</rdfs:label>
-		<obo:IAO_0000118>pathway activity</obo:IAO_0000118>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003002"/>
 		<bao:submitted_by>SEED Project - Pistoia Alliance</bao:submitted_by>
-		<obo:IAO_0000118>pathway assay</obo:IAO_0000118>
-		<obo:IAO_0000118>pathway biology</obo:IAO_0000118>
-		<obo:IAO_0000118>biological pathway assay</obo:IAO_0000118>
+		<obo:IAO_0000118>signaling cascade assay</obo:IAO_0000118>
+		<obo:IAO_0000115>An assay that measures the activity of a specific intracellular signaling pathway, defined as an ordered sequence of molecular events that propagate signals within the cell to regulate downstream responses.</obo:IAO_0000115>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010252 -->
@@ -4280,6 +4348,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>pharmacokinetics, pharmacodynamics</obo:IAO_0000118>
 		<obo:IAO_0000118>PK/PD models</obo:IAO_0000118>
 		<obo:IAO_0000118>PK/PD assays</obo:IAO_0000118>
+		<obo:IAO_0000115>An assay conducted in living organisms to measure the pharmacokinetics and pharmacodynamics in order to establish the quantitative relationship between systemic drug exposure and pharmacological response</obo:IAO_0000115>
+		<obo:IAO_0000119>https://doi.org/10.1023/a:1011907920641</obo:IAO_0000119>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010257 -->
@@ -4383,6 +4454,9 @@ needs clean up to say has part gene with role of reporter.</rdfs:comment>
 		<obo:IAO_0000118>Annexin V-FITC</obo:IAO_0000118>
 		<obo:IAO_0000118>Annexin V FITC apoptosis assay</obo:IAO_0000118>
 		<obo:IAO_0000118>Annexin V staining</obo:IAO_0000118>
+		<obo:IAO_0000119>https://doi.org/10.1016/0022-1759(95)00072-i</obo:IAO_0000119>
+		<obo:IAO_0000115>An assay that detects early apoptotic cells by exploiting the Ca²⁺-dependent binding of fluorescently labeled Annexin V to phosphatidylserine (PS) residues that have become externalized on the outer leaflet of the plasma membrane during apoptosis.</obo:IAO_0000115>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0010266 -->

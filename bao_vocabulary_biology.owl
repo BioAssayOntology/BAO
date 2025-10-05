@@ -26,12 +26,12 @@
     <owl:Ontology rdf:about="http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl">
         <owl:versionIRI rdf:resource="http://www.bioassayontology.org/bao/bao_vocabulary_biology.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <owl:versionInfo>2.8.17</owl:versionInfo>
+        <dc:date>October 5, 2025</dc:date>
+        <owl:versionInfo>2.8.18</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
+        <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
         <rdfs:comment>Created by: Caty Chung, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*</rdfs:comment>
         <rdfs:comment>Contact: Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
-        <dc:date></dc:date>
     </owl:Ontology>
 
 
@@ -1317,6 +1317,9 @@ Trp-Lys-Tyr-Met-Val-D-Med-NH2</obo:IAO_0000115>
 		<rdfs:comment>Import the ligands from PRO with IDs</rdfs:comment>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003043"/>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0003111"/>
+		<obo:deprecated>true</obo:deprecated>
+		<obo:IAO_0000116>[BAO v 2.8.18 (Oct 2025)]</obo:IAO_0000116>
+		<obo:IAO_0000118>http://purl.obolibrary.org/obo/CHEBI_16646</obo:IAO_0000118>
 	</owl:Class>
 
 	<!-- http://www.bioassayontology.org/bao#BAO_0002016 -->
