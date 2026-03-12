@@ -9,7 +9,11 @@ BioAssay Ontology (BAO) is created to establish common reference metadata terms 
 * assay endpoint
 * assay screened entity
 
-#### Reference
+#### Publications
+To cite BAO:
+Glenny-Pescov J, Chung C, Ross N, Hu J, Sinclair M, Khurshid R, Karlsson K, Schürer SC. "[Advancing the bioassay ontology through integrated PK/PD and safety pharmacology representation](https://doi.org/10.1186/s13326-025-00342-5)" J Biomed Semant 17, 6 (2026). [https://doi.org/10.1186/s13326-025-00342-5](https://doi.org/10.1186/s13326-025-00342-5)
+
+#### Other Publications
 1. Abeyruwan, S.; Vempati, U.; Küçük, H.; Visser, U, Koleti, A.; Mir, A.; Sakurai, K.; Chung, C.; Bittker, J.; Clemons, P.; Brudz, S.; Siripala, A.; Morales, A.; Romacker, M.; Twomey, D.; Bureeva, S.; Lemmon, V., Schürer, S. “[Evolving BioAssay Ontology (BAO): Modularization, Integration and Applications](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4108877/)” J Biomed Semantics, 2014, doi:10.1186/2041-1480-5-S1-S5. 
 2. Vempati, U.D.; Przydzial, M.J.; Chung, C.; Abeyruwan, S.; Mir, A.; Sakurai, K.; Visser, U.; Lemmon, V.P.; Schürer, S.C. “[Formalization, Annotation and Analysis of Diverse Drug and Probe Screening Assay Datasets using the BioAssay Ontology (BAO).](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0049198)” PLoS One, 2012, doi:10.1371/journal.pone.0049198.
 3. Visser U, Abeyruwan S, Vempati U, Smith RP, Lemmon V, Schürer SC. “[BioAssay Ontology (BAO): a semantic description of bioassays and high-throughput screening results.](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3149580/)” BMC Bioinformatics. 2011 Jun 24;12:257. doi: 10.1186/1471-2105-12-257.
