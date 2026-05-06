@@ -19,12 +19,16 @@
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_core.owl"/>
         <owl:imports rdf:resource="http://www.bioassayontology.org/bao/bao_external.owl"/>
         <rdfs:label>BioAssay Ontology</rdfs:label>
-        <dc:date>October 7, 2025</dc:date>
-        <owl:versionInfo>2.8.18a</owl:versionInfo>
+        <dc:date>May 5, 2026</dc:date>
+        <owl:versionInfo>2.8.19</owl:versionInfo>
         <rdfs:label>BAO</rdfs:label>
         <dc:license rdf:resource="https://creativecommons.org/licenses/by-sa/4.0/"/>
-        <rdfs:comment>Created by: Caty Chung, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*</rdfs:comment>
-        <rdfs:comment>Contact: Stephan Schurer stephan dot schurer at med dot miami dot edu</rdfs:comment>
+     <rdfs:comment>Created by:
+     Caty Chung, Nicolette Ross, Joan Glenny-Pescov, Jiaming Hu, Stephan Schurer*
+     </rdfs:comment>
+        <rdfs:comment>Contact:
+        Contact: Stephan Schurer stephan dot schurer at med dot miami dot edu
+        </rdfs:comment>
     </owl:Ontology>
 
 
@@ -8995,8 +8999,6 @@
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000105">
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#upper_level"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/UBERON_0000109">
