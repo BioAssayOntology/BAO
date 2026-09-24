@@ -2304,7 +2304,7 @@ microarray, bead based method or RNASeq.</obo:IAO_0000115>
 	<!-- http://www.bioassayontology.org/bao#BAO_0040027 -->
 
 	<owl:Class rdf:about="http://www.bioassayontology.org/bao#BAO_0040027">
-		<rdfs:label rdf:datatype="&xsd;string">chromatin acessibility method</rdfs:label>
+		<rdfs:label rdf:datatype="&xsd;string">chromatin accessibility method</rdfs:label>
 		<obo:IAO_0000115>A method that is used to identify open / accessible genomic sites of remodeled chromatin</obo:IAO_0000115>
 		<rdfs:subClassOf rdf:resource="http://www.bioassayontology.org/bao#BAO_0002202"/>
 	</owl:Class>
